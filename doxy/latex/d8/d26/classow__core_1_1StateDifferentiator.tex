@@ -1,0 +1,212 @@
+\hypertarget{classow__core_1_1StateDifferentiator}{}\section{ow\+\_\+core\+:\+:State\+Differentiator$<$ \+\_\+\+Derived $>$ Class Template Reference}
+\label{classow__core_1_1StateDifferentiator}\index{ow\+\_\+core\+::\+State\+Differentiator$<$ \+\_\+\+Derived $>$@{ow\+\_\+core\+::\+State\+Differentiator$<$ \+\_\+\+Derived $>$}}
+
+
+The \hyperlink{classow__core_1_1StateDifferentiator}{State\+Differentiator} class.  
+
+
+
+
+{\ttfamily \#include $<$state\+\_\+differentiator.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Derived {\bfseries Derived}\hypertarget{classow__core_1_1StateDifferentiator_a218df3b44520487e959ccaff9bb8ecf8}{}\label{classow__core_1_1StateDifferentiator_a218df3b44520487e959ccaff9bb8ecf8}
+
+\item 
+typedef \hyperlink{structow_1_1traits}{ow\+::traits}$<$ Derived $>$\+::Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1StateDifferentiator_a04c0013ea9da4b942a230bbe43dc474c}{}\label{classow__core_1_1StateDifferentiator_a04c0013ea9da4b942a230bbe43dc474c}
+
+\item 
+typedef \hyperlink{structow_1_1traits}{ow\+::traits}$<$ Derived $>$\+::Pos {\bfseries V}\hypertarget{classow__core_1_1StateDifferentiator_a906580510bb727ad04d4bf26ed67dc82}{}\label{classow__core_1_1StateDifferentiator_a906580510bb727ad04d4bf26ed67dc82}
+
+\item 
+typedef \hyperlink{structow_1_1traits}{ow\+::traits}$<$ Derived $>$\+::Vel {\bfseries VP}\hypertarget{classow__core_1_1StateDifferentiator_a701361987250431d40b4a4179f36b4ea}{}\label{classow__core_1_1StateDifferentiator_a701361987250431d40b4a4179f36b4ea}
+
+\item 
+typedef \hyperlink{structow_1_1traits}{ow\+::traits}$<$ Derived $>$\+::Acc {\bfseries V\+PP}\hypertarget{classow__core_1_1StateDifferentiator_ac96f46231eb3540b6b4e109560f358b2}{}\label{classow__core_1_1StateDifferentiator_ac96f46231eb3540b6b4e109560f358b2}
+
+\item 
+typedef \hyperlink{structow_1_1traits}{ow\+::traits}$<$ Derived $>$\+::Effort {\bfseries VF}\hypertarget{classow__core_1_1StateDifferentiator_ae1d2a3446d63802a92ab92af38ca2416}{}\label{classow__core_1_1StateDifferentiator_ae1d2a3446d63802a92ab92af38ca2416}
+
+\item 
+typedef \hyperlink{classow__core_1_1IScalarDifferentiation}{I\+Scalar\+Differentiation}$<$ Scalar $>$ {\bfseries I\+Diff}\hypertarget{classow__core_1_1StateDifferentiator_aa480c26fbeb1b3b89a24076ad0a6d1e2}{}\label{classow__core_1_1StateDifferentiator_aa480c26fbeb1b3b89a24076ad0a6d1e2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1StateDifferentiator_a6048852707de851d439e256a33f5b5ce}{State\+Differentiator} (const \hyperlink{classow__core_1_1IScalarDifferentiation}{I\+Diff} \&algo)\hypertarget{classow__core_1_1StateDifferentiator_a6048852707de851d439e256a33f5b5ce}{}\label{classow__core_1_1StateDifferentiator_a6048852707de851d439e256a33f5b5ce}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1StateDifferentiator_a0822aa59f5d75d187ba6dddecf6fe4f6}{$\sim$\+State\+Differentiator} ()\hypertarget{classow__core_1_1StateDifferentiator_a0822aa59f5d75d187ba6dddecf6fe4f6}{}\label{classow__core_1_1StateDifferentiator_a0822aa59f5d75d187ba6dddecf6fe4f6}
+
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__core_1_1StateDifferentiator_a4e4f03834a67723a04080d7348e26991}{valid} () const 
+\begin{DoxyCompactList}\small\item\em Returns whether the ouput is valid. \end{DoxyCompactList}\item 
+Derived \hyperlink{classow__core_1_1StateDifferentiator_a0c906b6d46092792d6477e587a1dba14}{reset} ()
+\begin{DoxyCompactList}\small\item\em Reset the differentiation. \end{DoxyCompactList}\item 
+Derived \hyperlink{classow__core_1_1StateDifferentiator_a6ff71184a001094e0b1a2ae961dec0dc}{reset} (const Derived \&state)
+\begin{DoxyCompactList}\small\item\em Reset the differentiation. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1StateDifferentiator_a8988637f882760cd29de03134a474cdb}{add} (const Derived \&state)
+\begin{DoxyCompactList}\small\item\em Adds new sample to algorithm. \end{DoxyCompactList}\item 
+Derived \& \hyperlink{classow__core_1_1StateDifferentiator_ab6181e44eefa72fb262311ef17486321}{update} (Derived \&state)
+\begin{DoxyCompactList}\small\item\em Update the differentiation for the next step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ }\\Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \& \hyperlink{classow__core_1_1StateDifferentiator_ab213889533c6acaeb0200ae6888a1e17}{convert\+To\+Velocity} (Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&vel, const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&posP, const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&pos)
+\begin{DoxyCompactList}\small\item\em Conversion of Position Type to Velocity Type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\\hyperlink{classow__core_1_1AngularVelocity}{ow\+::\+Angular\+Velocity} \& \hyperlink{classow__core_1_1StateDifferentiator_aabad1cb2f6df64e2694490c791f93bd7}{convert\+To\+Velocity} (\hyperlink{classow__core_1_1AngularVelocity}{ow\+::\+Angular\+Velocity} \&omega, const \hyperlink{classow__core_1_1AngularPositionBase}{ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived1 $>$ \&QP, const \hyperlink{classow__core_1_1AngularPositionBase}{ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived2 $>$ \&Q)
+\begin{DoxyCompactList}\small\item\em Conversion of Position Type to Velocity Type. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianVelocity}{ow\+::\+Cartesian\+Velocity} \& \hyperlink{classow__core_1_1StateDifferentiator_a4151b65061e3e31528d8283e417174bb}{convert\+To\+Velocity} (\hyperlink{classow__core_1_1CartesianVelocity}{ow\+::\+Cartesian\+Velocity} \&vel, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&XP, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&X)
+\begin{DoxyCompactList}\small\item\em Conversion of Position Type to Velocity Type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ }\\Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \& \hyperlink{classow__core_1_1StateDifferentiator_a6fd4f559a8ca0cd4317059d79c5d2046}{convert\+To\+Acceleration} (Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&acc, const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&velP, const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&vel)
+\begin{DoxyCompactList}\small\item\em Conversion of Velocity Type to Acceleration Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1MatrixAlgorithm}{Matrix\+Algorithm}$<$ V $>$ \hyperlink{classow__core_1_1StateDifferentiator_ad428b0aed82b02f4db85574ede7be001}{diff1\+\_\+}\hypertarget{classow__core_1_1StateDifferentiator_ad428b0aed82b02f4db85574ede7be001}{}\label{classow__core_1_1StateDifferentiator_ad428b0aed82b02f4db85574ede7be001}
+
+\begin{DoxyCompactList}\small\item\em The differentation for velocities. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1MatrixAlgorithm}{Matrix\+Algorithm}$<$ VP $>$ \hyperlink{classow__core_1_1StateDifferentiator_a2f4097501a744ed53fce9e43e64106ec}{diff2\+\_\+}\hypertarget{classow__core_1_1StateDifferentiator_a2f4097501a744ed53fce9e43e64106ec}{}\label{classow__core_1_1StateDifferentiator_a2f4097501a744ed53fce9e43e64106ec}
+
+\begin{DoxyCompactList}\small\item\em The differentation for accelerations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Derived$>$\\*
+class ow\+\_\+core\+::\+State\+Differentiator$<$ \+\_\+\+Derived $>$}
+
+The \hyperlink{classow__core_1_1StateDifferentiator}{State\+Differentiator} class. 
+
+This class takes the current position of a state class and updates the current velocity and accelerations.
+
+The \+\_\+\+Derived template parameter has to be derived from \hyperlink{classow__core_1_1StateBase}{ow\+\_\+core\+::\+State\+Base} thus belong to the group of state type classes. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}!add@{add}}
+\index{add@{add}!ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}}
+\subsubsection[{\texorpdfstring{add(const Derived \&state)}{add(const Derived &state)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ void {\bf ow\+\_\+core\+::\+State\+Differentiator}$<$ \+\_\+\+Derived $>$\+::add (
+\begin{DoxyParamCaption}
+\item[{const Derived \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1StateDifferentiator_a8988637f882760cd29de03134a474cdb}{}\label{classow__core_1_1StateDifferentiator_a8988637f882760cd29de03134a474cdb}
+
+
+Adds new sample to algorithm. 
+
+Could be used to populate buffer, before algorithm is used by update. \index{ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}!convert\+To\+Acceleration@{convert\+To\+Acceleration}}
+\index{convert\+To\+Acceleration@{convert\+To\+Acceleration}!ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}}
+\subsubsection[{\texorpdfstring{convert\+To\+Acceleration(\+Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&acc, const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&vel\+P, const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&vel)}{convertToAcceleration(Eigen::MatrixBase< Derived1 > &acc, const Eigen::MatrixBase< Derived2 > &velP, const Eigen::MatrixBase< Derived3 > &vel)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ Eigen\+::\+Matrix\+Base$<$Derived1$>$\& {\bf ow\+\_\+core\+::\+State\+Differentiator}$<$ \+\_\+\+Derived $>$\+::convert\+To\+Acceleration (
+\begin{DoxyParamCaption}
+\item[{Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&}]{acc, }
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&}]{velP, }
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&}]{vel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1StateDifferentiator_a6fd4f559a8ca0cd4317059d79c5d2046}{}\label{classow__core_1_1StateDifferentiator_a6fd4f559a8ca0cd4317059d79c5d2046}
+
+
+Conversion of Velocity Type to Acceleration Type. 
+
+This function covers the general case for which the acceleration is directly given by the time derivative of the velocity. \begin{DoxyNote}{Note}
+there is no special case, everything is cartesian. 
+\end{DoxyNote}
+\index{ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}!convert\+To\+Velocity@{convert\+To\+Velocity}}
+\index{convert\+To\+Velocity@{convert\+To\+Velocity}!ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}}
+\subsubsection[{\texorpdfstring{convert\+To\+Velocity(\+Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&vel, const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&pos\+P, const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&pos)}{convertToVelocity(Eigen::MatrixBase< Derived1 > &vel, const Eigen::MatrixBase< Derived2 > &posP, const Eigen::MatrixBase< Derived3 > &pos)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ Eigen\+::\+Matrix\+Base$<$Derived1$>$\& {\bf ow\+\_\+core\+::\+State\+Differentiator}$<$ \+\_\+\+Derived $>$\+::convert\+To\+Velocity (
+\begin{DoxyParamCaption}
+\item[{Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&}]{vel, }
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&}]{posP, }
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1StateDifferentiator_ab213889533c6acaeb0200ae6888a1e17}{}\label{classow__core_1_1StateDifferentiator_ab213889533c6acaeb0200ae6888a1e17}
+
+
+Conversion of Position Type to Velocity Type. 
+
+This function covers the general case for which the velocity is directly given by the time derivative of the position. \index{ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}!convert\+To\+Velocity@{convert\+To\+Velocity}}
+\index{convert\+To\+Velocity@{convert\+To\+Velocity}!ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}}
+\subsubsection[{\texorpdfstring{convert\+To\+Velocity(ow\+::\+Angular\+Velocity \&omega, const ow\+\_\+core\+::\+Angular\+Position\+Base$<$ Derived1 $>$ \&\+Q\+P, const ow\+\_\+core\+::\+Angular\+Position\+Base$<$ Derived2 $>$ \&\+Q)}{convertToVelocity(ow::AngularVelocity &omega, const ow_core::AngularPositionBase< Derived1 > &QP, const ow_core::AngularPositionBase< Derived2 > &Q)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ template$<$typename Derived1 , typename Derived2 $>$ {\bf ow\+::\+Angular\+Velocity}\& {\bf ow\+\_\+core\+::\+State\+Differentiator}$<$ \+\_\+\+Derived $>$\+::convert\+To\+Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Angular\+Velocity} \&}]{omega, }
+\item[{const {\bf ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived1 $>$ \&}]{QP, }
+\item[{const {\bf ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived2 $>$ \&}]{Q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1StateDifferentiator_aabad1cb2f6df64e2694490c791f93bd7}{}\label{classow__core_1_1StateDifferentiator_aabad1cb2f6df64e2694490c791f93bd7}
+
+
+Conversion of Position Type to Velocity Type. 
+
+This function covers the special case for Angular\+Positions to Angular\+Velocities. This requires the time derivative of the \hyperlink{classow__core_1_1AngularPosition}{Angular\+Position} and the current \hyperlink{classow__core_1_1AngularPosition}{Angular\+Position}. \index{ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}!convert\+To\+Velocity@{convert\+To\+Velocity}}
+\index{convert\+To\+Velocity@{convert\+To\+Velocity}!ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}}
+\subsubsection[{\texorpdfstring{convert\+To\+Velocity(ow\+::\+Cartesian\+Velocity \&vel, const ow\+::\+Cartesian\+Position \&\+X\+P, const ow\+::\+Cartesian\+Position \&\+X)}{convertToVelocity(ow::CartesianVelocity &vel, const ow::CartesianPosition &XP, const ow::CartesianPosition &X)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ {\bf ow\+::\+Cartesian\+Velocity}\& {\bf ow\+\_\+core\+::\+State\+Differentiator}$<$ \+\_\+\+Derived $>$\+::convert\+To\+Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Cartesian\+Velocity} \&}]{vel, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{XP, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{X}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1StateDifferentiator_a4151b65061e3e31528d8283e417174bb}{}\label{classow__core_1_1StateDifferentiator_a4151b65061e3e31528d8283e417174bb}
+
+
+Conversion of Position Type to Velocity Type. 
+
+This function covers the special case for Cartesian\+Positions to Cartesian\+Velocities. This requires the time derivative of the \hyperlink{classow__core_1_1CartesianPosition}{Cartesian\+Position} and the current \hyperlink{classow__core_1_1CartesianPosition}{Cartesian\+Position}. \index{ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}!reset@{reset}}
+\index{reset@{reset}!ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ Derived {\bf ow\+\_\+core\+::\+State\+Differentiator}$<$ \+\_\+\+Derived $>$\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1StateDifferentiator_a0c906b6d46092792d6477e587a1dba14}{}\label{classow__core_1_1StateDifferentiator_a0c906b6d46092792d6477e587a1dba14}
+
+
+Reset the differentiation. 
+
+Reset all differentiation algorithms. \index{ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}!reset@{reset}}
+\index{reset@{reset}!ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}}
+\subsubsection[{\texorpdfstring{reset(const Derived \&state)}{reset(const Derived &state)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ Derived {\bf ow\+\_\+core\+::\+State\+Differentiator}$<$ \+\_\+\+Derived $>$\+::reset (
+\begin{DoxyParamCaption}
+\item[{const Derived \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1StateDifferentiator_a6ff71184a001094e0b1a2ae961dec0dc}{}\label{classow__core_1_1StateDifferentiator_a6ff71184a001094e0b1a2ae961dec0dc}
+
+
+Reset the differentiation. 
+
+Reset all differentiation algorithms to a given state \index{ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}!update@{update}}
+\index{update@{update}!ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}}
+\subsubsection[{\texorpdfstring{update(\+Derived \&state)}{update(Derived &state)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ Derived\& {\bf ow\+\_\+core\+::\+State\+Differentiator}$<$ \+\_\+\+Derived $>$\+::update (
+\begin{DoxyParamCaption}
+\item[{Derived \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1StateDifferentiator_ab6181e44eefa72fb262311ef17486321}{}\label{classow__core_1_1StateDifferentiator_ab6181e44eefa72fb262311ef17486321}
+
+
+Update the differentiation for the next step. 
+
+
+\begin{DoxyItemize}
+\item Takes the new state {\itshape state},
+\item Updates the history, and
+\item computes and updates the velocites and acceleration of the state.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+the updated state. 
+\end{DoxyReturn}
+\index{ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}!valid@{valid}}
+\index{valid@{valid}!ow\+\_\+core\+::\+State\+Differentiator@{ow\+\_\+core\+::\+State\+Differentiator}}
+\subsubsection[{\texorpdfstring{valid() const }{valid() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ bool {\bf ow\+\_\+core\+::\+State\+Differentiator}$<$ \+\_\+\+Derived $>$\+::valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1StateDifferentiator_a4e4f03834a67723a04080d7348e26991}{}\label{classow__core_1_1StateDifferentiator_a4e4f03834a67723a04080d7348e26991}
+
+
+Returns whether the ouput is valid. 
+
+Return true if algorithm accumulated enougth samples to fill buffer. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/algorithms/\hyperlink{state__differentiator_8h}{state\+\_\+differentiator.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,140 @@
+\hypertarget{classow_1_1IJointTracker}{}\section{ow\+:\+:I\+Joint\+Tracker Class Reference}
+\label{classow_1_1IJointTracker}\index{ow\+::\+I\+Joint\+Tracker@{ow\+::\+I\+Joint\+Tracker}}
+
+
+The \hyperlink{classow_1_1IJointTracker}{I\+Joint\+Tracker} class.  
+
+
+
+
+{\ttfamily \#include $<$i\+\_\+joint\+\_\+tracker.\+h$>$}
+
+Inheritance diagram for ow\+:\+:I\+Joint\+Tracker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d6/d14/classow_1_1IJointTracker}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+Joint\+Tracker} (const std\+::string \&\hyperlink{classow_1_1GenericModuleBase_a4b712883728cdbab7779e27f9a23689c}{name})\hypertarget{classow_1_1IJointTracker_a8578fc494ac0ff9ff9a0b2e2b97e9d01}{}\label{classow_1_1IJointTracker_a8578fc494ac0ff9ff9a0b2e2b97e9d01}
+
+\item 
+virtual \hyperlink{classow_1_1IJointTracker_ae26362321b1e6dc8150e978f6cbbe387}{$\sim$\+I\+Joint\+Tracker} ()\hypertarget{classow_1_1IJointTracker_ae26362321b1e6dc8150e978f6cbbe387}{}\label{classow_1_1IJointTracker_ae26362321b1e6dc8150e978f6cbbe387}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1JointState}{Joint\+State} \& \hyperlink{classow_1_1IJointTracker_a8a4ce3e09de0d9acfab14b80a62b9352}{joint\+State} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{Scalar} \hyperlink{classow_1_1IJointTracker_a5de973fc5cf10ad744b5751af37892a8}{left\+Ankle\+Offset} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{Scalar} \hyperlink{classow_1_1IJointTracker_a0ff75a18547b825e1ffa392e1d5c5867}{left\+Groin\+Offset} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{Scalar} \hyperlink{classow_1_1IJointTracker_a7310e8148f5eb9240edee6ffe54e6c1f}{right\+Ankle\+Offset} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{Scalar} \hyperlink{classow_1_1IJointTracker_abe7480bfd77df5330890aabdce15fea5}{right\+Groin\+Offset} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow_1_1IJointTracker}{I\+Joint\+Tracker} class. 
+
+Interface class. 
+
+\subsection{Member Function Documentation}
+\index{ow\+::\+I\+Joint\+Tracker@{ow\+::\+I\+Joint\+Tracker}!joint\+State@{joint\+State}}
+\index{joint\+State@{joint\+State}!ow\+::\+I\+Joint\+Tracker@{ow\+::\+I\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{joint\+State() const =0}{jointState() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf Joint\+State}\& ow\+::\+I\+Joint\+Tracker\+::joint\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IJointTracker_a8a4ce3e09de0d9acfab14b80a62b9352}{}\label{classow_1_1IJointTracker_a8a4ce3e09de0d9acfab14b80a62b9352}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Joint\+State of the robot computed by IK. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__joint__tracker_1_1JointTracker_af842785d3dc2da148bafc02b1164d159}{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}.
+
+\index{ow\+::\+I\+Joint\+Tracker@{ow\+::\+I\+Joint\+Tracker}!left\+Ankle\+Offset@{left\+Ankle\+Offset}}
+\index{left\+Ankle\+Offset@{left\+Ankle\+Offset}!ow\+::\+I\+Joint\+Tracker@{ow\+::\+I\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{left\+Ankle\+Offset() const =0}{leftAnkleOffset() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Scalar} ow\+::\+I\+Joint\+Tracker\+::left\+Ankle\+Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IJointTracker_a5de973fc5cf10ad744b5751af37892a8}{}\label{classow_1_1IJointTracker_a5de973fc5cf10ad744b5751af37892a8}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+left ankle offset. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__joint__tracker_1_1JointTracker_aab451e9ffc7206aee5a47f46e83c794e}{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}.
+
+\index{ow\+::\+I\+Joint\+Tracker@{ow\+::\+I\+Joint\+Tracker}!left\+Groin\+Offset@{left\+Groin\+Offset}}
+\index{left\+Groin\+Offset@{left\+Groin\+Offset}!ow\+::\+I\+Joint\+Tracker@{ow\+::\+I\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{left\+Groin\+Offset() const =0}{leftGroinOffset() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Scalar} ow\+::\+I\+Joint\+Tracker\+::left\+Groin\+Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IJointTracker_a0ff75a18547b825e1ffa392e1d5c5867}{}\label{classow_1_1IJointTracker_a0ff75a18547b825e1ffa392e1d5c5867}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+left groin offset. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__joint__tracker_1_1JointTracker_ad55380ea860fc9a2269fb124166c01ed}{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}.
+
+\index{ow\+::\+I\+Joint\+Tracker@{ow\+::\+I\+Joint\+Tracker}!right\+Ankle\+Offset@{right\+Ankle\+Offset}}
+\index{right\+Ankle\+Offset@{right\+Ankle\+Offset}!ow\+::\+I\+Joint\+Tracker@{ow\+::\+I\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{right\+Ankle\+Offset() const =0}{rightAnkleOffset() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Scalar} ow\+::\+I\+Joint\+Tracker\+::right\+Ankle\+Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IJointTracker_a7310e8148f5eb9240edee6ffe54e6c1f}{}\label{classow_1_1IJointTracker_a7310e8148f5eb9240edee6ffe54e6c1f}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+right ankle offset. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__joint__tracker_1_1JointTracker_a9348bc94acdc330642adf4c23a6250b6}{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}.
+
+\index{ow\+::\+I\+Joint\+Tracker@{ow\+::\+I\+Joint\+Tracker}!right\+Groin\+Offset@{right\+Groin\+Offset}}
+\index{right\+Groin\+Offset@{right\+Groin\+Offset}!ow\+::\+I\+Joint\+Tracker@{ow\+::\+I\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{right\+Groin\+Offset() const =0}{rightGroinOffset() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Scalar} ow\+::\+I\+Joint\+Tracker\+::right\+Groin\+Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IJointTracker_abe7480bfd77df5330890aabdce15fea5}{}\label{classow_1_1IJointTracker_abe7480bfd77df5330890aabdce15fea5}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+right groin offset. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__joint__tracker_1_1JointTracker_ae742bb9f8ef753a664ad612bab6fb962}{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/interfaces/\hyperlink{i__joint__tracker_8h}{i\+\_\+joint\+\_\+tracker.\+h}\end{DoxyCompactItemize}

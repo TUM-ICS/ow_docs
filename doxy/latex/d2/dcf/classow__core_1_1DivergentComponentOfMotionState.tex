@@ -1,0 +1,136 @@
+\hypertarget{classow__core_1_1DivergentComponentOfMotionState}{}\section{ow\+\_\+core\+:\+:Divergent\+Component\+Of\+Motion\+State$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1DivergentComponentOfMotionState}\index{ow\+\_\+core\+::\+Divergent\+Component\+Of\+Motion\+State$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Divergent\+Component\+Of\+Motion\+State$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{Divergent\+Component\+Of\+Motion\+State} class.  
+
+
+
+
+{\ttfamily \#include $<$divergent\+\_\+component\+\_\+of\+\_\+motion\+\_\+state.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Divergent\+Component\+Of\+Motion\+State$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d2/dcf/classow__core_1_1DivergentComponentOfMotionState}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1DivergentComponentOfMotionState_aa1e90b99e69d416a107aa9e9a6dafc96}{}\label{classow__core_1_1DivergentComponentOfMotionState_aa1e90b99e69d416a107aa9e9a6dafc96}
+
+\item 
+typedef \hyperlink{classow__core_1_1LinearStateBase}{Linear\+State\+Base}$<$ \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{Divergent\+Component\+Of\+Motion\+State}$<$ Scalar $>$ $>$ {\bfseries Base}\hypertarget{classow__core_1_1DivergentComponentOfMotionState_a7f3d720364834ceab27205bccb69c884}{}\label{classow__core_1_1DivergentComponentOfMotionState_a7f3d720364834ceab27205bccb69c884}
+
+\item 
+typedef \hyperlink{classow__core_1_1DivergentComponentOfMotion}{Divergent\+Component\+Of\+Motion}$<$ Scalar $>$ {\bfseries Pos}\hypertarget{classow__core_1_1DivergentComponentOfMotionState_afcc64f31c09e0c2770d803dcaa4250aa}{}\label{classow__core_1_1DivergentComponentOfMotionState_afcc64f31c09e0c2770d803dcaa4250aa}
+
+\item 
+typedef \hyperlink{classow__core_1_1DivergentComponentOfMotionVelocity}{Divergent\+Component\+Of\+Motion\+Velocity}$<$ Scalar $>$ {\bfseries Vel}\hypertarget{classow__core_1_1DivergentComponentOfMotionState_a06dd0dcfadebaedd75666ad9b49bade7}{}\label{classow__core_1_1DivergentComponentOfMotionState_a06dd0dcfadebaedd75666ad9b49bade7}
+
+\item 
+typedef \hyperlink{classow__core_1_1DivergentComponentOfMotionAcceleration}{Divergent\+Component\+Of\+Motion\+Acceleration}$<$ Scalar $>$ {\bfseries Acc}\hypertarget{classow__core_1_1DivergentComponentOfMotionState_ac5b89d0f686395e466156b8a0b16b215}{}\label{classow__core_1_1DivergentComponentOfMotionState_ac5b89d0f686395e466156b8a0b16b215}
+
+\item 
+typedef \hyperlink{classow__core_1_1Force}{Force}$<$ Scalar $>$ {\bfseries Effort}\hypertarget{classow__core_1_1DivergentComponentOfMotionState_ade6c0e449b7c2e89c614348974c02fc6}{}\label{classow__core_1_1DivergentComponentOfMotionState_ade6c0e449b7c2e89c614348974c02fc6}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionState_ac7709a449287ded519658ec2bc625488}{Divergent\+Component\+Of\+Motion\+State} ()\hypertarget{classow__core_1_1DivergentComponentOfMotionState_ac7709a449287ded519658ec2bc625488}{}\label{classow__core_1_1DivergentComponentOfMotionState_ac7709a449287ded519658ec2bc625488}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionState_a247a6c466eb18c499b58596c6436db40}{Divergent\+Component\+Of\+Motion\+State} (const \hyperlink{classow__core_1_1LinearStateBase}{Base} \&other)\hypertarget{classow__core_1_1DivergentComponentOfMotionState_a247a6c466eb18c499b58596c6436db40}{}\label{classow__core_1_1DivergentComponentOfMotionState_a247a6c466eb18c499b58596c6436db40}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionState_af044ab7c8347c0c59752dc06591ad8b2}{Divergent\+Component\+Of\+Motion\+State} (const \hyperlink{classow__core_1_1DivergentComponentOfMotion}{Pos} \&p, const \hyperlink{classow__core_1_1DivergentComponentOfMotionVelocity}{Vel} \&pP=Vel\+::\+Zero(), const \hyperlink{classow__core_1_1DivergentComponentOfMotionAcceleration}{Acc} \&p\+PP=Acc\+::\+Zero(), const \hyperlink{classow__core_1_1Force}{Effort} \&f=Effort\+::\+Zero())\hypertarget{classow__core_1_1DivergentComponentOfMotionState_af044ab7c8347c0c59752dc06591ad8b2}{}\label{classow__core_1_1DivergentComponentOfMotionState_af044ab7c8347c0c59752dc06591ad8b2}
+
+\begin{DoxyCompactList}\small\item\em Constructor from sub elements. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotion}{Pos} \& {\bfseries p} ()\hypertarget{classow__core_1_1DivergentComponentOfMotionState_a0f85578292fd3ab6aaa95d6c85cbb3e9}{}\label{classow__core_1_1DivergentComponentOfMotionState_a0f85578292fd3ab6aaa95d6c85cbb3e9}
+
+\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotion}{Pos} \& {\bfseries pos} ()\hypertarget{classow__core_1_1DivergentComponentOfMotionState_a5347c1e784d117fe3a4f81209ab53e20}{}\label{classow__core_1_1DivergentComponentOfMotionState_a5347c1e784d117fe3a4f81209ab53e20}
+
+\item 
+const \hyperlink{classow__core_1_1DivergentComponentOfMotion}{Pos} \& {\bfseries p} () const \hypertarget{classow__core_1_1DivergentComponentOfMotionState_a0a14ee9a4b6fd596df1354e8312cfaff}{}\label{classow__core_1_1DivergentComponentOfMotionState_a0a14ee9a4b6fd596df1354e8312cfaff}
+
+\item 
+const \hyperlink{classow__core_1_1DivergentComponentOfMotion}{Pos} \& {\bfseries pos} () const \hypertarget{classow__core_1_1DivergentComponentOfMotionState_a61eb12ab70dba14285a4584e2ba839b2}{}\label{classow__core_1_1DivergentComponentOfMotionState_a61eb12ab70dba14285a4584e2ba839b2}
+
+\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionVelocity}{Vel} \& {\bfseries pP} ()\hypertarget{classow__core_1_1DivergentComponentOfMotionState_ae6c3c1fb056c58557200ff5c9fcca844}{}\label{classow__core_1_1DivergentComponentOfMotionState_ae6c3c1fb056c58557200ff5c9fcca844}
+
+\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionVelocity}{Vel} \& {\bfseries vel} ()\hypertarget{classow__core_1_1DivergentComponentOfMotionState_a310c2c74750c6f7c98a4add8f2b0432a}{}\label{classow__core_1_1DivergentComponentOfMotionState_a310c2c74750c6f7c98a4add8f2b0432a}
+
+\item 
+const \hyperlink{classow__core_1_1DivergentComponentOfMotionVelocity}{Vel} \& {\bfseries pP} () const \hypertarget{classow__core_1_1DivergentComponentOfMotionState_a4291e4ce5821f265554e7050900125b1}{}\label{classow__core_1_1DivergentComponentOfMotionState_a4291e4ce5821f265554e7050900125b1}
+
+\item 
+const \hyperlink{classow__core_1_1DivergentComponentOfMotionVelocity}{Vel} \& {\bfseries vel} () const \hypertarget{classow__core_1_1DivergentComponentOfMotionState_a64f790efd85841a8ed97eb089350e426}{}\label{classow__core_1_1DivergentComponentOfMotionState_a64f790efd85841a8ed97eb089350e426}
+
+\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionAcceleration}{Acc} \& {\bfseries p\+PP} ()\hypertarget{classow__core_1_1DivergentComponentOfMotionState_aa5e1a27c04c7f027be83adf1d5d1384a}{}\label{classow__core_1_1DivergentComponentOfMotionState_aa5e1a27c04c7f027be83adf1d5d1384a}
+
+\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionAcceleration}{Acc} \& {\bfseries acc} ()\hypertarget{classow__core_1_1DivergentComponentOfMotionState_ac2001ce37b10383867ecda633a98391d}{}\label{classow__core_1_1DivergentComponentOfMotionState_ac2001ce37b10383867ecda633a98391d}
+
+\item 
+const \hyperlink{classow__core_1_1DivergentComponentOfMotionAcceleration}{Acc} \& {\bfseries p\+PP} () const \hypertarget{classow__core_1_1DivergentComponentOfMotionState_aa5c68b18301009b092fadf3d360a99df}{}\label{classow__core_1_1DivergentComponentOfMotionState_aa5c68b18301009b092fadf3d360a99df}
+
+\item 
+const \hyperlink{classow__core_1_1DivergentComponentOfMotionAcceleration}{Acc} \& {\bfseries acc} () const \hypertarget{classow__core_1_1DivergentComponentOfMotionState_acca74e8af28a1eeb45820169c4116af5}{}\label{classow__core_1_1DivergentComponentOfMotionState_acca74e8af28a1eeb45820169c4116af5}
+
+\item 
+\hyperlink{classow__core_1_1Force}{Effort} \& {\bfseries f} ()\hypertarget{classow__core_1_1DivergentComponentOfMotionState_ad8d49e393fd97fedc2b12b55ca5b1f02}{}\label{classow__core_1_1DivergentComponentOfMotionState_ad8d49e393fd97fedc2b12b55ca5b1f02}
+
+\item 
+\hyperlink{classow__core_1_1Force}{Effort} \& {\bfseries effort} ()\hypertarget{classow__core_1_1DivergentComponentOfMotionState_ab5144244c33f2da946707edac73427ee}{}\label{classow__core_1_1DivergentComponentOfMotionState_ab5144244c33f2da946707edac73427ee}
+
+\item 
+const \hyperlink{classow__core_1_1Force}{Effort} \& {\bfseries f} () const \hypertarget{classow__core_1_1DivergentComponentOfMotionState_a905bbe8520465c673753b88552d3bcb2}{}\label{classow__core_1_1DivergentComponentOfMotionState_a905bbe8520465c673753b88552d3bcb2}
+
+\item 
+const \hyperlink{classow__core_1_1Force}{Effort} \& {\bfseries effort} () const \hypertarget{classow__core_1_1DivergentComponentOfMotionState_a34ac56f2ecbcccd2ab06d671619ed2a2}{}\label{classow__core_1_1DivergentComponentOfMotionState_a34ac56f2ecbcccd2ab06d671619ed2a2}
+
+\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionState}{Divergent\+Component\+Of\+Motion\+State} \& \hyperlink{classow__core_1_1DivergentComponentOfMotionState_a69ae47afc40a4c3c54e92bcacad4ae0a}{operator=} (const \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{Divergent\+Component\+Of\+Motion\+State} \&other)\hypertarget{classow__core_1_1DivergentComponentOfMotionState_a69ae47afc40a4c3c54e92bcacad4ae0a}{}\label{classow__core_1_1DivergentComponentOfMotionState_a69ae47afc40a4c3c54e92bcacad4ae0a}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotion}{Pos} {\bfseries p\+\_\+}\hypertarget{classow__core_1_1DivergentComponentOfMotionState_a909fa38ba48d48aa7b58a166d107f62a}{}\label{classow__core_1_1DivergentComponentOfMotionState_a909fa38ba48d48aa7b58a166d107f62a}
+
+\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionVelocity}{Vel} {\bfseries p\+P\+\_\+}\hypertarget{classow__core_1_1DivergentComponentOfMotionState_af7ebc00b916a01329339a1fb90f8017c}{}\label{classow__core_1_1DivergentComponentOfMotionState_af7ebc00b916a01329339a1fb90f8017c}
+
+\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionAcceleration}{Acc} {\bfseries p\+P\+P\+\_\+}\hypertarget{classow__core_1_1DivergentComponentOfMotionState_ac6f5f81a32d15c039b3cbdae0a0993cc}{}\label{classow__core_1_1DivergentComponentOfMotionState_ac6f5f81a32d15c039b3cbdae0a0993cc}
+
+\item 
+\hyperlink{classow__core_1_1Force}{Effort} {\bfseries f\+\_\+}\hypertarget{classow__core_1_1DivergentComponentOfMotionState_a024345a603aa1b89fd0c6ecb830d339f}{}\label{classow__core_1_1DivergentComponentOfMotionState_a024345a603aa1b89fd0c6ecb830d339f}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Divergent\+Component\+Of\+Motion\+State$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{Divergent\+Component\+Of\+Motion\+State} class. 
+
+This class is a container for\+:
+\begin{DoxyItemize}
+\item \hyperlink{classow__core_1_1DivergentComponentOfMotion}{Divergent\+Component\+Of\+Motion}
+\item \hyperlink{classow__core_1_1DivergentComponentOfMotionVelocity}{Divergent\+Component\+Of\+Motion\+Velocity}
+\item \hyperlink{classow__core_1_1DivergentComponentOfMotionAcceleration}{Divergent\+Component\+Of\+Motion\+Acceleration}
+\item \hyperlink{classow__core_1_1Force}{Force} 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/\hyperlink{divergent__component__of__motion__state_8h}{divergent\+\_\+component\+\_\+of\+\_\+motion\+\_\+state.\+h}\end{DoxyCompactItemize}

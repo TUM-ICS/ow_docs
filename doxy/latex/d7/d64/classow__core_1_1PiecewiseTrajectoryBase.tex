@@ -1,0 +1,96 @@
+\hypertarget{classow__core_1_1PiecewiseTrajectoryBase}{}\section{ow\+\_\+core\+:\+:Piecewise\+Trajectory\+Base$<$ \+\_\+\+Value, \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1PiecewiseTrajectoryBase}\index{ow\+\_\+core\+::\+Piecewise\+Trajectory\+Base$<$ \+\_\+\+Value, \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Piecewise\+Trajectory\+Base$<$ \+\_\+\+Value, \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1PiecewiseTrajectoryBase}{Piecewise\+Trajectory\+Base} class.  
+
+
+
+
+{\ttfamily \#include $<$piecewise\+\_\+trajectory\+\_\+base.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Piecewise\+Trajectory\+Base$<$ \+\_\+\+Value, \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d7/d64/classow__core_1_1PiecewiseTrajectoryBase}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1PiecewiseTrajectoryBase_a76cb835715513272501ca241e3836caf}{}\label{classow__core_1_1PiecewiseTrajectoryBase_a76cb835715513272501ca241e3836caf}
+
+\item 
+typedef std\+::vector$<$ Scalar $>$ {\bfseries Scalar\+Vec}\hypertarget{classow__core_1_1PiecewiseTrajectoryBase_a888723711d232a56664e6f10ab1b8821}{}\label{classow__core_1_1PiecewiseTrajectoryBase_a888723711d232a56664e6f10ab1b8821}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1PiecewiseTrajectoryBase_a53d4ad3fe326d8491b7edb6d01622baa}{Piecewise\+Trajectory\+Base} (const Scalar\+Vec \&segments)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__core_1_1PiecewiseTrajectoryBase_ab5da82bb273a05c6f22c5e889f858df4}{$\sim$\+Piecewise\+Trajectory\+Base} ()\hypertarget{classow__core_1_1PiecewiseTrajectoryBase_ab5da82bb273a05c6f22c5e889f858df4}{}\label{classow__core_1_1PiecewiseTrajectoryBase_ab5da82bb273a05c6f22c5e889f858df4}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+int \hyperlink{classow__core_1_1PiecewiseTrajectoryBase_a19b563f322f931373b6f5f5c7415b849}{number\+Of\+Segments} () const \hypertarget{classow__core_1_1PiecewiseTrajectoryBase_a19b563f322f931373b6f5f5c7415b849}{}\label{classow__core_1_1PiecewiseTrajectoryBase_a19b563f322f931373b6f5f5c7415b849}
+
+\begin{DoxyCompactList}\small\item\em get the number of segments. \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1PiecewiseTrajectoryBase_a68e449b49eea796cfcdce6c269817b72}{start\+Time} (int idx) const \hypertarget{classow__core_1_1PiecewiseTrajectoryBase_a68e449b49eea796cfcdce6c269817b72}{}\label{classow__core_1_1PiecewiseTrajectoryBase_a68e449b49eea796cfcdce6c269817b72}
+
+\begin{DoxyCompactList}\small\item\em get start time of a segment \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1PiecewiseTrajectoryBase_a000aeb33f7a1e799259cb7496ed2d9e3}{start\+Time} () const \hypertarget{classow__core_1_1PiecewiseTrajectoryBase_a000aeb33f7a1e799259cb7496ed2d9e3}{}\label{classow__core_1_1PiecewiseTrajectoryBase_a000aeb33f7a1e799259cb7496ed2d9e3}
+
+\begin{DoxyCompactList}\small\item\em get end time of the trajectory \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1PiecewiseTrajectoryBase_a032dfc78353088e7f31f6974e9a776d6}{end\+Time} () const \hypertarget{classow__core_1_1PiecewiseTrajectoryBase_a032dfc78353088e7f31f6974e9a776d6}{}\label{classow__core_1_1PiecewiseTrajectoryBase_a032dfc78353088e7f31f6974e9a776d6}
+
+\begin{DoxyCompactList}\small\item\em get end time of a segment \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1PiecewiseTrajectoryBase_a640bbf51b466c649957c91acdc211d0b}{end\+Time} (int idx) const \hypertarget{classow__core_1_1PiecewiseTrajectoryBase_a640bbf51b466c649957c91acdc211d0b}{}\label{classow__core_1_1PiecewiseTrajectoryBase_a640bbf51b466c649957c91acdc211d0b}
+
+\begin{DoxyCompactList}\small\item\em get end time of a segment \end{DoxyCompactList}\item 
+int \hyperlink{classow__core_1_1PiecewiseTrajectoryBase_a9572de2c48da29f8d221bb2aa7940d5f}{compute\+Segment\+Index} (Scalar t) const \hypertarget{classow__core_1_1PiecewiseTrajectoryBase_a9572de2c48da29f8d221bb2aa7940d5f}{}\label{classow__core_1_1PiecewiseTrajectoryBase_a9572de2c48da29f8d221bb2aa7940d5f}
+
+\begin{DoxyCompactList}\small\item\em compute the segment index that contains time t \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries segment\+Range\+Check} (int idx) const \hypertarget{classow__core_1_1PiecewiseTrajectoryBase_a2149a1711233ec38c54d4ef2666607f5}{}\label{classow__core_1_1PiecewiseTrajectoryBase_a2149a1711233ec38c54d4ef2666607f5}
+
+\item 
+int {\bfseries get\+\_\+semgent\+\_\+idx\+\_\+recursive} (Scalar t, int start, int end) const \hypertarget{classow__core_1_1PiecewiseTrajectoryBase_a2d30dd558d6090babdb8625bb57ad1de}{}\label{classow__core_1_1PiecewiseTrajectoryBase_a2d30dd558d6090babdb8625bb57ad1de}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Scalar\+Vec \hyperlink{classow__core_1_1PiecewiseTrajectoryBase_ae677ff1d36778c37c39dedd975ec3eff}{segments\+\_\+}\hypertarget{classow__core_1_1PiecewiseTrajectoryBase_ae677ff1d36778c37c39dedd975ec3eff}{}\label{classow__core_1_1PiecewiseTrajectoryBase_ae677ff1d36778c37c39dedd975ec3eff}
+
+\begin{DoxyCompactList}\small\item\em vector with segments start time and traj end time \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Value, typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Piecewise\+Trajectory\+Base$<$ \+\_\+\+Value, \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1PiecewiseTrajectoryBase}{Piecewise\+Trajectory\+Base} class. 
+
+The Base class for piecewise trajectories. This Base class has functions for managing trajectories with multiple segments.
+
+Manages the segments of a trajectory. Segments are stored in a vector containing their start time. The last element in the vector contains the end\+Time of the complete trajector segemnts = \mbox{[}t\+\_\+start, t\+\_\+1, t\+\_\+2, ..., t\+\_\+end\mbox{]} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Piecewise\+Trajectory\+Base@{ow\+\_\+core\+::\+Piecewise\+Trajectory\+Base}!Piecewise\+Trajectory\+Base@{Piecewise\+Trajectory\+Base}}
+\index{Piecewise\+Trajectory\+Base@{Piecewise\+Trajectory\+Base}!ow\+\_\+core\+::\+Piecewise\+Trajectory\+Base@{ow\+\_\+core\+::\+Piecewise\+Trajectory\+Base}}
+\subsubsection[{\texorpdfstring{Piecewise\+Trajectory\+Base(const Scalar\+Vec \&segments)}{PiecewiseTrajectoryBase(const ScalarVec &segments)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Value, typename \+\_\+\+Scalar$>$ {\bf ow\+\_\+core\+::\+Piecewise\+Trajectory\+Base}$<$ \+\_\+\+Value, \+\_\+\+Scalar $>$\+::{\bf Piecewise\+Trajectory\+Base} (
+\begin{DoxyParamCaption}
+\item[{const Scalar\+Vec \&}]{segments}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1PiecewiseTrajectoryBase_a53d4ad3fe326d8491b7edb6d01622baa}{}\label{classow__core_1_1PiecewiseTrajectoryBase_a53d4ad3fe326d8491b7edb6d01622baa}
+
+
+Constructor. 
+
+segments is a vector that contrains the start times of all trajectory segemnts and the end time of the last segments segemnts = \mbox{[}t\+\_\+start, t\+\_\+1, t\+\_\+2, ..., t\+\_\+end\mbox{]} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/trajectory/\hyperlink{piecewise__trajectory__base_8h}{piecewise\+\_\+trajectory\+\_\+base.\+h}\end{DoxyCompactItemize}

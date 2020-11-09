@@ -1,0 +1,64 @@
+\hypertarget{state__publisher_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+state\+\_\+publisher/include/ow\+\_\+state\+\_\+publisher/state\+\_\+publisher.h File Reference}
+\label{state__publisher_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+state\+\_\+publisher/include/ow\+\_\+state\+\_\+publisher/state\+\_\+publisher.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+state\+\_\+publisher/include/ow\+\_\+state\+\_\+publisher/state\+\_\+publisher.\+h}}
+{\ttfamily \#include $<$mutex$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/utilities/thread.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+state\+\_\+publisher.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+state\+\_\+publisher/trajectory\+\_\+publisher.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+balancer.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+com\+\_\+estimator.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+com\+\_\+trajectory\+\_\+generator.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+command\+\_\+generator.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+dcm\+\_\+planner.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+foot\+\_\+compliance.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+foot\+\_\+step\+\_\+planner.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+foot\+\_\+trajectory\+\_\+generator.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+inverse\+\_\+kinematics.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+forward\+\_\+kinematics.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+zmp.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+hw\+\_\+interface.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/interfaces/i\+\_\+joint\+\_\+tracker.\+h$>$}\\*
+{\ttfamily \#include $<$nav\+\_\+msgs/\+Path.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+msgs/\+Foot\+Step\+List.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+msgs/\+D\+C\+M\+Point\+Set\+List.\+h$>$}\\*
+{\ttfamily \#include $<$std\+\_\+msgs/\+Float64.\+h$>$}\\*
+{\ttfamily \#include $<$geometry\+\_\+msgs/\+Wrench\+Stamped.\+h$>$}\\*
+{\ttfamily \#include $<$tf/transform\+\_\+broadcaster.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classow__pub_1_1StatePublisher}{ow\+\_\+pub\+::\+State\+Publisher}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classow__pub_1_1StatePublisher}{State\+Publisher} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+03.\+05.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287. 

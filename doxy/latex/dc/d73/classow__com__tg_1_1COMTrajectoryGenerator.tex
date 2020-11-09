@@ -1,0 +1,309 @@
+\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator}{}\section{ow\+\_\+com\+\_\+tg\+:\+:C\+O\+M\+Trajectory\+Generator Class Reference}
+\label{classow__com__tg_1_1COMTrajectoryGenerator}\index{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}}
+
+
+The \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator}{C\+O\+M\+Trajectory\+Generator} class.  
+
+
+
+
+{\ttfamily \#include $<$com\+\_\+trajectory\+\_\+generator.\+h$>$}
+
+Inheritance diagram for ow\+\_\+com\+\_\+tg\+:\+:C\+O\+M\+Trajectory\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{dc/d73/classow__com__tg_1_1COMTrajectoryGenerator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow_1_1ICOMTrajectoryGenerator}{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator} {\bfseries Base}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_af8c347044bd434749420741f0f569094}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_af8c347044bd434749420741f0f569094}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_aa9726f4796c23fa0156caf653a1e5e21}{C\+O\+M\+Trajectory\+Generator} ()\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_aa9726f4796c23fa0156caf653a1e5e21}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_aa9726f4796c23fa0156caf653a1e5e21}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator}{C\+O\+M\+Trajectory\+Generator} Default constructor. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \& \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_acec7a01af30b57cd99962a3e5d7bdf4f}{Z\+M\+P\+\_\+w} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \& \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a611454aadb3bc551ee85753e8135233a}{D\+C\+M\+\_\+w} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_af52006557c655237b92f85dcf10b8b9b}{X\+\_\+com\+\_\+w} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+void \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a872ee75bf3ff7da7cfec45d283061281}{update} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const ros\+::\+Time \&time, const ros\+::\+Duration \&dt)
+\begin{DoxyCompactList}\small\item\em performs update step of the module, called periodically \end{DoxyCompactList}\item 
+bool \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a8aaaf0085e5a95a0bd99c88f2b8e04c1}{start} (const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&X\+\_\+com\+\_\+w\+\_\+init)
+\begin{DoxyCompactList}\small\item\em start \end{DoxyCompactList}\item 
+void \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_aa2391dd6afa57ea9124af290a4ba4287}{dcm\+Plan\+Callback} (const ow\+\_\+msgs\+::\+D\+C\+M\+Point\+Set\+List \&Msg)
+\begin{DoxyCompactList}\small\item\em point\+Sets\+Rec \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_ab0e21245b1f9f873a1df72969ed5e37d}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, ros\+::\+Node\+Handle \&nh)\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_ab0e21245b1f9f873a1df72969ed5e37d}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_ab0e21245b1f9f873a1df72969ed5e37d}
+
+\begin{DoxyCompactList}\small\item\em Initialization of \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator}{C\+O\+M\+Trajectory\+Generator} module. \end{DoxyCompactList}\item 
+void \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_ac25a9836603018d99ba4358e75db1f82}{update\+Flags} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em Update the flags according to the walking pattern. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \& \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_af8c3e0ab08b83e84a3ccf458bb1849c5}{update\+D\+CM} (const \hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags)
+\begin{DoxyCompactList}\small\item\em Update the refference D\+CM trajectory. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a335be76bbad7868d6aebada24ca01bcf}{update\+CoM} (const \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \&D\+CM)
+\begin{DoxyCompactList}\small\item\em update\+CoM \end{DoxyCompactList}\item 
+bool \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a565c271634d4a519a16827daa3180bf3}{update\+D\+C\+M\+Plan} ()
+\begin{DoxyCompactList}\small\item\em update\+D\+C\+M\+Plan \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a7d25071306255c66a01d31aeb3d233c9}{parameter\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a7d25071306255c66a01d31aeb3d233c9}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a7d25071306255c66a01d31aeb3d233c9}
+
+\begin{DoxyCompactList}\small\item\em Configuration of this module. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a6c3e6c3454e8cb166137bfb9a6ef5da9}{Z\+M\+P\+\_\+w\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a6c3e6c3454e8cb166137bfb9a6ef5da9}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a6c3e6c3454e8cb166137bfb9a6ef5da9}
+
+\begin{DoxyCompactList}\small\item\em Reference Z\+MP trajectory. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a31262f1e570f52633816f8dec44d99e7}{D\+C\+M\+\_\+w\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a31262f1e570f52633816f8dec44d99e7}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a31262f1e570f52633816f8dec44d99e7}
+
+\begin{DoxyCompactList}\small\item\em Reference D\+CM trajectory. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a9bebddaf02b801838beaa758fc0cb4e4}{X\+\_\+com\+\_\+w\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a9bebddaf02b801838beaa758fc0cb4e4}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a9bebddaf02b801838beaa758fc0cb4e4}
+
+\begin{DoxyCompactList}\small\item\em Reference CoM trajectory. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_ac3adab379622756fcbb29e4a53d476bc}{update\+\_\+plan\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_ac3adab379622756fcbb29e4a53d476bc}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_ac3adab379622756fcbb29e4a53d476bc}
+
+\begin{DoxyCompactList}\small\item\em A new D\+CM plan was received. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a9190d34c2826775164810c3bc1fd313a}{t\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a9190d34c2826775164810c3bc1fd313a}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a9190d34c2826775164810c3bc1fd313a}
+
+\begin{DoxyCompactList}\small\item\em Current time. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a9def84f3d02ec4ca72fa83cb6f18b47c}{w\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a9def84f3d02ec4ca72fa83cb6f18b47c}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a9def84f3d02ec4ca72fa83cb6f18b47c}
+
+\begin{DoxyCompactList}\small\item\em L\+I\+PM time constant. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a1b72c5a44a8c0cd169de8ad7fd298382}{freq\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a1b72c5a44a8c0cd169de8ad7fd298382}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a1b72c5a44a8c0cd169de8ad7fd298382}
+
+\begin{DoxyCompactList}\small\item\em Module update frequency. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a7db1db8a2a1fa08175d16bad9970162e}{hip\+\_\+height\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a7db1db8a2a1fa08175d16bad9970162e}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a7db1db8a2a1fa08175d16bad9970162e}
+
+\begin{DoxyCompactList}\small\item\em Desired hip height. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a7a7fba11653a15075ada0aef77190692}{hip\+\_\+sagital\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a7a7fba11653a15075ada0aef77190692}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a7a7fba11653a15075ada0aef77190692}
+
+\begin{DoxyCompactList}\small\item\em Hip sagital shift. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_ad5d55e7dcfe760a28134a95ae97707db}{t\+\_\+step\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_ad5d55e7dcfe760a28134a95ae97707db}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_ad5d55e7dcfe760a28134a95ae97707db}
+
+\begin{DoxyCompactList}\small\item\em Step time. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a99eae8ad99f63b2ca6ad8bbd940191b8}{t\+\_\+ds\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a99eae8ad99f63b2ca6ad8bbd940191b8}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a99eae8ad99f63b2ca6ad8bbd940191b8}
+
+\begin{DoxyCompactList}\small\item\em Double support phase time. \end{DoxyCompactList}\item 
+ow\+::\+D\+C\+M\+Point\+Set\+List \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a187fc60fd3f85d244c06e6144824ed2a}{dcm\+\_\+plan\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a187fc60fd3f85d244c06e6144824ed2a}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a187fc60fd3f85d244c06e6144824ed2a}
+
+\begin{DoxyCompactList}\small\item\em D\+CM points set list. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a5a7c5270e0caae09696f6a58ec3e8a0b}{current\+\_\+point\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a5a7c5270e0caae09696f6a58ec3e8a0b}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a5a7c5270e0caae09696f6a58ec3e8a0b}
+
+\begin{DoxyCompactList}\small\item\em Current Point counter. \end{DoxyCompactList}\item 
+ros\+::\+Subscriber \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a6d36f32f2bf06b4fbdba63be46c32d69}{dcm\+\_\+plan\+\_\+sub\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a6d36f32f2bf06b4fbdba63be46c32d69}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a6d36f32f2bf06b4fbdba63be46c32d69}
+
+\begin{DoxyCompactList}\small\item\em Subscriber for D\+CM planner. \end{DoxyCompactList}\item 
+ow\+\_\+msgs\+::\+D\+C\+M\+Point\+Set\+List \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_afd5bed44f65f675f84a530006004400c}{dcm\+\_\+plan\+\_\+msg\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_afd5bed44f65f675f84a530006004400c}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_afd5bed44f65f675f84a530006004400c}
+
+\begin{DoxyCompactList}\small\item\em D\+CM point message received. \end{DoxyCompactList}\item 
+ros\+::\+Async\+Spinner \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_addc8791533a84c00756422df0297f1cd}{spinner\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_addc8791533a84c00756422df0297f1cd}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_addc8791533a84c00756422df0297f1cd}
+
+\begin{DoxyCompactList}\small\item\em Spinner for subscriber callbacks. \end{DoxyCompactList}\item 
+std\+::mutex \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a176401cf956def2343b7da04dc0bb9e4}{mutex\+\_\+}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a176401cf956def2343b7da04dc0bb9e4}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a176401cf956def2343b7da04dc0bb9e4}
+
+\begin{DoxyCompactList}\small\item\em Mutex protection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator}{C\+O\+M\+Trajectory\+Generator} class. 
+
+This class implements the \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator}{C\+O\+M\+Trajectory\+Generator} module of the openwalker framework. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}!D\+C\+M\+\_\+w@{D\+C\+M\+\_\+w}}
+\index{D\+C\+M\+\_\+w@{D\+C\+M\+\_\+w}!ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{D\+C\+M\+\_\+w() const }{DCM_w() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+D\+C\+M\+State}\& ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator\+::\+D\+C\+M\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a611454aadb3bc551ee85753e8135233a}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a611454aadb3bc551ee85753e8135233a}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+D\+C\+M\+State of the Reference trajectory for the D\+CM. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1ICOMTrajectoryGenerator_aaca7b9f4233b9e2e44a586af52e9305d}{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator}.
+
+\index{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}!dcm\+Plan\+Callback@{dcm\+Plan\+Callback}}
+\index{dcm\+Plan\+Callback@{dcm\+Plan\+Callback}!ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{dcm\+Plan\+Callback(const ow\+\_\+msgs\+::\+D\+C\+M\+Point\+Set\+List \&\+Msg)}{dcmPlanCallback(const ow_msgs::DCMPointSetList &Msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator\+::dcm\+Plan\+Callback (
+\begin{DoxyParamCaption}
+\item[{const ow\+\_\+msgs\+::\+D\+C\+M\+Point\+Set\+List \&}]{Msg}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_aa2391dd6afa57ea9124af290a4ba4287}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_aa2391dd6afa57ea9124af290a4ba4287}
+
+
+point\+Sets\+Rec 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Msg} & \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}!start@{start}}
+\index{start@{start}!ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{start(const ow\+::\+Cartesian\+State \&\+X\+\_\+com\+\_\+w\+\_\+init)}{start(const ow::CartesianState &X_com_w_init)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator\+::start (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{X\+\_\+com\+\_\+w\+\_\+init}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a8aaaf0085e5a95a0bd99c88f2b8e04c1}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a8aaaf0085e5a95a0bd99c88f2b8e04c1}
+
+
+start 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X\+\_\+com\+\_\+w\+\_\+init} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}!update@{update}}
+\index{update@{update}!ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{update(ow\+::\+Flags \&flags, const ros\+::\+Time \&time, const ros\+::\+Duration \&dt)}{update(ow::Flags &flags, const ros::Time &time, const ros::Duration &dt)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const ros\+::\+Time \&}]{time, }
+\item[{const ros\+::\+Duration \&}]{dt}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a872ee75bf3ff7da7cfec45d283061281}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a872ee75bf3ff7da7cfec45d283061281}
+
+
+performs update step of the module, called periodically 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & jointstate \\
+\hline
+{\em current} & time \\
+\hline
+{\em current} & deltatime since last call \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}!update\+CoM@{update\+CoM}}
+\index{update\+CoM@{update\+CoM}!ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{update\+Co\+M(const ow\+::\+D\+C\+M\+State \&\+D\+C\+M)}{updateCoM(const ow::DCMState &DCM)}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ow\+::\+Cartesian\+State}\& ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator\+::update\+CoM (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+D\+C\+M\+State} \&}]{D\+CM}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a335be76bbad7868d6aebada24ca01bcf}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a335be76bbad7868d6aebada24ca01bcf}
+
+
+update\+CoM 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+CM} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}!update\+D\+CM@{update\+D\+CM}}
+\index{update\+D\+CM@{update\+D\+CM}!ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{update\+D\+C\+M(const ow\+::\+Flags \&flags)}{updateDCM(const ow::Flags &flags)}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ow\+::\+D\+C\+M\+State}\& ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator\+::update\+D\+CM (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Flags} \&}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_af8c3e0ab08b83e84a3ccf458bb1849c5}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_af8c3e0ab08b83e84a3ccf458bb1849c5}
+
+
+Update the refference D\+CM trajectory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & General Open Walker flags.\\
+\hline
+{\em time} & Current time.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+D\+C\+M\+State wrt world frame $ \mathVecB{\zeta}{w} $ containing $ \mathVecB{\zeta}{W} $, $ \mathVecB{\dot{p}}{W} $, and $ \mathVecB{\ddot{p}}{W} $. 
+\end{DoxyReturn}
+\index{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}!update\+D\+C\+M\+Plan@{update\+D\+C\+M\+Plan}}
+\index{update\+D\+C\+M\+Plan@{update\+D\+C\+M\+Plan}!ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{update\+D\+C\+M\+Plan()}{updateDCMPlan()}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator\+::update\+D\+C\+M\+Plan (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_a565c271634d4a519a16827daa3180bf3}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_a565c271634d4a519a16827daa3180bf3}
+
+
+update\+D\+C\+M\+Plan 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}!update\+Flags@{update\+Flags}}
+\index{update\+Flags@{update\+Flags}!ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{update\+Flags(ow\+::\+Flags \&flags, const ros\+::\+Time \&time)}{updateFlags(ow::Flags &flags, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator\+::update\+Flags (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_ac25a9836603018d99ba4358e75db1f82}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_ac25a9836603018d99ba4358e75db1f82}
+
+
+Update the flags according to the walking pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & General Open Walker flags.\\
+\hline
+{\em time} & Current time. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}!X\+\_\+com\+\_\+w@{X\+\_\+com\+\_\+w}}
+\index{X\+\_\+com\+\_\+w@{X\+\_\+com\+\_\+w}!ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{X\+\_\+com\+\_\+w() const }{X_com_w() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator\+::\+X\+\_\+com\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_af52006557c655237b92f85dcf10b8b9b}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_af52006557c655237b92f85dcf10b8b9b}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State of the Reference trajectory for the CoM. This includes both position and orientation of a virtual link located at the CoM with the same oriantation of the base link. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1ICOMTrajectoryGenerator_aa48c8eb75d6a9ff8752deb2df6aecb01}{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator}.
+
+\index{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}!Z\+M\+P\+\_\+w@{Z\+M\+P\+\_\+w}}
+\index{Z\+M\+P\+\_\+w@{Z\+M\+P\+\_\+w}!ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator@{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{Z\+M\+P\+\_\+w() const }{ZMP_w() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Zero\+Moment\+Point\+State}\& ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator\+::\+Z\+M\+P\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__com__tg_1_1COMTrajectoryGenerator_acec7a01af30b57cd99962a3e5d7bdf4f}{}\label{classow__com__tg_1_1COMTrajectoryGenerator_acec7a01af30b57cd99962a3e5d7bdf4f}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Zero\+Moment\+Point\+State of the Reference trajectory for the Z\+MP. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1ICOMTrajectoryGenerator_a45f42b461f2377055071338ef719aa50}{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+com\+\_\+tg/include/ow\+\_\+com\+\_\+tg/\hyperlink{com__trajectory__generator_8h}{com\+\_\+trajectory\+\_\+generator.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,167 @@
+\hypertarget{classow_1_1IHwInterface}{}\section{ow\+:\+:I\+Hw\+Interface Class Reference}
+\label{classow_1_1IHwInterface}\index{ow\+::\+I\+Hw\+Interface@{ow\+::\+I\+Hw\+Interface}}
+
+
+The \hyperlink{classow_1_1IHwInterface}{I\+Hw\+Interface} class.  
+
+
+
+
+{\ttfamily \#include $<$i\+\_\+hw\+\_\+interface.\+h$>$}
+
+Inheritance diagram for ow\+:\+:I\+Hw\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d0/dda/classow_1_1IHwInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+Hw\+Interface} (const std\+::string \&\hyperlink{classow_1_1GenericModuleBase_a4b712883728cdbab7779e27f9a23689c}{name})\hypertarget{classow_1_1IHwInterface_a44d8add84f4159d31064d29941ac00e5}{}\label{classow_1_1IHwInterface_a44d8add84f4159d31064d29941ac00e5}
+
+\item 
+virtual \hyperlink{classow_1_1IHwInterface_a6d96b2d0bc7b5514be6e36cf598394ae}{$\sim$\+I\+Hw\+Interface} ()\hypertarget{classow_1_1IHwInterface_a6d96b2d0bc7b5514be6e36cf598394ae}{}\label{classow_1_1IHwInterface_a6d96b2d0bc7b5514be6e36cf598394ae}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} \& \hyperlink{classow_1_1IHwInterface_a935479753384efbb726e4117442c000e}{last\+Joint\+State\+Command} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} \& \hyperlink{classow_1_1IHwInterface_aaa3997aae0564e74e42d6517dd15085d}{joint\+State\+Command} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} \& \hyperlink{classow_1_1IHwInterface_a67a68840249d34e26e4d8421f7fa7df8}{joint\+State\+Real} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual bool {\bfseries has\+Imu\+Sensor} () const =0\hypertarget{classow_1_1IHwInterface_a072539c143c30ff1a09f6171f14793d1}{}\label{classow_1_1IHwInterface_a072539c143c30ff1a09f6171f14793d1}
+
+\item 
+virtual const \hyperlink{classow__core_1_1InertialMeasurmentUnitSensor}{ow\+::\+Imu\+Sensor} \& \hyperlink{classow_1_1IHwInterface_ab96192139860a2000cf7f090800daf10}{imu} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \& \hyperlink{classow_1_1IHwInterface_a138666171127477f34eec1be1f6bbadc}{force\+Torque\+Right} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \& \hyperlink{classow_1_1IHwInterface_af25dda9d79de54676fa154706963d798}{force\+Torque\+Left} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow_1_1IHwInterface}{I\+Hw\+Interface} class. 
+
+This is the Interface class that abstracts the robot and gives access to its jointstate and sensor readings.
+
+\hyperlink{classow_1_1IHwInterface}{I\+Hw\+Interface} is used by the controller\+\_\+base class.
+
+This class is special since it directly couples to the ros\+\_\+control\+::interface in the class \hyperlink{ros__control__plugin_8h_source}{ros\+\_\+control\+\_\+plugin.\+h} 
+
+\subsection{Member Function Documentation}
+\index{ow\+::\+I\+Hw\+Interface@{ow\+::\+I\+Hw\+Interface}!force\+Torque\+Left@{force\+Torque\+Left}}
+\index{force\+Torque\+Left@{force\+Torque\+Left}!ow\+::\+I\+Hw\+Interface@{ow\+::\+I\+Hw\+Interface}}
+\subsubsection[{\texorpdfstring{force\+Torque\+Left() const =0}{forceTorqueLeft() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Wrench}\& ow\+::\+I\+Hw\+Interface\+::force\+Torque\+Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IHwInterface_af25dda9d79de54676fa154706963d798}{}\label{classow_1_1IHwInterface_af25dda9d79de54676fa154706963d798}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+force torque wrench of the robot. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__hw__interface_1_1Robot_a6ddf516951150570f293bd743980b889}{ow\+\_\+hw\+\_\+interface\+::\+Robot}.
+
+\index{ow\+::\+I\+Hw\+Interface@{ow\+::\+I\+Hw\+Interface}!force\+Torque\+Right@{force\+Torque\+Right}}
+\index{force\+Torque\+Right@{force\+Torque\+Right}!ow\+::\+I\+Hw\+Interface@{ow\+::\+I\+Hw\+Interface}}
+\subsubsection[{\texorpdfstring{force\+Torque\+Right() const =0}{forceTorqueRight() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Wrench}\& ow\+::\+I\+Hw\+Interface\+::force\+Torque\+Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IHwInterface_a138666171127477f34eec1be1f6bbadc}{}\label{classow_1_1IHwInterface_a138666171127477f34eec1be1f6bbadc}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+force torque wrench of the robot. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__hw__interface_1_1Robot_a0571a78d871be38bc9038daa244809c4}{ow\+\_\+hw\+\_\+interface\+::\+Robot}.
+
+\index{ow\+::\+I\+Hw\+Interface@{ow\+::\+I\+Hw\+Interface}!imu@{imu}}
+\index{imu@{imu}!ow\+::\+I\+Hw\+Interface@{ow\+::\+I\+Hw\+Interface}}
+\subsubsection[{\texorpdfstring{imu() const =0}{imu() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Imu\+Sensor}\& ow\+::\+I\+Hw\+Interface\+::imu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IHwInterface_ab96192139860a2000cf7f090800daf10}{}\label{classow_1_1IHwInterface_ab96192139860a2000cf7f090800daf10}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Imu\+Sensor of the robot. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__hw__interface_1_1Robot_a2ae657f8d93fe861a382468492103373}{ow\+\_\+hw\+\_\+interface\+::\+Robot}.
+
+\index{ow\+::\+I\+Hw\+Interface@{ow\+::\+I\+Hw\+Interface}!joint\+State\+Command@{joint\+State\+Command}}
+\index{joint\+State\+Command@{joint\+State\+Command}!ow\+::\+I\+Hw\+Interface@{ow\+::\+I\+Hw\+Interface}}
+\subsubsection[{\texorpdfstring{joint\+State\+Command() const =0}{jointStateCommand() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Joint\+State}\& ow\+::\+I\+Hw\+Interface\+::joint\+State\+Command (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IHwInterface_aaa3997aae0564e74e42d6517dd15085d}{}\label{classow_1_1IHwInterface_aaa3997aae0564e74e42d6517dd15085d}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Joint\+State of the current robot command. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__hw__interface_1_1Robot_a0eae4e5911a90c8dedc678ddabd5998a}{ow\+\_\+hw\+\_\+interface\+::\+Robot}.
+
+\index{ow\+::\+I\+Hw\+Interface@{ow\+::\+I\+Hw\+Interface}!joint\+State\+Real@{joint\+State\+Real}}
+\index{joint\+State\+Real@{joint\+State\+Real}!ow\+::\+I\+Hw\+Interface@{ow\+::\+I\+Hw\+Interface}}
+\subsubsection[{\texorpdfstring{joint\+State\+Real() const =0}{jointStateReal() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Joint\+State}\& ow\+::\+I\+Hw\+Interface\+::joint\+State\+Real (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IHwInterface_a67a68840249d34e26e4d8421f7fa7df8}{}\label{classow_1_1IHwInterface_a67a68840249d34e26e4d8421f7fa7df8}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Joint\+State of the real robot. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__hw__interface_1_1Robot_a5d8efc31c4939d4e3b84539412a5e595}{ow\+\_\+hw\+\_\+interface\+::\+Robot}.
+
+\index{ow\+::\+I\+Hw\+Interface@{ow\+::\+I\+Hw\+Interface}!last\+Joint\+State\+Command@{last\+Joint\+State\+Command}}
+\index{last\+Joint\+State\+Command@{last\+Joint\+State\+Command}!ow\+::\+I\+Hw\+Interface@{ow\+::\+I\+Hw\+Interface}}
+\subsubsection[{\texorpdfstring{last\+Joint\+State\+Command() const =0}{lastJointStateCommand() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Joint\+State}\& ow\+::\+I\+Hw\+Interface\+::last\+Joint\+State\+Command (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IHwInterface_a935479753384efbb726e4117442c000e}{}\label{classow_1_1IHwInterface_a935479753384efbb726e4117442c000e}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Joint\+State of the last robot command. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__hw__interface_1_1Robot_a4905c6124e8601a2b535a53df7f4aaba}{ow\+\_\+hw\+\_\+interface\+::\+Robot}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/interfaces/\hyperlink{i__hw__interface_8h}{i\+\_\+hw\+\_\+interface.\+h}\end{DoxyCompactItemize}

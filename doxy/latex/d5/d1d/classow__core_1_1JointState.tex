@@ -1,0 +1,183 @@
+\hypertarget{classow__core_1_1JointState}{}\section{ow\+\_\+core\+:\+:Joint\+State$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$ Class Template Reference}
+\label{classow__core_1_1JointState}\index{ow\+\_\+core\+::\+Joint\+State$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$@{ow\+\_\+core\+::\+Joint\+State$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$}}
+
+
+The \hyperlink{classow__core_1_1JointState}{Joint\+State} class.  
+
+
+
+
+{\ttfamily \#include $<$joint\+\_\+state.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Joint\+State$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.728395cm]{d5/d1d/classow__core_1_1JointState}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries Rows\+At\+Compile\+Time} = \+\_\+\+Rows
+ \}\hypertarget{classow__core_1_1JointState_adc859a7ae8cbdd12c8997fb357edd1df}{}\label{classow__core_1_1JointState_adc859a7ae8cbdd12c8997fb357edd1df}
+
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1JointState_aa4aedc0d11f33346be0481efeea485c9}{}\label{classow__core_1_1JointState_aa4aedc0d11f33346be0481efeea485c9}
+
+\item 
+typedef \hyperlink{classow__core_1_1StateBase}{State\+Base}$<$ \hyperlink{classow__core_1_1JointState}{Joint\+State}$<$ Scalar, Rows\+At\+Compile\+Time $>$ $>$ {\bfseries Base}\hypertarget{classow__core_1_1JointState_a477f825075ab49eca0d8a0bcb60ebaf9}{}\label{classow__core_1_1JointState_a477f825075ab49eca0d8a0bcb60ebaf9}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointPosition}{Joint\+Position}$<$ Scalar, Rows\+At\+Compile\+Time $>$ {\bfseries Pos}\hypertarget{classow__core_1_1JointState_af7a9d175cb042e76cc22e87b92a52be1}{}\label{classow__core_1_1JointState_af7a9d175cb042e76cc22e87b92a52be1}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointVelocity}{Joint\+Velocity}$<$ Scalar, Rows\+At\+Compile\+Time $>$ {\bfseries Vel}\hypertarget{classow__core_1_1JointState_a3fa51f1714f7f6548a715e8c82b16e1a}{}\label{classow__core_1_1JointState_a3fa51f1714f7f6548a715e8c82b16e1a}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointAcceleration}{Joint\+Acceleration}$<$ Scalar, Rows\+At\+Compile\+Time $>$ {\bfseries Acc}\hypertarget{classow__core_1_1JointState_a5c7df1f52e31b4ba68b3714d19410140}{}\label{classow__core_1_1JointState_a5c7df1f52e31b4ba68b3714d19410140}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointEffort}{Joint\+Effort}$<$ Scalar, Rows\+At\+Compile\+Time $>$ {\bfseries Effort}\hypertarget{classow__core_1_1JointState_ab88a38b74f125f58345db1f6a056d186}{}\label{classow__core_1_1JointState_ab88a38b74f125f58345db1f6a056d186}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1JointState_a76834040169f792ff7a3c54d13fc34b7}{Joint\+State} ()\hypertarget{classow__core_1_1JointState_a76834040169f792ff7a3c54d13fc34b7}{}\label{classow__core_1_1JointState_a76834040169f792ff7a3c54d13fc34b7}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classow__core_1_1JointState_a545ca730711a387f987b98396304dbfa}{Joint\+State} (const T \&x)\hypertarget{classow__core_1_1JointState_a545ca730711a387f987b98396304dbfa}{}\label{classow__core_1_1JointState_a545ca730711a387f987b98396304dbfa}
+
+\begin{DoxyCompactList}\small\item\em This constructor is for both 1x1 matrices and dynamic vectors. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointState_a273356de13903acfccd84c7789056381}{Joint\+State} (const \hyperlink{classow__core_1_1JointState}{Joint\+State} \&other)\hypertarget{classow__core_1_1JointState_a273356de13903acfccd84c7789056381}{}\label{classow__core_1_1JointState_a273356de13903acfccd84c7789056381}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointState_a2c519fda8d5e1398e8e7e5308befbe1d}{Joint\+State} (const \hyperlink{classow__core_1_1JointPosition}{Pos} \&q)
+\begin{DoxyCompactList}\small\item\em Constructor from sub elements. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointPosition}{Pos} \& {\bfseries q} ()\hypertarget{classow__core_1_1JointState_a5ce959881c11c5e4eadd8a4c5e8861eb}{}\label{classow__core_1_1JointState_a5ce959881c11c5e4eadd8a4c5e8861eb}
+
+\item 
+\hyperlink{classow__core_1_1JointPosition}{Pos} \& {\bfseries pos} ()\hypertarget{classow__core_1_1JointState_ad4cb837b4d474a50ce54a6811a2fe768}{}\label{classow__core_1_1JointState_ad4cb837b4d474a50ce54a6811a2fe768}
+
+\item 
+const \hyperlink{classow__core_1_1JointPosition}{Pos} \& {\bfseries q} () const \hypertarget{classow__core_1_1JointState_aa6788e87f0b123d06eb69b7c9d74c3c4}{}\label{classow__core_1_1JointState_aa6788e87f0b123d06eb69b7c9d74c3c4}
+
+\item 
+const \hyperlink{classow__core_1_1JointPosition}{Pos} \& {\bfseries pos} () const \hypertarget{classow__core_1_1JointState_a23ae8e8f20c019aab5ec1d45931037f6}{}\label{classow__core_1_1JointState_a23ae8e8f20c019aab5ec1d45931037f6}
+
+\item 
+\hyperlink{classow__core_1_1JointVelocity}{Vel} \& {\bfseries qP} ()\hypertarget{classow__core_1_1JointState_a2ddc642b9b13dc4fcb0321bd0a9592f4}{}\label{classow__core_1_1JointState_a2ddc642b9b13dc4fcb0321bd0a9592f4}
+
+\item 
+\hyperlink{classow__core_1_1JointVelocity}{Vel} \& {\bfseries vel} ()\hypertarget{classow__core_1_1JointState_aee91fede00978c8852dd6f94b7533a5d}{}\label{classow__core_1_1JointState_aee91fede00978c8852dd6f94b7533a5d}
+
+\item 
+const \hyperlink{classow__core_1_1JointVelocity}{Vel} \& {\bfseries qP} () const \hypertarget{classow__core_1_1JointState_a5c78e0f4ad6ae1024d6f7d688d242cab}{}\label{classow__core_1_1JointState_a5c78e0f4ad6ae1024d6f7d688d242cab}
+
+\item 
+const \hyperlink{classow__core_1_1JointVelocity}{Vel} \& {\bfseries vel} () const \hypertarget{classow__core_1_1JointState_abb533077dcd9e5a27571b68f1e331cf4}{}\label{classow__core_1_1JointState_abb533077dcd9e5a27571b68f1e331cf4}
+
+\item 
+\hyperlink{classow__core_1_1JointAcceleration}{Acc} \& {\bfseries q\+PP} ()\hypertarget{classow__core_1_1JointState_a5bcfb54e4b6903011b27df3a690e00df}{}\label{classow__core_1_1JointState_a5bcfb54e4b6903011b27df3a690e00df}
+
+\item 
+\hyperlink{classow__core_1_1JointAcceleration}{Acc} \& {\bfseries acc} ()\hypertarget{classow__core_1_1JointState_a4677db1db6bffa56006535b5ff1ec2c9}{}\label{classow__core_1_1JointState_a4677db1db6bffa56006535b5ff1ec2c9}
+
+\item 
+const \hyperlink{classow__core_1_1JointAcceleration}{Acc} \& {\bfseries q\+PP} () const \hypertarget{classow__core_1_1JointState_a2953bf08dd06f65b9dcad7a80b330555}{}\label{classow__core_1_1JointState_a2953bf08dd06f65b9dcad7a80b330555}
+
+\item 
+const \hyperlink{classow__core_1_1JointAcceleration}{Acc} \& {\bfseries acc} () const \hypertarget{classow__core_1_1JointState_a7a30098396ee052aabc37d9bc8dcf1b2}{}\label{classow__core_1_1JointState_a7a30098396ee052aabc37d9bc8dcf1b2}
+
+\item 
+\hyperlink{classow__core_1_1JointEffort}{Effort} \& {\bfseries tau} ()\hypertarget{classow__core_1_1JointState_a750c4c648e2c105bb28a1e2392a81267}{}\label{classow__core_1_1JointState_a750c4c648e2c105bb28a1e2392a81267}
+
+\item 
+\hyperlink{classow__core_1_1JointEffort}{Effort} \& {\bfseries effort} ()\hypertarget{classow__core_1_1JointState_a0d44105383cf528751346c7d0142047c}{}\label{classow__core_1_1JointState_a0d44105383cf528751346c7d0142047c}
+
+\item 
+const \hyperlink{classow__core_1_1JointEffort}{Effort} \& {\bfseries tau} () const \hypertarget{classow__core_1_1JointState_a94cefd354008e2d4ab229268b3dc6379}{}\label{classow__core_1_1JointState_a94cefd354008e2d4ab229268b3dc6379}
+
+\item 
+const \hyperlink{classow__core_1_1JointEffort}{Effort} \& {\bfseries effort} () const \hypertarget{classow__core_1_1JointState_a67fb11ae718dc552972d0d60f99ff2ea}{}\label{classow__core_1_1JointState_a67fb11ae718dc552972d0d60f99ff2ea}
+
+\item 
+\hyperlink{classow__core_1_1JointState}{Joint\+State} \& \hyperlink{classow__core_1_1JointState_a9c35a1e381caae2425df61c2466238b7}{operator=} (const \hyperlink{classow__core_1_1JointState}{Joint\+State} \&other)\hypertarget{classow__core_1_1JointState_a9c35a1e381caae2425df61c2466238b7}{}\label{classow__core_1_1JointState_a9c35a1e381caae2425df61c2466238b7}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointStateRef}{Joint\+State\+Ref}$<$ \hyperlink{classow__core_1_1JointState}{Joint\+State}$<$ Scalar, Rows\+At\+Compile\+Time $>$ $>$ \hyperlink{classow__core_1_1JointState_a0ad96a086906bb99da3ac0727bd5fe2c}{ref} (int start\+\_\+row, int block\+\_\+rows)\hypertarget{classow__core_1_1JointState_a0ad96a086906bb99da3ac0727bd5fe2c}{}\label{classow__core_1_1JointState_a0ad96a086906bb99da3ac0727bd5fe2c}
+
+\begin{DoxyCompactList}\small\item\em Get a reference to sub vector. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointStateRef}{Joint\+State\+Ref}$<$ const \hyperlink{classow__core_1_1JointState}{Joint\+State}$<$ Scalar, Rows\+At\+Compile\+Time $>$ $>$ \hyperlink{classow__core_1_1JointState_a2cea91797dabf624c73678251fe65255}{ref} (int start\+\_\+row, int block\+\_\+rows) const \hypertarget{classow__core_1_1JointState_a2cea91797dabf624c73678251fe65255}{}\label{classow__core_1_1JointState_a2cea91797dabf624c73678251fe65255}
+
+\begin{DoxyCompactList}\small\item\em Get a reference to sub vector. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointState}{Joint\+State} \& \hyperlink{classow__core_1_1JointState_a658fea2a6b7656c9b7f632a8999df39a}{operator=} (const ow\+\_\+msgs\+::\+Joint\+State \&msg)\hypertarget{classow__core_1_1JointState_a658fea2a6b7656c9b7f632a8999df39a}{}\label{classow__core_1_1JointState_a658fea2a6b7656c9b7f632a8999df39a}
+
+\begin{DoxyCompactList}\small\item\em Assignment of ow\+\_\+msgs\+::\+Joint\+State. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointState_a11b905b14f9c33b5afe8352906c3eacd}{operator ow\+\_\+msgs\+::\+Joint\+State} () const \hypertarget{classow__core_1_1JointState_a11b905b14f9c33b5afe8352906c3eacd}{}\label{classow__core_1_1JointState_a11b905b14f9c33b5afe8352906c3eacd}
+
+\begin{DoxyCompactList}\small\item\em Conversion to ow\+\_\+msgs\+::\+Joint\+State. \end{DoxyCompactList}\item 
+ow\+\_\+msgs\+::\+Joint\+State \hyperlink{classow__core_1_1JointState_a1fd2a4028e7a62026f910b54bd974727}{to\+Joint\+State\+Msg} () const \hypertarget{classow__core_1_1JointState_a1fd2a4028e7a62026f910b54bd974727}{}\label{classow__core_1_1JointState_a1fd2a4028e7a62026f910b54bd974727}
+
+\begin{DoxyCompactList}\small\item\em Conversion to ow\+\_\+msgs\+::\+Joint\+State. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointState}{Joint\+State} \& \hyperlink{classow__core_1_1JointState_a48241c3ae8afada83255b56bedec192e}{operator=} (const sensor\+\_\+msgs\+::\+Joint\+State \&msg)\hypertarget{classow__core_1_1JointState_a48241c3ae8afada83255b56bedec192e}{}\label{classow__core_1_1JointState_a48241c3ae8afada83255b56bedec192e}
+
+\begin{DoxyCompactList}\small\item\em Assignment of ow\+\_\+msgs\+::\+Joint\+State. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointState_a0713be47cec424528498f3251f87b869}{operator sensor\+\_\+msgs\+::\+Joint\+State} () const \hypertarget{classow__core_1_1JointState_a0713be47cec424528498f3251f87b869}{}\label{classow__core_1_1JointState_a0713be47cec424528498f3251f87b869}
+
+\begin{DoxyCompactList}\small\item\em Conversion to ow\+\_\+msgs\+::\+Joint\+State. \end{DoxyCompactList}\item 
+ow\+\_\+msgs\+::\+Joint\+State \hyperlink{classow__core_1_1JointState_a283d432a891d55b21125c580711cbdcd}{to\+Joint\+State\+Sensor\+Msg} () const \hypertarget{classow__core_1_1JointState_a283d432a891d55b21125c580711cbdcd}{}\label{classow__core_1_1JointState_a283d432a891d55b21125c580711cbdcd}
+
+\begin{DoxyCompactList}\small\item\em Conversion to ow\+\_\+msgs\+::\+Joint\+State. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1JointPosition}{Pos} {\bfseries q\+\_\+}\hypertarget{classow__core_1_1JointState_a8e802c0eb46ffafb7ed124bbde8926a8}{}\label{classow__core_1_1JointState_a8e802c0eb46ffafb7ed124bbde8926a8}
+
+\item 
+\hyperlink{classow__core_1_1JointVelocity}{Vel} {\bfseries q\+P\+\_\+}\hypertarget{classow__core_1_1JointState_afffed2181bae8208f0be4aca106fe3d3}{}\label{classow__core_1_1JointState_afffed2181bae8208f0be4aca106fe3d3}
+
+\item 
+\hyperlink{classow__core_1_1JointAcceleration}{Acc} {\bfseries q\+P\+P\+\_\+}\hypertarget{classow__core_1_1JointState_a4f9fa9f27626a88245ce603c88a90f98}{}\label{classow__core_1_1JointState_a4f9fa9f27626a88245ce603c88a90f98}
+
+\item 
+\hyperlink{classow__core_1_1JointEffort}{Effort} {\bfseries tau\+\_\+}\hypertarget{classow__core_1_1JointState_a81bed6b039886854737c3f9fdbe3182d}{}\label{classow__core_1_1JointState_a81bed6b039886854737c3f9fdbe3182d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar, int \+\_\+\+Rows = Eigen\+::\+Dynamic$>$\\*
+class ow\+\_\+core\+::\+Joint\+State$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$}
+
+The \hyperlink{classow__core_1_1JointState}{Joint\+State} class. 
+
+This class is a container for\+:
+\begin{DoxyItemize}
+\item \hyperlink{classow__core_1_1JointPosition}{Joint\+Position}
+\item \hyperlink{classow__core_1_1JointVelocity}{Joint\+Velocity}
+\item \hyperlink{classow__core_1_1JointAcceleration}{Joint\+Acceleration}
+\item \hyperlink{classow__core_1_1JointEffort}{Joint\+Effort} 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Joint\+State@{ow\+\_\+core\+::\+Joint\+State}!Joint\+State@{Joint\+State}}
+\index{Joint\+State@{Joint\+State}!ow\+\_\+core\+::\+Joint\+State@{ow\+\_\+core\+::\+Joint\+State}}
+\subsubsection[{\texorpdfstring{Joint\+State(const Pos \&q)}{JointState(const Pos &q)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar, int \+\_\+\+Rows = Eigen\+::\+Dynamic$>$ {\bf ow\+\_\+core\+::\+Joint\+State}$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$\+::{\bf Joint\+State} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pos} \&}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classow__core_1_1JointState_a2c519fda8d5e1398e8e7e5308befbe1d}{}\label{classow__core_1_1JointState_a2c519fda8d5e1398e8e7e5308befbe1d}
+
+
+Constructor from sub elements. 
+
+\begin{DoxyNote}{Note}
+This we resize qP, q\+PP, tau in the dynamic case to the same size as q. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/\hyperlink{joint__state_8h}{joint\+\_\+state.\+h}\end{DoxyCompactItemize}

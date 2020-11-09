@@ -1,0 +1,108 @@
+\hypertarget{classow__core_1_1VectorRef}{}\section{ow\+\_\+core\+:\+:Vector\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$ Class Template Reference}
+\label{classow__core_1_1VectorRef}\index{ow\+\_\+core\+::\+Vector\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$@{ow\+\_\+core\+::\+Vector\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$}}
+
+
+The \hyperlink{classow__core_1_1VectorRef}{Vector\+Ref} class.  
+
+
+
+
+{\ttfamily \#include $<$vector\+\_\+ref.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Vector\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.085271cm]{de/d6a/classow__core_1_1VectorRef}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries Rows\+At\+Compile\+Time} = \+\_\+\+Rows
+ \}\hypertarget{classow__core_1_1VectorRef_a0e7598ad398296d7460fea9c20f237e3}{}\label{classow__core_1_1VectorRef_a0e7598ad398296d7460fea9c20f237e3}
+
+\item 
+typedef \+\_\+\+Derived {\bfseries Derived}\hypertarget{classow__core_1_1VectorRef_a7536251477ddb12a8c69099b2bd927f2}{}\label{classow__core_1_1VectorRef_a7536251477ddb12a8c69099b2bd927f2}
+
+\item 
+typedef Derived\+::\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1VectorRef_a0639424922c1e3e6733c7e5f926321e3}{}\label{classow__core_1_1VectorRef_a0639424922c1e3e6733c7e5f926321e3}
+
+\item 
+typedef Eigen\+::\+Block$<$ Derived, Rows\+At\+Compile\+Time, 1 $>$ {\bfseries Base}\hypertarget{classow__core_1_1VectorRef_acb2331c78ff1906e3677734574fc0487}{}\label{classow__core_1_1VectorRef_acb2331c78ff1906e3677734574fc0487}
+
+\item 
+typedef \hyperlink{classow__core_1_1VectorBase}{Vector\+Base}$<$ \hyperlink{classow__core_1_1VectorRef}{Vector\+Ref}$<$ Derived, Rows\+At\+Compile\+Time $>$ $>$ {\bfseries V\+Base}\hypertarget{classow__core_1_1VectorRef_a084dbc673dd3f402985848a4f6ffa5d2}{}\label{classow__core_1_1VectorRef_a084dbc673dd3f402985848a4f6ffa5d2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1VectorRef_ad88b333ead4d1543c04f77c995442f2e}{Vector\+Ref} (Derived \&ref, int start\+\_\+row=0, int start\+\_\+col=0)
+\begin{DoxyCompactList}\small\item\em Default Constructor, Fixed Sized Vector. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1VectorRef_a9b1ea302b7d5ecc22a44816068f03e00}{Vector\+Ref} (Derived \&ref, int start\+\_\+row, int start\+\_\+col, int block\+\_\+rows)
+\begin{DoxyCompactList}\small\item\em Default Constructor, Dynamically Sized Vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Derived, int \+\_\+\+Rows = Eigen\+::\+Dynamic$>$\\*
+class ow\+\_\+core\+::\+Vector\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$}
+
+The \hyperlink{classow__core_1_1VectorRef}{Vector\+Ref} class. 
+
+References the data of another Eigen type class via Eigen\+:Block.
+
+We need this special type to get the behavior of Eigen\+::\+Matrix when defining new references. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Vector\+Ref@{ow\+\_\+core\+::\+Vector\+Ref}!Vector\+Ref@{Vector\+Ref}}
+\index{Vector\+Ref@{Vector\+Ref}!ow\+\_\+core\+::\+Vector\+Ref@{ow\+\_\+core\+::\+Vector\+Ref}}
+\subsubsection[{\texorpdfstring{Vector\+Ref(\+Derived \&ref, int start\+\_\+row=0, int start\+\_\+col=0)}{VectorRef(Derived &ref, int start_row=0, int start_col=0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived , int \+\_\+\+Rows = Eigen\+::\+Dynamic$>$ {\bf ow\+\_\+core\+::\+Vector\+Ref}$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$\+::{\bf Vector\+Ref} (
+\begin{DoxyParamCaption}
+\item[{Derived \&}]{ref, }
+\item[{int}]{start\+\_\+row = {\ttfamily 0}, }
+\item[{int}]{start\+\_\+col = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classow__core_1_1VectorRef_ad88b333ead4d1543c04f77c995442f2e}{}\label{classow__core_1_1VectorRef_ad88b333ead4d1543c04f77c995442f2e}
+
+
+Default Constructor, Fixed Sized Vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & the reference to storage Eigen object to access the elements of the quaternion via Eigen\+::\+Block.\\
+\hline
+{\em start\+\_\+row} & the start index of the row for Eigen\+::\+Block.\\
+\hline
+{\em start\+\_\+col} & the start index of the column for Eigen\+::\+Block. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+core\+::\+Vector\+Ref@{ow\+\_\+core\+::\+Vector\+Ref}!Vector\+Ref@{Vector\+Ref}}
+\index{Vector\+Ref@{Vector\+Ref}!ow\+\_\+core\+::\+Vector\+Ref@{ow\+\_\+core\+::\+Vector\+Ref}}
+\subsubsection[{\texorpdfstring{Vector\+Ref(\+Derived \&ref, int start\+\_\+row, int start\+\_\+col, int block\+\_\+rows)}{VectorRef(Derived &ref, int start_row, int start_col, int block_rows)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived , int \+\_\+\+Rows = Eigen\+::\+Dynamic$>$ {\bf ow\+\_\+core\+::\+Vector\+Ref}$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$\+::{\bf Vector\+Ref} (
+\begin{DoxyParamCaption}
+\item[{Derived \&}]{ref, }
+\item[{int}]{start\+\_\+row, }
+\item[{int}]{start\+\_\+col, }
+\item[{int}]{block\+\_\+rows}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1VectorRef_a9b1ea302b7d5ecc22a44816068f03e00}{}\label{classow__core_1_1VectorRef_a9b1ea302b7d5ecc22a44816068f03e00}
+
+
+Default Constructor, Dynamically Sized Vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & the reference to storage Eigen object to access the elements of the quaternion via Eigen\+::\+Block.\\
+\hline
+{\em start\+\_\+row} & the start index of the row for Eigen\+::\+Block.\\
+\hline
+{\em start\+\_\+col} & the start index of the column for Eigen\+::\+Block.\\
+\hline
+{\em block\+\_\+rows} & the start index of the column for Eigen\+::\+Block. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/type\+\_\+references/\hyperlink{vector__ref_8h}{vector\+\_\+ref.\+h}\end{DoxyCompactItemize}

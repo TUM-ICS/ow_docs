@@ -1,0 +1,111 @@
+\hypertarget{classow__core_1_1JointRef}{}\section{ow\+\_\+core\+:\+:Joint\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$ Class Template Reference}
+\label{classow__core_1_1JointRef}\index{ow\+\_\+core\+::\+Joint\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$@{ow\+\_\+core\+::\+Joint\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$}}
+
+
+The \hyperlink{classow__core_1_1JointRef}{Joint\+Ref} class.  
+
+
+
+
+{\ttfamily \#include $<$joint\+\_\+ref.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Joint\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.121121cm]{dc/d00/classow__core_1_1JointRef}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries Rows\+At\+Compile\+Time} = \+\_\+\+Rows
+ \}\hypertarget{classow__core_1_1JointRef_a75414de9c30ae684f11e91ea212418af}{}\label{classow__core_1_1JointRef_a75414de9c30ae684f11e91ea212418af}
+
+\item 
+typedef \+\_\+\+Derived {\bfseries Derived}\hypertarget{classow__core_1_1JointRef_aaeaf4c71ed5755529de2299f2fadaf35}{}\label{classow__core_1_1JointRef_aaeaf4c71ed5755529de2299f2fadaf35}
+
+\item 
+typedef Derived\+::\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1JointRef_aebe08b5cb8fbc5086b512baebc02e9cd}{}\label{classow__core_1_1JointRef_aebe08b5cb8fbc5086b512baebc02e9cd}
+
+\item 
+typedef Eigen\+::\+Block$<$ \+\_\+\+Derived, \+\_\+\+Rows, 1 $>$ {\bfseries Base}\hypertarget{classow__core_1_1JointRef_a97912dc6b5b99487801e12c3dbdee9e7}{}\label{classow__core_1_1JointRef_a97912dc6b5b99487801e12c3dbdee9e7}
+
+\item 
+typedef \hyperlink{classow__core_1_1VectorBase}{Vector\+Base}$<$ \hyperlink{classow__core_1_1JointRef}{Joint\+Ref}$<$ Derived, Rows\+At\+Compile\+Time $>$ $>$ {\bfseries V\+Base}\hypertarget{classow__core_1_1JointRef_a5045e48f1242ee785794e994eb7d2022}{}\label{classow__core_1_1JointRef_a5045e48f1242ee785794e994eb7d2022}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1JointRef_af9182248d2b9db614338a8a41931ca1b}{Joint\+Ref} (Derived \&ref, int start\+\_\+row=0)
+\begin{DoxyCompactList}\small\item\em Default Constructor, Fixed Sized Vector. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointRef_ac828577b47096fadbbb401a70012fecd}{Joint\+Ref} (Derived \&ref, int start\+\_\+row, int block\+\_\+rows)
+\begin{DoxyCompactList}\small\item\em Default Constructor, Dynamically Sized Vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int Other\+Rows$>$ }\\\hyperlink{classow__core_1_1JointRef}{Joint\+Ref} \hyperlink{classow__core_1_1JointRef_aa7c575850d9bbe0fc1ad50a9b0fe61e2}{operator=} (const \hyperlink{classow__core_1_1JointPosition}{Joint\+Position}$<$ Scalar, Other\+Rows $>$ \&other)\hypertarget{classow__core_1_1JointRef_aa7c575850d9bbe0fc1ad50a9b0fe61e2}{}\label{classow__core_1_1JointRef_aa7c575850d9bbe0fc1ad50a9b0fe61e2}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator \hyperlink{classow__core_1_1JointPosition}{Joint\+Position}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int Other\+Rows$>$ }\\\hyperlink{classow__core_1_1JointRef}{Joint\+Ref} \hyperlink{classow__core_1_1JointRef_ac1991d9b0cbc8018e6c249860caa13cb}{operator=} (const \hyperlink{classow__core_1_1JointVelocity}{Joint\+Velocity}$<$ Scalar, Other\+Rows $>$ \&other)\hypertarget{classow__core_1_1JointRef_ac1991d9b0cbc8018e6c249860caa13cb}{}\label{classow__core_1_1JointRef_ac1991d9b0cbc8018e6c249860caa13cb}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator \hyperlink{classow__core_1_1JointVelocity}{Joint\+Velocity}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int Other\+Rows$>$ }\\\hyperlink{classow__core_1_1JointRef}{Joint\+Ref} \hyperlink{classow__core_1_1JointRef_ab026b36beb862adfccbea3142d71b9fa}{operator=} (const \hyperlink{classow__core_1_1JointAcceleration}{Joint\+Acceleration}$<$ Scalar, Other\+Rows $>$ \&other)\hypertarget{classow__core_1_1JointRef_ab026b36beb862adfccbea3142d71b9fa}{}\label{classow__core_1_1JointRef_ab026b36beb862adfccbea3142d71b9fa}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator \hyperlink{classow__core_1_1JointAcceleration}{Joint\+Acceleration}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Derived, int \+\_\+\+Rows = Eigen\+::\+Dynamic$>$\\*
+class ow\+\_\+core\+::\+Joint\+Ref$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$}
+
+The \hyperlink{classow__core_1_1JointRef}{Joint\+Ref} class. 
+
+References the data of another Eigen type class via Eigen\+:Block.
+
+We need this special type to get the behavior of Eigen\+::\+Matrix when defining new references. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Joint\+Ref@{ow\+\_\+core\+::\+Joint\+Ref}!Joint\+Ref@{Joint\+Ref}}
+\index{Joint\+Ref@{Joint\+Ref}!ow\+\_\+core\+::\+Joint\+Ref@{ow\+\_\+core\+::\+Joint\+Ref}}
+\subsubsection[{\texorpdfstring{Joint\+Ref(\+Derived \&ref, int start\+\_\+row=0)}{JointRef(Derived &ref, int start_row=0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived, int \+\_\+\+Rows = Eigen\+::\+Dynamic$>$ {\bf ow\+\_\+core\+::\+Joint\+Ref}$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$\+::{\bf Joint\+Ref} (
+\begin{DoxyParamCaption}
+\item[{Derived \&}]{ref, }
+\item[{int}]{start\+\_\+row = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classow__core_1_1JointRef_af9182248d2b9db614338a8a41931ca1b}{}\label{classow__core_1_1JointRef_af9182248d2b9db614338a8a41931ca1b}
+
+
+Default Constructor, Fixed Sized Vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & the reference to storage Eigen object to access the elements of the quaternion via Eigen\+::\+Block.\\
+\hline
+{\em start\+\_\+row} & the start index of the row for Eigen\+::\+Block. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+core\+::\+Joint\+Ref@{ow\+\_\+core\+::\+Joint\+Ref}!Joint\+Ref@{Joint\+Ref}}
+\index{Joint\+Ref@{Joint\+Ref}!ow\+\_\+core\+::\+Joint\+Ref@{ow\+\_\+core\+::\+Joint\+Ref}}
+\subsubsection[{\texorpdfstring{Joint\+Ref(\+Derived \&ref, int start\+\_\+row, int block\+\_\+rows)}{JointRef(Derived &ref, int start_row, int block_rows)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived, int \+\_\+\+Rows = Eigen\+::\+Dynamic$>$ {\bf ow\+\_\+core\+::\+Joint\+Ref}$<$ \+\_\+\+Derived, \+\_\+\+Rows $>$\+::{\bf Joint\+Ref} (
+\begin{DoxyParamCaption}
+\item[{Derived \&}]{ref, }
+\item[{int}]{start\+\_\+row, }
+\item[{int}]{block\+\_\+rows}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1JointRef_ac828577b47096fadbbb401a70012fecd}{}\label{classow__core_1_1JointRef_ac828577b47096fadbbb401a70012fecd}
+
+
+Default Constructor, Dynamically Sized Vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & the reference to storage Eigen object to access the elements of the quaternion via Eigen\+::\+Block.\\
+\hline
+{\em start\+\_\+row} & the start index of the row for Eigen\+::\+Block.\\
+\hline
+{\em block\+\_\+rows} & the start index of the column for Eigen\+::\+Block. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/type\+\_\+references/\hyperlink{joint__ref_8h}{joint\+\_\+ref.\+h}\end{DoxyCompactItemize}

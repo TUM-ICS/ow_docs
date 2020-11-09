@@ -1,0 +1,100 @@
+\hypertarget{classow_1_1IBalancer}{}\section{ow\+:\+:I\+Balancer Class Reference}
+\label{classow_1_1IBalancer}\index{ow\+::\+I\+Balancer@{ow\+::\+I\+Balancer}}
+
+
+The \hyperlink{classow_1_1IBalancer}{I\+Balancer} class.  
+
+
+
+
+{\ttfamily \#include $<$i\+\_\+balancer.\+h$>$}
+
+Inheritance diagram for ow\+:\+:I\+Balancer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d7/da1/classow_1_1IBalancer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+Balancer} (const std\+::string \&\hyperlink{classow_1_1GenericModuleBase_a4b712883728cdbab7779e27f9a23689c}{name})\hypertarget{classow_1_1IBalancer_a1a0b556aaa2066e898ad6794aa810b4d}{}\label{classow_1_1IBalancer_a1a0b556aaa2066e898ad6794aa810b4d}
+
+\item 
+virtual \hyperlink{classow_1_1IBalancer_aa708682dd0caf0488bb7fd8e7b732c22}{$\sim$\+I\+Balancer} ()\hypertarget{classow_1_1IBalancer_aa708682dd0caf0488bb7fd8e7b732c22}{}\label{classow_1_1IBalancer_aa708682dd0caf0488bb7fd8e7b732c22}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow_1_1IBalancer_a00656435faab973f7c5617aa3c318d51}{Xoff\+\_\+com} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \& \hyperlink{classow_1_1IBalancer_a4db08ea933f73841929abd5daba8be8f}{D\+C\+Md\+\_\+w} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \& \hyperlink{classow_1_1IBalancer_a7867ad2c24f117fa80d5cbf5074686ee}{Z\+M\+Pd\+\_\+w} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow_1_1IBalancer}{I\+Balancer} class. 
+
+Interface class. 
+
+\subsection{Member Function Documentation}
+\index{ow\+::\+I\+Balancer@{ow\+::\+I\+Balancer}!D\+C\+Md\+\_\+w@{D\+C\+Md\+\_\+w}}
+\index{D\+C\+Md\+\_\+w@{D\+C\+Md\+\_\+w}!ow\+::\+I\+Balancer@{ow\+::\+I\+Balancer}}
+\subsubsection[{\texorpdfstring{D\+C\+Md\+\_\+w() const =0}{DCMd_w() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+D\+C\+M\+State}\& ow\+::\+I\+Balancer\+::\+D\+C\+Md\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IBalancer_a4db08ea933f73841929abd5daba8be8f}{}\label{classow_1_1IBalancer_a4db08ea933f73841929abd5daba8be8f}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+D\+C\+M\+State of the desired Divergent Component Of Motion. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__balancer_1_1Balancer_a09e9190ac09c6a4d1d1243f2db5bf8cb}{ow\+\_\+balancer\+::\+Balancer}.
+
+\index{ow\+::\+I\+Balancer@{ow\+::\+I\+Balancer}!Xoff\+\_\+com@{Xoff\+\_\+com}}
+\index{Xoff\+\_\+com@{Xoff\+\_\+com}!ow\+::\+I\+Balancer@{ow\+::\+I\+Balancer}}
+\subsubsection[{\texorpdfstring{Xoff\+\_\+com() const =0}{Xoff_com() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+::\+I\+Balancer\+::\+Xoff\+\_\+com (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IBalancer_a00656435faab973f7c5617aa3c318d51}{}\label{classow_1_1IBalancer_a00656435faab973f7c5617aa3c318d51}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State offset on the C\+OM commanded position to keep balance and track the reference trajectory. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__balancer_1_1Balancer_a75e68c66c09e370b4b670ed7fcdafcd6}{ow\+\_\+balancer\+::\+Balancer}.
+
+\index{ow\+::\+I\+Balancer@{ow\+::\+I\+Balancer}!Z\+M\+Pd\+\_\+w@{Z\+M\+Pd\+\_\+w}}
+\index{Z\+M\+Pd\+\_\+w@{Z\+M\+Pd\+\_\+w}!ow\+::\+I\+Balancer@{ow\+::\+I\+Balancer}}
+\subsubsection[{\texorpdfstring{Z\+M\+Pd\+\_\+w() const =0}{ZMPd_w() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Zero\+Moment\+Point\+State}\& ow\+::\+I\+Balancer\+::\+Z\+M\+Pd\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1IBalancer_a7867ad2c24f117fa80d5cbf5074686ee}{}\label{classow_1_1IBalancer_a7867ad2c24f117fa80d5cbf5074686ee}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Zero\+Moment\+Point\+State to keep balance and track the desired D\+CM. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__balancer_1_1Balancer_a49b1432ce68fbb056a5c9426c11c7122}{ow\+\_\+balancer\+::\+Balancer}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/interfaces/\hyperlink{i__balancer_8h}{i\+\_\+balancer.\+h}\end{DoxyCompactItemize}

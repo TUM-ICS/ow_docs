@@ -1,0 +1,127 @@
+\hypertarget{classow__com_1_1COMEstimator}{}\section{ow\+\_\+com\+:\+:C\+O\+M\+Estimator Class Reference}
+\label{classow__com_1_1COMEstimator}\index{ow\+\_\+com\+::\+C\+O\+M\+Estimator@{ow\+\_\+com\+::\+C\+O\+M\+Estimator}}
+
+
+The \hyperlink{classow__com_1_1COMEstimator}{C\+O\+M\+Estimator} class.  
+
+
+
+
+{\ttfamily \#include $<$com\+\_\+estimator.\+h$>$}
+
+Inheritance diagram for ow\+\_\+com\+:\+:C\+O\+M\+Estimator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d8/d3a/classow__com_1_1COMEstimator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow_1_1ICOMEstimator}{ow\+::\+I\+C\+O\+M\+Estimator} {\bfseries Base}\hypertarget{classow__com_1_1COMEstimator_a8df645b753b836444a3f78158107225a}{}\label{classow__com_1_1COMEstimator_a8df645b753b836444a3f78158107225a}
+
+\item 
+typedef \hyperlink{classow__core_1_1StateDifferentiator}{ow\+::\+State\+Differentiator}$<$ \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} $>$ {\bfseries Differentiator}\hypertarget{classow__com_1_1COMEstimator_a685e59ab89753796b80e878bfb8fff5a}{}\label{classow__com_1_1COMEstimator_a685e59ab89753796b80e878bfb8fff5a}
+
+\item 
+typedef \hyperlink{classow__core_1_1MatrixAlgorithm}{ow\+\_\+core\+::\+Matrix\+Algorithm}$<$ \hyperlink{classow__core_1_1CartesianVelocity}{ow\+::\+Cartesian\+Velocity} $>$ {\bfseries Filter}\hypertarget{classow__com_1_1COMEstimator_a0936ebb8c797a8e164a140a07fd9142d}{}\label{classow__com_1_1COMEstimator_a0936ebb8c797a8e164a140a07fd9142d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__com_1_1COMEstimator_aee6f0a9c7f06cf62ef41ca7180374e52}{C\+O\+M\+Estimator} ()\hypertarget{classow__com_1_1COMEstimator_aee6f0a9c7f06cf62ef41ca7180374e52}{}\label{classow__com_1_1COMEstimator_aee6f0a9c7f06cf62ef41ca7180374e52}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classow__com_1_1COMEstimator}{C\+O\+M\+Estimator} Default constructor. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow__com_1_1COMEstimator_af0474ec2ab3a61d06ab3dd80c70b0b2e}{Xf\+\_\+com\+\_\+w} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \& \hyperlink{classow__com_1_1COMEstimator_a70d5e11ea25009c7894d64763f72f26c}{D\+C\+Mr\+\_\+w} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+void \hyperlink{classow__com_1_1COMEstimator_a784d8b980348a546ae69b17ec27ab1c2}{update} (const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&X\+\_\+com\+\_\+w, const \hyperlink{classow__core_1_1InertialMeasurmentUnitSensor}{ow\+::\+Imu\+Sensor} \&imu)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classow__com_1_1COMEstimator_ac30dad4021919bc434ebb8a2b903163a}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, ros\+::\+Node\+Handle \&nh)\hypertarget{classow__com_1_1COMEstimator_ac30dad4021919bc434ebb8a2b903163a}{}\label{classow__com_1_1COMEstimator_ac30dad4021919bc434ebb8a2b903163a}
+
+\begin{DoxyCompactList}\small\item\em Initialization of \hyperlink{classow__com_1_1COMEstimator}{C\+O\+M\+Estimator} module. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotion}{ow\+::\+D\+CM} \hyperlink{classow__com_1_1COMEstimator_a527094baefbfdea956df197f87251c61}{compute\+\_\+capture\+\_\+point} ()\hypertarget{classow__com_1_1COMEstimator_a527094baefbfdea956df197f87251c61}{}\label{classow__com_1_1COMEstimator_a527094baefbfdea956df197f87251c61}
+
+\begin{DoxyCompactList}\small\item\em Calcualte the capture point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \hyperlink{classow__com_1_1COMEstimator_a3090d180ae8c7c7498a187e1b00f6267}{parameter\+\_\+}\hypertarget{classow__com_1_1COMEstimator_a3090d180ae8c7c7498a187e1b00f6267}{}\label{classow__com_1_1COMEstimator_a3090d180ae8c7c7498a187e1b00f6267}
+
+\begin{DoxyCompactList}\small\item\em configuration of this module \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__com_1_1COMEstimator_a07e31590415f70dc7f757601e1caec70}{Xf\+\_\+com\+\_\+w\+\_\+}\hypertarget{classow__com_1_1COMEstimator_a07e31590415f70dc7f757601e1caec70}{}\label{classow__com_1_1COMEstimator_a07e31590415f70dc7f757601e1caec70}
+
+\begin{DoxyCompactList}\small\item\em the filtered pose of the real CoM. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \hyperlink{classow__com_1_1COMEstimator_ab3e1d9c3e12425751e7f7353d99d0fc0}{D\+C\+Mr\+\_\+w\+\_\+}\hypertarget{classow__com_1_1COMEstimator_ab3e1d9c3e12425751e7f7353d99d0fc0}{}\label{classow__com_1_1COMEstimator_ab3e1d9c3e12425751e7f7353d99d0fc0}
+
+\begin{DoxyCompactList}\small\item\em D\+C\+M\+State of the real robot. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classow__core_1_1StateDifferentiator}{Differentiator} $>$ {\bfseries differentiator\+\_\+}\hypertarget{classow__com_1_1COMEstimator_a44117298fa41304cd5050e8dd746de03}{}\label{classow__com_1_1COMEstimator_a44117298fa41304cd5050e8dd746de03}
+
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classow__core_1_1MatrixAlgorithm}{Filter} $>$ {\bfseries com\+\_\+filter\+\_\+}\hypertarget{classow__com_1_1COMEstimator_ad5f5fc7d7db6c1de778bf1e20bfa2954}{}\label{classow__com_1_1COMEstimator_ad5f5fc7d7db6c1de778bf1e20bfa2954}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__com_1_1COMEstimator}{C\+O\+M\+Estimator} class. 
+
+This class implements the \hyperlink{classow__com_1_1COMEstimator}{C\+O\+M\+Estimator} module of the openwalker framework. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+com\+::\+C\+O\+M\+Estimator@{ow\+\_\+com\+::\+C\+O\+M\+Estimator}!D\+C\+Mr\+\_\+w@{D\+C\+Mr\+\_\+w}}
+\index{D\+C\+Mr\+\_\+w@{D\+C\+Mr\+\_\+w}!ow\+\_\+com\+::\+C\+O\+M\+Estimator@{ow\+\_\+com\+::\+C\+O\+M\+Estimator}}
+\subsubsection[{\texorpdfstring{D\+C\+Mr\+\_\+w() const }{DCMr_w() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+D\+C\+M\+State}\& ow\+\_\+com\+::\+C\+O\+M\+Estimator\+::\+D\+C\+Mr\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__com_1_1COMEstimator_a70d5e11ea25009c7894d64763f72f26c}{}\label{classow__com_1_1COMEstimator_a70d5e11ea25009c7894d64763f72f26c}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State of the right foot reference wrt world frame. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1ICOMEstimator_a39feef3509fbe0f8dbf358c28b067e43}{ow\+::\+I\+C\+O\+M\+Estimator}.
+
+\index{ow\+\_\+com\+::\+C\+O\+M\+Estimator@{ow\+\_\+com\+::\+C\+O\+M\+Estimator}!update@{update}}
+\index{update@{update}!ow\+\_\+com\+::\+C\+O\+M\+Estimator@{ow\+\_\+com\+::\+C\+O\+M\+Estimator}}
+\subsubsection[{\texorpdfstring{update(const ow\+::\+Cartesian\+State \&\+X\+\_\+com\+\_\+w, const ow\+::\+Imu\+Sensor \&imu)}{update(const ow::CartesianState &X_com_w, const ow::ImuSensor &imu)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+com\+::\+C\+O\+M\+Estimator\+::update (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{X\+\_\+com\+\_\+w, }
+\item[{const {\bf ow\+::\+Imu\+Sensor} \&}]{imu}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__com_1_1COMEstimator_a784d8b980348a546ae69b17ec27ab1c2}{}\label{classow__com_1_1COMEstimator_a784d8b980348a546ae69b17ec27ab1c2}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]Remove this after testing \end{DoxyRefDesc}
+\index{ow\+\_\+com\+::\+C\+O\+M\+Estimator@{ow\+\_\+com\+::\+C\+O\+M\+Estimator}!Xf\+\_\+com\+\_\+w@{Xf\+\_\+com\+\_\+w}}
+\index{Xf\+\_\+com\+\_\+w@{Xf\+\_\+com\+\_\+w}!ow\+\_\+com\+::\+C\+O\+M\+Estimator@{ow\+\_\+com\+::\+C\+O\+M\+Estimator}}
+\subsubsection[{\texorpdfstring{Xf\+\_\+com\+\_\+w() const }{Xf_com_w() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+\_\+com\+::\+C\+O\+M\+Estimator\+::\+Xf\+\_\+com\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__com_1_1COMEstimator_af0474ec2ab3a61d06ab3dd80c70b0b2e}{}\label{classow__com_1_1COMEstimator_af0474ec2ab3a61d06ab3dd80c70b0b2e}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State of the left foot reference wrt world frame. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1ICOMEstimator_a96fc5dc80ed0f61b0a7a300d8519a9af}{ow\+::\+I\+C\+O\+M\+Estimator}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+com/include/ow\+\_\+com/\hyperlink{com__estimator_8h}{com\+\_\+estimator.\+h}\end{DoxyCompactItemize}

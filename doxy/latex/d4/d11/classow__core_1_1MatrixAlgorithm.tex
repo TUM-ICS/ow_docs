@@ -1,0 +1,168 @@
+\hypertarget{classow__core_1_1MatrixAlgorithm}{}\section{ow\+\_\+core\+:\+:Matrix\+Algorithm$<$ \+\_\+\+Derived $>$ Class Template Reference}
+\label{classow__core_1_1MatrixAlgorithm}\index{ow\+\_\+core\+::\+Matrix\+Algorithm$<$ \+\_\+\+Derived $>$@{ow\+\_\+core\+::\+Matrix\+Algorithm$<$ \+\_\+\+Derived $>$}}
+
+
+The \hyperlink{classow__core_1_1MatrixAlgorithm}{Matrix\+Algorithm} class.  
+
+
+
+
+{\ttfamily \#include $<$matrix\+\_\+algorithm.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries Rows} = \+\_\+\+Derived\+:\+:Rows\+At\+Compile\+Time, 
+{\bfseries Cols} = \+\_\+\+Derived\+:\+:Cols\+At\+Compile\+Time
+ \}\hypertarget{classow__core_1_1MatrixAlgorithm_a2d92c0fcaa8e371d1c1b96208b8adce1}{}\label{classow__core_1_1MatrixAlgorithm_a2d92c0fcaa8e371d1c1b96208b8adce1}
+
+\item 
+typedef \+\_\+\+Derived {\bfseries Derived}\hypertarget{classow__core_1_1MatrixAlgorithm_a3e269ceba99918b9d7f1bf2ccfbc40f9}{}\label{classow__core_1_1MatrixAlgorithm_a3e269ceba99918b9d7f1bf2ccfbc40f9}
+
+\item 
+typedef Derived\+::\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1MatrixAlgorithm_a5d3d7ba1df891c76d963ce3ba6d0dd69}{}\label{classow__core_1_1MatrixAlgorithm_a5d3d7ba1df891c76d963ce3ba6d0dd69}
+
+\item 
+typedef Derived\+::\+Index {\bfseries Index}\hypertarget{classow__core_1_1MatrixAlgorithm_a9db9181f15e6d15bf65ccf2414f1f50e}{}\label{classow__core_1_1MatrixAlgorithm_a9db9181f15e6d15bf65ccf2414f1f50e}
+
+\item 
+typedef \hyperlink{classow__core_1_1IScalarAlgorithm}{I\+Scalar\+Algorithm}$<$ Scalar $>$ {\bfseries I\+Algorithm}\hypertarget{classow__core_1_1MatrixAlgorithm_a5cad17788a0f278b4180b1564203d458}{}\label{classow__core_1_1MatrixAlgorithm_a5cad17788a0f278b4180b1564203d458}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1MatrixAlgorithm_a7dd709fa5f8168bfe71c24a380fde4e7}{Matrix\+Algorithm} (const \hyperlink{classow__core_1_1IScalarAlgorithm}{I\+Algorithm} \&algo)
+\begin{DoxyCompactList}\small\item\em Constructor for fixed size vectors and matrices. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1MatrixAlgorithm_a511f58e2e6b40f85686784c3b50c42a8}{Matrix\+Algorithm} (Index size, const \hyperlink{classow__core_1_1IScalarAlgorithm}{I\+Algorithm} \&algo)
+\begin{DoxyCompactList}\small\item\em Constructor for dynamic vectors and partially dynamic matrices. \end{DoxyCompactList}\item 
+{\bfseries Matrix\+Algorithm} (Index rows, Index cols, const \hyperlink{classow__core_1_1IScalarAlgorithm}{I\+Algorithm} \&algo)\hypertarget{classow__core_1_1MatrixAlgorithm_ab60ff922e6be17d8a7c4e35e2cf53b57}{}\label{classow__core_1_1MatrixAlgorithm_ab60ff922e6be17d8a7c4e35e2cf53b57}
+
+\item 
+virtual \hyperlink{classow__core_1_1MatrixAlgorithm_a0384c74074b13a1ce6fa4119c6cab142}{$\sim$\+Matrix\+Algorithm} ()\hypertarget{classow__core_1_1MatrixAlgorithm_a0384c74074b13a1ce6fa4119c6cab142}{}\label{classow__core_1_1MatrixAlgorithm_a0384c74074b13a1ce6fa4119c6cab142}
+
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__core_1_1MatrixAlgorithm_aae232e195def27fd3e9d348362371f3a}{valid} () const 
+\begin{DoxyCompactList}\small\item\em Returns whether the ouput is valid. \end{DoxyCompactList}\item 
+virtual const Derived \& \hyperlink{classow__core_1_1MatrixAlgorithm_aa916ab91a2023c53ea1d1322ed7fbc0d}{reset} (const Derived \&x)
+\begin{DoxyCompactList}\small\item\em Reset the algorithm to inital state. \end{DoxyCompactList}\item 
+virtual const Derived \& \hyperlink{classow__core_1_1MatrixAlgorithm_a67afa50413e22a46adcb8c228044467f}{reset} ()
+\begin{DoxyCompactList}\small\item\em Reset the algorithm to inital state. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classow__core_1_1MatrixAlgorithm_acb46c0c4321418b113b0e47b35d97049}{add} (const Derived \&x)
+\begin{DoxyCompactList}\small\item\em Adds new sample to algorithm. \end{DoxyCompactList}\item 
+virtual const Derived \& \hyperlink{classow__core_1_1MatrixAlgorithm_a21bfb1e0ada4dceafd763578cddd12f6}{update} (const Derived \&x)\hypertarget{classow__core_1_1MatrixAlgorithm_a21bfb1e0ada4dceafd763578cddd12f6}{}\label{classow__core_1_1MatrixAlgorithm_a21bfb1e0ada4dceafd763578cddd12f6}
+
+\begin{DoxyCompactList}\small\item\em Update the filter for the next step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classow__core_1_1MatrixAlgorithm_afd178d04dc2dcc1b7717d06ce49d2179}{setup} (const \hyperlink{classow__core_1_1IScalarAlgorithm}{I\+Algorithm} \&algo)\hypertarget{classow__core_1_1MatrixAlgorithm_afd178d04dc2dcc1b7717d06ce49d2179}{}\label{classow__core_1_1MatrixAlgorithm_afd178d04dc2dcc1b7717d06ce49d2179}
+
+\begin{DoxyCompactList}\small\item\em Populate algos\+\_\+ vector with a copy of input algorithm. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1MatrixAlgorithm_a88285ac3f5013790d8a6ab8f18a962ac}{cleanup} ()\hypertarget{classow__core_1_1MatrixAlgorithm_a88285ac3f5013790d8a6ab8f18a962ac}{}\label{classow__core_1_1MatrixAlgorithm_a88285ac3f5013790d8a6ab8f18a962ac}
+
+\begin{DoxyCompactList}\small\item\em Cleanup memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classow__core_1_1IScalarAlgorithm}{I\+Algorithm} $\ast$ $>$ \hyperlink{classow__core_1_1MatrixAlgorithm_aef6a1e5c1d3e4276f147094059a948e5}{algos\+\_\+}\hypertarget{classow__core_1_1MatrixAlgorithm_aef6a1e5c1d3e4276f147094059a948e5}{}\label{classow__core_1_1MatrixAlgorithm_aef6a1e5c1d3e4276f147094059a948e5}
+
+\begin{DoxyCompactList}\small\item\em vector of algos\+\_\+. \end{DoxyCompactList}\item 
+Derived \hyperlink{classow__core_1_1MatrixAlgorithm_aaef028a042065239ac6737fb9f88f185}{y}\hypertarget{classow__core_1_1MatrixAlgorithm_aaef028a042065239ac6737fb9f88f185}{}\label{classow__core_1_1MatrixAlgorithm_aaef028a042065239ac6737fb9f88f185}
+
+\begin{DoxyCompactList}\small\item\em output \end{DoxyCompactList}\item 
+Index \hyperlink{classow__core_1_1MatrixAlgorithm_afe5d6ee8bc73ea3ff1c8c2f118f63bd8}{rows\+\_\+}\hypertarget{classow__core_1_1MatrixAlgorithm_afe5d6ee8bc73ea3ff1c8c2f118f63bd8}{}\label{classow__core_1_1MatrixAlgorithm_afe5d6ee8bc73ea3ff1c8c2f118f63bd8}
+
+\begin{DoxyCompactList}\small\item\em The number of rows of the matrix. \end{DoxyCompactList}\item 
+Index \hyperlink{classow__core_1_1MatrixAlgorithm_a2278765111a854825f89392a1ed63137}{cols\+\_\+}\hypertarget{classow__core_1_1MatrixAlgorithm_a2278765111a854825f89392a1ed63137}{}\label{classow__core_1_1MatrixAlgorithm_a2278765111a854825f89392a1ed63137}
+
+\begin{DoxyCompactList}\small\item\em The number of columns of the matrix. \end{DoxyCompactList}\item 
+Index \hyperlink{classow__core_1_1MatrixAlgorithm_aa31b11b6bb7d1bbf566a004b30eae410}{size\+\_\+}\hypertarget{classow__core_1_1MatrixAlgorithm_aa31b11b6bb7d1bbf566a004b30eae410}{}\label{classow__core_1_1MatrixAlgorithm_aa31b11b6bb7d1bbf566a004b30eae410}
+
+\begin{DoxyCompactList}\small\item\em The size that is product of the rows and columns. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Derived$>$\\*
+class ow\+\_\+core\+::\+Matrix\+Algorithm$<$ \+\_\+\+Derived $>$}
+
+The \hyperlink{classow__core_1_1MatrixAlgorithm}{Matrix\+Algorithm} class. 
+
+This class provieds the base to apply Algorithms for all vectors and matrices by applying them elementwise. The \+\_\+\+Derived template parameter has to be derived from Eigen\+::\+Matrix. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Matrix\+Algorithm@{ow\+\_\+core\+::\+Matrix\+Algorithm}!Matrix\+Algorithm@{Matrix\+Algorithm}}
+\index{Matrix\+Algorithm@{Matrix\+Algorithm}!ow\+\_\+core\+::\+Matrix\+Algorithm@{ow\+\_\+core\+::\+Matrix\+Algorithm}}
+\subsubsection[{\texorpdfstring{Matrix\+Algorithm(const I\+Algorithm \&algo)}{MatrixAlgorithm(const IAlgorithm &algo)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ {\bf ow\+\_\+core\+::\+Matrix\+Algorithm}$<$ \+\_\+\+Derived $>$\+::{\bf Matrix\+Algorithm} (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Algorithm} \&}]{algo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1MatrixAlgorithm_a7dd709fa5f8168bfe71c24a380fde4e7}{}\label{classow__core_1_1MatrixAlgorithm_a7dd709fa5f8168bfe71c24a380fde4e7}
+
+
+Constructor for fixed size vectors and matrices. 
+
+For now the size cannot be changed after construction. \index{ow\+\_\+core\+::\+Matrix\+Algorithm@{ow\+\_\+core\+::\+Matrix\+Algorithm}!Matrix\+Algorithm@{Matrix\+Algorithm}}
+\index{Matrix\+Algorithm@{Matrix\+Algorithm}!ow\+\_\+core\+::\+Matrix\+Algorithm@{ow\+\_\+core\+::\+Matrix\+Algorithm}}
+\subsubsection[{\texorpdfstring{Matrix\+Algorithm(\+Index size, const I\+Algorithm \&algo)}{MatrixAlgorithm(Index size, const IAlgorithm &algo)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ {\bf ow\+\_\+core\+::\+Matrix\+Algorithm}$<$ \+\_\+\+Derived $>$\+::{\bf Matrix\+Algorithm} (
+\begin{DoxyParamCaption}
+\item[{Index}]{size, }
+\item[{const {\bf I\+Algorithm} \&}]{algo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1MatrixAlgorithm_a511f58e2e6b40f85686784c3b50c42a8}{}\label{classow__core_1_1MatrixAlgorithm_a511f58e2e6b40f85686784c3b50c42a8}
+
+
+Constructor for dynamic vectors and partially dynamic matrices. 
+
+For now the size cannot be changed after construction. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+Matrix\+Algorithm@{ow\+\_\+core\+::\+Matrix\+Algorithm}!add@{add}}
+\index{add@{add}!ow\+\_\+core\+::\+Matrix\+Algorithm@{ow\+\_\+core\+::\+Matrix\+Algorithm}}
+\subsubsection[{\texorpdfstring{add(const Derived \&x)}{add(const Derived &x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ virtual void {\bf ow\+\_\+core\+::\+Matrix\+Algorithm}$<$ \+\_\+\+Derived $>$\+::add (
+\begin{DoxyParamCaption}
+\item[{const Derived \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1MatrixAlgorithm_acb46c0c4321418b113b0e47b35d97049}{}\label{classow__core_1_1MatrixAlgorithm_acb46c0c4321418b113b0e47b35d97049}
+
+
+Adds new sample to algorithm. 
+
+Could be used to populate buffer, before algorithm is used by update. \index{ow\+\_\+core\+::\+Matrix\+Algorithm@{ow\+\_\+core\+::\+Matrix\+Algorithm}!reset@{reset}}
+\index{reset@{reset}!ow\+\_\+core\+::\+Matrix\+Algorithm@{ow\+\_\+core\+::\+Matrix\+Algorithm}}
+\subsubsection[{\texorpdfstring{reset(const Derived \&x)}{reset(const Derived &x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ virtual const Derived\& {\bf ow\+\_\+core\+::\+Matrix\+Algorithm}$<$ \+\_\+\+Derived $>$\+::reset (
+\begin{DoxyParamCaption}
+\item[{const Derived \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1MatrixAlgorithm_aa916ab91a2023c53ea1d1322ed7fbc0d}{}\label{classow__core_1_1MatrixAlgorithm_aa916ab91a2023c53ea1d1322ed7fbc0d}
+
+
+Reset the algorithm to inital state. 
+
+Use the current settings and start from scratch. Sets input as inital value. \index{ow\+\_\+core\+::\+Matrix\+Algorithm@{ow\+\_\+core\+::\+Matrix\+Algorithm}!reset@{reset}}
+\index{reset@{reset}!ow\+\_\+core\+::\+Matrix\+Algorithm@{ow\+\_\+core\+::\+Matrix\+Algorithm}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ virtual const Derived\& {\bf ow\+\_\+core\+::\+Matrix\+Algorithm}$<$ \+\_\+\+Derived $>$\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1MatrixAlgorithm_a67afa50413e22a46adcb8c228044467f}{}\label{classow__core_1_1MatrixAlgorithm_a67afa50413e22a46adcb8c228044467f}
+
+
+Reset the algorithm to inital state. 
+
+Use the current settings and start from scratch. \index{ow\+\_\+core\+::\+Matrix\+Algorithm@{ow\+\_\+core\+::\+Matrix\+Algorithm}!valid@{valid}}
+\index{valid@{valid}!ow\+\_\+core\+::\+Matrix\+Algorithm@{ow\+\_\+core\+::\+Matrix\+Algorithm}}
+\subsubsection[{\texorpdfstring{valid() const }{valid() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ bool {\bf ow\+\_\+core\+::\+Matrix\+Algorithm}$<$ \+\_\+\+Derived $>$\+::valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1MatrixAlgorithm_aae232e195def27fd3e9d348362371f3a}{}\label{classow__core_1_1MatrixAlgorithm_aae232e195def27fd3e9d348362371f3a}
+
+
+Returns whether the ouput is valid. 
+
+Return true if algorithm accumulated enouth samples to fill buffer. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/algorithms/\hyperlink{matrix__algorithm_8h}{matrix\+\_\+algorithm.\+h}\end{DoxyCompactItemize}

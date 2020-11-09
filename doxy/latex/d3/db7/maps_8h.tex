@@ -1,0 +1,73 @@
+\hypertarget{maps_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/maps.h File Reference}
+\label{maps_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/maps.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/maps.\+h}}
+{\ttfamily \#include $<$Eigen/\+Geometry$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Derived $>$ }\\Eigen\+::\+Quaternion$<$ typename Derived\+::\+Scalar $>$ \hyperlink{maps_8h_ad7953f07c0271d3022e5181c4069a6a4}{ow\+::exp\+Map\+S3} (const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&omega)
+\begin{DoxyCompactList}\small\item\em Construct a Quaternion from an element in its tangential space. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\Eigen\+::\+Matrix$<$ typename Derived\+::\+Scalar, 3, 1 $>$ \hyperlink{maps_8h_af010e9eb8e1cbb2a7ac9c071bc9a16bf}{ow\+::log\+Map\+S3} (const Eigen\+::\+Quaternion\+Base$<$ Derived $>$ \&Q)
+\begin{DoxyCompactList}\small\item\em get the element in the tangential vector space of this Lie element in cartesian vector form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287. 
+
+\subsection{Function Documentation}
+\index{maps.\+h@{maps.\+h}!exp\+Map\+S3@{exp\+Map\+S3}}
+\index{exp\+Map\+S3@{exp\+Map\+S3}!maps.\+h@{maps.\+h}}
+\subsubsection[{\texorpdfstring{exp\+Map\+S3(const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&omega)}{expMapS3(const Eigen::MatrixBase< Derived > &omega)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Eigen\+::\+Quaternion$<$typename Derived\+::\+Scalar$>$ ow\+::exp\+Map\+S3 (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&}]{omega}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{maps_8h_file_ad7953f07c0271d3022e5181c4069a6a4}{}\label{maps_8h_file_ad7953f07c0271d3022e5181c4069a6a4}
+
+
+Construct a Quaternion from an element in its tangential space. 
+
+This can used to map an angular velocity omega from to an lie element in S3. \index{maps.\+h@{maps.\+h}!log\+Map\+S3@{log\+Map\+S3}}
+\index{log\+Map\+S3@{log\+Map\+S3}!maps.\+h@{maps.\+h}}
+\subsubsection[{\texorpdfstring{log\+Map\+S3(const Eigen\+::\+Quaternion\+Base$<$ Derived $>$ \&\+Q)}{logMapS3(const Eigen::QuaternionBase< Derived > &Q)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Eigen\+::\+Matrix$<$typename Derived\+::\+Scalar,3,1$>$ ow\+::log\+Map\+S3 (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Quaternion\+Base$<$ Derived $>$ \&}]{Q}
+\end{DoxyParamCaption}
+)}\hypertarget{maps_8h_file_af010e9eb8e1cbb2a7ac9c071bc9a16bf}{}\label{maps_8h_file_af010e9eb8e1cbb2a7ac9c071bc9a16bf}
+
+
+get the element in the tangential vector space of this Lie element in cartesian vector form. 
+
+The vector in tangential space is a 3d vector for a quaternions.
+
+\begin{DoxyNote}{Note}
+To calculate the error between two quaternions the signs of the coefficients need to be flipped if scalar part w $<$ 0 
+\end{DoxyNote}

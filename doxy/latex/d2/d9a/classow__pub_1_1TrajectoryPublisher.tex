@@ -1,0 +1,172 @@
+\hypertarget{classow__pub_1_1TrajectoryPublisher}{}\section{ow\+\_\+pub\+:\+:Trajectory\+Publisher Class Reference}
+\label{classow__pub_1_1TrajectoryPublisher}\index{ow\+\_\+pub\+::\+Trajectory\+Publisher@{ow\+\_\+pub\+::\+Trajectory\+Publisher}}
+
+
+The \hyperlink{classow__pub_1_1TrajectoryPublisher}{Trajectory\+Publisher} class.  
+
+
+
+
+{\ttfamily \#include $<$trajectory\+\_\+publisher.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries State} \{ {\bfseries C\+O\+N\+S\+T\+R\+U\+C\+T\+ED}, 
+{\bfseries I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}, 
+{\bfseries R\+U\+N\+N\+I\+NG}
+ \}\hypertarget{classow__pub_1_1TrajectoryPublisher_a21264fa772939aee4a69f83ded864264}{}\label{classow__pub_1_1TrajectoryPublisher_a21264fa772939aee4a69f83ded864264}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__pub_1_1TrajectoryPublisher_ae486825e80e72360780d6865cdd06569}{Trajectory\+Publisher} ()\hypertarget{classow__pub_1_1TrajectoryPublisher_ae486825e80e72360780d6865cdd06569}{}\label{classow__pub_1_1TrajectoryPublisher_ae486825e80e72360780d6865cdd06569}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classow__pub_1_1TrajectoryPublisher}{Trajectory\+Publisher} Default constructor. \end{DoxyCompactList}\item 
+bool {\bfseries advertise} (ros\+::\+Node\+Handle \&nh, const std\+::string \&name, const std\+::string \&frame, const ros\+::\+Duration \&hist\+\_\+dur)\hypertarget{classow__pub_1_1TrajectoryPublisher_aa13e4a93377f22aae4bc412499387eb8}{}\label{classow__pub_1_1TrajectoryPublisher_aa13e4a93377f22aae4bc412499387eb8}
+
+\item 
+bool \hyperlink{classow__pub_1_1TrajectoryPublisher_ab05d351bef06504b24198ace554d8e14}{advertise} (ros\+::\+Node\+Handle \&nh, const std\+::string \&name, const std\+::string \&frame, size\+\_\+t max\+\_\+size)
+\begin{DoxyCompactList}\small\item\em advertise the trajectory \end{DoxyCompactList}\item 
+void \hyperlink{classow__pub_1_1TrajectoryPublisher_a96091aca01ce94011a6bf1e2a870862f}{update} (const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&X, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em adds a new cartesian pose to the trajectory \end{DoxyCompactList}\item 
+void \hyperlink{classow__pub_1_1TrajectoryPublisher_ae972428a690694752dac75a3ed794f25}{update} (const \hyperlink{classow__core_1_1LinearPosition}{ow\+::\+Linear\+Position} \&x, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em adds a new cartesian pose to the trajectory \end{DoxyCompactList}\item 
+void \hyperlink{classow__pub_1_1TrajectoryPublisher_ad641ed59759b939939e2f9a059ff896f}{publish} (const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em publish the information \end{DoxyCompactList}\item 
+void \hyperlink{classow__pub_1_1TrajectoryPublisher_a4b3010501946e9769ce5c205528371a4}{publish\+If\+Subscribed} (const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em publish the information \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+State {\bfseries state\+\_\+}\hypertarget{classow__pub_1_1TrajectoryPublisher_a37b5e47591ff5e85c17e354838d48a57}{}\label{classow__pub_1_1TrajectoryPublisher_a37b5e47591ff5e85c17e354838d48a57}
+
+\item 
+std\+::string {\bfseries name\+\_\+}\hypertarget{classow__pub_1_1TrajectoryPublisher_a205f46ecbd580c5ca848d9fbeee5a142}{}\label{classow__pub_1_1TrajectoryPublisher_a205f46ecbd580c5ca848d9fbeee5a142}
+
+\item 
+std\+::string {\bfseries frame\+\_\+}\hypertarget{classow__pub_1_1TrajectoryPublisher_aa486e6e6b19b94dd1c7fe406b67cf888}{}\label{classow__pub_1_1TrajectoryPublisher_aa486e6e6b19b94dd1c7fe406b67cf888}
+
+\item 
+ros\+::\+Duration {\bfseries hist\+\_\+dur\+\_\+}\hypertarget{classow__pub_1_1TrajectoryPublisher_a9290baa5d33829d80c426e82e17bac1e}{}\label{classow__pub_1_1TrajectoryPublisher_a9290baa5d33829d80c426e82e17bac1e}
+
+\item 
+size\+\_\+t {\bfseries max\+\_\+size\+\_\+}\hypertarget{classow__pub_1_1TrajectoryPublisher_aee8960b6dee87255716e7606b9ab852c}{}\label{classow__pub_1_1TrajectoryPublisher_aee8960b6dee87255716e7606b9ab852c}
+
+\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} {\bfseries d\+\_\+theshold\+\_\+}\hypertarget{classow__pub_1_1TrajectoryPublisher_a726b9f425e4f8bd9c6b55ba661d4d66c}{}\label{classow__pub_1_1TrajectoryPublisher_a726b9f425e4f8bd9c6b55ba661d4d66c}
+
+\item 
+ros\+::\+Publisher {\bfseries path\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1TrajectoryPublisher_a5a8dc06d772c8806af165a43f0bf706e}{}\label{classow__pub_1_1TrajectoryPublisher_a5a8dc06d772c8806af165a43f0bf706e}
+
+\item 
+ros\+::\+Publisher {\bfseries pose\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1TrajectoryPublisher_a3c39c753dd7953d1d26a83305b42404a}{}\label{classow__pub_1_1TrajectoryPublisher_a3c39c753dd7953d1d26a83305b42404a}
+
+\item 
+nav\+\_\+msgs\+::\+Path {\bfseries path\+\_\+}\hypertarget{classow__pub_1_1TrajectoryPublisher_a64aec51fbcfc9304765a85a46d2e0d04}{}\label{classow__pub_1_1TrajectoryPublisher_a64aec51fbcfc9304765a85a46d2e0d04}
+
+\item 
+geometry\+\_\+msgs\+::\+Pose\+Stamped {\bfseries pose\+\_\+}\hypertarget{classow__pub_1_1TrajectoryPublisher_a919c44fc346df1839050b9797a8e591c}{}\label{classow__pub_1_1TrajectoryPublisher_a919c44fc346df1839050b9797a8e591c}
+
+\item 
+std\+::deque$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ {\bfseries data\+\_\+}\hypertarget{classow__pub_1_1TrajectoryPublisher_a6443df2ec3ae091833108843a81f611d}{}\label{classow__pub_1_1TrajectoryPublisher_a6443df2ec3ae091833108843a81f611d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__pub_1_1TrajectoryPublisher}{Trajectory\+Publisher} class. 
+
+This class publishes trajectories in rviz. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+pub\+::\+Trajectory\+Publisher@{ow\+\_\+pub\+::\+Trajectory\+Publisher}!advertise@{advertise}}
+\index{advertise@{advertise}!ow\+\_\+pub\+::\+Trajectory\+Publisher@{ow\+\_\+pub\+::\+Trajectory\+Publisher}}
+\subsubsection[{\texorpdfstring{advertise(ros\+::\+Node\+Handle \&nh, const std\+::string \&name, const std\+::string \&frame, size\+\_\+t max\+\_\+size)}{advertise(ros::NodeHandle &nh, const std::string &name, const std::string &frame, size_t max_size)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+pub\+::\+Trajectory\+Publisher\+::advertise (
+\begin{DoxyParamCaption}
+\item[{ros\+::\+Node\+Handle \&}]{nh, }
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::string \&}]{frame, }
+\item[{size\+\_\+t}]{max\+\_\+size}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__pub_1_1TrajectoryPublisher_ab05d351bef06504b24198ace554d8e14}{}\label{classow__pub_1_1TrajectoryPublisher_ab05d351bef06504b24198ace554d8e14}
+
+
+advertise the trajectory 
+
+Limit the number of elements in the trajectory to max\+\_\+size elements. \index{ow\+\_\+pub\+::\+Trajectory\+Publisher@{ow\+\_\+pub\+::\+Trajectory\+Publisher}!publish@{publish}}
+\index{publish@{publish}!ow\+\_\+pub\+::\+Trajectory\+Publisher@{ow\+\_\+pub\+::\+Trajectory\+Publisher}}
+\subsubsection[{\texorpdfstring{publish(const ros\+::\+Time \&time)}{publish(const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+pub\+::\+Trajectory\+Publisher\+::publish (
+\begin{DoxyParamCaption}
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__pub_1_1TrajectoryPublisher_ad641ed59759b939939e2f9a059ff896f}{}\label{classow__pub_1_1TrajectoryPublisher_ad641ed59759b939939e2f9a059ff896f}
+
+
+publish the information 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & time \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+pub\+::\+Trajectory\+Publisher@{ow\+\_\+pub\+::\+Trajectory\+Publisher}!publish\+If\+Subscribed@{publish\+If\+Subscribed}}
+\index{publish\+If\+Subscribed@{publish\+If\+Subscribed}!ow\+\_\+pub\+::\+Trajectory\+Publisher@{ow\+\_\+pub\+::\+Trajectory\+Publisher}}
+\subsubsection[{\texorpdfstring{publish\+If\+Subscribed(const ros\+::\+Time \&time)}{publishIfSubscribed(const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+pub\+::\+Trajectory\+Publisher\+::publish\+If\+Subscribed (
+\begin{DoxyParamCaption}
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__pub_1_1TrajectoryPublisher_a4b3010501946e9769ce5c205528371a4}{}\label{classow__pub_1_1TrajectoryPublisher_a4b3010501946e9769ce5c205528371a4}
+
+
+publish the information 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & time \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+pub\+::\+Trajectory\+Publisher@{ow\+\_\+pub\+::\+Trajectory\+Publisher}!update@{update}}
+\index{update@{update}!ow\+\_\+pub\+::\+Trajectory\+Publisher@{ow\+\_\+pub\+::\+Trajectory\+Publisher}}
+\subsubsection[{\texorpdfstring{update(const ow\+::\+Cartesian\+Position \&\+X, const ros\+::\+Time \&time)}{update(const ow::CartesianPosition &X, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+pub\+::\+Trajectory\+Publisher\+::update (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{X, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__pub_1_1TrajectoryPublisher_a96091aca01ce94011a6bf1e2a870862f}{}\label{classow__pub_1_1TrajectoryPublisher_a96091aca01ce94011a6bf1e2a870862f}
+
+
+adds a new cartesian pose to the trajectory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & jointstate \\
+\hline
+{\em current} & time \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+pub\+::\+Trajectory\+Publisher@{ow\+\_\+pub\+::\+Trajectory\+Publisher}!update@{update}}
+\index{update@{update}!ow\+\_\+pub\+::\+Trajectory\+Publisher@{ow\+\_\+pub\+::\+Trajectory\+Publisher}}
+\subsubsection[{\texorpdfstring{update(const ow\+::\+Linear\+Position \&x, const ros\+::\+Time \&time)}{update(const ow::LinearPosition &x, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+pub\+::\+Trajectory\+Publisher\+::update (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Linear\+Position} \&}]{x, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__pub_1_1TrajectoryPublisher_ae972428a690694752dac75a3ed794f25}{}\label{classow__pub_1_1TrajectoryPublisher_ae972428a690694752dac75a3ed794f25}
+
+
+adds a new cartesian pose to the trajectory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & jointstate \\
+\hline
+{\em current} & time \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+state\+\_\+publisher/include/ow\+\_\+state\+\_\+publisher/\hyperlink{trajectory__publisher_8h}{trajectory\+\_\+publisher.\+h}\end{DoxyCompactItemize}

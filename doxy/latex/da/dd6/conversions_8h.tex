@@ -1,0 +1,155 @@
+\hypertarget{conversions_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/conversions.h File Reference}
+\label{conversions_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/conversions.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/conversions.\+h}}
+
+
+Contains global conversion functions.  
+
+
+{\ttfamily \#include $<$Eigen/\+Dense$>$}\\*
+{\ttfamily \#include $<$tf/\+Linear\+Math/\+Matrix3x3.\+h$>$}\\*
+{\ttfamily \#include $<$tf/\+Linear\+Math/\+Quaternion.\+h$>$}\\*
+{\ttfamily \#include $<$tf\+\_\+conversions/tf\+\_\+eigen.\+h$>$}\\*
+{\ttfamily \#include $<$geometry\+\_\+msgs/\+Quaternion.\+h$>$}\\*
+{\ttfamily \#include $<$geometry\+\_\+msgs/\+Point.\+h$>$}\\*
+{\ttfamily \#include $<$geometry\+\_\+msgs/\+Vector3.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+msgs/\+Vector.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\std\+::string \hyperlink{conversions_8h_a36daa5a22ceaa120ec8e652495612506}{ow\+\_\+core\+::eigen\+To\+String} (const Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e)\hypertarget{conversions_8h_a36daa5a22ceaa120ec8e652495612506}{}\label{conversions_8h_a36daa5a22ceaa120ec8e652495612506}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Matrix to a std\+::string. \end{DoxyCompactList}\item 
+void \hyperlink{conversions_8h_ae9596031f6ad95ff0d8a4197909554df}{ow\+\_\+core\+::matrix\+T\+F\+To\+Eigen} (const tf\+::\+Matrix3x3 \&t, Eigen\+::\+Quaterniond \&e)\hypertarget{conversions_8h_ae9596031f6ad95ff0d8a4197909554df}{}\label{conversions_8h_ae9596031f6ad95ff0d8a4197909554df}
+
+\begin{DoxyCompactList}\small\item\em Converts a tf\+::\+Matrix3x3 into an Eigen\+::\+Quaterniond. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_aed81a8fc99772a21e0d9c0581d4f4eec}{ow\+\_\+core\+::matrix\+T\+F\+To\+Eigen} (const tf\+::\+Matrix3x3 \&t, Eigen\+::\+Quaternion\+Base$<$ \+\_\+\+Derived $>$ \&e)\hypertarget{conversions_8h_aed81a8fc99772a21e0d9c0581d4f4eec}{}\label{conversions_8h_aed81a8fc99772a21e0d9c0581d4f4eec}
+
+\begin{DoxyCompactList}\small\item\em Converts a tf\+::\+Matrix3x3 into an Eigen\+::\+Quaternion\+Base. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_a1db65b9bfa76b89ae73b413f922b3ffb}{ow\+\_\+core\+::matrix\+T\+F\+To\+Eigen} (const tf\+::\+Matrix3x3 \&t, Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e)\hypertarget{conversions_8h_a1db65b9bfa76b89ae73b413f922b3ffb}{}\label{conversions_8h_a1db65b9bfa76b89ae73b413f922b3ffb}
+
+\begin{DoxyCompactList}\small\item\em Converts a tf\+::\+Matrix3x3 into an Eigen\+::\+Matrix3. \end{DoxyCompactList}\item 
+void \hyperlink{conversions_8h_a6fa60e3fc5e9039fb425978cd9da6c4a}{ow\+\_\+core\+::eigen\+To\+Matrix\+TF} (const Eigen\+::\+Quaterniond \&e, tf\+::\+Matrix3x3 \&t)\hypertarget{conversions_8h_a6fa60e3fc5e9039fb425978cd9da6c4a}{}\label{conversions_8h_a6fa60e3fc5e9039fb425978cd9da6c4a}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Quaterniond into a tf\+::\+Matrix3x3. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_a1b5b3ca64bfe9bbdde354cd3b2b8f438}{ow\+\_\+core\+::eigen\+To\+Matrix\+TF} (const Eigen\+::\+Quaternion\+Base$<$ \+\_\+\+Derived $>$ \&e, tf\+::\+Matrix3x3 \&t)\hypertarget{conversions_8h_a1b5b3ca64bfe9bbdde354cd3b2b8f438}{}\label{conversions_8h_a1b5b3ca64bfe9bbdde354cd3b2b8f438}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Quaternion\+Base into a tf\+::\+Matrix3x3. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_a09a66fcdeaf7bc0c056a530d3c0d1549}{ow\+\_\+core\+::eigen\+To\+Matrix\+TF} (const Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e, tf\+::\+Matrix3x3 \&t)\hypertarget{conversions_8h_a09a66fcdeaf7bc0c056a530d3c0d1549}{}\label{conversions_8h_a09a66fcdeaf7bc0c056a530d3c0d1549}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Matrix\+Base into a tf\+::\+Matrix3x3. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_aa1e95e10cba8919634219f0038bdd13c}{ow\+\_\+core\+::quaternion\+T\+F\+To\+Eigen} (const tf\+::\+Quaternion \&t, Eigen\+::\+Quaternion\+Base$<$ \+\_\+\+Derived $>$ \&e)\hypertarget{conversions_8h_aa1e95e10cba8919634219f0038bdd13c}{}\label{conversions_8h_aa1e95e10cba8919634219f0038bdd13c}
+
+\begin{DoxyCompactList}\small\item\em Converts a tf\+::\+Quaternion into an Eigen\+::\+Quaternion\+Base. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_af24b1e09a4a8f09447d7f0bc53291ea3}{ow\+\_\+core\+::quaternion\+T\+F\+To\+Eigen} (const tf\+::\+Quaternion \&t, Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e)\hypertarget{conversions_8h_af24b1e09a4a8f09447d7f0bc53291ea3}{}\label{conversions_8h_af24b1e09a4a8f09447d7f0bc53291ea3}
+
+\begin{DoxyCompactList}\small\item\em Converts a tf\+::\+Quaternion into an Eigen\+::\+Matrix\+Base. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_aed0351f9090372b737439da9d77fd141}{ow\+\_\+core\+::eigen\+To\+Quaternion\+TF} (const Eigen\+::\+Quaternion\+Base$<$ \+\_\+\+Derived $>$ \&e, tf\+::\+Quaternion \&t)\hypertarget{conversions_8h_aed0351f9090372b737439da9d77fd141}{}\label{conversions_8h_aed0351f9090372b737439da9d77fd141}
+
+\begin{DoxyCompactList}\small\item\em Converts a tf\+::\+Quaternion into an Eigen\+::\+Quaternion\+Base. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void {\bfseries ow\+\_\+core\+::eigen\+To\+Quaternion\+TF} (const Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e, tf\+::\+Quaternion \&t)\hypertarget{conversions_8h_a0a8e1a036abbe6870a29ac40824d4eb0}{}\label{conversions_8h_a0a8e1a036abbe6870a29ac40824d4eb0}
+
+\item 
+void \hyperlink{conversions_8h_a879b8cbcacbcbc8c836f302edbe9a305}{ow\+\_\+core\+::quaternion\+Msg\+To\+Eigen} (const geometry\+\_\+msgs\+::\+Quaternion \&t, Eigen\+::\+Quaterniond \&e)\hypertarget{conversions_8h_a879b8cbcacbcbc8c836f302edbe9a305}{}\label{conversions_8h_a879b8cbcacbcbc8c836f302edbe9a305}
+
+\begin{DoxyCompactList}\small\item\em Converts a geometry\+\_\+msgs\+::\+Quaternion into an Eigen\+::\+Quaterniond. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_a7331392dff4538af4f6d6889e6eb10a1}{ow\+\_\+core\+::quaternion\+Msg\+To\+Eigen} (const geometry\+\_\+msgs\+::\+Quaternion \&t, Eigen\+::\+Quaternion\+Base$<$ \+\_\+\+Derived $>$ \&e)\hypertarget{conversions_8h_a7331392dff4538af4f6d6889e6eb10a1}{}\label{conversions_8h_a7331392dff4538af4f6d6889e6eb10a1}
+
+\begin{DoxyCompactList}\small\item\em Converts a geometry\+\_\+msgs\+::\+Quaternion into an Eigen\+::\+Quaternion\+Base. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_a2b65a226e762d3d93d27342a481ec79f}{ow\+\_\+core\+::quaternion\+Msg\+To\+Eigen} (const geometry\+\_\+msgs\+::\+Quaternion \&t, Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e)\hypertarget{conversions_8h_a2b65a226e762d3d93d27342a481ec79f}{}\label{conversions_8h_a2b65a226e762d3d93d27342a481ec79f}
+
+\begin{DoxyCompactList}\small\item\em Converts a geometry\+\_\+msgs\+::\+Quaternion into an Eigen\+::\+Matrix3. \end{DoxyCompactList}\item 
+void \hyperlink{conversions_8h_aceba70ad63ab536db19a64c5d724930a}{ow\+\_\+core\+::eigen\+To\+Quaternion\+Msg} (const Eigen\+::\+Quaterniond \&e, geometry\+\_\+msgs\+::\+Quaternion \&t)\hypertarget{conversions_8h_aceba70ad63ab536db19a64c5d724930a}{}\label{conversions_8h_aceba70ad63ab536db19a64c5d724930a}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Quaterniond into a geometry\+\_\+msgs\+::\+Quaternion. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_a7b1f22717e5cdd4b73fde3cf699e5cfd}{ow\+\_\+core\+::eigen\+To\+Quaternion\+Msg} (const Eigen\+::\+Quaternion\+Base$<$ \+\_\+\+Derived $>$ \&e, geometry\+\_\+msgs\+::\+Quaternion \&t)\hypertarget{conversions_8h_a7b1f22717e5cdd4b73fde3cf699e5cfd}{}\label{conversions_8h_a7b1f22717e5cdd4b73fde3cf699e5cfd}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Quaternion\+Base to a geometry\+\_\+msgs\+::\+Quaternion. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_afe67a232539ecd6128bfac841e2cc1bd}{ow\+\_\+core\+::eigen\+To\+Quaternion\+Msg} (const Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e, geometry\+\_\+msgs\+::\+Quaternion \&t)\hypertarget{conversions_8h_afe67a232539ecd6128bfac841e2cc1bd}{}\label{conversions_8h_afe67a232539ecd6128bfac841e2cc1bd}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Matrix3 to a geometry\+\_\+msgs\+::\+Quaternion. \end{DoxyCompactList}\item 
+void \hyperlink{conversions_8h_a0369b1ca3fb8dc0b4fd7d2616619c092}{ow\+\_\+core\+::eigen\+To\+Point\+Msg} (const Eigen\+::\+Vector3d \&e, geometry\+\_\+msgs\+::\+Point \&t)\hypertarget{conversions_8h_a0369b1ca3fb8dc0b4fd7d2616619c092}{}\label{conversions_8h_a0369b1ca3fb8dc0b4fd7d2616619c092}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Vector3d into a geometry\+\_\+msgs\+::\+Point. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_a2279e2cb586fb1bd07b338c7ba7a3e8e}{ow\+\_\+core\+::vector3\+Eigen\+To\+Point\+Msg} (const Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e, geometry\+\_\+msgs\+::\+Point \&t)\hypertarget{conversions_8h_a2279e2cb586fb1bd07b338c7ba7a3e8e}{}\label{conversions_8h_a2279e2cb586fb1bd07b338c7ba7a3e8e}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Eigen\+Base to a geometry\+\_\+msgs\+::\+Point. \end{DoxyCompactList}\item 
+void \hyperlink{conversions_8h_a5bd86d13e88e0b72b01db5b35c62c4a7}{ow\+\_\+core\+::eigen\+To\+Vector3\+Msg} (const Eigen\+::\+Vector3d \&e, geometry\+\_\+msgs\+::\+Vector3 \&t)\hypertarget{conversions_8h_a5bd86d13e88e0b72b01db5b35c62c4a7}{}\label{conversions_8h_a5bd86d13e88e0b72b01db5b35c62c4a7}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Vector3d into a geometry\+\_\+msgs\+::\+Point. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_ab69f6bd2757103d471a24f3c48c4d34b}{ow\+\_\+core\+::vector3\+Eigen\+To\+Vector3\+Msg} (const Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e, geometry\+\_\+msgs\+::\+Vector3 \&t)\hypertarget{conversions_8h_ab69f6bd2757103d471a24f3c48c4d34b}{}\label{conversions_8h_ab69f6bd2757103d471a24f3c48c4d34b}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Eigen\+Base to a geometry\+\_\+msgs\+::\+Point. \end{DoxyCompactList}\item 
+void \hyperlink{conversions_8h_a5815366596605b155e9f8ec17f48881a}{ow\+\_\+core\+::eigen\+To\+Std\+Vector} (const Eigen\+::\+Vector\+Xd \&e, std\+::vector$<$ double $>$ \&t)\hypertarget{conversions_8h_a5815366596605b155e9f8ec17f48881a}{}\label{conversions_8h_a5815366596605b155e9f8ec17f48881a}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Vector\+Xd into a std\+::vector$<$double$>$. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_acd30e7ac446209f4dc417d76d73be565}{ow\+\_\+core\+::eigen\+To\+Vector\+Msg} (const Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e, ow\+\_\+msgs\+::\+Vector \&t)\hypertarget{conversions_8h_acd30e7ac446209f4dc417d76d73be565}{}\label{conversions_8h_acd30e7ac446209f4dc417d76d73be565}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Eigen\+Base to a ow\+\_\+msgs\+::\+Vector. \end{DoxyCompactList}\item 
+void \hyperlink{conversions_8h_a49d9b5b48f2c7400c51237d56745353a}{ow\+\_\+core\+::point\+Msg\+To\+Eigen} (const geometry\+\_\+msgs\+::\+Point \&t, Eigen\+::\+Vector3d \&e)\hypertarget{conversions_8h_a49d9b5b48f2c7400c51237d56745353a}{}\label{conversions_8h_a49d9b5b48f2c7400c51237d56745353a}
+
+\begin{DoxyCompactList}\small\item\em Converts a geometry\+\_\+msgs\+::\+Point into an Eigen\+::\+Vector3d. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_a9b230c9c83b15a2b618185e532f9ab1e}{ow\+\_\+core\+::point\+Msg\+To\+Eigen} (const geometry\+\_\+msgs\+::\+Point \&t, Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e)\hypertarget{conversions_8h_a9b230c9c83b15a2b618185e532f9ab1e}{}\label{conversions_8h_a9b230c9c83b15a2b618185e532f9ab1e}
+
+\begin{DoxyCompactList}\small\item\em Converts a geometry\+\_\+msgs\+::\+Point into an Eigen\+::\+Eigen\+Base. \end{DoxyCompactList}\item 
+void \hyperlink{conversions_8h_a6f07437c8d72a9d3f08f58c6c6f4c97d}{ow\+\_\+core\+::vector3\+Msg\+To\+Eigen} (const geometry\+\_\+msgs\+::\+Vector3 \&t, Eigen\+::\+Vector3d \&e)\hypertarget{conversions_8h_a6f07437c8d72a9d3f08f58c6c6f4c97d}{}\label{conversions_8h_a6f07437c8d72a9d3f08f58c6c6f4c97d}
+
+\begin{DoxyCompactList}\small\item\em Converts a geometry\+\_\+msgs\+::\+Vector3 into an Eigen\+::\+Vector3d. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_aea931ee6e6767b1466a7cc6d89a6ff0a}{ow\+\_\+core\+::vector3\+Msg\+To\+Eigen} (const geometry\+\_\+msgs\+::\+Vector3 \&t, Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e)\hypertarget{conversions_8h_aea931ee6e6767b1466a7cc6d89a6ff0a}{}\label{conversions_8h_aea931ee6e6767b1466a7cc6d89a6ff0a}
+
+\begin{DoxyCompactList}\small\item\em Converts a geometry\+\_\+msgs\+::\+Vector3 into an Eigen\+::\+Eigen\+Base. \end{DoxyCompactList}\item 
+void \hyperlink{conversions_8h_af5bc528c2ca1f182794753629afb3675}{ow\+\_\+core\+::std\+Vector\+To\+Eigen} (const std\+::vector$<$ double $>$ \&t, Eigen\+::\+Vector\+Xd \&e)\hypertarget{conversions_8h_af5bc528c2ca1f182794753629afb3675}{}\label{conversions_8h_af5bc528c2ca1f182794753629afb3675}
+
+\begin{DoxyCompactList}\small\item\em Converts an std\+::vector$<$double$>$ into Eigen\+::\+Vector\+Xd. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_ab771ff4950b0816f41f779ba6f24a277}{ow\+\_\+core\+::vector\+Msg\+To\+Eigen} (const ow\+\_\+msgs\+::\+Vector \&t, Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e)\hypertarget{conversions_8h_ab771ff4950b0816f41f779ba6f24a277}{}\label{conversions_8h_ab771ff4950b0816f41f779ba6f24a277}
+
+\begin{DoxyCompactList}\small\item\em Converts a geometry\+\_\+msgs\+::\+Vector3 into an Eigen\+::\+Eigen\+Base. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_a7554e0cc719f017870e050516b7b836b}{ow\+\_\+core\+::eigen\+To\+Vector3\+TF} (const Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e, tf\+::\+Vector3 \&t)\hypertarget{conversions_8h_a7554e0cc719f017870e050516b7b836b}{}\label{conversions_8h_a7554e0cc719f017870e050516b7b836b}
+
+\begin{DoxyCompactList}\small\item\em Converts an Eigen\+::\+Eigen\+Base into a tf\+::\+Vector3. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\void \hyperlink{conversions_8h_a1724391838482bb1a6d878062e269d06}{ow\+\_\+core\+::vector3\+T\+F\+To\+Eigen} (const tf\+::\+Vector3 \&t, Eigen\+::\+Matrix\+Base$<$ \+\_\+\+Derived $>$ \&e)\hypertarget{conversions_8h_a1724391838482bb1a6d878062e269d06}{}\label{conversions_8h_a1724391838482bb1a6d878062e269d06}
+
+\begin{DoxyCompactList}\small\item\em Converts an tf\+::\+Vector3 into Eigen\+::\+Eigen\+Base. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains global conversion functions. 
+
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287.
+
+Contains all the global conversion functions to convert between\+:
+\begin{DoxyItemize}
+\item the Open\+Walker types
+\item the Eigen types
+\item the R\+OS tf types
+\item the R\+OS geometry\+\_\+msgs types 
+\end{DoxyItemize}

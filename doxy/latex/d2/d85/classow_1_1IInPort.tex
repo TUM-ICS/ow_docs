@@ -1,0 +1,64 @@
+\hypertarget{classow_1_1IInPort}{}\section{ow\+:\+:I\+In\+Port Class Reference}
+\label{classow_1_1IInPort}\index{ow\+::\+I\+In\+Port@{ow\+::\+I\+In\+Port}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classow_1_1Port}{Port} $>$ {\bfseries Port\+Ptr}\hypertarget{classow_1_1IInPort_ab5ca8cd913fe6a92016552c8ec2f623d}{}\label{classow_1_1IInPort_ab5ca8cd913fe6a92016552c8ec2f623d}
+
+\item 
+typedef std\+::unordered\+\_\+map$<$ std\+::string, Port\+Ptr $>$ {\bfseries Ports}\hypertarget{classow_1_1IInPort_a1584bfe1f59cf2df30b3937bd1dd3ea9}{}\label{classow_1_1IInPort_a1584bfe1f59cf2df30b3937bd1dd3ea9}
+
+\item 
+typedef Ports\+::iterator {\bfseries Ports\+Iter}\hypertarget{classow_1_1IInPort_a9abb35d35a920b71fa03729471331e80}{}\label{classow_1_1IInPort_a9abb35d35a920b71fa03729471331e80}
+
+\item 
+typedef Ports\+::const\+\_\+iterator {\bfseries C\+Ports\+Iter}\hypertarget{classow_1_1IInPort_afccf1ba64c6207d903afe0c2b4a8e657}{}\label{classow_1_1IInPort_afccf1ba64c6207d903afe0c2b4a8e657}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+In\+Port} (const std\+::string \&name)\hypertarget{classow_1_1IInPort_a0083b093069dc0a07f38af6f92b844af}{}\label{classow_1_1IInPort_a0083b093069dc0a07f38af6f92b844af}
+
+\item 
+bool {\bfseries has\+In\+Port} () const \hypertarget{classow_1_1IInPort_abd77977607ef1548d9b59f527e3ca0c2}{}\label{classow_1_1IInPort_abd77977607ef1548d9b59f527e3ca0c2}
+
+\item 
+size\+\_\+t {\bfseries num\+In\+Ports} () const \hypertarget{classow_1_1IInPort_adffd2c5d210e2f0c26f9f0f2c2091cac}{}\label{classow_1_1IInPort_adffd2c5d210e2f0c26f9f0f2c2091cac}
+
+\item 
+bool {\bfseries is\+All\+Connected} () const \hypertarget{classow_1_1IInPort_a2e3eb3be9159091fdf21df1cc805e042}{}\label{classow_1_1IInPort_a2e3eb3be9159091fdf21df1cc805e042}
+
+\item 
+Port\+Ptr {\bfseries in\+Port} (const std\+::string \&name)\hypertarget{classow_1_1IInPort_a0e8db75018060585c92c694008a9523c}{}\label{classow_1_1IInPort_a0e8db75018060585c92c694008a9523c}
+
+\item 
+{\footnotesize template$<$typename \+\_\+T $>$ }\\In\+Port\+Ptr$<$ \+\_\+T $>$ {\bfseries in\+Port} (const std\+::string \&name)\hypertarget{classow_1_1IInPort_a7c7abb60581754c542acd3319c1bd89f}{}\label{classow_1_1IInPort_a7c7abb60581754c542acd3319c1bd89f}
+
+\item 
+std\+::string {\bfseries print\+In\+Port} ()\hypertarget{classow_1_1IInPort_ad4da10b1192c3350d957a15ef5b376d4}{}\label{classow_1_1IInPort_ad4da10b1192c3350d957a15ef5b376d4}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename \+\_\+T $>$ }\\In\+Port\+Ptr$<$ \+\_\+T $>$ \hyperlink{classow_1_1IInPort_a5a2fdccf8daeb7a96dc216334a3243e6}{register\+In\+Port} (const std\+::string \&name)
+\item 
+{\footnotesize template$<$typename \+\_\+T $>$ }\\In\+Port\+Ptr$<$ \+\_\+T $>$ {\bfseries register\+In\+Port} (const std\+::string \&name, const \+\_\+T \&val\+\_\+default)\hypertarget{classow_1_1IInPort_a3e29425eb0c32bb709a51f98352e64ff}{}\label{classow_1_1IInPort_a3e29425eb0c32bb709a51f98352e64ff}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{ow\+::\+I\+In\+Port@{ow\+::\+I\+In\+Port}!register\+In\+Port@{register\+In\+Port}}
+\index{register\+In\+Port@{register\+In\+Port}!ow\+::\+I\+In\+Port@{ow\+::\+I\+In\+Port}}
+\subsubsection[{\texorpdfstring{register\+In\+Port(const std\+::string \&name)}{registerInPort(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+T $>$ In\+Port\+Ptr$<$\+\_\+T$>$ ow\+::\+I\+In\+Port\+::register\+In\+Port (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow_1_1IInPort_a5a2fdccf8daeb7a96dc216334a3243e6}{}\label{classow_1_1IInPort_a5a2fdccf8daeb7a96dc216334a3243e6}
+construct a new port 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/common/\hyperlink{i__in__port_8h}{i\+\_\+in\+\_\+port.\+h}\end{DoxyCompactItemize}

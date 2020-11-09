@@ -1,0 +1,128 @@
+\hypertarget{eigen__typedef__macros_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/utilities/eigen\+\_\+typedef\+\_\+macros.h File Reference}
+\label{eigen__typedef__macros_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/utilities/eigen\+\_\+typedef\+\_\+macros.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/utilities/eigen\+\_\+typedef\+\_\+macros.\+h}}
+
+
+Contains macros for creating vector and matrix typedefs.  
+
+
+{\ttfamily \#include $<$Eigen/\+Dense$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{eigen__typedef__macros_8h_aeab9d8c7942a67737592202836fd552a}{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+FS}(Type,  Type\+Suffix,  Size,  Size\+Suffix)
+\begin{DoxyCompactList}\small\item\em Create the typedefs for vectors, row vectors, matrices. \end{DoxyCompactList}\item 
+\#define \hyperlink{eigen__typedef__macros_8h_adbc54b7184bcf7a1842a51d9aecde05a}{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+F\+I\+X\+E\+D\+\_\+\+T\+Y\+P\+E\+D\+E\+FS}(Type,  Type\+Suffix,  Size)
+\begin{DoxyCompactList}\small\item\em Create the typedefs for dynamic size matrices with on fixed dimensions. \end{DoxyCompactList}\item 
+\#define \hyperlink{eigen__typedef__macros_8h_a3f7e4db3fde08a943c93cf940ca6286d}{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S\+\_\+\+A\+L\+L\+\_\+\+S\+I\+Z\+ES}(Type,  Type\+Suffix)
+\begin{DoxyCompactList}\small\item\em Create the typedefs for vectors and matrices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains macros for creating vector and matrix typedefs. 
+
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287.
+
+These macros are inspired by the macros of the Eigen library. 
+
+\subsection{Macro Definition Documentation}
+\index{eigen\+\_\+typedef\+\_\+macros.\+h@{eigen\+\_\+typedef\+\_\+macros.\+h}!O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+F\+I\+X\+E\+D\+\_\+\+T\+Y\+P\+E\+D\+E\+FS@{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+F\+I\+X\+E\+D\+\_\+\+T\+Y\+P\+E\+D\+E\+FS}}
+\index{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+F\+I\+X\+E\+D\+\_\+\+T\+Y\+P\+E\+D\+E\+FS@{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+F\+I\+X\+E\+D\+\_\+\+T\+Y\+P\+E\+D\+E\+FS}!eigen\+\_\+typedef\+\_\+macros.\+h@{eigen\+\_\+typedef\+\_\+macros.\+h}}
+\subsubsection[{\texorpdfstring{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+F\+I\+X\+E\+D\+\_\+\+T\+Y\+P\+E\+D\+E\+FS}{OPEN_WALKER_CORE_MAKE_FIXED_TYPEDEFS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+F\+I\+X\+E\+D\+\_\+\+T\+Y\+P\+E\+D\+E\+FS(
+\begin{DoxyParamCaption}
+\item[{}]{Type, }
+\item[{}]{Type\+Suffix, }
+\item[{}]{Size}
+\end{DoxyParamCaption}
+)}\hypertarget{eigen__typedef__macros_8h_adbc54b7184bcf7a1842a51d9aecde05a}{}\label{eigen__typedef__macros_8h_adbc54b7184bcf7a1842a51d9aecde05a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{typedef} Eigen::Matrix<Type, Size, Eigen::Dynamic> Matrix##Size##X##TypeSuffix; \(\backslash\)
+typedef Eigen::Matrix<Type, Eigen::Dynamic, Size> Matrix##X##Size##TypeSuffix;
+\end{DoxyCode}
+
+
+Create the typedefs for dynamic size matrices with on fixed dimensions. 
+
+E.\+g. Matrix3\+Xui, Matrix\+X3ui \index{eigen\+\_\+typedef\+\_\+macros.\+h@{eigen\+\_\+typedef\+\_\+macros.\+h}!O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+FS@{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+FS}}
+\index{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+FS@{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+FS}!eigen\+\_\+typedef\+\_\+macros.\+h@{eigen\+\_\+typedef\+\_\+macros.\+h}}
+\subsubsection[{\texorpdfstring{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+FS}{OPEN_WALKER_CORE_MAKE_TYPEDEFS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+M\+A\+K\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+FS(
+\begin{DoxyParamCaption}
+\item[{}]{Type, }
+\item[{}]{Type\+Suffix, }
+\item[{}]{Size, }
+\item[{}]{Size\+Suffix}
+\end{DoxyParamCaption}
+)}\hypertarget{eigen__typedef__macros_8h_aeab9d8c7942a67737592202836fd552a}{}\label{eigen__typedef__macros_8h_aeab9d8c7942a67737592202836fd552a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{typedef} Eigen::Matrix<Type, Size, Size> Matrix##SizeSuffix##TypeSuffix; \(\backslash\)
+typedef Eigen::Matrix<Type, Size, 1>    Vector##SizeSuffix##TypeSuffix; \(\backslash\)
+typedef Eigen::Matrix<Type, 1, Size>    RowVector##SizeSuffix##TypeSuffix;
+\end{DoxyCode}
+
+
+Create the typedefs for vectors, row vectors, matrices. 
+
+E.\+g. Vector3ui, Matrix3ui, Row\+Vector3ui. \index{eigen\+\_\+typedef\+\_\+macros.\+h@{eigen\+\_\+typedef\+\_\+macros.\+h}!O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S\+\_\+\+A\+L\+L\+\_\+\+S\+I\+Z\+ES@{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S\+\_\+\+A\+L\+L\+\_\+\+S\+I\+Z\+ES}}
+\index{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S\+\_\+\+A\+L\+L\+\_\+\+S\+I\+Z\+ES@{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S\+\_\+\+A\+L\+L\+\_\+\+S\+I\+Z\+ES}!eigen\+\_\+typedef\+\_\+macros.\+h@{eigen\+\_\+typedef\+\_\+macros.\+h}}
+\subsubsection[{\texorpdfstring{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S\+\_\+\+A\+L\+L\+\_\+\+S\+I\+Z\+ES}{OPEN_WALKER_CORE_TYPEDEFS_ALL_SIZES}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S\+\_\+\+A\+L\+L\+\_\+\+S\+I\+Z\+ES(
+\begin{DoxyParamCaption}
+\item[{}]{Type, }
+\item[{}]{Type\+Suffix}
+\end{DoxyParamCaption}
+)}\hypertarget{eigen__typedef__macros_8h_a3f7e4db3fde08a943c93cf940ca6286d}{}\label{eigen__typedef__macros_8h_a3f7e4db3fde08a943c93cf940ca6286d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{eigen__typedef__macros_8h_aeab9d8c7942a67737592202836fd552a}{OPEN\_WALKER\_CORE\_MAKE\_TYPEDEFS}(Type, TypeSuffix, 1, 1) 
+      \hyperlink{eigen__typedef__macros_8h_aeab9d8c7942a67737592202836fd552a}{\(\backslash\)}
+\hyperlink{eigen__typedef__macros_8h_aeab9d8c7942a67737592202836fd552a}{OPEN\_WALKER\_CORE\_MAKE\_TYPEDEFS}(Type, TypeSuffix, 2, 2) 
+      \hyperlink{eigen__typedef__macros_8h_aeab9d8c7942a67737592202836fd552a}{\(\backslash\)}
+\hyperlink{eigen__typedef__macros_8h_aeab9d8c7942a67737592202836fd552a}{OPEN\_WALKER\_CORE\_MAKE\_TYPEDEFS}(Type, TypeSuffix, 3, 3) 
+      \hyperlink{eigen__typedef__macros_8h_aeab9d8c7942a67737592202836fd552a}{\(\backslash\)}
+\hyperlink{eigen__typedef__macros_8h_aeab9d8c7942a67737592202836fd552a}{OPEN\_WALKER\_CORE\_MAKE\_TYPEDEFS}(Type, TypeSuffix, 4, 4) 
+      \hyperlink{eigen__typedef__macros_8h_aeab9d8c7942a67737592202836fd552a}{\(\backslash\)}
+\hyperlink{eigen__typedef__macros_8h_aeab9d8c7942a67737592202836fd552a}{OPEN\_WALKER\_CORE\_MAKE\_TYPEDEFS}(Type, TypeSuffix, Eigen::Dynamic, X) 
+      \hyperlink{eigen__typedef__macros_8h_adbc54b7184bcf7a1842a51d9aecde05a}{\(\backslash\)}
+\hyperlink{eigen__typedef__macros_8h_adbc54b7184bcf7a1842a51d9aecde05a}{OPEN\_WALKER\_CORE\_MAKE\_FIXED\_TYPEDEFS}(Type, TypeSuffix, 2) 
+      \hyperlink{eigen__typedef__macros_8h_adbc54b7184bcf7a1842a51d9aecde05a}{\(\backslash\)}
+\hyperlink{eigen__typedef__macros_8h_adbc54b7184bcf7a1842a51d9aecde05a}{OPEN\_WALKER\_CORE\_MAKE\_FIXED\_TYPEDEFS}(Type, TypeSuffix, 3) 
+      \hyperlink{eigen__typedef__macros_8h_adbc54b7184bcf7a1842a51d9aecde05a}{\(\backslash\)}
+\hyperlink{eigen__typedef__macros_8h_adbc54b7184bcf7a1842a51d9aecde05a}{OPEN\_WALKER\_CORE\_MAKE\_FIXED\_TYPEDEFS}(Type, TypeSuffix, 4)
+\end{DoxyCode}
+
+
+Create the typedefs for vectors and matrices. 
+
+Create the typedefs type {\itshape Type} and append the type suffix {\itshape Type\+Suffix} to the name.
+
+E.\+g. \hyperlink{eigen__typedef__macros_8h_a3f7e4db3fde08a943c93cf940ca6286d}{O\+P\+E\+N\+\_\+\+W\+A\+L\+K\+E\+R\+\_\+\+C\+O\+R\+E\+\_\+\+T\+Y\+P\+E\+D\+E\+F\+S\+\_\+\+A\+L\+L\+\_\+\+S\+I\+Z\+E\+S(unsigned int,ui)} will create vectors and matrices such as Vector1ui, Matrix3ui, etc. 

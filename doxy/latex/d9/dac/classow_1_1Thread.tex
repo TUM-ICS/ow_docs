@@ -1,0 +1,124 @@
+\hypertarget{classow_1_1Thread}{}\section{ow\+:\+:Thread Class Reference}
+\label{classow_1_1Thread}\index{ow\+::\+Thread@{ow\+::\+Thread}}
+
+
+The thread class wrappes a std\+::thread object.  
+
+
+
+
+{\ttfamily \#include $<$thread.\+h$>$}
+
+Inheritance diagram for ow\+:\+:Thread\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d9/dac/classow_1_1Thread}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1Thread_a80eff7621e8a69092e564e6a4712d9e4}{Thread} ()\hypertarget{classow_1_1Thread_a80eff7621e8a69092e564e6a4712d9e4}{}\label{classow_1_1Thread_a80eff7621e8a69092e564e6a4712d9e4}
+
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{classow_1_1Thread}{Thread} object. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow_1_1Thread_a049ef8a72ff74f421785edbc761f9182}{$\sim$\+Thread} ()\hypertarget{classow_1_1Thread_a049ef8a72ff74f421785edbc761f9182}{}\label{classow_1_1Thread_a049ef8a72ff74f421785edbc761f9182}
+
+\begin{DoxyCompactList}\small\item\em Destroy the \hyperlink{classow_1_1Thread}{Thread} object. \end{DoxyCompactList}\item 
+std\+::thread\+::id \hyperlink{classow_1_1Thread_a713b3fd48945071107d0a532dc9fb59e}{get\+ID} ()
+\begin{DoxyCompactList}\small\item\em returns the thread id \end{DoxyCompactList}\item 
+bool \hyperlink{classow_1_1Thread_aa8297d4d402a2b2722a537808f331d61}{is\+Finished} ()
+\begin{DoxyCompactList}\small\item\em checks if the thread is stopped \end{DoxyCompactList}\item 
+bool \hyperlink{classow_1_1Thread_ac78a02948059ae0d911efcee2c0853a3}{is\+Running} ()
+\begin{DoxyCompactList}\small\item\em checks if the thread is running \end{DoxyCompactList}\item 
+bool \hyperlink{classow_1_1Thread_a13f66e05bb62b44d388a71261ecbb167}{start} ()
+\begin{DoxyCompactList}\small\item\em start the thread \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classow_1_1Thread_a993b565d454ecc15634db8cec75b71d4}{run} ()=0\hypertarget{classow_1_1Thread_a993b565d454ecc15634db8cec75b71d4}{}\label{classow_1_1Thread_a993b565d454ecc15634db8cec75b71d4}
+
+\begin{DoxyCompactList}\small\item\em The thread execution function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::thread {\bfseries thread}\hypertarget{classow_1_1Thread_a586bc9446475a6892452d10988d17f30}{}\label{classow_1_1Thread_a586bc9446475a6892452d10988d17f30}
+
+\item 
+bool {\bfseries started\+\_\+}\hypertarget{classow_1_1Thread_afd8d0781e303d470982b8be256ddb7c8}{}\label{classow_1_1Thread_afd8d0781e303d470982b8be256ddb7c8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The thread class wrappes a std\+::thread object. 
+
+This Class can be used as a base class to execute code in another thread. After the \hyperlink{classow_1_1Thread_a13f66e05bb62b44d388a71261ecbb167}{start()} is called, the \hyperlink{classow_1_1Thread_a993b565d454ecc15634db8cec75b71d4}{run()} function will be executed in a new thread. 
+
+\subsection{Member Function Documentation}
+\index{ow\+::\+Thread@{ow\+::\+Thread}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!ow\+::\+Thread@{ow\+::\+Thread}}
+\subsubsection[{\texorpdfstring{get\+I\+D()}{getID()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::thread\+::id ow\+::\+Thread\+::get\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow_1_1Thread_a713b3fd48945071107d0a532dc9fb59e}{}\label{classow_1_1Thread_a713b3fd48945071107d0a532dc9fb59e}
+
+
+returns the thread id 
+
+\begin{DoxyReturn}{Returns}
+std\+::thread\+::id 
+\end{DoxyReturn}
+\index{ow\+::\+Thread@{ow\+::\+Thread}!is\+Finished@{is\+Finished}}
+\index{is\+Finished@{is\+Finished}!ow\+::\+Thread@{ow\+::\+Thread}}
+\subsubsection[{\texorpdfstring{is\+Finished()}{isFinished()}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+::\+Thread\+::is\+Finished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow_1_1Thread_aa8297d4d402a2b2722a537808f331d61}{}\label{classow_1_1Thread_aa8297d4d402a2b2722a537808f331d61}
+
+
+checks if the thread is stopped 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\index{ow\+::\+Thread@{ow\+::\+Thread}!is\+Running@{is\+Running}}
+\index{is\+Running@{is\+Running}!ow\+::\+Thread@{ow\+::\+Thread}}
+\subsubsection[{\texorpdfstring{is\+Running()}{isRunning()}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+::\+Thread\+::is\+Running (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow_1_1Thread_ac78a02948059ae0d911efcee2c0853a3}{}\label{classow_1_1Thread_ac78a02948059ae0d911efcee2c0853a3}
+
+
+checks if the thread is running 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\index{ow\+::\+Thread@{ow\+::\+Thread}!start@{start}}
+\index{start@{start}!ow\+::\+Thread@{ow\+::\+Thread}}
+\subsubsection[{\texorpdfstring{start()}{start()}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+::\+Thread\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow_1_1Thread_a13f66e05bb62b44d388a71261ecbb167}{}\label{classow_1_1Thread_a13f66e05bb62b44d388a71261ecbb167}
+
+
+start the thread 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/utilities/\hyperlink{thread_8h}{thread.\+h}\end{DoxyCompactItemize}

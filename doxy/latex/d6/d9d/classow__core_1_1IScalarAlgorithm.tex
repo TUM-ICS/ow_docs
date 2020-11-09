@@ -1,0 +1,167 @@
+\hypertarget{classow__core_1_1IScalarAlgorithm}{}\section{ow\+\_\+core\+:\+:I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1IScalarAlgorithm}\index{ow\+\_\+core\+::\+I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1IScalarAlgorithm}{I\+Scalar\+Algorithm} class.  
+
+
+
+
+{\ttfamily \#include $<$i\+\_\+scalar\+\_\+algorithm.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.800643cm]{d6/d9d/classow__core_1_1IScalarAlgorithm}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1IScalarAlgorithm_a2fd7fd37e85194d236a5175af64be9b0}{}\label{classow__core_1_1IScalarAlgorithm_a2fd7fd37e85194d236a5175af64be9b0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classow__core_1_1IScalarAlgorithm_a565bd8e9b4c48e4b72bbf11ae6e5bc27}{$\sim$\+I\+Scalar\+Algorithm} ()\hypertarget{classow__core_1_1IScalarAlgorithm_a565bd8e9b4c48e4b72bbf11ae6e5bc27}{}\label{classow__core_1_1IScalarAlgorithm_a565bd8e9b4c48e4b72bbf11ae6e5bc27}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classow__core_1_1IScalarAlgorithm_a5a7472cb68436e67fc8cb287b477fca6}{valid} () const =0
+\begin{DoxyCompactList}\small\item\em Returns whether the ouput is valid. \end{DoxyCompactList}\item 
+virtual int \hyperlink{classow__core_1_1IScalarAlgorithm_ac57f739093a012beec0867797a02802a}{valid\+Count} () const =0
+\begin{DoxyCompactList}\small\item\em Returns num of samples required for valid ouput. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__core_1_1IScalarAlgorithm}{I\+Scalar\+Algorithm} $\ast$ \hyperlink{classow__core_1_1IScalarAlgorithm_a40025ea4310f3f3e88bc9ae63de432fc}{copy} () const =0
+\begin{DoxyCompactList}\small\item\em Create a copy of this object using the new operator. \end{DoxyCompactList}\item 
+virtual Scalar \hyperlink{classow__core_1_1IScalarAlgorithm_afd0c0837663cff664922c7a116349b46}{reset} ()=0
+\begin{DoxyCompactList}\small\item\em Reset the algorithm to inital state. \end{DoxyCompactList}\item 
+virtual Scalar \hyperlink{classow__core_1_1IScalarAlgorithm_a20cbd10a8b2ec4d10a48b6605f010f17}{reset} (Scalar x)=0
+\begin{DoxyCompactList}\small\item\em Reset the algorithm to inital state $\mathScalarQ{x}{}$. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classow__core_1_1IScalarAlgorithm_a85de69b86d5a9a6f407ed959d0edc005}{add} (Scalar x)=0
+\begin{DoxyCompactList}\small\item\em Adds new sample $\mathScalarQ{x}{}$ wihtout computation. \end{DoxyCompactList}\item 
+virtual Scalar \hyperlink{classow__core_1_1IScalarAlgorithm_ae65a6ba8b9023700dffb504fdc265cd3}{update} (Scalar x)=0
+\begin{DoxyCompactList}\small\item\em Update the algorithm by adding new sample $\mathScalarQ{x}{}$. \end{DoxyCompactList}\item 
+virtual Scalar \hyperlink{classow__core_1_1IScalarAlgorithm_a068ef4f4567d9530b4014dbc203b0867}{output} () const =0\hypertarget{classow__core_1_1IScalarAlgorithm_a068ef4f4567d9530b4014dbc203b0867}{}\label{classow__core_1_1IScalarAlgorithm_a068ef4f4567d9530b4014dbc203b0867}
+
+\begin{DoxyCompactList}\small\item\em Returns the last ouput $\mathScalarQ{y}{}$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1IScalarAlgorithm}{I\+Scalar\+Algorithm} class. 
+
+The interface class for scalar algorithms. This class describes the interface for all single input single output (S\+I\+SO) algorithms. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}!add@{add}}
+\index{add@{add}!ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}}
+\subsubsection[{\texorpdfstring{add(\+Scalar x)=0}{add(Scalar x)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ virtual void {\bf ow\+\_\+core\+::\+I\+Scalar\+Algorithm}$<$ \+\_\+\+Scalar $>$\+::add (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IScalarAlgorithm_a85de69b86d5a9a6f407ed959d0edc005}{}\label{classow__core_1_1IScalarAlgorithm_a85de69b86d5a9a6f407ed959d0edc005}
+
+
+Adds new sample $\mathScalarQ{x}{}$ wihtout computation. 
+
+Could be used to populate buffer, before algorithm is used by update. 
+
+Implemented in \hyperlink{classow__core_1_1ScalarFiniteDifference_a541c94f74c0bc75f309d725b60c1aba3}{ow\+\_\+core\+::\+Scalar\+Finite\+Difference$<$ \+\_\+\+Scalar $>$}, \hyperlink{classow__core_1_1ScalarButterWorthFilter_a6ec4f0a7934eb5cc92507391c9066788}{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter$<$ \+\_\+\+Scalar $>$}, and \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a24d0268754b58c3c33ba608c8b63984d}{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}!copy@{copy}}
+\index{copy@{copy}!ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}}
+\subsubsection[{\texorpdfstring{copy() const =0}{copy() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ virtual {\bf I\+Scalar\+Algorithm}$\ast$ {\bf ow\+\_\+core\+::\+I\+Scalar\+Algorithm}$<$ \+\_\+\+Scalar $>$\+::copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IScalarAlgorithm_a40025ea4310f3f3e88bc9ae63de432fc}{}\label{classow__core_1_1IScalarAlgorithm_a40025ea4310f3f3e88bc9ae63de432fc}
+
+
+Create a copy of this object using the new operator. 
+
+Use this function to get a new object of the implemented differentiation algorithm. This function returns a pointer and the caller of this function has to manage the allocated memory on the heap. When the object is no longer needed the caller has to delete it. 
+
+Implemented in \hyperlink{classow__core_1_1ScalarFiniteDifference_ab4d318553c2a4c10e54a887e3a0d2f8a}{ow\+\_\+core\+::\+Scalar\+Finite\+Difference$<$ \+\_\+\+Scalar $>$}, \hyperlink{classow__core_1_1ScalarButterWorthFilter_a017b55f038e1b6159144708fe1c9f9b1}{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter$<$ \+\_\+\+Scalar $>$}, and \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_aa477fd8142e2bd950a1fce0edb86911d}{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}!reset@{reset}}
+\index{reset@{reset}!ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}}
+\subsubsection[{\texorpdfstring{reset()=0}{reset()=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ virtual Scalar {\bf ow\+\_\+core\+::\+I\+Scalar\+Algorithm}$<$ \+\_\+\+Scalar $>$\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IScalarAlgorithm_afd0c0837663cff664922c7a116349b46}{}\label{classow__core_1_1IScalarAlgorithm_afd0c0837663cff664922c7a116349b46}
+
+
+Reset the algorithm to inital state. 
+
+Ouput is initalized set in next call to \hyperlink{classow__core_1_1IScalarAlgorithm_ae65a6ba8b9023700dffb504fdc265cd3}{update()} 
+
+Implemented in \hyperlink{classow__core_1_1ScalarFiniteDifference_a75258340d011a80c7ef46dfefed5fc2a}{ow\+\_\+core\+::\+Scalar\+Finite\+Difference$<$ \+\_\+\+Scalar $>$}, \hyperlink{classow__core_1_1ScalarButterWorthFilter_a1dd30f8c8be1b5def440a332bded798a}{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter$<$ \+\_\+\+Scalar $>$}, and \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a2d0e8f5d3a6f29a9fce79f04c936e9bd}{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}!reset@{reset}}
+\index{reset@{reset}!ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}}
+\subsubsection[{\texorpdfstring{reset(\+Scalar x)=0}{reset(Scalar x)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ virtual Scalar {\bf ow\+\_\+core\+::\+I\+Scalar\+Algorithm}$<$ \+\_\+\+Scalar $>$\+::reset (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IScalarAlgorithm_a20cbd10a8b2ec4d10a48b6605f010f17}{}\label{classow__core_1_1IScalarAlgorithm_a20cbd10a8b2ec4d10a48b6605f010f17}
+
+
+Reset the algorithm to inital state $\mathScalarQ{x}{}$. 
+
+Algorithm uses $\mathScalarQ{x}{}$ as inital value. 
+
+Implemented in \hyperlink{classow__core_1_1ScalarFiniteDifference_a3c1e94b61e9ca3d267fd7b61f35c1acd}{ow\+\_\+core\+::\+Scalar\+Finite\+Difference$<$ \+\_\+\+Scalar $>$}, \hyperlink{classow__core_1_1ScalarButterWorthFilter_a67ffaf18d349a7e187b220ce56e3827e}{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter$<$ \+\_\+\+Scalar $>$}, and \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a113edfefd3ccc71848e26c3d0f14cac8}{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}!update@{update}}
+\index{update@{update}!ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}}
+\subsubsection[{\texorpdfstring{update(\+Scalar x)=0}{update(Scalar x)=0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ virtual Scalar {\bf ow\+\_\+core\+::\+I\+Scalar\+Algorithm}$<$ \+\_\+\+Scalar $>$\+::update (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IScalarAlgorithm_ae65a6ba8b9023700dffb504fdc265cd3}{}\label{classow__core_1_1IScalarAlgorithm_ae65a6ba8b9023700dffb504fdc265cd3}
+
+
+Update the algorithm by adding new sample $\mathScalarQ{x}{}$. 
+
+Takes the new sample $\mathScalarQ{x}{}$ and computes and new ouput $\mathScalarQ{y}{}$. 
+
+Implemented in \hyperlink{classow__core_1_1ScalarFiniteDifference_a9294a35bb0080ea935b24f6659a0ad6f}{ow\+\_\+core\+::\+Scalar\+Finite\+Difference$<$ \+\_\+\+Scalar $>$}, \hyperlink{classow__core_1_1ScalarButterWorthFilter_ac34d0ff2d3127a2d4af585fee852c6cd}{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter$<$ \+\_\+\+Scalar $>$}, and \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_ac8d2d2609ddd97ea4fa5699ed348e525}{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}!valid@{valid}}
+\index{valid@{valid}!ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}}
+\subsubsection[{\texorpdfstring{valid() const =0}{valid() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ virtual bool {\bf ow\+\_\+core\+::\+I\+Scalar\+Algorithm}$<$ \+\_\+\+Scalar $>$\+::valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IScalarAlgorithm_a5a7472cb68436e67fc8cb287b477fca6}{}\label{classow__core_1_1IScalarAlgorithm_a5a7472cb68436e67fc8cb287b477fca6}
+
+
+Returns whether the ouput is valid. 
+
+Return true if algorithm accumulated enouth samples to fill buffer. 
+
+Implemented in \hyperlink{classow__core_1_1ScalarFiniteDifference_a8642819335cad635881477a0e855502e}{ow\+\_\+core\+::\+Scalar\+Finite\+Difference$<$ \+\_\+\+Scalar $>$}, \hyperlink{classow__core_1_1ScalarButterWorthFilter_a2a277b564c7379a114cb4fe7ab56fc6b}{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter$<$ \+\_\+\+Scalar $>$}, and \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a596c6b0c7cd9b897d2a48c2174ab02a0}{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}!valid\+Count@{valid\+Count}}
+\index{valid\+Count@{valid\+Count}!ow\+\_\+core\+::\+I\+Scalar\+Algorithm@{ow\+\_\+core\+::\+I\+Scalar\+Algorithm}}
+\subsubsection[{\texorpdfstring{valid\+Count() const =0}{validCount() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ virtual int {\bf ow\+\_\+core\+::\+I\+Scalar\+Algorithm}$<$ \+\_\+\+Scalar $>$\+::valid\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IScalarAlgorithm_ac57f739093a012beec0867797a02802a}{}\label{classow__core_1_1IScalarAlgorithm_ac57f739093a012beec0867797a02802a}
+
+
+Returns num of samples required for valid ouput. 
+
+Return number of samples required for valid ouput. 
+
+Implemented in \hyperlink{classow__core_1_1ScalarFiniteDifference_ab0bb516e3fb0516e3dc3215d07726f22}{ow\+\_\+core\+::\+Scalar\+Finite\+Difference$<$ \+\_\+\+Scalar $>$}, and \hyperlink{classow__core_1_1ScalarButterWorthFilter_abd25951936d5c78f9b4a61f226f0dda6}{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter$<$ \+\_\+\+Scalar $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/algorithms/\hyperlink{i__scalar__algorithm_8h}{i\+\_\+scalar\+\_\+algorithm.\+h}\end{DoxyCompactItemize}

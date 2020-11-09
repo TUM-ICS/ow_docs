@@ -1,0 +1,145 @@
+\hypertarget{math_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math.h File Reference}
+\label{math_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math.\+h}}
+
+
+Contains global math functions and operations.  
+
+
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/math/pseudo\+\_\+inverse.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/math/transform.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/math/quaternion.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/math/error\+\_\+functions.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/math/cross\+\_\+product.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Scalar \hyperlink{math_8h_a91845d8d73c66e4cec160dd0d7349272}{ow\+::factorial} (Scalar x)
+\begin{DoxyCompactList}\small\item\em Compute the factorial of x. \end{DoxyCompactList}\item 
+int \hyperlink{math_8h_add9824c5da000676a241689fe6bf77c7}{ow\+::sign} (Scalar x)
+\begin{DoxyCompactList}\small\item\em Get the sign of x. \end{DoxyCompactList}\item 
+Scalar \hyperlink{math_8h_a3f31ed6cc3d41a1d176ba162d07937b4}{ow\+::deg2rad} (Scalar deg)
+\begin{DoxyCompactList}\small\item\em Convert degree to radian. \end{DoxyCompactList}\item 
+Scalar \hyperlink{math_8h_ae8510ce2754b632ce08636171a4083c0}{ow\+::rad2deg} (Scalar rad)
+\begin{DoxyCompactList}\small\item\em Convert radian to degree. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ }\\void \hyperlink{math_8h_a00542b1645398528ebabf7e74d9170ad}{ow\+::clamp} (Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&val, const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&lower, const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&upper)\hypertarget{math_8h_a00542b1645398528ebabf7e74d9170ad}{}\label{math_8h_a00542b1645398528ebabf7e74d9170ad}
+
+\begin{DoxyCompactList}\small\item\em Clamp Matrix val into given range \mbox{[}lower, upper\mbox{]}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 , typename Derived3 , typename Derived4 $>$ }\\bool \hyperlink{math_8h_aa40e973517a27ecbb38162d011e42d6d}{ow\+::clamp\+Set\+Zero} (Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&val, Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&valP, const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&lower, const Eigen\+::\+Matrix\+Base$<$ Derived4 $>$ \&upper)
+\begin{DoxyCompactList}\small\item\em Clamp Matrix val into given range \mbox{[}lower, upper\mbox{]} and set valP to zero. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\bool {\bfseries ow\+::clamp\+Set\+Zero} (\hyperlink{classow__core_1_1LinearPositionRef}{ow\+\_\+core\+::\+Linear\+Position\+Ref}$<$ Derived1 $>$ val, \hyperlink{classow__core_1_1LinearVelocityRef}{ow\+\_\+core\+::\+Linear\+Velocity\+Ref}$<$ Derived2 $>$ valP, const \hyperlink{classow__core_1_1LinearPosition}{ow\+::\+Linear\+Position} \&lower, const \hyperlink{classow__core_1_1LinearPosition}{ow\+::\+Linear\+Position} \&upper)\hypertarget{math_8h_a20804f3b0afed498a39475840a80f18b}{}\label{math_8h_a20804f3b0afed498a39475840a80f18b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains global math functions and operations. 
+
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287.
+
+\subsection{Function Documentation}
+\index{math.\+h@{math.\+h}!clamp\+Set\+Zero@{clamp\+Set\+Zero}}
+\index{clamp\+Set\+Zero@{clamp\+Set\+Zero}!math.\+h@{math.\+h}}
+\subsubsection[{\texorpdfstring{clamp\+Set\+Zero(\+Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&val, Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&val\+P, const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&lower, const Eigen\+::\+Matrix\+Base$<$ Derived4 $>$ \&upper)}{clampSetZero(Eigen::MatrixBase< Derived1 > &val, Eigen::MatrixBase< Derived2 > &valP, const Eigen::MatrixBase< Derived3 > &lower, const Eigen::MatrixBase< Derived4 > &upper)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 , typename Derived3 , typename Derived4 $>$ bool ow\+::clamp\+Set\+Zero (
+\begin{DoxyParamCaption}
+\item[{Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&}]{val, }
+\item[{Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&}]{valP, }
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&}]{lower, }
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived4 $>$ \&}]{upper}
+\end{DoxyParamCaption}
+)}\hypertarget{math_8h_file_aa40e973517a27ecbb38162d011e42d6d}{}\label{math_8h_file_aa40e973517a27ecbb38162d011e42d6d}
+
+
+Clamp Matrix val into given range \mbox{[}lower, upper\mbox{]} and set valP to zero. 
+
+Sets elements in the velocity vector valP to zero if bounds are exceeded.
+
+\begin{DoxyReturn}{Returns}
+true if clamping was applied 
+\end{DoxyReturn}
+\index{math.\+h@{math.\+h}!deg2rad@{deg2rad}}
+\index{deg2rad@{deg2rad}!math.\+h@{math.\+h}}
+\subsubsection[{\texorpdfstring{deg2rad(\+Scalar deg)}{deg2rad(Scalar deg)}}]{\setlength{\rightskip}{0pt plus 5cm}Scalar ow\+::deg2rad (
+\begin{DoxyParamCaption}
+\item[{{\bf Scalar}}]{deg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{math_8h_file_a3f31ed6cc3d41a1d176ba162d07937b4}{}\label{math_8h_file_a3f31ed6cc3d41a1d176ba162d07937b4}
+
+
+Convert degree to radian. 
+
+\begin{DoxyReturn}{Returns}
+rad 
+\end{DoxyReturn}
+\index{math.\+h@{math.\+h}!factorial@{factorial}}
+\index{factorial@{factorial}!math.\+h@{math.\+h}}
+\subsubsection[{\texorpdfstring{factorial(\+Scalar x)}{factorial(Scalar x)}}]{\setlength{\rightskip}{0pt plus 5cm}Scalar ow\+::factorial (
+\begin{DoxyParamCaption}
+\item[{{\bf Scalar}}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{math_8h_file_a91845d8d73c66e4cec160dd0d7349272}{}\label{math_8h_file_a91845d8d73c66e4cec160dd0d7349272}
+
+
+Compute the factorial of x. 
+
+\begin{DoxyReturn}{Returns}
+$\mathScalar{x}!$ 
+\end{DoxyReturn}
+\index{math.\+h@{math.\+h}!rad2deg@{rad2deg}}
+\index{rad2deg@{rad2deg}!math.\+h@{math.\+h}}
+\subsubsection[{\texorpdfstring{rad2deg(\+Scalar rad)}{rad2deg(Scalar rad)}}]{\setlength{\rightskip}{0pt plus 5cm}Scalar ow\+::rad2deg (
+\begin{DoxyParamCaption}
+\item[{{\bf Scalar}}]{rad}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{math_8h_file_ae8510ce2754b632ce08636171a4083c0}{}\label{math_8h_file_ae8510ce2754b632ce08636171a4083c0}
+
+
+Convert radian to degree. 
+
+\begin{DoxyReturn}{Returns}
+rad 
+\end{DoxyReturn}
+\index{math.\+h@{math.\+h}!sign@{sign}}
+\index{sign@{sign}!math.\+h@{math.\+h}}
+\subsubsection[{\texorpdfstring{sign(\+Scalar x)}{sign(Scalar x)}}]{\setlength{\rightskip}{0pt plus 5cm}int ow\+::sign (
+\begin{DoxyParamCaption}
+\item[{{\bf Scalar}}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{math_8h_file_add9824c5da000676a241689fe6bf77c7}{}\label{math_8h_file_add9824c5da000676a241689fe6bf77c7}
+
+
+Get the sign of x. 
+
+\begin{DoxyReturn}{Returns}
+sign(x) 
+\end{DoxyReturn}

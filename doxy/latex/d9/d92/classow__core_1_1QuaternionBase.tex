@@ -1,0 +1,88 @@
+\hypertarget{classow__core_1_1QuaternionBase}{}\section{ow\+\_\+core\+:\+:Quaternion\+Base$<$ \+\_\+\+Derived $>$ Class Template Reference}
+\label{classow__core_1_1QuaternionBase}\index{ow\+\_\+core\+::\+Quaternion\+Base$<$ \+\_\+\+Derived $>$@{ow\+\_\+core\+::\+Quaternion\+Base$<$ \+\_\+\+Derived $>$}}
+
+
+The \hyperlink{classow__core_1_1QuaternionBase}{Quaternion\+Base} class.  
+
+
+
+
+{\ttfamily \#include $<$quaternion\+\_\+base.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Quaternion\+Base$<$ \+\_\+\+Derived $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{d9/d92/classow__core_1_1QuaternionBase}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries Rows\+At\+Compile\+Time} = ow\+:\+:traits$<$Derived$>$\+:\+:Rows\+At\+Compile\+Time, 
+{\bfseries Cols\+At\+Compile\+Time} = ow\+:\+:traits$<$Derived$>$\+:\+:Cols\+At\+Compile\+Time, 
+{\bfseries Size\+At\+Compile\+Time} = ow\+:\+:traits$<$Derived$>$\+:\+:Size\+At\+Compile\+Time
+ \}\hypertarget{classow__core_1_1QuaternionBase_acd90af029ce4d3dd263f4e32bd3741be}{}\label{classow__core_1_1QuaternionBase_acd90af029ce4d3dd263f4e32bd3741be}
+
+\item 
+typedef \+\_\+\+Derived {\bfseries Derived}\hypertarget{classow__core_1_1QuaternionBase_ae1e83ff5375a8ec6909e402273ca1adc}{}\label{classow__core_1_1QuaternionBase_ae1e83ff5375a8ec6909e402273ca1adc}
+
+\item 
+typedef \hyperlink{classow__core_1_1RotationBase}{Rotation\+Base}$<$ Derived $>$ {\bfseries Base}\hypertarget{classow__core_1_1QuaternionBase_a1232a140d42fbc302cc797758ec9d8ee}{}\label{classow__core_1_1QuaternionBase_a1232a140d42fbc302cc797758ec9d8ee}
+
+\item 
+typedef \hyperlink{structow_1_1traits}{ow\+::traits}$<$ Derived $>$\+::Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1QuaternionBase_a0dd469b8f5c24290e926a3b8fa0b9ad9}{}\label{classow__core_1_1QuaternionBase_a0dd469b8f5c24290e926a3b8fa0b9ad9}
+
+\item 
+typedef \hyperlink{structow_1_1traits}{ow\+::traits}$<$ Derived $>$\+::Index {\bfseries Index}\hypertarget{classow__core_1_1QuaternionBase_ad7b8551451bb47f43bf33a8f43bbc2cf}{}\label{classow__core_1_1QuaternionBase_ad7b8551451bb47f43bf33a8f43bbc2cf}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Index {\bfseries size} () const \hypertarget{classow__core_1_1QuaternionBase_aed12552ba875f180322257886ab9fd7a}{}\label{classow__core_1_1QuaternionBase_aed12552ba875f180322257886ab9fd7a}
+
+\item 
+Scalar {\bfseries operator()} (Index idx) const \hypertarget{classow__core_1_1QuaternionBase_a4f0853ec749de06a192d37679df8c097}{}\label{classow__core_1_1QuaternionBase_a4f0853ec749de06a192d37679df8c097}
+
+\item 
+Scalar \& {\bfseries operator()} (Index idx)\hypertarget{classow__core_1_1QuaternionBase_a7f10d756b15a4932a35a45c0ed85b3bb}{}\label{classow__core_1_1QuaternionBase_a7f10d756b15a4932a35a45c0ed85b3bb}
+
+\item 
+\hyperlink{classow__core_1_1Vector3}{ow\+\_\+core\+::\+Vector3}$<$ Scalar $>$ \hyperlink{classow__core_1_1QuaternionBase_a855ff76bdf13218a9456778aeebad2c4}{euler\+Angles} (Index i1, Index i2, Index i3) const \hypertarget{classow__core_1_1QuaternionBase_a855ff76bdf13218a9456778aeebad2c4}{}\label{classow__core_1_1QuaternionBase_a855ff76bdf13218a9456778aeebad2c4}
+
+\begin{DoxyCompactList}\small\item\em Conversion to euler anlges. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Vector3}{ow\+\_\+core\+::\+Vector3}$<$ Scalar $>$ \hyperlink{classow__core_1_1QuaternionBase_a1e47673a4a305ee0fdf0ecadd49c7bdd}{log\+Map} () const 
+\begin{DoxyCompactList}\small\item\em get the element in the tangential vector space of this Lie element in cartesian vector form. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__core_1_1QuaternionBase_aa7539e9cf75931200a39edb6c7007a79}{to\+String} () const \hypertarget{classow__core_1_1QuaternionBase_aa7539e9cf75931200a39edb6c7007a79}{}\label{classow__core_1_1QuaternionBase_aa7539e9cf75931200a39edb6c7007a79}
+
+\begin{DoxyCompactList}\small\item\em Conversion to std\+::string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Derived$>$\\*
+class ow\+\_\+core\+::\+Quaternion\+Base$<$ \+\_\+\+Derived $>$}
+
+The \hyperlink{classow__core_1_1QuaternionBase}{Quaternion\+Base} class. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+Quaternion\+Base@{ow\+\_\+core\+::\+Quaternion\+Base}!log\+Map@{log\+Map}}
+\index{log\+Map@{log\+Map}!ow\+\_\+core\+::\+Quaternion\+Base@{ow\+\_\+core\+::\+Quaternion\+Base}}
+\subsubsection[{\texorpdfstring{log\+Map() const }{logMap() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ {\bf ow\+\_\+core\+::\+Vector3}$<$Scalar$>$ {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ \+\_\+\+Derived $>$\+::log\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1QuaternionBase_a1e47673a4a305ee0fdf0ecadd49c7bdd}{}\label{classow__core_1_1QuaternionBase_a1e47673a4a305ee0fdf0ecadd49c7bdd}
+
+
+get the element in the tangential vector space of this Lie element in cartesian vector form. 
+
+The vector in tangential space is a 3d vector for a quaternions.
+
+\begin{DoxyNote}{Note}
+To calculate the error between two quaternions the signs of the coefficients need to be flipped if scalar part w $<$ 0 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/type\+\_\+bases/\hyperlink{quaternion__base_8h}{quaternion\+\_\+base.\+h}\end{DoxyCompactItemize}

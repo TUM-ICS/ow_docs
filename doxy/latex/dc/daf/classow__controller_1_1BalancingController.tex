@@ -1,0 +1,248 @@
+\hypertarget{classow__controller_1_1BalancingController}{}\section{ow\+\_\+controller\+:\+:Balancing\+Controller Class Reference}
+\label{classow__controller_1_1BalancingController}\index{ow\+\_\+controller\+::\+Balancing\+Controller@{ow\+\_\+controller\+::\+Balancing\+Controller}}
+
+
+The \hyperlink{classow__controller_1_1BalancingController}{Balancing\+Controller} class.  
+
+
+
+
+{\ttfamily \#include $<$balancing\+\_\+controller.\+h$>$}
+
+Inheritance diagram for ow\+\_\+controller\+:\+:Balancing\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{dc/daf/classow__controller_1_1BalancingController}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow_1_1ControllerBase}{ow\+::\+Controller\+Base} {\bfseries Base}\hypertarget{classow__controller_1_1BalancingController_a160f88060cad795f981f566864ecfb8f}{}\label{classow__controller_1_1BalancingController_a160f88060cad795f981f566864ecfb8f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__controller_1_1BalancingController_a9b5602a2c2bbc059051d9c6d35e99d87}{Balancing\+Controller} (const \hyperlink{classow_1_1IHwInterface}{ow\+::\+I\+Hw\+Interface} \&robot)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__controller_1_1BalancingController_a5ebe27ea23ed957c7e68faad41f01e50}{$\sim$\+Balancing\+Controller} ()\hypertarget{classow__controller_1_1BalancingController_a5ebe27ea23ed957c7e68faad41f01e50}{}\label{classow__controller_1_1BalancingController_a5ebe27ea23ed957c7e68faad41f01e50}
+
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classow__controller_1_1BalancingController_a1b06a2454dd0ce27675390af723d2029}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, ros\+::\+Node\+Handle \&nh)
+\begin{DoxyCompactList}\small\item\em init interal \end{DoxyCompactList}\item 
+virtual void \hyperlink{classow__controller_1_1BalancingController_a061c4b831294f654a4582bd19a922967}{start} (const \hyperlink{classow_1_1IHwInterface}{ow\+::\+I\+Hw\+Interface} \&robot, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em start the controller, called befor update \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} \hyperlink{classow__controller_1_1BalancingController_ae68ceb16f4350e701168b0e3e43f87ed}{update} (const \hyperlink{classow_1_1IHwInterface}{ow\+::\+I\+Hw\+Interface} \&robot, const ros\+::\+Time \&time, const ros\+::\+Duration \&dt)
+\begin{DoxyCompactList}\small\item\em performs update step of the controller, called periodically \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \hyperlink{classow__controller_1_1BalancingController_aa47ecc9f939914b8cdbe64359a3f998e}{parameter\+\_\+}\hypertarget{classow__controller_1_1BalancingController_aa47ecc9f939914b8cdbe64359a3f998e}{}\label{classow__controller_1_1BalancingController_aa47ecc9f939914b8cdbe64359a3f998e}
+
+\begin{DoxyCompactList}\small\item\em Configuration. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \hyperlink{classow__controller_1_1BalancingController_ae979e128190466fd236b849d305479c0}{flags\+\_\+}\hypertarget{classow__controller_1_1BalancingController_ae979e128190466fd236b849d305479c0}{}\label{classow__controller_1_1BalancingController_ae979e128190466fd236b849d305479c0}
+
+\begin{DoxyCompactList}\small\item\em Flags. \end{DoxyCompactList}\item 
+ow\+\_\+fk\+::\+Forward\+Kinematics \hyperlink{classow__controller_1_1BalancingController_a9bba28772a2b9ee755794b0e6bbaae5d}{fk\+\_\+cmd\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a9bba28772a2b9ee755794b0e6bbaae5d}{}\label{classow__controller_1_1BalancingController_a9bba28772a2b9ee755794b0e6bbaae5d}
+
+\begin{DoxyCompactList}\small\item\em Forward kinematics virtual. \end{DoxyCompactList}\item 
+ow\+\_\+fk\+::\+Forward\+Kinematics \hyperlink{classow__controller_1_1BalancingController_afa1c3b6cb8cd02288659845313c49bdc}{fk\+\_\+real\+\_\+}\hypertarget{classow__controller_1_1BalancingController_afa1c3b6cb8cd02288659845313c49bdc}{}\label{classow__controller_1_1BalancingController_afa1c3b6cb8cd02288659845313c49bdc}
+
+\begin{DoxyCompactList}\small\item\em Forward kinematics real. \end{DoxyCompactList}\item 
+\hyperlink{classow__ik_1_1InverseKinematics}{ow\+\_\+ik\+::\+Inverse\+Kinematics} \hyperlink{classow__controller_1_1BalancingController_a7d09391b15335a5c92c6d269076775a6}{ik\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a7d09391b15335a5c92c6d269076775a6}{}\label{classow__controller_1_1BalancingController_a7d09391b15335a5c92c6d269076775a6}
+
+\begin{DoxyCompactList}\small\item\em Inverse kinematics. \end{DoxyCompactList}\item 
+\hyperlink{classow__zmp_1_1ZmpEstimator}{ow\+\_\+zmp\+::\+Zmp\+Estimator} \hyperlink{classow__controller_1_1BalancingController_adb2488a9c05cd4ce9408553eeaa8de31}{zmp\+\_\+}\hypertarget{classow__controller_1_1BalancingController_adb2488a9c05cd4ce9408553eeaa8de31}{}\label{classow__controller_1_1BalancingController_adb2488a9c05cd4ce9408553eeaa8de31}
+
+\begin{DoxyCompactList}\small\item\em Z\+MP estimator. \end{DoxyCompactList}\item 
+\hyperlink{classow__balancer_1_1Balancer}{ow\+\_\+balancer\+::\+Balancer} \hyperlink{classow__controller_1_1BalancingController_a73acafffbec6027fbabc6a19abce741a}{balancer\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a73acafffbec6027fbabc6a19abce741a}{}\label{classow__controller_1_1BalancingController_a73acafffbec6027fbabc6a19abce741a}
+
+\begin{DoxyCompactList}\small\item\em Balancer. \end{DoxyCompactList}\item 
+\hyperlink{classow__com_1_1COMEstimator}{ow\+\_\+com\+::\+C\+O\+M\+Estimator} \hyperlink{classow__controller_1_1BalancingController_af9f1f5e9d957d57e35e23d515a8b9b0d}{com\+\_\+}\hypertarget{classow__controller_1_1BalancingController_af9f1f5e9d957d57e35e23d515a8b9b0d}{}\label{classow__controller_1_1BalancingController_af9f1f5e9d957d57e35e23d515a8b9b0d}
+
+\begin{DoxyCompactList}\small\item\em Center of mass estimation. \end{DoxyCompactList}\item 
+\hyperlink{classow__cmd__gen_1_1CommandGenerator}{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator} \hyperlink{classow__controller_1_1BalancingController_a75d780922d3e590d7c4b23bc6421aaa3}{cmd\+\_\+gen\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a75d780922d3e590d7c4b23bc6421aaa3}{}\label{classow__controller_1_1BalancingController_a75d780922d3e590d7c4b23bc6421aaa3}
+
+\begin{DoxyCompactList}\small\item\em Command generator. \end{DoxyCompactList}\item 
+\hyperlink{classow__joint__tracker_1_1JointTracker}{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker} \hyperlink{classow__controller_1_1BalancingController_a94c08b9a515ef7e7197fb459b92362be}{joint\+\_\+tracker\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a94c08b9a515ef7e7197fb459b92362be}{}\label{classow__controller_1_1BalancingController_a94c08b9a515ef7e7197fb459b92362be}
+
+\begin{DoxyCompactList}\small\item\em Joint tracker. \end{DoxyCompactList}\item 
+\hyperlink{classow__pub_1_1StatePublisher}{ow\+\_\+pub\+::\+State\+Publisher} \hyperlink{classow__controller_1_1BalancingController_aec9a3c6cd6735d3a466dca0435aecc8d}{pub\+\_\+}\hypertarget{classow__controller_1_1BalancingController_aec9a3c6cd6735d3a466dca0435aecc8d}{}\label{classow__controller_1_1BalancingController_aec9a3c6cd6735d3a466dca0435aecc8d}
+
+\begin{DoxyCompactList}\small\item\em ros publisher \end{DoxyCompactList}\item 
+\hyperlink{classow__sm_1_1StateMachine}{ow\+\_\+sm\+::\+State\+Machine} \hyperlink{classow__controller_1_1BalancingController_aa6bdfd1b711f3d7df7758f8599ba9e44}{sm\+\_\+}\hypertarget{classow__controller_1_1BalancingController_aa6bdfd1b711f3d7df7758f8599ba9e44}{}\label{classow__controller_1_1BalancingController_aa6bdfd1b711f3d7df7758f8599ba9e44}
+
+\begin{DoxyCompactList}\small\item\em state machine \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classow_1_1ModuleBase}{ow\+::\+Module\+Base} $\ast$ $>$ \hyperlink{classow__controller_1_1BalancingController_a23b43bf19b7f86ea083485c821653b6b}{modules\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a23b43bf19b7f86ea083485c821653b6b}{}\label{classow__controller_1_1BalancingController_a23b43bf19b7f86ea083485c821653b6b}
+
+\begin{DoxyCompactList}\small\item\em vector of modules \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+Position} \hyperlink{classow__controller_1_1BalancingController_a655d97c67880eba16e3eb1bec6c97704}{q\+\_\+fixed\+\_\+upper\+\_\+body\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a655d97c67880eba16e3eb1bec6c97704}{}\label{classow__controller_1_1BalancingController_a655d97c67880eba16e3eb1bec6c97704}
+
+\begin{DoxyCompactList}\small\item\em Upper body home posture. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} \hyperlink{classow__controller_1_1BalancingController_a3ef4d0a4916f4c98bb6e79b5b2f5f45d}{q\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a3ef4d0a4916f4c98bb6e79b5b2f5f45d}{}\label{classow__controller_1_1BalancingController_a3ef4d0a4916f4c98bb6e79b5b2f5f45d}
+
+\begin{DoxyCompactList}\small\item\em Output joint state. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_a875d57342956208260a00d30cd5d003a}{Xv\+\_\+l\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a875d57342956208260a00d30cd5d003a}{}\label{classow__controller_1_1BalancingController_a875d57342956208260a00d30cd5d003a}
+
+\begin{DoxyCompactList}\small\item\em virtual left foot wrt. world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_a3bae9a29e0990349f37f81f0a7db10b7}{Xv\+\_\+r\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a3bae9a29e0990349f37f81f0a7db10b7}{}\label{classow__controller_1_1BalancingController_a3bae9a29e0990349f37f81f0a7db10b7}
+
+\begin{DoxyCompactList}\small\item\em virtual right foot wrt. world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_a69c5eaab51a6e3ed205337e21633e9be}{Xv\+\_\+com\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a69c5eaab51a6e3ed205337e21633e9be}{}\label{classow__controller_1_1BalancingController_a69c5eaab51a6e3ed205337e21633e9be}
+
+\begin{DoxyCompactList}\small\item\em virtual CoM wrt. world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_a56cf433b30ae7abdaee74de1db8e0ed0}{Xv\+\_\+com\+\_\+hip\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a56cf433b30ae7abdaee74de1db8e0ed0}{}\label{classow__controller_1_1BalancingController_a56cf433b30ae7abdaee74de1db8e0ed0}
+
+\begin{DoxyCompactList}\small\item\em virtual hip wrt. world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_aa3a9eeff13df08ad7bc2da38925b1d29}{Xreal\+\_\+l\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_aa3a9eeff13df08ad7bc2da38925b1d29}{}\label{classow__controller_1_1BalancingController_aa3a9eeff13df08ad7bc2da38925b1d29}
+
+\begin{DoxyCompactList}\small\item\em Real left foot wrt. world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_a962ae5598d26f680825da3e62e9ccf21}{Xreal\+\_\+r\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a962ae5598d26f680825da3e62e9ccf21}{}\label{classow__controller_1_1BalancingController_a962ae5598d26f680825da3e62e9ccf21}
+
+\begin{DoxyCompactList}\small\item\em Real right foot wrt. world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_a05b33638e47dd3175674f72c7a9fca53}{Xreal\+\_\+com\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a05b33638e47dd3175674f72c7a9fca53}{}\label{classow__controller_1_1BalancingController_a05b33638e47dd3175674f72c7a9fca53}
+
+\begin{DoxyCompactList}\small\item\em Real CoM wrt. world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_a9b111b487d473c6ae10546bcb7e228e8}{Xref\+\_\+l\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a9b111b487d473c6ae10546bcb7e228e8}{}\label{classow__controller_1_1BalancingController_a9b111b487d473c6ae10546bcb7e228e8}
+
+\begin{DoxyCompactList}\small\item\em Reference left foot Cart state wrt world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_a8eeb1d27eb114cd4c76c1e90d148b775}{Xref\+\_\+r\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a8eeb1d27eb114cd4c76c1e90d148b775}{}\label{classow__controller_1_1BalancingController_a8eeb1d27eb114cd4c76c1e90d148b775}
+
+\begin{DoxyCompactList}\small\item\em Reference right foot Cart state wrt world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_a6b1c3d822fd3769b918595d22d96e4ef}{Xref\+\_\+com\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a6b1c3d822fd3769b918595d22d96e4ef}{}\label{classow__controller_1_1BalancingController_a6b1c3d822fd3769b918595d22d96e4ef}
+
+\begin{DoxyCompactList}\small\item\em Reference CoM foot Cart state wrt world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_aa3ed4b5b37168985790050c26f465214}{Xoff\+\_\+l\+\_\+}\hypertarget{classow__controller_1_1BalancingController_aa3ed4b5b37168985790050c26f465214}{}\label{classow__controller_1_1BalancingController_aa3ed4b5b37168985790050c26f465214}
+
+\begin{DoxyCompactList}\small\item\em Left foot offset on the left ref frame. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_a7d1fbb4788b0d72733401015c1658990}{Xoff\+\_\+r\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a7d1fbb4788b0d72733401015c1658990}{}\label{classow__controller_1_1BalancingController_a7d1fbb4788b0d72733401015c1658990}
+
+\begin{DoxyCompactList}\small\item\em Right foot offset on the right ref frame. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_afafed57c87102be657d090865ba64fae}{Xoff\+\_\+com\+\_\+}\hypertarget{classow__controller_1_1BalancingController_afafed57c87102be657d090865ba64fae}{}\label{classow__controller_1_1BalancingController_afafed57c87102be657d090865ba64fae}
+
+\begin{DoxyCompactList}\small\item\em CoM offset on the ref com frame. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_aec18780247afe2dead39843836ef4f82}{Xcmd\+\_\+l\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_aec18780247afe2dead39843836ef4f82}{}\label{classow__controller_1_1BalancingController_aec18780247afe2dead39843836ef4f82}
+
+\begin{DoxyCompactList}\small\item\em Left foot Cart state command wrt. world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_a8c6391433034e622af346be015383ff6}{Xcmd\+\_\+r\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a8c6391433034e622af346be015383ff6}{}\label{classow__controller_1_1BalancingController_a8c6391433034e622af346be015383ff6}
+
+\begin{DoxyCompactList}\small\item\em Right foot Cart state command wrt. world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__controller_1_1BalancingController_af9abf9b671f63aac8e43eea1bd924acb}{Xcmd\+\_\+com\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_af9abf9b671f63aac8e43eea1bd924acb}{}\label{classow__controller_1_1BalancingController_af9abf9b671f63aac8e43eea1bd924acb}
+
+\begin{DoxyCompactList}\small\item\em CoM Cart state wrt. command world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \hyperlink{classow__controller_1_1BalancingController_aebd3b956b22703393bb0cb1e72b12149}{p\+Ref\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_aebd3b956b22703393bb0cb1e72b12149}{}\label{classow__controller_1_1BalancingController_aebd3b956b22703393bb0cb1e72b12149}
+
+\begin{DoxyCompactList}\small\item\em Reference Z\+MP trajectory wrt world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \hyperlink{classow__controller_1_1BalancingController_aab061187be9e2f28ada9e7eaef609474}{p\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_aab061187be9e2f28ada9e7eaef609474}{}\label{classow__controller_1_1BalancingController_aab061187be9e2f28ada9e7eaef609474}
+
+\begin{DoxyCompactList}\small\item\em Z\+MP state wrt world. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \hyperlink{classow__controller_1_1BalancingController_a7f3c30d3980f026ad1a98ff58d835698}{zeta\+Ref\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_a7f3c30d3980f026ad1a98ff58d835698}{}\label{classow__controller_1_1BalancingController_a7f3c30d3980f026ad1a98ff58d835698}
+
+\begin{DoxyCompactList}\small\item\em Reference D\+CM trajectory. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \hyperlink{classow__controller_1_1BalancingController_ae04401f6970124087f63a1207b1ed085}{zeta\+\_\+w\+\_\+}\hypertarget{classow__controller_1_1BalancingController_ae04401f6970124087f63a1207b1ed085}{}\label{classow__controller_1_1BalancingController_ae04401f6970124087f63a1207b1ed085}
+
+\begin{DoxyCompactList}\small\item\em D\+CM state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__controller_1_1BalancingController}{Balancing\+Controller} class. 
+
+This Class uses some modules of the framework to realize balancing. It obtains the real robot data through the \hyperlink{classow_1_1IHwInterface}{ow\+::\+I\+Hw\+Interface} and calls the update functions on each module. Finally the \hyperlink{classow__controller_1_1BalancingController}{Balancing\+Controller} produces a new joint command that is then send to to the robot.
+
+This controller can be enabled in the ow\+\_\+ros\+\_\+control\+\_\+plugin package. It is mainly used for debugging. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+controller\+::\+Balancing\+Controller@{ow\+\_\+controller\+::\+Balancing\+Controller}!Balancing\+Controller@{Balancing\+Controller}}
+\index{Balancing\+Controller@{Balancing\+Controller}!ow\+\_\+controller\+::\+Balancing\+Controller@{ow\+\_\+controller\+::\+Balancing\+Controller}}
+\subsubsection[{\texorpdfstring{Balancing\+Controller(const ow\+::\+I\+Hw\+Interface \&robot)}{BalancingController(const ow::IHwInterface &robot)}}]{\setlength{\rightskip}{0pt plus 5cm}ow\+\_\+controller\+::\+Balancing\+Controller\+::\+Balancing\+Controller (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+I\+Hw\+Interface} \&}]{robot}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__controller_1_1BalancingController_a9b5602a2c2bbc059051d9c6d35e99d87}{}\label{classow__controller_1_1BalancingController_a9b5602a2c2bbc059051d9c6d35e99d87}
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em freq} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+controller\+::\+Balancing\+Controller@{ow\+\_\+controller\+::\+Balancing\+Controller}!init@{init}}
+\index{init@{init}!ow\+\_\+controller\+::\+Balancing\+Controller@{ow\+\_\+controller\+::\+Balancing\+Controller}}
+\subsubsection[{\texorpdfstring{init(const ow\+::\+Parameter \&parameter, ros\+::\+Node\+Handle \&nh)}{init(const ow::Parameter &parameter, ros::NodeHandle &nh)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ow\+\_\+controller\+::\+Balancing\+Controller\+::init (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Parameter} \&}]{parameter, }
+\item[{ros\+::\+Node\+Handle \&}]{nh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__controller_1_1BalancingController_a1b06a2454dd0ce27675390af723d2029}{}\label{classow__controller_1_1BalancingController_a1b06a2454dd0ce27675390af723d2029}
+
+
+init interal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ros} & nh for namespace \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classow_1_1GenericModuleBase_a95c6c7b7a84acd2b4f37b7f9301abf9d}{ow\+::\+Generic\+Module\+Base}.
+
+\index{ow\+\_\+controller\+::\+Balancing\+Controller@{ow\+\_\+controller\+::\+Balancing\+Controller}!start@{start}}
+\index{start@{start}!ow\+\_\+controller\+::\+Balancing\+Controller@{ow\+\_\+controller\+::\+Balancing\+Controller}}
+\subsubsection[{\texorpdfstring{start(const ow\+::\+I\+Hw\+Interface \&robot, const ros\+::\+Time \&time)}{start(const ow::IHwInterface &robot, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ow\+\_\+controller\+::\+Balancing\+Controller\+::start (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+I\+Hw\+Interface} \&}]{robot, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__controller_1_1BalancingController_a061c4b831294f654a4582bd19a922967}{}\label{classow__controller_1_1BalancingController_a061c4b831294f654a4582bd19a922967}
+
+
+start the controller, called befor update 
+
+
+\begin{DoxyParams}{Parameters}
+{\em starting} & time \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classow_1_1ControllerBase_af757d63078346cff7888f3223d74da01}{ow\+::\+Controller\+Base}.
+
+\index{ow\+\_\+controller\+::\+Balancing\+Controller@{ow\+\_\+controller\+::\+Balancing\+Controller}!update@{update}}
+\index{update@{update}!ow\+\_\+controller\+::\+Balancing\+Controller@{ow\+\_\+controller\+::\+Balancing\+Controller}}
+\subsubsection[{\texorpdfstring{update(const ow\+::\+I\+Hw\+Interface \&robot, const ros\+::\+Time \&time, const ros\+::\+Duration \&dt)}{update(const ow::IHwInterface &robot, const ros::Time &time, const ros::Duration &dt)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf ow\+::\+Joint\+State} ow\+\_\+controller\+::\+Balancing\+Controller\+::update (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+I\+Hw\+Interface} \&}]{robot, }
+\item[{const ros\+::\+Time \&}]{time, }
+\item[{const ros\+::\+Duration \&}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__controller_1_1BalancingController_ae68ceb16f4350e701168b0e3e43f87ed}{}\label{classow__controller_1_1BalancingController_ae68ceb16f4350e701168b0e3e43f87ed}
+
+
+performs update step of the controller, called periodically 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & jointstate \\
+\hline
+{\em current} & time \\
+\hline
+{\em current} & deltatime since last call \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classow_1_1ControllerBase_a214e12fa933fd1dd3e720347e2757d2d}{ow\+::\+Controller\+Base}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+controller/include/ow\+\_\+controller/\hyperlink{balancing__controller_8h}{balancing\+\_\+controller.\+h}\end{DoxyCompactItemize}

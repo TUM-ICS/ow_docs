@@ -1,0 +1,80 @@
+\hypertarget{classow__core_1_1MomentRef}{}\section{ow\+\_\+core\+:\+:Moment\+Ref$<$ \+\_\+\+Derived $>$ Class Template Reference}
+\label{classow__core_1_1MomentRef}\index{ow\+\_\+core\+::\+Moment\+Ref$<$ \+\_\+\+Derived $>$@{ow\+\_\+core\+::\+Moment\+Ref$<$ \+\_\+\+Derived $>$}}
+
+
+The \hyperlink{classow__core_1_1MomentRef}{Moment\+Ref} class.  
+
+
+
+
+{\ttfamily \#include $<$moment\+\_\+ref.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Moment\+Ref$<$ \+\_\+\+Derived $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.400857cm]{de/d46/classow__core_1_1MomentRef}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Derived {\bfseries Derived}\hypertarget{classow__core_1_1MomentRef_a8381c7f3d2123c9d388b41dfa746f77d}{}\label{classow__core_1_1MomentRef_a8381c7f3d2123c9d388b41dfa746f77d}
+
+\item 
+typedef Derived\+::\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1MomentRef_a5c0175068a276dde3d7b0c2134054734}{}\label{classow__core_1_1MomentRef_a5c0175068a276dde3d7b0c2134054734}
+
+\item 
+typedef Eigen\+::\+Block$<$ Derived, 3, 1 $>$ {\bfseries Base}\hypertarget{classow__core_1_1MomentRef_a353477d55d98e50303c0728a1104b9c2}{}\label{classow__core_1_1MomentRef_a353477d55d98e50303c0728a1104b9c2}
+
+\item 
+typedef \hyperlink{classow__core_1_1MomentBase}{Moment\+Base}$<$ \hyperlink{classow__core_1_1MomentRef}{Moment\+Ref}$<$ \+\_\+\+Derived $>$ $>$ {\bfseries M\+Base}\hypertarget{classow__core_1_1MomentRef_ae11106024758a017e4c0f10f969fd940}{}\label{classow__core_1_1MomentRef_ae11106024758a017e4c0f10f969fd940}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1MomentRef_aa806936c7f4f2ae236bc974e0edbd89f}{Moment\+Ref} (Derived \&ref, int start\+\_\+row=0, int start\+\_\+col=0)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1MomentRef}{Moment\+Ref} \hyperlink{classow__core_1_1MomentRef_aa7f690d77e9b0ac41095899777692008}{operator=} (const \hyperlink{classow__core_1_1Moment}{Moment}$<$ Scalar $>$ \&other)\hypertarget{classow__core_1_1MomentRef_aa7f690d77e9b0ac41095899777692008}{}\label{classow__core_1_1MomentRef_aa7f690d77e9b0ac41095899777692008}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Derived$>$\\*
+class ow\+\_\+core\+::\+Moment\+Ref$<$ \+\_\+\+Derived $>$}
+
+The \hyperlink{classow__core_1_1MomentRef}{Moment\+Ref} class. 
+
+The \hyperlink{classow__core_1_1Moment}{Moment} is of type Eigen\+::\+Vector3 and is represented by the math symbol $\mathbf{\mu}$.
+
+References the data of another Eigen type class via Eigen\+::\+Block. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Moment\+Ref@{ow\+\_\+core\+::\+Moment\+Ref}!Moment\+Ref@{Moment\+Ref}}
+\index{Moment\+Ref@{Moment\+Ref}!ow\+\_\+core\+::\+Moment\+Ref@{ow\+\_\+core\+::\+Moment\+Ref}}
+\subsubsection[{\texorpdfstring{Moment\+Ref(\+Derived \&ref, int start\+\_\+row=0, int start\+\_\+col=0)}{MomentRef(Derived &ref, int start_row=0, int start_col=0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ {\bf ow\+\_\+core\+::\+Moment\+Ref}$<$ \+\_\+\+Derived $>$\+::{\bf Moment\+Ref} (
+\begin{DoxyParamCaption}
+\item[{Derived \&}]{ref, }
+\item[{int}]{start\+\_\+row = {\ttfamily 0}, }
+\item[{int}]{start\+\_\+col = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classow__core_1_1MomentRef_aa806936c7f4f2ae236bc974e0edbd89f}{}\label{classow__core_1_1MomentRef_aa806936c7f4f2ae236bc974e0edbd89f}
+
+
+Default Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & the reference to storage Eigen object to access the elements of the Linear\+Velocityn via Eigen\+::\+Block.\\
+\hline
+{\em start\+\_\+row} & the start index of the row for Eigen\+::\+Block.\\
+\hline
+{\em start\+\_\+col} & the start index of the column for Eigen\+::\+Block. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/type\+\_\+references/\hyperlink{moment__ref_8h}{moment\+\_\+ref.\+h}\end{DoxyCompactItemize}

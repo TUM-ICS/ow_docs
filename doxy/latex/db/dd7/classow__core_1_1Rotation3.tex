@@ -1,0 +1,187 @@
+\hypertarget{classow__core_1_1Rotation3}{}\section{ow\+\_\+core\+:\+:Rotation3$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1Rotation3}\index{ow\+\_\+core\+::\+Rotation3$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Rotation3$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1Rotation3}{Rotation3} class.  
+
+
+
+
+{\ttfamily \#include $<$rotation3.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Rotation3$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.872910cm]{db/dd7/classow__core_1_1Rotation3}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1Rotation3_a470ab3889d669c7c775de59719a05cd5}{}\label{classow__core_1_1Rotation3_a470ab3889d669c7c775de59719a05cd5}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ Scalar, 3, 3 $>$ {\bfseries Base}\hypertarget{classow__core_1_1Rotation3_a2ab55aac918ebcfcb6cf35187679bb5e}{}\label{classow__core_1_1Rotation3_a2ab55aac918ebcfcb6cf35187679bb5e}
+
+\item 
+typedef \hyperlink{classow__core_1_1Rotation3Base}{Rotation3\+Base}$<$ \hyperlink{classow__core_1_1Rotation3}{Rotation3}$<$ Scalar $>$ $>$ {\bfseries R\+Base}\hypertarget{classow__core_1_1Rotation3_a489dc700fb179eb074ffe11218e71384}{}\label{classow__core_1_1Rotation3_a489dc700fb179eb074ffe11218e71384}
+
+\item 
+typedef Eigen\+::\+Angle\+Axis$<$ Scalar $>$ {\bfseries Angle\+Axis}\hypertarget{classow__core_1_1Rotation3_a22dd80aef9d78599821eb23691c41b1a}{}\label{classow__core_1_1Rotation3_a22dd80aef9d78599821eb23691c41b1a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1Rotation3_abd12cb236cf8ff6e5337228633d4815b}{Rotation3} ()\hypertarget{classow__core_1_1Rotation3_abd12cb236cf8ff6e5337228633d4815b}{}\label{classow__core_1_1Rotation3_abd12cb236cf8ff6e5337228633d4815b}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Rotation3_a485da1e01bc010d26169e0d9e4f95854}{Rotation3} (const \hyperlink{classow__core_1_1Rotation3}{Rotation3} \&other)\hypertarget{classow__core_1_1Rotation3_a485da1e01bc010d26169e0d9e4f95854}{}\label{classow__core_1_1Rotation3_a485da1e01bc010d26169e0d9e4f95854}
+
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1Rotation3_af8f7c2fd09be7d4e7be68c6786114fab}{Rotation3} (const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1Rotation3_a34cd49f675144ebc5c6cd50adbd18319}{Rotation3} (const Eigen\+::\+Rotation\+Base$<$ Other\+Derived, 3 $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Rotation3_a7e0848b9b7ba790b46a812c5f3a5d15b}{Rotation3} (const \hyperlink{classow__core_1_1AngularPosition}{ow\+\_\+core\+::\+Angular\+Position}$<$ Scalar $>$ \&other)\hypertarget{classow__core_1_1Rotation3_a7e0848b9b7ba790b46a812c5f3a5d15b}{}\label{classow__core_1_1Rotation3_a7e0848b9b7ba790b46a812c5f3a5d15b}
+
+\begin{DoxyCompactList}\small\item\em Copy from \hyperlink{classow__core_1_1AngularPosition}{Angular\+Position}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1Rotation3_af9cfe962b9b8a799fc9705cae857a315}{Rotation3} (const \hyperlink{classow__core_1_1AngularPositionRef}{ow\+\_\+core\+::\+Angular\+Position\+Ref}$<$ Other\+Derived $>$ \&other)\hypertarget{classow__core_1_1Rotation3_af9cfe962b9b8a799fc9705cae857a315}{}\label{classow__core_1_1Rotation3_af9cfe962b9b8a799fc9705cae857a315}
+
+\begin{DoxyCompactList}\small\item\em Copy from \hyperlink{classow__core_1_1AngularPositionRef}{Angular\+Position\+Ref}. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Rotation3}{Rotation3} \& \hyperlink{classow__core_1_1Rotation3_a21fc1630e58466797644aad5c74e0531}{operator=} (const \hyperlink{classow__core_1_1Rotation3}{Rotation3} \&other)\hypertarget{classow__core_1_1Rotation3_a21fc1630e58466797644aad5c74e0531}{}\label{classow__core_1_1Rotation3_a21fc1630e58466797644aad5c74e0531}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1Rotation3}{Rotation3} \& \hyperlink{classow__core_1_1Rotation3_afb5952292dd87fe142d8da44542a6902}{operator=} (const \hyperlink{classow__core_1_1Rotation3Ref}{Rotation3\+Ref}$<$ Other\+Derived $>$ \&other)\hypertarget{classow__core_1_1Rotation3_afb5952292dd87fe142d8da44542a6902}{}\label{classow__core_1_1Rotation3_afb5952292dd87fe142d8da44542a6902}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Rotation3}{Rotation3} \& {\bfseries operator=} (const \hyperlink{classow__core_1_1AngularPosition}{ow\+\_\+core\+::\+Angular\+Position}$<$ Scalar $>$ \&other)\hypertarget{classow__core_1_1Rotation3_a578be4e7c7f919383eaaee3b52dc6129}{}\label{classow__core_1_1Rotation3_a578be4e7c7f919383eaaee3b52dc6129}
+
+\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1Rotation3}{Rotation3} \& {\bfseries operator=} (const \hyperlink{classow__core_1_1AngularPositionRef}{ow\+\_\+core\+::\+Angular\+Position\+Ref}$<$ Other\+Derived $>$ \&other)\hypertarget{classow__core_1_1Rotation3_a0e93e4bfb4e9bca641fdb88cea778f93}{}\label{classow__core_1_1Rotation3_a0e93e4bfb4e9bca641fdb88cea778f93}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classow__core_1_1Rotation3}{Rotation3} \hyperlink{classow__core_1_1Rotation3_a021f317643aace80e3b70edac5e38ced}{Rx} (const Scalar \&angle=0.\+0)
+\begin{DoxyCompactList}\small\item\em Rotation around x-\/axis for given angle in radian. \end{DoxyCompactList}\item 
+static \hyperlink{classow__core_1_1Rotation3}{Rotation3} \hyperlink{classow__core_1_1Rotation3_ad9ec395e9bdd0495215d9f52d9237c81}{Ry} (const Scalar \&angle=0.\+0)
+\begin{DoxyCompactList}\small\item\em Rotation around y-\/axis for given angle in radian. \end{DoxyCompactList}\item 
+static \hyperlink{classow__core_1_1Rotation3}{Rotation3} \hyperlink{classow__core_1_1Rotation3_aa1cca570a650d8caed40a091186b8569}{Rz} (const Scalar \&angle=0.\+0)
+\begin{DoxyCompactList}\small\item\em Rotation around y-\/axis for given angle in radian. \end{DoxyCompactList}\item 
+static \hyperlink{classow__core_1_1Rotation3}{Rotation3} \hyperlink{classow__core_1_1Rotation3_ad24179671e2253a9ef79a4f88a8466f2}{R\+PY} (const Scalar \&roll=0.\+0, const Scalar \&pitch=0.\+0, const Scalar \&yaw=0.\+0)
+\begin{DoxyCompactList}\small\item\em Rotation from R\+PY angles. \end{DoxyCompactList}\item 
+static \hyperlink{classow__core_1_1Rotation3}{Rotation3} \hyperlink{classow__core_1_1Rotation3_ac97f635a2d188808d45496941384698a}{R\+PY} (const \hyperlink{classow__core_1_1Vector3}{ow\+\_\+core\+::\+Vector3}$<$ Scalar $>$ \&rpy=\hyperlink{classow__core_1_1Vector3}{ow\+\_\+core\+::\+Vector3}$<$ Scalar $>$\+::Zero())
+\begin{DoxyCompactList}\small\item\em Rotation from R\+PY angles. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Generator $>$ }\\static \hyperlink{classow__core_1_1Rotation3}{Rotation3} \hyperlink{classow__core_1_1Rotation3_a0db10fdf9da785d9794ed715f2421382}{Random} (Generator \&generator)
+\begin{DoxyCompactList}\small\item\em Generate a random uniformly sampled \hyperlink{classow__core_1_1Rotation3}{Rotation3} in S\+O(3). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Rotation3$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1Rotation3}{Rotation3} class. 
+
+The \hyperlink{classow__core_1_1Rotation3}{Rotation3} is of type Eigen\+::\+Matrix3 and is represented by the math symbol $\mathbf{R}$. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}!Rotation3@{Rotation3}}
+\index{Rotation3@{Rotation3}!ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}}
+\subsubsection[{\texorpdfstring{Rotation3(const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)}{Rotation3(const Eigen::EigenBase< OtherDerived > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar$>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Rotation3}$<$ \+\_\+\+Scalar $>$\+::{\bf Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1Rotation3_af8f7c2fd09be7d4e7be68c6786114fab}{}\label{classow__core_1_1Rotation3_af8f7c2fd09be7d4e7be68c6786114fab}
+
+
+Copy constructor. 
+
+This copy constructor not only works with Eigen matrices but also with their expressions. \index{ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}!Rotation3@{Rotation3}}
+\index{Rotation3@{Rotation3}!ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}}
+\subsubsection[{\texorpdfstring{Rotation3(const Eigen\+::\+Rotation\+Base$<$ Other\+Derived, 3 $>$ \&other)}{Rotation3(const Eigen::RotationBase< OtherDerived, 3 > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar$>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Rotation3}$<$ \+\_\+\+Scalar $>$\+::{\bf Rotation3} (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Rotation\+Base$<$ Other\+Derived, 3 $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classow__core_1_1Rotation3_a34cd49f675144ebc5c6cd50adbd18319}{}\label{classow__core_1_1Rotation3_a34cd49f675144ebc5c6cd50adbd18319}
+
+
+Copy constructor. 
+
+This copy constructor works with Eigen Rotation representations. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}!Random@{Random}}
+\index{Random@{Random}!ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}}
+\subsubsection[{\texorpdfstring{Random(\+Generator \&generator)}{Random(Generator &generator)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar$>$ template$<$typename Generator $>$ static {\bf Rotation3} {\bf ow\+\_\+core\+::\+Rotation3}$<$ \+\_\+\+Scalar $>$\+::Random (
+\begin{DoxyParamCaption}
+\item[{Generator \&}]{generator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1Rotation3_a0db10fdf9da785d9794ed715f2421382}{}\label{classow__core_1_1Rotation3_a0db10fdf9da785d9794ed715f2421382}
+
+
+Generate a random uniformly sampled \hyperlink{classow__core_1_1Rotation3}{Rotation3} in S\+O(3). 
+
+Usage\+: std\+::random\+\_\+device rd; ow\+::\+Rotation3 R = ow\+::\+Rotation3\+::\+Random(rd) \index{ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}!R\+PY@{R\+PY}}
+\index{R\+PY@{R\+PY}!ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}}
+\subsubsection[{\texorpdfstring{R\+P\+Y(const Scalar \&roll=0.\+0, const Scalar \&pitch=0.\+0, const Scalar \&yaw=0.\+0)}{RPY(const Scalar &roll=0.0, const Scalar &pitch=0.0, const Scalar &yaw=0.0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar$>$ static {\bf Rotation3} {\bf ow\+\_\+core\+::\+Rotation3}$<$ \+\_\+\+Scalar $>$\+::R\+PY (
+\begin{DoxyParamCaption}
+\item[{const Scalar \&}]{roll = {\ttfamily 0.0}, }
+\item[{const Scalar \&}]{pitch = {\ttfamily 0.0}, }
+\item[{const Scalar \&}]{yaw = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1Rotation3_ad24179671e2253a9ef79a4f88a8466f2}{}\label{classow__core_1_1Rotation3_ad24179671e2253a9ef79a4f88a8466f2}
+
+
+Rotation from R\+PY angles. 
+
+Returns a Rotation \hyperlink{classow__core_1_1Matrix}{Matrix} constructed from roll pitch and yaw euler angles \index{ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}!R\+PY@{R\+PY}}
+\index{R\+PY@{R\+PY}!ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}}
+\subsubsection[{\texorpdfstring{R\+P\+Y(const ow\+\_\+core\+::\+Vector3$<$ Scalar $>$ \&rpy=ow\+\_\+core\+::\+Vector3$<$ Scalar $>$\+::\+Zero())}{RPY(const ow_core::Vector3< Scalar > &rpy=ow_core::Vector3< Scalar >::Zero())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar$>$ static {\bf Rotation3} {\bf ow\+\_\+core\+::\+Rotation3}$<$ \+\_\+\+Scalar $>$\+::R\+PY (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Vector3}$<$ Scalar $>$ \&}]{rpy = {\ttfamily {\bf ow\+\_\+core\+::\+Vector3}$<$Scalar$>$\+:\+:Zero()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1Rotation3_ac97f635a2d188808d45496941384698a}{}\label{classow__core_1_1Rotation3_ac97f635a2d188808d45496941384698a}
+
+
+Rotation from R\+PY angles. 
+
+Returns a Rotation \hyperlink{classow__core_1_1Matrix}{Matrix} constructed from roll pitch and yaw euler angles \index{ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}!Rx@{Rx}}
+\index{Rx@{Rx}!ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}}
+\subsubsection[{\texorpdfstring{Rx(const Scalar \&angle=0.\+0)}{Rx(const Scalar &angle=0.0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar$>$ static {\bf Rotation3} {\bf ow\+\_\+core\+::\+Rotation3}$<$ \+\_\+\+Scalar $>$\+::Rx (
+\begin{DoxyParamCaption}
+\item[{const Scalar \&}]{angle = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1Rotation3_a021f317643aace80e3b70edac5e38ced}{}\label{classow__core_1_1Rotation3_a021f317643aace80e3b70edac5e38ced}
+
+
+Rotation around x-\/axis for given angle in radian. 
+
+Returns a Rotation \hyperlink{classow__core_1_1Matrix}{Matrix} constructed from roll angle. \index{ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}!Ry@{Ry}}
+\index{Ry@{Ry}!ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}}
+\subsubsection[{\texorpdfstring{Ry(const Scalar \&angle=0.\+0)}{Ry(const Scalar &angle=0.0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar$>$ static {\bf Rotation3} {\bf ow\+\_\+core\+::\+Rotation3}$<$ \+\_\+\+Scalar $>$\+::Ry (
+\begin{DoxyParamCaption}
+\item[{const Scalar \&}]{angle = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1Rotation3_ad9ec395e9bdd0495215d9f52d9237c81}{}\label{classow__core_1_1Rotation3_ad9ec395e9bdd0495215d9f52d9237c81}
+
+
+Rotation around y-\/axis for given angle in radian. 
+
+Returns a Rotation \hyperlink{classow__core_1_1Matrix}{Matrix} constructed from pitch angle. \index{ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}!Rz@{Rz}}
+\index{Rz@{Rz}!ow\+\_\+core\+::\+Rotation3@{ow\+\_\+core\+::\+Rotation3}}
+\subsubsection[{\texorpdfstring{Rz(const Scalar \&angle=0.\+0)}{Rz(const Scalar &angle=0.0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar$>$ static {\bf Rotation3} {\bf ow\+\_\+core\+::\+Rotation3}$<$ \+\_\+\+Scalar $>$\+::Rz (
+\begin{DoxyParamCaption}
+\item[{const Scalar \&}]{angle = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1Rotation3_aa1cca570a650d8caed40a091186b8569}{}\label{classow__core_1_1Rotation3_aa1cca570a650d8caed40a091186b8569}
+
+
+Rotation around y-\/axis for given angle in radian. 
+
+Returns a Rotation \hyperlink{classow__core_1_1Matrix}{Matrix} constructed from yaw angle. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/\hyperlink{rotation3_8h}{rotation3.\+h}\end{DoxyCompactItemize}

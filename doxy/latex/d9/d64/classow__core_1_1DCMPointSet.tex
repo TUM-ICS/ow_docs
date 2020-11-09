@@ -1,0 +1,171 @@
+\hypertarget{classow__core_1_1DCMPointSet}{}\section{ow\+\_\+core\+:\+:D\+C\+M\+Point\+Set$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1DCMPointSet}\index{ow\+\_\+core\+::\+D\+C\+M\+Point\+Set$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+D\+C\+M\+Point\+Set$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1DCMPointSet}{D\+C\+M\+Point\+Set} class.  
+
+
+
+
+{\ttfamily \#include $<$dcm\+\_\+point\+\_\+set.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow__core_1_1VirtualRepellentPoint}{Virtual\+Repellent\+Point}$<$ \+\_\+\+Scalar $>$ {\bfseries Vrp}\hypertarget{classow__core_1_1DCMPointSet_a5e6645541fde1f0bb56e14912993547a}{}\label{classow__core_1_1DCMPointSet_a5e6645541fde1f0bb56e14912993547a}
+
+\item 
+typedef \hyperlink{classow__core_1_1DCMWaypoint}{D\+C\+M\+Waypoint}$<$ \+\_\+\+Scalar $>$ {\bfseries Dcm}\hypertarget{classow__core_1_1DCMPointSet_a38e4e2fa7fe6d2e1ac571f07eb0e758c}{}\label{classow__core_1_1DCMPointSet_a38e4e2fa7fe6d2e1ac571f07eb0e758c}
+
+\item 
+typedef \hyperlink{classow__core_1_1AngularPosition}{Angular\+Position}$<$ \+\_\+\+Scalar $>$ {\bfseries Quaternion}\hypertarget{classow__core_1_1DCMPointSet_a7ba1ad8bdef6b7f0758bf0eb01af7dd0}{}\label{classow__core_1_1DCMPointSet_a7ba1ad8bdef6b7f0758bf0eb01af7dd0}
+
+\item 
+typedef \hyperlink{classow__core_1_1DCMWaypointDSInitial}{D\+C\+M\+Waypoint\+D\+S\+Initial}$<$ \+\_\+\+Scalar $>$ {\bfseries Dsi}\hypertarget{classow__core_1_1DCMPointSet_abe6855fff5cd1fe153ca80ca939bb622}{}\label{classow__core_1_1DCMPointSet_abe6855fff5cd1fe153ca80ca939bb622}
+
+\item 
+typedef \hyperlink{classow__core_1_1DCMWaypointDSInitialVelocity}{D\+C\+M\+Waypoint\+D\+S\+Initial\+Velocity}$<$ \+\_\+\+Scalar $>$ {\bfseries DsiP}\hypertarget{classow__core_1_1DCMPointSet_a495618f759d49cba53068ddc0fed08f6}{}\label{classow__core_1_1DCMPointSet_a495618f759d49cba53068ddc0fed08f6}
+
+\item 
+typedef \hyperlink{classow__core_1_1DCMWaypointDSFinal}{D\+C\+M\+Waypoint\+D\+S\+Final}$<$ \+\_\+\+Scalar $>$ {\bfseries Dsf}\hypertarget{classow__core_1_1DCMPointSet_ab34cc5b7a4f0f2bed9222ac8434f31b3}{}\label{classow__core_1_1DCMPointSet_ab34cc5b7a4f0f2bed9222ac8434f31b3}
+
+\item 
+typedef \hyperlink{classow__core_1_1DCMWaypointDSFinalVelocity}{D\+C\+M\+Waypoint\+D\+S\+Final\+Velocity}$<$ \+\_\+\+Scalar $>$ {\bfseries DsfP}\hypertarget{classow__core_1_1DCMPointSet_a16f425e42151482f62731bda29e53ed0}{}\label{classow__core_1_1DCMPointSet_a16f425e42151482f62731bda29e53ed0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1DCMPointSet_a000b4bf3f73576c1941e9947fccf32ad}{D\+C\+M\+Point\+Set} ()\hypertarget{classow__core_1_1DCMPointSet_a000b4bf3f73576c1941e9947fccf32ad}{}\label{classow__core_1_1DCMPointSet_a000b4bf3f73576c1941e9947fccf32ad}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1DCMPointSet_afc983ee3d74d48c900312e106b967308}{D\+C\+M\+Point\+Set} (const \hyperlink{classow__core_1_1DCMPointSet}{D\+C\+M\+Point\+Set} \&other)\hypertarget{classow__core_1_1DCMPointSet_afc983ee3d74d48c900312e106b967308}{}\label{classow__core_1_1DCMPointSet_afc983ee3d74d48c900312e106b967308}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1DCMPointSet_aebb90b03ac8ce887a73a91bc53dbbd3e}{D\+C\+M\+Point\+Set} (const \hyperlink{classow__core_1_1VirtualRepellentPoint}{Vrp} \&vrp, const \hyperlink{classow__core_1_1DCMWaypoint}{Dcm} \&dcm, const \hyperlink{classow__core_1_1AngularPosition}{Quaternion} \&Quat, const \hyperlink{classow__core_1_1DCMWaypointDSInitial}{Dsi} \&dsi, const \hyperlink{classow__core_1_1DCMWaypointDSInitialVelocity}{DsiP} \&dsiP, const \hyperlink{classow__core_1_1DCMWaypointDSFinal}{Dsf} \&dsf, const \hyperlink{classow__core_1_1DCMWaypointDSFinalVelocity}{DsfP} \&dsfP, const \hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6}{Foot\+Id} \&foot\+\_\+id=Left, const unsigned int n\+Point=0)\hypertarget{classow__core_1_1DCMPointSet_aebb90b03ac8ce887a73a91bc53dbbd3e}{}\label{classow__core_1_1DCMPointSet_aebb90b03ac8ce887a73a91bc53dbbd3e}
+
+\begin{DoxyCompactList}\small\item\em Constructor from sub elements. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1DCMPointSet}{D\+C\+M\+Point\+Set} \& \hyperlink{classow__core_1_1DCMPointSet_acb3e5691838b8e6a8fadfb76daf006c9}{operator=} (const \hyperlink{classow__core_1_1DCMPointSet}{D\+C\+M\+Point\+Set} \&other)\hypertarget{classow__core_1_1DCMPointSet_acb3e5691838b8e6a8fadfb76daf006c9}{}\label{classow__core_1_1DCMPointSet_acb3e5691838b8e6a8fadfb76daf006c9}
+
+\begin{DoxyCompactList}\small\item\em Assignment from \hyperlink{classow__core_1_1DCMPointSet}{D\+C\+M\+Point\+Set}. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1VirtualRepellentPoint}{Vrp} \& {\bfseries vrp} ()\hypertarget{classow__core_1_1DCMPointSet_a51bdc6f699e2c56fc8eb468f2243a38a}{}\label{classow__core_1_1DCMPointSet_a51bdc6f699e2c56fc8eb468f2243a38a}
+
+\item 
+const \hyperlink{classow__core_1_1VirtualRepellentPoint}{Vrp} \& {\bfseries vrp} () const \hypertarget{classow__core_1_1DCMPointSet_ad29adb85d92b0fcc2181919288e558bc}{}\label{classow__core_1_1DCMPointSet_ad29adb85d92b0fcc2181919288e558bc}
+
+\item 
+\hyperlink{classow__core_1_1DCMWaypoint}{Dcm} \& {\bfseries dcm} ()\hypertarget{classow__core_1_1DCMPointSet_a64275d23af47741db5ed72431ac6a32b}{}\label{classow__core_1_1DCMPointSet_a64275d23af47741db5ed72431ac6a32b}
+
+\item 
+const \hyperlink{classow__core_1_1DCMWaypoint}{Dcm} \& {\bfseries dcm} () const \hypertarget{classow__core_1_1DCMPointSet_a9624857d8e36e1f8333cf07ec5c35212}{}\label{classow__core_1_1DCMPointSet_a9624857d8e36e1f8333cf07ec5c35212}
+
+\item 
+\hyperlink{classow__core_1_1AngularPosition}{Quaternion} \& {\bfseries Q} ()\hypertarget{classow__core_1_1DCMPointSet_aa7da9624fcfa43e0f559de7ff4510d40}{}\label{classow__core_1_1DCMPointSet_aa7da9624fcfa43e0f559de7ff4510d40}
+
+\item 
+const \hyperlink{classow__core_1_1AngularPosition}{Quaternion} \& {\bfseries Q} () const \hypertarget{classow__core_1_1DCMPointSet_a5a17131449945659363e3bc2677129bd}{}\label{classow__core_1_1DCMPointSet_a5a17131449945659363e3bc2677129bd}
+
+\item 
+\hyperlink{classow__core_1_1DCMWaypointDSInitial}{Dsi} \& {\bfseries dsi} ()\hypertarget{classow__core_1_1DCMPointSet_a05a07f16380b1b4e6bc24367006f21db}{}\label{classow__core_1_1DCMPointSet_a05a07f16380b1b4e6bc24367006f21db}
+
+\item 
+const \hyperlink{classow__core_1_1DCMWaypointDSInitial}{Dsi} \& {\bfseries dsi} () const \hypertarget{classow__core_1_1DCMPointSet_a851b1ec2442b6cb8b0835a7c984cb066}{}\label{classow__core_1_1DCMPointSet_a851b1ec2442b6cb8b0835a7c984cb066}
+
+\item 
+\hyperlink{classow__core_1_1DCMWaypointDSInitialVelocity}{DsiP} \& {\bfseries dsiP} ()\hypertarget{classow__core_1_1DCMPointSet_a5e2271eafd622ec91866f30e9179d8a3}{}\label{classow__core_1_1DCMPointSet_a5e2271eafd622ec91866f30e9179d8a3}
+
+\item 
+const \hyperlink{classow__core_1_1DCMWaypointDSInitialVelocity}{DsiP} \& {\bfseries dsiP} () const \hypertarget{classow__core_1_1DCMPointSet_acc80510568122e7f82fb0a721b2d6558}{}\label{classow__core_1_1DCMPointSet_acc80510568122e7f82fb0a721b2d6558}
+
+\item 
+\hyperlink{classow__core_1_1DCMWaypointDSFinal}{Dsf} \& {\bfseries dsf} ()\hypertarget{classow__core_1_1DCMPointSet_aa103888de3d9de536a9c3341fca9ade9}{}\label{classow__core_1_1DCMPointSet_aa103888de3d9de536a9c3341fca9ade9}
+
+\item 
+const \hyperlink{classow__core_1_1DCMWaypointDSFinal}{Dsf} \& {\bfseries dsf} () const \hypertarget{classow__core_1_1DCMPointSet_ab28914d650ca648be16339b255ba76d8}{}\label{classow__core_1_1DCMPointSet_ab28914d650ca648be16339b255ba76d8}
+
+\item 
+\hyperlink{classow__core_1_1DCMWaypointDSFinalVelocity}{DsfP} \& {\bfseries dsfP} ()\hypertarget{classow__core_1_1DCMPointSet_aa367b0f5199b136c0787194c4e07429d}{}\label{classow__core_1_1DCMPointSet_aa367b0f5199b136c0787194c4e07429d}
+
+\item 
+const \hyperlink{classow__core_1_1DCMWaypointDSFinalVelocity}{DsfP} \& {\bfseries dsfP} () const \hypertarget{classow__core_1_1DCMPointSet_a0e21a550722c79723496dbe483207b82}{}\label{classow__core_1_1DCMPointSet_a0e21a550722c79723496dbe483207b82}
+
+\item 
+\hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6}{Foot\+Id} \& {\bfseries foot\+Id} ()\hypertarget{classow__core_1_1DCMPointSet_a64f6d62ca6473e99450fb4611ebaa867}{}\label{classow__core_1_1DCMPointSet_a64f6d62ca6473e99450fb4611ebaa867}
+
+\item 
+const \hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6}{Foot\+Id} \& {\bfseries foot\+Id} () const \hypertarget{classow__core_1_1DCMPointSet_afe76872c196f88c9a5d566fc8b718c9a}{}\label{classow__core_1_1DCMPointSet_afe76872c196f88c9a5d566fc8b718c9a}
+
+\item 
+unsigned int \& {\bfseries n\+Point} ()\hypertarget{classow__core_1_1DCMPointSet_a4559bba6530e0075b1c893e61f192de4}{}\label{classow__core_1_1DCMPointSet_a4559bba6530e0075b1c893e61f192de4}
+
+\item 
+const unsigned int \& {\bfseries n\+Point} () const \hypertarget{classow__core_1_1DCMPointSet_aa9a4f7124f98ebf34427529c7280f5f1}{}\label{classow__core_1_1DCMPointSet_aa9a4f7124f98ebf34427529c7280f5f1}
+
+\item 
+\hyperlink{classow__core_1_1DCMPointSet}{D\+C\+M\+Point\+Set} \& \hyperlink{classow__core_1_1DCMPointSet_a7aea70c61390a14517d551174e5c816d}{operator=} (const ow\+\_\+msgs\+::\+D\+C\+M\+Point\+Set \&msg)\hypertarget{classow__core_1_1DCMPointSet_a7aea70c61390a14517d551174e5c816d}{}\label{classow__core_1_1DCMPointSet_a7aea70c61390a14517d551174e5c816d}
+
+\begin{DoxyCompactList}\small\item\em Assignment of ow\+\_\+msgs\+::\+D\+C\+M\+Point\+Set. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1DCMPointSet_ae1e2d6f6cf2b84417a45efcd1ab18df3}{operator ow\+\_\+msgs\+::\+D\+C\+M\+Point\+Set} () const \hypertarget{classow__core_1_1DCMPointSet_ae1e2d6f6cf2b84417a45efcd1ab18df3}{}\label{classow__core_1_1DCMPointSet_ae1e2d6f6cf2b84417a45efcd1ab18df3}
+
+\begin{DoxyCompactList}\small\item\em Conversion to ow\+\_\+msgs\+::\+D\+C\+M\+Point\+Set. \end{DoxyCompactList}\item 
+ow\+\_\+msgs\+::\+D\+C\+M\+Point\+Set \hyperlink{classow__core_1_1DCMPointSet_a3d82f537a6aabec8ea5c43f11645b75f}{to\+D\+C\+M\+Point\+Set\+Msg} () const \hypertarget{classow__core_1_1DCMPointSet_a3d82f537a6aabec8ea5c43f11645b75f}{}\label{classow__core_1_1DCMPointSet_a3d82f537a6aabec8ea5c43f11645b75f}
+
+\begin{DoxyCompactList}\small\item\em Conversion to ow\+\_\+msgs\+::\+D\+C\+M\+Point\+Set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classow__core_1_1DCMPointSet}{D\+C\+M\+Point\+Set}$<$ \+\_\+\+Scalar $>$ \& \hyperlink{classow__core_1_1DCMPointSet_abe042870f50eef779d4109949a9650ac}{Default} ()\hypertarget{classow__core_1_1DCMPointSet_abe042870f50eef779d4109949a9650ac}{}\label{classow__core_1_1DCMPointSet_abe042870f50eef779d4109949a9650ac}
+
+\begin{DoxyCompactList}\small\item\em Construct as Default. \end{DoxyCompactList}\item 
+static const \hyperlink{classow__core_1_1DCMPointSet}{D\+C\+M\+Point\+Set}$<$ \+\_\+\+Scalar $>$ \& \hyperlink{classow__core_1_1DCMPointSet_a3580b7a270ab3a49aed1f548795e203a}{Zero} ()\hypertarget{classow__core_1_1DCMPointSet_a3580b7a270ab3a49aed1f548795e203a}{}\label{classow__core_1_1DCMPointSet_a3580b7a270ab3a49aed1f548795e203a}
+
+\begin{DoxyCompactList}\small\item\em Construct as Zero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1VirtualRepellentPoint}{Vrp} {\bfseries vrp\+\_\+}\hypertarget{classow__core_1_1DCMPointSet_a03edff735b05ebd28975b5f7669b3a89}{}\label{classow__core_1_1DCMPointSet_a03edff735b05ebd28975b5f7669b3a89}
+
+\item 
+\hyperlink{classow__core_1_1DCMWaypoint}{Dcm} {\bfseries dcm\+\_\+}\hypertarget{classow__core_1_1DCMPointSet_a77fe26fcdc0a82f30d12aad7543b62c4}{}\label{classow__core_1_1DCMPointSet_a77fe26fcdc0a82f30d12aad7543b62c4}
+
+\item 
+\hyperlink{classow__core_1_1AngularPosition}{Quaternion} {\bfseries Q\+\_\+}\hypertarget{classow__core_1_1DCMPointSet_a9b9ed5d06e30aa306f957fc4a7d0db8d}{}\label{classow__core_1_1DCMPointSet_a9b9ed5d06e30aa306f957fc4a7d0db8d}
+
+\item 
+\hyperlink{classow__core_1_1DCMWaypointDSInitial}{Dsi} {\bfseries dsi\+\_\+}\hypertarget{classow__core_1_1DCMPointSet_a58bf17c978a06d80167fa1c65c1c2d1e}{}\label{classow__core_1_1DCMPointSet_a58bf17c978a06d80167fa1c65c1c2d1e}
+
+\item 
+\hyperlink{classow__core_1_1DCMWaypointDSInitialVelocity}{DsiP} {\bfseries dsi\+P\+\_\+}\hypertarget{classow__core_1_1DCMPointSet_a5c526135e0872d3855e7dd27851f1378}{}\label{classow__core_1_1DCMPointSet_a5c526135e0872d3855e7dd27851f1378}
+
+\item 
+\hyperlink{classow__core_1_1DCMWaypointDSFinal}{Dsf} {\bfseries dsf\+\_\+}\hypertarget{classow__core_1_1DCMPointSet_ac8ba60ba04e5d4a574c9c6ad329e317d}{}\label{classow__core_1_1DCMPointSet_ac8ba60ba04e5d4a574c9c6ad329e317d}
+
+\item 
+\hyperlink{classow__core_1_1DCMWaypointDSFinalVelocity}{DsfP} {\bfseries dsf\+P\+\_\+}\hypertarget{classow__core_1_1DCMPointSet_a4df37d966a835f3905a71e6aa26ce9e2}{}\label{classow__core_1_1DCMPointSet_a4df37d966a835f3905a71e6aa26ce9e2}
+
+\item 
+\hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6}{Foot\+Id} {\bfseries foot\+\_\+id\+\_\+}\hypertarget{classow__core_1_1DCMPointSet_a452036b50fae7ab21a19bd6e62267991}{}\label{classow__core_1_1DCMPointSet_a452036b50fae7ab21a19bd6e62267991}
+
+\item 
+unsigned int {\bfseries n\+\_\+point\+\_\+}\hypertarget{classow__core_1_1DCMPointSet_a896b959dbeb4204d75b47fa05c0b5a46}{}\label{classow__core_1_1DCMPointSet_a896b959dbeb4204d75b47fa05c0b5a46}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+D\+C\+M\+Point\+Set$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1DCMPointSet}{D\+C\+M\+Point\+Set} class. 
+
+This class is a container for\+:
+\begin{DoxyItemize}
+\item \hyperlink{classow__core_1_1DCMPointSet}{D\+C\+M\+Point\+Set} position.
+\item Foot id (Left,Right).
+\item Final step flag (true or false)
+\item n step. Number of step in the plan. 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/\hyperlink{dcm__point__set_8h}{dcm\+\_\+point\+\_\+set.\+h}\end{DoxyCompactItemize}

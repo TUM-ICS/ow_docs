@@ -1,0 +1,246 @@
+\hypertarget{types_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types.h File Reference}
+\label{types_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types.\+h}}
+
+
+Contains all the algorithms.  
+
+
+{\ttfamily \#include $<$ow\+\_\+core/configuration.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/matrix.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/rotation3.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/vector3.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/flags.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/joint\+\_\+state.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/angular\+\_\+state.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/linear\+\_\+state.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/cartesian\+\_\+state.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/zero\+\_\+moment\+\_\+point\+\_\+state.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/spatial\+\_\+vector.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/cartesian\+\_\+vector.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/homogeneous\+\_\+transformation.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/foot\+\_\+step.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/dcm\+\_\+point\+\_\+set.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/divergent\+\_\+component\+\_\+of\+\_\+motion\+\_\+state.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/inertial\+\_\+measurment\+\_\+unit\+\_\+sensor.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types/force\+\_\+torque\+\_\+sensor.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/utilities/eigen\+\_\+typedef\+\_\+macros.\+h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{configuration_8h_a369fd4109bb09ea464fc7b72656aaa78}{O\+W\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+S\+C\+A\+L\+AR} \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar}
+\item 
+typedef \hyperlink{classow__core_1_1Rotation3}{ow\+\_\+core\+::\+Rotation3}$<$ Scalar $>$ \hyperlink{types_8h_a687448c721eb8decb7aa921e43595f6b}{ow\+::\+Rotation3}
+\item 
+typedef \hyperlink{classow__core_1_1Vector3}{ow\+\_\+core\+::\+Vector3}$<$ Scalar $>$ {\bfseries ow\+::\+Vector3}\hypertarget{types_8h_ac2b7f2861e864b8dd2959dcb9a074e56}{}\label{types_8h_ac2b7f2861e864b8dd2959dcb9a074e56}
+
+\item 
+typedef \hyperlink{classow__core_1_1VectorDof}{ow\+\_\+core\+::\+Vector\+Dof}$<$ \hyperlink{configuration_8h_a5c055f9292e2ed82e4e8d66452107c23}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+S\+C\+A\+L\+AR}, \hyperlink{configuration_8h_a357585ef5c4217b2dae5d01d83e1f26b}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+R\+O\+WS} $>$ {\bfseries ow\+::\+Vector\+Dof}\hypertarget{types_8h_a079b8c7643e53db628aef5f6c665f408}{}\label{types_8h_a079b8c7643e53db628aef5f6c665f408}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointPosition}{ow\+\_\+core\+::\+Joint\+Position}$<$ \hyperlink{configuration_8h_a5c055f9292e2ed82e4e8d66452107c23}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+S\+C\+A\+L\+AR}, \hyperlink{configuration_8h_a357585ef5c4217b2dae5d01d83e1f26b}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+R\+O\+WS} $>$ {\bfseries ow\+::\+Joint\+Position}\hypertarget{types_8h_aaf04b47e0979f447deeb1cd71744339c}{}\label{types_8h_aaf04b47e0979f447deeb1cd71744339c}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointVelocity}{ow\+\_\+core\+::\+Joint\+Velocity}$<$ \hyperlink{configuration_8h_a5c055f9292e2ed82e4e8d66452107c23}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+S\+C\+A\+L\+AR}, \hyperlink{configuration_8h_a357585ef5c4217b2dae5d01d83e1f26b}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+R\+O\+WS} $>$ {\bfseries ow\+::\+Joint\+Velocity}\hypertarget{types_8h_afd2c46b4c144129c1734a3f37e999a0d}{}\label{types_8h_afd2c46b4c144129c1734a3f37e999a0d}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointAcceleration}{ow\+\_\+core\+::\+Joint\+Acceleration}$<$ \hyperlink{configuration_8h_a5c055f9292e2ed82e4e8d66452107c23}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+S\+C\+A\+L\+AR}, \hyperlink{configuration_8h_a357585ef5c4217b2dae5d01d83e1f26b}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+R\+O\+WS} $>$ {\bfseries ow\+::\+Joint\+Acceleration}\hypertarget{types_8h_ac857abfbab0b859193dff68b44fe589d}{}\label{types_8h_ac857abfbab0b859193dff68b44fe589d}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointEffort}{ow\+\_\+core\+::\+Joint\+Effort}$<$ \hyperlink{configuration_8h_a5c055f9292e2ed82e4e8d66452107c23}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+S\+C\+A\+L\+AR}, \hyperlink{configuration_8h_a357585ef5c4217b2dae5d01d83e1f26b}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+R\+O\+WS} $>$ {\bfseries ow\+::\+Joint\+Effort}\hypertarget{types_8h_ada7c0999f1c8537a7842e5e3aa2f9a02}{}\label{types_8h_ada7c0999f1c8537a7842e5e3aa2f9a02}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointState}{ow\+\_\+core\+::\+Joint\+State}$<$ \hyperlink{configuration_8h_a5c055f9292e2ed82e4e8d66452107c23}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+S\+C\+A\+L\+AR}, \hyperlink{configuration_8h_a357585ef5c4217b2dae5d01d83e1f26b}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+R\+O\+WS} $>$ {\bfseries ow\+::\+Joint\+State}\hypertarget{types_8h_ab3fa72a2c8049294d1bdfcf66786ad8e}{}\label{types_8h_ab3fa72a2c8049294d1bdfcf66786ad8e}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointState}{ow\+\_\+core\+::\+Joint\+State}$<$ \hyperlink{configuration_8h_a5c055f9292e2ed82e4e8d66452107c23}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+S\+C\+A\+L\+AR} $>$ {\bfseries ow\+::\+Joint\+StateX}\hypertarget{types_8h_a08c659d68744b28eb05ab5e264a99461}{}\label{types_8h_a08c659d68744b28eb05ab5e264a99461}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointPosition}{ow\+\_\+core\+::\+Joint\+Position}$<$ \hyperlink{configuration_8h_a5c055f9292e2ed82e4e8d66452107c23}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+S\+C\+A\+L\+AR} $>$ {\bfseries ow\+::\+Joint\+PositionX}\hypertarget{types_8h_a662c4a48daf710f72b8f9bd9539802bf}{}\label{types_8h_a662c4a48daf710f72b8f9bd9539802bf}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointVelocity}{ow\+\_\+core\+::\+Joint\+Velocity}$<$ \hyperlink{configuration_8h_a5c055f9292e2ed82e4e8d66452107c23}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+S\+C\+A\+L\+AR} $>$ {\bfseries ow\+::\+Joint\+VelocityX}\hypertarget{types_8h_aa909b712a743c37059e1a079e509f3be}{}\label{types_8h_aa909b712a743c37059e1a079e509f3be}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointAcceleration}{ow\+\_\+core\+::\+Joint\+Acceleration}$<$ \hyperlink{configuration_8h_a5c055f9292e2ed82e4e8d66452107c23}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+S\+C\+A\+L\+AR} $>$ {\bfseries ow\+::\+Joint\+AccelerationX}\hypertarget{types_8h_abaa51bca6fc6223867f218b43e87e360}{}\label{types_8h_abaa51bca6fc6223867f218b43e87e360}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointEffort}{ow\+\_\+core\+::\+Joint\+Effort}$<$ \hyperlink{configuration_8h_a5c055f9292e2ed82e4e8d66452107c23}{O\+W\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+D\+O\+F\+\_\+\+S\+C\+A\+L\+AR} $>$ {\bfseries ow\+::\+Joint\+EffortX}\hypertarget{types_8h_ad259c447a247ab4f7f004f23dfcd90c5}{}\label{types_8h_ad259c447a247ab4f7f004f23dfcd90c5}
+
+\item 
+typedef \hyperlink{classow__core_1_1AngularPosition}{ow\+\_\+core\+::\+Angular\+Position}$<$ Scalar $>$ {\bfseries ow\+::\+Angular\+Position}\hypertarget{types_8h_a6c4738cf9664f9703a92ed052043d612}{}\label{types_8h_a6c4738cf9664f9703a92ed052043d612}
+
+\item 
+typedef \hyperlink{classow__core_1_1AngularVelocity}{ow\+\_\+core\+::\+Angular\+Velocity}$<$ Scalar $>$ {\bfseries ow\+::\+Angular\+Velocity}\hypertarget{types_8h_ac1c8a1760c8477c6e5d1013735323e7f}{}\label{types_8h_ac1c8a1760c8477c6e5d1013735323e7f}
+
+\item 
+typedef \hyperlink{classow__core_1_1AngularAcceleration}{ow\+\_\+core\+::\+Angular\+Acceleration}$<$ Scalar $>$ {\bfseries ow\+::\+Angular\+Acceleration}\hypertarget{types_8h_a92d2d6bafbb0530e92f86e662ef5cc35}{}\label{types_8h_a92d2d6bafbb0530e92f86e662ef5cc35}
+
+\item 
+typedef \hyperlink{classow__core_1_1Moment}{ow\+\_\+core\+::\+Moment}$<$ Scalar $>$ {\bfseries ow\+::\+Moment}\hypertarget{types_8h_a7d6c11c8624d62977464e31ff1bc58f0}{}\label{types_8h_a7d6c11c8624d62977464e31ff1bc58f0}
+
+\item 
+typedef \hyperlink{classow__core_1_1AngularState}{ow\+\_\+core\+::\+Angular\+State}$<$ Scalar $>$ {\bfseries ow\+::\+Angular\+State}\hypertarget{types_8h_ace95b82ae4760acc9e56916aa622c6ae}{}\label{types_8h_ace95b82ae4760acc9e56916aa622c6ae}
+
+\item 
+typedef \hyperlink{classow__core_1_1LinearPosition}{ow\+\_\+core\+::\+Linear\+Position}$<$ Scalar $>$ {\bfseries ow\+::\+Linear\+Position}\hypertarget{types_8h_a95f97ac5ee30d3abc1d0767b33481737}{}\label{types_8h_a95f97ac5ee30d3abc1d0767b33481737}
+
+\item 
+typedef \hyperlink{classow__core_1_1LinearVelocity}{ow\+\_\+core\+::\+Linear\+Velocity}$<$ Scalar $>$ {\bfseries ow\+::\+Linear\+Velocity}\hypertarget{types_8h_a558212eb0869c7241d9584dea2eb3e6d}{}\label{types_8h_a558212eb0869c7241d9584dea2eb3e6d}
+
+\item 
+typedef \hyperlink{classow__core_1_1LinearAcceleration}{ow\+\_\+core\+::\+Linear\+Acceleration}$<$ Scalar $>$ {\bfseries ow\+::\+Linear\+Acceleration}\hypertarget{types_8h_a145b4cc38e62499b6809f8cecd1dbcc9}{}\label{types_8h_a145b4cc38e62499b6809f8cecd1dbcc9}
+
+\item 
+typedef \hyperlink{classow__core_1_1Force}{ow\+\_\+core\+::\+Force}$<$ Scalar $>$ {\bfseries ow\+::\+Force}\hypertarget{types_8h_abde9803efd7a07cf9982bbbc61a6f2e8}{}\label{types_8h_abde9803efd7a07cf9982bbbc61a6f2e8}
+
+\item 
+typedef \hyperlink{classow__core_1_1LinearState}{ow\+\_\+core\+::\+Linear\+State}$<$ Scalar $>$ {\bfseries ow\+::\+Linear\+State}\hypertarget{types_8h_a538269c275c0175d119d4cd86cb0cf9c}{}\label{types_8h_a538269c275c0175d119d4cd86cb0cf9c}
+
+\item 
+typedef \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+\_\+core\+::\+Homogeneous\+Transformation}$<$ Scalar $>$ {\bfseries ow\+::\+Homogeneous\+Transformation}\hypertarget{types_8h_a8f36c2ba2b7ca7c9095e2cf97ec3fce0}{}\label{types_8h_a8f36c2ba2b7ca7c9095e2cf97ec3fce0}
+
+\item 
+typedef \hyperlink{classow__core_1_1CartesianPosition}{ow\+\_\+core\+::\+Cartesian\+Position}$<$ Scalar $>$ {\bfseries ow\+::\+Cartesian\+Position}\hypertarget{types_8h_a603019fe85f69dda3bcd94aa69aa8c0a}{}\label{types_8h_a603019fe85f69dda3bcd94aa69aa8c0a}
+
+\item 
+typedef \hyperlink{classow__core_1_1CartesianVelocity}{ow\+\_\+core\+::\+Cartesian\+Velocity}$<$ Scalar $>$ {\bfseries ow\+::\+Cartesian\+Velocity}\hypertarget{types_8h_a7b30cb69ebff776c6f0e0d2ada4c5167}{}\label{types_8h_a7b30cb69ebff776c6f0e0d2ada4c5167}
+
+\item 
+typedef \hyperlink{classow__core_1_1CartesianAcceleration}{ow\+\_\+core\+::\+Cartesian\+Acceleration}$<$ Scalar $>$ {\bfseries ow\+::\+Cartesian\+Acceleration}\hypertarget{types_8h_af3e65a319cc7ff03f7740be8b06d3489}{}\label{types_8h_af3e65a319cc7ff03f7740be8b06d3489}
+
+\item 
+typedef \hyperlink{classow__core_1_1Wrench}{ow\+\_\+core\+::\+Wrench}$<$ Scalar $>$ {\bfseries ow\+::\+Wrench}\hypertarget{types_8h_abe69229bd98565dbf74e3ccfaf0781f1}{}\label{types_8h_abe69229bd98565dbf74e3ccfaf0781f1}
+
+\item 
+typedef \hyperlink{classow__core_1_1CartesianState}{ow\+\_\+core\+::\+Cartesian\+State}$<$ Scalar $>$ {\bfseries ow\+::\+Cartesian\+State}\hypertarget{types_8h_a4c6849dd8cdf9c5b086001718016f96e}{}\label{types_8h_a4c6849dd8cdf9c5b086001718016f96e}
+
+\item 
+typedef \hyperlink{classow__core_1_1SpatialVector}{ow\+\_\+core\+::\+Spatial\+Vector}$<$ Scalar $>$ {\bfseries ow\+::\+Spatial\+Vector}\hypertarget{types_8h_a4399c8173c9820f41254f9f2a111d054}{}\label{types_8h_a4399c8173c9820f41254f9f2a111d054}
+
+\item 
+typedef \hyperlink{classow__core_1_1CartesianVector}{ow\+\_\+core\+::\+Cartesian\+Vector}$<$ Scalar $>$ {\bfseries ow\+::\+Cartesian\+Vector}\hypertarget{types_8h_a01fbecf50ecaa973b8a53363afff4977}{}\label{types_8h_a01fbecf50ecaa973b8a53363afff4977}
+
+\item 
+typedef \hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6}{ow\+\_\+core\+::\+Foot\+Id} \hyperlink{types_8h_a4992c4f753d1dc7a08d659edd78970ea}{ow\+::\+Foot\+Id}
+\item 
+typedef \hyperlink{classow__core_1_1Flags}{ow\+\_\+core\+::\+Flags} {\bfseries ow\+::\+Flags}\hypertarget{types_8h_af9bc886c1a5f814b41e9497e1f1bbac5}{}\label{types_8h_af9bc886c1a5f814b41e9497e1f1bbac5}
+
+\item 
+typedef \hyperlink{classow__core_1_1ZeroMomentPoint}{ow\+\_\+core\+::\+Zero\+Moment\+Point}$<$ Scalar $>$ {\bfseries ow\+::\+Zero\+Moment\+Point}\hypertarget{types_8h_abce64441eaf2520ea911895896598b8b}{}\label{types_8h_abce64441eaf2520ea911895896598b8b}
+
+\item 
+typedef \hyperlink{classow__core_1_1ZeroMomentPointVelocity}{ow\+\_\+core\+::\+Zero\+Moment\+Point\+Velocity}$<$ Scalar $>$ {\bfseries ow\+::\+Zero\+Moment\+Point\+Velocity}\hypertarget{types_8h_a158891ffd0467a93b53069038a54c62e}{}\label{types_8h_a158891ffd0467a93b53069038a54c62e}
+
+\item 
+typedef \hyperlink{classow__core_1_1ZeroMomentPointAcceleration}{ow\+\_\+core\+::\+Zero\+Moment\+Point\+Acceleration}$<$ Scalar $>$ {\bfseries ow\+::\+Zero\+Moment\+Point\+Acceleration}\hypertarget{types_8h_a57973583764df6c3a8331c2f7119d2ba}{}\label{types_8h_a57973583764df6c3a8331c2f7119d2ba}
+
+\item 
+typedef \hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+\_\+core\+::\+Zero\+Moment\+Point\+State}$<$ Scalar $>$ {\bfseries ow\+::\+Zero\+Moment\+Point\+State}\hypertarget{types_8h_a1832102e2a8ffe60306c7931b0e10a14}{}\label{types_8h_a1832102e2a8ffe60306c7931b0e10a14}
+
+\item 
+typedef \hyperlink{classow__core_1_1DivergentComponentOfMotion}{ow\+\_\+core\+::\+Divergent\+Component\+Of\+Motion}$<$ Scalar $>$ {\bfseries ow\+::\+D\+CM}\hypertarget{types_8h_a9ebc72d6bea90793593f3a0f96a06e6c}{}\label{types_8h_a9ebc72d6bea90793593f3a0f96a06e6c}
+
+\item 
+typedef \hyperlink{classow__core_1_1DivergentComponentOfMotionVelocity}{ow\+\_\+core\+::\+Divergent\+Component\+Of\+Motion\+Velocity}$<$ Scalar $>$ {\bfseries ow\+::\+D\+C\+M\+Velocity}\hypertarget{types_8h_acc91b7c324b83a8a892a3c01730c1392}{}\label{types_8h_acc91b7c324b83a8a892a3c01730c1392}
+
+\item 
+typedef \hyperlink{classow__core_1_1DivergentComponentOfMotionAcceleration}{ow\+\_\+core\+::\+Divergent\+Component\+Of\+Motion\+Acceleration}$<$ Scalar $>$ {\bfseries ow\+::\+D\+C\+M\+Acceleration}\hypertarget{types_8h_a237e000a1db3dbc47b3d4a9bb3de57a7}{}\label{types_8h_a237e000a1db3dbc47b3d4a9bb3de57a7}
+
+\item 
+typedef \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+\_\+core\+::\+Divergent\+Component\+Of\+Motion\+State}$<$ Scalar $>$ {\bfseries ow\+::\+D\+C\+M\+State}\hypertarget{types_8h_a6d0c41857be266212a4dae0f74320570}{}\label{types_8h_a6d0c41857be266212a4dae0f74320570}
+
+\item 
+typedef \hyperlink{classow__core_1_1DCMPointSet}{ow\+\_\+core\+::\+D\+C\+M\+Point\+Set}$<$ Scalar $>$ {\bfseries ow\+::\+D\+C\+M\+Point\+Set}\hypertarget{types_8h_afbb1c3ca528d05989797e50f64654537}{}\label{types_8h_afbb1c3ca528d05989797e50f64654537}
+
+\item 
+typedef std\+::vector$<$ D\+C\+M\+Point\+Set $>$ {\bfseries ow\+::\+D\+C\+M\+Point\+Set\+List}\hypertarget{types_8h_aeb8acb3b2b0c3cd656c306a757234e8b}{}\label{types_8h_aeb8acb3b2b0c3cd656c306a757234e8b}
+
+\item 
+typedef \hyperlink{classow__core_1_1FootStep}{ow\+\_\+core\+::\+Foot\+Step}$<$ Scalar $>$ {\bfseries ow\+::\+Foot\+Step}\hypertarget{types_8h_a8aeab83e85e910391ac667dadb32e311}{}\label{types_8h_a8aeab83e85e910391ac667dadb32e311}
+
+\item 
+typedef std\+::vector$<$ Foot\+Step $>$ {\bfseries ow\+::\+Foot\+Step\+List}\hypertarget{types_8h_a375adeb0e991ca4bcc6189900bed13b8}{}\label{types_8h_a375adeb0e991ca4bcc6189900bed13b8}
+
+\item 
+typedef \hyperlink{classow__core_1_1InertialMeasurmentUnitSensor}{ow\+\_\+core\+::\+Inertial\+Measurment\+Unit\+Sensor}$<$ Scalar $>$ {\bfseries ow\+::\+Imu\+Sensor}\hypertarget{types_8h_aa649fa05d4862461c758e8515bd4e7bc}{}\label{types_8h_aa649fa05d4862461c758e8515bd4e7bc}
+
+\item 
+typedef \hyperlink{classow__core_1_1ForceTorqueSensor}{ow\+\_\+core\+::\+Force\+Torque\+Sensor}$<$ Scalar $>$ {\bfseries ow\+::\+F\+T\+Sensor}\hypertarget{types_8h_acf693ae17a8bd0988223c0587f626285}{}\label{types_8h_acf693ae17a8bd0988223c0587f626285}
+
+\item 
+typedef \hyperlink{classow__core_1_1Matrix}{ow\+\_\+core\+::\+Matrix}$<$ Scalar, 6, 1 $>$ \hyperlink{types_8h_abd86b6bb627dfae3480424dec0b2a0e1}{ow\+::\+Vector6}
+\item 
+typedef \hyperlink{classow__core_1_1Matrix}{ow\+\_\+core\+::\+Matrix}$<$ Scalar, 7, 1 $>$ {\bfseries ow\+::\+Vector7}\hypertarget{types_8h_a284b3bfd5d86bb7ddcb4dca717535bb3}{}\label{types_8h_a284b3bfd5d86bb7ddcb4dca717535bb3}
+
+\item 
+typedef \hyperlink{classow__core_1_1Matrix}{ow\+\_\+core\+::\+Matrix}$<$ Scalar, 2, 1 $>$ {\bfseries ow\+::\+Vector2}\hypertarget{types_8h_a34545f445c2465473b9d355d518e9e2e}{}\label{types_8h_a34545f445c2465473b9d355d518e9e2e}
+
+\item 
+typedef \hyperlink{classow__core_1_1Matrix}{ow\+\_\+core\+::\+Matrix}$<$ Scalar, 3, 3 $>$ {\bfseries ow\+::\+Matrix3}\hypertarget{types_8h_aa9c1d8d89375775d98fc222ccf393d71}{}\label{types_8h_aa9c1d8d89375775d98fc222ccf393d71}
+
+\item 
+typedef \hyperlink{classow__core_1_1Matrix}{ow\+\_\+core\+::\+Matrix}$<$ Scalar, 4, 4 $>$ {\bfseries ow\+::\+Matrix4}\hypertarget{types_8h_afaacf7b9a1d3bd63e7753c650fe911f7}{}\label{types_8h_afaacf7b9a1d3bd63e7753c650fe911f7}
+
+\item 
+typedef \hyperlink{classow__core_1_1Matrix}{ow\+\_\+core\+::\+Matrix}$<$ Scalar, 6, 6 $>$ {\bfseries ow\+::\+Matrix6}\hypertarget{types_8h_aae5348949416870fb5e32e4b27cf5526}{}\label{types_8h_aae5348949416870fb5e32e4b27cf5526}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ Scalar, Eigen\+::\+Dynamic, 1 $>$ {\bfseries ow\+::\+VectorX}\hypertarget{types_8h_a0d10f5059288d03538e92c543bd24896}{}\label{types_8h_a0d10f5059288d03538e92c543bd24896}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ Scalar, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$ {\bfseries ow\+::\+MatrixX}\hypertarget{types_8h_ace75b4fec92bbfbf845f96dba28a2986}{}\label{types_8h_ace75b4fec92bbfbf845f96dba28a2986}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains all the algorithms. 
+
+Contains all the types.
+
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287. 
+
+\subsection{Typedef Documentation}
+\index{types.\+h@{types.\+h}!Foot\+Id@{Foot\+Id}}
+\index{Foot\+Id@{Foot\+Id}!types.\+h@{types.\+h}}
+\subsubsection[{\texorpdfstring{Foot\+Id}{FootId}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf ow\+\_\+core\+::\+Foot\+Id} {\bf ow\+::\+Foot\+Id}}\hypertarget{types_8h_file_a4992c4f753d1dc7a08d659edd78970ea}{}\label{types_8h_file_a4992c4f753d1dc7a08d659edd78970ea}
+Walking specific types \index{types.\+h@{types.\+h}!Rotation3@{Rotation3}}
+\index{Rotation3@{Rotation3}!types.\+h@{types.\+h}}
+\subsubsection[{\texorpdfstring{Rotation3}{Rotation3}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf ow\+\_\+core\+::\+Rotation3}$<$Scalar$>$ {\bf ow\+::\+Rotation3}}\hypertarget{types_8h_file_a687448c721eb8decb7aa921e43595f6b}{}\label{types_8h_file_a687448c721eb8decb7aa921e43595f6b}
+Basic Types \index{types.\+h@{types.\+h}!Scalar@{Scalar}}
+\index{Scalar@{Scalar}!types.\+h@{types.\+h}}
+\subsubsection[{\texorpdfstring{Scalar}{Scalar}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf O\+W\+\_\+\+T\+Y\+P\+E\+S\+\_\+\+S\+C\+A\+L\+AR} {\bf ow\+::\+Scalar}}\hypertarget{types_8h_file_ac412879ee4a239c8032aa2d647f4a74a}{}\label{types_8h_file_ac412879ee4a239c8032aa2d647f4a74a}
+Type for Scalars \index{types.\+h@{types.\+h}!Vector6@{Vector6}}
+\index{Vector6@{Vector6}!types.\+h@{types.\+h}}
+\subsubsection[{\texorpdfstring{Vector6}{Vector6}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf ow\+\_\+core\+::\+Matrix}$<$Scalar, 6, 1$>$ {\bf ow\+::\+Vector6}}\hypertarget{types_8h_file_abd86b6bb627dfae3480424dec0b2a0e1}{}\label{types_8h_file_abd86b6bb627dfae3480424dec0b2a0e1}
+Eigen specific types 

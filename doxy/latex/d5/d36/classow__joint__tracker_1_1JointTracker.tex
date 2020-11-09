@@ -1,0 +1,300 @@
+\hypertarget{classow__joint__tracker_1_1JointTracker}{}\section{ow\+\_\+joint\+\_\+tracker\+:\+:Joint\+Tracker Class Reference}
+\label{classow__joint__tracker_1_1JointTracker}\index{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}}
+
+
+The \hyperlink{classow__joint__tracker_1_1JointTracker}{Joint\+Tracker} class. // Todo\+: Describe better...  
+
+
+
+
+{\ttfamily \#include $<$joint\+\_\+tracker.\+h$>$}
+
+Inheritance diagram for ow\+\_\+joint\+\_\+tracker\+:\+:Joint\+Tracker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d5/d36/classow__joint__tracker_1_1JointTracker}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow_1_1IJointTracker}{ow\+::\+I\+Joint\+Tracker} {\bfseries Base}\hypertarget{classow__joint__tracker_1_1JointTracker_a0b9d51eeaad5e0f188cab05a615991e5}{}\label{classow__joint__tracker_1_1JointTracker_a0b9d51eeaad5e0f188cab05a615991e5}
+
+\item 
+typedef \hyperlink{classow__core_1_1StateTrajectory}{ow\+\_\+core\+::\+State\+Trajectory}$<$ \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} $>$ {\bfseries Joint\+Spline}\hypertarget{classow__joint__tracker_1_1JointTracker_a3be62c0a11ba93ecba1afbc9811049b2}{}\label{classow__joint__tracker_1_1JointTracker_a3be62c0a11ba93ecba1afbc9811049b2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__joint__tracker_1_1JointTracker_aa01ea595e844f9b38940dece444f90dc}{Joint\+Tracker} ()
+\begin{DoxyCompactList}\small\item\em Constructor with home pose. \end{DoxyCompactList}\item 
+void \hyperlink{classow__joint__tracker_1_1JointTracker_aac07fb25ccb7a05959a97eb24338b124}{start} (\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} spline\+\_\+duration, size\+\_\+t joint\+\_\+id\+\_\+left, size\+\_\+t joint\+\_\+id\+\_\+right, const \hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+Position} \&q\+\_\+home, const \hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+Position} \&q, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em start the controller, called befor update \end{DoxyCompactList}\item 
+void \hyperlink{classow__joint__tracker_1_1JointTracker_a15e2b8367666ee10605154af4d9e7182}{update} (const \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} \&q, \hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const ros\+::\+Time \&time, const ros\+::\+Duration \&dt)
+\begin{DoxyCompactList}\small\item\em performs update step of the controller, called periodically \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} \& \hyperlink{classow__joint__tracker_1_1JointTracker_af842785d3dc2da148bafc02b1164d159}{joint\+State} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_aab451e9ffc7206aee5a47f46e83c794e}{left\+Ankle\+Offset} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_ad55380ea860fc9a2269fb124166c01ed}{left\+Groin\+Offset} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_a9348bc94acdc330642adf4c23a6250b6}{right\+Ankle\+Offset} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_ae742bb9f8ef753a664ad612bab6fb962}{right\+Groin\+Offset} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classow__joint__tracker_1_1JointTracker_a39a2e5dd308b1653205b255ecdd31ffb}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, ros\+::\+Node\+Handle \&nh)
+\begin{DoxyCompactList}\small\item\em init interal \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \hyperlink{classow__joint__tracker_1_1JointTracker_a13eaabe90553a1f2318069015b27587b}{parameter\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_a13eaabe90553a1f2318069015b27587b}{}\label{classow__joint__tracker_1_1JointTracker_a13eaabe90553a1f2318069015b27587b}
+
+\begin{DoxyCompactList}\small\item\em configuration \end{DoxyCompactList}\item 
+bool \hyperlink{classow__joint__tracker_1_1JointTracker_a4919e2e9c95e0bdaff24169f69a0a342}{enabled\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_a4919e2e9c95e0bdaff24169f69a0a342}{}\label{classow__joint__tracker_1_1JointTracker_a4919e2e9c95e0bdaff24169f69a0a342}
+
+\begin{DoxyCompactList}\small\item\em Foot compliance enable flag. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__joint__tracker_1_1JointTracker_a523970263ac1701ab4130e660f0fa52b}{opposite\+\_\+signs\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_a523970263ac1701ab4130e660f0fa52b}{}\label{classow__joint__tracker_1_1JointTracker_a523970263ac1701ab4130e660f0fa52b}
+
+\begin{DoxyCompactList}\small\item\em Apply the joint offset with opposite signs. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_a53e1afef918050b99a9b8dc15a5bffc6}{total\+\_\+time\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_a53e1afef918050b99a9b8dc15a5bffc6}{}\label{classow__joint__tracker_1_1JointTracker_a53e1afef918050b99a9b8dc15a5bffc6}
+
+\begin{DoxyCompactList}\small\item\em Total time of homming motion. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classow__joint__tracker_1_1JointTracker_aa6df328cbd455364e66d7bcb148b3cfe}{joint\+\_\+id\+\_\+left\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_aa6df328cbd455364e66d7bcb148b3cfe}{}\label{classow__joint__tracker_1_1JointTracker_aa6df328cbd455364e66d7bcb148b3cfe}
+
+\begin{DoxyCompactList}\small\item\em First joint id of left leg in full state. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classow__joint__tracker_1_1JointTracker_ac6b02baa9422f6adbdbc5dc92b5375b2}{joint\+\_\+id\+\_\+right\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_ac6b02baa9422f6adbdbc5dc92b5375b2}{}\label{classow__joint__tracker_1_1JointTracker_ac6b02baa9422f6adbdbc5dc92b5375b2}
+
+\begin{DoxyCompactList}\small\item\em First joint id of right leg in full state. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classow__joint__tracker_1_1JointTracker_a1f51910de6d78876e0a3b82667f0a661}{groin\+\_\+id\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_a1f51910de6d78876e0a3b82667f0a661}{}\label{classow__joint__tracker_1_1JointTracker_a1f51910de6d78876e0a3b82667f0a661}
+
+\begin{DoxyCompactList}\small\item\em Groin joint id in leg state vector. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classow__joint__tracker_1_1JointTracker_ae4a446d2af4c361fc26c26b8b9049762}{ankle\+\_\+id\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_ae4a446d2af4c361fc26c26b8b9049762}{}\label{classow__joint__tracker_1_1JointTracker_ae4a446d2af4c361fc26c26b8b9049762}
+
+\begin{DoxyCompactList}\small\item\em Ankle joint id in leg state vector. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_ac4c2c766a9da81cfa6bc74a6531db9b7}{max\+\_\+groin\+\_\+offset\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_ac4c2c766a9da81cfa6bc74a6531db9b7}{}\label{classow__joint__tracker_1_1JointTracker_ac4c2c766a9da81cfa6bc74a6531db9b7}
+
+\begin{DoxyCompactList}\small\item\em Maximum groin offset value. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_a630aa22f1ad72df4e14ce47039208d93}{max\+\_\+ankle\+\_\+offset\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_a630aa22f1ad72df4e14ce47039208d93}{}\label{classow__joint__tracker_1_1JointTracker_a630aa22f1ad72df4e14ce47039208d93}
+
+\begin{DoxyCompactList}\small\item\em Maximum ankle offset value. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_ab75a42dc20de7c0d27b9380ebc534d64}{max\+\_\+offset\+\_\+time\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_ab75a42dc20de7c0d27b9380ebc534d64}{}\label{classow__joint__tracker_1_1JointTracker_ab75a42dc20de7c0d27b9380ebc534d64}
+
+\begin{DoxyCompactList}\small\item\em Rise time of joint offsets. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_a3dc4ae8a04f0b73f51d1d3a74b981ab9}{alpha\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_a3dc4ae8a04f0b73f51d1d3a74b981ab9}{}\label{classow__joint__tracker_1_1JointTracker_a3dc4ae8a04f0b73f51d1d3a74b981ab9}
+
+\begin{DoxyCompactList}\small\item\em Internal angle value of offset function. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_aae0bffa09e2bf4b96d37e9bc80dad671}{time\+\_\+left\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_aae0bffa09e2bf4b96d37e9bc80dad671}{}\label{classow__joint__tracker_1_1JointTracker_aae0bffa09e2bf4b96d37e9bc80dad671}
+
+\begin{DoxyCompactList}\small\item\em Joint offset timer for left leg. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_a87c51a6eace5e555debb83173da097eb}{time\+\_\+right\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_a87c51a6eace5e555debb83173da097eb}{}\label{classow__joint__tracker_1_1JointTracker_a87c51a6eace5e555debb83173da097eb}
+
+\begin{DoxyCompactList}\small\item\em Joint offset timer for right leg. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} \hyperlink{classow__joint__tracker_1_1JointTracker_a4b2d0eddfbfb14f0f8e3f9b95d68fe47}{q\+\_\+cmd\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_a4b2d0eddfbfb14f0f8e3f9b95d68fe47}{}\label{classow__joint__tracker_1_1JointTracker_a4b2d0eddfbfb14f0f8e3f9b95d68fe47}
+
+\begin{DoxyCompactList}\small\item\em Output joint state. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_a687e66649f2da3e4c7e035882cc80ca0}{left\+\_\+ankle\+\_\+offset\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_a687e66649f2da3e4c7e035882cc80ca0}{}\label{classow__joint__tracker_1_1JointTracker_a687e66649f2da3e4c7e035882cc80ca0}
+
+\begin{DoxyCompactList}\small\item\em Output left ankle offset. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_ac2afba8b671129783e2dcbb1d74510f7}{left\+\_\+groin\+\_\+offset\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_ac2afba8b671129783e2dcbb1d74510f7}{}\label{classow__joint__tracker_1_1JointTracker_ac2afba8b671129783e2dcbb1d74510f7}
+
+\begin{DoxyCompactList}\small\item\em Output left groin offset. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_ab3915a60192e50d8f411f5945828d8bd}{right\+\_\+ankle\+\_\+offset\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_ab3915a60192e50d8f411f5945828d8bd}{}\label{classow__joint__tracker_1_1JointTracker_ab3915a60192e50d8f411f5945828d8bd}
+
+\begin{DoxyCompactList}\small\item\em Output right ankle offset. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__joint__tracker_1_1JointTracker_a38f586ba92323e03a6804206c65b2c0c}{right\+\_\+groin\+\_\+offset\+\_\+}\hypertarget{classow__joint__tracker_1_1JointTracker_a38f586ba92323e03a6804206c65b2c0c}{}\label{classow__joint__tracker_1_1JointTracker_a38f586ba92323e03a6804206c65b2c0c}
+
+\begin{DoxyCompactList}\small\item\em Output right groin offset. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classow__core_1_1StateTrajectory}{Joint\+Spline} $>$ {\bfseries spline}\hypertarget{classow__joint__tracker_1_1JointTracker_aff8ba5cc691e25a0d8c4a2ad7dfe6836}{}\label{classow__joint__tracker_1_1JointTracker_aff8ba5cc691e25a0d8c4a2ad7dfe6836}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__joint__tracker_1_1JointTracker}{Joint\+Tracker} class. // Todo\+: Describe better... 
+
+This Class applies offsets to the joint values of the inverse kinematics during the walking phase. Additionally it computed the jointspace spline for inital homing. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}!Joint\+Tracker@{Joint\+Tracker}}
+\index{Joint\+Tracker@{Joint\+Tracker}!ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{Joint\+Tracker()}{JointTracker()}}]{\setlength{\rightskip}{0pt plus 5cm}ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker\+::\+Joint\+Tracker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__joint__tracker_1_1JointTracker_aa01ea595e844f9b38940dece444f90dc}{}\label{classow__joint__tracker_1_1JointTracker_aa01ea595e844f9b38940dece444f90dc}
+
+
+Constructor with home pose. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em freq} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}!init@{init}}
+\index{init@{init}!ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{init(const ow\+::\+Parameter \&parameter, ros\+::\+Node\+Handle \&nh)}{init(const ow::Parameter &parameter, ros::NodeHandle &nh)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker\+::init (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Parameter} \&}]{parameter, }
+\item[{ros\+::\+Node\+Handle \&}]{nh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classow__joint__tracker_1_1JointTracker_a39a2e5dd308b1653205b255ecdd31ffb}{}\label{classow__joint__tracker_1_1JointTracker_a39a2e5dd308b1653205b255ecdd31ffb}
+
+
+init interal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ros} & nh for namespace \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classow_1_1GenericModuleBase_a95c6c7b7a84acd2b4f37b7f9301abf9d}{ow\+::\+Generic\+Module\+Base}.
+
+\index{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}!joint\+State@{joint\+State}}
+\index{joint\+State@{joint\+State}!ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{joint\+State() const }{jointState() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Joint\+State}\& ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker\+::joint\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__joint__tracker_1_1JointTracker_af842785d3dc2da148bafc02b1164d159}{}\label{classow__joint__tracker_1_1JointTracker_af842785d3dc2da148bafc02b1164d159}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Joint\+State of the robot computed by tracker. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1IJointTracker_a8a4ce3e09de0d9acfab14b80a62b9352}{ow\+::\+I\+Joint\+Tracker}.
+
+\index{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}!left\+Ankle\+Offset@{left\+Ankle\+Offset}}
+\index{left\+Ankle\+Offset@{left\+Ankle\+Offset}!ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{left\+Ankle\+Offset() const }{leftAnkleOffset() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ow\+::\+Scalar} ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker\+::left\+Ankle\+Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__joint__tracker_1_1JointTracker_aab451e9ffc7206aee5a47f46e83c794e}{}\label{classow__joint__tracker_1_1JointTracker_aab451e9ffc7206aee5a47f46e83c794e}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+left ankle offset. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1IJointTracker_a5de973fc5cf10ad744b5751af37892a8}{ow\+::\+I\+Joint\+Tracker}.
+
+\index{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}!left\+Groin\+Offset@{left\+Groin\+Offset}}
+\index{left\+Groin\+Offset@{left\+Groin\+Offset}!ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{left\+Groin\+Offset() const }{leftGroinOffset() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ow\+::\+Scalar} ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker\+::left\+Groin\+Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__joint__tracker_1_1JointTracker_ad55380ea860fc9a2269fb124166c01ed}{}\label{classow__joint__tracker_1_1JointTracker_ad55380ea860fc9a2269fb124166c01ed}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+left groin offset. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1IJointTracker_a0ff75a18547b825e1ffa392e1d5c5867}{ow\+::\+I\+Joint\+Tracker}.
+
+\index{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}!right\+Ankle\+Offset@{right\+Ankle\+Offset}}
+\index{right\+Ankle\+Offset@{right\+Ankle\+Offset}!ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{right\+Ankle\+Offset() const }{rightAnkleOffset() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ow\+::\+Scalar} ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker\+::right\+Ankle\+Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__joint__tracker_1_1JointTracker_a9348bc94acdc330642adf4c23a6250b6}{}\label{classow__joint__tracker_1_1JointTracker_a9348bc94acdc330642adf4c23a6250b6}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+right ankle offset. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1IJointTracker_a7310e8148f5eb9240edee6ffe54e6c1f}{ow\+::\+I\+Joint\+Tracker}.
+
+\index{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}!right\+Groin\+Offset@{right\+Groin\+Offset}}
+\index{right\+Groin\+Offset@{right\+Groin\+Offset}!ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{right\+Groin\+Offset() const }{rightGroinOffset() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ow\+::\+Scalar} ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker\+::right\+Groin\+Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__joint__tracker_1_1JointTracker_ae742bb9f8ef753a664ad612bab6fb962}{}\label{classow__joint__tracker_1_1JointTracker_ae742bb9f8ef753a664ad612bab6fb962}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+right groin offset. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1IJointTracker_abe7480bfd77df5330890aabdce15fea5}{ow\+::\+I\+Joint\+Tracker}.
+
+\index{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}!start@{start}}
+\index{start@{start}!ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{start(ow\+::\+Scalar spline\+\_\+duration, size\+\_\+t joint\+\_\+id\+\_\+left, size\+\_\+t joint\+\_\+id\+\_\+right, const ow\+::\+Joint\+Position \&q\+\_\+home, const ow\+::\+Joint\+Position \&q, const ros\+::\+Time \&time)}{start(ow::Scalar spline_duration, size_t joint_id_left, size_t joint_id_right, const ow::JointPosition &q_home, const ow::JointPosition &q, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker\+::start (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Scalar}}]{spline\+\_\+duration, }
+\item[{size\+\_\+t}]{joint\+\_\+id\+\_\+left, }
+\item[{size\+\_\+t}]{joint\+\_\+id\+\_\+right, }
+\item[{const {\bf ow\+::\+Joint\+Position} \&}]{q\+\_\+home, }
+\item[{const {\bf ow\+::\+Joint\+Position} \&}]{q, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__joint__tracker_1_1JointTracker_aac07fb25ccb7a05959a97eb24338b124}{}\label{classow__joint__tracker_1_1JointTracker_aac07fb25ccb7a05959a97eb24338b124}
+
+
+start the controller, called befor update 
+
+
+\begin{DoxyParams}{Parameters}
+{\em starting} & time \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}!update@{update}}
+\index{update@{update}!ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker@{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}}
+\subsubsection[{\texorpdfstring{update(const ow\+::\+Joint\+State \&q, ow\+::\+Flags \&flags, const ros\+::\+Time \&time, const ros\+::\+Duration \&dt)}{update(const ow::JointState &q, ow::Flags &flags, const ros::Time &time, const ros::Duration &dt)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker\+::update (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Joint\+State} \&}]{q, }
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const ros\+::\+Time \&}]{time, }
+\item[{const ros\+::\+Duration \&}]{dt}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__joint__tracker_1_1JointTracker_a15e2b8367666ee10605154af4d9e7182}{}\label{classow__joint__tracker_1_1JointTracker_a15e2b8367666ee10605154af4d9e7182}
+
+
+performs update step of the controller, called periodically 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & jointstate \\
+\hline
+{\em current} & time \\
+\hline
+{\em current} & deltatime since last call \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+joint\+\_\+tracker/include/ow\+\_\+joint\+\_\+tracker/\hyperlink{joint__tracker_8h}{joint\+\_\+tracker.\+h}\end{DoxyCompactItemize}

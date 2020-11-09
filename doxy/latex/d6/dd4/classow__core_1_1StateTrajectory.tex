@@ -1,0 +1,243 @@
+\hypertarget{classow__core_1_1StateTrajectory}{}\section{ow\+\_\+core\+:\+:State\+Trajectory$<$ \+\_\+\+Derived $>$ Class Template Reference}
+\label{classow__core_1_1StateTrajectory}\index{ow\+\_\+core\+::\+State\+Trajectory$<$ \+\_\+\+Derived $>$@{ow\+\_\+core\+::\+State\+Trajectory$<$ \+\_\+\+Derived $>$}}
+
+
+The \hyperlink{classow__core_1_1StateTrajectory}{State\+Trajectory} class.  
+
+
+
+
+{\ttfamily \#include $<$state\+\_\+trajectory.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Derived {\bfseries Derived}\hypertarget{classow__core_1_1StateTrajectory_a43ee6eabcfecec6284a2f1b4ccd0d25f}{}\label{classow__core_1_1StateTrajectory_a43ee6eabcfecec6284a2f1b4ccd0d25f}
+
+\item 
+typedef std\+::vector$<$ Derived $>$ {\bfseries Derived\+Vec}\hypertarget{classow__core_1_1StateTrajectory_a4f4643da8b85b2bf3934c99bed17d1d2}{}\label{classow__core_1_1StateTrajectory_a4f4643da8b85b2bf3934c99bed17d1d2}
+
+\item 
+typedef \hyperlink{structow_1_1traits}{ow\+::traits}$<$ Derived $>$\+::Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1StateTrajectory_a83709d75c95839c292c8e565fe6fa079}{}\label{classow__core_1_1StateTrajectory_a83709d75c95839c292c8e565fe6fa079}
+
+\item 
+typedef std\+::vector$<$ Scalar $>$ {\bfseries Scalar\+Vec}\hypertarget{classow__core_1_1StateTrajectory_aee4bde442624a4006b59662d6696f82e}{}\label{classow__core_1_1StateTrajectory_aee4bde442624a4006b59662d6696f82e}
+
+\item 
+typedef \hyperlink{structow_1_1traits}{ow\+::traits}$<$ Derived $>$\+::Pos {\bfseries V}\hypertarget{classow__core_1_1StateTrajectory_ac66f62db75860c2d9b0f19cd87d7a167}{}\label{classow__core_1_1StateTrajectory_ac66f62db75860c2d9b0f19cd87d7a167}
+
+\item 
+typedef \hyperlink{structow_1_1traits}{ow\+::traits}$<$ Derived $>$\+::Vel {\bfseries VP}\hypertarget{classow__core_1_1StateTrajectory_ab7b2b5f9e8e57aceecedd22ddc62e5f9}{}\label{classow__core_1_1StateTrajectory_ab7b2b5f9e8e57aceecedd22ddc62e5f9}
+
+\item 
+typedef \hyperlink{structow_1_1traits}{ow\+::traits}$<$ Derived $>$\+::Acc {\bfseries V\+PP}\hypertarget{classow__core_1_1StateTrajectory_a6c0edeb41c5875ab27c712869c34c5ee}{}\label{classow__core_1_1StateTrajectory_a6c0edeb41c5875ab27c712869c34c5ee}
+
+\item 
+typedef \hyperlink{structow_1_1traits}{ow\+::traits}$<$ Derived $>$\+::Effort {\bfseries VF}\hypertarget{classow__core_1_1StateTrajectory_a408fa43cb0500e7bb3fe91fef1d2ca4d}{}\label{classow__core_1_1StateTrajectory_a408fa43cb0500e7bb3fe91fef1d2ca4d}
+
+\item 
+typedef \hyperlink{classow__core_1_1PolynomialTrajectory}{Polynomial\+Trajectory}$<$ V, Scalar $>$ {\bfseries Trajectory}\hypertarget{classow__core_1_1StateTrajectory_ae47c89b4e24f15ff40f715e6c8b411e1}{}\label{classow__core_1_1StateTrajectory_ae47c89b4e24f15ff40f715e6c8b411e1}
+
+\item 
+typedef Trajectory\+::\+Value\+Vec {\bfseries V\+Vec}\hypertarget{classow__core_1_1StateTrajectory_a90e12f1327db3d28ae50954ab87ef51b}{}\label{classow__core_1_1StateTrajectory_a90e12f1327db3d28ae50954ab87ef51b}
+
+\item 
+typedef Trajectory\+::\+Value\+Matrix {\bfseries V\+Matrix}\hypertarget{classow__core_1_1StateTrajectory_a10c19dcd2f9802e838b1dfbd672ed0c2}{}\label{classow__core_1_1StateTrajectory_a10c19dcd2f9802e838b1dfbd672ed0c2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1StateTrajectory_a9047cbf304d69152b0915d16511e8145}{State\+Trajectory} (const \hyperlink{classow__core_1_1PolynomialTrajectory}{Trajectory} \&trajectory)\hypertarget{classow__core_1_1StateTrajectory_a9047cbf304d69152b0915d16511e8145}{}\label{classow__core_1_1StateTrajectory_a9047cbf304d69152b0915d16511e8145}
+
+\begin{DoxyCompactList}\small\item\em ConstructorTakes a constructed trajectory object as input. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1StateTrajectory_a99dd20d6d179604a9a476d1b4d1b0fd4}{$\sim$\+State\+Trajectory} ()\hypertarget{classow__core_1_1StateTrajectory_a99dd20d6d179604a9a476d1b4d1b0fd4}{}\label{classow__core_1_1StateTrajectory_a99dd20d6d179604a9a476d1b4d1b0fd4}
+
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+Derived \hyperlink{classow__core_1_1StateTrajectory_a484c684df0f4253fb3c591bd7dfa679f}{evaluate} (const Scalar \&t) const 
+\begin{DoxyCompactList}\small\item\em evaluate trajectory at a single time t \end{DoxyCompactList}\item 
+Derived\+Vec \hyperlink{classow__core_1_1StateTrajectory_a4de43196a868ed430ae597fdd91b78a6}{evaluate} (const Scalar\+Vec \&t\+\_\+vec)
+\begin{DoxyCompactList}\small\item\em evaluate trajectory at at all times t\+\_\+vec \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \& \hyperlink{classow__core_1_1StateTrajectory_ade4a5fcfa295974628599788cb7bb3e5}{convert\+To\+Position} (Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&pos, const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&value) const 
+\begin{DoxyCompactList}\small\item\em Conversion to Position Type from Interpolated values. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 $>$ }\\\hyperlink{classow__core_1_1AngularPosition}{ow\+::\+Angular\+Position} \& \hyperlink{classow__core_1_1StateTrajectory_a23ef9887890f8547f8b381086bd726b8}{convert\+To\+Position} (\hyperlink{classow__core_1_1AngularPosition}{ow\+::\+Angular\+Position} \&Q, const \hyperlink{classow__core_1_1AngularPositionBase}{ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived1 $>$ \&value) const 
+\begin{DoxyCompactList}\small\item\em Conversion to Position Type from Interpolated values. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ }\\Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \& \hyperlink{classow__core_1_1StateTrajectory_adc6c9006c12582832a73928fd15f7700}{convert\+To\+Velocity} (Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&vel, const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&posP, const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&pos) const 
+\begin{DoxyCompactList}\small\item\em Conversion of Position Type to Velocity Type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\\hyperlink{classow__core_1_1AngularVelocity}{ow\+::\+Angular\+Velocity} \& \hyperlink{classow__core_1_1StateTrajectory_a13ac659f8ca776faa093da46055fbf4b}{convert\+To\+Velocity} (\hyperlink{classow__core_1_1AngularVelocity}{ow\+::\+Angular\+Velocity} \&omega, const \hyperlink{classow__core_1_1AngularPositionBase}{ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived1 $>$ \&QP, const \hyperlink{classow__core_1_1AngularPositionBase}{ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived2 $>$ \&Q) const 
+\begin{DoxyCompactList}\small\item\em Conversion of Position Type to Velocity Type. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianVelocity}{ow\+::\+Cartesian\+Velocity} \& \hyperlink{classow__core_1_1StateTrajectory_ad0d58ba4322d9c8e98f3510a26688159}{convert\+To\+Velocity} (\hyperlink{classow__core_1_1CartesianVelocity}{ow\+::\+Cartesian\+Velocity} \&vel, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&XP, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&X) const 
+\begin{DoxyCompactList}\small\item\em Conversion of Position Type to Velocity Type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ }\\Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \& \hyperlink{classow__core_1_1StateTrajectory_af5af6d6438b437a468eda75346255e91}{convert\+To\+Acceleration} (Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&acc, const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&velP, const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&pos) const 
+\begin{DoxyCompactList}\small\item\em Conversion of Velocity Type to Acceleration Type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\\hyperlink{classow__core_1_1AngularAcceleration}{ow\+::\+Angular\+Acceleration} \& \hyperlink{classow__core_1_1StateTrajectory_ab13e971d675df50e78ff8996328e50e2}{convert\+To\+Acceleration} (\hyperlink{classow__core_1_1AngularAcceleration}{ow\+::\+Angular\+Acceleration} \&alpha, const \hyperlink{classow__core_1_1AngularPositionBase}{ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived1 $>$ \&Q\+PP, const \hyperlink{classow__core_1_1AngularPositionBase}{ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived2 $>$ \&Q) const 
+\begin{DoxyCompactList}\small\item\em Conversion of Velocity Type to Acceleration Type. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianAcceleration}{ow\+::\+Cartesian\+Acceleration} \& \hyperlink{classow__core_1_1StateTrajectory_a65a0991d3ce16e674d596108eaa8cd67}{convert\+To\+Acceleration} (\hyperlink{classow__core_1_1CartesianAcceleration}{ow\+::\+Cartesian\+Acceleration} \&acc, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&X\+PP, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&X) const 
+\begin{DoxyCompactList}\small\item\em Conversion of Velocity Type to Acceleration Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1PolynomialTrajectory}{Trajectory} \hyperlink{classow__core_1_1StateTrajectory_a2d2a63076b1f9201e61ca37ccd05a794}{trajectory\+\_\+}\hypertarget{classow__core_1_1StateTrajectory_a2d2a63076b1f9201e61ca37ccd05a794}{}\label{classow__core_1_1StateTrajectory_a2d2a63076b1f9201e61ca37ccd05a794}
+
+\begin{DoxyCompactList}\small\item\em The trajectory with position type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Derived$>$\\*
+class ow\+\_\+core\+::\+State\+Trajectory$<$ \+\_\+\+Derived $>$}
+
+The \hyperlink{classow__core_1_1StateTrajectory}{State\+Trajectory} class. 
+
+This class interpolates a state through a set of support points The result is a trajectory with state(t)=\mbox{[}pos(t), vel(t), acc(t)\mbox{]}.
+
+The \+\_\+\+Derived template parameter has to be derived from \hyperlink{classow__core_1_1StateBase}{ow\+\_\+core\+::\+State\+Base} thus belong to the group of state type classes.
+
+Usage\+:
+
+// define time segments between 0 and 10 sec std\+::vector$<$ow\+::\+Scalar$>$ segments = \{0, 1, 3, 5, 6, 9, 10\};
+
+// define support points (here Quaternion Orientations) std\+::vector$<$ow\+::\+Angular\+Position$>$ c\+\_\+samples = \{ ow\+::\+Angular\+Position(1, 0, 0, 0), \hyperlink{classow__core_1_1AngularPosition_a5e3640999ea9e1543357740870acfeb2}{ow\+::\+Angular\+Position\+::\+Zero()}, // support point ow\+::\+Angular\+Position(0.\+7042004, 0, 0.\+7100013, 0), ow\+::\+Angular\+Position(0.\+4388107, 0, 0.\+6353917, 0.\+6353917), ow\+::\+Angular\+Position(0.\+37845, 0.\+3052338, 0.\+6179029, 0.\+6179029), \hyperlink{classow__core_1_1AngularPosition_a5e3640999ea9e1543357740870acfeb2}{ow\+::\+Angular\+Position\+::\+Zero()}, // support point ow\+::\+Angular\+Position(1, 0, 0, 0) \};
+
+// create state spline ow\+\_\+core\+::\+State\+Trajectory$<$ow\+::\+Angular\+State$>$ state\+\_\+spline(ow\+\_\+core\+::\+Cubic\+Spline(segments, c\+\_\+samples));
+
+// interpolate the state std\+::vector$<$ow\+::\+Angular\+State$>$ result = state\+\_\+traj.\+evaluate(time\+\_\+vec); 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}!convert\+To\+Acceleration@{convert\+To\+Acceleration}}
+\index{convert\+To\+Acceleration@{convert\+To\+Acceleration}!ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}}
+\subsubsection[{\texorpdfstring{convert\+To\+Acceleration(\+Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&acc, const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&vel\+P, const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&pos) const }{convertToAcceleration(Eigen::MatrixBase< Derived1 > &acc, const Eigen::MatrixBase< Derived2 > &velP, const Eigen::MatrixBase< Derived3 > &pos) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived $>$ template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ Eigen\+::\+Matrix\+Base$<$Derived1$>$\& {\bf ow\+\_\+core\+::\+State\+Trajectory}$<$ \+\_\+\+Derived $>$\+::convert\+To\+Acceleration (
+\begin{DoxyParamCaption}
+\item[{Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&}]{acc, }
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&}]{velP, }
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&}]{pos}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1StateTrajectory_af5af6d6438b437a468eda75346255e91}{}\label{classow__core_1_1StateTrajectory_af5af6d6438b437a468eda75346255e91}
+
+
+Conversion of Velocity Type to Acceleration Type. 
+
+This function covers the general case for which the accelearation is directly given by the time derivative of the velocity. \index{ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}!convert\+To\+Acceleration@{convert\+To\+Acceleration}}
+\index{convert\+To\+Acceleration@{convert\+To\+Acceleration}!ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}}
+\subsubsection[{\texorpdfstring{convert\+To\+Acceleration(ow\+::\+Angular\+Acceleration \&alpha, const ow\+\_\+core\+::\+Angular\+Position\+Base$<$ Derived1 $>$ \&\+Q\+P\+P, const ow\+\_\+core\+::\+Angular\+Position\+Base$<$ Derived2 $>$ \&\+Q) const }{convertToAcceleration(ow::AngularAcceleration &alpha, const ow_core::AngularPositionBase< Derived1 > &QPP, const ow_core::AngularPositionBase< Derived2 > &Q) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived $>$ template$<$typename Derived1 , typename Derived2 $>$ {\bf ow\+::\+Angular\+Acceleration}\& {\bf ow\+\_\+core\+::\+State\+Trajectory}$<$ \+\_\+\+Derived $>$\+::convert\+To\+Acceleration (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Angular\+Acceleration} \&}]{alpha, }
+\item[{const {\bf ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived1 $>$ \&}]{Q\+PP, }
+\item[{const {\bf ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived2 $>$ \&}]{Q}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1StateTrajectory_ab13e971d675df50e78ff8996328e50e2}{}\label{classow__core_1_1StateTrajectory_ab13e971d675df50e78ff8996328e50e2}
+
+
+Conversion of Velocity Type to Acceleration Type. 
+
+This function covers the special case for Angular\+Positions to Angular\+Velocities. This requires the time derivative of the \hyperlink{classow__core_1_1AngularPosition}{Angular\+Position} and the current \hyperlink{classow__core_1_1AngularPosition}{Angular\+Position}. \index{ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}!convert\+To\+Acceleration@{convert\+To\+Acceleration}}
+\index{convert\+To\+Acceleration@{convert\+To\+Acceleration}!ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}}
+\subsubsection[{\texorpdfstring{convert\+To\+Acceleration(ow\+::\+Cartesian\+Acceleration \&acc, const ow\+::\+Cartesian\+Position \&\+X\+P\+P, const ow\+::\+Cartesian\+Position \&\+X) const }{convertToAcceleration(ow::CartesianAcceleration &acc, const ow::CartesianPosition &XPP, const ow::CartesianPosition &X) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived $>$ {\bf ow\+::\+Cartesian\+Acceleration}\& {\bf ow\+\_\+core\+::\+State\+Trajectory}$<$ \+\_\+\+Derived $>$\+::convert\+To\+Acceleration (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Cartesian\+Acceleration} \&}]{acc, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{X\+PP, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{X}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1StateTrajectory_a65a0991d3ce16e674d596108eaa8cd67}{}\label{classow__core_1_1StateTrajectory_a65a0991d3ce16e674d596108eaa8cd67}
+
+
+Conversion of Velocity Type to Acceleration Type. 
+
+This function covers the special case for Cartesian\+Positions to Cartesian\+Velocities. This requires the time derivative of the \hyperlink{classow__core_1_1CartesianPosition}{Cartesian\+Position} and the current \hyperlink{classow__core_1_1CartesianPosition}{Cartesian\+Position}. \index{ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}!convert\+To\+Position@{convert\+To\+Position}}
+\index{convert\+To\+Position@{convert\+To\+Position}!ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}}
+\subsubsection[{\texorpdfstring{convert\+To\+Position(\+Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&pos, const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&value) const }{convertToPosition(Eigen::MatrixBase< Derived1 > &pos, const Eigen::MatrixBase< Derived2 > &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived $>$ template$<$typename Derived1 , typename Derived2 $>$ Eigen\+::\+Matrix\+Base$<$Derived1$>$\& {\bf ow\+\_\+core\+::\+State\+Trajectory}$<$ \+\_\+\+Derived $>$\+::convert\+To\+Position (
+\begin{DoxyParamCaption}
+\item[{Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&}]{pos, }
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1StateTrajectory_ade4a5fcfa295974628599788cb7bb3e5}{}\label{classow__core_1_1StateTrajectory_ade4a5fcfa295974628599788cb7bb3e5}
+
+
+Conversion to Position Type from Interpolated values. 
+
+This function covers the general case for which the position type is directly given by the interpolated values \index{ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}!convert\+To\+Position@{convert\+To\+Position}}
+\index{convert\+To\+Position@{convert\+To\+Position}!ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}}
+\subsubsection[{\texorpdfstring{convert\+To\+Position(ow\+::\+Angular\+Position \&\+Q, const ow\+\_\+core\+::\+Angular\+Position\+Base$<$ Derived1 $>$ \&value) const }{convertToPosition(ow::AngularPosition &Q, const ow_core::AngularPositionBase< Derived1 > &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived $>$ template$<$typename Derived1 $>$ {\bf ow\+::\+Angular\+Position}\& {\bf ow\+\_\+core\+::\+State\+Trajectory}$<$ \+\_\+\+Derived $>$\+::convert\+To\+Position (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Angular\+Position} \&}]{Q, }
+\item[{const {\bf ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived1 $>$ \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1StateTrajectory_a23ef9887890f8547f8b381086bd726b8}{}\label{classow__core_1_1StateTrajectory_a23ef9887890f8547f8b381086bd726b8}
+
+
+Conversion to Position Type from Interpolated values. 
+
+This function covers the \hyperlink{classow__core_1_1AngularPosition}{Angular\+Position} case for which the quaternion is given by the normalized interpolated values. \index{ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}!convert\+To\+Velocity@{convert\+To\+Velocity}}
+\index{convert\+To\+Velocity@{convert\+To\+Velocity}!ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}}
+\subsubsection[{\texorpdfstring{convert\+To\+Velocity(\+Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&vel, const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&pos\+P, const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&pos) const }{convertToVelocity(Eigen::MatrixBase< Derived1 > &vel, const Eigen::MatrixBase< Derived2 > &posP, const Eigen::MatrixBase< Derived3 > &pos) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived $>$ template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ Eigen\+::\+Matrix\+Base$<$Derived1$>$\& {\bf ow\+\_\+core\+::\+State\+Trajectory}$<$ \+\_\+\+Derived $>$\+::convert\+To\+Velocity (
+\begin{DoxyParamCaption}
+\item[{Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&}]{vel, }
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&}]{posP, }
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived3 $>$ \&}]{pos}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1StateTrajectory_adc6c9006c12582832a73928fd15f7700}{}\label{classow__core_1_1StateTrajectory_adc6c9006c12582832a73928fd15f7700}
+
+
+Conversion of Position Type to Velocity Type. 
+
+This function covers the general case for which the velocity is directly given by the time derivative of the position. \index{ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}!convert\+To\+Velocity@{convert\+To\+Velocity}}
+\index{convert\+To\+Velocity@{convert\+To\+Velocity}!ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}}
+\subsubsection[{\texorpdfstring{convert\+To\+Velocity(ow\+::\+Angular\+Velocity \&omega, const ow\+\_\+core\+::\+Angular\+Position\+Base$<$ Derived1 $>$ \&\+Q\+P, const ow\+\_\+core\+::\+Angular\+Position\+Base$<$ Derived2 $>$ \&\+Q) const }{convertToVelocity(ow::AngularVelocity &omega, const ow_core::AngularPositionBase< Derived1 > &QP, const ow_core::AngularPositionBase< Derived2 > &Q) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived $>$ template$<$typename Derived1 , typename Derived2 $>$ {\bf ow\+::\+Angular\+Velocity}\& {\bf ow\+\_\+core\+::\+State\+Trajectory}$<$ \+\_\+\+Derived $>$\+::convert\+To\+Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Angular\+Velocity} \&}]{omega, }
+\item[{const {\bf ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived1 $>$ \&}]{QP, }
+\item[{const {\bf ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived2 $>$ \&}]{Q}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1StateTrajectory_a13ac659f8ca776faa093da46055fbf4b}{}\label{classow__core_1_1StateTrajectory_a13ac659f8ca776faa093da46055fbf4b}
+
+
+Conversion of Position Type to Velocity Type. 
+
+This function covers the special case for Angular\+Positions to Angular\+Velocities. This requires the time derivative of the \hyperlink{classow__core_1_1AngularPosition}{Angular\+Position} and the current \hyperlink{classow__core_1_1AngularPosition}{Angular\+Position}. \index{ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}!convert\+To\+Velocity@{convert\+To\+Velocity}}
+\index{convert\+To\+Velocity@{convert\+To\+Velocity}!ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}}
+\subsubsection[{\texorpdfstring{convert\+To\+Velocity(ow\+::\+Cartesian\+Velocity \&vel, const ow\+::\+Cartesian\+Position \&\+X\+P, const ow\+::\+Cartesian\+Position \&\+X) const }{convertToVelocity(ow::CartesianVelocity &vel, const ow::CartesianPosition &XP, const ow::CartesianPosition &X) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived $>$ {\bf ow\+::\+Cartesian\+Velocity}\& {\bf ow\+\_\+core\+::\+State\+Trajectory}$<$ \+\_\+\+Derived $>$\+::convert\+To\+Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Cartesian\+Velocity} \&}]{vel, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{XP, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{X}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1StateTrajectory_ad0d58ba4322d9c8e98f3510a26688159}{}\label{classow__core_1_1StateTrajectory_ad0d58ba4322d9c8e98f3510a26688159}
+
+
+Conversion of Position Type to Velocity Type. 
+
+This function covers the special case for Cartesian\+Positions to Cartesian\+Velocities. This requires the time derivative of the \hyperlink{classow__core_1_1CartesianPosition}{Cartesian\+Position} and the current \hyperlink{classow__core_1_1CartesianPosition}{Cartesian\+Position}. \index{ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}}
+\subsubsection[{\texorpdfstring{evaluate(const Scalar \&t) const }{evaluate(const Scalar &t) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived $>$ Derived {\bf ow\+\_\+core\+::\+State\+Trajectory}$<$ \+\_\+\+Derived $>$\+::evaluate (
+\begin{DoxyParamCaption}
+\item[{const Scalar \&}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1StateTrajectory_a484c684df0f4253fb3c591bd7dfa679f}{}\label{classow__core_1_1StateTrajectory_a484c684df0f4253fb3c591bd7dfa679f}
+
+
+evaluate trajectory at a single time t 
+
+\begin{DoxyReturn}{Returns}
+The state \mbox{[}pos, vel, acc\mbox{]} at time t 
+\end{DoxyReturn}
+\index{ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!ow\+\_\+core\+::\+State\+Trajectory@{ow\+\_\+core\+::\+State\+Trajectory}}
+\subsubsection[{\texorpdfstring{evaluate(const Scalar\+Vec \&t\+\_\+vec)}{evaluate(const ScalarVec &t_vec)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived $>$ Derived\+Vec {\bf ow\+\_\+core\+::\+State\+Trajectory}$<$ \+\_\+\+Derived $>$\+::evaluate (
+\begin{DoxyParamCaption}
+\item[{const Scalar\+Vec \&}]{t\+\_\+vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1StateTrajectory_a4de43196a868ed430ae597fdd91b78a6}{}\label{classow__core_1_1StateTrajectory_a4de43196a868ed430ae597fdd91b78a6}
+
+
+evaluate trajectory at at all times t\+\_\+vec 
+
+\begin{DoxyReturn}{Returns}
+A vector of values with the solution at all t in t\+\_\+vec. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/trajectory/\hyperlink{state__trajectory_8h}{state\+\_\+trajectory.\+h}\end{DoxyCompactItemize}

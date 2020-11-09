@@ -1,0 +1,93 @@
+\hypertarget{classow__core_1_1Force}{}\section{ow\+\_\+core\+:\+:Force$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1Force}\index{ow\+\_\+core\+::\+Force$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Force$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1Force}{Force} class.  
+
+
+
+
+{\ttfamily \#include $<$force.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Force$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.725061cm]{d5/d29/classow__core_1_1Force}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1Force_a551a42903f5645dd058650d0205586bf}{}\label{classow__core_1_1Force_a551a42903f5645dd058650d0205586bf}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ \+\_\+\+Scalar, 3, 1 $>$ {\bfseries Base}\hypertarget{classow__core_1_1Force_a1bb7032b4369272173570662e7a6bbb7}{}\label{classow__core_1_1Force_a1bb7032b4369272173570662e7a6bbb7}
+
+\item 
+typedef \hyperlink{classow__core_1_1ForceBase}{Force\+Base}$<$ \hyperlink{classow__core_1_1Force}{Force}$<$ \+\_\+\+Scalar $>$ $>$ {\bfseries F\+Base}\hypertarget{classow__core_1_1Force_a2a1f96ede75e7abd79849edc1a2242f6}{}\label{classow__core_1_1Force_a2a1f96ede75e7abd79849edc1a2242f6}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1Force_ab6ef4b86db1e7e9a6f87ec6f71eb6d70}{Force} ()\hypertarget{classow__core_1_1Force_ab6ef4b86db1e7e9a6f87ec6f71eb6d70}{}\label{classow__core_1_1Force_ab6ef4b86db1e7e9a6f87ec6f71eb6d70}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Force_a21bb6a92dd68c6ac838c13ce99fcf37e}{Force} (const \hyperlink{classow__core_1_1Force}{Force} \&other)\hypertarget{classow__core_1_1Force_a21bb6a92dd68c6ac838c13ce99fcf37e}{}\label{classow__core_1_1Force_a21bb6a92dd68c6ac838c13ce99fcf37e}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Force_a59f02d31c749b20c4d8f9a75c12648bd}{Force} (const Scalar \&x, const Scalar \&y, const Scalar \&z)\hypertarget{classow__core_1_1Force_a59f02d31c749b20c4d8f9a75c12648bd}{}\label{classow__core_1_1Force_a59f02d31c749b20c4d8f9a75c12648bd}
+
+\begin{DoxyCompactList}\small\item\em Assignment from Scalar values. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1Force_a18c51f9e8b1fa8dbeada59438110aa97}{Force} (const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1Force_ac3920ba88ad32026fff41e626bbaff7f}{Force} (const \hyperlink{classow__core_1_1ForceRef}{Force\+Ref}$<$ Other\+Derived $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Force}{Force} \& \hyperlink{classow__core_1_1Force_ab55228bb92b212e33b92deab588b1858}{operator=} (const \hyperlink{classow__core_1_1Force}{Force} \&other)\hypertarget{classow__core_1_1Force_ab55228bb92b212e33b92deab588b1858}{}\label{classow__core_1_1Force_ab55228bb92b212e33b92deab588b1858}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1Force}{Force} \& \hyperlink{classow__core_1_1Force_ab708e6964fa95d7810fc69b4c3a074ad}{operator=} (const \hyperlink{classow__core_1_1ForceRef}{Force\+Ref}$<$ Other\+Derived $>$ \&other)\hypertarget{classow__core_1_1Force_ab708e6964fa95d7810fc69b4c3a074ad}{}\label{classow__core_1_1Force_ab708e6964fa95d7810fc69b4c3a074ad}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Force$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1Force}{Force} class. 
+
+The \hyperlink{classow__core_1_1Force}{Force} is of type Eigen\+::\+Vector3 and is represented by the math symbol $\mathVec{f}$.
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000003}{Bug}]Flo\+: §all We have a bug in our merging of Reference classes with normal classes. At the moment we get a non const reference even if the class is const. That is a serious bug. The issue is that Eigen\+::\+Block doesn\textquotesingle{}t care about being const or not. It only cares about the constantness of its template parameter. \end{DoxyRefDesc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Force@{ow\+\_\+core\+::\+Force}!Force@{Force}}
+\index{Force@{Force}!ow\+\_\+core\+::\+Force@{ow\+\_\+core\+::\+Force}}
+\subsubsection[{\texorpdfstring{Force(const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)}{Force(const Eigen::EigenBase< OtherDerived > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar$>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Force}$<$ \+\_\+\+Scalar $>$\+::{\bf Force} (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1Force_a18c51f9e8b1fa8dbeada59438110aa97}{}\label{classow__core_1_1Force_a18c51f9e8b1fa8dbeada59438110aa97}
+
+
+Copy constructor. 
+
+This copy constructor not only works with Eigen matrices but also with their expressions. \index{ow\+\_\+core\+::\+Force@{ow\+\_\+core\+::\+Force}!Force@{Force}}
+\index{Force@{Force}!ow\+\_\+core\+::\+Force@{ow\+\_\+core\+::\+Force}}
+\subsubsection[{\texorpdfstring{Force(const Force\+Ref$<$ Other\+Derived $>$ \&other)}{Force(const ForceRef< OtherDerived > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar$>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Force}$<$ \+\_\+\+Scalar $>$\+::{\bf Force} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Force\+Ref}$<$ Other\+Derived $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1Force_ac3920ba88ad32026fff41e626bbaff7f}{}\label{classow__core_1_1Force_ac3920ba88ad32026fff41e626bbaff7f}
+
+
+Copy constructor. 
+
+This copy constructor allows construction from the reference class. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/\hyperlink{force_8h}{force.\+h}\end{DoxyCompactItemize}

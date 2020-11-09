@@ -1,0 +1,253 @@
+\hypertarget{classow__core_1_1Polynomial}{}\section{ow\+\_\+core\+:\+:Polynomial$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1Polynomial}\index{ow\+\_\+core\+::\+Polynomial$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Polynomial$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1Polynomial}{Polynomial} class.  
+
+
+
+
+{\ttfamily \#include $<$polynomial.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Polynomial$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{df/dd0/classow__core_1_1Polynomial}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1Polynomial_afbce6d192b1b52c2fc7b73bfc4157be3}{}\label{classow__core_1_1Polynomial_afbce6d192b1b52c2fc7b73bfc4157be3}
+
+\item 
+typedef std\+::vector$<$ Scalar $>$ {\bfseries Scalar\+Vec}\hypertarget{classow__core_1_1Polynomial_aba459c245cf9a39de99e96fb49aca99e}{}\label{classow__core_1_1Polynomial_aba459c245cf9a39de99e96fb49aca99e}
+
+\item 
+typedef std\+::vector$<$ Scalar $>$ {\bfseries Value\+Vec}\hypertarget{classow__core_1_1Polynomial_a38590cd8dfe762411d5a318927de5ded}{}\label{classow__core_1_1Polynomial_a38590cd8dfe762411d5a318927de5ded}
+
+\item 
+typedef std\+::vector$<$ Value\+Vec $>$ {\bfseries Value\+Matrix}\hypertarget{classow__core_1_1Polynomial_a13486a689fa201dd5a28c5815fc3f3fe}{}\label{classow__core_1_1Polynomial_a13486a689fa201dd5a28c5815fc3f3fe}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ Scalar, Eigen\+::\+Dynamic, 1 $>$ {\bfseries VectorX}\hypertarget{classow__core_1_1Polynomial_a6878126756dfa05875b804d30960c583}{}\label{classow__core_1_1Polynomial_a6878126756dfa05875b804d30960c583}
+
+\item 
+typedef std\+::vector$<$ VectorX $>$ {\bfseries Vector\+X\+Vec}\hypertarget{classow__core_1_1Polynomial_afe982c78a209ed64f9462629e6fb4b21}{}\label{classow__core_1_1Polynomial_afe982c78a209ed64f9462629e6fb4b21}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1Polynomial_a6ac9153fc66fc9fa29a283a2fb3f21b1}{Polynomial} (const VectorX \&coeffs, const Scalar \&end\+\_\+time)\hypertarget{classow__core_1_1Polynomial_a6ac9153fc66fc9fa29a283a2fb3f21b1}{}\label{classow__core_1_1Polynomial_a6ac9153fc66fc9fa29a283a2fb3f21b1}
+
+\begin{DoxyCompactList}\small\item\em Construct a polynomial. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Polynomial_aed4760cd610fb659071db05214b59fdd}{Polynomial} (const \hyperlink{classow__core_1_1Polynomial}{Polynomial} \&other)\hypertarget{classow__core_1_1Polynomial_aed4760cd610fb659071db05214b59fdd}{}\label{classow__core_1_1Polynomial_aed4760cd610fb659071db05214b59fdd}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1Polynomial_a93ee2da1880827b41ab4faf083a2bb31}{set\+Coefficients} (const VectorX \&coeffs)\hypertarget{classow__core_1_1Polynomial_a93ee2da1880827b41ab4faf083a2bb31}{}\label{classow__core_1_1Polynomial_a93ee2da1880827b41ab4faf083a2bb31}
+
+\begin{DoxyCompactList}\small\item\em set the coefficients \end{DoxyCompactList}\item 
+const VectorX \& \hyperlink{classow__core_1_1Polynomial_a9629fab60c27ca47f5f17595933c4f1d}{coefficients} () const \hypertarget{classow__core_1_1Polynomial_a9629fab60c27ca47f5f17595933c4f1d}{}\label{classow__core_1_1Polynomial_a9629fab60c27ca47f5f17595933c4f1d}
+
+\begin{DoxyCompactList}\small\item\em get the coefficients \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1Polynomial_aa9e7d5a99391b313d9a4b0c6bfb994bb}{start\+Time} () const \hypertarget{classow__core_1_1Polynomial_aa9e7d5a99391b313d9a4b0c6bfb994bb}{}\label{classow__core_1_1Polynomial_aa9e7d5a99391b313d9a4b0c6bfb994bb}
+
+\begin{DoxyCompactList}\small\item\em get end time of the trajectory \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1Polynomial_a939a301b47047383267eab6cb408f2de}{end\+Time} () const \hypertarget{classow__core_1_1Polynomial_a939a301b47047383267eab6cb408f2de}{}\label{classow__core_1_1Polynomial_a939a301b47047383267eab6cb408f2de}
+
+\begin{DoxyCompactList}\small\item\em get end time of the trajectory \end{DoxyCompactList}\item 
+int \hyperlink{classow__core_1_1Polynomial_a814e14dcbe3bdfefd44f7e9285ccd01d}{degree} () const \hypertarget{classow__core_1_1Polynomial_a814e14dcbe3bdfefd44f7e9285ccd01d}{}\label{classow__core_1_1Polynomial_a814e14dcbe3bdfefd44f7e9285ccd01d}
+
+\begin{DoxyCompactList}\small\item\em get the degree \end{DoxyCompactList}\item 
+int \hyperlink{classow__core_1_1Polynomial_a3449dc9174f0af0bf611dfe893337dc0}{num\+Coeffs} () const \hypertarget{classow__core_1_1Polynomial_a3449dc9174f0af0bf611dfe893337dc0}{}\label{classow__core_1_1Polynomial_a3449dc9174f0af0bf611dfe893337dc0}
+
+\begin{DoxyCompactList}\small\item\em get the numm coeffs \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1Polynomial_aa6e91e74ba0e3c733d1aa56ec5668bb5}{evaluate} (const Scalar \&x) const 
+\begin{DoxyCompactList}\small\item\em evaluate the polynomial at given value x \end{DoxyCompactList}\item 
+Scalar\+Vec \hyperlink{classow__core_1_1Polynomial_aaab249a91693f5d9f010d384158bcf62}{evaluate} (const Scalar\+Vec \&t\+\_\+vec) const 
+\begin{DoxyCompactList}\small\item\em evaluate trajectory at at all times t\+\_\+vec \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1Polynomial_a45441fd1fb27ec047fa3d9102573b9c3}{evaluate\+Diff} (const Scalar \&x, int d=1) const 
+\begin{DoxyCompactList}\small\item\em evaluate the derivative of the polynomial at given value x \end{DoxyCompactList}\item 
+Scalar\+Vec \hyperlink{classow__core_1_1Polynomial_a512ad8ba3c489f8735753d0ca0f29c7f}{evaluate\+Diff} (const Scalar\+Vec \&t\+\_\+vec, int d=1) const 
+\begin{DoxyCompactList}\small\item\em evaluate the trajectory derivatives at all t in t\+\_\+vec. \end{DoxyCompactList}\item 
+Value\+Vec \hyperlink{classow__core_1_1Polynomial_ad3c597d069603a9c2a724ab7bb4d1477}{evaluate\+All} (const Scalar \&x, int d=1) const \hypertarget{classow__core_1_1Polynomial_ad3c597d069603a9c2a724ab7bb4d1477}{}\label{classow__core_1_1Polynomial_ad3c597d069603a9c2a724ab7bb4d1477}
+
+\begin{DoxyCompactList}\small\item\em evaluate trajectory at a single time t and its derivatives up to d returns vector with \mbox{[}derivative, derivative-\/1, ..., value\mbox{]} \end{DoxyCompactList}\item 
+Value\+Matrix \hyperlink{classow__core_1_1Polynomial_aa39ddf593cd405caad20aedaa151c900}{evaluate\+All} (const Scalar\+Vec \&t\+\_\+vec, int d=1) const \hypertarget{classow__core_1_1Polynomial_aa39ddf593cd405caad20aedaa151c900}{}\label{classow__core_1_1Polynomial_aa39ddf593cd405caad20aedaa151c900}
+
+\begin{DoxyCompactList}\small\item\em evaluate trajectory at all times t\+\_\+vec and its derivatives up to d returns vector with \mbox{[}time\mbox{]}\mbox{[}derivative\mbox{]}\mbox{[}value\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classow__core_1_1Polynomial}{Polynomial} \hyperlink{classow__core_1_1Polynomial_a3a636b73b9a0370451c061065dba2aca}{Polynomial3\+Order} (Scalar period, Scalar x\+\_\+start, Scalar x\+P\+\_\+start, Scalar x\+\_\+end, Scalar x\+P\+\_\+end)
+\begin{DoxyCompactList}\small\item\em Builds a third order polynomial with time period. \end{DoxyCompactList}\item 
+static \hyperlink{classow__core_1_1Polynomial}{Polynomial} \hyperlink{classow__core_1_1Polynomial_a6dacc9b0c59cfb85de41f9adecdde592}{Polynomial5\+Order} (Scalar period, Scalar x\+\_\+start, Scalar x\+P\+\_\+start, Scalar x\+P\+P\+\_\+start, Scalar x\+\_\+end, Scalar x\+P\+\_\+end, Scalar x\+P\+P\+\_\+end)
+\begin{DoxyCompactList}\small\item\em Builds a six order polynomial. \end{DoxyCompactList}\item 
+static \hyperlink{classow__core_1_1Polynomial}{Polynomial} \hyperlink{classow__core_1_1Polynomial_ab40350dd45a8109068bf97ac266fdc72}{Polynomial6\+Order} (Scalar period, Scalar x\+\_\+start, Scalar x\+P\+\_\+start, Scalar x\+P\+P\+\_\+start, Scalar x\+\_\+end, Scalar x\+P\+\_\+end, Scalar x\+P\+P\+\_\+end, Scalar x\+\_\+middle)
+\begin{DoxyCompactList}\small\item\em Builds a six order polynomial. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+VectorX {\bfseries coeffs\+\_\+}\hypertarget{classow__core_1_1Polynomial_a44de5b63d53b31c58fcb0cffc0e44884}{}\label{classow__core_1_1Polynomial_a44de5b63d53b31c58fcb0cffc0e44884}
+
+\item 
+int {\bfseries degree\+\_\+}\hypertarget{classow__core_1_1Polynomial_aee790309d4c74fe5a64d5e9c9aa2ce7e}{}\label{classow__core_1_1Polynomial_aee790309d4c74fe5a64d5e9c9aa2ce7e}
+
+\item 
+int {\bfseries num\+\_\+coeffs\+\_\+}\hypertarget{classow__core_1_1Polynomial_a6e0bd65bcbda231cf85c24f1affd97f8}{}\label{classow__core_1_1Polynomial_a6e0bd65bcbda231cf85c24f1affd97f8}
+
+\item 
+Scalar {\bfseries end\+\_\+time\+\_\+}\hypertarget{classow__core_1_1Polynomial_a4e0beb00f291320c2afdf62614748097}{}\label{classow__core_1_1Polynomial_a4e0beb00f291320c2afdf62614748097}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Polynomial$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1Polynomial}{Polynomial} class. 
+
+Takes the coefficients of a polynomial and offers function to evaluate it. This class operates with scalar types only. For multiple dimensions use polynomial\+\_\+trajectory.
+
+\hyperlink{classow__core_1_1Polynomial}{Polynomial} coeffs are in the form\+: a0 + a1$\ast$x + a2$\ast$x$^\wedge$2 + ... and stored as coeffs = \mbox{[}a0, a1, a2, ...\mbox{]}
+
+Polynomials start at time\+\_\+start = 0 and end at time period. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}}
+\subsubsection[{\texorpdfstring{evaluate(const Scalar \&x) const }{evaluate(const Scalar &x) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ Scalar {\bf ow\+\_\+core\+::\+Polynomial}$<$ \+\_\+\+Scalar $>$\+::evaluate (
+\begin{DoxyParamCaption}
+\item[{const Scalar \&}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1Polynomial_aa6e91e74ba0e3c733d1aa56ec5668bb5}{}\label{classow__core_1_1Polynomial_aa6e91e74ba0e3c733d1aa56ec5668bb5}
+
+
+evaluate the polynomial at given value x 
+
+Uses Horner\textquotesingle{}s Method returns the value x 
+
+Implements \hyperlink{classow__core_1_1ITrajectory_accc6ac3c21e85d796b07048e8bab5c7c}{ow\+\_\+core\+::\+I\+Trajectory$<$ \+\_\+\+Scalar, \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}}
+\subsubsection[{\texorpdfstring{evaluate(const Scalar\+Vec \&t\+\_\+vec) const }{evaluate(const ScalarVec &t_vec) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ Scalar\+Vec {\bf ow\+\_\+core\+::\+Polynomial}$<$ \+\_\+\+Scalar $>$\+::evaluate (
+\begin{DoxyParamCaption}
+\item[{const Scalar\+Vec \&}]{t\+\_\+vec}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1Polynomial_aaab249a91693f5d9f010d384158bcf62}{}\label{classow__core_1_1Polynomial_aaab249a91693f5d9f010d384158bcf62}
+
+
+evaluate trajectory at at all times t\+\_\+vec 
+
+\begin{DoxyReturn}{Returns}
+A vector of values with the solution at all t in t\+\_\+vec. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow__core_1_1ITrajectory_a81e6e2ea5cc3363595e9ac86c148b93c}{ow\+\_\+core\+::\+I\+Trajectory$<$ \+\_\+\+Scalar, \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}!evaluate\+Diff@{evaluate\+Diff}}
+\index{evaluate\+Diff@{evaluate\+Diff}!ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}}
+\subsubsection[{\texorpdfstring{evaluate\+Diff(const Scalar \&x, int d=1) const }{evaluateDiff(const Scalar &x, int d=1) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ Scalar {\bf ow\+\_\+core\+::\+Polynomial}$<$ \+\_\+\+Scalar $>$\+::evaluate\+Diff (
+\begin{DoxyParamCaption}
+\item[{const Scalar \&}]{x, }
+\item[{int}]{d = {\ttfamily 1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1Polynomial_a45441fd1fb27ec047fa3d9102573b9c3}{}\label{classow__core_1_1Polynomial_a45441fd1fb27ec047fa3d9102573b9c3}
+
+
+evaluate the derivative of the polynomial at given value x 
+
+Uses Horner\textquotesingle{}s Method returns the d-\/th derivative at x 
+
+Implements \hyperlink{classow__core_1_1ITrajectory_af7a00745433afb4d5b0cb777d49d1d6e}{ow\+\_\+core\+::\+I\+Trajectory$<$ \+\_\+\+Scalar, \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}!evaluate\+Diff@{evaluate\+Diff}}
+\index{evaluate\+Diff@{evaluate\+Diff}!ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}}
+\subsubsection[{\texorpdfstring{evaluate\+Diff(const Scalar\+Vec \&t\+\_\+vec, int d=1) const }{evaluateDiff(const ScalarVec &t_vec, int d=1) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ Scalar\+Vec {\bf ow\+\_\+core\+::\+Polynomial}$<$ \+\_\+\+Scalar $>$\+::evaluate\+Diff (
+\begin{DoxyParamCaption}
+\item[{const Scalar\+Vec \&}]{t\+\_\+vec, }
+\item[{int}]{d = {\ttfamily 1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1Polynomial_a512ad8ba3c489f8735753d0ca0f29c7f}{}\label{classow__core_1_1Polynomial_a512ad8ba3c489f8735753d0ca0f29c7f}
+
+
+evaluate the trajectory derivatives at all t in t\+\_\+vec. 
+
+\begin{DoxyReturn}{Returns}
+A vector of values with the d order derivative at time t 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow__core_1_1ITrajectory_a5defcd9c0a3909afc5ef59e331344e59}{ow\+\_\+core\+::\+I\+Trajectory$<$ \+\_\+\+Scalar, \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}!Polynomial3\+Order@{Polynomial3\+Order}}
+\index{Polynomial3\+Order@{Polynomial3\+Order}!ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}}
+\subsubsection[{\texorpdfstring{Polynomial3\+Order(\+Scalar period, Scalar x\+\_\+start, Scalar x\+P\+\_\+start, Scalar x\+\_\+end, Scalar x\+P\+\_\+end)}{Polynomial3Order(Scalar period, Scalar x_start, Scalar xP_start, Scalar x_end, Scalar xP_end)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ static {\bf Polynomial} {\bf ow\+\_\+core\+::\+Polynomial}$<$ \+\_\+\+Scalar $>$\+::Polynomial3\+Order (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{period, }
+\item[{Scalar}]{x\+\_\+start, }
+\item[{Scalar}]{x\+P\+\_\+start, }
+\item[{Scalar}]{x\+\_\+end, }
+\item[{Scalar}]{x\+P\+\_\+end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1Polynomial_a3a636b73b9a0370451c061065dba2aca}{}\label{classow__core_1_1Polynomial_a3a636b73b9a0370451c061065dba2aca}
+
+
+Builds a third order polynomial with time period. 
+
+The function passes through points x\+\_\+start and x\+\_\+end, with an inital velocity of x\+P\+\_\+start and a final velocity of x\+P\+\_\+end.
+
+Usage\+:
+
+\hyperlink{classow__core_1_1Polynomial}{ow\+\_\+core\+::\+Polynomial} poly3 = \hyperlink{classow__core_1_1Polynomial_a3a636b73b9a0370451c061065dba2aca}{ow\+\_\+core\+::\+Polynomial$<$ow\+::\+Scalar$>$\+::\+Polynomial3\+Order}( period, x\+\_\+start, x\+P\+\_\+start, x\+\_\+end, x\+P\+\_\+end); \index{ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}!Polynomial5\+Order@{Polynomial5\+Order}}
+\index{Polynomial5\+Order@{Polynomial5\+Order}!ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}}
+\subsubsection[{\texorpdfstring{Polynomial5\+Order(\+Scalar period, Scalar x\+\_\+start, Scalar x\+P\+\_\+start, Scalar x\+P\+P\+\_\+start, Scalar x\+\_\+end, Scalar x\+P\+\_\+end, Scalar x\+P\+P\+\_\+end)}{Polynomial5Order(Scalar period, Scalar x_start, Scalar xP_start, Scalar xPP_start, Scalar x_end, Scalar xP_end, Scalar xPP_end)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ static {\bf Polynomial} {\bf ow\+\_\+core\+::\+Polynomial}$<$ \+\_\+\+Scalar $>$\+::Polynomial5\+Order (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{period, }
+\item[{Scalar}]{x\+\_\+start, }
+\item[{Scalar}]{x\+P\+\_\+start, }
+\item[{Scalar}]{x\+P\+P\+\_\+start, }
+\item[{Scalar}]{x\+\_\+end, }
+\item[{Scalar}]{x\+P\+\_\+end, }
+\item[{Scalar}]{x\+P\+P\+\_\+end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1Polynomial_a6dacc9b0c59cfb85de41f9adecdde592}{}\label{classow__core_1_1Polynomial_a6dacc9b0c59cfb85de41f9adecdde592}
+
+
+Builds a six order polynomial. 
+
+The function passes through points x\+\_\+start and x\+\_\+end, with an inital velocity of x\+P\+\_\+start and a final velocity of x\+P\+\_\+end. The inital acceleration is x\+P\+P\+\_\+start and the final acceleration x\+P\+P\+\_\+end.
+
+Usage\+:
+
+\hyperlink{classow__core_1_1Polynomial}{ow\+\_\+core\+::\+Polynomial} poly5 = \hyperlink{classow__core_1_1Polynomial_a6dacc9b0c59cfb85de41f9adecdde592}{ow\+\_\+core\+::\+Polynomial$<$ow\+::\+Scalar$>$\+::\+Polynomial5\+Order}( period, x\+\_\+start, x\+P\+\_\+start, x\+P\+P\+\_\+start, x\+\_\+end, x\+P\+\_\+end, x\+P\+P\+\_\+end); \index{ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}!Polynomial6\+Order@{Polynomial6\+Order}}
+\index{Polynomial6\+Order@{Polynomial6\+Order}!ow\+\_\+core\+::\+Polynomial@{ow\+\_\+core\+::\+Polynomial}}
+\subsubsection[{\texorpdfstring{Polynomial6\+Order(\+Scalar period, Scalar x\+\_\+start, Scalar x\+P\+\_\+start, Scalar x\+P\+P\+\_\+start, Scalar x\+\_\+end, Scalar x\+P\+\_\+end, Scalar x\+P\+P\+\_\+end, Scalar x\+\_\+middle)}{Polynomial6Order(Scalar period, Scalar x_start, Scalar xP_start, Scalar xPP_start, Scalar x_end, Scalar xP_end, Scalar xPP_end, Scalar x_middle)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ static {\bf Polynomial} {\bf ow\+\_\+core\+::\+Polynomial}$<$ \+\_\+\+Scalar $>$\+::Polynomial6\+Order (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{period, }
+\item[{Scalar}]{x\+\_\+start, }
+\item[{Scalar}]{x\+P\+\_\+start, }
+\item[{Scalar}]{x\+P\+P\+\_\+start, }
+\item[{Scalar}]{x\+\_\+end, }
+\item[{Scalar}]{x\+P\+\_\+end, }
+\item[{Scalar}]{x\+P\+P\+\_\+end, }
+\item[{Scalar}]{x\+\_\+middle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classow__core_1_1Polynomial_ab40350dd45a8109068bf97ac266fdc72}{}\label{classow__core_1_1Polynomial_ab40350dd45a8109068bf97ac266fdc72}
+
+
+Builds a six order polynomial. 
+
+The function passes through points x\+\_\+start, x\+\_\+middle and x\+\_\+end, with an inital velocity of x\+P\+\_\+start and a final velocity of x\+P\+\_\+end. The inital acceleration is x\+P\+P\+\_\+start and the final acceleration x\+P\+P\+\_\+end.
+
+Usage\+:
+
+\hyperlink{classow__core_1_1Polynomial}{ow\+\_\+core\+::\+Polynomial} poly6 = \hyperlink{classow__core_1_1Polynomial_ab40350dd45a8109068bf97ac266fdc72}{ow\+\_\+core\+::\+Polynomial$<$ow\+::\+Scalar$>$\+::\+Polynomial6\+Order}( period, x\+\_\+start, x\+P\+\_\+start, x\+P\+P\+\_\+start, x\+\_\+end, x\+P\+\_\+end, x\+P\+P\+\_\+end, x\+\_\+middle); 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/trajectory/\hyperlink{polynomial_8h}{polynomial.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,155 @@
+\hypertarget{classow__cmd__gen_1_1CommandGenerator}{}\section{ow\+\_\+cmd\+\_\+gen\+:\+:Command\+Generator Class Reference}
+\label{classow__cmd__gen_1_1CommandGenerator}\index{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator@{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator}}
+
+
+The \hyperlink{classow__cmd__gen_1_1CommandGenerator}{Command\+Generator} class.  
+
+
+
+
+{\ttfamily \#include $<$command\+\_\+generator.\+h$>$}
+
+Inheritance diagram for ow\+\_\+cmd\+\_\+gen\+:\+:Command\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{dc/d22/classow__cmd__gen_1_1CommandGenerator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow_1_1ICommandGenerator}{ow\+::\+I\+Command\+Generator} {\bfseries Base}\hypertarget{classow__cmd__gen_1_1CommandGenerator_abfa7073053bfec8d4aada5a7fa399ca9}{}\label{classow__cmd__gen_1_1CommandGenerator_abfa7073053bfec8d4aada5a7fa399ca9}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__cmd__gen_1_1CommandGenerator_a08f143362a609f6342906294a2edd3f0}{Command\+Generator} ()\hypertarget{classow__cmd__gen_1_1CommandGenerator_a08f143362a609f6342906294a2edd3f0}{}\label{classow__cmd__gen_1_1CommandGenerator_a08f143362a609f6342906294a2edd3f0}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classow__cmd__gen_1_1CommandGenerator}{Command\+Generator} Default constructor. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow__cmd__gen_1_1CommandGenerator_a922b9defd16847ef9cba70ed56c6019e}{Xcmd\+\_\+l\+\_\+w} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow__cmd__gen_1_1CommandGenerator_afd5c10bd19ed610f63c73a5516961584}{Xcmd\+\_\+r\+\_\+w} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow__cmd__gen_1_1CommandGenerator_a104f8f57b30db712328970907f269f69}{Xcmd\+\_\+com\+\_\+w} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+void \hyperlink{classow__cmd__gen_1_1CommandGenerator_a891d7e8183966ce863aa1adb69ee9c87}{update} (const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&Xr\+\_\+l\+\_\+w, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&Xoff\+\_\+l, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&Xr\+\_\+r\+\_\+w, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&Xoff\+\_\+r, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&Xr\+\_\+com\+\_\+w, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&Xoff\+\_\+com)
+\begin{DoxyCompactList}\small\item\em Update function of the module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classow__cmd__gen_1_1CommandGenerator_ab36dd341b8d384aa134ed3ea8f4ae086}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, ros\+::\+Node\+Handle \&nh)\hypertarget{classow__cmd__gen_1_1CommandGenerator_ab36dd341b8d384aa134ed3ea8f4ae086}{}\label{classow__cmd__gen_1_1CommandGenerator_ab36dd341b8d384aa134ed3ea8f4ae086}
+
+\begin{DoxyCompactList}\small\item\em Initialization of \hyperlink{classow__cmd__gen_1_1CommandGenerator}{Command\+Generator} module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__cmd__gen_1_1CommandGenerator_ae64c72f2b22c7ac140161b27864b03e0}{Xcmd\+\_\+l\+\_\+w\+\_\+}\hypertarget{classow__cmd__gen_1_1CommandGenerator_ae64c72f2b22c7ac140161b27864b03e0}{}\label{classow__cmd__gen_1_1CommandGenerator_ae64c72f2b22c7ac140161b27864b03e0}
+
+\begin{DoxyCompactList}\small\item\em the commanded state of the left foot. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__cmd__gen_1_1CommandGenerator_ad0b3bf220eb3e9158f5deee0cd4f0e00}{Xcmd\+\_\+r\+\_\+w\+\_\+}\hypertarget{classow__cmd__gen_1_1CommandGenerator_ad0b3bf220eb3e9158f5deee0cd4f0e00}{}\label{classow__cmd__gen_1_1CommandGenerator_ad0b3bf220eb3e9158f5deee0cd4f0e00}
+
+\begin{DoxyCompactList}\small\item\em the commanded state of the right foot. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__cmd__gen_1_1CommandGenerator_ac8ea2de73e1b6a5095b1a7d5e7dc5044}{Xcmd\+\_\+com\+\_\+w\+\_\+}\hypertarget{classow__cmd__gen_1_1CommandGenerator_ac8ea2de73e1b6a5095b1a7d5e7dc5044}{}\label{classow__cmd__gen_1_1CommandGenerator_ac8ea2de73e1b6a5095b1a7d5e7dc5044}
+
+\begin{DoxyCompactList}\small\item\em the commanded state of the C\+OM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__cmd__gen_1_1CommandGenerator}{Command\+Generator} class. 
+
+This class implements the \hyperlink{classow__cmd__gen_1_1CommandGenerator}{Command\+Generator} module of the openwalker framework.
+
+It combines the the com, left and right offset with the reference trajectory to compute the commanded cartesian position of the robot. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator@{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator}!update@{update}}
+\index{update@{update}!ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator@{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator}}
+\subsubsection[{\texorpdfstring{update(const ow\+::\+Cartesian\+State \&\+Xr\+\_\+l\+\_\+w, const ow\+::\+Cartesian\+State \&\+Xoff\+\_\+l, const ow\+::\+Cartesian\+State \&\+Xr\+\_\+r\+\_\+w, const ow\+::\+Cartesian\+State \&\+Xoff\+\_\+r, const ow\+::\+Cartesian\+State \&\+Xr\+\_\+com\+\_\+w, const ow\+::\+Cartesian\+State \&\+Xoff\+\_\+com)}{update(const ow::CartesianState &Xr_l_w, const ow::CartesianState &Xoff_l, const ow::CartesianState &Xr_r_w, const ow::CartesianState &Xoff_r, const ow::CartesianState &Xr_com_w, const ow::CartesianState &Xoff_com)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator\+::update (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{Xr\+\_\+l\+\_\+w, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{Xoff\+\_\+l, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{Xr\+\_\+r\+\_\+w, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{Xoff\+\_\+r, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{Xr\+\_\+com\+\_\+w, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{Xoff\+\_\+com}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__cmd__gen_1_1CommandGenerator_a891d7e8183966ce863aa1adb69ee9c87}{}\label{classow__cmd__gen_1_1CommandGenerator_a891d7e8183966ce863aa1adb69ee9c87}
+
+
+Update function of the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Xr\+\_\+l\+\_\+w} & Reference Cartesian\+State of the left foot wrt world frame.\\
+\hline
+{\em Xoff\+\_\+l} & Left foot offset.\\
+\hline
+{\em Xr\+\_\+r\+\_\+w} & Reference Cartesian\+State of the right foot wrt world frame.\\
+\hline
+{\em Xoff\+\_\+r} & Right foot offset.\\
+\hline
+{\em Xr\+\_\+com\+\_\+w} & Reference Cartesian\+State of the CoM wrt world frame.\\
+\hline
+{\em Xoff\+\_\+com} & CoM Offset. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator@{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator}!Xcmd\+\_\+com\+\_\+w@{Xcmd\+\_\+com\+\_\+w}}
+\index{Xcmd\+\_\+com\+\_\+w@{Xcmd\+\_\+com\+\_\+w}!ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator@{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator}}
+\subsubsection[{\texorpdfstring{Xcmd\+\_\+com\+\_\+w() const }{Xcmd_com_w() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator\+::\+Xcmd\+\_\+com\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__cmd__gen_1_1CommandGenerator_a104f8f57b30db712328970907f269f69}{}\label{classow__cmd__gen_1_1CommandGenerator_a104f8f57b30db712328970907f269f69}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State contains the commanded pose of the center of mass coordinate frame C\+OM with respect to the world coordinate frame W. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1ICommandGenerator_a3b635bf72503ad1e11d5edc8514a6ec0}{ow\+::\+I\+Command\+Generator}.
+
+\index{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator@{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator}!Xcmd\+\_\+l\+\_\+w@{Xcmd\+\_\+l\+\_\+w}}
+\index{Xcmd\+\_\+l\+\_\+w@{Xcmd\+\_\+l\+\_\+w}!ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator@{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator}}
+\subsubsection[{\texorpdfstring{Xcmd\+\_\+l\+\_\+w() const }{Xcmd_l_w() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator\+::\+Xcmd\+\_\+l\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__cmd__gen_1_1CommandGenerator_a922b9defd16847ef9cba70ed56c6019e}{}\label{classow__cmd__gen_1_1CommandGenerator_a922b9defd16847ef9cba70ed56c6019e}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State contains the commanded pose of the left foot ankle coordinate frame L with respect to the world coordinate frame W. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1ICommandGenerator_a964c3ff445e3de3aa19fb617b221b5b8}{ow\+::\+I\+Command\+Generator}.
+
+\index{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator@{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator}!Xcmd\+\_\+r\+\_\+w@{Xcmd\+\_\+r\+\_\+w}}
+\index{Xcmd\+\_\+r\+\_\+w@{Xcmd\+\_\+r\+\_\+w}!ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator@{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator}}
+\subsubsection[{\texorpdfstring{Xcmd\+\_\+r\+\_\+w() const }{Xcmd_r_w() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator\+::\+Xcmd\+\_\+r\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__cmd__gen_1_1CommandGenerator_afd5c10bd19ed610f63c73a5516961584}{}\label{classow__cmd__gen_1_1CommandGenerator_afd5c10bd19ed610f63c73a5516961584}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State contains the commanded pose of the right foot ankle coordinate frame R with respect to the world coordinate frame W. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1ICommandGenerator_ae7309a2b5839ee3376380693617a0cdd}{ow\+::\+I\+Command\+Generator}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+cmd\+\_\+gen/include/ow\+\_\+cmd\+\_\+gen/\hyperlink{command__generator_8h}{command\+\_\+generator.\+h}\end{DoxyCompactItemize}

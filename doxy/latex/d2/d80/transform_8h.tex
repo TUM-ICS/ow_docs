@@ -1,0 +1,394 @@
+\hypertarget{transform_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/transform.h File Reference}
+\label{transform_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/transform.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/transform.\+h}}
+
+
+Contains functions for change the reference frames of type classes.  
+
+
+{\ttfamily \#include $<$ow\+\_\+core/types.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Derived $>$ }\\Vector3 \hyperlink{transform_8h_a300cf455f0dacf4560ce6d3809046ee7}{ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1Vector3Base}{ow\+\_\+core\+::\+Vector3\+Base}$<$ Derived $>$ \&v\+\_\+child, const Homogeneous\+Transformation \&T\+\_\+parent\+\_\+child)
+\begin{DoxyCompactList}\small\item\em Transform a Vector3 to a different coordinate frame. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\Vector3 {\bfseries ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1Vector3Base}{ow\+\_\+core\+::\+Vector3\+Base}$<$ Derived $>$ \&v\+\_\+child, const Cartesian\+Position \&X\+\_\+parent\+\_\+child)\hypertarget{transform_8h_add3969662a091984b51a6438a5db84a6}{}\label{transform_8h_add3969662a091984b51a6438a5db84a6}
+
+\item 
+{\footnotesize template$<$typename Derived $>$ }\\Angular\+Acceleration \hyperlink{transform_8h_a6c6cf7bc3119c745466b2d51cb4d2d1d}{ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1AngularAccelerationBase}{ow\+\_\+core\+::\+Angular\+Acceleration\+Base}$<$ Derived $>$ \&x\+P\+P\+\_\+child, const Homogeneous\+Transformation \&T\+\_\+parent\+\_\+child)
+\begin{DoxyCompactList}\small\item\em Transform a Angular\+Acceleration to a different coordinate frame. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\Angular\+Acceleration {\bfseries ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1AngularAccelerationBase}{ow\+\_\+core\+::\+Angular\+Acceleration\+Base}$<$ Derived $>$ \&x\+P\+P\+\_\+child, const Cartesian\+Position \&X\+\_\+parent\+\_\+child)\hypertarget{transform_8h_a144dce0bdd8975a43ac76c6e89b8f618}{}\label{transform_8h_a144dce0bdd8975a43ac76c6e89b8f618}
+
+\item 
+{\footnotesize template$<$typename Derived $>$ }\\Angular\+Position \hyperlink{transform_8h_ad321865da9a3182460d5517f35d66c50}{ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1AngularPositionBase}{ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived $>$ \&Q\+\_\+child, const Homogeneous\+Transformation \&T\+\_\+parent\+\_\+child)
+\begin{DoxyCompactList}\small\item\em Transform a Angular\+Position to a different coordinate frame. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\Angular\+Position {\bfseries ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1AngularPositionBase}{ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived $>$ \&Q\+\_\+child, const Cartesian\+Position \&X\+\_\+parent\+\_\+child)\hypertarget{transform_8h_afffbdedfe1bcf0f697e312a7f07fb380}{}\label{transform_8h_afffbdedfe1bcf0f697e312a7f07fb380}
+
+\item 
+{\footnotesize template$<$typename Derived $>$ }\\Angular\+Velocity \hyperlink{transform_8h_a1d57f531054ec2f6ffb34aab9fd2051a}{ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1AngularVelocityBase}{ow\+\_\+core\+::\+Angular\+Velocity\+Base}$<$ Derived $>$ \&x\+P\+\_\+child, const Homogeneous\+Transformation \&T\+\_\+parent\+\_\+child)
+\begin{DoxyCompactList}\small\item\em Transform a Angular\+Velocity to a different coordinate frame. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\Angular\+Velocity {\bfseries ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1AngularVelocityBase}{ow\+\_\+core\+::\+Angular\+Velocity\+Base}$<$ Derived $>$ \&x\+P\+\_\+child, const Cartesian\+Position \&X\+\_\+parent\+\_\+child)\hypertarget{transform_8h_ada5e63f01b91b697f1cb2bb1e7be339f}{}\label{transform_8h_ada5e63f01b91b697f1cb2bb1e7be339f}
+
+\item 
+{\footnotesize template$<$typename Derived $>$ }\\Force \hyperlink{transform_8h_a27be79203a638ddb7c2e0de8903bb7ee}{ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1ForceBase}{ow\+\_\+core\+::\+Force\+Base}$<$ Derived $>$ \&f\+\_\+child, const Homogeneous\+Transformation \&T\+\_\+parent\+\_\+child)
+\begin{DoxyCompactList}\small\item\em Transform a Force to a different coordinate frame. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\Force {\bfseries ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1ForceBase}{ow\+\_\+core\+::\+Force\+Base}$<$ Derived $>$ \&f\+\_\+child, const Cartesian\+Position \&X\+\_\+parent\+\_\+child)\hypertarget{transform_8h_a78141df207073a423bbcf1f26580dbbb}{}\label{transform_8h_a78141df207073a423bbcf1f26580dbbb}
+
+\item 
+{\footnotesize template$<$typename Derived $>$ }\\Linear\+Acceleration \hyperlink{transform_8h_af8b02585bceed8e4ab28f32c23967cdb}{ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1LinearAccelerationBase}{ow\+\_\+core\+::\+Linear\+Acceleration\+Base}$<$ Derived $>$ \&x\+P\+P\+\_\+child, const Homogeneous\+Transformation \&T\+\_\+parent\+\_\+child)
+\begin{DoxyCompactList}\small\item\em Transform a Linear\+Acceleration to a different coordinate frame. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\Linear\+Acceleration {\bfseries ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1LinearAccelerationBase}{ow\+\_\+core\+::\+Linear\+Acceleration\+Base}$<$ Derived $>$ \&x\+P\+P\+\_\+child, const Cartesian\+Position \&X\+\_\+parent\+\_\+child)\hypertarget{transform_8h_a689518c171b3f3fdf0d4a889322582b4}{}\label{transform_8h_a689518c171b3f3fdf0d4a889322582b4}
+
+\item 
+{\footnotesize template$<$typename Derived $>$ }\\Linear\+Position \hyperlink{transform_8h_a82195675ca8a81c5e0c724f981a171d8}{ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1LinearPositionBase}{ow\+\_\+core\+::\+Linear\+Position\+Base}$<$ Derived $>$ \&x\+\_\+child, const Homogeneous\+Transformation \&T\+\_\+parent\+\_\+child)
+\begin{DoxyCompactList}\small\item\em Transform a Linear\+Position to a different coordinate frame. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\Linear\+Position {\bfseries ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1LinearPositionBase}{ow\+\_\+core\+::\+Linear\+Position\+Base}$<$ Derived $>$ \&x\+\_\+child, const Cartesian\+Position \&X\+\_\+parent\+\_\+child)\hypertarget{transform_8h_ac51debe0f22c7f883d232b41b0b10f8b}{}\label{transform_8h_ac51debe0f22c7f883d232b41b0b10f8b}
+
+\item 
+{\footnotesize template$<$typename Derived $>$ }\\Linear\+Velocity \hyperlink{transform_8h_af5c31772dc9f3ecc45cbe623ba2a4b74}{ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1LinearVelocityBase}{ow\+\_\+core\+::\+Linear\+Velocity\+Base}$<$ Derived $>$ \&x\+P\+\_\+child, const Homogeneous\+Transformation \&T\+\_\+parent\+\_\+child)
+\begin{DoxyCompactList}\small\item\em Transform a Linear\+Velocity to a different coordinate frame. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\Linear\+Velocity {\bfseries ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1LinearVelocityBase}{ow\+\_\+core\+::\+Linear\+Velocity\+Base}$<$ Derived $>$ \&x\+P\+\_\+child, const Cartesian\+Position \&X\+\_\+parent\+\_\+child)\hypertarget{transform_8h_a88418e37c2839019d9feb66621157d5a}{}\label{transform_8h_a88418e37c2839019d9feb66621157d5a}
+
+\item 
+{\footnotesize template$<$typename Derived $>$ }\\Moment \hyperlink{transform_8h_aa9427f048b3391d81c7c68d75f5c9024}{ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1MomentBase}{ow\+\_\+core\+::\+Moment\+Base}$<$ Derived $>$ \&mu\+\_\+child, const Homogeneous\+Transformation \&T\+\_\+parent\+\_\+child)
+\begin{DoxyCompactList}\small\item\em Transform a Moment to a different coordinate frame. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\Moment {\bfseries ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1MomentBase}{ow\+\_\+core\+::\+Moment\+Base}$<$ Derived $>$ \&mu\+\_\+child, const Cartesian\+Position \&X\+\_\+parent\+\_\+child)\hypertarget{transform_8h_a60703a79c191f25e1ba5595442f9b15f}{}\label{transform_8h_a60703a79c191f25e1ba5595442f9b15f}
+
+\item 
+{\footnotesize template$<$typename Derived $>$ }\\Derived \hyperlink{transform_8h_ae0b5a4c4b99afc1d7db0faf7f4411ecd}{ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1CartesianBase}{ow\+\_\+core\+::\+Cartesian\+Base}$<$ Derived $>$ \&X\+\_\+child, const Homogeneous\+Transformation \&T\+\_\+parent\+\_\+child)
+\begin{DoxyCompactList}\small\item\em Transform Cartesian vector to a different coordinate frame. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\Derived {\bfseries ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1CartesianBase}{ow\+\_\+core\+::\+Cartesian\+Base}$<$ Derived $>$ \&X\+\_\+child, const Cartesian\+Position \&X\+\_\+parent\+\_\+child)\hypertarget{transform_8h_ab9863d78309007d0bcc4fdf2a8db1954}{}\label{transform_8h_ab9863d78309007d0bcc4fdf2a8db1954}
+
+\item 
+Wrench \hyperlink{transform_8h_a3320e83582e969222944e3f41634dcfe}{ow\+::change\+Ref\+Frame} (const Wrench \&Worg, const Homogeneous\+Transformation \&T\+\_\+parent\+\_\+child)
+\begin{DoxyCompactList}\small\item\em Transform Wrench to a different coordinate frame. \end{DoxyCompactList}\item 
+Wrench {\bfseries ow\+::change\+Ref\+Frame} (const Wrench \&Worg, const Cartesian\+Position \&X\+\_\+parent\+\_\+child)\hypertarget{transform_8h_a38e4d8029a0029078c8d0386ec72b3b7}{}\label{transform_8h_a38e4d8029a0029078c8d0386ec72b3b7}
+
+\item 
+{\footnotesize template$<$typename Derived $>$ }\\Derived \hyperlink{transform_8h_affb2c5b66319fc6a1dfa2b649a85921d}{ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1StateBase}{ow\+\_\+core\+::\+State\+Base}$<$ Derived $>$ \&X\+\_\+child, const Homogeneous\+Transformation \&T\+\_\+parent\+\_\+child)
+\begin{DoxyCompactList}\small\item\em Transform State to a different coordinate frame. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\Derived \hyperlink{transform_8h_a0307df51ef3c187d804349fb7e114ae1}{ow\+::change\+Ref\+Frame} (const \hyperlink{classow__core_1_1StateBase}{ow\+\_\+core\+::\+State\+Base}$<$ Derived $>$ \&X\+\_\+child, const Cartesian\+Position \&X\+\_\+parent\+\_\+child)
+\begin{DoxyCompactList}\small\item\em Transform State to a different coordinate frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains functions for change the reference frames of type classes. 
+
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287.
+
+\subsection{Function Documentation}
+\index{transform.\+h@{transform.\+h}!change\+Ref\+Frame@{change\+Ref\+Frame}}
+\index{change\+Ref\+Frame@{change\+Ref\+Frame}!transform.\+h@{transform.\+h}}
+\subsubsection[{\texorpdfstring{change\+Ref\+Frame(const ow\+\_\+core\+::\+Vector3\+Base$<$ Derived $>$ \&v\+\_\+child, const Homogeneous\+Transformation \&\+T\+\_\+parent\+\_\+child)}{changeRefFrame(const ow_core::Vector3Base< Derived > &v_child, const HomogeneousTransformation &T_parent_child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Vector3 ow\+::change\+Ref\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Vector3\+Base}$<$ Derived $>$ \&}]{v\+\_\+child, }
+\item[{const {\bf Homogeneous\+Transformation} \&}]{T\+\_\+parent\+\_\+child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{transform_8h_file_a300cf455f0dacf4560ce6d3809046ee7}{}\label{transform_8h_file_a300cf455f0dacf4560ce6d3809046ee7}
+
+
+Transform a Vector3 to a different coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v\+\_\+child} & Vector3 wrt original frame.\\
+\hline
+{\em T\+\_\+parent\+\_\+child} & Homogeneous\+Transformation from original frame to new coordinate frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed Vector3 wrt new frame. 
+\end{DoxyReturn}
+\index{transform.\+h@{transform.\+h}!change\+Ref\+Frame@{change\+Ref\+Frame}}
+\index{change\+Ref\+Frame@{change\+Ref\+Frame}!transform.\+h@{transform.\+h}}
+\subsubsection[{\texorpdfstring{change\+Ref\+Frame(const ow\+\_\+core\+::\+Angular\+Acceleration\+Base$<$ Derived $>$ \&x\+P\+P\+\_\+child, const Homogeneous\+Transformation \&\+T\+\_\+parent\+\_\+child)}{changeRefFrame(const ow_core::AngularAccelerationBase< Derived > &xPP_child, const HomogeneousTransformation &T_parent_child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Angular\+Acceleration ow\+::change\+Ref\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Angular\+Acceleration\+Base}$<$ Derived $>$ \&}]{x\+P\+P\+\_\+child, }
+\item[{const {\bf Homogeneous\+Transformation} \&}]{T\+\_\+parent\+\_\+child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{transform_8h_file_a6c6cf7bc3119c745466b2d51cb4d2d1d}{}\label{transform_8h_file_a6c6cf7bc3119c745466b2d51cb4d2d1d}
+
+
+Transform a Angular\+Acceleration to a different coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+P\+P\+\_\+child} & Angular\+Acceleration wrt original frame.\\
+\hline
+{\em T\+\_\+parent\+\_\+child} & Homogeneous\+Transformation from original frame to new coordinate frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed Angular\+Acceleration wrt new frame. 
+\end{DoxyReturn}
+\index{transform.\+h@{transform.\+h}!change\+Ref\+Frame@{change\+Ref\+Frame}}
+\index{change\+Ref\+Frame@{change\+Ref\+Frame}!transform.\+h@{transform.\+h}}
+\subsubsection[{\texorpdfstring{change\+Ref\+Frame(const ow\+\_\+core\+::\+Angular\+Position\+Base$<$ Derived $>$ \&\+Q\+\_\+child, const Homogeneous\+Transformation \&\+T\+\_\+parent\+\_\+child)}{changeRefFrame(const ow_core::AngularPositionBase< Derived > &Q_child, const HomogeneousTransformation &T_parent_child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Angular\+Position ow\+::change\+Ref\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Angular\+Position\+Base}$<$ Derived $>$ \&}]{Q\+\_\+child, }
+\item[{const {\bf Homogeneous\+Transformation} \&}]{T\+\_\+parent\+\_\+child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{transform_8h_file_ad321865da9a3182460d5517f35d66c50}{}\label{transform_8h_file_ad321865da9a3182460d5517f35d66c50}
+
+
+Transform a Angular\+Position to a different coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+\_\+child} & Angular\+Position wrt original frame.\\
+\hline
+{\em T\+\_\+parent\+\_\+child} & Homogeneous\+Transformation from original frame to new coordinate frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed Angular\+Position wrt new frame. 
+\end{DoxyReturn}
+\index{transform.\+h@{transform.\+h}!change\+Ref\+Frame@{change\+Ref\+Frame}}
+\index{change\+Ref\+Frame@{change\+Ref\+Frame}!transform.\+h@{transform.\+h}}
+\subsubsection[{\texorpdfstring{change\+Ref\+Frame(const ow\+\_\+core\+::\+Angular\+Velocity\+Base$<$ Derived $>$ \&x\+P\+\_\+child, const Homogeneous\+Transformation \&\+T\+\_\+parent\+\_\+child)}{changeRefFrame(const ow_core::AngularVelocityBase< Derived > &xP_child, const HomogeneousTransformation &T_parent_child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Angular\+Velocity ow\+::change\+Ref\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Angular\+Velocity\+Base}$<$ Derived $>$ \&}]{x\+P\+\_\+child, }
+\item[{const {\bf Homogeneous\+Transformation} \&}]{T\+\_\+parent\+\_\+child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{transform_8h_file_a1d57f531054ec2f6ffb34aab9fd2051a}{}\label{transform_8h_file_a1d57f531054ec2f6ffb34aab9fd2051a}
+
+
+Transform a Angular\+Velocity to a different coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+P\+\_\+child} & Angular\+Velocity wrt original frame.\\
+\hline
+{\em T\+\_\+parent\+\_\+child} & Homogeneous\+Transformation from original frame to new coordinate frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed Angular\+Velocity wrt new frame. 
+\end{DoxyReturn}
+\index{transform.\+h@{transform.\+h}!change\+Ref\+Frame@{change\+Ref\+Frame}}
+\index{change\+Ref\+Frame@{change\+Ref\+Frame}!transform.\+h@{transform.\+h}}
+\subsubsection[{\texorpdfstring{change\+Ref\+Frame(const ow\+\_\+core\+::\+Force\+Base$<$ Derived $>$ \&f\+\_\+child, const Homogeneous\+Transformation \&\+T\+\_\+parent\+\_\+child)}{changeRefFrame(const ow_core::ForceBase< Derived > &f_child, const HomogeneousTransformation &T_parent_child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Force ow\+::change\+Ref\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Force\+Base}$<$ Derived $>$ \&}]{f\+\_\+child, }
+\item[{const {\bf Homogeneous\+Transformation} \&}]{T\+\_\+parent\+\_\+child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{transform_8h_file_a27be79203a638ddb7c2e0de8903bb7ee}{}\label{transform_8h_file_a27be79203a638ddb7c2e0de8903bb7ee}
+
+
+Transform a Force to a different coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+child} & Force wrt original frame.\\
+\hline
+{\em T\+\_\+parent\+\_\+child} & Homogeneous\+Transformation from original frame to new coordinate frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed Force wrt new frame. 
+\end{DoxyReturn}
+\index{transform.\+h@{transform.\+h}!change\+Ref\+Frame@{change\+Ref\+Frame}}
+\index{change\+Ref\+Frame@{change\+Ref\+Frame}!transform.\+h@{transform.\+h}}
+\subsubsection[{\texorpdfstring{change\+Ref\+Frame(const ow\+\_\+core\+::\+Linear\+Acceleration\+Base$<$ Derived $>$ \&x\+P\+P\+\_\+child, const Homogeneous\+Transformation \&\+T\+\_\+parent\+\_\+child)}{changeRefFrame(const ow_core::LinearAccelerationBase< Derived > &xPP_child, const HomogeneousTransformation &T_parent_child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Linear\+Acceleration ow\+::change\+Ref\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Linear\+Acceleration\+Base}$<$ Derived $>$ \&}]{x\+P\+P\+\_\+child, }
+\item[{const {\bf Homogeneous\+Transformation} \&}]{T\+\_\+parent\+\_\+child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{transform_8h_file_af8b02585bceed8e4ab28f32c23967cdb}{}\label{transform_8h_file_af8b02585bceed8e4ab28f32c23967cdb}
+
+
+Transform a Linear\+Acceleration to a different coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+P\+P\+\_\+child} & Linear\+Acceleration wrt original frame.\\
+\hline
+{\em T\+\_\+parent\+\_\+child} & Homogeneous\+Transformation from original frame to new coordinate frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed Linear\+Acceleration wrt new frame. 
+\end{DoxyReturn}
+\index{transform.\+h@{transform.\+h}!change\+Ref\+Frame@{change\+Ref\+Frame}}
+\index{change\+Ref\+Frame@{change\+Ref\+Frame}!transform.\+h@{transform.\+h}}
+\subsubsection[{\texorpdfstring{change\+Ref\+Frame(const ow\+\_\+core\+::\+Linear\+Position\+Base$<$ Derived $>$ \&x\+\_\+child, const Homogeneous\+Transformation \&\+T\+\_\+parent\+\_\+child)}{changeRefFrame(const ow_core::LinearPositionBase< Derived > &x_child, const HomogeneousTransformation &T_parent_child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Linear\+Position ow\+::change\+Ref\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Linear\+Position\+Base}$<$ Derived $>$ \&}]{x\+\_\+child, }
+\item[{const {\bf Homogeneous\+Transformation} \&}]{T\+\_\+parent\+\_\+child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{transform_8h_file_a82195675ca8a81c5e0c724f981a171d8}{}\label{transform_8h_file_a82195675ca8a81c5e0c724f981a171d8}
+
+
+Transform a Linear\+Position to a different coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+child} & Linear\+Position wrt original frame.\\
+\hline
+{\em T\+\_\+parent\+\_\+child} & Homogeneous\+Transformation from original frame to new coordinate frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed Linear\+Position wrt new frame. 
+\end{DoxyReturn}
+\index{transform.\+h@{transform.\+h}!change\+Ref\+Frame@{change\+Ref\+Frame}}
+\index{change\+Ref\+Frame@{change\+Ref\+Frame}!transform.\+h@{transform.\+h}}
+\subsubsection[{\texorpdfstring{change\+Ref\+Frame(const ow\+\_\+core\+::\+Linear\+Velocity\+Base$<$ Derived $>$ \&x\+P\+\_\+child, const Homogeneous\+Transformation \&\+T\+\_\+parent\+\_\+child)}{changeRefFrame(const ow_core::LinearVelocityBase< Derived > &xP_child, const HomogeneousTransformation &T_parent_child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Linear\+Velocity ow\+::change\+Ref\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Linear\+Velocity\+Base}$<$ Derived $>$ \&}]{x\+P\+\_\+child, }
+\item[{const {\bf Homogeneous\+Transformation} \&}]{T\+\_\+parent\+\_\+child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{transform_8h_file_af5c31772dc9f3ecc45cbe623ba2a4b74}{}\label{transform_8h_file_af5c31772dc9f3ecc45cbe623ba2a4b74}
+
+
+Transform a Linear\+Velocity to a different coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+P\+\_\+child} & Linear\+Velocity wrt original frame.\\
+\hline
+{\em T\+\_\+parent\+\_\+child} & Homogeneous\+Transformation from original frame to new coordinate frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed Linear\+Velocity wrt new frame. 
+\end{DoxyReturn}
+\index{transform.\+h@{transform.\+h}!change\+Ref\+Frame@{change\+Ref\+Frame}}
+\index{change\+Ref\+Frame@{change\+Ref\+Frame}!transform.\+h@{transform.\+h}}
+\subsubsection[{\texorpdfstring{change\+Ref\+Frame(const ow\+\_\+core\+::\+Moment\+Base$<$ Derived $>$ \&mu\+\_\+child, const Homogeneous\+Transformation \&\+T\+\_\+parent\+\_\+child)}{changeRefFrame(const ow_core::MomentBase< Derived > &mu_child, const HomogeneousTransformation &T_parent_child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Moment ow\+::change\+Ref\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Moment\+Base}$<$ Derived $>$ \&}]{mu\+\_\+child, }
+\item[{const {\bf Homogeneous\+Transformation} \&}]{T\+\_\+parent\+\_\+child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{transform_8h_file_aa9427f048b3391d81c7c68d75f5c9024}{}\label{transform_8h_file_aa9427f048b3391d81c7c68d75f5c9024}
+
+
+Transform a Moment to a different coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mu\+\_\+child} & Moment wrt original frame.\\
+\hline
+{\em T\+\_\+parent\+\_\+child} & Homogeneous\+Transformation from original frame to new coordinate frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed Moment wrt new frame. 
+\end{DoxyReturn}
+\index{transform.\+h@{transform.\+h}!change\+Ref\+Frame@{change\+Ref\+Frame}}
+\index{change\+Ref\+Frame@{change\+Ref\+Frame}!transform.\+h@{transform.\+h}}
+\subsubsection[{\texorpdfstring{change\+Ref\+Frame(const ow\+\_\+core\+::\+Cartesian\+Base$<$ Derived $>$ \&\+X\+\_\+child, const Homogeneous\+Transformation \&\+T\+\_\+parent\+\_\+child)}{changeRefFrame(const ow_core::CartesianBase< Derived > &X_child, const HomogeneousTransformation &T_parent_child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Derived ow\+::change\+Ref\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Cartesian\+Base}$<$ Derived $>$ \&}]{X\+\_\+child, }
+\item[{const {\bf Homogeneous\+Transformation} \&}]{T\+\_\+parent\+\_\+child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{transform_8h_file_ae0b5a4c4b99afc1d7db0faf7f4411ecd}{}\label{transform_8h_file_ae0b5a4c4b99afc1d7db0faf7f4411ecd}
+
+
+Transform Cartesian vector to a different coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v\+\_\+child} & Cartesian vector wrt original frame.\\
+\hline
+{\em T\+\_\+parent\+\_\+child} & Homogeneous\+Transformation from original frame to new coordinate frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed Cartesian vector wrt new coordinate frame. 
+\end{DoxyReturn}
+\index{transform.\+h@{transform.\+h}!change\+Ref\+Frame@{change\+Ref\+Frame}}
+\index{change\+Ref\+Frame@{change\+Ref\+Frame}!transform.\+h@{transform.\+h}}
+\subsubsection[{\texorpdfstring{change\+Ref\+Frame(const Wrench \&\+Worg, const Homogeneous\+Transformation \&\+T\+\_\+parent\+\_\+child)}{changeRefFrame(const Wrench &Worg, const HomogeneousTransformation &T_parent_child)}}]{\setlength{\rightskip}{0pt plus 5cm}Wrench ow\+::change\+Ref\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf Wrench} \&}]{Worg, }
+\item[{const {\bf Homogeneous\+Transformation} \&}]{T\+\_\+parent\+\_\+child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{transform_8h_file_a3320e83582e969222944e3f41634dcfe}{}\label{transform_8h_file_a3320e83582e969222944e3f41634dcfe}
+
+
+Transform Wrench to a different coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Worg} & Wrench wrt original frame.\\
+\hline
+{\em T\+\_\+parent\+\_\+child} & Homogeneous\+Transformation from original frame to new coordinate frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed Wrench wrt new coordinate frame. 
+\end{DoxyReturn}
+\index{transform.\+h@{transform.\+h}!change\+Ref\+Frame@{change\+Ref\+Frame}}
+\index{change\+Ref\+Frame@{change\+Ref\+Frame}!transform.\+h@{transform.\+h}}
+\subsubsection[{\texorpdfstring{change\+Ref\+Frame(const ow\+\_\+core\+::\+State\+Base$<$ Derived $>$ \&\+X\+\_\+child, const Homogeneous\+Transformation \&\+T\+\_\+parent\+\_\+child)}{changeRefFrame(const ow_core::StateBase< Derived > &X_child, const HomogeneousTransformation &T_parent_child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Derived ow\+::change\+Ref\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+State\+Base}$<$ Derived $>$ \&}]{X\+\_\+child, }
+\item[{const {\bf Homogeneous\+Transformation} \&}]{T\+\_\+parent\+\_\+child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{transform_8h_file_affb2c5b66319fc6a1dfa2b649a85921d}{}\label{transform_8h_file_affb2c5b66319fc6a1dfa2b649a85921d}
+
+
+Transform State to a different coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X\+\_\+child} & State wrt original frame.\\
+\hline
+{\em T\+\_\+parent\+\_\+child} & Homogeneous\+Transformation from original frame to new coordinate frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed State wrt new coordinate frame. 
+\end{DoxyReturn}
+\index{transform.\+h@{transform.\+h}!change\+Ref\+Frame@{change\+Ref\+Frame}}
+\index{change\+Ref\+Frame@{change\+Ref\+Frame}!transform.\+h@{transform.\+h}}
+\subsubsection[{\texorpdfstring{change\+Ref\+Frame(const ow\+\_\+core\+::\+State\+Base$<$ Derived $>$ \&\+X\+\_\+child, const Cartesian\+Position \&\+X\+\_\+parent\+\_\+child)}{changeRefFrame(const ow_core::StateBase< Derived > &X_child, const CartesianPosition &X_parent_child)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived $>$ Derived ow\+::change\+Ref\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+State\+Base}$<$ Derived $>$ \&}]{X\+\_\+child, }
+\item[{const {\bf Cartesian\+Position} \&}]{X\+\_\+parent\+\_\+child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{transform_8h_file_a0307df51ef3c187d804349fb7e114ae1}{}\label{transform_8h_file_a0307df51ef3c187d804349fb7e114ae1}
+
+
+Transform State to a different coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X\+\_\+child} & State wrt original frame.\\
+\hline
+{\em T\+\_\+parent\+\_\+child} & Homogeneous\+Transformation from original frame to new coordinate frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Transformed State wrt new coordinate frame. 
+\end{DoxyReturn}

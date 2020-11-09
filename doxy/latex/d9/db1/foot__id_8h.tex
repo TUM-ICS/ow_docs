@@ -1,0 +1,65 @@
+\hypertarget{foot__id_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/foot\+\_\+id.h File Reference}
+\label{foot__id_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/foot\+\_\+id.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/foot\+\_\+id.\+h}}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6}{ow\+\_\+core\+::\+Foot\+Id} \{ \hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6a91d8e83f2270903d79b8970bfbfa6a0b}{ow\+\_\+core\+::\+Left} = 0, 
+\hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6a47e3e7da02cba0edcf2779a42a7be844}{ow\+\_\+core\+::\+Right}
+ \}\begin{DoxyCompactList}\small\item\em The Force class. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287. 
+
+\subsection{Enumeration Type Documentation}
+\index{foot\+\_\+id.\+h@{foot\+\_\+id.\+h}!Foot\+Id@{Foot\+Id}}
+\index{Foot\+Id@{Foot\+Id}!foot\+\_\+id.\+h@{foot\+\_\+id.\+h}}
+\subsubsection[{\texorpdfstring{Foot\+Id}{FootId}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ow\+\_\+core\+::\+Foot\+Id}}\hypertarget{foot__id_8h_file_a57e66d30579b22cfe2c17c739278e5a6}{}\label{foot__id_8h_file_a57e66d30579b22cfe2c17c739278e5a6}
+
+
+The \hyperlink{classow__core_1_1Force}{Force} class. 
+
+The \hyperlink{classow__core_1_1Force}{Force} is of type Eigen\+::\+Vector3 and is represented by the math symbol $\mathVec{f}$.
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]Flo\+: §all We have a bug in our merging of Reference classes with normal classes. At the moment we get a non const reference even if the class is const. That is a serious bug. The issue is that Eigen\+::\+Block doesn\textquotesingle{}t care about being const or not. It only cares about the constantness of its template parameter. \end{DoxyRefDesc}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Left@{Left}!foot\+\_\+id.\+h@{foot\+\_\+id.\+h}}\index{foot\+\_\+id.\+h@{foot\+\_\+id.\+h}!Left@{Left}}\item[{\em 
+Left\hypertarget{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6a91d8e83f2270903d79b8970bfbfa6a0b}{}\label{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6a91d8e83f2270903d79b8970bfbfa6a0b}
+}]Left foot. \index{Right@{Right}!foot\+\_\+id.\+h@{foot\+\_\+id.\+h}}\index{foot\+\_\+id.\+h@{foot\+\_\+id.\+h}!Right@{Right}}\item[{\em 
+Right\hypertarget{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6a47e3e7da02cba0edcf2779a42a7be844}{}\label{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6a47e3e7da02cba0edcf2779a42a7be844}
+}]Right foot. \end{description}
+\end{Desc}

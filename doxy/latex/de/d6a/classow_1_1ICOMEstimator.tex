@@ -1,0 +1,80 @@
+\hypertarget{classow_1_1ICOMEstimator}{}\section{ow\+:\+:I\+C\+O\+M\+Estimator Class Reference}
+\label{classow_1_1ICOMEstimator}\index{ow\+::\+I\+C\+O\+M\+Estimator@{ow\+::\+I\+C\+O\+M\+Estimator}}
+
+
+The \hyperlink{classow_1_1ICOMEstimator}{I\+C\+O\+M\+Estimator} class.  
+
+
+
+
+{\ttfamily \#include $<$i\+\_\+com\+\_\+estimator.\+h$>$}
+
+Inheritance diagram for ow\+:\+:I\+C\+O\+M\+Estimator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{de/d6a/classow_1_1ICOMEstimator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+C\+O\+M\+Estimator} (const std\+::string \&\hyperlink{classow_1_1GenericModuleBase_a4b712883728cdbab7779e27f9a23689c}{name})\hypertarget{classow_1_1ICOMEstimator_a602fce5de417ba1f245c7a6ee47b93d2}{}\label{classow_1_1ICOMEstimator_a602fce5de417ba1f245c7a6ee47b93d2}
+
+\item 
+virtual \hyperlink{classow_1_1ICOMEstimator_a9c1d13779ec3a3248cce49743f939302}{$\sim$\+I\+C\+O\+M\+Estimator} ()\hypertarget{classow_1_1ICOMEstimator_a9c1d13779ec3a3248cce49743f939302}{}\label{classow_1_1ICOMEstimator_a9c1d13779ec3a3248cce49743f939302}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow_1_1ICOMEstimator_a96fc5dc80ed0f61b0a7a300d8519a9af}{Xf\+\_\+com\+\_\+w} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \& \hyperlink{classow_1_1ICOMEstimator_a39feef3509fbe0f8dbf358c28b067e43}{D\+C\+Mr\+\_\+w} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow_1_1ICOMEstimator}{I\+C\+O\+M\+Estimator} class. 
+
+Interface class. 
+
+\subsection{Member Function Documentation}
+\index{ow\+::\+I\+C\+O\+M\+Estimator@{ow\+::\+I\+C\+O\+M\+Estimator}!D\+C\+Mr\+\_\+w@{D\+C\+Mr\+\_\+w}}
+\index{D\+C\+Mr\+\_\+w@{D\+C\+Mr\+\_\+w}!ow\+::\+I\+C\+O\+M\+Estimator@{ow\+::\+I\+C\+O\+M\+Estimator}}
+\subsubsection[{\texorpdfstring{D\+C\+Mr\+\_\+w() const =0}{DCMr_w() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+D\+C\+M\+State}\& ow\+::\+I\+C\+O\+M\+Estimator\+::\+D\+C\+Mr\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1ICOMEstimator_a39feef3509fbe0f8dbf358c28b067e43}{}\label{classow_1_1ICOMEstimator_a39feef3509fbe0f8dbf358c28b067e43}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+D\+C\+M\+State of the real robot 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__com_1_1COMEstimator_a70d5e11ea25009c7894d64763f72f26c}{ow\+\_\+com\+::\+C\+O\+M\+Estimator}.
+
+\index{ow\+::\+I\+C\+O\+M\+Estimator@{ow\+::\+I\+C\+O\+M\+Estimator}!Xf\+\_\+com\+\_\+w@{Xf\+\_\+com\+\_\+w}}
+\index{Xf\+\_\+com\+\_\+w@{Xf\+\_\+com\+\_\+w}!ow\+::\+I\+C\+O\+M\+Estimator@{ow\+::\+I\+C\+O\+M\+Estimator}}
+\subsubsection[{\texorpdfstring{Xf\+\_\+com\+\_\+w() const =0}{Xf_com_w() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+::\+I\+C\+O\+M\+Estimator\+::\+Xf\+\_\+com\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1ICOMEstimator_a96fc5dc80ed0f61b0a7a300d8519a9af}{}\label{classow_1_1ICOMEstimator_a96fc5dc80ed0f61b0a7a300d8519a9af}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State for the filtered pose of the real CoM. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__com_1_1COMEstimator_af0474ec2ab3a61d06ab3dd80c70b0b2e}{ow\+\_\+com\+::\+C\+O\+M\+Estimator}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/interfaces/\hyperlink{i__com__estimator_8h}{i\+\_\+com\+\_\+estimator.\+h}\end{DoxyCompactItemize}

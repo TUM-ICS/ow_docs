@@ -1,0 +1,260 @@
+\hypertarget{classow__core_1_1Flags}{}\section{ow\+\_\+core\+:\+:Flags Class Reference}
+\label{classow__core_1_1Flags}\index{ow\+\_\+core\+::\+Flags@{ow\+\_\+core\+::\+Flags}}
+
+
+The \hyperlink{classow__core_1_1Flags}{Flags} class.  
+
+
+
+
+{\ttfamily \#include $<$flags.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classow__core_1_1Flags_a836dbca91193b9980b6b1246223c55ab}{State} \{ {\bfseries I\+D\+LE} = 0, 
+{\bfseries H\+O\+M\+E\+I\+NG}, 
+{\bfseries R\+E\+A\+DY}, 
+{\bfseries W\+A\+L\+K\+I\+NG}
+ \}\hypertarget{classow__core_1_1Flags_a836dbca91193b9980b6b1246223c55ab}{}\label{classow__core_1_1Flags_a836dbca91193b9980b6b1246223c55ab}
+\begin{DoxyCompactList}\small\item\em The State of the robot. \end{DoxyCompactList}
+\item 
+enum \hyperlink{classow__core_1_1Flags_a236f38ae9e43be7da3b784c8b72aaf44}{Walking\+Phase} \{ {\bfseries I\+D\+L\+E\+\_\+\+P\+H\+A\+SE} = 0, 
+{\bfseries D\+O\+U\+B\+L\+E\+\_\+\+S\+U\+P\+P\+O\+RT} = 1000, 
+{\bfseries S\+I\+N\+G\+L\+E\+\_\+\+S\+U\+P\+P\+O\+RT}
+ \}\hypertarget{classow__core_1_1Flags_a236f38ae9e43be7da3b784c8b72aaf44}{}\label{classow__core_1_1Flags_a236f38ae9e43be7da3b784c8b72aaf44}
+\begin{DoxyCompactList}\small\item\em Substate of the State. \end{DoxyCompactList}
+\item 
+enum \hyperlink{classow__core_1_1Flags_a0d23fb94c71bd93061b7f966a9cd99fe}{Quater} \{ \\*
+{\bfseries I\+D\+L\+E\+\_\+\+Q\+U\+A\+T\+ER} = 0, 
+{\bfseries D\+O\+U\+B\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+1} = 2000, 
+{\bfseries D\+O\+U\+B\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+2}, 
+{\bfseries D\+O\+U\+B\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+3}, 
+\\*
+{\bfseries D\+O\+U\+B\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+4}, 
+{\bfseries S\+I\+N\+G\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+1}, 
+{\bfseries S\+I\+N\+G\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+2}, 
+{\bfseries S\+I\+N\+G\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+3}, 
+\\*
+{\bfseries S\+I\+N\+G\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+4}
+ \}\hypertarget{classow__core_1_1Flags_a0d23fb94c71bd93061b7f966a9cd99fe}{}\label{classow__core_1_1Flags_a0d23fb94c71bd93061b7f966a9cd99fe}
+\begin{DoxyCompactList}\small\item\em Substate of the Walking\+Phase. \end{DoxyCompactList}
+\item 
+enum \hyperlink{classow__core_1_1Flags_ae4eccd98004db199e779c28fad00ba89}{Event\+Out} \{ \\*
+{\bfseries N\+O\+N\+E\+\_\+\+O\+UT} = 0, 
+{\bfseries W\+A\+L\+K\+I\+N\+G\+\_\+\+E\+ND} = 3000, 
+{\bfseries D\+O\+U\+B\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+S\+T\+A\+RT}, 
+{\bfseries D\+O\+U\+B\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+M\+ID}, 
+\\*
+{\bfseries S\+I\+N\+G\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+S\+T\+A\+RT}, 
+{\bfseries S\+I\+N\+G\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+M\+ID}
+ \}\hypertarget{classow__core_1_1Flags_ae4eccd98004db199e779c28fad00ba89}{}\label{classow__core_1_1Flags_ae4eccd98004db199e779c28fad00ba89}
+\begin{DoxyCompactList}\small\item\em Events produces by the ow\+\_\+state\+\_\+machine. \end{DoxyCompactList}
+\item 
+enum \hyperlink{classow__core_1_1Flags_a97da2cfc7e3e4b51aac33116f914bd2b}{Event\+In} \{ \\*
+{\bfseries N\+O\+N\+E\+\_\+\+IN} = 0, 
+{\bfseries E\+A\+R\+L\+Y\+\_\+\+T\+O\+U\+C\+H\+\_\+\+D\+O\+WN} = 4000, 
+{\bfseries R\+E\+A\+C\+H\+E\+D\+\_\+\+H\+O\+ME}, 
+{\bfseries N\+E\+W\+\_\+\+P\+L\+AN}, 
+\\*
+{\bfseries P\+L\+A\+N\+\_\+\+F\+I\+N\+I\+S\+H\+ED}
+ \}\hypertarget{classow__core_1_1Flags_a97da2cfc7e3e4b51aac33116f914bd2b}{}\label{classow__core_1_1Flags_a97da2cfc7e3e4b51aac33116f914bd2b}
+\begin{DoxyCompactList}\small\item\em Events consumed by the ow\+\_\+state\+\_\+machine. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1Flags_ab561a50c26c7837ac3f0414110fbe79e}{Flags} (const \hyperlink{classow__core_1_1Flags}{Flags} \&other)\hypertarget{classow__core_1_1Flags_ab561a50c26c7837ac3f0414110fbe79e}{}\label{classow__core_1_1Flags_ab561a50c26c7837ac3f0414110fbe79e}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Flags}{Flags} \& {\bfseries operator=} (const \hyperlink{classow__core_1_1Flags}{Flags} \&other)\hypertarget{classow__core_1_1Flags_ad67871129fa349a2659632c8c5306e4d}{}\label{classow__core_1_1Flags_ad67871129fa349a2659632c8c5306e4d}
+
+\item 
+\hyperlink{classow__core_1_1Flags_a836dbca91193b9980b6b1246223c55ab}{State} \& {\bfseries state} ()\hypertarget{classow__core_1_1Flags_a55e7ef87f444ea50ce4a6c667ec4a24e}{}\label{classow__core_1_1Flags_a55e7ef87f444ea50ce4a6c667ec4a24e}
+
+\item 
+const \hyperlink{classow__core_1_1Flags_a836dbca91193b9980b6b1246223c55ab}{State} \& {\bfseries state} () const \hypertarget{classow__core_1_1Flags_afb880683e0deb1e94752a14131f37e87}{}\label{classow__core_1_1Flags_afb880683e0deb1e94752a14131f37e87}
+
+\item 
+\hyperlink{classow__core_1_1Flags_a236f38ae9e43be7da3b784c8b72aaf44}{Walking\+Phase} \& {\bfseries walking\+Phase} ()\hypertarget{classow__core_1_1Flags_a010a4a99c8f3780e83227b9b7f00a533}{}\label{classow__core_1_1Flags_a010a4a99c8f3780e83227b9b7f00a533}
+
+\item 
+const \hyperlink{classow__core_1_1Flags_a236f38ae9e43be7da3b784c8b72aaf44}{Walking\+Phase} \& {\bfseries walking\+Phase} () const \hypertarget{classow__core_1_1Flags_ad403eb5dd4b1953c35bbc9e5fe30582f}{}\label{classow__core_1_1Flags_ad403eb5dd4b1953c35bbc9e5fe30582f}
+
+\item 
+\hyperlink{classow__core_1_1Flags_a0d23fb94c71bd93061b7f966a9cd99fe}{Quater} \& {\bfseries quater} ()\hypertarget{classow__core_1_1Flags_af2cfc28c83a478e872da8f11eff9cf62}{}\label{classow__core_1_1Flags_af2cfc28c83a478e872da8f11eff9cf62}
+
+\item 
+const \hyperlink{classow__core_1_1Flags_a0d23fb94c71bd93061b7f966a9cd99fe}{Quater} \& {\bfseries quater} () const \hypertarget{classow__core_1_1Flags_abca0ae54f3d992d08c36b4e5219360b0}{}\label{classow__core_1_1Flags_abca0ae54f3d992d08c36b4e5219360b0}
+
+\item 
+\hyperlink{classow__core_1_1Flags_ae4eccd98004db199e779c28fad00ba89}{Event\+Out} \& {\bfseries event\+Out} ()\hypertarget{classow__core_1_1Flags_ab4f104c4c4de729cf3cbc8e3269357d6}{}\label{classow__core_1_1Flags_ab4f104c4c4de729cf3cbc8e3269357d6}
+
+\item 
+const \hyperlink{classow__core_1_1Flags_ae4eccd98004db199e779c28fad00ba89}{Event\+Out} \& {\bfseries event\+Out} () const \hypertarget{classow__core_1_1Flags_a65ac07d285225a424a23e48e6d8f80c3}{}\label{classow__core_1_1Flags_a65ac07d285225a424a23e48e6d8f80c3}
+
+\item 
+\hyperlink{classow__core_1_1Flags_a97da2cfc7e3e4b51aac33116f914bd2b}{Event\+In} \& {\bfseries event\+In} ()\hypertarget{classow__core_1_1Flags_a8d2a53cb264c41448588be245cd29aee}{}\label{classow__core_1_1Flags_a8d2a53cb264c41448588be245cd29aee}
+
+\item 
+const \hyperlink{classow__core_1_1Flags_a97da2cfc7e3e4b51aac33116f914bd2b}{Event\+In} \& {\bfseries event\+In} () const \hypertarget{classow__core_1_1Flags_aa2a0b34dab0c6d0aa4210151ccff1179}{}\label{classow__core_1_1Flags_aa2a0b34dab0c6d0aa4210151ccff1179}
+
+\item 
+size\+\_\+t \& {\bfseries n\+Step} ()\hypertarget{classow__core_1_1Flags_ab8ba46bb60f9f706d3353c1e3c21acd3}{}\label{classow__core_1_1Flags_ab8ba46bb60f9f706d3353c1e3c21acd3}
+
+\item 
+const size\+\_\+t \& {\bfseries n\+Step} () const \hypertarget{classow__core_1_1Flags_ab60f0a136a6e574a3f03edc68f11ffff}{}\label{classow__core_1_1Flags_ab60f0a136a6e574a3f03edc68f11ffff}
+
+\item 
+\hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6}{Foot\+Id} \& {\bfseries foot\+Planned} ()\hypertarget{classow__core_1_1Flags_a76b5635ac784ee2fbcdd1f2439578af1}{}\label{classow__core_1_1Flags_a76b5635ac784ee2fbcdd1f2439578af1}
+
+\item 
+const \hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6}{Foot\+Id} \& {\bfseries foot\+Planned} () const \hypertarget{classow__core_1_1Flags_a1210c03169bd35d1d5e85300976d56a6}{}\label{classow__core_1_1Flags_a1210c03169bd35d1d5e85300976d56a6}
+
+\item 
+std\+::vector$<$ bool $>$ \& {\bfseries feet\+In\+Contact} ()\hypertarget{classow__core_1_1Flags_a1b3b8f7ffab1c67e41eeb7214b5505a3}{}\label{classow__core_1_1Flags_a1b3b8f7ffab1c67e41eeb7214b5505a3}
+
+\item 
+const std\+::vector$<$ bool $>$ \& {\bfseries feet\+In\+Contact} () const \hypertarget{classow__core_1_1Flags_ae68fc11d4fef5bfe95a30d1132be9753}{}\label{classow__core_1_1Flags_ae68fc11d4fef5bfe95a30d1132be9753}
+
+\item 
+bool \& {\bfseries is\+Standing} ()\hypertarget{classow__core_1_1Flags_accd2f8f3d5b8bd94985ab06880c6aae4}{}\label{classow__core_1_1Flags_accd2f8f3d5b8bd94985ab06880c6aae4}
+
+\item 
+const bool \& {\bfseries is\+Standing} () const \hypertarget{classow__core_1_1Flags_a0c066642adb7d842fcb056b1682c1705}{}\label{classow__core_1_1Flags_a0c066642adb7d842fcb056b1682c1705}
+
+\item 
+bool \& {\bfseries has\+Ground\+Contact} ()\hypertarget{classow__core_1_1Flags_a4bf0182674265a6dc6213e29431cf1ce}{}\label{classow__core_1_1Flags_a4bf0182674265a6dc6213e29431cf1ce}
+
+\item 
+const bool \& {\bfseries has\+Ground\+Contact} () const \hypertarget{classow__core_1_1Flags_ace4a44e779de4a7f6784abfbc8557972}{}\label{classow__core_1_1Flags_ace4a44e779de4a7f6784abfbc8557972}
+
+\item 
+ros\+::\+Duration \& {\bfseries elapsed\+Step} ()\hypertarget{classow__core_1_1Flags_ac9eb44246a055791678c1cde5c3224af}{}\label{classow__core_1_1Flags_ac9eb44246a055791678c1cde5c3224af}
+
+\item 
+const ros\+::\+Duration \& {\bfseries elapsed\+Step} () const \hypertarget{classow__core_1_1Flags_a555cea59694da522244671d4353637f7}{}\label{classow__core_1_1Flags_a555cea59694da522244671d4353637f7}
+
+\item 
+ros\+::\+Duration \& {\bfseries elapsed\+Double\+Support} ()\hypertarget{classow__core_1_1Flags_a27ee5a80f7e6e06f8bb57f5ca666697e}{}\label{classow__core_1_1Flags_a27ee5a80f7e6e06f8bb57f5ca666697e}
+
+\item 
+const ros\+::\+Duration \& {\bfseries elapsed\+Double\+Support} () const \hypertarget{classow__core_1_1Flags_a5e2877775af45bc72740482bdc51dca8}{}\label{classow__core_1_1Flags_a5e2877775af45bc72740482bdc51dca8}
+
+\item 
+ros\+::\+Duration \& {\bfseries elapsed\+Single\+Support} ()\hypertarget{classow__core_1_1Flags_a162caa75d6465b975bdb8b95d8b80589}{}\label{classow__core_1_1Flags_a162caa75d6465b975bdb8b95d8b80589}
+
+\item 
+const ros\+::\+Duration \& {\bfseries elapsed\+Single\+Support} () const \hypertarget{classow__core_1_1Flags_a9ca36b0e1a1f328c91f105d9fd07863a}{}\label{classow__core_1_1Flags_a9ca36b0e1a1f328c91f105d9fd07863a}
+
+\item 
+std\+::string {\bfseries to\+String} () const \hypertarget{classow__core_1_1Flags_a6d8e6f26edbf82e50aeadff4c53e9b0b}{}\label{classow__core_1_1Flags_a6d8e6f26edbf82e50aeadff4c53e9b0b}
+
+\item 
+\hyperlink{classow__core_1_1Flags}{Flags} \& \hyperlink{classow__core_1_1Flags_a1321c0d5946adc5d64ab0211988969e9}{operator=} (const ow\+\_\+msgs\+::\+Flags \&msg)\hypertarget{classow__core_1_1Flags_a1321c0d5946adc5d64ab0211988969e9}{}\label{classow__core_1_1Flags_a1321c0d5946adc5d64ab0211988969e9}
+
+\begin{DoxyCompactList}\small\item\em Assignment of ow\+\_\+msgs\+::\+Flags. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Flags_af95a736d7cae3b7c5a181616cc1de4db}{operator ow\+\_\+msgs\+::\+Flags} () const \hypertarget{classow__core_1_1Flags_af95a736d7cae3b7c5a181616cc1de4db}{}\label{classow__core_1_1Flags_af95a736d7cae3b7c5a181616cc1de4db}
+
+\begin{DoxyCompactList}\small\item\em Conversion to ow\+\_\+msgs\+::\+Flags. \end{DoxyCompactList}\item 
+ow\+\_\+msgs\+::\+Flags \hyperlink{classow__core_1_1Flags_a9a92cd2206164a7e0fe7cd198f0fb6f6}{to\+Flags\+Msg} () const \hypertarget{classow__core_1_1Flags_a9a92cd2206164a7e0fe7cd198f0fb6f6}{}\label{classow__core_1_1Flags_a9a92cd2206164a7e0fe7cd198f0fb6f6}
+
+\begin{DoxyCompactList}\small\item\em Conversion to ow\+\_\+msgs\+::\+Flags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string {\bfseries enum\+To\+String} (\hyperlink{classow__core_1_1Flags_a836dbca91193b9980b6b1246223c55ab}{State} state)\hypertarget{classow__core_1_1Flags_a6bfcd6c2066ab53b0a4edce426219ea6}{}\label{classow__core_1_1Flags_a6bfcd6c2066ab53b0a4edce426219ea6}
+
+\item 
+static void {\bfseries enum\+To\+Msg} (ow\+\_\+msgs\+::\+Flags \&msg, \hyperlink{classow__core_1_1Flags_a836dbca91193b9980b6b1246223c55ab}{State} state)\hypertarget{classow__core_1_1Flags_a4bb6e80dcf8e88637b683b34654b43b4}{}\label{classow__core_1_1Flags_a4bb6e80dcf8e88637b683b34654b43b4}
+
+\item 
+static std\+::string {\bfseries enum\+To\+String} (\hyperlink{classow__core_1_1Flags_a236f38ae9e43be7da3b784c8b72aaf44}{Walking\+Phase} state)\hypertarget{classow__core_1_1Flags_a4d347f63d7b0574f43d8d8fc2e748dcd}{}\label{classow__core_1_1Flags_a4d347f63d7b0574f43d8d8fc2e748dcd}
+
+\item 
+static void {\bfseries enum\+To\+Msg} (ow\+\_\+msgs\+::\+Flags \&msg, \hyperlink{classow__core_1_1Flags_a236f38ae9e43be7da3b784c8b72aaf44}{Walking\+Phase} state)\hypertarget{classow__core_1_1Flags_a42332a58f404f3eb3ad9972116cc6203}{}\label{classow__core_1_1Flags_a42332a58f404f3eb3ad9972116cc6203}
+
+\item 
+static std\+::string {\bfseries enum\+To\+String} (\hyperlink{classow__core_1_1Flags_a0d23fb94c71bd93061b7f966a9cd99fe}{Quater} state)\hypertarget{classow__core_1_1Flags_aaf62b57c1dbdc457c596d70c3cd9454e}{}\label{classow__core_1_1Flags_aaf62b57c1dbdc457c596d70c3cd9454e}
+
+\item 
+static void {\bfseries enum\+To\+Msg} (ow\+\_\+msgs\+::\+Flags \&msg, \hyperlink{classow__core_1_1Flags_a0d23fb94c71bd93061b7f966a9cd99fe}{Quater} state)\hypertarget{classow__core_1_1Flags_aaeb0566c4b0930aeac18885353f79f94}{}\label{classow__core_1_1Flags_aaeb0566c4b0930aeac18885353f79f94}
+
+\item 
+static std\+::string {\bfseries enum\+To\+String} (\hyperlink{classow__core_1_1Flags_a97da2cfc7e3e4b51aac33116f914bd2b}{Event\+In} state)\hypertarget{classow__core_1_1Flags_afd7282746ba008b73205a85d056b0bc8}{}\label{classow__core_1_1Flags_afd7282746ba008b73205a85d056b0bc8}
+
+\item 
+static void {\bfseries enum\+To\+Msg} (ow\+\_\+msgs\+::\+Flags \&msg, \hyperlink{classow__core_1_1Flags_a97da2cfc7e3e4b51aac33116f914bd2b}{Event\+In} state)\hypertarget{classow__core_1_1Flags_ac0b6884e72e126376dc3fd6d0a52d0ac}{}\label{classow__core_1_1Flags_ac0b6884e72e126376dc3fd6d0a52d0ac}
+
+\item 
+static std\+::string {\bfseries enum\+To\+String} (\hyperlink{classow__core_1_1Flags_ae4eccd98004db199e779c28fad00ba89}{Event\+Out} state)\hypertarget{classow__core_1_1Flags_a7025b028bc31a7e1a0a8ab231c510407}{}\label{classow__core_1_1Flags_a7025b028bc31a7e1a0a8ab231c510407}
+
+\item 
+static void {\bfseries enum\+To\+Msg} (ow\+\_\+msgs\+::\+Flags \&msg, \hyperlink{classow__core_1_1Flags_ae4eccd98004db199e779c28fad00ba89}{Event\+Out} state)\hypertarget{classow__core_1_1Flags_a96d46e68ac12eabf91573810eab86fa9}{}\label{classow__core_1_1Flags_a96d46e68ac12eabf91573810eab86fa9}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1Flags_a836dbca91193b9980b6b1246223c55ab}{State} \hyperlink{classow__core_1_1Flags_a3dd294374cabb8fb6f92e2d0fd46a4b4}{state\+\_\+}\hypertarget{classow__core_1_1Flags_a3dd294374cabb8fb6f92e2d0fd46a4b4}{}\label{classow__core_1_1Flags_a3dd294374cabb8fb6f92e2d0fd46a4b4}
+
+\begin{DoxyCompactList}\small\item\em current state \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Flags_a236f38ae9e43be7da3b784c8b72aaf44}{Walking\+Phase} \hyperlink{classow__core_1_1Flags_a157673e9dbadedd6f58050707bbebf7a}{walking\+\_\+phase\+\_\+}\hypertarget{classow__core_1_1Flags_a157673e9dbadedd6f58050707bbebf7a}{}\label{classow__core_1_1Flags_a157673e9dbadedd6f58050707bbebf7a}
+
+\begin{DoxyCompactList}\small\item\em current walking phase \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Flags_a0d23fb94c71bd93061b7f966a9cd99fe}{Quater} \hyperlink{classow__core_1_1Flags_ab0f1fd1155597b90772b768b9a95fd4b}{quater\+\_\+}\hypertarget{classow__core_1_1Flags_ab0f1fd1155597b90772b768b9a95fd4b}{}\label{classow__core_1_1Flags_ab0f1fd1155597b90772b768b9a95fd4b}
+
+\begin{DoxyCompactList}\small\item\em current quater \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Flags_ae4eccd98004db199e779c28fad00ba89}{Event\+Out} \hyperlink{classow__core_1_1Flags_aded8cb2481fec1a909e2dad83ff9e302}{event\+\_\+out\+\_\+}\hypertarget{classow__core_1_1Flags_aded8cb2481fec1a909e2dad83ff9e302}{}\label{classow__core_1_1Flags_aded8cb2481fec1a909e2dad83ff9e302}
+
+\begin{DoxyCompactList}\small\item\em statemachine output event \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Flags_a97da2cfc7e3e4b51aac33116f914bd2b}{Event\+In} \hyperlink{classow__core_1_1Flags_a31b4d7d5d0a332f7c1f212715ae69585}{event\+\_\+in\+\_\+}\hypertarget{classow__core_1_1Flags_a31b4d7d5d0a332f7c1f212715ae69585}{}\label{classow__core_1_1Flags_a31b4d7d5d0a332f7c1f212715ae69585}
+
+\begin{DoxyCompactList}\small\item\em statemachine input event \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classow__core_1_1Flags_a455fdf14ae26d3589d7578a294825879}{n\+\_\+step\+\_\+}\hypertarget{classow__core_1_1Flags_a455fdf14ae26d3589d7578a294825879}{}\label{classow__core_1_1Flags_a455fdf14ae26d3589d7578a294825879}
+
+\begin{DoxyCompactList}\small\item\em current step \end{DoxyCompactList}\item 
+\hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6}{Foot\+Id} \hyperlink{classow__core_1_1Flags_a2f04779ea82d398811932eafe472210f}{foot\+\_\+planned\+\_\+}\hypertarget{classow__core_1_1Flags_a2f04779ea82d398811932eafe472210f}{}\label{classow__core_1_1Flags_a2f04779ea82d398811932eafe472210f}
+
+\begin{DoxyCompactList}\small\item\em support foot according to plan \end{DoxyCompactList}\item 
+std\+::vector$<$ bool $>$ \hyperlink{classow__core_1_1Flags_a3b842af05d453319f9adde251c27bc0b}{feet\+\_\+in\+\_\+contact\+\_\+}\hypertarget{classow__core_1_1Flags_a3b842af05d453319f9adde251c27bc0b}{}\label{classow__core_1_1Flags_a3b842af05d453319f9adde251c27bc0b}
+
+\begin{DoxyCompactList}\small\item\em flag for feet in conntact \end{DoxyCompactList}\item 
+bool \hyperlink{classow__core_1_1Flags_a3e554e8564759b6ea5d8ed35f1ad1172}{is\+\_\+standing\+\_\+}\hypertarget{classow__core_1_1Flags_a3e554e8564759b6ea5d8ed35f1ad1172}{}\label{classow__core_1_1Flags_a3e554e8564759b6ea5d8ed35f1ad1172}
+
+\begin{DoxyCompactList}\small\item\em both feet on the ground \end{DoxyCompactList}\item 
+bool \hyperlink{classow__core_1_1Flags_ac155838b2c656fc64f178f614b6b88ed}{has\+\_\+ground\+\_\+contact\+\_\+}\hypertarget{classow__core_1_1Flags_ac155838b2c656fc64f178f614b6b88ed}{}\label{classow__core_1_1Flags_ac155838b2c656fc64f178f614b6b88ed}
+
+\begin{DoxyCompactList}\small\item\em at least one foot of the ground \end{DoxyCompactList}\item 
+ros\+::\+Duration \hyperlink{classow__core_1_1Flags_a57875546dbfc125ea8b3880772103055}{elapsed\+\_\+step\+\_\+}\hypertarget{classow__core_1_1Flags_a57875546dbfc125ea8b3880772103055}{}\label{classow__core_1_1Flags_a57875546dbfc125ea8b3880772103055}
+
+\begin{DoxyCompactList}\small\item\em time since foot step start \end{DoxyCompactList}\item 
+ros\+::\+Duration \hyperlink{classow__core_1_1Flags_a0b0d6698e22da8b554aac8e3f47ec058}{elapsed\+\_\+double\+\_\+support\+\_\+}\hypertarget{classow__core_1_1Flags_a0b0d6698e22da8b554aac8e3f47ec058}{}\label{classow__core_1_1Flags_a0b0d6698e22da8b554aac8e3f47ec058}
+
+\begin{DoxyCompactList}\small\item\em time since double support \end{DoxyCompactList}\item 
+ros\+::\+Duration \hyperlink{classow__core_1_1Flags_ae9e730ebddcdc8f6d33f202213049278}{elapsed\+\_\+single\+\_\+support\+\_\+}\hypertarget{classow__core_1_1Flags_ae9e730ebddcdc8f6d33f202213049278}{}\label{classow__core_1_1Flags_ae9e730ebddcdc8f6d33f202213049278}
+
+\begin{DoxyCompactList}\small\item\em time since single support \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__core_1_1Flags}{Flags} class. 
+
+This class is a container for the system flags\+:
+
+\begin{DoxyNote}{Note}
+what about functions like?
+\begin{DoxyItemize}
+\item is\+In\+Double\+Support()
+\item is\+In\+Single\+Support()
+\item foot(s)In\+Contact()
+\item swing\+Foot()
+\item support\+Foot(s)()
+\item ... I am not sure but I think it makes the code easier to understand 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/\hyperlink{flags_8h}{flags.\+h}\end{DoxyCompactItemize}

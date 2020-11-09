@@ -1,0 +1,68 @@
+\hypertarget{ros_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/common/ros.h File Reference}
+\label{ros_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/common/ros.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/common/ros.\+h}}
+{\ttfamily \#include $<$ros/ros.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/types.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename \+\_\+\+Msg $>$ }\\bool \hyperlink{ros_8h_a3653db0c802b9818d42ffcec55f48b83}{ow\+::publish\+\_\+if\+\_\+subscribed} (ros\+::\+Publisher \&pub, const \+\_\+\+Msg \&msg)\hypertarget{ros_8h_a3653db0c802b9818d42ffcec55f48b83}{}\label{ros_8h_a3653db0c802b9818d42ffcec55f48b83}
+
+\begin{DoxyCompactList}\small\item\em Publish a msg if there is a subsriber. \end{DoxyCompactList}\item 
+bool \hyperlink{ros_8h_a9054a73c8e4898c2fbdf06ce8c268d4b}{ow\+::has} (const std\+::string \&name)\hypertarget{ros_8h_a9054a73c8e4898c2fbdf06ce8c268d4b}{}\label{ros_8h_a9054a73c8e4898c2fbdf06ce8c268d4b}
+
+\begin{DoxyCompactList}\small\item\em Check if ros has parameter. \end{DoxyCompactList}\item 
+bool \hyperlink{ros_8h_af8107ca87350abf875fa7b528003e7cb}{ow\+::load} (const std\+::string \&name, bool \&val)\hypertarget{ros_8h_af8107ca87350abf875fa7b528003e7cb}{}\label{ros_8h_af8107ca87350abf875fa7b528003e7cb}
+
+\begin{DoxyCompactList}\small\item\em load bool value \end{DoxyCompactList}\item 
+bool \hyperlink{ros_8h_aa879c01106578423b43716c236c36733}{ow\+::load} (const std\+::string \&name, int \&val)\hypertarget{ros_8h_aa879c01106578423b43716c236c36733}{}\label{ros_8h_aa879c01106578423b43716c236c36733}
+
+\begin{DoxyCompactList}\small\item\em load int value \end{DoxyCompactList}\item 
+bool \hyperlink{ros_8h_a5c2d7cdf4c4c24afa45db50f6d1217c2}{ow\+::load} (const std\+::string \&name, size\+\_\+t \&val)\hypertarget{ros_8h_a5c2d7cdf4c4c24afa45db50f6d1217c2}{}\label{ros_8h_a5c2d7cdf4c4c24afa45db50f6d1217c2}
+
+\begin{DoxyCompactList}\small\item\em load unsigned int value \end{DoxyCompactList}\item 
+bool \hyperlink{ros_8h_ab41193c8cdd867d93b7dda3e77d464b3}{ow\+::load} (const std\+::string \&name, \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \&val)\hypertarget{ros_8h_ab41193c8cdd867d93b7dda3e77d464b3}{}\label{ros_8h_ab41193c8cdd867d93b7dda3e77d464b3}
+
+\begin{DoxyCompactList}\small\item\em load scalar value \end{DoxyCompactList}\item 
+bool \hyperlink{ros_8h_a57edbdd6c920f523fc5948ee152dbf79}{ow\+::load} (const std\+::string \&name, std\+::string \&val)\hypertarget{ros_8h_a57edbdd6c920f523fc5948ee152dbf79}{}\label{ros_8h_a57edbdd6c920f523fc5948ee152dbf79}
+
+\begin{DoxyCompactList}\small\item\em load string value \end{DoxyCompactList}\item 
+bool \hyperlink{ros_8h_a5a4d3d58dd5e91bab29542542b6d4814}{ow\+::load} (const std\+::string \&name, std\+::vector$<$ \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} $>$ \&val, size\+\_\+t force\+\_\+dim=0)\hypertarget{ros_8h_a5a4d3d58dd5e91bab29542542b6d4814}{}\label{ros_8h_a5a4d3d58dd5e91bab29542542b6d4814}
+
+\begin{DoxyCompactList}\small\item\em load std\+::vector value. vector size is variable if force\+\_\+dim=0 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Derived $>$ }\\bool \hyperlink{ros_8h_a34ac93785d81760c0fe10738e26ff773}{ow\+::load} (const std\+::string \&name, \+\_\+\+Derived \&val, typename \+\_\+\+Derived\+::\+Index rows=Eigen\+::\+Dynamic, typename \+\_\+\+Derived\+::\+Index cols=Eigen\+::\+Dynamic)\hypertarget{ros_8h_a34ac93785d81760c0fe10738e26ff773}{}\label{ros_8h_a34ac93785d81760c0fe10738e26ff773}
+
+\begin{DoxyCompactList}\small\item\em load generic eigen matrix value. If fixed size\+: loaded dimension must match If variable size and rows and cols specified\+: used as size Else resized by loaded param. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287. 

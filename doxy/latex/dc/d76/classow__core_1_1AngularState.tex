@@ -1,0 +1,148 @@
+\hypertarget{classow__core_1_1AngularState}{}\section{ow\+\_\+core\+:\+:Angular\+State$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1AngularState}\index{ow\+\_\+core\+::\+Angular\+State$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Angular\+State$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1AngularState}{Angular\+State} class.  
+
+
+
+
+{\ttfamily \#include $<$angular\+\_\+state.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Angular\+State$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dc/d76/classow__core_1_1AngularState}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1AngularState_a3a31d1e6f214742487857e742b899da9}{}\label{classow__core_1_1AngularState_a3a31d1e6f214742487857e742b899da9}
+
+\item 
+typedef \hyperlink{classow__core_1_1StateBase}{State\+Base}$<$ \hyperlink{classow__core_1_1AngularState}{Angular\+State}$<$ Scalar $>$ $>$ {\bfseries Base}\hypertarget{classow__core_1_1AngularState_ad0f5f4f623208bb19b9c5823deeb6bfa}{}\label{classow__core_1_1AngularState_ad0f5f4f623208bb19b9c5823deeb6bfa}
+
+\item 
+typedef \hyperlink{classow__core_1_1AngularPosition}{Angular\+Position}$<$ Scalar $>$ {\bfseries Pos}\hypertarget{classow__core_1_1AngularState_a7ae92e643cfe92c9d8e8bb2eff8eb5ca}{}\label{classow__core_1_1AngularState_a7ae92e643cfe92c9d8e8bb2eff8eb5ca}
+
+\item 
+typedef \hyperlink{classow__core_1_1AngularVelocity}{Angular\+Velocity}$<$ Scalar $>$ {\bfseries Vel}\hypertarget{classow__core_1_1AngularState_ada90ed9f2720eb9e16c9bd08bf61549d}{}\label{classow__core_1_1AngularState_ada90ed9f2720eb9e16c9bd08bf61549d}
+
+\item 
+typedef \hyperlink{classow__core_1_1AngularAcceleration}{Angular\+Acceleration}$<$ Scalar $>$ {\bfseries Acc}\hypertarget{classow__core_1_1AngularState_aef1183d0a59d05a9d2958d39e5534d31}{}\label{classow__core_1_1AngularState_aef1183d0a59d05a9d2958d39e5534d31}
+
+\item 
+typedef \hyperlink{classow__core_1_1Moment}{Moment}$<$ Scalar $>$ {\bfseries Effort}\hypertarget{classow__core_1_1AngularState_afe5d32cb74d1bae622c8c50103000e41}{}\label{classow__core_1_1AngularState_afe5d32cb74d1bae622c8c50103000e41}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1AngularState_aa682ec4497b3bb4ef2b629e39527e2bb}{Angular\+State} ()\hypertarget{classow__core_1_1AngularState_aa682ec4497b3bb4ef2b629e39527e2bb}{}\label{classow__core_1_1AngularState_aa682ec4497b3bb4ef2b629e39527e2bb}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularState_a5191c49903820db9b49006be791f1ffb}{Angular\+State} (const \hyperlink{classow__core_1_1AngularState}{Angular\+State} \&other)\hypertarget{classow__core_1_1AngularState_a5191c49903820db9b49006be791f1ffb}{}\label{classow__core_1_1AngularState_a5191c49903820db9b49006be791f1ffb}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularState_a0266dd4c998ae1806d22d12eb8afe832}{Angular\+State} (const \hyperlink{classow__core_1_1StateBase}{Base} \&other)\hypertarget{classow__core_1_1AngularState_a0266dd4c998ae1806d22d12eb8afe832}{}\label{classow__core_1_1AngularState_a0266dd4c998ae1806d22d12eb8afe832}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularState_a160e231823c6284c66a60532f7cf7407}{Angular\+State} (const \hyperlink{classow__core_1_1AngularPosition}{Pos} \&\hyperlink{classow__core_1_1AngularState_ab1e5f74baf6c53c76e4252ad81b46c0a}{Q}, const \hyperlink{classow__core_1_1AngularVelocity}{Vel} \&\hyperlink{classow__core_1_1AngularState_a3a91694bff829ed084afa4565b279304}{omega}=Vel\+::\+Zero(), const \hyperlink{classow__core_1_1AngularAcceleration}{Acc} \&\hyperlink{classow__core_1_1AngularState_a45003fc8663b4ddfdb8eea709b8cc086}{alpha}=Acc\+::\+Zero(), const \hyperlink{classow__core_1_1Moment}{Effort} \&\hyperlink{classow__core_1_1AngularState_a0f6539347a50088c7188faf28c284e83}{mu}=Effort\+::\+Zero())\hypertarget{classow__core_1_1AngularState_a160e231823c6284c66a60532f7cf7407}{}\label{classow__core_1_1AngularState_a160e231823c6284c66a60532f7cf7407}
+
+\begin{DoxyCompactList}\small\item\em Constructor from sub elements. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularPosition}{Pos} \& \hyperlink{classow__core_1_1AngularState_ab1e5f74baf6c53c76e4252ad81b46c0a}{Q} ()\hypertarget{classow__core_1_1AngularState_ab1e5f74baf6c53c76e4252ad81b46c0a}{}\label{classow__core_1_1AngularState_ab1e5f74baf6c53c76e4252ad81b46c0a}
+
+\begin{DoxyCompactList}\small\item\em access to orientation part. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularPosition}{Pos} \& \hyperlink{classow__core_1_1AngularState_a51a09a320bf8e5d4ee3fa92106ca6a64}{pos} ()\hypertarget{classow__core_1_1AngularState_a51a09a320bf8e5d4ee3fa92106ca6a64}{}\label{classow__core_1_1AngularState_a51a09a320bf8e5d4ee3fa92106ca6a64}
+
+\begin{DoxyCompactList}\small\item\em access to orientation part. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1AngularPosition}{Pos} \& \hyperlink{classow__core_1_1AngularState_a18581f0c2a771750ddc51b6db308695d}{Q} () const \hypertarget{classow__core_1_1AngularState_a18581f0c2a771750ddc51b6db308695d}{}\label{classow__core_1_1AngularState_a18581f0c2a771750ddc51b6db308695d}
+
+\begin{DoxyCompactList}\small\item\em access to orientation part. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1AngularPosition}{Pos} \& \hyperlink{classow__core_1_1AngularState_a14e8a3ca302f4dbe307b74a638aab2a7}{pos} () const \hypertarget{classow__core_1_1AngularState_a14e8a3ca302f4dbe307b74a638aab2a7}{}\label{classow__core_1_1AngularState_a14e8a3ca302f4dbe307b74a638aab2a7}
+
+\begin{DoxyCompactList}\small\item\em access to orientation part. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularVelocity}{Vel} \& \hyperlink{classow__core_1_1AngularState_a3a91694bff829ed084afa4565b279304}{omega} ()\hypertarget{classow__core_1_1AngularState_a3a91694bff829ed084afa4565b279304}{}\label{classow__core_1_1AngularState_a3a91694bff829ed084afa4565b279304}
+
+\begin{DoxyCompactList}\small\item\em access to velocity part. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularVelocity}{Vel} \& \hyperlink{classow__core_1_1AngularState_ac04f223c9fe89c150bda786aac1be035}{vel} ()\hypertarget{classow__core_1_1AngularState_ac04f223c9fe89c150bda786aac1be035}{}\label{classow__core_1_1AngularState_ac04f223c9fe89c150bda786aac1be035}
+
+\begin{DoxyCompactList}\small\item\em access to velocity part. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1AngularVelocity}{Vel} \& \hyperlink{classow__core_1_1AngularState_a3bfcd72c100ca6f73fcddcd6704e83af}{omega} () const \hypertarget{classow__core_1_1AngularState_a3bfcd72c100ca6f73fcddcd6704e83af}{}\label{classow__core_1_1AngularState_a3bfcd72c100ca6f73fcddcd6704e83af}
+
+\begin{DoxyCompactList}\small\item\em access to velocity part. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1AngularVelocity}{Vel} \& \hyperlink{classow__core_1_1AngularState_adaba4aa5185d75afd03abb5c90d37074}{vel} () const \hypertarget{classow__core_1_1AngularState_adaba4aa5185d75afd03abb5c90d37074}{}\label{classow__core_1_1AngularState_adaba4aa5185d75afd03abb5c90d37074}
+
+\begin{DoxyCompactList}\small\item\em access to velocity part. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularAcceleration}{Acc} \& \hyperlink{classow__core_1_1AngularState_a45003fc8663b4ddfdb8eea709b8cc086}{alpha} ()\hypertarget{classow__core_1_1AngularState_a45003fc8663b4ddfdb8eea709b8cc086}{}\label{classow__core_1_1AngularState_a45003fc8663b4ddfdb8eea709b8cc086}
+
+\begin{DoxyCompactList}\small\item\em access to acceleration part. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularAcceleration}{Acc} \& \hyperlink{classow__core_1_1AngularState_a7bf1a497f2f4bc56daaa076d6cea079a}{acc} ()\hypertarget{classow__core_1_1AngularState_a7bf1a497f2f4bc56daaa076d6cea079a}{}\label{classow__core_1_1AngularState_a7bf1a497f2f4bc56daaa076d6cea079a}
+
+\begin{DoxyCompactList}\small\item\em access to acceleration part. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1AngularAcceleration}{Acc} \& \hyperlink{classow__core_1_1AngularState_a6f462385c51e698041c0550cd0b1de34}{alpha} () const \hypertarget{classow__core_1_1AngularState_a6f462385c51e698041c0550cd0b1de34}{}\label{classow__core_1_1AngularState_a6f462385c51e698041c0550cd0b1de34}
+
+\begin{DoxyCompactList}\small\item\em access to acceleration part. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1AngularAcceleration}{Acc} \& \hyperlink{classow__core_1_1AngularState_ae8349ca52810d25e5df5e630e1d58f0d}{acc} () const \hypertarget{classow__core_1_1AngularState_ae8349ca52810d25e5df5e630e1d58f0d}{}\label{classow__core_1_1AngularState_ae8349ca52810d25e5df5e630e1d58f0d}
+
+\begin{DoxyCompactList}\small\item\em access to acceleration part. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Moment}{Effort} \& \hyperlink{classow__core_1_1AngularState_a0f6539347a50088c7188faf28c284e83}{mu} ()\hypertarget{classow__core_1_1AngularState_a0f6539347a50088c7188faf28c284e83}{}\label{classow__core_1_1AngularState_a0f6539347a50088c7188faf28c284e83}
+
+\begin{DoxyCompactList}\small\item\em access to acceleration part. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Moment}{Effort} \& \hyperlink{classow__core_1_1AngularState_a6ed43bfd2ea5d75646e93b965c4c060d}{effort} ()\hypertarget{classow__core_1_1AngularState_a6ed43bfd2ea5d75646e93b965c4c060d}{}\label{classow__core_1_1AngularState_a6ed43bfd2ea5d75646e93b965c4c060d}
+
+\begin{DoxyCompactList}\small\item\em access to moment part. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1Moment}{Effort} \& \hyperlink{classow__core_1_1AngularState_aa2979227a92509cdd1d2702c0b2a6516}{mu} () const \hypertarget{classow__core_1_1AngularState_aa2979227a92509cdd1d2702c0b2a6516}{}\label{classow__core_1_1AngularState_aa2979227a92509cdd1d2702c0b2a6516}
+
+\begin{DoxyCompactList}\small\item\em access to moment part. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1Moment}{Effort} \& \hyperlink{classow__core_1_1AngularState_ab0b84e0ffa3fe2c4d00afffabdfd00c5}{effort} () const \hypertarget{classow__core_1_1AngularState_ab0b84e0ffa3fe2c4d00afffabdfd00c5}{}\label{classow__core_1_1AngularState_ab0b84e0ffa3fe2c4d00afffabdfd00c5}
+
+\begin{DoxyCompactList}\small\item\em access to moment part. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularState}{Angular\+State} \& \hyperlink{classow__core_1_1AngularState_ad44d13408b024d96248c88e385a2b700}{operator=} (const \hyperlink{classow__core_1_1AngularState}{Angular\+State} \&other)\hypertarget{classow__core_1_1AngularState_ad44d13408b024d96248c88e385a2b700}{}\label{classow__core_1_1AngularState_ad44d13408b024d96248c88e385a2b700}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularState}{Angular\+State} \& \hyperlink{classow__core_1_1AngularState_aa02eda2405c4137ae4d052bc5e2001e8}{operator=} (const ow\+\_\+msgs\+::\+Angular\+State \&msg)\hypertarget{classow__core_1_1AngularState_aa02eda2405c4137ae4d052bc5e2001e8}{}\label{classow__core_1_1AngularState_aa02eda2405c4137ae4d052bc5e2001e8}
+
+\begin{DoxyCompactList}\small\item\em Assignment of ow\+\_\+msgs\+::\+Angular\+State. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1AngularState_ae1bcc701fb56caeade7fadb90fa043ad}{operator ow\+\_\+msgs\+::\+Angular\+State} () const \hypertarget{classow__core_1_1AngularState_ae1bcc701fb56caeade7fadb90fa043ad}{}\label{classow__core_1_1AngularState_ae1bcc701fb56caeade7fadb90fa043ad}
+
+\begin{DoxyCompactList}\small\item\em Conversion to ow\+\_\+msgs\+::\+Angular\+State. \end{DoxyCompactList}\item 
+ow\+\_\+msgs\+::\+Angular\+State \hyperlink{classow__core_1_1AngularState_a302f7891b265a67d476547c7795fa048}{to\+Angular\+State\+Msg} () const \hypertarget{classow__core_1_1AngularState_a302f7891b265a67d476547c7795fa048}{}\label{classow__core_1_1AngularState_a302f7891b265a67d476547c7795fa048}
+
+\begin{DoxyCompactList}\small\item\em Conversion to ow\+\_\+msgs\+::\+Angular\+State. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1AngularPosition}{Pos} {\bfseries Q\+\_\+}\hypertarget{classow__core_1_1AngularState_a624c594c1dd10e0f44b9b9b5081b4fa6}{}\label{classow__core_1_1AngularState_a624c594c1dd10e0f44b9b9b5081b4fa6}
+
+\item 
+\hyperlink{classow__core_1_1AngularVelocity}{Vel} {\bfseries omega\+\_\+}\hypertarget{classow__core_1_1AngularState_ac90730db456c8a6642ac972a2a9a48ca}{}\label{classow__core_1_1AngularState_ac90730db456c8a6642ac972a2a9a48ca}
+
+\item 
+\hyperlink{classow__core_1_1AngularAcceleration}{Acc} {\bfseries alpha\+\_\+}\hypertarget{classow__core_1_1AngularState_abea19876886c2b88078542cab569e7f0}{}\label{classow__core_1_1AngularState_abea19876886c2b88078542cab569e7f0}
+
+\item 
+\hyperlink{classow__core_1_1Moment}{Effort} {\bfseries mu\+\_\+}\hypertarget{classow__core_1_1AngularState_a16460d18249a21296141874e73c8abed}{}\label{classow__core_1_1AngularState_a16460d18249a21296141874e73c8abed}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Angular\+State$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1AngularState}{Angular\+State} class. 
+
+This class is a container for\+:
+\begin{DoxyItemize}
+\item \hyperlink{classow__core_1_1AngularPosition}{Angular\+Position}
+\item \hyperlink{classow__core_1_1AngularVelocity}{Angular\+Velocity}
+\item \hyperlink{classow__core_1_1AngularAcceleration}{Angular\+Acceleration}
+\item \hyperlink{classow__core_1_1Moment}{Moment} 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/\hyperlink{angular__state_8h}{angular\+\_\+state.\+h}\end{DoxyCompactItemize}

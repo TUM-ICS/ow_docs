@@ -1,0 +1,270 @@
+\hypertarget{quaternion_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/quaternion.h File Reference}
+\label{quaternion_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/quaternion.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/quaternion.\+h}}
+
+
+Contains functions for quaternion related math.  
+
+
+{\ttfamily \#include $<$ow\+\_\+core/types.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Derived1 $>$ }\\bool \hyperlink{quaternion_8h_a6ccde9911ef0dd59fa537f2bc6a5991a}{ow\+::check\+Flip\+Quaternion\+Sign} (\hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&Q)
+\begin{DoxyCompactList}\small\item\em Flip Quaternions sign if scalar part w $<$ 0. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\Vector3 \& \hyperlink{quaternion_8h_aa4628e59453c18542c3f0e788ad49916}{ow\+::quaternion\+Log\+Error} (Vector3 \&e, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&Qd, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&Q)
+\begin{DoxyCompactList}\small\item\em Computes the error between two quaternions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\Vector3 \hyperlink{quaternion_8h_a9cb75bbe86dfd66b22d68e615080eacd}{ow\+::quaternion\+Log\+Error} (const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&Qd, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&Q)
+\begin{DoxyCompactList}\small\item\em Computes the error between two quaternions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\Angular\+Velocity \& \hyperlink{quaternion_8h_a179fa2eb58fdf1498c0f1e17c189a8c3}{ow\+::quaternion2\+Angular\+Velocity\+Inertial} (Angular\+Velocity \&omega, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&QP, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&Q)
+\begin{DoxyCompactList}\small\item\em Computes the angular velocity omega. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ }\\\hyperlink{classow__core_1_1AngularVelocityRef}{ow\+\_\+core\+::\+Angular\+Velocity\+Ref}$<$ Derived1 $>$ \hyperlink{quaternion_8h_aa6087e9d1a7b6ec0ffddd794ec8a4b81}{ow\+::quaternion2\+Angular\+Velocity\+Inertial} (\hyperlink{classow__core_1_1AngularVelocityRef}{ow\+\_\+core\+::\+Angular\+Velocity\+Ref}$<$ Derived1 $>$ omega, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&QP, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived3 $>$ \&Q)
+\begin{DoxyCompactList}\small\item\em Computes the angular velocity omega. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\Angular\+Acceleration \& \hyperlink{quaternion_8h_a5ff7aaca29d8f6db29f7a828e0dd13bb}{ow\+::quaternion2\+Angular\+Acceleration\+Inertial} (Angular\+Acceleration \&alpha, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&Q\+PP, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&Q)
+\begin{DoxyCompactList}\small\item\em Computes the angular acceleration alpha. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ }\\\hyperlink{classow__core_1_1AngularAccelerationRef}{ow\+\_\+core\+::\+Angular\+Acceleration\+Ref}$<$ Derived1 $>$ \hyperlink{quaternion_8h_ae193ea81637dd423f5bfb6a001754090}{ow\+::quaternion2\+Angular\+Acceleration\+Inertial} (\hyperlink{classow__core_1_1AngularAccelerationRef}{ow\+\_\+core\+::\+Angular\+Acceleration\+Ref}$<$ Derived1 $>$ alpha, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&Q\+PP, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived3 $>$ \&Q)
+\begin{DoxyCompactList}\small\item\em Computes the angular acceleration alpha. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\Angular\+Position \& \hyperlink{quaternion_8h_a887d9087c95e0d07e3071df195de4225}{ow\+::quaternion\+Integration} (Angular\+Position \&Qr, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&Q, const \hyperlink{classow__core_1_1AngularVelocityBase}{ow\+\_\+core\+::\+Angular\+Velocity\+Base}$<$ Derived2 $>$ \&omega, \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} dt)
+\begin{DoxyCompactList}\small\item\em Computes the numeric integration of an Angular\+Velocity omega(t) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ }\\\hyperlink{classow__core_1_1AngularPositionRef}{ow\+\_\+core\+::\+Angular\+Position\+Ref}$<$ Derived1 $>$ \hyperlink{quaternion_8h_a0537d77e07680d4cb80713fc1df0cba9}{ow\+::quaternion\+Integration} (\hyperlink{classow__core_1_1AngularPositionRef}{ow\+\_\+core\+::\+Angular\+Position\+Ref}$<$ Derived1 $>$ Qr, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&Q, const \hyperlink{classow__core_1_1AngularVelocityBase}{ow\+\_\+core\+::\+Angular\+Velocity\+Base}$<$ Derived3 $>$ \&omega, \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} dt)
+\begin{DoxyCompactList}\small\item\em Computes the numeric integration of an Angular\+Velocity omega(t) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\Angular\+Position \hyperlink{quaternion_8h_aa25b2c6522fe0f304dea8c1efa1b91fe}{ow\+::slerp} (const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&Qi, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&Qf, \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} s)
+\begin{DoxyCompactList}\small\item\em S\+L\+E\+RP interpolation for Angular\+Position. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\Angular\+Position \hyperlink{quaternion_8h_a958d8d61cef7a41f9bc776294a206740}{ow\+::slerpP} (const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&Qi, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&Qf, \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} s)
+\begin{DoxyCompactList}\small\item\em First derivative of S\+L\+E\+RP. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\Angular\+Position \hyperlink{quaternion_8h_a656201e125c3fb8662918539efb40982}{ow\+::slerp\+PP} (const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&Qi, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&Qf, \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} s)
+\begin{DoxyCompactList}\small\item\em Second derivative of S\+L\+E\+RP. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains functions for quaternion related math. 
+
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287.
+
+\subsection{Function Documentation}
+\index{quaternion.\+h@{quaternion.\+h}!check\+Flip\+Quaternion\+Sign@{check\+Flip\+Quaternion\+Sign}}
+\index{check\+Flip\+Quaternion\+Sign@{check\+Flip\+Quaternion\+Sign}!quaternion.\+h@{quaternion.\+h}}
+\subsubsection[{\texorpdfstring{check\+Flip\+Quaternion\+Sign(ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived1 $>$ \&\+Q)}{checkFlipQuaternionSign(ow_core::QuaternionBase< Derived1 > &Q)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 $>$ bool ow\+::check\+Flip\+Quaternion\+Sign (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&}]{Q}
+\end{DoxyParamCaption}
+)}\hypertarget{quaternion_8h_file_a6ccde9911ef0dd59fa537f2bc6a5991a}{}\label{quaternion_8h_file_a6ccde9911ef0dd59fa537f2bc6a5991a}
+
+
+Flip Quaternions sign if scalar part w $<$ 0. 
+
+Flip Quaternion if scalar part sign smaller than zero, to prevent pi/2 ambiguity in computation of the quaternion log map. \index{quaternion.\+h@{quaternion.\+h}!quaternion2\+Angular\+Acceleration\+Inertial@{quaternion2\+Angular\+Acceleration\+Inertial}}
+\index{quaternion2\+Angular\+Acceleration\+Inertial@{quaternion2\+Angular\+Acceleration\+Inertial}!quaternion.\+h@{quaternion.\+h}}
+\subsubsection[{\texorpdfstring{quaternion2\+Angular\+Acceleration\+Inertial(\+Angular\+Acceleration \&alpha, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived1 $>$ \&\+Q\+P\+P, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived2 $>$ \&\+Q)}{quaternion2AngularAccelerationInertial(AngularAcceleration &alpha, const ow_core::QuaternionBase< Derived1 > &QPP, const ow_core::QuaternionBase< Derived2 > &Q)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 $>$ Angular\+Acceleration\& ow\+::quaternion2\+Angular\+Acceleration\+Inertial (
+\begin{DoxyParamCaption}
+\item[{{\bf Angular\+Acceleration} \&}]{alpha, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&}]{Q\+PP, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&}]{Q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{quaternion_8h_file_a5ff7aaca29d8f6db29f7a828e0dd13bb}{}\label{quaternion_8h_file_a5ff7aaca29d8f6db29f7a828e0dd13bb}
+
+
+Computes the angular acceleration alpha. 
+
+Computes the angular acceleration of a body given the sec. time derivative of its quaternion coefficients Q\+PP and its current orientation Q.
+
+The angular velocity is expressed in the fixed frame base of Q\+\_\+b. omega\+\_\+b = quaternion2\+Angular\+Acceleration\+Inertial(omega\+\_\+b, Q\+P\+P\+\_\+b, Q\+\_\+b)
+
+See\+: \href{https://www.astro.rug.nl/software/kapteyn-beta/_downloads/attitude.pdf}{\tt https\+://www.\+astro.\+rug.\+nl/software/kapteyn-\/beta/\+\_\+downloads/attitude.\+pdf} \index{quaternion.\+h@{quaternion.\+h}!quaternion2\+Angular\+Acceleration\+Inertial@{quaternion2\+Angular\+Acceleration\+Inertial}}
+\index{quaternion2\+Angular\+Acceleration\+Inertial@{quaternion2\+Angular\+Acceleration\+Inertial}!quaternion.\+h@{quaternion.\+h}}
+\subsubsection[{\texorpdfstring{quaternion2\+Angular\+Acceleration\+Inertial(ow\+\_\+core\+::\+Angular\+Acceleration\+Ref$<$ Derived1 $>$ alpha, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived2 $>$ \&\+Q\+P\+P, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived3 $>$ \&\+Q)}{quaternion2AngularAccelerationInertial(ow_core::AngularAccelerationRef< Derived1 > alpha, const ow_core::QuaternionBase< Derived2 > &QPP, const ow_core::QuaternionBase< Derived3 > &Q)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ {\bf ow\+\_\+core\+::\+Angular\+Acceleration\+Ref}$<$Derived1$>$ ow\+::quaternion2\+Angular\+Acceleration\+Inertial (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+\_\+core\+::\+Angular\+Acceleration\+Ref}$<$ Derived1 $>$}]{alpha, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&}]{Q\+PP, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived3 $>$ \&}]{Q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{quaternion_8h_file_ae193ea81637dd423f5bfb6a001754090}{}\label{quaternion_8h_file_ae193ea81637dd423f5bfb6a001754090}
+
+
+Computes the angular acceleration alpha. 
+
+Computes the angular acceleration of a body given the sec. time derivative of its quaternion coefficients Q\+PP and its current orientation Q.
+
+The angular velocity is expressed in the fixed frame base of Q\+\_\+b. omega\+\_\+b = quaternion2\+Angular\+Acceleration\+Inertial(omega\+\_\+b, Q\+P\+P\+\_\+b, Q\+\_\+b)
+
+See\+: \href{https://www.astro.rug.nl/software/kapteyn-beta/_downloads/attitude.pdf}{\tt https\+://www.\+astro.\+rug.\+nl/software/kapteyn-\/beta/\+\_\+downloads/attitude.\+pdf} \index{quaternion.\+h@{quaternion.\+h}!quaternion2\+Angular\+Velocity\+Inertial@{quaternion2\+Angular\+Velocity\+Inertial}}
+\index{quaternion2\+Angular\+Velocity\+Inertial@{quaternion2\+Angular\+Velocity\+Inertial}!quaternion.\+h@{quaternion.\+h}}
+\subsubsection[{\texorpdfstring{quaternion2\+Angular\+Velocity\+Inertial(\+Angular\+Velocity \&omega, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived1 $>$ \&\+Q\+P, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived2 $>$ \&\+Q)}{quaternion2AngularVelocityInertial(AngularVelocity &omega, const ow_core::QuaternionBase< Derived1 > &QP, const ow_core::QuaternionBase< Derived2 > &Q)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 $>$ Angular\+Velocity\& ow\+::quaternion2\+Angular\+Velocity\+Inertial (
+\begin{DoxyParamCaption}
+\item[{{\bf Angular\+Velocity} \&}]{omega, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&}]{QP, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&}]{Q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{quaternion_8h_file_a179fa2eb58fdf1498c0f1e17c189a8c3}{}\label{quaternion_8h_file_a179fa2eb58fdf1498c0f1e17c189a8c3}
+
+
+Computes the angular velocity omega. 
+
+Computes the angular velocity of a body given the time derivative of its quaternion coefficients QP and its current orientation Q.
+
+The angular velocity is expressed in the fixed frame base of Q\+\_\+b. omega\+\_\+b = quaternion2\+Angular\+Velocity\+Inertial(omega\+\_\+b, Q\+P\+\_\+b, Q\+\_\+b)
+
+See\+: \href{https://www.astro.rug.nl/software/kapteyn-beta/_downloads/attitude.pdf}{\tt https\+://www.\+astro.\+rug.\+nl/software/kapteyn-\/beta/\+\_\+downloads/attitude.\+pdf} \index{quaternion.\+h@{quaternion.\+h}!quaternion2\+Angular\+Velocity\+Inertial@{quaternion2\+Angular\+Velocity\+Inertial}}
+\index{quaternion2\+Angular\+Velocity\+Inertial@{quaternion2\+Angular\+Velocity\+Inertial}!quaternion.\+h@{quaternion.\+h}}
+\subsubsection[{\texorpdfstring{quaternion2\+Angular\+Velocity\+Inertial(ow\+\_\+core\+::\+Angular\+Velocity\+Ref$<$ Derived1 $>$ omega, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived2 $>$ \&\+Q\+P, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived3 $>$ \&\+Q)}{quaternion2AngularVelocityInertial(ow_core::AngularVelocityRef< Derived1 > omega, const ow_core::QuaternionBase< Derived2 > &QP, const ow_core::QuaternionBase< Derived3 > &Q)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ {\bf ow\+\_\+core\+::\+Angular\+Velocity\+Ref}$<$Derived1$>$ ow\+::quaternion2\+Angular\+Velocity\+Inertial (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+\_\+core\+::\+Angular\+Velocity\+Ref}$<$ Derived1 $>$}]{omega, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&}]{QP, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived3 $>$ \&}]{Q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{quaternion_8h_file_aa6087e9d1a7b6ec0ffddd794ec8a4b81}{}\label{quaternion_8h_file_aa6087e9d1a7b6ec0ffddd794ec8a4b81}
+
+
+Computes the angular velocity omega. 
+
+Computes the angular velocity of a body given the time derivative of its quaternion coefficients QP and its current orientation Q.
+
+The angular velocity is expressed in the fixed frame base of Q\+\_\+b. omega\+\_\+b = quaternion2\+Angular\+Velocity\+Inertial(omega\+\_\+b, Q\+P\+\_\+b, Q\+\_\+b)
+
+See\+: \href{https://www.astro.rug.nl/software/kapteyn-beta/_downloads/attitude.pdf}{\tt https\+://www.\+astro.\+rug.\+nl/software/kapteyn-\/beta/\+\_\+downloads/attitude.\+pdf} \index{quaternion.\+h@{quaternion.\+h}!quaternion\+Integration@{quaternion\+Integration}}
+\index{quaternion\+Integration@{quaternion\+Integration}!quaternion.\+h@{quaternion.\+h}}
+\subsubsection[{\texorpdfstring{quaternion\+Integration(\+Angular\+Position \&\+Qr, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived1 $>$ \&\+Q, const ow\+\_\+core\+::\+Angular\+Velocity\+Base$<$ Derived2 $>$ \&omega, ow\+::\+Scalar dt)}{quaternionIntegration(AngularPosition &Qr, const ow_core::QuaternionBase< Derived1 > &Q, const ow_core::AngularVelocityBase< Derived2 > &omega, ow::Scalar dt)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 $>$ Angular\+Position\& ow\+::quaternion\+Integration (
+\begin{DoxyParamCaption}
+\item[{{\bf Angular\+Position} \&}]{Qr, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&}]{Q, }
+\item[{const {\bf ow\+\_\+core\+::\+Angular\+Velocity\+Base}$<$ Derived2 $>$ \&}]{omega, }
+\item[{{\bf ow\+::\+Scalar}}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{quaternion_8h_file_a887d9087c95e0d07e3071df195de4225}{}\label{quaternion_8h_file_a887d9087c95e0d07e3071df195de4225}
+
+
+Computes the numeric integration of an Angular\+Velocity omega(t) 
+
+Integrates Angular\+Velocity to Angular\+Position over the time interval dt by assuming a constant velocity over dt.
+
+q\+\_\+\mbox{[}n+1\mbox{]} = Exp(w)$\ast$q\+\_\+\mbox{[}n\mbox{]} Exp(w) = \mbox{[}cos($\vert$$\vert$w$\vert$$\vert$$\ast$dt/2), sin($\vert$$\vert$w$\vert$$\vert$$\ast$dt/2) $\ast$ w / $\vert$$\vert$w$\vert$$\vert$\mbox{]}
+
+The orientation Q\mbox{[}n+1\mbox{]} is expressed in the fixed frame base of Q\+\_\+b. Q\mbox{[}n+1\mbox{]}\+\_\+b = quaternion\+Integration(Q\mbox{[}n+1\mbox{]}\+\_\+b, Q\mbox{[}n\mbox{]}\+\_\+b, omega\+\_\+b) \index{quaternion.\+h@{quaternion.\+h}!quaternion\+Integration@{quaternion\+Integration}}
+\index{quaternion\+Integration@{quaternion\+Integration}!quaternion.\+h@{quaternion.\+h}}
+\subsubsection[{\texorpdfstring{quaternion\+Integration(ow\+\_\+core\+::\+Angular\+Position\+Ref$<$ Derived1 $>$ Qr, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived2 $>$ \&\+Q, const ow\+\_\+core\+::\+Angular\+Velocity\+Base$<$ Derived3 $>$ \&omega, ow\+::\+Scalar dt)}{quaternionIntegration(ow_core::AngularPositionRef< Derived1 > Qr, const ow_core::QuaternionBase< Derived2 > &Q, const ow_core::AngularVelocityBase< Derived3 > &omega, ow::Scalar dt)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 , typename Derived3 $>$ {\bf ow\+\_\+core\+::\+Angular\+Position\+Ref}$<$Derived1$>$ ow\+::quaternion\+Integration (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+\_\+core\+::\+Angular\+Position\+Ref}$<$ Derived1 $>$}]{Qr, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&}]{Q, }
+\item[{const {\bf ow\+\_\+core\+::\+Angular\+Velocity\+Base}$<$ Derived3 $>$ \&}]{omega, }
+\item[{{\bf ow\+::\+Scalar}}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{quaternion_8h_file_a0537d77e07680d4cb80713fc1df0cba9}{}\label{quaternion_8h_file_a0537d77e07680d4cb80713fc1df0cba9}
+
+
+Computes the numeric integration of an Angular\+Velocity omega(t) 
+
+Integrates Angular\+Velocity to Angular\+Position over the time interval dt by assuming a constant velocity over dt.
+
+q\+\_\+\mbox{[}n+1\mbox{]} = Exp(w)$\ast$q\+\_\+\mbox{[}n\mbox{]} Exp(w) = \mbox{[}cos($\vert$$\vert$w$\vert$$\vert$$\ast$dt/2), sin($\vert$$\vert$w$\vert$$\vert$$\ast$dt/2) $\ast$ w / $\vert$$\vert$w$\vert$$\vert$\mbox{]}
+
+The orientation Q\mbox{[}n+1\mbox{]} is expressed in the fixed frame base of Q\+\_\+b. Q\mbox{[}n+1\mbox{]}\+\_\+b = quaternion\+Integration(Q\mbox{[}n+1\mbox{]}\+\_\+b, Q\mbox{[}n\mbox{]}\+\_\+b, omega\+\_\+b) \index{quaternion.\+h@{quaternion.\+h}!quaternion\+Log\+Error@{quaternion\+Log\+Error}}
+\index{quaternion\+Log\+Error@{quaternion\+Log\+Error}!quaternion.\+h@{quaternion.\+h}}
+\subsubsection[{\texorpdfstring{quaternion\+Log\+Error(\+Vector3 \&e, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived1 $>$ \&\+Qd, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived2 $>$ \&\+Q)}{quaternionLogError(Vector3 &e, const ow_core::QuaternionBase< Derived1 > &Qd, const ow_core::QuaternionBase< Derived2 > &Q)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 $>$ Vector3\& ow\+::quaternion\+Log\+Error (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3} \&}]{e, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&}]{Qd, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&}]{Q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{quaternion_8h_file_aa4628e59453c18542c3f0e788ad49916}{}\label{quaternion_8h_file_aa4628e59453c18542c3f0e788ad49916}
+
+
+Computes the error between two quaternions. 
+
+Computes the error between a desired quaternion Qd and the current quaterion Q measured in the tangential vector space of S3.
+
+The error is expressed within the base frame of Qe and Q. e\+\_\+b = quaternion\+Log\+Error(\+Qe\+\_\+b, Q\+\_\+b) \index{quaternion.\+h@{quaternion.\+h}!quaternion\+Log\+Error@{quaternion\+Log\+Error}}
+\index{quaternion\+Log\+Error@{quaternion\+Log\+Error}!quaternion.\+h@{quaternion.\+h}}
+\subsubsection[{\texorpdfstring{quaternion\+Log\+Error(const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived1 $>$ \&\+Qd, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived2 $>$ \&\+Q)}{quaternionLogError(const ow_core::QuaternionBase< Derived1 > &Qd, const ow_core::QuaternionBase< Derived2 > &Q)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 $>$ Vector3 ow\+::quaternion\+Log\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&}]{Qd, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&}]{Q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{quaternion_8h_file_a9cb75bbe86dfd66b22d68e615080eacd}{}\label{quaternion_8h_file_a9cb75bbe86dfd66b22d68e615080eacd}
+
+
+Computes the error between two quaternions. 
+
+Computes the error between a desired quaternion Qd and the current quaterion Q measured in the tangential vector space of S3.
+
+The error is expressed within the base frame of Qe and Q. e\+\_\+b = quaternion\+Log\+Error(\+Qe\+\_\+b, Q\+\_\+b) \index{quaternion.\+h@{quaternion.\+h}!slerp@{slerp}}
+\index{slerp@{slerp}!quaternion.\+h@{quaternion.\+h}}
+\subsubsection[{\texorpdfstring{slerp(const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived1 $>$ \&\+Qi, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived2 $>$ \&\+Qf, ow\+::\+Scalar s)}{slerp(const ow_core::QuaternionBase< Derived1 > &Qi, const ow_core::QuaternionBase< Derived2 > &Qf, ow::Scalar s)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 $>$ Angular\+Position ow\+::slerp (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&}]{Qi, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&}]{Qf, }
+\item[{{\bf ow\+::\+Scalar}}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{quaternion_8h_file_aa25b2c6522fe0f304dea8c1efa1b91fe}{}\label{quaternion_8h_file_aa25b2c6522fe0f304dea8c1efa1b91fe}
+
+
+S\+L\+E\+RP interpolation for Angular\+Position. 
+
+Interpolate between intial Qi and final Qf Angular\+Position.
+
+See\+: \href{https://en.wikipedia.org/wiki/Slerp}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Slerp} \index{quaternion.\+h@{quaternion.\+h}!slerpP@{slerpP}}
+\index{slerpP@{slerpP}!quaternion.\+h@{quaternion.\+h}}
+\subsubsection[{\texorpdfstring{slerp\+P(const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived1 $>$ \&\+Qi, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived2 $>$ \&\+Qf, ow\+::\+Scalar s)}{slerpP(const ow_core::QuaternionBase< Derived1 > &Qi, const ow_core::QuaternionBase< Derived2 > &Qf, ow::Scalar s)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 $>$ Angular\+Position ow\+::slerpP (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&}]{Qi, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&}]{Qf, }
+\item[{{\bf ow\+::\+Scalar}}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{quaternion_8h_file_a958d8d61cef7a41f9bc776294a206740}{}\label{quaternion_8h_file_a958d8d61cef7a41f9bc776294a206740}
+
+
+First derivative of S\+L\+E\+RP. 
+
+First Order Derivate of interpolation between intial and final Angular\+Position wrt to parameterization s.
+
+\begin{DoxyNote}{Note}
+This is the derivative of the quaternion coefficients, not the time derivative (angular velocities).
+\end{DoxyNote}
+QsP = d slerp(\+Qi,\+Qf,s) / ds
+
+See\+: \href{https://en.wikipedia.org/wiki/Slerp}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Slerp} \index{quaternion.\+h@{quaternion.\+h}!slerp\+PP@{slerp\+PP}}
+\index{slerp\+PP@{slerp\+PP}!quaternion.\+h@{quaternion.\+h}}
+\subsubsection[{\texorpdfstring{slerp\+P\+P(const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived1 $>$ \&\+Qi, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived2 $>$ \&\+Qf, ow\+::\+Scalar s)}{slerpPP(const ow_core::QuaternionBase< Derived1 > &Qi, const ow_core::QuaternionBase< Derived2 > &Qf, ow::Scalar s)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 $>$ Angular\+Position ow\+::slerp\+PP (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&}]{Qi, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&}]{Qf, }
+\item[{{\bf ow\+::\+Scalar}}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{quaternion_8h_file_a656201e125c3fb8662918539efb40982}{}\label{quaternion_8h_file_a656201e125c3fb8662918539efb40982}
+
+
+Second derivative of S\+L\+E\+RP. 
+
+Second Order Derivate of interpolation between intial and final Angular\+Position wrt to parameterization s.
+
+Qs\+PP = d2 slerp(\+Qi,\+Qf,s) / ds2
+
+See\+: \href{https://en.wikipedia.org/wiki/Slerp}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Slerp} 

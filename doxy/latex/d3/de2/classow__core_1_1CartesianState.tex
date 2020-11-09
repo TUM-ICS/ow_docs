@@ -1,0 +1,148 @@
+\hypertarget{classow__core_1_1CartesianState}{}\section{ow\+\_\+core\+:\+:Cartesian\+State$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1CartesianState}\index{ow\+\_\+core\+::\+Cartesian\+State$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Cartesian\+State$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1CartesianState}{Cartesian\+State} class.  
+
+
+
+
+{\ttfamily \#include $<$cartesian\+\_\+state.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Cartesian\+State$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d3/de2/classow__core_1_1CartesianState}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1CartesianState_acc5cc577ffb21c45ad439b989272c15c}{}\label{classow__core_1_1CartesianState_acc5cc577ffb21c45ad439b989272c15c}
+
+\item 
+typedef \hyperlink{classow__core_1_1StateBase}{State\+Base}$<$ \hyperlink{classow__core_1_1CartesianState}{Cartesian\+State}$<$ Scalar $>$ $>$ {\bfseries Base}\hypertarget{classow__core_1_1CartesianState_a54744b38e43a0930b4c6987cdb36d716}{}\label{classow__core_1_1CartesianState_a54744b38e43a0930b4c6987cdb36d716}
+
+\item 
+typedef \hyperlink{classow__core_1_1CartesianPosition}{Cartesian\+Position}$<$ Scalar $>$ {\bfseries Pos}\hypertarget{classow__core_1_1CartesianState_a1fee95dce7b56af8614390769dd1e661}{}\label{classow__core_1_1CartesianState_a1fee95dce7b56af8614390769dd1e661}
+
+\item 
+typedef \hyperlink{classow__core_1_1CartesianVelocity}{Cartesian\+Velocity}$<$ Scalar $>$ {\bfseries Vel}\hypertarget{classow__core_1_1CartesianState_a418a6e9a558fa936f2ce07b3997a422c}{}\label{classow__core_1_1CartesianState_a418a6e9a558fa936f2ce07b3997a422c}
+
+\item 
+typedef \hyperlink{classow__core_1_1CartesianAcceleration}{Cartesian\+Acceleration}$<$ Scalar $>$ {\bfseries Acc}\hypertarget{classow__core_1_1CartesianState_aaeb96ae38e8a9c024b324deeca77091a}{}\label{classow__core_1_1CartesianState_aaeb96ae38e8a9c024b324deeca77091a}
+
+\item 
+typedef \hyperlink{classow__core_1_1Wrench}{Wrench}$<$ Scalar $>$ {\bfseries Effort}\hypertarget{classow__core_1_1CartesianState_af34d98a159f1d3ab835ec38d936efcfd}{}\label{classow__core_1_1CartesianState_af34d98a159f1d3ab835ec38d936efcfd}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1CartesianState_ab72e1015087e08ad7a22b3342e3c0d84}{Cartesian\+State} ()\hypertarget{classow__core_1_1CartesianState_ab72e1015087e08ad7a22b3342e3c0d84}{}\label{classow__core_1_1CartesianState_ab72e1015087e08ad7a22b3342e3c0d84}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState_ae2b25e7a201c4155de8aba2f5d52bd1f}{Cartesian\+State} (const \hyperlink{classow__core_1_1CartesianState}{Cartesian\+State} \&other)\hypertarget{classow__core_1_1CartesianState_ae2b25e7a201c4155de8aba2f5d52bd1f}{}\label{classow__core_1_1CartesianState_ae2b25e7a201c4155de8aba2f5d52bd1f}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState_a26d23a032349c0d75dea02d0d92b64cf}{Cartesian\+State} (const \hyperlink{classow__core_1_1StateBase}{Base} \&other)\hypertarget{classow__core_1_1CartesianState_a26d23a032349c0d75dea02d0d92b64cf}{}\label{classow__core_1_1CartesianState_a26d23a032349c0d75dea02d0d92b64cf}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState_acaf8cf11d5bed1ac921bc169ced02ad2}{Cartesian\+State} (const \hyperlink{classow__core_1_1CartesianPosition}{Pos} \&X, const \hyperlink{classow__core_1_1CartesianVelocity}{Vel} \&XP=Vel\+::\+Zero(), const \hyperlink{classow__core_1_1CartesianAcceleration}{Acc} \&X\+PP=Acc\+::\+Zero(), const \hyperlink{classow__core_1_1Wrench}{Effort} \&W=Effort\+::\+Zero())\hypertarget{classow__core_1_1CartesianState_acaf8cf11d5bed1ac921bc169ced02ad2}{}\label{classow__core_1_1CartesianState_acaf8cf11d5bed1ac921bc169ced02ad2}
+
+\begin{DoxyCompactList}\small\item\em Constructor from sub elements. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianPosition}{Pos} \& {\bfseries X} ()\hypertarget{classow__core_1_1CartesianState_a3870851df3fbcc4e947030e62a98b427}{}\label{classow__core_1_1CartesianState_a3870851df3fbcc4e947030e62a98b427}
+
+\item 
+\hyperlink{classow__core_1_1CartesianPosition}{Pos} \& {\bfseries pos} ()\hypertarget{classow__core_1_1CartesianState_a82c6c6fd496532b0a427f4ed2a6f78d4}{}\label{classow__core_1_1CartesianState_a82c6c6fd496532b0a427f4ed2a6f78d4}
+
+\item 
+const \hyperlink{classow__core_1_1CartesianPosition}{Pos} \& {\bfseries X} () const \hypertarget{classow__core_1_1CartesianState_a0a756fe8d2794a40e8cf644f5ad91b56}{}\label{classow__core_1_1CartesianState_a0a756fe8d2794a40e8cf644f5ad91b56}
+
+\item 
+const \hyperlink{classow__core_1_1CartesianPosition}{Pos} \& {\bfseries pos} () const \hypertarget{classow__core_1_1CartesianState_add66825b22d1839cf5da00ea984d12f4}{}\label{classow__core_1_1CartesianState_add66825b22d1839cf5da00ea984d12f4}
+
+\item 
+\hyperlink{classow__core_1_1CartesianVelocity}{Vel} \& {\bfseries XP} ()\hypertarget{classow__core_1_1CartesianState_a213ff6ada1a8162451bc84cd4ca064c1}{}\label{classow__core_1_1CartesianState_a213ff6ada1a8162451bc84cd4ca064c1}
+
+\item 
+\hyperlink{classow__core_1_1CartesianVelocity}{Vel} \& {\bfseries vel} ()\hypertarget{classow__core_1_1CartesianState_aaf991e79ca484785cd696b46d087c721}{}\label{classow__core_1_1CartesianState_aaf991e79ca484785cd696b46d087c721}
+
+\item 
+const \hyperlink{classow__core_1_1CartesianVelocity}{Vel} \& {\bfseries XP} () const \hypertarget{classow__core_1_1CartesianState_afa840083fe8e7cd304a1f34e0219dda7}{}\label{classow__core_1_1CartesianState_afa840083fe8e7cd304a1f34e0219dda7}
+
+\item 
+const \hyperlink{classow__core_1_1CartesianVelocity}{Vel} \& {\bfseries vel} () const \hypertarget{classow__core_1_1CartesianState_aa9596951a1c857173cb21c24ec0041f9}{}\label{classow__core_1_1CartesianState_aa9596951a1c857173cb21c24ec0041f9}
+
+\item 
+\hyperlink{classow__core_1_1CartesianAcceleration}{Acc} \& {\bfseries X\+PP} ()\hypertarget{classow__core_1_1CartesianState_a0fcc7e072e9d5e62f97e68c9ed1c49a0}{}\label{classow__core_1_1CartesianState_a0fcc7e072e9d5e62f97e68c9ed1c49a0}
+
+\item 
+\hyperlink{classow__core_1_1CartesianAcceleration}{Acc} \& {\bfseries acc} ()\hypertarget{classow__core_1_1CartesianState_ab0de5967533571579bd3c03e68e25606}{}\label{classow__core_1_1CartesianState_ab0de5967533571579bd3c03e68e25606}
+
+\item 
+const \hyperlink{classow__core_1_1CartesianAcceleration}{Acc} \& {\bfseries X\+PP} () const \hypertarget{classow__core_1_1CartesianState_a556bf6ea85c6159ce67feccabfc4f732}{}\label{classow__core_1_1CartesianState_a556bf6ea85c6159ce67feccabfc4f732}
+
+\item 
+const \hyperlink{classow__core_1_1CartesianAcceleration}{Acc} \& {\bfseries acc} () const \hypertarget{classow__core_1_1CartesianState_a448112790564b1a5b2a1122048c3ea6b}{}\label{classow__core_1_1CartesianState_a448112790564b1a5b2a1122048c3ea6b}
+
+\item 
+\hyperlink{classow__core_1_1Wrench}{Effort} \& {\bfseries W} ()\hypertarget{classow__core_1_1CartesianState_a4f46894863ebe4aea3724ea11e32919a}{}\label{classow__core_1_1CartesianState_a4f46894863ebe4aea3724ea11e32919a}
+
+\item 
+\hyperlink{classow__core_1_1Wrench}{Effort} \& {\bfseries effort} ()\hypertarget{classow__core_1_1CartesianState_ad3ab6e2e08f4bf14031f260c530ad466}{}\label{classow__core_1_1CartesianState_ad3ab6e2e08f4bf14031f260c530ad466}
+
+\item 
+const \hyperlink{classow__core_1_1Wrench}{Effort} \& {\bfseries W} () const \hypertarget{classow__core_1_1CartesianState_aba6fb792e37871aa4a04791ce7ba4a19}{}\label{classow__core_1_1CartesianState_aba6fb792e37871aa4a04791ce7ba4a19}
+
+\item 
+const \hyperlink{classow__core_1_1Wrench}{Effort} \& {\bfseries effort} () const \hypertarget{classow__core_1_1CartesianState_a9dbadf019b5a5c23a837aeda93a16425}{}\label{classow__core_1_1CartesianState_a9dbadf019b5a5c23a837aeda93a16425}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{Cartesian\+State} \& \hyperlink{classow__core_1_1CartesianState_a5d2ca3a59e88ba3cdced4fc5dbb3600a}{operator=} (const \hyperlink{classow__core_1_1CartesianState}{Cartesian\+State} \&other)\hypertarget{classow__core_1_1CartesianState_a5d2ca3a59e88ba3cdced4fc5dbb3600a}{}\label{classow__core_1_1CartesianState_a5d2ca3a59e88ba3cdced4fc5dbb3600a}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{Cartesian\+State} \& \hyperlink{classow__core_1_1CartesianState_a22b225fef674b6cd271f876999c62ab0}{operator=} (const ow\+\_\+msgs\+::\+Cartesian\+State \&msg)\hypertarget{classow__core_1_1CartesianState_a22b225fef674b6cd271f876999c62ab0}{}\label{classow__core_1_1CartesianState_a22b225fef674b6cd271f876999c62ab0}
+
+\begin{DoxyCompactList}\small\item\em Assignment of ow\+\_\+msgs\+::\+Cartesian\+State. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState_ab0f5033bd10e8a411668f1aec838a158}{operator ow\+\_\+msgs\+::\+Cartesian\+State} () const \hypertarget{classow__core_1_1CartesianState_ab0f5033bd10e8a411668f1aec838a158}{}\label{classow__core_1_1CartesianState_ab0f5033bd10e8a411668f1aec838a158}
+
+\begin{DoxyCompactList}\small\item\em Conversion to ow\+\_\+msgs\+::\+Cartesian\+State. \end{DoxyCompactList}\item 
+ow\+\_\+msgs\+::\+Cartesian\+State \hyperlink{classow__core_1_1CartesianState_aec96a9333ff1180a95db8df0d7b0d820}{to\+Cartesian\+State\+Msg} () const \hypertarget{classow__core_1_1CartesianState_aec96a9333ff1180a95db8df0d7b0d820}{}\label{classow__core_1_1CartesianState_aec96a9333ff1180a95db8df0d7b0d820}
+
+\begin{DoxyCompactList}\small\item\em Conversion to ow\+\_\+msgs\+::\+Cartesian\+State. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1CartesianPosition}{Pos} {\bfseries X\+\_\+}\hypertarget{classow__core_1_1CartesianState_afeee700935f8989cefcf71d65496a2fa}{}\label{classow__core_1_1CartesianState_afeee700935f8989cefcf71d65496a2fa}
+
+\item 
+\hyperlink{classow__core_1_1CartesianVelocity}{Vel} {\bfseries X\+P\+\_\+}\hypertarget{classow__core_1_1CartesianState_ac106f6588e71146d9baeafb1df563c26}{}\label{classow__core_1_1CartesianState_ac106f6588e71146d9baeafb1df563c26}
+
+\item 
+\hyperlink{classow__core_1_1CartesianAcceleration}{Acc} {\bfseries X\+P\+P\+\_\+}\hypertarget{classow__core_1_1CartesianState_ac32a67aff2ae2af04f5ae5883a43db94}{}\label{classow__core_1_1CartesianState_ac32a67aff2ae2af04f5ae5883a43db94}
+
+\item 
+\hyperlink{classow__core_1_1Wrench}{Effort} {\bfseries W\+\_\+}\hypertarget{classow__core_1_1CartesianState_af9e948b5817926fc4c6510ef78e1a1a6}{}\label{classow__core_1_1CartesianState_af9e948b5817926fc4c6510ef78e1a1a6}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Cartesian\+State$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1CartesianState}{Cartesian\+State} class. 
+
+This class is a container for\+:
+\begin{DoxyItemize}
+\item \hyperlink{classow__core_1_1CartesianPosition}{Cartesian\+Position}
+\item \hyperlink{classow__core_1_1CartesianVelocity}{Cartesian\+Velocity}
+\item \hyperlink{classow__core_1_1CartesianAcceleration}{Cartesian\+Acceleration}
+\item \hyperlink{classow__core_1_1Wrench}{Wrench} 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/\hyperlink{cartesian__state_8h}{cartesian\+\_\+state.\+h}\end{DoxyCompactItemize}

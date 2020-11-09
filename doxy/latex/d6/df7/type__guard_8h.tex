@@ -1,0 +1,73 @@
+\hypertarget{type__guard_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/utilities/type\+\_\+guard.h File Reference}
+\label{type__guard_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/utilities/type\+\_\+guard.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/utilities/type\+\_\+guard.\+h}}
+
+
+Contains the utilities for enhancing the type safety of type classes.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classow__core_1_1TypeGuard}{ow\+\_\+core\+::\+Type\+Guard}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classow__core_1_1TypeGuard}{Type\+Guard} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{type__guard_8h_a7eacb7a60e092553b55c91890bc1a641}{O\+W\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+U\+A\+RD}(Class)
+\begin{DoxyCompactList}\small\item\em Type guard macro for type classes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the utilities for enhancing the type safety of type classes. 
+
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287.
+
+\subsection{Macro Definition Documentation}
+\index{type\+\_\+guard.\+h@{type\+\_\+guard.\+h}!O\+W\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+U\+A\+RD@{O\+W\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+U\+A\+RD}}
+\index{O\+W\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+U\+A\+RD@{O\+W\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+U\+A\+RD}!type\+\_\+guard.\+h@{type\+\_\+guard.\+h}}
+\subsubsection[{\texorpdfstring{O\+W\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+U\+A\+RD}{OW_TYPE_GUARD}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+W\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+U\+A\+RD(
+\begin{DoxyParamCaption}
+\item[{}]{Class}
+\end{DoxyParamCaption}
+)}\hypertarget{type__guard_8h_a7eacb7a60e092553b55c91890bc1a641}{}\label{type__guard_8h_a7eacb7a60e092553b55c91890bc1a641}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{protected}: \(\backslash\)
+    Class(\textcolor{keyword}{const} TypeGuard&); \(\backslash\)
+    Class& operator=(\textcolor{keyword}{const} TypeGuard&);
+\end{DoxyCode}
+
+
+Type guard macro for type classes. 
+
+Place this marco on the very top of the type class that drives from the Type\+Guard class. 

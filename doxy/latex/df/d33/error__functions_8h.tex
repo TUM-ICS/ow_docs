@@ -1,0 +1,179 @@
+\hypertarget{error__functions_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/error\+\_\+functions.h File Reference}
+\label{error__functions_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/error\+\_\+functions.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/error\+\_\+functions.\+h}}
+{\ttfamily \#include $<$ow\+\_\+core/math/quaternion.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Cartesian\+Vector \& \hyperlink{error__functions_8h_aa6e7aab133a1ca89003d8f98d9ad4d36}{ow\+::cartesian\+Error} (Cartesian\+Vector \&e, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&Xd, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&X)
+\begin{DoxyCompactList}\small\item\em Cartesian\+Transformation Error. \end{DoxyCompactList}\item 
+Cartesian\+Vector \hyperlink{error__functions_8h_aa015c590c2b0eff8a541159707c1796e}{ow\+::cartesian\+Error} (const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&Xd, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&X)
+\begin{DoxyCompactList}\small\item\em Cartesian\+Transformation Error. \end{DoxyCompactList}\item 
+Cartesian\+Vector \& \hyperlink{error__functions_8h_a2e6a92cfbbe9c9cdf32e490f1a152ad2}{ow\+::cartesian\+Error} (Cartesian\+Vector \&e, const \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&Td, const \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&T)
+\begin{DoxyCompactList}\small\item\em Cartesian\+Transformation Error. \end{DoxyCompactList}\item 
+Cartesian\+Vector \hyperlink{error__functions_8h_ae8d14c155d47fcc9d1041038c6d08b83}{ow\+::cartesian\+Error} (const \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&Td, const \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&T)
+\begin{DoxyCompactList}\small\item\em Cartesian\+Transformation Error. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\\hyperlink{classow__core_1_1AngularPosition}{ow\+::\+Angular\+Position} \hyperlink{error__functions_8h_a3ad6fd6d97108c67c405e76533205c67}{ow\+::shortest\+Path} (const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&Qd, const \hyperlink{classow__core_1_1QuaternionBase}{ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&Q)
+\begin{DoxyCompactList}\small\item\em Compute the shortest connection between two Quaternions. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \hyperlink{error__functions_8h_a34526917037fee2153d8c0df4f7cf20c}{ow\+::shortest\+Path} (const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&Xd, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&X)
+\begin{DoxyCompactList}\small\item\em Compute the shortest connection between two Cartesian\+Position. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived1 , typename Derived2 $>$ }\\Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \hyperlink{error__functions_8h_abb6ed85664d14e1946a8ff5d3b33b810}{ow\+::shortest\+Path} (const Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&xd, const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&x)
+\begin{DoxyCompactList}\small\item\em Compute the shortest connection between two Vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287. 
+
+\subsection{Function Documentation}
+\index{error\+\_\+functions.\+h@{error\+\_\+functions.\+h}!cartesian\+Error@{cartesian\+Error}}
+\index{cartesian\+Error@{cartesian\+Error}!error\+\_\+functions.\+h@{error\+\_\+functions.\+h}}
+\subsubsection[{\texorpdfstring{cartesian\+Error(\+Cartesian\+Vector \&e, const ow\+::\+Cartesian\+Position \&\+Xd, const ow\+::\+Cartesian\+Position \&\+X)}{cartesianError(CartesianVector &e, const ow::CartesianPosition &Xd, const ow::CartesianPosition &X)}}]{\setlength{\rightskip}{0pt plus 5cm}Cartesian\+Vector\& ow\+::cartesian\+Error (
+\begin{DoxyParamCaption}
+\item[{{\bf Cartesian\+Vector} \&}]{e, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{Xd, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{X}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{error__functions_8h_file_aa6e7aab133a1ca89003d8f98d9ad4d36}{}\label{error__functions_8h_file_aa6e7aab133a1ca89003d8f98d9ad4d36}
+
+
+Cartesian\+Transformation Error. 
+
+Computes the Error between a desired Cartesian\+Position Xd\+\_\+base and the current Cartesian\+Position Xcur\+\_\+base.
+
+Important\+: The resulting error vector is expressed within the base coordinate system.
+
+\begin{DoxyReturn}{Returns}
+cartesian error w.\+r.\+t base e\+\_\+b = cartesian\+Error(\+Xd\+\_\+b, X\+\_\+b) 
+\end{DoxyReturn}
+\index{error\+\_\+functions.\+h@{error\+\_\+functions.\+h}!cartesian\+Error@{cartesian\+Error}}
+\index{cartesian\+Error@{cartesian\+Error}!error\+\_\+functions.\+h@{error\+\_\+functions.\+h}}
+\subsubsection[{\texorpdfstring{cartesian\+Error(const ow\+::\+Cartesian\+Position \&\+Xd, const ow\+::\+Cartesian\+Position \&\+X)}{cartesianError(const ow::CartesianPosition &Xd, const ow::CartesianPosition &X)}}]{\setlength{\rightskip}{0pt plus 5cm}Cartesian\+Vector ow\+::cartesian\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{Xd, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{X}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{error__functions_8h_file_aa015c590c2b0eff8a541159707c1796e}{}\label{error__functions_8h_file_aa015c590c2b0eff8a541159707c1796e}
+
+
+Cartesian\+Transformation Error. 
+
+Computes the Error between a desired Cartesian\+Position Xd\+\_\+base and the current Cartesian\+Position Xcur\+\_\+base.
+
+Important\+: The resulting error vector is expressed within the base coordinate system.
+
+\begin{DoxyReturn}{Returns}
+cartesian error w.\+r.\+t base e\+\_\+b = cartesian\+Error(\+Xd\+\_\+b, X\+\_\+b) 
+\end{DoxyReturn}
+\index{error\+\_\+functions.\+h@{error\+\_\+functions.\+h}!cartesian\+Error@{cartesian\+Error}}
+\index{cartesian\+Error@{cartesian\+Error}!error\+\_\+functions.\+h@{error\+\_\+functions.\+h}}
+\subsubsection[{\texorpdfstring{cartesian\+Error(\+Cartesian\+Vector \&e, const ow\+::\+Homogeneous\+Transformation \&\+Td, const ow\+::\+Homogeneous\+Transformation \&\+T)}{cartesianError(CartesianVector &e, const ow::HomogeneousTransformation &Td, const ow::HomogeneousTransformation &T)}}]{\setlength{\rightskip}{0pt plus 5cm}Cartesian\+Vector\& ow\+::cartesian\+Error (
+\begin{DoxyParamCaption}
+\item[{{\bf Cartesian\+Vector} \&}]{e, }
+\item[{const {\bf ow\+::\+Homogeneous\+Transformation} \&}]{Td, }
+\item[{const {\bf ow\+::\+Homogeneous\+Transformation} \&}]{T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{error__functions_8h_file_a2e6a92cfbbe9c9cdf32e490f1a152ad2}{}\label{error__functions_8h_file_a2e6a92cfbbe9c9cdf32e490f1a152ad2}
+
+
+Cartesian\+Transformation Error. 
+
+Computes the Error between a desired Homogeneous\+Transformation Td\+\_\+base and the current Homogeneous\+Transformation Tcur\+\_\+base.
+
+Important\+: The resulting error vector is expressed within the base coordinate system.
+
+\begin{DoxyReturn}{Returns}
+cartesian error w.\+r.\+t base e\+\_\+b = cartesian\+Error(\+Td\+\_\+b, T\+\_\+b) 
+\end{DoxyReturn}
+\index{error\+\_\+functions.\+h@{error\+\_\+functions.\+h}!cartesian\+Error@{cartesian\+Error}}
+\index{cartesian\+Error@{cartesian\+Error}!error\+\_\+functions.\+h@{error\+\_\+functions.\+h}}
+\subsubsection[{\texorpdfstring{cartesian\+Error(const ow\+::\+Homogeneous\+Transformation \&\+Td, const ow\+::\+Homogeneous\+Transformation \&\+T)}{cartesianError(const ow::HomogeneousTransformation &Td, const ow::HomogeneousTransformation &T)}}]{\setlength{\rightskip}{0pt plus 5cm}Cartesian\+Vector ow\+::cartesian\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Homogeneous\+Transformation} \&}]{Td, }
+\item[{const {\bf ow\+::\+Homogeneous\+Transformation} \&}]{T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{error__functions_8h_file_ae8d14c155d47fcc9d1041038c6d08b83}{}\label{error__functions_8h_file_ae8d14c155d47fcc9d1041038c6d08b83}
+
+
+Cartesian\+Transformation Error. 
+
+Computes the Error between a desired Homogeneous\+Transformation Td\+\_\+base and the current Homogeneous\+Transformation Tcur\+\_\+base.
+
+Important\+: The resulting error vector is expressed within the base coordinate system.
+
+\begin{DoxyReturn}{Returns}
+cartesian error w.\+r.\+t base e\+\_\+b = cartesian\+Error(\+Td\+\_\+b, T\+\_\+b) 
+\end{DoxyReturn}
+\index{error\+\_\+functions.\+h@{error\+\_\+functions.\+h}!shortest\+Path@{shortest\+Path}}
+\index{shortest\+Path@{shortest\+Path}!error\+\_\+functions.\+h@{error\+\_\+functions.\+h}}
+\subsubsection[{\texorpdfstring{shortest\+Path(const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived1 $>$ \&\+Qd, const ow\+\_\+core\+::\+Quaternion\+Base$<$ Derived2 $>$ \&\+Q)}{shortestPath(const ow_core::QuaternionBase< Derived1 > &Qd, const ow_core::QuaternionBase< Derived2 > &Q)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 $>$ {\bf ow\+::\+Angular\+Position} ow\+::shortest\+Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived1 $>$ \&}]{Qd, }
+\item[{const {\bf ow\+\_\+core\+::\+Quaternion\+Base}$<$ Derived2 $>$ \&}]{Q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{error__functions_8h_file_a3ad6fd6d97108c67c405e76533205c67}{}\label{error__functions_8h_file_a3ad6fd6d97108c67c405e76533205c67}
+
+
+Compute the shortest connection between two Quaternions. 
+
+\begin{DoxyReturn}{Returns}
+modified desired quaternion. 
+\end{DoxyReturn}
+\index{error\+\_\+functions.\+h@{error\+\_\+functions.\+h}!shortest\+Path@{shortest\+Path}}
+\index{shortest\+Path@{shortest\+Path}!error\+\_\+functions.\+h@{error\+\_\+functions.\+h}}
+\subsubsection[{\texorpdfstring{shortest\+Path(const ow\+::\+Cartesian\+Position \&\+Xd, const ow\+::\+Cartesian\+Position \&\+X)}{shortestPath(const ow::CartesianPosition &Xd, const ow::CartesianPosition &X)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ow\+::\+Cartesian\+Position} ow\+::shortest\+Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{Xd, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{X}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{error__functions_8h_file_a34526917037fee2153d8c0df4f7cf20c}{}\label{error__functions_8h_file_a34526917037fee2153d8c0df4f7cf20c}
+
+
+Compute the shortest connection between two Cartesian\+Position. 
+
+\begin{DoxyReturn}{Returns}
+modified desired Cartesian\+Position. 
+\end{DoxyReturn}
+\index{error\+\_\+functions.\+h@{error\+\_\+functions.\+h}!shortest\+Path@{shortest\+Path}}
+\index{shortest\+Path@{shortest\+Path}!error\+\_\+functions.\+h@{error\+\_\+functions.\+h}}
+\subsubsection[{\texorpdfstring{shortest\+Path(const Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&xd, const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&x)}{shortestPath(const Eigen::MatrixBase< Derived1 > &xd, const Eigen::MatrixBase< Derived2 > &x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived1 , typename Derived2 $>$ Eigen\+::\+Matrix\+Base$<$Derived1$>$ ow\+::shortest\+Path (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived1 $>$ \&}]{xd, }
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived2 $>$ \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{error__functions_8h_file_abb6ed85664d14e1946a8ff5d3b33b810}{}\label{error__functions_8h_file_abb6ed85664d14e1946a8ff5d3b33b810}
+
+
+Compute the shortest connection between two Vectors. 
+
+\begin{DoxyReturn}{Returns}
+the desired Vector. 
+\end{DoxyReturn}

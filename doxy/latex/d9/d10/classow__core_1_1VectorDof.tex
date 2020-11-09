@@ -1,0 +1,74 @@
+\hypertarget{classow__core_1_1VectorDof}{}\section{ow\+\_\+core\+:\+:Vector\+Dof$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$ Class Template Reference}
+\label{classow__core_1_1VectorDof}\index{ow\+\_\+core\+::\+Vector\+Dof$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$@{ow\+\_\+core\+::\+Vector\+Dof$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$}}
+
+
+The \hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} class.  
+
+
+
+
+{\ttfamily \#include $<$vector\+\_\+dof.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Vector\+Dof$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.661721cm]{d9/d10/classow__core_1_1VectorDof}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries Rows\+At\+Compile\+Time} = \+\_\+\+Rows
+ \}\hypertarget{classow__core_1_1VectorDof_af7a9e9c9d14a862d1a52d5a627e7c917}{}\label{classow__core_1_1VectorDof_af7a9e9c9d14a862d1a52d5a627e7c917}
+
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1VectorDof_acf92659e64b4ee228fbf3ae573680655}{}\label{classow__core_1_1VectorDof_acf92659e64b4ee228fbf3ae573680655}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ \+\_\+\+Scalar, Rows\+At\+Compile\+Time, 1 $>$ {\bfseries Base}\hypertarget{classow__core_1_1VectorDof_a92d1b8582f3e6cc859762e9e8938dc43}{}\label{classow__core_1_1VectorDof_a92d1b8582f3e6cc859762e9e8938dc43}
+
+\item 
+typedef \hyperlink{classow__core_1_1VectorBase}{Vector\+Base}$<$ \hyperlink{classow__core_1_1VectorDof}{Vector\+Dof}$<$ Scalar, Rows\+At\+Compile\+Time $>$ $>$ {\bfseries V\+Base}\hypertarget{classow__core_1_1VectorDof_ada558a5587f014075c2b1eff9ac5c41e}{}\label{classow__core_1_1VectorDof_ada558a5587f014075c2b1eff9ac5c41e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1VectorDof_a488ac8cc1bfe0683f6d348eca855735d}{Vector\+Dof} ()\hypertarget{classow__core_1_1VectorDof_a488ac8cc1bfe0683f6d348eca855735d}{}\label{classow__core_1_1VectorDof_a488ac8cc1bfe0683f6d348eca855735d}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1VectorDof_a76248e881b5fd929c545fd8004a29686}{Vector\+Dof} (const \hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} \&other)\hypertarget{classow__core_1_1VectorDof_a76248e881b5fd929c545fd8004a29686}{}\label{classow__core_1_1VectorDof_a76248e881b5fd929c545fd8004a29686}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1VectorDof_a52fb1369e02f8b20b6510f6bdef6ca12}{Vector\+Dof} (const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} \& \hyperlink{classow__core_1_1VectorDof_af3f92efd0ed4277766de7f3be743c43f}{operator=} (const \hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} \&other)\hypertarget{classow__core_1_1VectorDof_af3f92efd0ed4277766de7f3be743c43f}{}\label{classow__core_1_1VectorDof_af3f92efd0ed4277766de7f3be743c43f}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar, int \+\_\+\+Rows = Eigen\+::\+Dynamic$>$\\*
+class ow\+\_\+core\+::\+Vector\+Dof$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$}
+
+The \hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} class. 
+
+The \hyperlink{classow__core_1_1VectorDof}{Vector\+Dof} is of type \hyperlink{classow__core_1_1VectorRef}{Vector\+Ref}. This vector represents the robot\textquotesingle{}s dof and has a fixed size that can not be changed 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Vector\+Dof@{ow\+\_\+core\+::\+Vector\+Dof}!Vector\+Dof@{Vector\+Dof}}
+\index{Vector\+Dof@{Vector\+Dof}!ow\+\_\+core\+::\+Vector\+Dof@{ow\+\_\+core\+::\+Vector\+Dof}}
+\subsubsection[{\texorpdfstring{Vector\+Dof(const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)}{VectorDof(const Eigen::EigenBase< OtherDerived > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar , int \+\_\+\+Rows = Eigen\+::\+Dynamic$>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Vector\+Dof}$<$ \+\_\+\+Scalar, \+\_\+\+Rows $>$\+::{\bf Vector\+Dof} (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1VectorDof_a52fb1369e02f8b20b6510f6bdef6ca12}{}\label{classow__core_1_1VectorDof_a52fb1369e02f8b20b6510f6bdef6ca12}
+
+
+Copy constructor. 
+
+This copy constructor not only works with Eigen matrices but also with their expressions. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/\hyperlink{vector__dof_8h}{vector\+\_\+dof.\+h}\end{DoxyCompactItemize}

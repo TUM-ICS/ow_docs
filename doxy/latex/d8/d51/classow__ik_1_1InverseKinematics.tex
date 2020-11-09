@@ -1,0 +1,144 @@
+\hypertarget{classow__ik_1_1InverseKinematics}{}\section{ow\+\_\+ik\+:\+:Inverse\+Kinematics Class Reference}
+\label{classow__ik_1_1InverseKinematics}\index{ow\+\_\+ik\+::\+Inverse\+Kinematics@{ow\+\_\+ik\+::\+Inverse\+Kinematics}}
+
+
+The \hyperlink{classow__ik_1_1InverseKinematics}{Inverse\+Kinematics} class.  
+
+
+
+
+{\ttfamily \#include $<$inverse\+\_\+kinematics.\+h$>$}
+
+Inheritance diagram for ow\+\_\+ik\+:\+:Inverse\+Kinematics\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d8/d51/classow__ik_1_1InverseKinematics}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow_1_1IInverseKinematics}{ow\+::\+I\+Inverse\+Kinematics} {\bfseries Base}\hypertarget{classow__ik_1_1InverseKinematics_af81d384c3f84c9f9190ea55c3434324b}{}\label{classow__ik_1_1InverseKinematics_af81d384c3f84c9f9190ea55c3434324b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__ik_1_1InverseKinematics_a24a9e26049e403f613316a85a698ec90}{Inverse\+Kinematics} ()\hypertarget{classow__ik_1_1InverseKinematics_a24a9e26049e403f613316a85a698ec90}{}\label{classow__ik_1_1InverseKinematics_a24a9e26049e403f613316a85a698ec90}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classow__ik_1_1InverseKinematics}{Inverse\+Kinematics} Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classow__ik_1_1InverseKinematics_a69c5a3ee0e7c5d5543f834b9b06a5f34}{update} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} \&\hyperlink{classow__ik_1_1InverseKinematics_a5b2e482a9c26e81791e25b947bcb33df}{q}, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&X\+\_\+l\+\_\+w, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&X\+\_\+r\+\_\+w, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&X\+\_\+com\+\_\+w, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&X\+\_\+com\+\_\+hip=\hyperlink{classow__core_1_1StateBase_a82b3a22c15f7c57ad31a0453fcef7428}{ow\+::\+Cartesian\+State\+::\+Zero}())
+\begin{DoxyCompactList}\small\item\em Update joint state of the robot. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} \& \hyperlink{classow__ik_1_1InverseKinematics_a5b2e482a9c26e81791e25b947bcb33df}{q} () const 
+\begin{DoxyCompactList}\small\item\em Access function. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classow__ik_1_1InverseKinematics_a48fe4dc9381542618bbcaf7f8ed74057}{joint\+Index} (const \hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6}{ow\+::\+Foot\+Id} \&ref\+\_\+foot) const \hypertarget{classow__ik_1_1InverseKinematics_a48fe4dc9381542618bbcaf7f8ed74057}{}\label{classow__ik_1_1InverseKinematics_a48fe4dc9381542618bbcaf7f8ed74057}
+
+\begin{DoxyCompactList}\small\item\em get the foot joint index \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classow__ik_1_1InverseKinematics_a5469dd0c342af9bee2b5591d543540ec}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, ros\+::\+Node\+Handle \&nh)\hypertarget{classow__ik_1_1InverseKinematics_a5469dd0c342af9bee2b5591d543540ec}{}\label{classow__ik_1_1InverseKinematics_a5469dd0c342af9bee2b5591d543540ec}
+
+\begin{DoxyCompactList}\small\item\em Initialization of \hyperlink{classow__ik_1_1InverseKinematics}{Inverse\+Kinematics} module. \end{DoxyCompactList}\item 
+void \hyperlink{classow__ik_1_1InverseKinematics_a1deda077f2c28bc6ed71ae3fff79e785}{update\+Leg\+Targets} (const \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&T\+\_\+odom\+\_\+w, const \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&T\+\_\+foot\+\_\+w, const \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&T\+\_\+hip\+\_\+w, \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&T\+\_\+odom\+\_\+hip, \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&T\+\_\+foot\+\_\+hip)
+\begin{DoxyCompactList}\small\item\em Update legs kinematics from the Cartesian\+States of the CoM and the feet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \hyperlink{classow__ik_1_1InverseKinematics_aeb0ed705c9630e46a2654210711a626e}{parameter\+\_\+}\hypertarget{classow__ik_1_1InverseKinematics_aeb0ed705c9630e46a2654210711a626e}{}\label{classow__ik_1_1InverseKinematics_aeb0ed705c9630e46a2654210711a626e}
+
+\begin{DoxyCompactList}\small\item\em Configuration of this module. \end{DoxyCompactList}\item 
+\hyperlink{classow__ik_1_1RobotModel}{ow\+\_\+ik\+::\+Robot\+Model} \hyperlink{classow__ik_1_1InverseKinematics_a4cfa04be9d07c075015237fcd562188a}{robot\+\_\+}\hypertarget{classow__ik_1_1InverseKinematics_a4cfa04be9d07c075015237fcd562188a}{}\label{classow__ik_1_1InverseKinematics_a4cfa04be9d07c075015237fcd562188a}
+
+\begin{DoxyCompactList}\small\item\em Robot model for ik computation. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \hyperlink{classow__ik_1_1InverseKinematics_a53203946edd609e6552821a1cbac921b}{limb\+\_\+ids\+\_\+}\hypertarget{classow__ik_1_1InverseKinematics_a53203946edd609e6552821a1cbac921b}{}\label{classow__ik_1_1InverseKinematics_a53203946edd609e6552821a1cbac921b}
+
+\begin{DoxyCompactList}\small\item\em Access ids for robot limbs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__ik_1_1InverseKinematics}{Inverse\+Kinematics} class. 
+
+This class implements the inverse kinematics module of the openwalker framework. It computes the required joint angles of both legs given the input the commanded cartesian position of the com and both feets. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+ik\+::\+Inverse\+Kinematics@{ow\+\_\+ik\+::\+Inverse\+Kinematics}!q@{q}}
+\index{q@{q}!ow\+\_\+ik\+::\+Inverse\+Kinematics@{ow\+\_\+ik\+::\+Inverse\+Kinematics}}
+\subsubsection[{\texorpdfstring{q() const }{q() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Joint\+State}\& ow\+\_\+ik\+::\+Inverse\+Kinematics\+::q (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__ik_1_1InverseKinematics_a5b2e482a9c26e81791e25b947bcb33df}{}\label{classow__ik_1_1InverseKinematics_a5b2e482a9c26e81791e25b947bcb33df}
+
+
+Access function. 
+
+\begin{DoxyReturn}{Returns}
+Joint\+State of the robot computed by IK. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1IInverseKinematics_ac13eacbbae6e3b5252eef7305689cce1}{ow\+::\+I\+Inverse\+Kinematics}.
+
+\index{ow\+\_\+ik\+::\+Inverse\+Kinematics@{ow\+\_\+ik\+::\+Inverse\+Kinematics}!update@{update}}
+\index{update@{update}!ow\+\_\+ik\+::\+Inverse\+Kinematics@{ow\+\_\+ik\+::\+Inverse\+Kinematics}}
+\subsubsection[{\texorpdfstring{update(ow\+::\+Flags \&flags, const ow\+::\+Joint\+State \&q, const ow\+::\+Cartesian\+State \&\+X\+\_\+l\+\_\+w, const ow\+::\+Cartesian\+State \&\+X\+\_\+r\+\_\+w, const ow\+::\+Cartesian\+State \&\+X\+\_\+com\+\_\+w, const ow\+::\+Cartesian\+State \&\+X\+\_\+com\+\_\+hip=ow\+::\+Cartesian\+State\+::\+Zero())}{update(ow::Flags &flags, const ow::JointState &q, const ow::CartesianState &X_l_w, const ow::CartesianState &X_r_w, const ow::CartesianState &X_com_w, const ow::CartesianState &X_com_hip=ow::CartesianState::Zero())}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+ik\+::\+Inverse\+Kinematics\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const {\bf ow\+::\+Joint\+State} \&}]{q, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{X\+\_\+l\+\_\+w, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{X\+\_\+r\+\_\+w, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{X\+\_\+com\+\_\+w, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{X\+\_\+com\+\_\+hip = {\ttfamily {\bf ow\+::\+Cartesian\+State\+::\+Zero}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__ik_1_1InverseKinematics_a69c5a3ee0e7c5d5543f834b9b06a5f34}{}\label{classow__ik_1_1InverseKinematics_a69c5a3ee0e7c5d5543f834b9b06a5f34}
+
+
+Update joint state of the robot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & Current Joint\+State.\\
+\hline
+{\em X\+\_\+l\+\_\+w} & Left foot w.\+r.\+t world.\\
+\hline
+{\em X\+\_\+r\+\_\+w} & Left foot w.\+r.\+t world.\\
+\hline
+{\em X\+\_\+com\+\_\+w} & Center of mass w.\+r.\+t world\\
+\hline
+{\em X\+\_\+com\+\_\+hip} & Center of mass w.\+r.\+t hip \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+ik\+::\+Inverse\+Kinematics@{ow\+\_\+ik\+::\+Inverse\+Kinematics}!update\+Leg\+Targets@{update\+Leg\+Targets}}
+\index{update\+Leg\+Targets@{update\+Leg\+Targets}!ow\+\_\+ik\+::\+Inverse\+Kinematics@{ow\+\_\+ik\+::\+Inverse\+Kinematics}}
+\subsubsection[{\texorpdfstring{update\+Leg\+Targets(const ow\+::\+Homogeneous\+Transformation \&\+T\+\_\+odom\+\_\+w, const ow\+::\+Homogeneous\+Transformation \&\+T\+\_\+foot\+\_\+w, const ow\+::\+Homogeneous\+Transformation \&\+T\+\_\+hip\+\_\+w, ow\+::\+Homogeneous\+Transformation \&\+T\+\_\+odom\+\_\+hip, ow\+::\+Homogeneous\+Transformation \&\+T\+\_\+foot\+\_\+hip)}{updateLegTargets(const ow::HomogeneousTransformation &T_odom_w, const ow::HomogeneousTransformation &T_foot_w, const ow::HomogeneousTransformation &T_hip_w, ow::HomogeneousTransformation &T_odom_hip, ow::HomogeneousTransformation &T_foot_hip)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+ik\+::\+Inverse\+Kinematics\+::update\+Leg\+Targets (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Homogeneous\+Transformation} \&}]{T\+\_\+odom\+\_\+w, }
+\item[{const {\bf ow\+::\+Homogeneous\+Transformation} \&}]{T\+\_\+foot\+\_\+w, }
+\item[{const {\bf ow\+::\+Homogeneous\+Transformation} \&}]{T\+\_\+hip\+\_\+w, }
+\item[{{\bf ow\+::\+Homogeneous\+Transformation} \&}]{T\+\_\+odom\+\_\+hip, }
+\item[{{\bf ow\+::\+Homogeneous\+Transformation} \&}]{T\+\_\+foot\+\_\+hip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classow__ik_1_1InverseKinematics_a1deda077f2c28bc6ed71ae3fff79e785}{}\label{classow__ik_1_1InverseKinematics_a1deda077f2c28bc6ed71ae3fff79e785}
+
+
+Update legs kinematics from the Cartesian\+States of the CoM and the feet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+\_\+odom\+\_\+w} & Homogeneous\+Transformation from odometry (reference foot) frame to world frame.\\
+\hline
+{\em T\+\_\+foot\+\_\+w} & Homogeneous\+Transformation from other foot frame to world frame.\\
+\hline
+{\em T\+\_\+hip\+\_\+w} & Homogeneous\+Transformation from hip frame to world frame.\\
+\hline
+{\em T\+\_\+odom\+\_\+hip} & Homogeneous\+Transformation from odometry (reference foot) frame to world frame.\\
+\hline
+{\em T\+\_\+foot\+\_\+hip} & Homogeneous\+Transformation from other foot frame to world hip frame. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+ik/include/ow\+\_\+ik/\hyperlink{inverse__kinematics_8h}{inverse\+\_\+kinematics.\+h}\end{DoxyCompactItemize}

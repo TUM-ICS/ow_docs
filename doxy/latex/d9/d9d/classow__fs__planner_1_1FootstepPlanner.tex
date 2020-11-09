@@ -1,0 +1,366 @@
+\hypertarget{classow__fs__planner_1_1FootstepPlanner}{}\section{ow\+\_\+fs\+\_\+planner\+:\+:Footstep\+Planner Class Reference}
+\label{classow__fs__planner_1_1FootstepPlanner}\index{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}}
+
+
+The \hyperlink{classow__fs__planner_1_1FootstepPlanner}{Footstep\+Planner} class.  
+
+
+
+
+{\ttfamily \#include $<$footstep\+\_\+planner.\+h$>$}
+
+Inheritance diagram for ow\+\_\+fs\+\_\+planner\+:\+:Footstep\+Planner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d9/d9d/classow__fs__planner_1_1FootstepPlanner}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow_1_1IFootStepPlanner}{ow\+::\+I\+Foot\+Step\+Planner} {\bfseries Base}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a400a6b7a2538f6686385fbf440467a5f}{}\label{classow__fs__planner_1_1FootstepPlanner_a400a6b7a2538f6686385fbf440467a5f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__fs__planner_1_1FootstepPlanner_ab74711c202027c2d873d66f393a38a66}{Footstep\+Planner} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classow__fs__planner_1_1FootstepPlanner_a67002bd419f4926f130709a6fb2dd9c0}{start} (const \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&T\+\_\+l\+\_\+w, const \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&T\+\_\+r\+\_\+w)
+\begin{DoxyCompactList}\small\item\em Initialize foot step planner. \end{DoxyCompactList}\item 
+int \hyperlink{classow__fs__planner_1_1FootstepPlanner_a4ce8ca44c468885d415a3e67bfe863df}{update} (const \hyperlink{classow__core_1_1FootStep}{ow\+::\+Foot\+Step} \&current\+\_\+step)
+\begin{DoxyCompactList}\small\item\em Update footstep plan from current step landing. When the current step is different than the expected step, the following steps shall be adjusted according to the difference. This function should be called as soon as a foot is considered landed. \end{DoxyCompactList}\item 
+const ow\+::\+Foot\+Step\+List \& \hyperlink{classow__fs__planner_1_1FootstepPlanner_a192132ce51f9728fd67908fb27f84f82}{generate\+Fixed\+Plan} (\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} fwd\+\_\+step\+\_\+size, \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} lateral\+\_\+disp, \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} step\+\_\+angle, size\+\_\+t number\+\_\+of\+\_\+steps)
+\begin{DoxyCompactList}\small\item\em Generate a fixed plan from standing position. This is a useful initial motion command for repeatable walking tests. \end{DoxyCompactList}\item 
+const ow\+::\+Foot\+Step\+List \& {\bfseries generate\+Fixed\+Plan} ()\hypertarget{classow__fs__planner_1_1FootstepPlanner_afe59b387df90be76d866bbc7a584af50}{}\label{classow__fs__planner_1_1FootstepPlanner_afe59b387df90be76d866bbc7a584af50}
+
+\item 
+const ow\+::\+Foot\+Step\+List \& \hyperlink{classow__fs__planner_1_1FootstepPlanner_aefad97eb1919dcd3173080446ff4ecde}{plan\+Steps} (const \hyperlink{classow__core_1_1CartesianVelocity}{ow\+::\+Cartesian\+Velocity} \&vel\+Cmd)
+\begin{DoxyCompactList}\small\item\em Generate footstep plan from velocity command. This command generates four step ahead. Just the necessary stepr to plan the D\+CM waypoints. \end{DoxyCompactList}\item 
+const ow\+::\+Foot\+Step\+List \& \hyperlink{classow__fs__planner_1_1FootstepPlanner_ac4d96253fc47ce53f2d3a7707d4faa30}{plan\+Steps} (const double fwd\+\_\+step\+\_\+size=0.\+2, const double lateral\+\_\+disp=0.\+1, const double step\+\_\+angle=0.\+35)
+\begin{DoxyCompactList}\small\item\em Plan a series of steps from kinematic parameters. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1CartesianVelocity}{ow\+::\+Cartesian\+Velocity} \& \hyperlink{classow__fs__planner_1_1FootstepPlanner_a39955b9acc1dd9b8cdbf05d7f2209839}{compute\+Command} (const \hyperlink{classow__core_1_1CartesianVelocity}{ow\+::\+Cartesian\+Velocity} \&vel\+Cmd)
+\begin{DoxyCompactList}\small\item\em Compute direction command for footstep planner from user velocity command. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1CartesianVelocity}{ow\+::\+Cartesian\+Velocity} \& \hyperlink{classow__fs__planner_1_1FootstepPlanner_ac0c2906947e69181360a4701739da499}{compute\+Command} (double fwd\+\_\+step\+\_\+size=0.\+2, double lateral\+\_\+disp=0.\+0, double step\+\_\+angle=0.\+0)
+\begin{DoxyCompactList}\small\item\em Compute direction command for footstep planner from user defined kinematic parameters. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__fs__planner_1_1FootstepPlanner_a87f334479a4d1fe0616d3a7d4ac15a47}{histeresys\+Check} (const double Max\+Lim, const double Min\+Lim, double x)
+\begin{DoxyCompactList}\small\item\em Saturation function for a velocity command. \end{DoxyCompactList}\item 
+void \hyperlink{classow__fs__planner_1_1FootstepPlanner_ab40afe151d6c9b15acc3cc15462c87d7}{print\+Foot\+Steps} ()\hypertarget{classow__fs__planner_1_1FootstepPlanner_ab40afe151d6c9b15acc3cc15462c87d7}{}\label{classow__fs__planner_1_1FootstepPlanner_ab40afe151d6c9b15acc3cc15462c87d7}
+
+\begin{DoxyCompactList}\small\item\em Printout the footstep plan using the R\+O\+S\+\_\+\+I\+N\+F\+O\+\_\+\+S\+T\+R\+E\+AM macro. Use only for debuging. \end{DoxyCompactList}\item 
+virtual const ow\+::\+Foot\+Step\+List \& \hyperlink{classow__fs__planner_1_1FootstepPlanner_a645f6cda432350868a0bb9e78b435462}{foot\+Steps} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classow__fs__planner_1_1FootstepPlanner_ab3240b5742fb9188a5120c558db6c0bd}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, ros\+::\+Node\+Handle \&nh)
+\begin{DoxyCompactList}\small\item\em Initialization of Forward Kinematics module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} {\bfseries parameter\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_ac34a2c98e72cfb569e7ebf34334f72ec}{}\label{classow__fs__planner_1_1FootstepPlanner_ac34a2c98e72cfb569e7ebf34334f72ec}
+
+\item 
+\hyperlink{classow__fs__planner_1_1SingleStepPlanner}{Single\+Step\+Planner} {\bfseries single\+\_\+planner\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a1f8f369a5c8316a3edc43fb9715e6b57}{}\label{classow__fs__planner_1_1FootstepPlanner_a1f8f369a5c8316a3edc43fb9715e6b57}
+
+\item 
+ow\+::\+Foot\+Step\+List \hyperlink{classow__fs__planner_1_1FootstepPlanner_ac8ef04b17c4e275dcd07f63bb10061d0}{foot\+\_\+steps\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_ac8ef04b17c4e275dcd07f63bb10061d0}{}\label{classow__fs__planner_1_1FootstepPlanner_ac8ef04b17c4e275dcd07f63bb10061d0}
+
+\begin{DoxyCompactList}\small\item\em Foot\+Step plan. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1FootStep}{ow\+::\+Foot\+Step} \hyperlink{classow__fs__planner_1_1FootstepPlanner_a6414ac9e520a0ce65eb80ef47abdf154}{current\+\_\+step\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a6414ac9e520a0ce65eb80ef47abdf154}{}\label{classow__fs__planner_1_1FootstepPlanner_a6414ac9e520a0ce65eb80ef47abdf154}
+
+\begin{DoxyCompactList}\small\item\em Last executed step. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__fs__planner_1_1FootstepPlanner_a51b56bbcd36e94246fb35e285195c793}{fixed\+\_\+plan\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a51b56bbcd36e94246fb35e285195c793}{}\label{classow__fs__planner_1_1FootstepPlanner_a51b56bbcd36e94246fb35e285195c793}
+
+\begin{DoxyCompactList}\small\item\em fixed plan flag. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__fs__planner_1_1FootstepPlanner_ac7ae2f76ed515a93f1fd31a98270b1dd}{initialized\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_ac7ae2f76ed515a93f1fd31a98270b1dd}{}\label{classow__fs__planner_1_1FootstepPlanner_ac7ae2f76ed515a93f1fd31a98270b1dd}
+
+\begin{DoxyCompactList}\small\item\em Initialization flag. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__fs__planner_1_1FootstepPlanner_a1cfc78d851e74adf0d8e156666cd9311}{max\+\_\+fwd\+\_\+step\+\_\+size\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a1cfc78d851e74adf0d8e156666cd9311}{}\label{classow__fs__planner_1_1FootstepPlanner_a1cfc78d851e74adf0d8e156666cd9311}
+
+\begin{DoxyCompactList}\small\item\em Max forward step size. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__fs__planner_1_1FootstepPlanner_ab3fefb2f089f03f1713024316e4e5ca7}{max\+\_\+bwd\+\_\+step\+\_\+size\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_ab3fefb2f089f03f1713024316e4e5ca7}{}\label{classow__fs__planner_1_1FootstepPlanner_ab3fefb2f089f03f1713024316e4e5ca7}
+
+\begin{DoxyCompactList}\small\item\em Max Backwards step size. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__fs__planner_1_1FootstepPlanner_a206bbbc585d30a06ec39dee124b07427}{max\+\_\+side\+\_\+step\+\_\+size\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a206bbbc585d30a06ec39dee124b07427}{}\label{classow__fs__planner_1_1FootstepPlanner_a206bbbc585d30a06ec39dee124b07427}
+
+\begin{DoxyCompactList}\small\item\em Max lateral speed. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__fs__planner_1_1FootstepPlanner_af7382a0736bbbfc1a20d3e2f68f4c7e1}{max\+\_\+step\+\_\+angle\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_af7382a0736bbbfc1a20d3e2f68f4c7e1}{}\label{classow__fs__planner_1_1FootstepPlanner_af7382a0736bbbfc1a20d3e2f68f4c7e1}
+
+\begin{DoxyCompactList}\small\item\em Max anglular speed. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__fs__planner_1_1FootstepPlanner_a5ee006d726d9a1967216fa8e84868a5e}{feet\+\_\+separation\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a5ee006d726d9a1967216fa8e84868a5e}{}\label{classow__fs__planner_1_1FootstepPlanner_a5ee006d726d9a1967216fa8e84868a5e}
+
+\begin{DoxyCompactList}\small\item\em Max anglular speed. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classow__fs__planner_1_1FootstepPlanner_a0ec0c7bc1a25c9fedbc637fb20d11f62}{number\+\_\+of\+\_\+steps\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a0ec0c7bc1a25c9fedbc637fb20d11f62}{}\label{classow__fs__planner_1_1FootstepPlanner_a0ec0c7bc1a25c9fedbc637fb20d11f62}
+
+\begin{DoxyCompactList}\small\item\em number of steps to be executed. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__fs__planner_1_1FootstepPlanner_a46b59ac458c6aaf550b172eac3606ce3}{fwd\+\_\+step\+\_\+size\+\_\+cmd\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a46b59ac458c6aaf550b172eac3606ce3}{}\label{classow__fs__planner_1_1FootstepPlanner_a46b59ac458c6aaf550b172eac3606ce3}
+
+\begin{DoxyCompactList}\small\item\em Fixed plan step size command. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__fs__planner_1_1FootstepPlanner_a907ed0842519c8a52e783b630f3d7f05}{lateral\+\_\+disp\+\_\+cmd\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a907ed0842519c8a52e783b630f3d7f05}{}\label{classow__fs__planner_1_1FootstepPlanner_a907ed0842519c8a52e783b630f3d7f05}
+
+\begin{DoxyCompactList}\small\item\em Fixed plan lateral displacement command. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__fs__planner_1_1FootstepPlanner_a0275535d5d082baea651c9390658ac4f}{step\+\_\+angle\+\_\+cmd\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a0275535d5d082baea651c9390658ac4f}{}\label{classow__fs__planner_1_1FootstepPlanner_a0275535d5d082baea651c9390658ac4f}
+
+\begin{DoxyCompactList}\small\item\em Fixed plan angular command. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianVelocity}{ow\+::\+Cartesian\+Velocity} \hyperlink{classow__fs__planner_1_1FootstepPlanner_a876c7256d75416a964b192a39ffa5d7c}{cmd\+\_\+}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a876c7256d75416a964b192a39ffa5d7c}{}\label{classow__fs__planner_1_1FootstepPlanner_a876c7256d75416a964b192a39ffa5d7c}
+
+\begin{DoxyCompactList}\small\item\em Adapted velocity command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__fs__planner_1_1FootstepPlanner}{Footstep\+Planner} class. 
+
+This class implements a basic footstep planner which uses only kinematic parameters. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}!Footstep\+Planner@{Footstep\+Planner}}
+\index{Footstep\+Planner@{Footstep\+Planner}!ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}}
+\subsubsection[{\texorpdfstring{Footstep\+Planner()}{FootstepPlanner()}}]{\setlength{\rightskip}{0pt plus 5cm}ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner\+::\+Footstep\+Planner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__fs__planner_1_1FootstepPlanner_ab74711c202027c2d873d66f393a38a66}{}\label{classow__fs__planner_1_1FootstepPlanner_ab74711c202027c2d873d66f393a38a66}
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+fwd\+\_\+step\+\_\+size} & Maximum forward step distance.\\
+\hline
+{\em max\+\_\+bwd\+\_\+step\+\_\+size} & Maximum backwards step distance.\\
+\hline
+{\em max\+\_\+lateral\+\_\+disp} & Maximum lateral step distance.\\
+\hline
+{\em max\+\_\+step\+\_\+angle} & Maximum angle for turning steps.\\
+\hline
+{\em feet\+\_\+separation} & Separation between the feet.\\
+\hline
+{\em step\+\_\+time} & Step period. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}!compute\+Command@{compute\+Command}}
+\index{compute\+Command@{compute\+Command}!ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}}
+\subsubsection[{\texorpdfstring{compute\+Command(const ow\+::\+Cartesian\+Velocity \&vel\+Cmd)}{computeCommand(const ow::CartesianVelocity &velCmd)}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ow\+::\+Cartesian\+Velocity}\& ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner\+::compute\+Command (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Cartesian\+Velocity} \&}]{vel\+Cmd}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a39955b9acc1dd9b8cdbf05d7f2209839}{}\label{classow__fs__planner_1_1FootstepPlanner_a39955b9acc1dd9b8cdbf05d7f2209839}
+
+
+Compute direction command for footstep planner from user velocity command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vel\+Cmd} & User input velocity command.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Direcction command for the footstep planner. 
+\end{DoxyReturn}
+\index{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}!compute\+Command@{compute\+Command}}
+\index{compute\+Command@{compute\+Command}!ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}}
+\subsubsection[{\texorpdfstring{compute\+Command(double fwd\+\_\+step\+\_\+size=0.\+2, double lateral\+\_\+disp=0.\+0, double step\+\_\+angle=0.\+0)}{computeCommand(double fwd_step_size=0.2, double lateral_disp=0.0, double step_angle=0.0)}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ow\+::\+Cartesian\+Velocity}\& ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner\+::compute\+Command (
+\begin{DoxyParamCaption}
+\item[{double}]{fwd\+\_\+step\+\_\+size = {\ttfamily 0.2}, }
+\item[{double}]{lateral\+\_\+disp = {\ttfamily 0.0}, }
+\item[{double}]{step\+\_\+angle = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__fs__planner_1_1FootstepPlanner_ac0c2906947e69181360a4701739da499}{}\label{classow__fs__planner_1_1FootstepPlanner_ac0c2906947e69181360a4701739da499}
+
+
+Compute direction command for footstep planner from user defined kinematic parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fwd\+\_\+step\+\_\+size} & Forward (or backwards) step size.\\
+\hline
+{\em lateral\+\_\+disp} & Lateral displacement for side stepping.\\
+\hline
+{\em step\+\_\+angle} & Angular displacement for turning steps.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Direcction command for the footstep planner. 
+\end{DoxyReturn}
+\index{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}!foot\+Steps@{foot\+Steps}}
+\index{foot\+Steps@{foot\+Steps}!ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}}
+\subsubsection[{\texorpdfstring{foot\+Steps() const }{footSteps() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const ow\+::\+Foot\+Step\+List\& ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner\+::foot\+Steps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a645f6cda432350868a0bb9e78b435462}{}\label{classow__fs__planner_1_1FootstepPlanner_a645f6cda432350868a0bb9e78b435462}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Planned footsteps. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1IFootStepPlanner_a8debb904fb67d2a8dbe14f1fea08ba25}{ow\+::\+I\+Foot\+Step\+Planner}.
+
+\index{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}!generate\+Fixed\+Plan@{generate\+Fixed\+Plan}}
+\index{generate\+Fixed\+Plan@{generate\+Fixed\+Plan}!ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}}
+\subsubsection[{\texorpdfstring{generate\+Fixed\+Plan(ow\+::\+Scalar fwd\+\_\+step\+\_\+size, ow\+::\+Scalar lateral\+\_\+disp, ow\+::\+Scalar step\+\_\+angle, size\+\_\+t number\+\_\+of\+\_\+steps)}{generateFixedPlan(ow::Scalar fwd_step_size, ow::Scalar lateral_disp, ow::Scalar step_angle, size_t number_of_steps)}}]{\setlength{\rightskip}{0pt plus 5cm}const ow\+::\+Foot\+Step\+List\& ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner\+::generate\+Fixed\+Plan (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Scalar}}]{fwd\+\_\+step\+\_\+size, }
+\item[{{\bf ow\+::\+Scalar}}]{lateral\+\_\+disp, }
+\item[{{\bf ow\+::\+Scalar}}]{step\+\_\+angle, }
+\item[{size\+\_\+t}]{number\+\_\+of\+\_\+steps}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a192132ce51f9728fd67908fb27f84f82}{}\label{classow__fs__planner_1_1FootstepPlanner_a192132ce51f9728fd67908fb27f84f82}
+
+
+Generate a fixed plan from standing position. This is a useful initial motion command for repeatable walking tests. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fwd\+\_\+step\+\_\+size} & Forward (or backwards) step size.\\
+\hline
+{\em lateral\+\_\+disp} & Lateral displacement for side stepping.\\
+\hline
+{\em step\+\_\+angle} & Angular displacement for turning steps.\\
+\hline
+{\em number\+\_\+of\+\_\+steps} & Number of steps to execute with the former parameters.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Generated footstep plan. 
+\end{DoxyReturn}
+\index{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}!histeresys\+Check@{histeresys\+Check}}
+\index{histeresys\+Check@{histeresys\+Check}!ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}}
+\subsubsection[{\texorpdfstring{histeresys\+Check(const double Max\+Lim, const double Min\+Lim, double x)}{histeresysCheck(const double MaxLim, const double MinLim, double x)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ow\+::\+Scalar} ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner\+::histeresys\+Check (
+\begin{DoxyParamCaption}
+\item[{const double}]{Max\+Lim, }
+\item[{const double}]{Min\+Lim, }
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a87f334479a4d1fe0616d3a7d4ac15a47}{}\label{classow__fs__planner_1_1FootstepPlanner_a87f334479a4d1fe0616d3a7d4ac15a47}
+
+
+Saturation function for a velocity command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Max\+Lim} & Upper limit of the histeresys window.\\
+\hline
+{\em Min\+Lim} & Lower limit of the histeresys window.\\
+\hline
+{\em x} & Input quantity.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A value between -\/1 and 1 where the limits are imposed by Max\+Lim and Min\+Lim. 
+\end{DoxyReturn}
+\index{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}!init@{init}}
+\index{init@{init}!ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}}
+\subsubsection[{\texorpdfstring{init(const ow\+::\+Parameter \&parameter, ros\+::\+Node\+Handle \&nh)}{init(const ow::Parameter &parameter, ros::NodeHandle &nh)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner\+::init (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Parameter} \&}]{parameter, }
+\item[{ros\+::\+Node\+Handle \&}]{nh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classow__fs__planner_1_1FootstepPlanner_ab3240b5742fb9188a5120c558db6c0bd}{}\label{classow__fs__planner_1_1FootstepPlanner_ab3240b5742fb9188a5120c558db6c0bd}
+
+
+Initialization of Forward Kinematics module. 
+
+\begin{DoxyReturn}{Returns}
+true on success. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1GenericModuleBase_a95c6c7b7a84acd2b4f37b7f9301abf9d}{ow\+::\+Generic\+Module\+Base}.
+
+\index{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}!plan\+Steps@{plan\+Steps}}
+\index{plan\+Steps@{plan\+Steps}!ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}}
+\subsubsection[{\texorpdfstring{plan\+Steps(const ow\+::\+Cartesian\+Velocity \&vel\+Cmd)}{planSteps(const ow::CartesianVelocity &velCmd)}}]{\setlength{\rightskip}{0pt plus 5cm}const ow\+::\+Foot\+Step\+List\& ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner\+::plan\+Steps (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Cartesian\+Velocity} \&}]{vel\+Cmd}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__fs__planner_1_1FootstepPlanner_aefad97eb1919dcd3173080446ff4ecde}{}\label{classow__fs__planner_1_1FootstepPlanner_aefad97eb1919dcd3173080446ff4ecde}
+
+
+Generate footstep plan from velocity command. This command generates four step ahead. Just the necessary stepr to plan the D\+CM waypoints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vel\+Cmd} & Velocity command wrt base link.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Generated footstep plan. 
+\end{DoxyReturn}
+\index{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}!plan\+Steps@{plan\+Steps}}
+\index{plan\+Steps@{plan\+Steps}!ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}}
+\subsubsection[{\texorpdfstring{plan\+Steps(const double fwd\+\_\+step\+\_\+size=0.\+2, const double lateral\+\_\+disp=0.\+1, const double step\+\_\+angle=0.\+35)}{planSteps(const double fwd_step_size=0.2, const double lateral_disp=0.1, const double step_angle=0.35)}}]{\setlength{\rightskip}{0pt plus 5cm}const ow\+::\+Foot\+Step\+List\& ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner\+::plan\+Steps (
+\begin{DoxyParamCaption}
+\item[{const double}]{fwd\+\_\+step\+\_\+size = {\ttfamily 0.2}, }
+\item[{const double}]{lateral\+\_\+disp = {\ttfamily 0.1}, }
+\item[{const double}]{step\+\_\+angle = {\ttfamily 0.35}}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__fs__planner_1_1FootstepPlanner_ac4d96253fc47ce53f2d3a7707d4faa30}{}\label{classow__fs__planner_1_1FootstepPlanner_ac4d96253fc47ce53f2d3a7707d4faa30}
+
+
+Plan a series of steps from kinematic parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fwd\+\_\+step\+\_\+size} & Forward (or backwards) step size.\\
+\hline
+{\em lateral\+\_\+disp} & Lateral displacement for side stepping.\\
+\hline
+{\em step\+\_\+angle} & Angular displacement for turning steps.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector containing the footstep plan. 
+\end{DoxyReturn}
+\index{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}!start@{start}}
+\index{start@{start}!ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}}
+\subsubsection[{\texorpdfstring{start(const ow\+::\+Homogeneous\+Transformation \&\+T\+\_\+l\+\_\+w, const ow\+::\+Homogeneous\+Transformation \&\+T\+\_\+r\+\_\+w)}{start(const ow::HomogeneousTransformation &T_l_w, const ow::HomogeneousTransformation &T_r_w)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner\+::start (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Homogeneous\+Transformation} \&}]{T\+\_\+l\+\_\+w, }
+\item[{const {\bf ow\+::\+Homogeneous\+Transformation} \&}]{T\+\_\+r\+\_\+w}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a67002bd419f4926f130709a6fb2dd9c0}{}\label{classow__fs__planner_1_1FootstepPlanner_a67002bd419f4926f130709a6fb2dd9c0}
+
+
+Initialize foot step planner. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+\_\+l\+\_\+w} & Initial Left Foot pose wrt world.\\
+\hline
+{\em T\+\_\+r\+\_\+w} & Initial Right Foot pose wrt world. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}!update@{update}}
+\index{update@{update}!ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner@{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}}
+\subsubsection[{\texorpdfstring{update(const ow\+::\+Foot\+Step \&current\+\_\+step)}{update(const ow::FootStep &current_step)}}]{\setlength{\rightskip}{0pt plus 5cm}int ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner\+::update (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Foot\+Step} \&}]{current\+\_\+step}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__fs__planner_1_1FootstepPlanner_a4ce8ca44c468885d415a3e67bfe863df}{}\label{classow__fs__planner_1_1FootstepPlanner_a4ce8ca44c468885d415a3e67bfe863df}
+
+
+Update footstep plan from current step landing. When the current step is different than the expected step, the following steps shall be adjusted according to the difference. This function should be called as soon as a foot is considered landed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+step} & New current step.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\+: when the plan was succesfully updated. -\/1\+: if the received fooftsep\textquotesingle{}s refference foot is different than the expected root reference (in the previously planned steps). -\/2\+: if the number of step id of the received step is larger than the size of the footstep plan. -\/3\+: if the module has not been initialized yet. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+fs\+\_\+planner/include/ow\+\_\+fs\+\_\+planner/\hyperlink{footstep__planner_8h}{footstep\+\_\+planner.\+h}\end{DoxyCompactItemize}

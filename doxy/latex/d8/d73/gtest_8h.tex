@@ -1,0 +1,60 @@
+\hypertarget{gtest_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/test\+\_\+utilities/gtest.h File Reference}
+\label{gtest_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/test\+\_\+utilities/gtest.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/test\+\_\+utilities/gtest.\+h}}
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\\*
+{\ttfamily \#include $<$type\+\_\+traits$>$}\\*
+{\ttfamily \#include $<$Eigen/\+Dense$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename \+\_\+\+DerivedA , typename \+\_\+\+DerivedB $>$ }\\\+::testing\+::\+Assertion\+Result {\bfseries ow\+\_\+test\+::eigen\+Matrix\+Near} (const Eigen\+::\+Matrix\+Base$<$ \+\_\+\+DerivedA $>$ \&m1, const std\+::string \&m1\+\_\+name, const Eigen\+::\+Matrix\+Base$<$ \+\_\+\+DerivedB $>$ \&m2, const std\+::string \&m2\+\_\+name, double prec=P\+R\+E\+C\+I\+S\+I\+ON)\hypertarget{gtest_8h_a2b133bfa1d5c25ab20cfbb4797d1e4e8}{}\label{gtest_8h_a2b133bfa1d5c25ab20cfbb4797d1e4e8}
+
+\item 
+{\footnotesize template$<$typename \+\_\+\+DerivedA , typename \+\_\+\+DerivedB $>$ }\\\+::testing\+::\+Assertion\+Result {\bfseries ow\+\_\+test\+::eigen\+Rotation\+Near} (const Eigen\+::\+Rotation\+Base$<$ \+\_\+\+DerivedA, 3 $>$ \&Q\+\_\+a, const std\+::string \&q\+\_\+a\+\_\+name, const Eigen\+::\+Rotation\+Base$<$ \+\_\+\+DerivedB, 3 $>$ \&Q\+\_\+b, const std\+::string \&q\+\_\+b\+\_\+name, double prec=P\+R\+E\+C\+I\+S\+I\+ON)\hypertarget{gtest_8h_ad670fcc6052357f1e50f51d98cba03dd}{}\label{gtest_8h_ad670fcc6052357f1e50f51d98cba03dd}
+
+\item 
+{\footnotesize template$<$typename \+\_\+\+ClassA , typename \+\_\+\+ClassB $>$ }\\\+::testing\+::\+Assertion\+Result {\bfseries ow\+\_\+test\+::is\+Convertible} (const std\+::string \&c\+\_\+a\+\_\+name, const std\+::string \&c\+\_\+b\+\_\+name)\hypertarget{gtest_8h_af0a5345be3dfe9ec9004c0c80d61220a}{}\label{gtest_8h_af0a5345be3dfe9ec9004c0c80d61220a}
+
+\item 
+{\footnotesize template$<$typename \+\_\+\+Base , typename \+\_\+\+Derived $>$ }\\\+::testing\+::\+Assertion\+Result {\bfseries ow\+\_\+test\+::is\+Base\+Of} (const std\+::string \&base\+\_\+name, const std\+::string \&derived\+\_\+name)\hypertarget{gtest_8h_a5aec759e3a1a2436dd83db9fff32c6d9}{}\label{gtest_8h_a5aec759e3a1a2436dd83db9fff32c6d9}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double {\bfseries ow\+\_\+test\+::\+P\+R\+E\+C\+I\+S\+I\+ON} = 1e-\/7\hypertarget{gtest_8h_a6bfb5a83dde877f5936b29122868dfbc}{}\label{gtest_8h_a6bfb5a83dde877f5936b29122868dfbc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287. 

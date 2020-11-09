@@ -1,0 +1,189 @@
+\hypertarget{classow__balancer_1_1Balancer}{}\section{ow\+\_\+balancer\+:\+:Balancer Class Reference}
+\label{classow__balancer_1_1Balancer}\index{ow\+\_\+balancer\+::\+Balancer@{ow\+\_\+balancer\+::\+Balancer}}
+
+
+The \hyperlink{classow__balancer_1_1Balancer}{Balancer} class.  
+
+
+
+
+{\ttfamily \#include $<$balancer.\+h$>$}
+
+Inheritance diagram for ow\+\_\+balancer\+:\+:Balancer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{dd/d7e/classow__balancer_1_1Balancer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow_1_1IBalancer}{ow\+::\+I\+Balancer} {\bfseries Base}\hypertarget{classow__balancer_1_1Balancer_aad56cea150ef756f9a9c2e4bfa3b674b}{}\label{classow__balancer_1_1Balancer_aad56cea150ef756f9a9c2e4bfa3b674b}
+
+\item 
+typedef \hyperlink{classow__core_1_1StateIntegrator}{ow\+::\+State\+Integrator}$<$ \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} $>$ {\bfseries Integrator}\hypertarget{classow__balancer_1_1Balancer_acfe1763c046d37bdb0016a2800bea8d5}{}\label{classow__balancer_1_1Balancer_acfe1763c046d37bdb0016a2800bea8d5}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__balancer_1_1Balancer_a4ae19b6176a906425d0b7c23796fac5a}{Balancer} ()\hypertarget{classow__balancer_1_1Balancer_a4ae19b6176a906425d0b7c23796fac5a}{}\label{classow__balancer_1_1Balancer_a4ae19b6176a906425d0b7c23796fac5a}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classow__balancer_1_1Balancer}{Balancer} Default constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__balancer_1_1Balancer_a396340c5b302f054af988722d8b7d82d}{$\sim$\+Balancer} ()\hypertarget{classow__balancer_1_1Balancer_a396340c5b302f054af988722d8b7d82d}{}\label{classow__balancer_1_1Balancer_a396340c5b302f054af988722d8b7d82d}
+
+\begin{DoxyCompactList}\small\item\em $\sim$\+Balancer \end{DoxyCompactList}\item 
+void \hyperlink{classow__balancer_1_1Balancer_a7f3f8c0d771ce29d059ae418aba0bffb}{update} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const \hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \&ref\+\_\+zmp, const \hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \&zmp, const \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \&ref\+\_\+dcm, const \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \&dcm, const \hyperlink{classow__core_1_1InertialMeasurmentUnitSensor}{ow\+::\+Imu\+Sensor} \&imu, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&ref\+\_\+com, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&X\+\_\+l\+\_\+w, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&X\+\_\+r\+\_\+w)
+\begin{DoxyCompactList}\small\item\em update \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow__balancer_1_1Balancer_a75e68c66c09e370b4b670ed7fcdafcd6}{Xoff\+\_\+com} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \& \hyperlink{classow__balancer_1_1Balancer_a09e9190ac09c6a4d1d1243f2db5bf8cb}{D\+C\+Md\+\_\+w} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \& \hyperlink{classow__balancer_1_1Balancer_a49b1432ce68fbb056a5c9426c11c7122}{Z\+M\+Pd\+\_\+w} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classow__balancer_1_1Balancer_ab864c91d85ec802e833efcbabe41dec7}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, ros\+::\+Node\+Handle \&nh)\hypertarget{classow__balancer_1_1Balancer_ab864c91d85ec802e833efcbabe41dec7}{}\label{classow__balancer_1_1Balancer_ab864c91d85ec802e833efcbabe41dec7}
+
+\begin{DoxyCompactList}\small\item\em Initialization of \hyperlink{classow__balancer_1_1Balancer}{Balancer} module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \hyperlink{classow__balancer_1_1Balancer_ab5ac59d73eca79db0ca08f171bdecdc5}{parameter\+\_\+}\hypertarget{classow__balancer_1_1Balancer_ab5ac59d73eca79db0ca08f171bdecdc5}{}\label{classow__balancer_1_1Balancer_ab5ac59d73eca79db0ca08f171bdecdc5}
+
+\begin{DoxyCompactList}\small\item\em configuration of this module \end{DoxyCompactList}\item 
+bool \hyperlink{classow__balancer_1_1Balancer_ac63a2b14b14dcad36f5e242d0c27d6d6}{enabled\+\_\+}\hypertarget{classow__balancer_1_1Balancer_ac63a2b14b14dcad36f5e242d0c27d6d6}{}\label{classow__balancer_1_1Balancer_ac63a2b14b14dcad36f5e242d0c27d6d6}
+
+\begin{DoxyCompactList}\small\item\em Enable \hyperlink{classow__balancer_1_1Balancer}{Balancer} module. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__balancer_1_1Balancer_a0d9e84604edf83ca5ddd50e8789ce998}{use\+\_\+imu\+\_\+}\hypertarget{classow__balancer_1_1Balancer_a0d9e84604edf83ca5ddd50e8789ce998}{}\label{classow__balancer_1_1Balancer_a0d9e84604edf83ca5ddd50e8789ce998}
+
+\begin{DoxyCompactList}\small\item\em Enable I\+MU compensation. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__balancer_1_1Balancer_a9122eea5254bfb34ed82a8f10556c461}{freq\+\_\+}\hypertarget{classow__balancer_1_1Balancer_a9122eea5254bfb34ed82a8f10556c461}{}\label{classow__balancer_1_1Balancer_a9122eea5254bfb34ed82a8f10556c461}
+
+\begin{DoxyCompactList}\small\item\em Update frequency. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Vector3}{ow\+::\+Vector3} \hyperlink{classow__balancer_1_1Balancer_ae8c7b13eaa338ea17e470bc0e7c85a89}{hip\+\_\+offsets\+\_\+}\hypertarget{classow__balancer_1_1Balancer_ae8c7b13eaa338ea17e470bc0e7c85a89}{}\label{classow__balancer_1_1Balancer_ae8c7b13eaa338ea17e470bc0e7c85a89}
+
+\begin{DoxyCompactList}\small\item\em Maximum hip offset \mbox{[}x,y,z\mbox{]}. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__balancer_1_1Balancer_aa764c64951b39d6dae62395da21c9945}{hip\+\_\+offset\+\_\+decay\+\_\+}\hypertarget{classow__balancer_1_1Balancer_aa764c64951b39d6dae62395da21c9945}{}\label{classow__balancer_1_1Balancer_aa764c64951b39d6dae62395da21c9945}
+
+\begin{DoxyCompactList}\small\item\em Hip offsets decay $ in [0,1] $. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__balancer_1_1Balancer_a7ac020ca8b41c78e99e70a141f45484b}{X\+\_\+off\+\_\+com\+\_\+}\hypertarget{classow__balancer_1_1Balancer_a7ac020ca8b41c78e99e70a141f45484b}{}\label{classow__balancer_1_1Balancer_a7ac020ca8b41c78e99e70a141f45484b}
+
+\begin{DoxyCompactList}\small\item\em Hip offset state. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \hyperlink{classow__balancer_1_1Balancer_aeacdc8ff5c5ff9d84c3f935c32829324}{D\+C\+Md\+\_\+w\+\_\+}\hypertarget{classow__balancer_1_1Balancer_aeacdc8ff5c5ff9d84c3f935c32829324}{}\label{classow__balancer_1_1Balancer_aeacdc8ff5c5ff9d84c3f935c32829324}
+
+\begin{DoxyCompactList}\small\item\em Desired Divergent Component Of Motion. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \hyperlink{classow__balancer_1_1Balancer_a0d5f9333d46c1f3fdfd1ffdef518a343}{Z\+M\+Pd\+\_\+w\+\_\+}\hypertarget{classow__balancer_1_1Balancer_a0d5f9333d46c1f3fdfd1ffdef518a343}{}\label{classow__balancer_1_1Balancer_a0d5f9333d46c1f3fdfd1ffdef518a343}
+
+\begin{DoxyCompactList}\small\item\em Zero\+Moment\+Point\+State to keep balance. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classow__core_1_1StateIntegrator}{Integrator} $>$ {\bfseries integrator\+\_\+}\hypertarget{classow__balancer_1_1Balancer_a53ede877e18bb2ca5b8e7df96ce85dee}{}\label{classow__balancer_1_1Balancer_a53ede877e18bb2ca5b8e7df96ce85dee}
+
+\item 
+\hyperlink{classow__balancer_1_1DCMTracker}{ow\+\_\+balancer\+::\+D\+C\+M\+Tracker} {\bfseries dcm\+\_\+tracker\+\_\+}\hypertarget{classow__balancer_1_1Balancer_ad213cdfcba3a5a396fd083123cdd8e4f}{}\label{classow__balancer_1_1Balancer_ad213cdfcba3a5a396fd083123cdd8e4f}
+
+\item 
+\hyperlink{classow__balancer_1_1ZMPTracker}{ow\+\_\+balancer\+::\+Z\+M\+P\+Tracker} {\bfseries zmp\+\_\+tracker\+\_\+}\hypertarget{classow__balancer_1_1Balancer_a3b394be5363afd0e35e9bcdd901a4fef}{}\label{classow__balancer_1_1Balancer_a3b394be5363afd0e35e9bcdd901a4fef}
+
+\item 
+\hyperlink{classow__balancer_1_1IMUStabilizer}{ow\+\_\+balancer\+::\+I\+M\+U\+Stabilizer} {\bfseries imu\+\_\+stabilizer\+\_\+}\hypertarget{classow__balancer_1_1Balancer_af8056cd0f8ac05efba5358a50b12e6fe}{}\label{classow__balancer_1_1Balancer_af8056cd0f8ac05efba5358a50b12e6fe}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__balancer_1_1Balancer}{Balancer} class. 
+
+This class calculates hip offsets to minimize the effects of external forces in the L\+I\+PM model. It is bassed on Capture Point tracking by means of Z\+MP target adjustment motions. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+balancer\+::\+Balancer@{ow\+\_\+balancer\+::\+Balancer}!D\+C\+Md\+\_\+w@{D\+C\+Md\+\_\+w}}
+\index{D\+C\+Md\+\_\+w@{D\+C\+Md\+\_\+w}!ow\+\_\+balancer\+::\+Balancer@{ow\+\_\+balancer\+::\+Balancer}}
+\subsubsection[{\texorpdfstring{D\+C\+Md\+\_\+w() const }{DCMd_w() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+D\+C\+M\+State}\& ow\+\_\+balancer\+::\+Balancer\+::\+D\+C\+Md\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__balancer_1_1Balancer_a09e9190ac09c6a4d1d1243f2db5bf8cb}{}\label{classow__balancer_1_1Balancer_a09e9190ac09c6a4d1d1243f2db5bf8cb}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+D\+C\+M\+State of the desired Divergent Component Of Motion expressed in the world frame. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1IBalancer_a4db08ea933f73841929abd5daba8be8f}{ow\+::\+I\+Balancer}.
+
+\index{ow\+\_\+balancer\+::\+Balancer@{ow\+\_\+balancer\+::\+Balancer}!update@{update}}
+\index{update@{update}!ow\+\_\+balancer\+::\+Balancer@{ow\+\_\+balancer\+::\+Balancer}}
+\subsubsection[{\texorpdfstring{update(ow\+::\+Flags \&flags, const ow\+::\+Zero\+Moment\+Point\+State \&ref\+\_\+zmp, const ow\+::\+Zero\+Moment\+Point\+State \&zmp, const ow\+::\+D\+C\+M\+State \&ref\+\_\+dcm, const ow\+::\+D\+C\+M\+State \&dcm, const ow\+::\+Imu\+Sensor \&imu, const ow\+::\+Cartesian\+State \&ref\+\_\+com, const ow\+::\+Cartesian\+State \&\+X\+\_\+l\+\_\+w, const ow\+::\+Cartesian\+State \&\+X\+\_\+r\+\_\+w)}{update(ow::Flags &flags, const ow::ZeroMomentPointState &ref_zmp, const ow::ZeroMomentPointState &zmp, const ow::DCMState &ref_dcm, const ow::DCMState &dcm, const ow::ImuSensor &imu, const ow::CartesianState &ref_com, const ow::CartesianState &X_l_w, const ow::CartesianState &X_r_w)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+balancer\+::\+Balancer\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const {\bf ow\+::\+Zero\+Moment\+Point\+State} \&}]{ref\+\_\+zmp, }
+\item[{const {\bf ow\+::\+Zero\+Moment\+Point\+State} \&}]{zmp, }
+\item[{const {\bf ow\+::\+D\+C\+M\+State} \&}]{ref\+\_\+dcm, }
+\item[{const {\bf ow\+::\+D\+C\+M\+State} \&}]{dcm, }
+\item[{const {\bf ow\+::\+Imu\+Sensor} \&}]{imu, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{ref\+\_\+com, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{X\+\_\+l\+\_\+w, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{X\+\_\+r\+\_\+w}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__balancer_1_1Balancer_a7f3f8c0d771ce29d059ae418aba0bffb}{}\label{classow__balancer_1_1Balancer_a7f3f8c0d771ce29d059ae418aba0bffb}
+
+
+update 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & \\
+\hline
+{\em reff\+\_\+dcm} & \\
+\hline
+{\em com\+\_\+des} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{ow\+\_\+balancer\+::\+Balancer@{ow\+\_\+balancer\+::\+Balancer}!Xoff\+\_\+com@{Xoff\+\_\+com}}
+\index{Xoff\+\_\+com@{Xoff\+\_\+com}!ow\+\_\+balancer\+::\+Balancer@{ow\+\_\+balancer\+::\+Balancer}}
+\subsubsection[{\texorpdfstring{Xoff\+\_\+com() const }{Xoff_com() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+\_\+balancer\+::\+Balancer\+::\+Xoff\+\_\+com (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__balancer_1_1Balancer_a75e68c66c09e370b4b670ed7fcdafcd6}{}\label{classow__balancer_1_1Balancer_a75e68c66c09e370b4b670ed7fcdafcd6}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State offset on the Com Frame expressed in the CoM frame 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1IBalancer_a00656435faab973f7c5617aa3c318d51}{ow\+::\+I\+Balancer}.
+
+\index{ow\+\_\+balancer\+::\+Balancer@{ow\+\_\+balancer\+::\+Balancer}!Z\+M\+Pd\+\_\+w@{Z\+M\+Pd\+\_\+w}}
+\index{Z\+M\+Pd\+\_\+w@{Z\+M\+Pd\+\_\+w}!ow\+\_\+balancer\+::\+Balancer@{ow\+\_\+balancer\+::\+Balancer}}
+\subsubsection[{\texorpdfstring{Z\+M\+Pd\+\_\+w() const }{ZMPd_w() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Zero\+Moment\+Point\+State}\& ow\+\_\+balancer\+::\+Balancer\+::\+Z\+M\+Pd\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__balancer_1_1Balancer_a49b1432ce68fbb056a5c9426c11c7122}{}\label{classow__balancer_1_1Balancer_a49b1432ce68fbb056a5c9426c11c7122}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Zero\+Moment\+Point\+State to keep balance and track the desired D\+CM, expressed in the world frame. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1IBalancer_a7867ad2c24f117fa80d5cbf5074686ee}{ow\+::\+I\+Balancer}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+balancer/include/ow\+\_\+balancer/\hyperlink{balancer_8h}{balancer.\+h}\end{DoxyCompactItemize}

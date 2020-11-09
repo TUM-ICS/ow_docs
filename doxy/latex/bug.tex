@@ -1,0 +1,18 @@
+
+\begin{DoxyRefList}
+\item[\label{bug__bug000001}%
+\hypertarget{bug__bug000001}{}%
+Member \hyperlink{classow__com_1_1COMEstimator_a784d8b980348a546ae69b17ec27ab1c2}{ow\+\_\+com\+:\+:C\+O\+M\+Estimator\+:\+:update} (const ow\+::\+Cartesian\+State \&X\+\_\+com\+\_\+w, const ow\+::\+Imu\+Sensor \&imu)]Remove this after testing  
+\item[\label{bug__bug000002}%
+\hypertarget{bug__bug000002}{}%
+Member \hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6}{ow\+\_\+core\+:\+:Foot\+Id} ]Flo\+: §all We have a bug in our merging of Reference classes with normal classes. At the moment we get a non const reference even if the class is const. That is a serious bug. The issue is that Eigen\+::\+Block doesn\textquotesingle{}t care about being const or not. It only cares about the constantness of its template parameter.  
+\item[\label{bug__bug000003}%
+\hypertarget{bug__bug000003}{}%
+Class \hyperlink{classow__core_1_1Force}{ow\+\_\+core\+:\+:Force$<$ \+\_\+\+Scalar $>$} ]Flo\+: §all We have a bug in our merging of Reference classes with normal classes. At the moment we get a non const reference even if the class is const. That is a serious bug. The issue is that Eigen\+::\+Block doesn\textquotesingle{}t care about being const or not. It only cares about the constantness of its template parameter.  
+\item[\label{bug__bug000004}%
+\hypertarget{bug__bug000004}{}%
+Member \hyperlink{classow__dcm__planner_1_1DCMPlanner_a0f6bb0ac1fb616cd0c21a8f5e4ae8c7a}{ow\+\_\+dcm\+\_\+planner\+:\+:D\+C\+M\+Planner\+:\+:plan\+D\+C\+M\+Points} (const ow\+::\+Foot\+Step\+List \&footsteps, const ow\+::\+Foot\+Step \&current\+\_\+step)]Remove this after testing is done  
+\item[\label{bug__bug000005}%
+\hypertarget{bug__bug000005}{}%
+Member \hyperlink{classow__dcm__planner_1_1DCMPlanner_aa85207c723117da5c350c33244af2a90}{ow\+\_\+dcm\+\_\+planner\+:\+:D\+C\+M\+Planner\+:\+:print\+Point\+Sets} ()]Remove this after testing is done 
+\end{DoxyRefList}

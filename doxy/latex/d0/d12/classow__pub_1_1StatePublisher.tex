@@ -1,0 +1,486 @@
+\hypertarget{classow__pub_1_1StatePublisher}{}\section{ow\+\_\+pub\+:\+:State\+Publisher Class Reference}
+\label{classow__pub_1_1StatePublisher}\index{ow\+\_\+pub\+::\+State\+Publisher@{ow\+\_\+pub\+::\+State\+Publisher}}
+
+
+The \hyperlink{classow__pub_1_1StatePublisher}{State\+Publisher} class.  
+
+
+
+
+{\ttfamily \#include $<$state\+\_\+publisher.\+h$>$}
+
+Inheritance diagram for ow\+\_\+pub\+:\+:State\+Publisher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d0/d12/classow__pub_1_1StatePublisher}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow_1_1IStatePublisher}{ow\+::\+I\+State\+Publisher} {\bfseries Base}\hypertarget{classow__pub_1_1StatePublisher_adcee9afe015eeb1d6496ee8c5897bfc4}{}\label{classow__pub_1_1StatePublisher_adcee9afe015eeb1d6496ee8c5897bfc4}
+
+\item 
+typedef \hyperlink{classow_1_1Thread}{ow\+::\+Thread} {\bfseries Thread}\hypertarget{classow__pub_1_1StatePublisher_a7aab05648d6ce254f88c7c4d4340cf9f}{}\label{classow__pub_1_1StatePublisher_a7aab05648d6ce254f88c7c4d4340cf9f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__pub_1_1StatePublisher_a2adc8446a46f388902561aa93e7a3aac}{State\+Publisher} ()\hypertarget{classow__pub_1_1StatePublisher_a2adc8446a46f388902561aa93e7a3aac}{}\label{classow__pub_1_1StatePublisher_a2adc8446a46f388902561aa93e7a3aac}
+
+\begin{DoxyCompactList}\small\item\em Construct a new State Publisher object. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__pub_1_1StatePublisher_a6e55d6c5ce60976a89d41e1dcdeaffe6}{$\sim$\+State\+Publisher} ()\hypertarget{classow__pub_1_1StatePublisher_a6e55d6c5ce60976a89d41e1dcdeaffe6}{}\label{classow__pub_1_1StatePublisher_a6e55d6c5ce60976a89d41e1dcdeaffe6}
+
+\begin{DoxyCompactList}\small\item\em Destroy the State Publisher object. \end{DoxyCompactList}\item 
+void {\bfseries add} (const \hyperlink{classow_1_1IHwInterface}{ow\+::\+I\+Hw\+Interface} $\ast$robot)\hypertarget{classow__pub_1_1StatePublisher_adc9f6fbbf38cfc8c6e035859ec89befd}{}\label{classow__pub_1_1StatePublisher_adc9f6fbbf38cfc8c6e035859ec89befd}
+
+\item 
+void {\bfseries add} (const \hyperlink{classow_1_1IBalancer}{ow\+::\+I\+Balancer} $\ast$balancer)\hypertarget{classow__pub_1_1StatePublisher_a2b7631914b4bd928cd8cb5be6007cac1}{}\label{classow__pub_1_1StatePublisher_a2b7631914b4bd928cd8cb5be6007cac1}
+
+\item 
+void {\bfseries add} (const \hyperlink{classow_1_1ICOMEstimator}{ow\+::\+I\+C\+O\+M\+Estimator} $\ast$com\+\_\+estimator)\hypertarget{classow__pub_1_1StatePublisher_a6783dfd9b4a87f208f50c361990dbc4d}{}\label{classow__pub_1_1StatePublisher_a6783dfd9b4a87f208f50c361990dbc4d}
+
+\item 
+void {\bfseries add} (const \hyperlink{classow_1_1ICOMTrajectoryGenerator}{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator} $\ast$com\+\_\+trajectory\+\_\+generator)\hypertarget{classow__pub_1_1StatePublisher_aabb65f57b1d48df8de600dbe6a75d6ac}{}\label{classow__pub_1_1StatePublisher_aabb65f57b1d48df8de600dbe6a75d6ac}
+
+\item 
+void {\bfseries add} (const \hyperlink{classow_1_1ICommandGenerator}{ow\+::\+I\+Command\+Generator} $\ast$command\+\_\+generator)\hypertarget{classow__pub_1_1StatePublisher_adf06302a55fb1a98ed690c4ea0c4b834}{}\label{classow__pub_1_1StatePublisher_adf06302a55fb1a98ed690c4ea0c4b834}
+
+\item 
+void {\bfseries add} (const \hyperlink{classow_1_1IDCMPlanner}{ow\+::\+I\+D\+C\+M\+Planner} $\ast$command\+\_\+generator)\hypertarget{classow__pub_1_1StatePublisher_ab3342a67c1e5c9ed9054a1601555805c}{}\label{classow__pub_1_1StatePublisher_ab3342a67c1e5c9ed9054a1601555805c}
+
+\item 
+void {\bfseries add} (const \hyperlink{classow_1_1IFootCompliance}{ow\+::\+I\+Foot\+Compliance} $\ast$foot\+\_\+compliance)\hypertarget{classow__pub_1_1StatePublisher_a2594b1a36d04ad831f59215e3f11b887}{}\label{classow__pub_1_1StatePublisher_a2594b1a36d04ad831f59215e3f11b887}
+
+\item 
+void {\bfseries add} (const \hyperlink{classow_1_1IFootStepPlanner}{ow\+::\+I\+Foot\+Step\+Planner} $\ast$step\+\_\+planner)\hypertarget{classow__pub_1_1StatePublisher_a9ceeac4645a838c90b939fdfc02368d7}{}\label{classow__pub_1_1StatePublisher_a9ceeac4645a838c90b939fdfc02368d7}
+
+\item 
+void {\bfseries add} (const \hyperlink{classow_1_1IFootTrajectoryGenerator}{ow\+::\+I\+Foot\+Trajectory\+Generator} $\ast$foot\+\_\+trajectory\+\_\+generator)\hypertarget{classow__pub_1_1StatePublisher_abf5ccba9c948fe74d6065a4d80565e5d}{}\label{classow__pub_1_1StatePublisher_abf5ccba9c948fe74d6065a4d80565e5d}
+
+\item 
+void {\bfseries add} (const \hyperlink{classow_1_1IInverseKinematics}{ow\+::\+I\+Inverse\+Kinematics} $\ast$inverse\+\_\+kinematics)\hypertarget{classow__pub_1_1StatePublisher_aa10b1cf743a0ab4317ad8c1d2bc41c98}{}\label{classow__pub_1_1StatePublisher_aa10b1cf743a0ab4317ad8c1d2bc41c98}
+
+\item 
+void {\bfseries add} (const \hyperlink{classow_1_1IForwardKinematics}{ow\+::\+I\+Forward\+Kinematics} $\ast$forward\+\_\+kinematics, bool is\+\_\+cmd)\hypertarget{classow__pub_1_1StatePublisher_aa8150320d54c99af71a4982eaa349a9e}{}\label{classow__pub_1_1StatePublisher_aa8150320d54c99af71a4982eaa349a9e}
+
+\item 
+void {\bfseries add} (const \hyperlink{classow_1_1IZmpEstimator}{ow\+::\+I\+Zmp\+Estimator} $\ast$zmp\+\_\+estimator)\hypertarget{classow__pub_1_1StatePublisher_a79443faa057d02394a33375beac9d476}{}\label{classow__pub_1_1StatePublisher_a79443faa057d02394a33375beac9d476}
+
+\item 
+void {\bfseries add} (const \hyperlink{classow_1_1IJointTracker}{ow\+::\+I\+Joint\+Tracker} $\ast$joint\+\_\+tracker)\hypertarget{classow__pub_1_1StatePublisher_af423fe8061262566f7004c0172fb1ef4}{}\label{classow__pub_1_1StatePublisher_af423fe8061262566f7004c0172fb1ef4}
+
+\item 
+void \hyperlink{classow__pub_1_1StatePublisher_a61b1d103496f2e64cf52ea877fd6da5a}{update} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const ros\+::\+Time \&time, const ros\+::\+Duration \&dt)
+\begin{DoxyCompactList}\small\item\em performs update step of the module, called periodically \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classow__pub_1_1StatePublisher_a3285df66b266dc6dd9468803f244f745}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, ros\+::\+Node\+Handle \&nh)\hypertarget{classow__pub_1_1StatePublisher_a3285df66b266dc6dd9468803f244f745}{}\label{classow__pub_1_1StatePublisher_a3285df66b266dc6dd9468803f244f745}
+
+\begin{DoxyCompactList}\small\item\em Initialization of \hyperlink{classow__pub_1_1StatePublisher}{State\+Publisher} module. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classow__pub_1_1StatePublisher_a35aa494e2a6e9dec704fa84de731cac7}{start} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em start the module, called befor update \end{DoxyCompactList}\item 
+virtual void \hyperlink{classow__pub_1_1StatePublisher_a7c8413da5afc4be130fa95be0e16dbc9}{run} ()\hypertarget{classow__pub_1_1StatePublisher_a7c8413da5afc4be130fa95be0e16dbc9}{}\label{classow__pub_1_1StatePublisher_a7c8413da5afc4be130fa95be0e16dbc9}
+
+\begin{DoxyCompactList}\small\item\em The thread execution function. \end{DoxyCompactList}\item 
+void \hyperlink{classow__pub_1_1StatePublisher_aaf2b6be0238f34a9bfb3fd90cc2576cd}{publish} (const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em publish the information to ros \end{DoxyCompactList}\item 
+virtual void \hyperlink{classow__pub_1_1StatePublisher_a48fdc68768ac6d495117676e9f06e721}{stop} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em Stop the module, called befor stopping. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classow__pub_1_1StatePublisher_a07051e3145afbf945ce3a8d299638344}{stopped\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a07051e3145afbf945ce3a8d299638344}{}\label{classow__pub_1_1StatePublisher_a07051e3145afbf945ce3a8d299638344}
+
+\begin{DoxyCompactList}\small\item\em Stop flag. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__pub_1_1StatePublisher_af2b4f1cb964381f7e55a3e27a9f7b65d}{rate\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_af2b4f1cb964381f7e55a3e27a9f7b65d}{}\label{classow__pub_1_1StatePublisher_af2b4f1cb964381f7e55a3e27a9f7b65d}
+
+\begin{DoxyCompactList}\small\item\em Loop rate for publishing. \end{DoxyCompactList}\item 
+std\+::mutex \hyperlink{classow__pub_1_1StatePublisher_acd8a458ca7b4631a0e60dffbbe0828ca}{data\+\_\+mutex\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_acd8a458ca7b4631a0e60dffbbe0828ca}{}\label{classow__pub_1_1StatePublisher_acd8a458ca7b4631a0e60dffbbe0828ca}
+
+\begin{DoxyCompactList}\small\item\em Thread save data access. \end{DoxyCompactList}\item 
+\hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \hyperlink{classow__pub_1_1StatePublisher_a8db1e4180563c0a6dcdb3a49bfbee495}{parameter\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a8db1e4180563c0a6dcdb3a49bfbee495}{}\label{classow__pub_1_1StatePublisher_a8db1e4180563c0a6dcdb3a49bfbee495}
+
+\begin{DoxyCompactList}\small\item\em configuration \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__pub_1_1StatePublisher_aa09bd6c03f92996a2ca3ffa0832e946b}{frame\+\_\+w}\hypertarget{classow__pub_1_1StatePublisher_aa09bd6c03f92996a2ca3ffa0832e946b}{}\label{classow__pub_1_1StatePublisher_aa09bd6c03f92996a2ca3ffa0832e946b}
+
+\begin{DoxyCompactList}\small\item\em Reference world frame. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__pub_1_1StatePublisher_a7cc9dcb411966fef757e2d4b37b7ca8c}{frame\+\_\+b}\hypertarget{classow__pub_1_1StatePublisher_a7cc9dcb411966fef757e2d4b37b7ca8c}{}\label{classow__pub_1_1StatePublisher_a7cc9dcb411966fef757e2d4b37b7ca8c}
+
+\begin{DoxyCompactList}\small\item\em Floating base frame. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__pub_1_1StatePublisher_a498acfe92bdd1ca629168b1088cb3390}{frame\+\_\+r}\hypertarget{classow__pub_1_1StatePublisher_a498acfe92bdd1ca629168b1088cb3390}{}\label{classow__pub_1_1StatePublisher_a498acfe92bdd1ca629168b1088cb3390}
+
+\begin{DoxyCompactList}\small\item\em Right foot frame. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__pub_1_1StatePublisher_ab0ea3594b8d71ea9ed0b796a99f0b3e3}{frame\+\_\+l}\hypertarget{classow__pub_1_1StatePublisher_ab0ea3594b8d71ea9ed0b796a99f0b3e3}{}\label{classow__pub_1_1StatePublisher_ab0ea3594b8d71ea9ed0b796a99f0b3e3}
+
+\begin{DoxyCompactList}\small\item\em Left foot frame. \end{DoxyCompactList}\item 
+const \hyperlink{classow_1_1IHwInterface}{ow\+::\+I\+Hw\+Interface} $\ast$ {\bfseries robot\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a91814d7d0867d3206b49c8a9f028e8c0}{}\label{classow__pub_1_1StatePublisher_a91814d7d0867d3206b49c8a9f028e8c0}
+
+\item 
+const \hyperlink{classow_1_1IBalancer}{ow\+::\+I\+Balancer} $\ast$ {\bfseries balancer\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a6e9f69904baafa3863bd6481ffcb1ec1}{}\label{classow__pub_1_1StatePublisher_a6e9f69904baafa3863bd6481ffcb1ec1}
+
+\item 
+const \hyperlink{classow_1_1ICOMEstimator}{ow\+::\+I\+C\+O\+M\+Estimator} $\ast$ {\bfseries com\+\_\+estimator\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_aeebd2610b6d8100bac32a1a919907c56}{}\label{classow__pub_1_1StatePublisher_aeebd2610b6d8100bac32a1a919907c56}
+
+\item 
+const \hyperlink{classow_1_1ICOMTrajectoryGenerator}{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator} $\ast$ {\bfseries com\+\_\+trajectory\+\_\+generator\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_acf22f79737d1c51df051d2cc3151f7f7}{}\label{classow__pub_1_1StatePublisher_acf22f79737d1c51df051d2cc3151f7f7}
+
+\item 
+const \hyperlink{classow_1_1ICommandGenerator}{ow\+::\+I\+Command\+Generator} $\ast$ {\bfseries command\+\_\+generator\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_ac4bb78c9c4aafc8cb65d710bc00e25eb}{}\label{classow__pub_1_1StatePublisher_ac4bb78c9c4aafc8cb65d710bc00e25eb}
+
+\item 
+const \hyperlink{classow_1_1IDCMPlanner}{ow\+::\+I\+D\+C\+M\+Planner} $\ast$ {\bfseries dcm\+\_\+planner\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_ac5a4f51a8074341c8c55f95f84c6d960}{}\label{classow__pub_1_1StatePublisher_ac5a4f51a8074341c8c55f95f84c6d960}
+
+\item 
+const \hyperlink{classow_1_1IFootCompliance}{ow\+::\+I\+Foot\+Compliance} $\ast$ {\bfseries foot\+\_\+compliance\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a61a75d5a05b4fbcc8e51d5f222329097}{}\label{classow__pub_1_1StatePublisher_a61a75d5a05b4fbcc8e51d5f222329097}
+
+\item 
+const \hyperlink{classow_1_1IFootStepPlanner}{ow\+::\+I\+Foot\+Step\+Planner} $\ast$ {\bfseries step\+\_\+planner\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_ab140211a1f98ac673621e3cd88f74f92}{}\label{classow__pub_1_1StatePublisher_ab140211a1f98ac673621e3cd88f74f92}
+
+\item 
+const \hyperlink{classow_1_1IFootTrajectoryGenerator}{ow\+::\+I\+Foot\+Trajectory\+Generator} $\ast$ {\bfseries foot\+\_\+trajectory\+\_\+generator\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a30071d079a9a8778554000c54dc33aa9}{}\label{classow__pub_1_1StatePublisher_a30071d079a9a8778554000c54dc33aa9}
+
+\item 
+const \hyperlink{classow_1_1IInverseKinematics}{ow\+::\+I\+Inverse\+Kinematics} $\ast$ {\bfseries inverse\+\_\+kinematics\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a423dcb9acc40596027b06c8be5ed768a}{}\label{classow__pub_1_1StatePublisher_a423dcb9acc40596027b06c8be5ed768a}
+
+\item 
+const \hyperlink{classow_1_1IForwardKinematics}{ow\+::\+I\+Forward\+Kinematics} $\ast$ {\bfseries forward\+\_\+kinematics\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a0317425729aedcad166baa6c2ceda092}{}\label{classow__pub_1_1StatePublisher_a0317425729aedcad166baa6c2ceda092}
+
+\item 
+const \hyperlink{classow_1_1IForwardKinematics}{ow\+::\+I\+Forward\+Kinematics} $\ast$ {\bfseries forward\+\_\+kinematics\+\_\+cmd\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_ae25df068ab4f669b0dee6a057adae589}{}\label{classow__pub_1_1StatePublisher_ae25df068ab4f669b0dee6a057adae589}
+
+\item 
+const \hyperlink{classow_1_1IZmpEstimator}{ow\+::\+I\+Zmp\+Estimator} $\ast$ {\bfseries zmp\+\_\+estimator\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a800d8c184679b3f514ebf0df95c487f9}{}\label{classow__pub_1_1StatePublisher_a800d8c184679b3f514ebf0df95c487f9}
+
+\item 
+const \hyperlink{classow_1_1IJointTracker}{ow\+::\+I\+Joint\+Tracker} $\ast$ {\bfseries joint\+\_\+tracker\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a36b194b530febbb0575d515bd67fbdd8}{}\label{classow__pub_1_1StatePublisher_a36b194b530febbb0575d515bd67fbdd8}
+
+\item 
+std\+::vector$<$ const \hyperlink{classow_1_1GenericModuleBase_acdbc9380752e797b3093d6f5fb506b76}{Generic\+Module\+Base} $\ast$ $>$ {\bfseries interfaces\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a54402f12cc515077bcb0cb17992c2520}{}\label{classow__pub_1_1StatePublisher_a54402f12cc515077bcb0cb17992c2520}
+
+\item 
+bool {\bfseries state\+\_\+updated\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a298d08ff188a54fee8bedc40d3cb274f}{}\label{classow__pub_1_1StatePublisher_a298d08ff188a54fee8bedc40d3cb274f}
+
+\item 
+\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} {\bfseries flags\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a5eebe0d190f763f5859b1da9086b6a71}{}\label{classow__pub_1_1StatePublisher_a5eebe0d190f763f5859b1da9086b6a71}
+
+\item 
+ros\+::\+Publisher {\bfseries flags\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a840c3e631add917178b26a58b232ab88}{}\label{classow__pub_1_1StatePublisher_a840c3e631add917178b26a58b232ab88}
+
+\item 
+\hyperlink{classow__core_1_1InertialMeasurmentUnitSensor}{ow\+::\+Imu\+Sensor} {\bfseries imu\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a36528fa1701be79bc6958ad562302159}{}\label{classow__pub_1_1StatePublisher_a36528fa1701be79bc6958ad562302159}
+
+\item 
+\hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} {\bfseries ft\+\_\+left\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a50f74d871d4cb369d51ab237341e4ada}{}\label{classow__pub_1_1StatePublisher_a50f74d871d4cb369d51ab237341e4ada}
+
+\item 
+\hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} {\bfseries ft\+\_\+right\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_ad6e302038ec13e22047177f6e354ccf5}{}\label{classow__pub_1_1StatePublisher_ad6e302038ec13e22047177f6e354ccf5}
+
+\item 
+ros\+::\+Publisher {\bfseries imu\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_aa445fb6c1cbcf000cf4f1e56a771aea8}{}\label{classow__pub_1_1StatePublisher_aa445fb6c1cbcf000cf4f1e56a771aea8}
+
+\item 
+ros\+::\+Publisher {\bfseries ft\+\_\+left\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a1b59cdae026fa7f4e459a503a11596b3}{}\label{classow__pub_1_1StatePublisher_a1b59cdae026fa7f4e459a503a11596b3}
+
+\item 
+ros\+::\+Publisher {\bfseries ft\+\_\+right\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a86329f30747d15e1d2528c3cb3b40b1d}{}\label{classow__pub_1_1StatePublisher_a86329f30747d15e1d2528c3cb3b40b1d}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xoff\+\_\+com\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a3a03f2f3910db5021fc670c107a7b456}{}\label{classow__pub_1_1StatePublisher_a3a03f2f3910db5021fc670c107a7b456}
+
+\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} {\bfseries dcm\+\_\+d\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_aeb4f86f9f6211c8701b22240f90cbd5a}{}\label{classow__pub_1_1StatePublisher_aeb4f86f9f6211c8701b22240f90cbd5a}
+
+\item 
+\hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} {\bfseries p\+\_\+d\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a627fe52c1db8328f12dd243947941e60}{}\label{classow__pub_1_1StatePublisher_a627fe52c1db8328f12dd243947941e60}
+
+\item 
+ros\+::\+Publisher {\bfseries Xoff\+\_\+com\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a33f9b7501d7b500ad9a57c917e386216}{}\label{classow__pub_1_1StatePublisher_a33f9b7501d7b500ad9a57c917e386216}
+
+\item 
+ros\+::\+Publisher {\bfseries dcm\+\_\+d\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a8e8136a5c92ce4468ccb2f2563055082}{}\label{classow__pub_1_1StatePublisher_a8e8136a5c92ce4468ccb2f2563055082}
+
+\item 
+ros\+::\+Publisher {\bfseries p\+\_\+d\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_acdbbc7bc3815a3afc160e149484cee86}{}\label{classow__pub_1_1StatePublisher_acdbbc7bc3815a3afc160e149484cee86}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xf\+\_\+com\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_aafc4cb0502726263c123fe24f9cf2185}{}\label{classow__pub_1_1StatePublisher_aafc4cb0502726263c123fe24f9cf2185}
+
+\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} {\bfseries dcm\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a26701056a060a27f32739211a18ad09b}{}\label{classow__pub_1_1StatePublisher_a26701056a060a27f32739211a18ad09b}
+
+\item 
+ros\+::\+Publisher {\bfseries Xf\+\_\+com\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_ad7b093917d70d0aa6387721ec3da26e7}{}\label{classow__pub_1_1StatePublisher_ad7b093917d70d0aa6387721ec3da26e7}
+
+\item 
+ros\+::\+Publisher {\bfseries dcm\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a00c13a9641a2a64df52bbb39f231a2c9}{}\label{classow__pub_1_1StatePublisher_a00c13a9641a2a64df52bbb39f231a2c9}
+
+\item 
+\hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} {\bfseries p\+\_\+r\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_abf4dac0fc5a8b415b0f48cc968f7544a}{}\label{classow__pub_1_1StatePublisher_abf4dac0fc5a8b415b0f48cc968f7544a}
+
+\item 
+\hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} {\bfseries dcm\+\_\+r\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a15c08d6454ef5ce0a3f2d1770bdf1153}{}\label{classow__pub_1_1StatePublisher_a15c08d6454ef5ce0a3f2d1770bdf1153}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries X\+\_\+r\+\_\+com\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_af74f188b2980fc3ea9d3dcd28d4203a9}{}\label{classow__pub_1_1StatePublisher_af74f188b2980fc3ea9d3dcd28d4203a9}
+
+\item 
+ros\+::\+Publisher {\bfseries p\+\_\+r\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_abab0754e7ac7643f854f08773957a421}{}\label{classow__pub_1_1StatePublisher_abab0754e7ac7643f854f08773957a421}
+
+\item 
+ros\+::\+Publisher {\bfseries dcm\+\_\+r\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a894f06daf88fbbb12da00a910d427075}{}\label{classow__pub_1_1StatePublisher_a894f06daf88fbbb12da00a910d427075}
+
+\item 
+ros\+::\+Publisher {\bfseries X\+\_\+r\+\_\+com\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a14064c2b952ff806d5f879bbb74361d2}{}\label{classow__pub_1_1StatePublisher_a14064c2b952ff806d5f879bbb74361d2}
+
+\item 
+\hyperlink{classow__pub_1_1TrajectoryPublisher}{Trajectory\+Publisher} {\bfseries X\+\_\+r\+\_\+com\+\_\+w\+\_\+traj\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a81b9d9d272ab850b5905a7be727c9448}{}\label{classow__pub_1_1StatePublisher_a81b9d9d272ab850b5905a7be727c9448}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xcmd\+\_\+l\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a08aa1bf99e42c0f2cb246c748779c814}{}\label{classow__pub_1_1StatePublisher_a08aa1bf99e42c0f2cb246c748779c814}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xcmd\+\_\+r\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a5048f5a1d3d641b23f93b4cc3e027af0}{}\label{classow__pub_1_1StatePublisher_a5048f5a1d3d641b23f93b4cc3e027af0}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xcmd\+\_\+com\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_ae0b2dd3500432a5dbe9b3a75ba6ca3a4}{}\label{classow__pub_1_1StatePublisher_ae0b2dd3500432a5dbe9b3a75ba6ca3a4}
+
+\item 
+ros\+::\+Publisher {\bfseries Xcmd\+\_\+l\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a93dc2b6e084860032b2a755da8eebf4b}{}\label{classow__pub_1_1StatePublisher_a93dc2b6e084860032b2a755da8eebf4b}
+
+\item 
+ros\+::\+Publisher {\bfseries Xcmd\+\_\+r\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_aa88739f01c1cd00ecfe3c35e9983a086}{}\label{classow__pub_1_1StatePublisher_aa88739f01c1cd00ecfe3c35e9983a086}
+
+\item 
+ros\+::\+Publisher {\bfseries Xcmd\+\_\+com\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a024e83846458e71e49fd3477c1a4c122}{}\label{classow__pub_1_1StatePublisher_a024e83846458e71e49fd3477c1a4c122}
+
+\item 
+\hyperlink{classow__pub_1_1TrajectoryPublisher}{Trajectory\+Publisher} {\bfseries Xcmd\+\_\+com\+\_\+w\+\_\+traj\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a6ea116066e2f43cb80680ebb9fa2b3fe}{}\label{classow__pub_1_1StatePublisher_a6ea116066e2f43cb80680ebb9fa2b3fe}
+
+\item 
+ow\+::\+D\+C\+M\+Point\+Set\+List {\bfseries dcm\+\_\+point\+\_\+set\+\_\+list\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a93023c72071e500f70d0e7d9f994919c}{}\label{classow__pub_1_1StatePublisher_a93023c72071e500f70d0e7d9f994919c}
+
+\item 
+ros\+::\+Publisher {\bfseries dcm\+\_\+point\+\_\+set\+\_\+list\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a166440d98d423954083c6d181f3ff392}{}\label{classow__pub_1_1StatePublisher_a166440d98d423954083c6d181f3ff392}
+
+\item 
+ow\+::\+Foot\+Step\+List {\bfseries foot\+\_\+steps\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a5cc6117c46ab3281802df32ca0bf39b0}{}\label{classow__pub_1_1StatePublisher_a5cc6117c46ab3281802df32ca0bf39b0}
+
+\item 
+ros\+::\+Publisher {\bfseries foot\+\_\+steps\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_ab77b21d4487a70905764bf243022ae2c}{}\label{classow__pub_1_1StatePublisher_ab77b21d4487a70905764bf243022ae2c}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xref\+\_\+l\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a0aeb96a01b3ce56aee3f88739a4b6629}{}\label{classow__pub_1_1StatePublisher_a0aeb96a01b3ce56aee3f88739a4b6629}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xref\+\_\+r\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a99810d01c2e467cb785e50874ad150ef}{}\label{classow__pub_1_1StatePublisher_a99810d01c2e467cb785e50874ad150ef}
+
+\item 
+ros\+::\+Publisher {\bfseries Xref\+\_\+l\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_abd9e520554d05deb10049af58573c109}{}\label{classow__pub_1_1StatePublisher_abd9e520554d05deb10049af58573c109}
+
+\item 
+ros\+::\+Publisher {\bfseries Xref\+\_\+r\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a22fc9ab7106bf4d594481ed18aede622}{}\label{classow__pub_1_1StatePublisher_a22fc9ab7106bf4d594481ed18aede622}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xreal\+\_\+l\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a34f515794ae55d0d16b5d3719d59f9a1}{}\label{classow__pub_1_1StatePublisher_a34f515794ae55d0d16b5d3719d59f9a1}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xreal\+\_\+r\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a109707a4c884f34e1493229048f4448c}{}\label{classow__pub_1_1StatePublisher_a109707a4c884f34e1493229048f4448c}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xreal\+\_\+com\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a813da11bc4639eced5730ce1aa3fdc09}{}\label{classow__pub_1_1StatePublisher_a813da11bc4639eced5730ce1aa3fdc09}
+
+\item 
+ros\+::\+Publisher {\bfseries Xreal\+\_\+l\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a8685a81907f03d24f6e114b813dc8534}{}\label{classow__pub_1_1StatePublisher_a8685a81907f03d24f6e114b813dc8534}
+
+\item 
+ros\+::\+Publisher {\bfseries Xreal\+\_\+r\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a1aeebcbe61feeb6db8f370d1abf192b0}{}\label{classow__pub_1_1StatePublisher_a1aeebcbe61feeb6db8f370d1abf192b0}
+
+\item 
+ros\+::\+Publisher {\bfseries Xreal\+\_\+com\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_aad884c40aa45309952ce3dc63ba11def}{}\label{classow__pub_1_1StatePublisher_aad884c40aa45309952ce3dc63ba11def}
+
+\item 
+\hyperlink{classow__pub_1_1TrajectoryPublisher}{Trajectory\+Publisher} {\bfseries Xreal\+\_\+l\+\_\+w\+\_\+traj\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a986b9e28d86b441c95a5158ce1d62aaf}{}\label{classow__pub_1_1StatePublisher_a986b9e28d86b441c95a5158ce1d62aaf}
+
+\item 
+\hyperlink{classow__pub_1_1TrajectoryPublisher}{Trajectory\+Publisher} {\bfseries Xreal\+\_\+r\+\_\+w\+\_\+traj\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a854cf6be4b301519e174f78f2b77b5b4}{}\label{classow__pub_1_1StatePublisher_a854cf6be4b301519e174f78f2b77b5b4}
+
+\item 
+\hyperlink{classow__pub_1_1TrajectoryPublisher}{Trajectory\+Publisher} {\bfseries Xreal\+\_\+com\+\_\+w\+\_\+traj\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_af2d395952b05335e6ff64b5fa206f59b}{}\label{classow__pub_1_1StatePublisher_af2d395952b05335e6ff64b5fa206f59b}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xv\+\_\+l\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_aa111319078495f45b62e5249d11e0bd9}{}\label{classow__pub_1_1StatePublisher_aa111319078495f45b62e5249d11e0bd9}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xv\+\_\+r\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a696edbc9b9f925ca1b0263345698ae7d}{}\label{classow__pub_1_1StatePublisher_a696edbc9b9f925ca1b0263345698ae7d}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xv\+\_\+com\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a1adc8d5164616120d39780b0dee9b9dd}{}\label{classow__pub_1_1StatePublisher_a1adc8d5164616120d39780b0dee9b9dd}
+
+\item 
+ros\+::\+Publisher {\bfseries Xv\+\_\+l\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a0ffde6b30a6870b8988b4d4f58270028}{}\label{classow__pub_1_1StatePublisher_a0ffde6b30a6870b8988b4d4f58270028}
+
+\item 
+ros\+::\+Publisher {\bfseries Xv\+\_\+r\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a6cd1847bdf90e3b714aef57528618670}{}\label{classow__pub_1_1StatePublisher_a6cd1847bdf90e3b714aef57528618670}
+
+\item 
+ros\+::\+Publisher {\bfseries Xv\+\_\+com\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a0579c6299283c3d01e47357d0a7ef88a}{}\label{classow__pub_1_1StatePublisher_a0579c6299283c3d01e47357d0a7ef88a}
+
+\item 
+\hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} {\bfseries q\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a642ffe17bc6f8d1ea4d4d3183541720c}{}\label{classow__pub_1_1StatePublisher_a642ffe17bc6f8d1ea4d4d3183541720c}
+
+\item 
+ros\+::\+Publisher {\bfseries q\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_abce0dc32f57513789ede00d144002945}{}\label{classow__pub_1_1StatePublisher_abce0dc32f57513789ede00d144002945}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xoff\+\_\+r\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a00eece3ac1d08babe78ed4a78f34e1b6}{}\label{classow__pub_1_1StatePublisher_a00eece3ac1d08babe78ed4a78f34e1b6}
+
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} {\bfseries Xoff\+\_\+l\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_ad7d36ada6e49b0eb19e68b54f647ebcd}{}\label{classow__pub_1_1StatePublisher_ad7d36ada6e49b0eb19e68b54f647ebcd}
+
+\item 
+ros\+::\+Publisher {\bfseries Xoff\+\_\+r\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_af2ad035f5bc4d9e7f357c747fed69467}{}\label{classow__pub_1_1StatePublisher_af2ad035f5bc4d9e7f357c747fed69467}
+
+\item 
+ros\+::\+Publisher {\bfseries Xoff\+\_\+l\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_aac801836c2a016323849fcbb951b11d3}{}\label{classow__pub_1_1StatePublisher_aac801836c2a016323849fcbb951b11d3}
+
+\item 
+\hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} {\bfseries p\+\_\+w\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_aa5b2ed8ce85236bf438154d0b91a5e06}{}\label{classow__pub_1_1StatePublisher_aa5b2ed8ce85236bf438154d0b91a5e06}
+
+\item 
+ros\+::\+Publisher {\bfseries p\+\_\+w\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_ac51d9796bfbd68274d52160fee3cb9fc}{}\label{classow__pub_1_1StatePublisher_ac51d9796bfbd68274d52160fee3cb9fc}
+
+\item 
+\hyperlink{classow__pub_1_1TrajectoryPublisher}{Trajectory\+Publisher} {\bfseries p\+\_\+w\+\_\+traj\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_aa45b9235d09e5f840e2040ada2cd7050}{}\label{classow__pub_1_1StatePublisher_aa45b9235d09e5f840e2040ada2cd7050}
+
+\item 
+\hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} {\bfseries joint\+\_\+tracker\+\_\+state\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_afe249ba2afcd1d3f27af36cc2eb27c2a}{}\label{classow__pub_1_1StatePublisher_afe249ba2afcd1d3f27af36cc2eb27c2a}
+
+\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} {\bfseries left\+\_\+ankle\+\_\+offset\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_adef48d51a3f24eafa4466201ba207fda}{}\label{classow__pub_1_1StatePublisher_adef48d51a3f24eafa4466201ba207fda}
+
+\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} {\bfseries left\+\_\+groin\+\_\+offset\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_af1aec26bd140f9981e70aedde3664759}{}\label{classow__pub_1_1StatePublisher_af1aec26bd140f9981e70aedde3664759}
+
+\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} {\bfseries right\+\_\+ankle\+\_\+offset\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_ac97f442b00168e0709e4807b4b100cbe}{}\label{classow__pub_1_1StatePublisher_ac97f442b00168e0709e4807b4b100cbe}
+
+\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} {\bfseries right\+\_\+groin\+\_\+offset\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_afe81f7af5f65358edac26cc2ce6864b0}{}\label{classow__pub_1_1StatePublisher_afe81f7af5f65358edac26cc2ce6864b0}
+
+\item 
+ros\+::\+Publisher {\bfseries joint\+\_\+tracker\+\_\+state\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a31f91f34023a90ec5a79e1c0ae65edcd}{}\label{classow__pub_1_1StatePublisher_a31f91f34023a90ec5a79e1c0ae65edcd}
+
+\item 
+ros\+::\+Publisher {\bfseries left\+\_\+ankle\+\_\+offset\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a089b7d97ff2d3660a8ddcc747121d10a}{}\label{classow__pub_1_1StatePublisher_a089b7d97ff2d3660a8ddcc747121d10a}
+
+\item 
+ros\+::\+Publisher {\bfseries left\+\_\+groin\+\_\+offset\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_ad1e5f2851d0e9a68abc866ef58988210}{}\label{classow__pub_1_1StatePublisher_ad1e5f2851d0e9a68abc866ef58988210}
+
+\item 
+ros\+::\+Publisher {\bfseries right\+\_\+ankle\+\_\+offset\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_afa96216f94a6c9b1d07ba9ebd4772643}{}\label{classow__pub_1_1StatePublisher_afa96216f94a6c9b1d07ba9ebd4772643}
+
+\item 
+ros\+::\+Publisher {\bfseries right\+\_\+groin\+\_\+offset\+\_\+pub\+\_\+}\hypertarget{classow__pub_1_1StatePublisher_a7082cd9ccc20d161004e7bc888e95df2}{}\label{classow__pub_1_1StatePublisher_a7082cd9ccc20d161004e7bc888e95df2}
+
+\item 
+tf\+::\+Transform\+Broadcaster {\bfseries broadcaster}\hypertarget{classow__pub_1_1StatePublisher_a32083e94f76c9f1ccd17610f14abd720}{}\label{classow__pub_1_1StatePublisher_a32083e94f76c9f1ccd17610f14abd720}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__pub_1_1StatePublisher}{State\+Publisher} class. 
+
+This class implements the \hyperlink{classow__pub_1_1StatePublisher}{State\+Publisher} module of the openwalker framework, which publishes the information of module ouputs as a ros topics. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+pub\+::\+State\+Publisher@{ow\+\_\+pub\+::\+State\+Publisher}!publish@{publish}}
+\index{publish@{publish}!ow\+\_\+pub\+::\+State\+Publisher@{ow\+\_\+pub\+::\+State\+Publisher}}
+\subsubsection[{\texorpdfstring{publish(const ros\+::\+Time \&time)}{publish(const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+pub\+::\+State\+Publisher\+::publish (
+\begin{DoxyParamCaption}
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classow__pub_1_1StatePublisher_aaf2b6be0238f34a9bfb3fd90cc2576cd}{}\label{classow__pub_1_1StatePublisher_aaf2b6be0238f34a9bfb3fd90cc2576cd}
+
+
+publish the information to ros 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the current robot time \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+pub\+::\+State\+Publisher@{ow\+\_\+pub\+::\+State\+Publisher}!start@{start}}
+\index{start@{start}!ow\+\_\+pub\+::\+State\+Publisher@{ow\+\_\+pub\+::\+State\+Publisher}}
+\subsubsection[{\texorpdfstring{start(ow\+::\+Flags \&flags, const ros\+::\+Time \&time)}{start(ow::Flags &flags, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ow\+\_\+pub\+::\+State\+Publisher\+::start (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classow__pub_1_1StatePublisher_a35aa494e2a6e9dec704fa84de731cac7}{}\label{classow__pub_1_1StatePublisher_a35aa494e2a6e9dec704fa84de731cac7}
+
+
+start the module, called befor update 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & the current status flags of the robot \\
+\hline
+{\em time} & the current robot time \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classow_1_1ModuleBase_a1614d56103187e7fcebe991dd644cdf5}{ow\+::\+Module\+Base}.
+
+\index{ow\+\_\+pub\+::\+State\+Publisher@{ow\+\_\+pub\+::\+State\+Publisher}!stop@{stop}}
+\index{stop@{stop}!ow\+\_\+pub\+::\+State\+Publisher@{ow\+\_\+pub\+::\+State\+Publisher}}
+\subsubsection[{\texorpdfstring{stop(ow\+::\+Flags \&flags, const ros\+::\+Time \&time)}{stop(ow::Flags &flags, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ow\+\_\+pub\+::\+State\+Publisher\+::stop (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classow__pub_1_1StatePublisher_a48fdc68768ac6d495117676e9f06e721}{}\label{classow__pub_1_1StatePublisher_a48fdc68768ac6d495117676e9f06e721}
+
+
+Stop the module, called befor stopping. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Stopping} & time \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classow_1_1ModuleBase_a42b572e9bb962043af5773c7b8a6f051}{ow\+::\+Module\+Base}.
+
+\index{ow\+\_\+pub\+::\+State\+Publisher@{ow\+\_\+pub\+::\+State\+Publisher}!update@{update}}
+\index{update@{update}!ow\+\_\+pub\+::\+State\+Publisher@{ow\+\_\+pub\+::\+State\+Publisher}}
+\subsubsection[{\texorpdfstring{update(ow\+::\+Flags \&flags, const ros\+::\+Time \&time, const ros\+::\+Duration \&dt)}{update(ow::Flags &flags, const ros::Time &time, const ros::Duration &dt)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+pub\+::\+State\+Publisher\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const ros\+::\+Time \&}]{time, }
+\item[{const ros\+::\+Duration \&}]{dt}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__pub_1_1StatePublisher_a61b1d103496f2e64cf52ea877fd6da5a}{}\label{classow__pub_1_1StatePublisher_a61b1d103496f2e64cf52ea877fd6da5a}
+
+
+performs update step of the module, called periodically 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & the current status flags of the robot \\
+\hline
+{\em time} & the current robot time \\
+\hline
+{\em dt} & the elapsed time since last update call \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+state\+\_\+publisher/include/ow\+\_\+state\+\_\+publisher/\hyperlink{state__publisher_8h}{state\+\_\+publisher.\+h}\end{DoxyCompactItemize}

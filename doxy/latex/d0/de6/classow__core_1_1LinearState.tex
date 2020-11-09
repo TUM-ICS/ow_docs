@@ -1,0 +1,139 @@
+\hypertarget{classow__core_1_1LinearState}{}\section{ow\+\_\+core\+:\+:Linear\+State$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1LinearState}\index{ow\+\_\+core\+::\+Linear\+State$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Linear\+State$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1LinearState}{Linear\+State} class.  
+
+
+
+
+{\ttfamily \#include $<$linear\+\_\+state.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Linear\+State$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d0/de6/classow__core_1_1LinearState}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1LinearState_a46bf5ce9b8805eada92187897d4e25e1}{}\label{classow__core_1_1LinearState_a46bf5ce9b8805eada92187897d4e25e1}
+
+\item 
+typedef \hyperlink{classow__core_1_1LinearStateBase}{Linear\+State\+Base}$<$ \hyperlink{classow__core_1_1LinearState}{Linear\+State}$<$ Scalar $>$ $>$ {\bfseries Base}\hypertarget{classow__core_1_1LinearState_a797d8badfeb3a75e7147f8f002e18b03}{}\label{classow__core_1_1LinearState_a797d8badfeb3a75e7147f8f002e18b03}
+
+\item 
+typedef \hyperlink{classow__core_1_1LinearPosition}{Linear\+Position}$<$ Scalar $>$ {\bfseries Pos}\hypertarget{classow__core_1_1LinearState_aea84e2d7b5498687c6b37fdcd425c4e2}{}\label{classow__core_1_1LinearState_aea84e2d7b5498687c6b37fdcd425c4e2}
+
+\item 
+typedef \hyperlink{classow__core_1_1LinearVelocity}{Linear\+Velocity}$<$ Scalar $>$ {\bfseries Vel}\hypertarget{classow__core_1_1LinearState_a3a78d4ea0ddae2e5c6747f55e0569c38}{}\label{classow__core_1_1LinearState_a3a78d4ea0ddae2e5c6747f55e0569c38}
+
+\item 
+typedef \hyperlink{classow__core_1_1LinearAcceleration}{Linear\+Acceleration}$<$ Scalar $>$ {\bfseries Acc}\hypertarget{classow__core_1_1LinearState_a7f0fb820b0e27417a61fc4682f1e0c74}{}\label{classow__core_1_1LinearState_a7f0fb820b0e27417a61fc4682f1e0c74}
+
+\item 
+typedef \hyperlink{classow__core_1_1Force}{Force}$<$ Scalar $>$ {\bfseries Effort}\hypertarget{classow__core_1_1LinearState_a37f916679432fa6bad8c202d5b81d968}{}\label{classow__core_1_1LinearState_a37f916679432fa6bad8c202d5b81d968}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1LinearState_a0fa636ea4885fea47d2df258da7619a7}{Linear\+State} ()\hypertarget{classow__core_1_1LinearState_a0fa636ea4885fea47d2df258da7619a7}{}\label{classow__core_1_1LinearState_a0fa636ea4885fea47d2df258da7619a7}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1LinearState_a3c79f42470a2a3a8c394a9bc4136d59e}{Linear\+State} (const \hyperlink{classow__core_1_1LinearState}{Linear\+State} \&other)\hypertarget{classow__core_1_1LinearState_a3c79f42470a2a3a8c394a9bc4136d59e}{}\label{classow__core_1_1LinearState_a3c79f42470a2a3a8c394a9bc4136d59e}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1LinearState_a02eb2578bcb184286309414ab66d4576}{Linear\+State} (const \hyperlink{classow__core_1_1LinearStateBase}{Base} \&other)\hypertarget{classow__core_1_1LinearState_a02eb2578bcb184286309414ab66d4576}{}\label{classow__core_1_1LinearState_a02eb2578bcb184286309414ab66d4576}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1LinearState_a7cc988e99806ebea228089b95ea5bcf8}{Linear\+State} (const \hyperlink{classow__core_1_1LinearPosition}{Pos} \&x, const \hyperlink{classow__core_1_1LinearVelocity}{Vel} \&xP=Vel\+::\+Zero(), const \hyperlink{classow__core_1_1LinearAcceleration}{Acc} \&x\+PP=Acc\+::\+Zero(), const \hyperlink{classow__core_1_1Force}{Effort} \&f=Effort\+::\+Zero())\hypertarget{classow__core_1_1LinearState_a7cc988e99806ebea228089b95ea5bcf8}{}\label{classow__core_1_1LinearState_a7cc988e99806ebea228089b95ea5bcf8}
+
+\begin{DoxyCompactList}\small\item\em Constructor from sub elements. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1LinearPosition}{Pos} \& {\bfseries x} ()\hypertarget{classow__core_1_1LinearState_a75ba10830be1b140ee439fc403e9ff33}{}\label{classow__core_1_1LinearState_a75ba10830be1b140ee439fc403e9ff33}
+
+\item 
+\hyperlink{classow__core_1_1LinearPosition}{Pos} \& {\bfseries pos} ()\hypertarget{classow__core_1_1LinearState_aacd77e596217eea3b59b589858cee849}{}\label{classow__core_1_1LinearState_aacd77e596217eea3b59b589858cee849}
+
+\item 
+const \hyperlink{classow__core_1_1LinearPosition}{Pos} \& {\bfseries x} () const \hypertarget{classow__core_1_1LinearState_a1665ad8fd9df5cccc68a7e285785fae8}{}\label{classow__core_1_1LinearState_a1665ad8fd9df5cccc68a7e285785fae8}
+
+\item 
+const \hyperlink{classow__core_1_1LinearPosition}{Pos} \& {\bfseries pos} () const \hypertarget{classow__core_1_1LinearState_a50a7df76bfb7c11bd1cedfc191d305d2}{}\label{classow__core_1_1LinearState_a50a7df76bfb7c11bd1cedfc191d305d2}
+
+\item 
+\hyperlink{classow__core_1_1LinearVelocity}{Vel} \& {\bfseries xP} ()\hypertarget{classow__core_1_1LinearState_a5aacfb154181f5ab4dc40b4852b96049}{}\label{classow__core_1_1LinearState_a5aacfb154181f5ab4dc40b4852b96049}
+
+\item 
+\hyperlink{classow__core_1_1LinearVelocity}{Vel} \& {\bfseries vel} ()\hypertarget{classow__core_1_1LinearState_ab929f3c2726921068959e055dd935af7}{}\label{classow__core_1_1LinearState_ab929f3c2726921068959e055dd935af7}
+
+\item 
+const \hyperlink{classow__core_1_1LinearVelocity}{Vel} \& {\bfseries xP} () const \hypertarget{classow__core_1_1LinearState_a302678c6a12551077049e773292d951d}{}\label{classow__core_1_1LinearState_a302678c6a12551077049e773292d951d}
+
+\item 
+const \hyperlink{classow__core_1_1LinearVelocity}{Vel} \& {\bfseries vel} () const \hypertarget{classow__core_1_1LinearState_a1e12678b30a5d652e5fc1c22d8f8f611}{}\label{classow__core_1_1LinearState_a1e12678b30a5d652e5fc1c22d8f8f611}
+
+\item 
+\hyperlink{classow__core_1_1LinearAcceleration}{Acc} \& {\bfseries x\+PP} ()\hypertarget{classow__core_1_1LinearState_a196a9e749b1dfa46829f4266d5515dc7}{}\label{classow__core_1_1LinearState_a196a9e749b1dfa46829f4266d5515dc7}
+
+\item 
+\hyperlink{classow__core_1_1LinearAcceleration}{Acc} \& {\bfseries acc} ()\hypertarget{classow__core_1_1LinearState_a1d802b7bc39a9ae1aff3cc9c1839a6ac}{}\label{classow__core_1_1LinearState_a1d802b7bc39a9ae1aff3cc9c1839a6ac}
+
+\item 
+const \hyperlink{classow__core_1_1LinearAcceleration}{Acc} \& {\bfseries x\+PP} () const \hypertarget{classow__core_1_1LinearState_a7c4252cbcbd6d1be172a97f9ed0f1db8}{}\label{classow__core_1_1LinearState_a7c4252cbcbd6d1be172a97f9ed0f1db8}
+
+\item 
+const \hyperlink{classow__core_1_1LinearAcceleration}{Acc} \& {\bfseries acc} () const \hypertarget{classow__core_1_1LinearState_a6bb9495c531690c30dbf7ac503841db5}{}\label{classow__core_1_1LinearState_a6bb9495c531690c30dbf7ac503841db5}
+
+\item 
+\hyperlink{classow__core_1_1Force}{Effort} \& {\bfseries f} ()\hypertarget{classow__core_1_1LinearState_a7ff79092c8ac67b5ba40d20c2d77cd67}{}\label{classow__core_1_1LinearState_a7ff79092c8ac67b5ba40d20c2d77cd67}
+
+\item 
+\hyperlink{classow__core_1_1Force}{Effort} \& {\bfseries effort} ()\hypertarget{classow__core_1_1LinearState_a9e52609dd9e68c861b1392a643e91b17}{}\label{classow__core_1_1LinearState_a9e52609dd9e68c861b1392a643e91b17}
+
+\item 
+const \hyperlink{classow__core_1_1Force}{Effort} \& {\bfseries f} () const \hypertarget{classow__core_1_1LinearState_a8862e3343c7d9331f19b246377395b6d}{}\label{classow__core_1_1LinearState_a8862e3343c7d9331f19b246377395b6d}
+
+\item 
+const \hyperlink{classow__core_1_1Force}{Effort} \& {\bfseries effort} () const \hypertarget{classow__core_1_1LinearState_a05e33f3283513f6aba6bb65bcd7c5549}{}\label{classow__core_1_1LinearState_a05e33f3283513f6aba6bb65bcd7c5549}
+
+\item 
+\hyperlink{classow__core_1_1LinearState}{Linear\+State} \& \hyperlink{classow__core_1_1LinearState_a95fdbea9f5fc1cdf1aac31183b175173}{operator=} (const \hyperlink{classow__core_1_1LinearState}{Linear\+State} \&other)\hypertarget{classow__core_1_1LinearState_a95fdbea9f5fc1cdf1aac31183b175173}{}\label{classow__core_1_1LinearState_a95fdbea9f5fc1cdf1aac31183b175173}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1LinearPosition}{Pos} {\bfseries x\+\_\+}\hypertarget{classow__core_1_1LinearState_a65803caab3f59c4eac3c1f6a68e30320}{}\label{classow__core_1_1LinearState_a65803caab3f59c4eac3c1f6a68e30320}
+
+\item 
+\hyperlink{classow__core_1_1LinearVelocity}{Vel} {\bfseries x\+P\+\_\+}\hypertarget{classow__core_1_1LinearState_a77b8c30f6545c4b91c01c1eeb391cd22}{}\label{classow__core_1_1LinearState_a77b8c30f6545c4b91c01c1eeb391cd22}
+
+\item 
+\hyperlink{classow__core_1_1LinearAcceleration}{Acc} {\bfseries x\+P\+P\+\_\+}\hypertarget{classow__core_1_1LinearState_a68a76a3b4f98a3229b4d86366bec561a}{}\label{classow__core_1_1LinearState_a68a76a3b4f98a3229b4d86366bec561a}
+
+\item 
+\hyperlink{classow__core_1_1Force}{Effort} {\bfseries f\+\_\+}\hypertarget{classow__core_1_1LinearState_a25f29e3515853104e6dbe7642a5100ac}{}\label{classow__core_1_1LinearState_a25f29e3515853104e6dbe7642a5100ac}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Linear\+State$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1LinearState}{Linear\+State} class. 
+
+This class is a container for\+:
+\begin{DoxyItemize}
+\item \hyperlink{classow__core_1_1LinearPosition}{Linear\+Position}
+\item \hyperlink{classow__core_1_1LinearVelocity}{Linear\+Velocity}
+\item \hyperlink{classow__core_1_1LinearAcceleration}{Linear\+Acceleration}
+\item \hyperlink{classow__core_1_1Force}{Force} 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/\hyperlink{linear__state_8h}{linear\+\_\+state.\+h}\end{DoxyCompactItemize}

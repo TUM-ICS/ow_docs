@@ -1,0 +1,82 @@
+\hypertarget{single__foot__trajectory__generator_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+ftg/include/ow\+\_\+ftg/single\+\_\+foot\+\_\+trajectory\+\_\+generator.h File Reference}
+\label{single__foot__trajectory__generator_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+ftg/include/ow\+\_\+ftg/single\+\_\+foot\+\_\+trajectory\+\_\+generator.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+ftg/include/ow\+\_\+ftg/single\+\_\+foot\+\_\+trajectory\+\_\+generator.\+h}}
+{\ttfamily \#include $<$ow\+\_\+core/types.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/trajectory/trajectories.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/trajectory/state\+\_\+trajectory.\+h$>$}\\*
+{\ttfamily \#include $<$ow\+\_\+core/common/parameter.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classow__ftg_1_1SingleFootTrajectoryGenerator}{ow\+\_\+ftg\+::\+Single\+Foot\+Trajectory\+Generator}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classow__ftg_1_1SingleFootTrajectoryGenerator}{Single\+Foot\+Trajectory\+Generator} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1PolynomialTrajectory}{ow\+\_\+core\+::\+Polynomial\+Trajectory}$<$ \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position}, \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} $>$ \hyperlink{single__foot__trajectory__generator_8h_a185f605f6d3227ac82060256a97f3fab}{ow\+\_\+ftg\+::\+Stepping\+Polynomial} (\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} period, \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} height, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&X\+\_\+start, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&X\+\_\+end)
+\begin{DoxyCompactList}\small\item\em Construct a six order Spline Trajectory for stepping. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+03.\+05.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287. 
+
+\subsection{Function Documentation}
+\index{single\+\_\+foot\+\_\+trajectory\+\_\+generator.\+h@{single\+\_\+foot\+\_\+trajectory\+\_\+generator.\+h}!Stepping\+Polynomial@{Stepping\+Polynomial}}
+\index{Stepping\+Polynomial@{Stepping\+Polynomial}!single\+\_\+foot\+\_\+trajectory\+\_\+generator.\+h@{single\+\_\+foot\+\_\+trajectory\+\_\+generator.\+h}}
+\subsubsection[{\texorpdfstring{Stepping\+Polynomial(ow\+::\+Scalar period, ow\+::\+Scalar height, const ow\+::\+Cartesian\+Position \&\+X\+\_\+start, const ow\+::\+Cartesian\+Position \&\+X\+\_\+end)}{SteppingPolynomial(ow::Scalar period, ow::Scalar height, const ow::CartesianPosition &X_start, const ow::CartesianPosition &X_end)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ow\+\_\+core\+::\+Polynomial\+Trajectory}$<${\bf ow\+::\+Cartesian\+Position}, {\bf ow\+::\+Scalar}$>$ ow\+\_\+ftg\+::\+Stepping\+Polynomial (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Scalar}}]{period, }
+\item[{{\bf ow\+::\+Scalar}}]{height, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{X\+\_\+start, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{X\+\_\+end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{single__foot__trajectory__generator_8h_file_a185f605f6d3227ac82060256a97f3fab}{}\label{single__foot__trajectory__generator_8h_file_a185f605f6d3227ac82060256a97f3fab}
+
+
+Construct a six order Spline Trajectory for stepping. 
+
+Constructs a six order polynomial for a cartesian poses, passing through X\+\_\+start, X\+\_\+middle and X\+\_\+end.
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & Duration of the trajectory \\
+\hline
+{\em height} & of the foot at t=period/2 \\
+\hline
+{\em X\+\_\+start} & cartesian start position \\
+\hline
+{\em X\+\_\+end} & cartesian end position\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A six order polynomial that can be used with \hyperlink{classow__core_1_1StateTrajectory}{ow\+\_\+core\+::\+State\+Trajectory} 
+\end{DoxyReturn}

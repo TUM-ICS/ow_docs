@@ -1,0 +1,97 @@
+\hypertarget{classow_1_1Parameter}{}\section{ow\+:\+:Parameter Class Reference}
+\label{classow_1_1Parameter}\index{ow\+::\+Parameter@{ow\+::\+Parameter}}
+
+
+The \hyperlink{classow_1_1Parameter}{Parameter} Class.  
+
+
+
+
+{\ttfamily \#include $<$parameter.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::unordered\+\_\+map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \hyperlink{classow_1_1Entry}{Entry} $>$ $>$ {\bfseries Entries}\hypertarget{classow_1_1Parameter_a1f5f584e9898172723d310f900a803ae}{}\label{classow_1_1Parameter_a1f5f584e9898172723d310f900a803ae}
+
+\item 
+typedef Entries\+::iterator {\bfseries Entries\+Iter}\hypertarget{classow_1_1Parameter_a08a9d8533b720469ff3e64872e35f52b}{}\label{classow_1_1Parameter_a08a9d8533b720469ff3e64872e35f52b}
+
+\item 
+typedef Entries\+::const\+\_\+iterator {\bfseries C\+Entries\+Iter}\hypertarget{classow_1_1Parameter_acf7ddd1242584a89fe69b8d417bd65a0}{}\label{classow_1_1Parameter_acf7ddd1242584a89fe69b8d417bd65a0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Parameter} (const std\+::string \&ns=\char`\"{}\char`\"{})\hypertarget{classow_1_1Parameter_a3e73f3b00d71d73af43a86ba889cbf84}{}\label{classow_1_1Parameter_a3e73f3b00d71d73af43a86ba889cbf84}
+
+\item 
+{\bfseries Parameter} (const ros\+::\+Node\+Handle \&nh, const std\+::string \&sub\+\_\+ns=\char`\"{}\char`\"{})\hypertarget{classow_1_1Parameter_a2a684436cb6f2cb11459f9b315f76871}{}\label{classow_1_1Parameter_a2a684436cb6f2cb11459f9b315f76871}
+
+\item 
+bool {\bfseries is\+Loaded} () const \hypertarget{classow_1_1Parameter_a5964cc0f34e60f5cb23141ec4b959467}{}\label{classow_1_1Parameter_a5964cc0f34e60f5cb23141ec4b959467}
+
+\item 
+std\+::string {\bfseries name\+Space} () const \hypertarget{classow_1_1Parameter_a98aca39fc03fdd14b22a0b5abb8122d0}{}\label{classow_1_1Parameter_a98aca39fc03fdd14b22a0b5abb8122d0}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries add} (const std\+::string \&name, const T \&val, bool use\+\_\+ns=true)\hypertarget{classow_1_1Parameter_a663890f54b348d3e342f98b85751f19c}{}\label{classow_1_1Parameter_a663890f54b348d3e342f98b85751f19c}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries add} (const std\+::string \&name, bool use\+\_\+ns=true)\hypertarget{classow_1_1Parameter_aa8681811ee0cd772dfd4bc2e21b885eb}{}\label{classow_1_1Parameter_aa8681811ee0cd772dfd4bc2e21b885eb}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries add} (const std\+::vector$<$ std\+::string $>$ \&names, bool use\+\_\+ns=true)\hypertarget{classow_1_1Parameter_a2c68bda7c4790465c3564b6237290a8c}{}\label{classow_1_1Parameter_a2c68bda7c4790465c3564b6237290a8c}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries add} (const std\+::vector$<$ std\+::string $>$ \&names, const std\+::vector$<$ T $>$ \&vals, bool use\+\_\+ns=true)\hypertarget{classow_1_1Parameter_af1b7373eeefec07d780616d335da3250}{}\label{classow_1_1Parameter_af1b7373eeefec07d780616d335da3250}
+
+\item 
+bool {\bfseries load} (const std\+::string \&ns)\hypertarget{classow_1_1Parameter_ad323817f0a57331a208e0347b7384e37}{}\label{classow_1_1Parameter_ad323817f0a57331a208e0347b7384e37}
+
+\item 
+bool {\bfseries load} (const ros\+::\+Node\+Handle \&nh, const std\+::string \&sub\+\_\+ns)\hypertarget{classow_1_1Parameter_a6862c7ec9bc7203b9a3bb373af126579}{}\label{classow_1_1Parameter_a6862c7ec9bc7203b9a3bb373af126579}
+
+\item 
+bool {\bfseries load} ()\hypertarget{classow_1_1Parameter_a4dc84c89ea549ae37c17eb4f27c10ada}{}\label{classow_1_1Parameter_a4dc84c89ea549ae37c17eb4f27c10ada}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries get} (const std\+::string \&name, T \&val) const \hypertarget{classow_1_1Parameter_aa82fdc3e71145c2f957f397c82a8d202}{}\label{classow_1_1Parameter_aa82fdc3e71145c2f957f397c82a8d202}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries get} (const std\+::string \&name) const \hypertarget{classow_1_1Parameter_a544effbbd6995b3a4532dcaba2c19c5e}{}\label{classow_1_1Parameter_a544effbbd6995b3a4532dcaba2c19c5e}
+
+\item 
+std\+::string {\bfseries to\+String} ()\hypertarget{classow_1_1Parameter_acd8f8e57b755e2f73d2143abbf68410e}{}\label{classow_1_1Parameter_acd8f8e57b755e2f73d2143abbf68410e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries prepare\+Ns} (const std\+::string \&ns, const std\+::string \&sub\+\_\+ns=\char`\"{}\char`\"{}) const \hypertarget{classow_1_1Parameter_a44bff8475f5260a6618c12f649161952}{}\label{classow_1_1Parameter_a44bff8475f5260a6618c12f649161952}
+
+\item 
+std\+::string {\bfseries prepare\+Name} (const std\+::string \&name) const \hypertarget{classow_1_1Parameter_a2672af9ffe32b48cc623e3364745d5c5}{}\label{classow_1_1Parameter_a2672af9ffe32b48cc623e3364745d5c5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries is\+\_\+loaded\+\_\+}\hypertarget{classow_1_1Parameter_adb729fea52df3dde46380fe3fc2b0c00}{}\label{classow_1_1Parameter_adb729fea52df3dde46380fe3fc2b0c00}
+
+\item 
+std\+::string {\bfseries ns\+\_\+}\hypertarget{classow_1_1Parameter_ac021a1eb8fa669265f41e11f39d8f7e0}{}\label{classow_1_1Parameter_ac021a1eb8fa669265f41e11f39d8f7e0}
+
+\item 
+Entries {\bfseries entries\+\_\+}\hypertarget{classow_1_1Parameter_ad7980658fd319e81b2a380586dd1a6b2}{}\label{classow_1_1Parameter_ad7980658fd319e81b2a380586dd1a6b2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow_1_1Parameter}{Parameter} Class. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/common/\hyperlink{parameter_8h}{parameter.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,144 @@
+\hypertarget{classow__zmp_1_1FootZmpEstimator}{}\section{ow\+\_\+zmp\+:\+:Foot\+Zmp\+Estimator Class Reference}
+\label{classow__zmp_1_1FootZmpEstimator}\index{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator@{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator}}
+
+
+The \hyperlink{classow__zmp_1_1FootZmpEstimator}{Foot\+Zmp\+Estimator} class.  
+
+
+
+
+{\ttfamily \#include $<$foot\+\_\+zmp\+\_\+estimator.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow__core_1_1StateDifferentiator}{ow\+::\+State\+Differentiator}$<$ \hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} $>$ {\bfseries Differentiator}\hypertarget{classow__zmp_1_1FootZmpEstimator_aae9d8e2635c31987d4cbff058cc63411}{}\label{classow__zmp_1_1FootZmpEstimator_aae9d8e2635c31987d4cbff058cc63411}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__zmp_1_1FootZmpEstimator_a7d4972b9f58c9d322d1fe9169bae0996}{Foot\+Zmp\+Estimator} ()\hypertarget{classow__zmp_1_1FootZmpEstimator_a7d4972b9f58c9d322d1fe9169bae0996}{}\label{classow__zmp_1_1FootZmpEstimator_a7d4972b9f58c9d322d1fe9169bae0996}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classow__zmp_1_1FootZmpEstimator}{Foot\+Zmp\+Estimator} Default constructor. Initializes the filer and the internal variables. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__zmp_1_1FootZmpEstimator_add7eda713cecb592d6f4ab5e549458a0}{init} (\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} freq, \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} d, \hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} min\+\_\+force\+\_\+thres)
+\begin{DoxyCompactList}\small\item\em Initialization. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \& \hyperlink{classow__zmp_1_1FootZmpEstimator_a73485cd951c6dd68b52cb5750d25a196}{update\+Wrt\+Foot} (const \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \&W\+\_\+f)
+\begin{DoxyCompactList}\small\item\em Compute Zero\+Moment\+Point\+State from FT sensor data in foot frame as presented in \mbox{[}Kajita et al. 2014\mbox{]}. The Z\+MP is calculated as. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \& \hyperlink{classow__zmp_1_1FootZmpEstimator_af913ff44ac3a5133bae6cb141c336b91}{p\+\_\+f} () const 
+\begin{DoxyCompactList}\small\item\em Get Zero\+Moment\+Point\+State wrt foot frame $ \mathVecB{P}{F} $. \end{DoxyCompactList}\item 
+const bool \& \hyperlink{classow__zmp_1_1FootZmpEstimator_acf5d50ae805796ebc44ec23d6fdef7b2}{is\+Support} () const 
+\begin{DoxyCompactList}\small\item\em Check if this foot is in contact with the ground. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \hyperlink{classow__zmp_1_1FootZmpEstimator_afb49160801ae37a348624827cbed9be0}{p\+\_\+f\+\_\+}\hypertarget{classow__zmp_1_1FootZmpEstimator_afb49160801ae37a348624827cbed9be0}{}\label{classow__zmp_1_1FootZmpEstimator_afb49160801ae37a348624827cbed9be0}
+
+\begin{DoxyCompactList}\small\item\em Zero\+Moment\+Point\+State wrt foot frame. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__zmp_1_1FootZmpEstimator_af4af3485e3edd63f8aa67087be62767b}{min\+\_\+force\+\_\+thres\+\_\+}\hypertarget{classow__zmp_1_1FootZmpEstimator_af4af3485e3edd63f8aa67087be62767b}{}\label{classow__zmp_1_1FootZmpEstimator_af4af3485e3edd63f8aa67087be62767b}
+
+\begin{DoxyCompactList}\small\item\em Minimal force to compute Z\+MP. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__zmp_1_1FootZmpEstimator_ad5ba2525181ed824d20358af47d3555b}{d\+\_\+}\hypertarget{classow__zmp_1_1FootZmpEstimator_ad5ba2525181ed824d20358af47d3555b}{}\label{classow__zmp_1_1FootZmpEstimator_ad5ba2525181ed824d20358af47d3555b}
+
+\begin{DoxyCompactList}\small\item\em Distance between sole and FT sensor frame. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__zmp_1_1FootZmpEstimator_a78ba1761f1711ab2f5749a160bd131f5}{is\+\_\+support\+\_\+}\hypertarget{classow__zmp_1_1FootZmpEstimator_a78ba1761f1711ab2f5749a160bd131f5}{}\label{classow__zmp_1_1FootZmpEstimator_a78ba1761f1711ab2f5749a160bd131f5}
+
+\begin{DoxyCompactList}\small\item\em Flag to fast check foot contact. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classow__core_1_1StateDifferentiator}{Differentiator} $>$ \hyperlink{classow__zmp_1_1FootZmpEstimator_aac4fe9251a1cee8ebf73e88afc547c04}{diff\+\_\+}\hypertarget{classow__zmp_1_1FootZmpEstimator_aac4fe9251a1cee8ebf73e88afc547c04}{}\label{classow__zmp_1_1FootZmpEstimator_aac4fe9251a1cee8ebf73e88afc547c04}
+
+\begin{DoxyCompactList}\small\item\em Z\+MP derivative updater. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__zmp_1_1FootZmpEstimator}{Foot\+Zmp\+Estimator} class. 
+
+This class calculates the center of pressure of one foot sole from ankle FT sensor wrench wrt Sole frame.
+
+The standard method to compute the Z\+MP is based directly on the FT sensor information of each foot \mbox{[}Kajita et al. 2014\mbox{]}. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator@{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator}!init@{init}}
+\index{init@{init}!ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator@{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator}}
+\subsubsection[{\texorpdfstring{init(ow\+::\+Scalar freq, ow\+::\+Scalar d, ow\+::\+Scalar min\+\_\+force\+\_\+thres)}{init(ow::Scalar freq, ow::Scalar d, ow::Scalar min_force_thres)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator\+::init (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Scalar}}]{freq, }
+\item[{{\bf ow\+::\+Scalar}}]{d, }
+\item[{{\bf ow\+::\+Scalar}}]{min\+\_\+force\+\_\+thres}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__zmp_1_1FootZmpEstimator_add7eda713cecb592d6f4ab5e549458a0}{}\label{classow__zmp_1_1FootZmpEstimator_add7eda713cecb592d6f4ab5e549458a0}
+
+
+Initialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em freq} & Update frequency.\\
+\hline
+{\em d} & Vertical distance from sole to FT sensor.\\
+\hline
+{\em min\+\_\+force\+\_\+thres} & Minimal force to compute $ \mathVecB{p}{F} $. Otherwise\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success. 
+\end{DoxyReturn}
+\index{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator@{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator}!is\+Support@{is\+Support}}
+\index{is\+Support@{is\+Support}!ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator@{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator}}
+\subsubsection[{\texorpdfstring{is\+Support() const }{isSupport() const }}]{\setlength{\rightskip}{0pt plus 5cm}const bool\& ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator\+::is\+Support (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classow__zmp_1_1FootZmpEstimator_acf5d50ae805796ebc44ec23d6fdef7b2}{}\label{classow__zmp_1_1FootZmpEstimator_acf5d50ae805796ebc44ec23d6fdef7b2}
+
+
+Check if this foot is in contact with the ground. 
+
+\begin{DoxyReturn}{Returns}
+True if the force vertical force in the FT sensor is greater than than min\+\_\+force\+\_\+thres\+\_\+. 
+\end{DoxyReturn}
+\index{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator@{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator}!p\+\_\+f@{p\+\_\+f}}
+\index{p\+\_\+f@{p\+\_\+f}!ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator@{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator}}
+\subsubsection[{\texorpdfstring{p\+\_\+f() const }{p_f() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ow\+::\+Zero\+Moment\+Point\+State}\& ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator\+::p\+\_\+f (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classow__zmp_1_1FootZmpEstimator_af913ff44ac3a5133bae6cb141c336b91}{}\label{classow__zmp_1_1FootZmpEstimator_af913ff44ac3a5133bae6cb141c336b91}
+
+
+Get Zero\+Moment\+Point\+State wrt foot frame $ \mathVecB{P}{F} $. 
+
+\begin{DoxyReturn}{Returns}
+Zero\+Moment\+Point\+State wrt foot frame $ \mathVecB{P}{F} $ containing $ \mathVecB{p}{F} $, $ \mathVecB{\dot{p}}{F} $, and $ \mathVecB{\ddot{p}}{F} $. 
+\end{DoxyReturn}
+\index{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator@{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator}!update\+Wrt\+Foot@{update\+Wrt\+Foot}}
+\index{update\+Wrt\+Foot@{update\+Wrt\+Foot}!ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator@{ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator}}
+\subsubsection[{\texorpdfstring{update\+Wrt\+Foot(const ow\+::\+Wrench \&\+W\+\_\+f)}{updateWrtFoot(const ow::Wrench &W_f)}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ow\+::\+Zero\+Moment\+Point\+State}\& ow\+\_\+zmp\+::\+Foot\+Zmp\+Estimator\+::update\+Wrt\+Foot (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Wrench} \&}]{W\+\_\+f}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__zmp_1_1FootZmpEstimator_a73485cd951c6dd68b52cb5750d25a196}{}\label{classow__zmp_1_1FootZmpEstimator_a73485cd951c6dd68b52cb5750d25a196}
+
+
+Compute Zero\+Moment\+Point\+State from FT sensor data in foot frame as presented in \mbox{[}Kajita et al. 2014\mbox{]}. The Z\+MP is calculated as. 
+
+$ \mathVecQB{p}{x}{F}=\frac{-\mathVecSQB{\mu}{y}{F}-\mathVecQB{f}{x}{F}\, \mathScalarQ{d}{F}}{\mathVecQB{f}{z}{F}} $
+
+$ \mathVecQB{p}{y}{F}=\frac{-\mathVecSQB{\mu}{x}{F}-\mathVecQB{f}{y}{F}\, \mathScalarQ{d}{F}}{\mathVecQB{f}{z}{F}} $
+
+$ \mathVecB{p}{F}=\mathSBs{\mathCommaT{\mathVecQB{p}{x}{F}}{\mathVecQB{p} {y}{F}}{0}}^{\mathOpT} $
+
+where $\mathName{F}=\mathCBs{\mathCommaD{\mathName{L}}{\mathName{R}}}$ stands for each foot frame (Left and Right), $ \mathVecB{FT}{F}= \mathSBs{\mathCommaD{\mathVecB{f}{F}}{\mathVecSB{\mu} {F}}}$ are the ankle FT sensor wrenches, and $\mathScalarQ{d}{F}$ is the FT sensor offset of the foot F.
+
+
+\begin{DoxyParams}{Parameters}
+{\em W\+\_\+f} & Ankle wrench wrt foot frame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zero\+Moment\+Point\+State wrt world frame containing $ \mathVecB{p}{F} $, $ \mathVecB{\dot{p}}{F} $, and $ \mathVecB{\ddot{p}}{F} $. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+zmp/include/ow\+\_\+zmp/\hyperlink{foot__zmp__estimator_8h}{foot\+\_\+zmp\+\_\+estimator.\+h}\end{DoxyCompactItemize}

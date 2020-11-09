@@ -1,0 +1,100 @@
+\hypertarget{classow_1_1ICOMTrajectoryGenerator}{}\section{ow\+:\+:I\+C\+O\+M\+Trajectory\+Generator Class Reference}
+\label{classow_1_1ICOMTrajectoryGenerator}\index{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator@{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator}}
+
+
+The \hyperlink{classow_1_1ICOMTrajectoryGenerator}{I\+C\+O\+M\+Trajectory\+Generator} class.  
+
+
+
+
+{\ttfamily \#include $<$i\+\_\+com\+\_\+trajectory\+\_\+generator.\+h$>$}
+
+Inheritance diagram for ow\+:\+:I\+C\+O\+M\+Trajectory\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d3/d6d/classow_1_1ICOMTrajectoryGenerator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+C\+O\+M\+Trajectory\+Generator} (const std\+::string \&\hyperlink{classow_1_1GenericModuleBase_a4b712883728cdbab7779e27f9a23689c}{name})\hypertarget{classow_1_1ICOMTrajectoryGenerator_a2fc5361a08d6d2e27f04a3539ed68965}{}\label{classow_1_1ICOMTrajectoryGenerator_a2fc5361a08d6d2e27f04a3539ed68965}
+
+\item 
+virtual \hyperlink{classow_1_1ICOMTrajectoryGenerator_ac018f29d8a184fe06903dc8a220b416c}{$\sim$\+I\+C\+O\+M\+Trajectory\+Generator} ()\hypertarget{classow_1_1ICOMTrajectoryGenerator_ac018f29d8a184fe06903dc8a220b416c}{}\label{classow_1_1ICOMTrajectoryGenerator_ac018f29d8a184fe06903dc8a220b416c}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \& \hyperlink{classow_1_1ICOMTrajectoryGenerator_a45f42b461f2377055071338ef719aa50}{Z\+M\+P\+\_\+w} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \& \hyperlink{classow_1_1ICOMTrajectoryGenerator_aaca7b9f4233b9e2e44a586af52e9305d}{D\+C\+M\+\_\+w} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow_1_1ICOMTrajectoryGenerator_aa48c8eb75d6a9ff8752deb2df6aecb01}{X\+\_\+com\+\_\+w} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow_1_1ICOMTrajectoryGenerator}{I\+C\+O\+M\+Trajectory\+Generator} class. 
+
+Interface class. 
+
+\subsection{Member Function Documentation}
+\index{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator@{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator}!D\+C\+M\+\_\+w@{D\+C\+M\+\_\+w}}
+\index{D\+C\+M\+\_\+w@{D\+C\+M\+\_\+w}!ow\+::\+I\+C\+O\+M\+Trajectory\+Generator@{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{D\+C\+M\+\_\+w() const =0}{DCM_w() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+D\+C\+M\+State}\& ow\+::\+I\+C\+O\+M\+Trajectory\+Generator\+::\+D\+C\+M\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1ICOMTrajectoryGenerator_aaca7b9f4233b9e2e44a586af52e9305d}{}\label{classow_1_1ICOMTrajectoryGenerator_aaca7b9f4233b9e2e44a586af52e9305d}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State of the Reference trajectory for the D\+CM. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_a611454aadb3bc551ee85753e8135233a}{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}.
+
+\index{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator@{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator}!X\+\_\+com\+\_\+w@{X\+\_\+com\+\_\+w}}
+\index{X\+\_\+com\+\_\+w@{X\+\_\+com\+\_\+w}!ow\+::\+I\+C\+O\+M\+Trajectory\+Generator@{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{X\+\_\+com\+\_\+w() const =0}{X_com_w() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+::\+I\+C\+O\+M\+Trajectory\+Generator\+::\+X\+\_\+com\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1ICOMTrajectoryGenerator_aa48c8eb75d6a9ff8752deb2df6aecb01}{}\label{classow_1_1ICOMTrajectoryGenerator_aa48c8eb75d6a9ff8752deb2df6aecb01}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State of the Reference trajectory for the CoM. This includes both po-\/sition and orientation of a virtual link located at the Co\+Mwith the same oriantation of the base link. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_af52006557c655237b92f85dcf10b8b9b}{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}.
+
+\index{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator@{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator}!Z\+M\+P\+\_\+w@{Z\+M\+P\+\_\+w}}
+\index{Z\+M\+P\+\_\+w@{Z\+M\+P\+\_\+w}!ow\+::\+I\+C\+O\+M\+Trajectory\+Generator@{ow\+::\+I\+C\+O\+M\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{Z\+M\+P\+\_\+w() const =0}{ZMP_w() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Zero\+Moment\+Point\+State}\& ow\+::\+I\+C\+O\+M\+Trajectory\+Generator\+::\+Z\+M\+P\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1ICOMTrajectoryGenerator_a45f42b461f2377055071338ef719aa50}{}\label{classow_1_1ICOMTrajectoryGenerator_a45f42b461f2377055071338ef719aa50}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State of the Reference trajectory for the Z\+MP. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_acec7a01af30b57cd99962a3e5d7bdf4f}{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/interfaces/\hyperlink{i__com__trajectory__generator_8h}{i\+\_\+com\+\_\+trajectory\+\_\+generator.\+h}\end{DoxyCompactItemize}

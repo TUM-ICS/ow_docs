@@ -1,0 +1,74 @@
+\hypertarget{classow__core_1_1IScalarFilter}{}\section{ow\+\_\+core\+:\+:I\+Scalar\+Filter$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1IScalarFilter}\index{ow\+\_\+core\+::\+I\+Scalar\+Filter$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+I\+Scalar\+Filter$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1IScalarFilter}{I\+Scalar\+Filter} class.  
+
+
+
+
+{\ttfamily \#include $<$i\+\_\+scalar\+\_\+filter.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:I\+Scalar\+Filter$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.700965cm]{d4/d81/classow__core_1_1IScalarFilter}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1IScalarFilter_ab36ae24a160b9ac5d7afc3bb5c080e2a}{}\label{classow__core_1_1IScalarFilter_ab36ae24a160b9ac5d7afc3bb5c080e2a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classow__core_1_1IScalarFilter_a0ea84906e8f55de674e782939b83505b}{$\sim$\+I\+Scalar\+Filter} ()\hypertarget{classow__core_1_1IScalarFilter_a0ea84906e8f55de674e782939b83505b}{}\label{classow__core_1_1IScalarFilter_a0ea84906e8f55de674e782939b83505b}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual int \hyperlink{classow__core_1_1IScalarFilter_aff261dab85204d7915d7f0519c67debf}{order} () const =0
+\begin{DoxyCompactList}\small\item\em The filters order. \end{DoxyCompactList}\item 
+virtual Scalar \hyperlink{classow__core_1_1IScalarFilter_a31cdbad1e63f1be755f1447e3cefb330}{lower\+Cutoff\+Frequency} () const =0\hypertarget{classow__core_1_1IScalarFilter_a31cdbad1e63f1be755f1447e3cefb330}{}\label{classow__core_1_1IScalarFilter_a31cdbad1e63f1be755f1447e3cefb330}
+
+\begin{DoxyCompactList}\small\item\em the filters lower cutoff frequency. \end{DoxyCompactList}\item 
+virtual Scalar \hyperlink{classow__core_1_1IScalarFilter_a5a79826a092d65ed58275819e6e9b40a}{upper\+Cutoff\+Frequency} () const =0\hypertarget{classow__core_1_1IScalarFilter_a5a79826a092d65ed58275819e6e9b40a}{}\label{classow__core_1_1IScalarFilter_a5a79826a092d65ed58275819e6e9b40a}
+
+\begin{DoxyCompactList}\small\item\em the filters upper cutoff frequency. \end{DoxyCompactList}\item 
+virtual Scalar \hyperlink{classow__core_1_1IScalarFilter_a77f8e6a116998991c8d97f8d668fcdfc}{sample\+Frequency} () const =0\hypertarget{classow__core_1_1IScalarFilter_a77f8e6a116998991c8d97f8d668fcdfc}{}\label{classow__core_1_1IScalarFilter_a77f8e6a116998991c8d97f8d668fcdfc}
+
+\begin{DoxyCompactList}\small\item\em the signal sampling frequency. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+I\+Scalar\+Filter$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1IScalarFilter}{I\+Scalar\+Filter} class. 
+
+The interface class for scalar filters. This class describes the interface for all single input single output (S\+I\+SO) filters. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+I\+Scalar\+Filter@{ow\+\_\+core\+::\+I\+Scalar\+Filter}!order@{order}}
+\index{order@{order}!ow\+\_\+core\+::\+I\+Scalar\+Filter@{ow\+\_\+core\+::\+I\+Scalar\+Filter}}
+\subsubsection[{\texorpdfstring{order() const =0}{order() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ virtual int {\bf ow\+\_\+core\+::\+I\+Scalar\+Filter}$<$ \+\_\+\+Scalar $>$\+::order (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IScalarFilter_aff261dab85204d7915d7f0519c67debf}{}\label{classow__core_1_1IScalarFilter_aff261dab85204d7915d7f0519c67debf}
+
+
+The filters order. 
+
+\begin{DoxyReturn}{Returns}
+the order $\mathScalar{d}$ of the computed filter. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__core_1_1ScalarButterWorthFilter_a9bc80a1619931505c290bdb8dae15aba}{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter$<$ \+\_\+\+Scalar $>$}, and \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a83e63f3e22466b91601c53dccbf3ed66}{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter$<$ \+\_\+\+Scalar $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/algorithms/\hyperlink{i__scalar__filter_8h}{i\+\_\+scalar\+\_\+filter.\+h}\end{DoxyCompactItemize}

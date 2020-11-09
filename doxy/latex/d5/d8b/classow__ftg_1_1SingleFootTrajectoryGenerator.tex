@@ -1,0 +1,115 @@
+\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator}{}\section{ow\+\_\+ftg\+:\+:Single\+Foot\+Trajectory\+Generator Class Reference}
+\label{classow__ftg_1_1SingleFootTrajectoryGenerator}\index{ow\+\_\+ftg\+::\+Single\+Foot\+Trajectory\+Generator@{ow\+\_\+ftg\+::\+Single\+Foot\+Trajectory\+Generator}}
+
+
+The \hyperlink{classow__ftg_1_1SingleFootTrajectoryGenerator}{Single\+Foot\+Trajectory\+Generator} class.  
+
+
+
+
+{\ttfamily \#include $<$single\+\_\+foot\+\_\+trajectory\+\_\+generator.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow__core_1_1StateTrajectory}{ow\+\_\+core\+::\+State\+Trajectory}$<$ \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} $>$ {\bfseries Foot\+Spline}\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_a9a18d6d147158e93ea33786f927a9d3e}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_a9a18d6d147158e93ea33786f927a9d3e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__ftg_1_1SingleFootTrajectoryGenerator_a97e7d2f33c173bec458c7f7abc535a13}{Single\+Foot\+Trajectory\+Generator} ()\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_a97e7d2f33c173bec458c7f7abc535a13}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_a97e7d2f33c173bec458c7f7abc535a13}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classow__ftg_1_1SingleFootTrajectoryGenerator}{Single\+Foot\+Trajectory\+Generator} Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__ftg_1_1SingleFootTrajectoryGenerator_a39303c2356811311b925b1f80a3e7ae3}{$\sim$\+Single\+Foot\+Trajectory\+Generator} ()\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_a39303c2356811311b925b1f80a3e7ae3}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_a39303c2356811311b925b1f80a3e7ae3}
+
+\begin{DoxyCompactList}\small\item\em Destroy the Single Foot Trajectory Generator object. \end{DoxyCompactList}\item 
+bool {\bfseries init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, const \hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6}{ow\+::\+Foot\+Id} \&foot\+\_\+id)\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_a62ae89fc7c7062611a7232bbc164bbc2}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_a62ae89fc7c7062611a7232bbc164bbc2}
+
+\item 
+bool {\bfseries start} (const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&X\+\_\+f\+\_\+w\+\_\+init)\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_a7271445fcb40f08338524c944edaadf3}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_a7271445fcb40f08338524c944edaadf3}
+
+\item 
+const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow__ftg_1_1SingleFootTrajectoryGenerator_a541ed3fcbfc0aa4411c16f1226c0ebf3}{update} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const ros\+::\+Time \&time, const \hyperlink{classow__core_1_1FootStep}{ow\+::\+Foot\+Step} \&current\+\_\+step, const \hyperlink{classow__core_1_1FootStep}{ow\+::\+Foot\+Step} \&next\+\_\+step)
+\begin{DoxyCompactList}\small\item\em Update the foot trajectory. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow__ftg_1_1SingleFootTrajectoryGenerator_a5f5262234fee794aa42c40abd255e292}{X\+\_\+f\+\_\+w} () const 
+\begin{DoxyCompactList}\small\item\em get the current foot trajectory state \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__ftg_1_1SingleFootTrajectoryGenerator_afecf10e9428b0af0e239192a0745a324}{X\+\_\+f\+\_\+w\+\_\+}\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_afecf10e9428b0af0e239192a0745a324}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_afecf10e9428b0af0e239192a0745a324}
+
+\begin{DoxyCompactList}\small\item\em foot cartesian reference state \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} {\bfseries landing\+\_\+pitch\+\_\+}\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_a5d05af4e31558089a129701a126eece0}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_a5d05af4e31558089a129701a126eece0}
+
+\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} {\bfseries step\+\_\+height\+\_\+}\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_a887d19394bd4de0482f9f02963696b49}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_a887d19394bd4de0482f9f02963696b49}
+
+\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} {\bfseries z\+\_\+overhead\+\_\+}\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_a9d2e6926afd810a7987802d1574baa98}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_a9d2e6926afd810a7987802d1574baa98}
+
+\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} {\bfseries t\+\_\+ss\+\_\+}\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_a6fe4295339f3ee34e121826a1b74a553}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_a6fe4295339f3ee34e121826a1b74a553}
+
+\item 
+\hyperlink{foot__id_8h_a57e66d30579b22cfe2c17c739278e5a6}{ow\+::\+Foot\+Id} {\bfseries foot\+\_\+id\+\_\+}\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_ac8cd1a92b7b9ccbd156e1f2661bd091d}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_ac8cd1a92b7b9ccbd156e1f2661bd091d}
+
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classow__core_1_1StateTrajectory}{Foot\+Spline} $>$ {\bfseries pose\+\_\+spline\+\_\+}\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_a3df3a723a656b73ad3a272a449a6044f}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_a3df3a723a656b73ad3a272a449a6044f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__ftg_1_1SingleFootTrajectoryGenerator}{Single\+Foot\+Trajectory\+Generator} class. 
+
+This class implements the \hyperlink{classow__ftg_1_1SingleFootTrajectoryGenerator}{Single\+Foot\+Trajectory\+Generator} module of the openwalker framework. It generate a spline for a single foot and populates the ow\+::\+Flags. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+ftg\+::\+Single\+Foot\+Trajectory\+Generator@{ow\+\_\+ftg\+::\+Single\+Foot\+Trajectory\+Generator}!update@{update}}
+\index{update@{update}!ow\+\_\+ftg\+::\+Single\+Foot\+Trajectory\+Generator@{ow\+\_\+ftg\+::\+Single\+Foot\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{update(ow\+::\+Flags \&flags, const ros\+::\+Time \&time, const ow\+::\+Foot\+Step \&current\+\_\+step, const ow\+::\+Foot\+Step \&next\+\_\+step)}{update(ow::Flags &flags, const ros::Time &time, const ow::FootStep &current_step, const ow::FootStep &next_step)}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ow\+::\+Cartesian\+State}\& ow\+\_\+ftg\+::\+Single\+Foot\+Trajectory\+Generator\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const ros\+::\+Time \&}]{time, }
+\item[{const {\bf ow\+::\+Foot\+Step} \&}]{current\+\_\+step, }
+\item[{const {\bf ow\+::\+Foot\+Step} \&}]{next\+\_\+step}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_a541ed3fcbfc0aa4411c16f1226c0ebf3}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_a541ed3fcbfc0aa4411c16f1226c0ebf3}
+
+
+Update the foot trajectory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & \\
+\hline
+{\em time} & \\
+\hline
+{\em current\+\_\+step} & \\
+\hline
+{\em next\+\_\+step} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const ow\+::\+Cartesian\+State\& 
+\end{DoxyReturn}
+\index{ow\+\_\+ftg\+::\+Single\+Foot\+Trajectory\+Generator@{ow\+\_\+ftg\+::\+Single\+Foot\+Trajectory\+Generator}!X\+\_\+f\+\_\+w@{X\+\_\+f\+\_\+w}}
+\index{X\+\_\+f\+\_\+w@{X\+\_\+f\+\_\+w}!ow\+\_\+ftg\+::\+Single\+Foot\+Trajectory\+Generator@{ow\+\_\+ftg\+::\+Single\+Foot\+Trajectory\+Generator}}
+\subsubsection[{\texorpdfstring{X\+\_\+f\+\_\+w() const }{X_f_w() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ow\+::\+Cartesian\+State}\& ow\+\_\+ftg\+::\+Single\+Foot\+Trajectory\+Generator\+::\+X\+\_\+f\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classow__ftg_1_1SingleFootTrajectoryGenerator_a5f5262234fee794aa42c40abd255e292}{}\label{classow__ftg_1_1SingleFootTrajectoryGenerator_a5f5262234fee794aa42c40abd255e292}
+
+
+get the current foot trajectory state 
+
+\begin{DoxyReturn}{Returns}
+const ow\+::\+Cartesian\+State\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+ftg/include/ow\+\_\+ftg/\hyperlink{single__foot__trajectory__generator_8h}{single\+\_\+foot\+\_\+trajectory\+\_\+generator.\+h}\end{DoxyCompactItemize}

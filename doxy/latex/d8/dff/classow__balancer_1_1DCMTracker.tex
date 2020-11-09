@@ -1,0 +1,113 @@
+\hypertarget{classow__balancer_1_1DCMTracker}{}\section{ow\+\_\+balancer\+:\+:D\+C\+M\+Tracker Class Reference}
+\label{classow__balancer_1_1DCMTracker}\index{ow\+\_\+balancer\+::\+D\+C\+M\+Tracker@{ow\+\_\+balancer\+::\+D\+C\+M\+Tracker}}
+
+
+The \hyperlink{classow__balancer_1_1DCMTracker}{D\+C\+M\+Tracker} class.  
+
+
+
+
+{\ttfamily \#include $<$dcm\+\_\+tracker.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__balancer_1_1DCMTracker_a07ed7819c7459f06b6b33d957c230cdb}{D\+C\+M\+Tracker} ()\hypertarget{classow__balancer_1_1DCMTracker_a07ed7819c7459f06b6b33d957c230cdb}{}\label{classow__balancer_1_1DCMTracker_a07ed7819c7459f06b6b33d957c230cdb}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classow__balancer_1_1DCMTracker}{D\+C\+M\+Tracker} Default constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__balancer_1_1DCMTracker_a7ed7f64b3d05d2636593c9e9270b73ce}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter)
+\begin{DoxyCompactList}\small\item\em init \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1ZeroMomentPoint}{ow\+::\+Zero\+Moment\+Point} \& \hyperlink{classow__balancer_1_1DCMTracker_a179aaa28e4043340bdd58e7e6585df6c}{update} (const \hyperlink{classow__core_1_1ZeroMomentPointState}{ow\+::\+Zero\+Moment\+Point\+State} \&ref\+\_\+zmp, const \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \&ref\+\_\+dcm, const \hyperlink{classow__core_1_1DivergentComponentOfMotionState}{ow\+::\+D\+C\+M\+State} \&dcm, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&X\+\_\+f\+\_\+w)
+\begin{DoxyCompactList}\small\item\em track\+CP \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1ZeroMomentPoint}{ow\+::\+Zero\+Moment\+Point} \& \hyperlink{classow__balancer_1_1DCMTracker_a208a539a119f7f3623a77ef2ad8d8f35}{zmp\+Des} () const 
+\begin{DoxyCompactList}\small\item\em zmp\+Des \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__balancer_1_1DCMTracker_a42eb49e231debe8adb8e293126d1d8cd}{w\+\_\+}\hypertarget{classow__balancer_1_1DCMTracker_a42eb49e231debe8adb8e293126d1d8cd}{}\label{classow__balancer_1_1DCMTracker_a42eb49e231debe8adb8e293126d1d8cd}
+
+\begin{DoxyCompactList}\small\item\em L\+I\+PM model time constant. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__balancer_1_1DCMTracker_a3317aee27c5e5e65a35f078090989352}{kxi\+\_\+}\hypertarget{classow__balancer_1_1DCMTracker_a3317aee27c5e5e65a35f078090989352}{}\label{classow__balancer_1_1DCMTracker_a3317aee27c5e5e65a35f078090989352}
+
+\begin{DoxyCompactList}\small\item\em Gain for Capture point tracker. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1ZeroMomentPoint}{ow\+::\+Zero\+Moment\+Point} \hyperlink{classow__balancer_1_1DCMTracker_a68412bf24c6754c24fe7b090dc7ccee4}{zmp\+\_\+des\+\_\+}\hypertarget{classow__balancer_1_1DCMTracker_a68412bf24c6754c24fe7b090dc7ccee4}{}\label{classow__balancer_1_1DCMTracker_a68412bf24c6754c24fe7b090dc7ccee4}
+
+\begin{DoxyCompactList}\small\item\em Desired Z\+MP for tracking the reference D\+CM. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1ZeroMomentPoint}{ow\+::\+Zero\+Moment\+Point} {\bfseries lower\+\_\+limit\+\_\+}\hypertarget{classow__balancer_1_1DCMTracker_a17404bb9323eacfcdb35f2849338bd0d}{}\label{classow__balancer_1_1DCMTracker_a17404bb9323eacfcdb35f2849338bd0d}
+
+\item 
+\hyperlink{classow__core_1_1ZeroMomentPoint}{ow\+::\+Zero\+Moment\+Point} {\bfseries upper\+\_\+limit\+\_\+}\hypertarget{classow__balancer_1_1DCMTracker_abcb5293ecf5e81c8682558bf16fd15c0}{}\label{classow__balancer_1_1DCMTracker_abcb5293ecf5e81c8682558bf16fd15c0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__balancer_1_1DCMTracker}{D\+C\+M\+Tracker} class. 
+
+Here 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+balancer\+::\+D\+C\+M\+Tracker@{ow\+\_\+balancer\+::\+D\+C\+M\+Tracker}!init@{init}}
+\index{init@{init}!ow\+\_\+balancer\+::\+D\+C\+M\+Tracker@{ow\+\_\+balancer\+::\+D\+C\+M\+Tracker}}
+\subsubsection[{\texorpdfstring{init(const ow\+::\+Parameter \&parameter)}{init(const ow::Parameter &parameter)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+balancer\+::\+D\+C\+M\+Tracker\+::init (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Parameter} \&}]{parameter}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__balancer_1_1DCMTracker_a7ed7f64b3d05d2636593c9e9270b73ce}{}\label{classow__balancer_1_1DCMTracker_a7ed7f64b3d05d2636593c9e9270b73ce}
+
+
+init 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kxi\+\_\+gain} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{ow\+\_\+balancer\+::\+D\+C\+M\+Tracker@{ow\+\_\+balancer\+::\+D\+C\+M\+Tracker}!update@{update}}
+\index{update@{update}!ow\+\_\+balancer\+::\+D\+C\+M\+Tracker@{ow\+\_\+balancer\+::\+D\+C\+M\+Tracker}}
+\subsubsection[{\texorpdfstring{update(const ow\+::\+Zero\+Moment\+Point\+State \&ref\+\_\+zmp, const ow\+::\+D\+C\+M\+State \&ref\+\_\+dcm, const ow\+::\+D\+C\+M\+State \&dcm, const ow\+::\+Cartesian\+Position \&\+X\+\_\+f\+\_\+w)}{update(const ow::ZeroMomentPointState &ref_zmp, const ow::DCMState &ref_dcm, const ow::DCMState &dcm, const ow::CartesianPosition &X_f_w)}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ow\+::\+Zero\+Moment\+Point}\& ow\+\_\+balancer\+::\+D\+C\+M\+Tracker\+::update (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Zero\+Moment\+Point\+State} \&}]{ref\+\_\+zmp, }
+\item[{const {\bf ow\+::\+D\+C\+M\+State} \&}]{ref\+\_\+dcm, }
+\item[{const {\bf ow\+::\+D\+C\+M\+State} \&}]{dcm, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{X\+\_\+f\+\_\+w}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__balancer_1_1DCMTracker_a179aaa28e4043340bdd58e7e6585df6c}{}\label{classow__balancer_1_1DCMTracker_a179aaa28e4043340bdd58e7e6585df6c}
+
+
+track\+CP 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref\+\_\+zmp} & \\
+\hline
+{\em ref\+\_\+dcm} & \\
+\hline
+{\em dcm} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{ow\+\_\+balancer\+::\+D\+C\+M\+Tracker@{ow\+\_\+balancer\+::\+D\+C\+M\+Tracker}!zmp\+Des@{zmp\+Des}}
+\index{zmp\+Des@{zmp\+Des}!ow\+\_\+balancer\+::\+D\+C\+M\+Tracker@{ow\+\_\+balancer\+::\+D\+C\+M\+Tracker}}
+\subsubsection[{\texorpdfstring{zmp\+Des() const }{zmpDes() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ow\+::\+Zero\+Moment\+Point}\& ow\+\_\+balancer\+::\+D\+C\+M\+Tracker\+::zmp\+Des (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classow__balancer_1_1DCMTracker_a208a539a119f7f3623a77ef2ad8d8f35}{}\label{classow__balancer_1_1DCMTracker_a208a539a119f7f3623a77ef2ad8d8f35}
+
+
+zmp\+Des 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+balancer/include/ow\+\_\+balancer/\hyperlink{dcm__tracker_8h}{dcm\+\_\+tracker.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,197 @@
+\hypertarget{classow_1_1ModuleBase}{}\section{ow\+:\+:Module\+Base Class Reference}
+\label{classow_1_1ModuleBase}\index{ow\+::\+Module\+Base@{ow\+::\+Module\+Base}}
+
+
+The \hyperlink{classow_1_1ModuleBase}{Module\+Base} class.  
+
+
+
+
+{\ttfamily \#include $<$module\+\_\+base.\+h$>$}
+
+Inheritance diagram for ow\+:\+:Module\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{df/d9f/classow_1_1ModuleBase}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow_1_1GenericModuleBase}{Generic\+Module\+Base} {\bfseries Base}\hypertarget{classow_1_1ModuleBase_a2bac647b5018d6b8a046d03aa42a9676}{}\label{classow_1_1ModuleBase_a2bac647b5018d6b8a046d03aa42a9676}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1ModuleBase_a7aca9ce4c0ae4b9146ff06dee531244a}{Module\+Base} (const std\+::string \&\hyperlink{classow_1_1GenericModuleBase_a4b712883728cdbab7779e27f9a23689c}{name})
+\begin{DoxyCompactList}\small\item\em Construct a new Module Base object. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow_1_1ModuleBase_af6c285f10a9f5894829f9a38171c0504}{$\sim$\+Module\+Base} ()\hypertarget{classow_1_1ModuleBase_af6c285f10a9f5894829f9a38171c0504}{}\label{classow_1_1ModuleBase_af6c285f10a9f5894829f9a38171c0504}
+
+\begin{DoxyCompactList}\small\item\em Destroy the Module Base object. \end{DoxyCompactList}\item 
+bool \hyperlink{classow_1_1ModuleBase_a74244121887e5f004b3644dcb30bcfca}{start\+Request} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em start this module \end{DoxyCompactList}\item 
+bool \hyperlink{classow_1_1ModuleBase_a433fd5354b03f8b9bf960ca917f6f457}{stop\+Request} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em stop this module \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classow_1_1ModuleBase_a1614d56103187e7fcebe991dd644cdf5}{start} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em performs update step of the module, called periodically \end{DoxyCompactList}\item 
+virtual void \hyperlink{classow_1_1ModuleBase_a42b572e9bb962043af5773c7b8a6f051}{stop} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em performs update step of the module, called periodically \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow_1_1ModuleBase}{Module\+Base} class. 
+
+This provides the basic functionallity to start, stop and update a openwalker module. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+::\+Module\+Base@{ow\+::\+Module\+Base}!Module\+Base@{Module\+Base}}
+\index{Module\+Base@{Module\+Base}!ow\+::\+Module\+Base@{ow\+::\+Module\+Base}}
+\subsubsection[{\texorpdfstring{Module\+Base(const std\+::string \&name)}{ModuleBase(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}ow\+::\+Module\+Base\+::\+Module\+Base (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow_1_1ModuleBase_a7aca9ce4c0ae4b9146ff06dee531244a}{}\label{classow_1_1ModuleBase_a7aca9ce4c0ae4b9146ff06dee531244a}
+
+
+Construct a new Module Base object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of this module \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{ow\+::\+Module\+Base@{ow\+::\+Module\+Base}!start@{start}}
+\index{start@{start}!ow\+::\+Module\+Base@{ow\+::\+Module\+Base}}
+\subsubsection[{\texorpdfstring{start(ow\+::\+Flags \&flags, const ros\+::\+Time \&time)}{start(ow::Flags &flags, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ow\+::\+Module\+Base\+::start (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classow_1_1ModuleBase_a1614d56103187e7fcebe991dd644cdf5}{}\label{classow_1_1ModuleBase_a1614d56103187e7fcebe991dd644cdf5}
+
+
+performs update step of the module, called periodically 
+
+\begin{DoxyNote}{Note}
+For now this function is not used, instead each module implements its own update function.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & the current status flags of the robot \\
+\hline
+{\em time} & the current robot time \\
+\hline
+{\em dt} & the elapsed time since last update call\\
+\hline
+\end{DoxyParams}
+void update\+Request(ow\+::\+Flags\& flags, const ros\+::\+Time\& time, const ros\+::\+Duration\& dt) \{ if(\+Base\+::is\+Running()) \{ update(flags, time, dt); return; \} R\+O\+S\+\_\+\+E\+R\+R\+OR(\char`\"{}\%s\+::update\+Request call but not initalized.\char`\"{}, name\+\_\+.\+c\+\_\+str()); \} start the module, called befor update
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & the current status flags of the robot \\
+\hline
+{\em time} & the current robot time \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classow__pub_1_1StatePublisher_a35aa494e2a6e9dec704fa84de731cac7}{ow\+\_\+pub\+::\+State\+Publisher}.
+
+\index{ow\+::\+Module\+Base@{ow\+::\+Module\+Base}!start\+Request@{start\+Request}}
+\index{start\+Request@{start\+Request}!ow\+::\+Module\+Base@{ow\+::\+Module\+Base}}
+\subsubsection[{\texorpdfstring{start\+Request(ow\+::\+Flags \&flags, const ros\+::\+Time \&time)}{startRequest(ow::Flags &flags, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+::\+Module\+Base\+::start\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow_1_1ModuleBase_a74244121887e5f004b3644dcb30bcfca}{}\label{classow_1_1ModuleBase_a74244121887e5f004b3644dcb30bcfca}
+
+
+start this module 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & the current status flags of the robot \\
+\hline
+{\em time} & the current robot time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true successfully initalized 
+
+false error during initalization 
+\end{DoxyReturn}
+\index{ow\+::\+Module\+Base@{ow\+::\+Module\+Base}!stop@{stop}}
+\index{stop@{stop}!ow\+::\+Module\+Base@{ow\+::\+Module\+Base}}
+\subsubsection[{\texorpdfstring{stop(ow\+::\+Flags \&flags, const ros\+::\+Time \&time)}{stop(ow::Flags &flags, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ow\+::\+Module\+Base\+::stop (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classow_1_1ModuleBase_a42b572e9bb962043af5773c7b8a6f051}{}\label{classow_1_1ModuleBase_a42b572e9bb962043af5773c7b8a6f051}
+
+
+performs update step of the module, called periodically 
+
+\begin{DoxyNote}{Note}
+For now this function is not used, instead each module implements its own update function.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & the current status flags of the robot \\
+\hline
+{\em time} & the current robot time \\
+\hline
+{\em dt} & the elapsed time since last update call\\
+\hline
+\end{DoxyParams}
+virtual void update( ow\+::\+Flags\& flags, const ros\+::\+Time\& time, const ros\+::\+Duration\& dt) = 0; stop the module, called befor stopping
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & the current status flags of the robot \\
+\hline
+{\em time} & the current robot time \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classow__pub_1_1StatePublisher_a48fdc68768ac6d495117676e9f06e721}{ow\+\_\+pub\+::\+State\+Publisher}.
+
+\index{ow\+::\+Module\+Base@{ow\+::\+Module\+Base}!stop\+Request@{stop\+Request}}
+\index{stop\+Request@{stop\+Request}!ow\+::\+Module\+Base@{ow\+::\+Module\+Base}}
+\subsubsection[{\texorpdfstring{stop\+Request(ow\+::\+Flags \&flags, const ros\+::\+Time \&time)}{stopRequest(ow::Flags &flags, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+::\+Module\+Base\+::stop\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow_1_1ModuleBase_a433fd5354b03f8b9bf960ca917f6f457}{}\label{classow_1_1ModuleBase_a433fd5354b03f8b9bf960ca917f6f457}
+
+
+stop this module 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & the current status flags of the robot \\
+\hline
+{\em time} & the current robot time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true true stopped successfully 
+
+false error during stopping 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/interfaces/\hyperlink{module__base_8h}{module\+\_\+base.\+h}\end{DoxyCompactItemize}

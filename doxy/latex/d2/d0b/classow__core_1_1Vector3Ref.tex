@@ -1,0 +1,80 @@
+\hypertarget{classow__core_1_1Vector3Ref}{}\section{ow\+\_\+core\+:\+:Vector3\+Ref$<$ \+\_\+\+Derived $>$ Class Template Reference}
+\label{classow__core_1_1Vector3Ref}\index{ow\+\_\+core\+::\+Vector3\+Ref$<$ \+\_\+\+Derived $>$@{ow\+\_\+core\+::\+Vector3\+Ref$<$ \+\_\+\+Derived $>$}}
+
+
+The \hyperlink{classow__core_1_1Vector3Ref}{Vector3\+Ref} class.  
+
+
+
+
+{\ttfamily \#include $<$vector3\+\_\+ref.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Vector3\+Ref$<$ \+\_\+\+Derived $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.692308cm]{d2/d0b/classow__core_1_1Vector3Ref}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Derived {\bfseries Derived}\hypertarget{classow__core_1_1Vector3Ref_aa0de46e47cfd8bc910d62ba5b3d5941c}{}\label{classow__core_1_1Vector3Ref_aa0de46e47cfd8bc910d62ba5b3d5941c}
+
+\item 
+typedef Derived\+::\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1Vector3Ref_a6d7a69e9728df527dfaff6affe5cf78a}{}\label{classow__core_1_1Vector3Ref_a6d7a69e9728df527dfaff6affe5cf78a}
+
+\item 
+typedef Eigen\+::\+Block$<$ Derived, 3, 1 $>$ {\bfseries Base}\hypertarget{classow__core_1_1Vector3Ref_ac1a02449afefa75c224d337aea4ef434}{}\label{classow__core_1_1Vector3Ref_ac1a02449afefa75c224d337aea4ef434}
+
+\item 
+typedef \hyperlink{classow__core_1_1Vector3Base}{Vector3\+Base}$<$ \hyperlink{classow__core_1_1Vector3Ref}{Vector3\+Ref}$<$ Derived $>$ $>$ {\bfseries V\+Base}\hypertarget{classow__core_1_1Vector3Ref_a3a811d819ac6c81cd1288ec6fc9bfbf7}{}\label{classow__core_1_1Vector3Ref_a3a811d819ac6c81cd1288ec6fc9bfbf7}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1Vector3Ref_a02bd0be6dd1d3b2ee965d21dd2e290c3}{Vector3\+Ref} (Derived \&ref, int start\+\_\+row=0, int start\+\_\+col=0)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Vector3Ref}{Vector3\+Ref} \hyperlink{classow__core_1_1Vector3Ref_a6c50d97d145b443b39f2d773b901fd1e}{operator=} (const \hyperlink{classow__core_1_1Vector3}{Vector3}$<$ Scalar $>$ \&other)\hypertarget{classow__core_1_1Vector3Ref_a6c50d97d145b443b39f2d773b901fd1e}{}\label{classow__core_1_1Vector3Ref_a6c50d97d145b443b39f2d773b901fd1e}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Derived$>$\\*
+class ow\+\_\+core\+::\+Vector3\+Ref$<$ \+\_\+\+Derived $>$}
+
+The \hyperlink{classow__core_1_1Vector3Ref}{Vector3\+Ref} class. 
+
+The \hyperlink{classow__core_1_1Vector3Ref}{Vector3\+Ref} is of type Eigen\+::\+Vector3 and is represented by the math symbol $\dot{\mathbf{x}}$.
+
+References the data of another Eigen type class via Eigen\+::\+Block. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Vector3\+Ref@{ow\+\_\+core\+::\+Vector3\+Ref}!Vector3\+Ref@{Vector3\+Ref}}
+\index{Vector3\+Ref@{Vector3\+Ref}!ow\+\_\+core\+::\+Vector3\+Ref@{ow\+\_\+core\+::\+Vector3\+Ref}}
+\subsubsection[{\texorpdfstring{Vector3\+Ref(\+Derived \&ref, int start\+\_\+row=0, int start\+\_\+col=0)}{Vector3Ref(Derived &ref, int start_row=0, int start_col=0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ {\bf ow\+\_\+core\+::\+Vector3\+Ref}$<$ \+\_\+\+Derived $>$\+::{\bf Vector3\+Ref} (
+\begin{DoxyParamCaption}
+\item[{Derived \&}]{ref, }
+\item[{int}]{start\+\_\+row = {\ttfamily 0}, }
+\item[{int}]{start\+\_\+col = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classow__core_1_1Vector3Ref_a02bd0be6dd1d3b2ee965d21dd2e290c3}{}\label{classow__core_1_1Vector3Ref_a02bd0be6dd1d3b2ee965d21dd2e290c3}
+
+
+Default Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & the reference to storage Eigen object to access the elements of the \hyperlink{classow__core_1_1LinearPosition}{Linear\+Position} via Eigen\+::\+Block.\\
+\hline
+{\em start\+\_\+row} & the start index of the row for Eigen\+::\+Block.\\
+\hline
+{\em start\+\_\+col} & the start index of the column for Eigen\+::\+Block. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/type\+\_\+references/\hyperlink{vector3__ref_8h}{vector3\+\_\+ref.\+h}\end{DoxyCompactItemize}

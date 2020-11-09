@@ -1,0 +1,181 @@
+\hypertarget{classow__ik_1_1IkSolverNullspace}{}\section{ow\+\_\+ik\+:\+:Ik\+Solver\+Nullspace Class Reference}
+\label{classow__ik_1_1IkSolverNullspace}\index{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace@{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace}}
+
+
+The \hyperlink{classow__ik_1_1IkSolverNullspace}{Ik\+Solver\+Nullspace} class.  
+
+
+
+
+{\ttfamily \#include $<$ik\+\_\+solver\+\_\+nullspace.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow__core_1_1JointRef}{ow\+\_\+core\+::\+Joint\+Ref}$<$ ow\+::\+Joint\+Position\+::\+Base $>$ {\bfseries Joint\+Position\+Ref}\hypertarget{classow__ik_1_1IkSolverNullspace_a5b8c544a084c8ef5790d2ad9c037fd38}{}\label{classow__ik_1_1IkSolverNullspace_a5b8c544a084c8ef5790d2ad9c037fd38}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__ik_1_1IkSolverNullspace_a7dcb7fb8ca70075c28516c626f402caa}{Ik\+Solver\+Nullspace} (const K\+D\+L\+::\+Chain \&\hyperlink{classow__ik_1_1IkSolverNullspace_a947bba59c9fbeb748f6daade02e970b5}{chain}, K\+D\+L\+::\+Chain\+Fk\+Solver\+Pos\+\_\+recursive \&fk\+\_\+solver, K\+D\+L\+::\+Chain\+Jnt\+To\+Jac\+Solver \&j\+\_\+solver, const \hyperlink{classow__ik_1_1SolverSettings}{Solver\+Settings} \&\hyperlink{classow__ik_1_1IkSolverNullspace_a6b80962595200794eced47d857e9c796}{hyp\+\_\+}=\hyperlink{classow__ik_1_1SolverSettings_a4dcbab3529df7f321226cd65da491701}{Solver\+Settings\+::\+Default}())\hypertarget{classow__ik_1_1IkSolverNullspace_a7dcb7fb8ca70075c28516c626f402caa}{}\label{classow__ik_1_1IkSolverNullspace_a7dcb7fb8ca70075c28516c626f402caa}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classow__ik_1_1IkSolverNullspace_a46516a217e32c197eb140fd54a66d4da}{set\+Settings} (const \hyperlink{classow__ik_1_1SolverSettings}{Solver\+Settings} \&hyp)
+\begin{DoxyCompactList}\small\item\em Settings. \end{DoxyCompactList}\item 
+void \hyperlink{classow__ik_1_1IkSolverNullspace_a3150e439a97ba65bbf491887cacda6e2}{set\+Joint\+Limits} (const \hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \&q\+\_\+ll, const \hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \&q\+\_\+ul)
+\begin{DoxyCompactList}\small\item\em Set Joint limits. \end{DoxyCompactList}\item 
+void \hyperlink{classow__ik_1_1IkSolverNullspace_a14da556c02c7850893bcb44fab34ec7f}{set\+Gains} (const ow\+::\+VectorX \&k\+\_\+task, const ow\+::\+VectorX \&k\+\_\+null)
+\begin{DoxyCompactList}\small\item\em Change the task and nullspace gains. \end{DoxyCompactList}\item 
+void \hyperlink{classow__ik_1_1IkSolverNullspace_a0aba7d04dc5944588d6d250fd9206173}{set\+Weights} (const ow\+::\+VectorX \&weights)\hypertarget{classow__ik_1_1IkSolverNullspace_a0aba7d04dc5944588d6d250fd9206173}{}\label{classow__ik_1_1IkSolverNullspace_a0aba7d04dc5944588d6d250fd9206173}
+
+\begin{DoxyCompactList}\small\item\em Change the joint weights. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__ik_1_1IkSolverNullspace_a49c4da319b705341c17440e8434e1bce}{Cart\+To\+Jnt} (\hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \&q, const \hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \&q\+\_\+0, const \hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \&q\+\_\+init, const \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&T\+\_\+target)
+\begin{DoxyCompactList}\small\item\em Compute the inverse kinematics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classow__ik_1_1IkSolverNullspace_ae29f9061f0b77545ddaedbd5699b528c}{compute\+FK} (\hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&T, const \hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \&q)
+\begin{DoxyCompactList}\small\item\em Compute the forward kinematics. \end{DoxyCompactList}\item 
+int \hyperlink{classow__ik_1_1IkSolverNullspace_aec8e0d6607bdd703955adf7334ae6fb7}{compute\+Jacobian} (ow\+::\+MatrixX \&J, const \hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \&q)\hypertarget{classow__ik_1_1IkSolverNullspace_aec8e0d6607bdd703955adf7334ae6fb7}{}\label{classow__ik_1_1IkSolverNullspace_aec8e0d6607bdd703955adf7334ae6fb7}
+
+\begin{DoxyCompactList}\small\item\em Compute the jacobian matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classow__ik_1_1IkSolverNullspace_a947f20719f701254d79b2636eba81e3f}{dof\+\_\+}\hypertarget{classow__ik_1_1IkSolverNullspace_a947f20719f701254d79b2636eba81e3f}{}\label{classow__ik_1_1IkSolverNullspace_a947f20719f701254d79b2636eba81e3f}
+
+\begin{DoxyCompactList}\small\item\em Number of limb degrees of freedorm. \end{DoxyCompactList}\item 
+const K\+D\+L\+::\+Chain \& \hyperlink{classow__ik_1_1IkSolverNullspace_a947bba59c9fbeb748f6daade02e970b5}{chain}\hypertarget{classow__ik_1_1IkSolverNullspace_a947bba59c9fbeb748f6daade02e970b5}{}\label{classow__ik_1_1IkSolverNullspace_a947bba59c9fbeb748f6daade02e970b5}
+
+\begin{DoxyCompactList}\small\item\em kdl body chain \end{DoxyCompactList}\item 
+K\+D\+L\+::\+Chain\+Fk\+Solver\+Pos\+\_\+recursive \& \hyperlink{classow__ik_1_1IkSolverNullspace_a21b01edcf1bf04a8bff1eb002b8b41e7}{fk\+\_\+solver\+\_\+}\hypertarget{classow__ik_1_1IkSolverNullspace_a21b01edcf1bf04a8bff1eb002b8b41e7}{}\label{classow__ik_1_1IkSolverNullspace_a21b01edcf1bf04a8bff1eb002b8b41e7}
+
+\begin{DoxyCompactList}\small\item\em forward kinematics solver \end{DoxyCompactList}\item 
+K\+D\+L\+::\+Chain\+Jnt\+To\+Jac\+Solver \& \hyperlink{classow__ik_1_1IkSolverNullspace_acf1de6445ccca128c0d48955214b773e}{j\+\_\+solver\+\_\+}\hypertarget{classow__ik_1_1IkSolverNullspace_acf1de6445ccca128c0d48955214b773e}{}\label{classow__ik_1_1IkSolverNullspace_acf1de6445ccca128c0d48955214b773e}
+
+\begin{DoxyCompactList}\small\item\em jacobian matrix solver \end{DoxyCompactList}\item 
+\hyperlink{classow__ik_1_1SolverSettings}{Solver\+Settings} \hyperlink{classow__ik_1_1IkSolverNullspace_a6b80962595200794eced47d857e9c796}{hyp\+\_\+}\hypertarget{classow__ik_1_1IkSolverNullspace_a6b80962595200794eced47d857e9c796}{}\label{classow__ik_1_1IkSolverNullspace_a6b80962595200794eced47d857e9c796}
+
+\begin{DoxyCompactList}\small\item\em hyper parameters \end{DoxyCompactList}\item 
+ow\+::\+MatrixX \hyperlink{classow__ik_1_1IkSolverNullspace_a2754a78294e98c3a2b72b9b6ee2382d2}{I\+\_\+}\hypertarget{classow__ik_1_1IkSolverNullspace_a2754a78294e98c3a2b72b9b6ee2382d2}{}\label{classow__ik_1_1IkSolverNullspace_a2754a78294e98c3a2b72b9b6ee2382d2}
+
+\begin{DoxyCompactList}\small\item\em Identity. \end{DoxyCompactList}\item 
+ow\+::\+MatrixX \hyperlink{classow__ik_1_1IkSolverNullspace_aedd95b518e857e83a1a5726070ce13d6}{W\+\_\+sqrt\+\_\+inv\+\_\+}\hypertarget{classow__ik_1_1IkSolverNullspace_aedd95b518e857e83a1a5726070ce13d6}{}\label{classow__ik_1_1IkSolverNullspace_aedd95b518e857e83a1a5726070ce13d6}
+
+\begin{DoxyCompactList}\small\item\em Inverse sqrt weight matrix. \end{DoxyCompactList}\item 
+ow\+::\+MatrixX \hyperlink{classow__ik_1_1IkSolverNullspace_a270d0927d28504aa84e78cc8a618e253}{K\+\_\+task\+\_\+}\hypertarget{classow__ik_1_1IkSolverNullspace_a270d0927d28504aa84e78cc8a618e253}{}\label{classow__ik_1_1IkSolverNullspace_a270d0927d28504aa84e78cc8a618e253}
+
+\begin{DoxyCompactList}\small\item\em Task gain. \end{DoxyCompactList}\item 
+ow\+::\+MatrixX \hyperlink{classow__ik_1_1IkSolverNullspace_aad71c47f84ecdc211aa53aae01aaf232}{K\+\_\+null\+\_\+}\hypertarget{classow__ik_1_1IkSolverNullspace_aad71c47f84ecdc211aa53aae01aaf232}{}\label{classow__ik_1_1IkSolverNullspace_aad71c47f84ecdc211aa53aae01aaf232}
+
+\begin{DoxyCompactList}\small\item\em Nullspace gain. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \hyperlink{classow__ik_1_1IkSolverNullspace_a6ea8d19c1434e9802d01bff8025d135a}{q\+\_\+ll\+\_\+}\hypertarget{classow__ik_1_1IkSolverNullspace_a6ea8d19c1434e9802d01bff8025d135a}{}\label{classow__ik_1_1IkSolverNullspace_a6ea8d19c1434e9802d01bff8025d135a}
+
+\begin{DoxyCompactList}\small\item\em Lower joint limits. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \hyperlink{classow__ik_1_1IkSolverNullspace_aff4dac1357eb8315fe7d51106755bd8e}{q\+\_\+ul\+\_\+}\hypertarget{classow__ik_1_1IkSolverNullspace_aff4dac1357eb8315fe7d51106755bd8e}{}\label{classow__ik_1_1IkSolverNullspace_aff4dac1357eb8315fe7d51106755bd8e}
+
+\begin{DoxyCompactList}\small\item\em Upper joint limits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__ik_1_1IkSolverNullspace}{Ik\+Solver\+Nullspace} class. 
+
+A custom IK Solver.
+
+Inverse Kinematics solver using iterative least squares with S\+VD. The forward kinematics and jacobian matrices are computed by K\+DL. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace@{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace}!Cart\+To\+Jnt@{Cart\+To\+Jnt}}
+\index{Cart\+To\+Jnt@{Cart\+To\+Jnt}!ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace@{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace}}
+\subsubsection[{\texorpdfstring{Cart\+To\+Jnt(ow\+::\+Joint\+Position\+X \&q, const ow\+::\+Joint\+Position\+X \&q\+\_\+0, const ow\+::\+Joint\+Position\+X \&q\+\_\+init, const ow\+::\+Homogeneous\+Transformation \&\+T\+\_\+target)}{CartToJnt(ow::JointPositionX &q, const ow::JointPositionX &q_0, const ow::JointPositionX &q_init, const ow::HomogeneousTransformation &T_target)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace\+::\+Cart\+To\+Jnt (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Joint\+PositionX} \&}]{q, }
+\item[{const {\bf ow\+::\+Joint\+PositionX} \&}]{q\+\_\+0, }
+\item[{const {\bf ow\+::\+Joint\+PositionX} \&}]{q\+\_\+init, }
+\item[{const {\bf ow\+::\+Homogeneous\+Transformation} \&}]{T\+\_\+target}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__ik_1_1IkSolverNullspace_a49c4da319b705341c17440e8434e1bce}{}\label{classow__ik_1_1IkSolverNullspace_a49c4da319b705341c17440e8434e1bce}
+
+
+Compute the inverse kinematics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & Resutling Joint position\\
+\hline
+{\em q\+\_\+0} & Nullspace Joint position\\
+\hline
+{\em q\+\_\+init} & Inital Joint position guess for the solver\\
+\hline
+{\em q\+\_\+init} & Target Transformation w.\+r.\+t to the kdl chain base frame \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace@{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace}!compute\+FK@{compute\+FK}}
+\index{compute\+FK@{compute\+FK}!ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace@{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace}}
+\subsubsection[{\texorpdfstring{compute\+F\+K(ow\+::\+Homogeneous\+Transformation \&\+T, const ow\+::\+Joint\+Position\+X \&q)}{computeFK(ow::HomogeneousTransformation &T, const ow::JointPositionX &q)}}]{\setlength{\rightskip}{0pt plus 5cm}int ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace\+::compute\+FK (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Homogeneous\+Transformation} \&}]{T, }
+\item[{const {\bf ow\+::\+Joint\+PositionX} \&}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classow__ik_1_1IkSolverNullspace_ae29f9061f0b77545ddaedbd5699b528c}{}\label{classow__ik_1_1IkSolverNullspace_ae29f9061f0b77545ddaedbd5699b528c}
+
+
+Compute the forward kinematics. 
+
+Extracts the Homogeneous transformation of end link w.\+r.\+t the kdl chain base \index{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace@{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace}!set\+Gains@{set\+Gains}}
+\index{set\+Gains@{set\+Gains}!ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace@{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace}}
+\subsubsection[{\texorpdfstring{set\+Gains(const ow\+::\+Vector\+X \&k\+\_\+task, const ow\+::\+Vector\+X \&k\+\_\+null)}{setGains(const ow::VectorX &k_task, const ow::VectorX &k_null)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace\+::set\+Gains (
+\begin{DoxyParamCaption}
+\item[{const ow\+::\+VectorX \&}]{k\+\_\+task, }
+\item[{const ow\+::\+VectorX \&}]{k\+\_\+null}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__ik_1_1IkSolverNullspace_a14da556c02c7850893bcb44fab34ec7f}{}\label{classow__ik_1_1IkSolverNullspace_a14da556c02c7850893bcb44fab34ec7f}
+
+
+Change the task and nullspace gains. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k\+\_\+task} & Task space gain vector.\\
+\hline
+{\em k\+\_\+null} & Null space gain vector. Important for redundant legs. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace@{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace}!set\+Joint\+Limits@{set\+Joint\+Limits}}
+\index{set\+Joint\+Limits@{set\+Joint\+Limits}!ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace@{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace}}
+\subsubsection[{\texorpdfstring{set\+Joint\+Limits(const ow\+::\+Joint\+Position\+X \&q\+\_\+ll, const ow\+::\+Joint\+Position\+X \&q\+\_\+ul)}{setJointLimits(const ow::JointPositionX &q_ll, const ow::JointPositionX &q_ul)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace\+::set\+Joint\+Limits (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Joint\+PositionX} \&}]{q\+\_\+ll, }
+\item[{const {\bf ow\+::\+Joint\+PositionX} \&}]{q\+\_\+ul}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__ik_1_1IkSolverNullspace_a3150e439a97ba65bbf491887cacda6e2}{}\label{classow__ik_1_1IkSolverNullspace_a3150e439a97ba65bbf491887cacda6e2}
+
+
+Set Joint limits. 
+
+Joint Limit Vectors considered by the IK Solver
+
+
+\begin{DoxyParams}{Parameters}
+{\em q\+\_\+ll} & Lower joint limmits.\\
+\hline
+{\em q\+\_\+ul} & Upper joint limmits. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace@{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace}!set\+Settings@{set\+Settings}}
+\index{set\+Settings@{set\+Settings}!ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace@{ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace}}
+\subsubsection[{\texorpdfstring{set\+Settings(const Solver\+Settings \&hyp)}{setSettings(const SolverSettings &hyp)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+ik\+::\+Ik\+Solver\+Nullspace\+::set\+Settings (
+\begin{DoxyParamCaption}
+\item[{const {\bf Solver\+Settings} \&}]{hyp}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__ik_1_1IkSolverNullspace_a46516a217e32c197eb140fd54a66d4da}{}\label{classow__ik_1_1IkSolverNullspace_a46516a217e32c197eb140fd54a66d4da}
+
+
+Settings. 
+
+Setting used by ik solver 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+ik/include/ow\+\_\+ik/\hyperlink{ik__solver__nullspace_8h}{ik\+\_\+solver\+\_\+nullspace.\+h}\end{DoxyCompactItemize}

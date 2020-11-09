@@ -1,0 +1,108 @@
+\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin}{}\section{ow\+\_\+ros\+\_\+control\+\_\+plugin\+:\+:Ow\+Ros\+Control\+Plugin Class Reference}
+\label{classow__ros__control__plugin_1_1OwRosControlPlugin}\index{ow\+\_\+ros\+\_\+control\+\_\+plugin\+::\+Ow\+Ros\+Control\+Plugin@{ow\+\_\+ros\+\_\+control\+\_\+plugin\+::\+Ow\+Ros\+Control\+Plugin}}
+
+
+The \hyperlink{classow__ros__control__plugin_1_1OwRosControlPlugin}{Ow\+Ros\+Control\+Plugin} class.  
+
+
+
+
+{\ttfamily \#include $<$ros\+\_\+control\+\_\+plugin.\+h$>$}
+
+Inheritance diagram for ow\+\_\+ros\+\_\+control\+\_\+plugin\+:\+:Ow\+Ros\+Control\+Plugin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dd/d2a/classow__ros__control__plugin_1_1OwRosControlPlugin}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef hardware\+\_\+interface\+::\+Force\+Torque\+Sensor\+Handle {\bfseries F\+T\+Handle}\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_a19b92de391a81df3a2b8966417c857b7}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_a19b92de391a81df3a2b8966417c857b7}
+
+\item 
+typedef hardware\+\_\+interface\+::\+Imu\+Sensor\+Handle {\bfseries Imu\+Handle}\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_a85303238493b43bd5f56ca70e49667a6}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_a85303238493b43bd5f56ca70e49667a6}
+
+\item 
+typedef hardware\+\_\+interface\+::\+Joint\+Handle {\bfseries Joint\+Handle}\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_afdb8cfc0ead65ad00622559e85135f10}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_afdb8cfc0ead65ad00622559e85135f10}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__ros__control__plugin_1_1OwRosControlPlugin_a74161e1bdf98a019d7a1647e803fd1d0}{Ow\+Ros\+Control\+Plugin} ()\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_a74161e1bdf98a019d7a1647e803fd1d0}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_a74161e1bdf98a019d7a1647e803fd1d0}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__ros__control__plugin_1_1OwRosControlPlugin_a9104f03800c547dfec92a247e77c22c9}{$\sim$\+Ow\+Ros\+Control\+Plugin} ()\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_a9104f03800c547dfec92a247e77c22c9}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_a9104f03800c547dfec92a247e77c22c9}
+
+\begin{DoxyCompactList}\small\item\em Destroy the Ow Ros Control Plugin object. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__ros__control__plugin_1_1OwRosControlPlugin_a8e5311de05cbc12a6c77e2a595d94e7a}{init} (Position\+Joint\+Interface $\ast$pos\+\_\+iface, Force\+Torque\+Sensor\+Interface $\ast$ft\+\_\+iface, Imu\+Sensor\+Interface $\ast$imu\+\_\+iface, ros\+::\+Node\+Handle \&, ros\+::\+Node\+Handle \&controller\+\_\+nh)
+\begin{DoxyCompactList}\small\item\em init \end{DoxyCompactList}\item 
+bool {\bfseries init\+Joints} (Position\+Joint\+Interface $\ast$pos\+\_\+iface, ros\+::\+Node\+Handle \&controller\+\_\+nh)\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_af489f14cfc311bd4793f56a9d624f4dd}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_af489f14cfc311bd4793f56a9d624f4dd}
+
+\item 
+bool {\bfseries init\+Force\+Torque\+Sensors} (Force\+Torque\+Sensor\+Interface $\ast$ft\+\_\+iface, ros\+::\+Node\+Handle \&controller\+\_\+nh)\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_a5c66ae5f223467680182fc8217ab9671}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_a5c66ae5f223467680182fc8217ab9671}
+
+\item 
+bool {\bfseries init\+Imu\+Sensors} (Imu\+Sensor\+Interface $\ast$imu\+\_\+iface, ros\+::\+Node\+Handle \&controller\+\_\+nh)\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_a06b9057748033e6176230ec801c3a0e3}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_a06b9057748033e6176230ec801c3a0e3}
+
+\item 
+bool {\bfseries init\+Request} (hardware\+\_\+interface\+::\+Robot\+HW $\ast$robot\+\_\+hw, ros\+::\+Node\+Handle \&root\+\_\+nh, ros\+::\+Node\+Handle \&controller\+\_\+nh, Claimed\+Resources \&claimed\+\_\+resources)\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_a900b0214c2c992f82abc06daea317894}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_a900b0214c2c992f82abc06daea317894}
+
+\item 
+void {\bfseries starting} (const ros\+::\+Time \&time)\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_a1c2b0b1ed37112373dd1f0607aa02a38}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_a1c2b0b1ed37112373dd1f0607aa02a38}
+
+\item 
+void {\bfseries update} (const ros\+::\+Time \&time, const ros\+::\+Duration \&period)\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_a7d758a6f4936ec355bcff262ee979604}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_a7d758a6f4936ec355bcff262ee979604}
+
+\item 
+void {\bfseries stopping} (const ros\+::\+Time \&time)\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_a56e19b8dabc181f365a875577128661b}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_a56e19b8dabc181f365a875577128661b}
+
+\item 
+std\+::string {\bfseries get\+Hardware\+Interface\+Type} () const \hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_a06c957a0767819be554ab23a737249ee}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_a06c957a0767819be554ab23a737249ee}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__ros__control__plugin_1_1OwRosControlPlugin}{Ow\+Ros\+Control\+Plugin} class. 
+
+This class is the bridge between Open Walker and ros\+\_\+control. This is an example of a plugin which claims the hardware resources and connects them with the Open Walker hardware interface.
+
+This plugin also instanciates and calls the init and update functions of an Open Walker controller. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+ros\+\_\+control\+\_\+plugin\+::\+Ow\+Ros\+Control\+Plugin@{ow\+\_\+ros\+\_\+control\+\_\+plugin\+::\+Ow\+Ros\+Control\+Plugin}!init@{init}}
+\index{init@{init}!ow\+\_\+ros\+\_\+control\+\_\+plugin\+::\+Ow\+Ros\+Control\+Plugin@{ow\+\_\+ros\+\_\+control\+\_\+plugin\+::\+Ow\+Ros\+Control\+Plugin}}
+\subsubsection[{\texorpdfstring{init(\+Position\+Joint\+Interface $\ast$pos\+\_\+iface, Force\+Torque\+Sensor\+Interface $\ast$ft\+\_\+iface, Imu\+Sensor\+Interface $\ast$imu\+\_\+iface, ros\+::\+Node\+Handle \&, ros\+::\+Node\+Handle \&controller\+\_\+nh)}{init(PositionJointInterface *pos_iface, ForceTorqueSensorInterface *ft_iface, ImuSensorInterface *imu_iface, ros::NodeHandle &, ros::NodeHandle &controller_nh)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+ros\+\_\+control\+\_\+plugin\+::\+Ow\+Ros\+Control\+Plugin\+::init (
+\begin{DoxyParamCaption}
+\item[{Position\+Joint\+Interface $\ast$}]{pos\+\_\+iface, }
+\item[{Force\+Torque\+Sensor\+Interface $\ast$}]{ft\+\_\+iface, }
+\item[{Imu\+Sensor\+Interface $\ast$}]{imu\+\_\+iface, }
+\item[{ros\+::\+Node\+Handle \&}]{, }
+\item[{ros\+::\+Node\+Handle \&}]{controller\+\_\+nh}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__ros__control__plugin_1_1OwRosControlPlugin_a8e5311de05cbc12a6c77e2a595d94e7a}{}\label{classow__ros__control__plugin_1_1OwRosControlPlugin_a8e5311de05cbc12a6c77e2a595d94e7a}
+
+
+init 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos\+\_\+iface} & \\
+\hline
+{\em ft\+\_\+iface} & \\
+\hline
+{\em imu\+\_\+iface} & \\
+\hline
+{\em controller\+\_\+nh} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+ros\+\_\+control\+\_\+plugin/include/ow\+\_\+ros\+\_\+control\+\_\+plugin/ros\+\_\+control\+\_\+plugin.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+\hypertarget{classow__core_1_1LinearAccelerationRef}{}\section{ow\+\_\+core\+:\+:Linear\+Acceleration\+Ref$<$ \+\_\+\+Derived $>$ Class Template Reference}
+\label{classow__core_1_1LinearAccelerationRef}\index{ow\+\_\+core\+::\+Linear\+Acceleration\+Ref$<$ \+\_\+\+Derived $>$@{ow\+\_\+core\+::\+Linear\+Acceleration\+Ref$<$ \+\_\+\+Derived $>$}}
+
+
+The \hyperlink{classow__core_1_1LinearAccelerationRef}{Linear\+Acceleration\+Ref} class.  
+
+
+
+
+{\ttfamily \#include $<$linear\+\_\+acceleration\+\_\+ref.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Linear\+Acceleration\+Ref$<$ \+\_\+\+Derived $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.704718cm]{d2/d75/classow__core_1_1LinearAccelerationRef}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Derived {\bfseries Derived}\hypertarget{classow__core_1_1LinearAccelerationRef_aba03ae2dd6572abc254c71c0b4032bd1}{}\label{classow__core_1_1LinearAccelerationRef_aba03ae2dd6572abc254c71c0b4032bd1}
+
+\item 
+typedef Derived\+::\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1LinearAccelerationRef_a1e779f915a06a0aad91be2ebc1125048}{}\label{classow__core_1_1LinearAccelerationRef_a1e779f915a06a0aad91be2ebc1125048}
+
+\item 
+typedef Eigen\+::\+Block$<$ Derived, 3, 1 $>$ {\bfseries Base}\hypertarget{classow__core_1_1LinearAccelerationRef_addbc11e09c28b0c93157fa1272285f37}{}\label{classow__core_1_1LinearAccelerationRef_addbc11e09c28b0c93157fa1272285f37}
+
+\item 
+typedef \hyperlink{classow__core_1_1LinearAccelerationBase}{Linear\+Acceleration\+Base}$<$ \hyperlink{classow__core_1_1LinearAccelerationRef}{Linear\+Acceleration\+Ref}$<$ \+\_\+\+Derived $>$ $>$ {\bfseries L\+A\+Base}\hypertarget{classow__core_1_1LinearAccelerationRef_a96a26ebdb1dc41f82811b2689d912317}{}\label{classow__core_1_1LinearAccelerationRef_a96a26ebdb1dc41f82811b2689d912317}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1LinearAccelerationRef_a327b5ccf2aeba7cb8b7834da592ab195}{Linear\+Acceleration\+Ref} (Derived \&ref, int start\+\_\+row=0, int start\+\_\+col=0)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1LinearAccelerationRef}{Linear\+Acceleration\+Ref} \hyperlink{classow__core_1_1LinearAccelerationRef_ad751088750f1a1bda60d43a7d09f41ea}{operator=} (const \hyperlink{classow__core_1_1LinearAcceleration}{Linear\+Acceleration}$<$ Scalar $>$ \&other)\hypertarget{classow__core_1_1LinearAccelerationRef_ad751088750f1a1bda60d43a7d09f41ea}{}\label{classow__core_1_1LinearAccelerationRef_ad751088750f1a1bda60d43a7d09f41ea}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Derived$>$\\*
+class ow\+\_\+core\+::\+Linear\+Acceleration\+Ref$<$ \+\_\+\+Derived $>$}
+
+The \hyperlink{classow__core_1_1LinearAccelerationRef}{Linear\+Acceleration\+Ref} class. 
+
+The \hyperlink{classow__core_1_1LinearAcceleration}{Linear\+Acceleration} is of type Eigen\+::\+Vector3 and is represented by the math symbol $\ddot{\mathbf{x}}$.
+
+References the data of another Eigen type class via Eigen\+::\+Block. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Linear\+Acceleration\+Ref@{ow\+\_\+core\+::\+Linear\+Acceleration\+Ref}!Linear\+Acceleration\+Ref@{Linear\+Acceleration\+Ref}}
+\index{Linear\+Acceleration\+Ref@{Linear\+Acceleration\+Ref}!ow\+\_\+core\+::\+Linear\+Acceleration\+Ref@{ow\+\_\+core\+::\+Linear\+Acceleration\+Ref}}
+\subsubsection[{\texorpdfstring{Linear\+Acceleration\+Ref(\+Derived \&ref, int start\+\_\+row=0, int start\+\_\+col=0)}{LinearAccelerationRef(Derived &ref, int start_row=0, int start_col=0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Derived$>$ {\bf ow\+\_\+core\+::\+Linear\+Acceleration\+Ref}$<$ \+\_\+\+Derived $>$\+::{\bf Linear\+Acceleration\+Ref} (
+\begin{DoxyParamCaption}
+\item[{Derived \&}]{ref, }
+\item[{int}]{start\+\_\+row = {\ttfamily 0}, }
+\item[{int}]{start\+\_\+col = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classow__core_1_1LinearAccelerationRef_a327b5ccf2aeba7cb8b7834da592ab195}{}\label{classow__core_1_1LinearAccelerationRef_a327b5ccf2aeba7cb8b7834da592ab195}
+
+
+Default Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & the reference to storage Eigen object to access the elements of the \hyperlink{classow__core_1_1LinearAcceleration}{Linear\+Acceleration} via Eigen\+::\+Block.\\
+\hline
+{\em start\+\_\+row} & the start index of the row for Eigen\+::\+Block.\\
+\hline
+{\em start\+\_\+col} & the start index of the column for Eigen\+::\+Block. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/type\+\_\+references/\hyperlink{linear__acceleration__ref_8h}{linear\+\_\+acceleration\+\_\+ref.\+h}\end{DoxyCompactItemize}

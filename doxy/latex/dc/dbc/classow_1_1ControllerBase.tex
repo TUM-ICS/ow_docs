@@ -1,0 +1,181 @@
+\hypertarget{classow_1_1ControllerBase}{}\section{ow\+:\+:Controller\+Base Class Reference}
+\label{classow_1_1ControllerBase}\index{ow\+::\+Controller\+Base@{ow\+::\+Controller\+Base}}
+
+
+The \hyperlink{classow_1_1ControllerBase}{Controller\+Base} class.  
+
+
+
+
+{\ttfamily \#include $<$controller\+\_\+base.\+h$>$}
+
+Inheritance diagram for ow\+:\+:Controller\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.472868cm]{dc/dbc/classow_1_1ControllerBase}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow_1_1GenericModuleBase}{Generic\+Module\+Base} {\bfseries Base}\hypertarget{classow_1_1ControllerBase_a720d137e6be799c7788e33e61c279c06}{}\label{classow_1_1ControllerBase_a720d137e6be799c7788e33e61c279c06}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1ControllerBase_a0e385224b3308f6bd99849d4d1b46561}{Controller\+Base} (std\+::string \hyperlink{classow_1_1GenericModuleBase_a4b712883728cdbab7779e27f9a23689c}{name})\hypertarget{classow_1_1ControllerBase_a0e385224b3308f6bd99849d4d1b46561}{}\label{classow_1_1ControllerBase_a0e385224b3308f6bd99849d4d1b46561}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow_1_1ControllerBase_aac321595ce9663834b8645a4f4e3488e}{$\sim$\+Controller\+Base} ()\hypertarget{classow_1_1ControllerBase_aac321595ce9663834b8645a4f4e3488e}{}\label{classow_1_1ControllerBase_aac321595ce9663834b8645a4f4e3488e}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classow_1_1ControllerBase_aad889e0a532f0b1c012c3d750e46b735}{start\+Request} (const \hyperlink{classow_1_1IHwInterface}{I\+Hw\+Interface} \&robot, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em start the controller \end{DoxyCompactList}\item 
+bool \hyperlink{classow_1_1ControllerBase_a64b841b0cdda15cdce45f5d3eae57e27}{stop\+Request} (const \hyperlink{classow_1_1IHwInterface}{I\+Hw\+Interface} \&robot, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em stop the controller \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} \hyperlink{classow_1_1ControllerBase_a1e040a4a3cb41c17a5b4738c81f0c7a3}{update\+Request} (const \hyperlink{classow_1_1IHwInterface}{I\+Hw\+Interface} \&robot, const ros\+::\+Time \&time, const ros\+::\+Duration \&dt)
+\begin{DoxyCompactList}\small\item\em performs update step of the controller, called periodically \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classow_1_1ControllerBase_af757d63078346cff7888f3223d74da01}{start} (const \hyperlink{classow_1_1IHwInterface}{I\+Hw\+Interface} \&robot, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em start the controller, called befor update, optional \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} \hyperlink{classow_1_1ControllerBase_a214e12fa933fd1dd3e720347e2757d2d}{update} (const \hyperlink{classow_1_1IHwInterface}{I\+Hw\+Interface} \&robot, const ros\+::\+Time \&time, const ros\+::\+Duration \&dt)=0
+\begin{DoxyCompactList}\small\item\em performs update step of the controller, called periodically \end{DoxyCompactList}\item 
+virtual void \hyperlink{classow_1_1ControllerBase_a006743a64466764e23b215e105b36b86}{stop} (const \hyperlink{classow_1_1IHwInterface}{I\+Hw\+Interface} \&robot, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em stop the controller, called befor stopping, optional \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow_1_1ControllerBase}{Controller\+Base} class. 
+
+This provides the basic functionallity to start, stop and update a openwalker controller. 
+
+\subsection{Member Function Documentation}
+\index{ow\+::\+Controller\+Base@{ow\+::\+Controller\+Base}!start@{start}}
+\index{start@{start}!ow\+::\+Controller\+Base@{ow\+::\+Controller\+Base}}
+\subsubsection[{\texorpdfstring{start(const I\+Hw\+Interface \&robot, const ros\+::\+Time \&time)}{start(const IHwInterface &robot, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ow\+::\+Controller\+Base\+::start (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Hw\+Interface} \&}]{robot, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classow_1_1ControllerBase_af757d63078346cff7888f3223d74da01}{}\label{classow_1_1ControllerBase_af757d63078346cff7888f3223d74da01}
+
+
+start the controller, called befor update, optional 
+
+
+\begin{DoxyParams}{Parameters}
+{\em starting} & time \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classow__controller_1_1WalkingController_a3ce7ad45b92396df9e00feb778c19507}{ow\+\_\+controller\+::\+Walking\+Controller}, \hyperlink{classow__controller_1_1BalancingController_a061c4b831294f654a4582bd19a922967}{ow\+\_\+controller\+::\+Balancing\+Controller}, and \hyperlink{classow__controller_1_1HomeingController_a7ef74fa759dd3ceab2913d31c42fa90e}{ow\+\_\+controller\+::\+Homeing\+Controller}.
+
+\index{ow\+::\+Controller\+Base@{ow\+::\+Controller\+Base}!start\+Request@{start\+Request}}
+\index{start\+Request@{start\+Request}!ow\+::\+Controller\+Base@{ow\+::\+Controller\+Base}}
+\subsubsection[{\texorpdfstring{start\+Request(const I\+Hw\+Interface \&robot, const ros\+::\+Time \&time)}{startRequest(const IHwInterface &robot, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+::\+Controller\+Base\+::start\+Request (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Hw\+Interface} \&}]{robot, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow_1_1ControllerBase_aad889e0a532f0b1c012c3d750e46b735}{}\label{classow_1_1ControllerBase_aad889e0a532f0b1c012c3d750e46b735}
+
+
+start the controller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em starting} & time \\
+\hline
+\end{DoxyParams}
+\index{ow\+::\+Controller\+Base@{ow\+::\+Controller\+Base}!stop@{stop}}
+\index{stop@{stop}!ow\+::\+Controller\+Base@{ow\+::\+Controller\+Base}}
+\subsubsection[{\texorpdfstring{stop(const I\+Hw\+Interface \&robot, const ros\+::\+Time \&time)}{stop(const IHwInterface &robot, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ow\+::\+Controller\+Base\+::stop (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Hw\+Interface} \&}]{robot, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classow_1_1ControllerBase_a006743a64466764e23b215e105b36b86}{}\label{classow_1_1ControllerBase_a006743a64466764e23b215e105b36b86}
+
+
+stop the controller, called befor stopping, optional 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stopping} & time \\
+\hline
+\end{DoxyParams}
+\index{ow\+::\+Controller\+Base@{ow\+::\+Controller\+Base}!stop\+Request@{stop\+Request}}
+\index{stop\+Request@{stop\+Request}!ow\+::\+Controller\+Base@{ow\+::\+Controller\+Base}}
+\subsubsection[{\texorpdfstring{stop\+Request(const I\+Hw\+Interface \&robot, const ros\+::\+Time \&time)}{stopRequest(const IHwInterface &robot, const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+::\+Controller\+Base\+::stop\+Request (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Hw\+Interface} \&}]{robot, }
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow_1_1ControllerBase_a64b841b0cdda15cdce45f5d3eae57e27}{}\label{classow_1_1ControllerBase_a64b841b0cdda15cdce45f5d3eae57e27}
+
+
+stop the controller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stopping} & time \\
+\hline
+\end{DoxyParams}
+\index{ow\+::\+Controller\+Base@{ow\+::\+Controller\+Base}!update@{update}}
+\index{update@{update}!ow\+::\+Controller\+Base@{ow\+::\+Controller\+Base}}
+\subsubsection[{\texorpdfstring{update(const I\+Hw\+Interface \&robot, const ros\+::\+Time \&time, const ros\+::\+Duration \&dt)=0}{update(const IHwInterface &robot, const ros::Time &time, const ros::Duration &dt)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf ow\+::\+Joint\+State} ow\+::\+Controller\+Base\+::update (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Hw\+Interface} \&}]{robot, }
+\item[{const ros\+::\+Time \&}]{time, }
+\item[{const ros\+::\+Duration \&}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classow_1_1ControllerBase_a214e12fa933fd1dd3e720347e2757d2d}{}\label{classow_1_1ControllerBase_a214e12fa933fd1dd3e720347e2757d2d}
+
+
+performs update step of the controller, called periodically 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & jointstate \\
+\hline
+{\em current} & time \\
+\hline
+{\em current} & deltatime since last call \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classow__controller_1_1WalkingController_a0a53db483d4499430a7f2c4915972957}{ow\+\_\+controller\+::\+Walking\+Controller}, \hyperlink{classow__controller_1_1BalancingController_ae68ceb16f4350e701168b0e3e43f87ed}{ow\+\_\+controller\+::\+Balancing\+Controller}, and \hyperlink{classow__controller_1_1HomeingController_ab703611f1f341457b3944a29c5a435d9}{ow\+\_\+controller\+::\+Homeing\+Controller}.
+
+\index{ow\+::\+Controller\+Base@{ow\+::\+Controller\+Base}!update\+Request@{update\+Request}}
+\index{update\+Request@{update\+Request}!ow\+::\+Controller\+Base@{ow\+::\+Controller\+Base}}
+\subsubsection[{\texorpdfstring{update\+Request(const I\+Hw\+Interface \&robot, const ros\+::\+Time \&time, const ros\+::\+Duration \&dt)}{updateRequest(const IHwInterface &robot, const ros::Time &time, const ros::Duration &dt)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ow\+::\+Joint\+State} ow\+::\+Controller\+Base\+::update\+Request (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Hw\+Interface} \&}]{robot, }
+\item[{const ros\+::\+Time \&}]{time, }
+\item[{const ros\+::\+Duration \&}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow_1_1ControllerBase_a1e040a4a3cb41c17a5b4738c81f0c7a3}{}\label{classow_1_1ControllerBase_a1e040a4a3cb41c17a5b4738c81f0c7a3}
+
+
+performs update step of the controller, called periodically 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & jointstate\+\_\+ \\
+\hline
+{\em current} & time \\
+\hline
+{\em current} & deltatime since last call \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/interfaces/\hyperlink{controller__base_8h}{controller\+\_\+base.\+h}\end{DoxyCompactItemize}

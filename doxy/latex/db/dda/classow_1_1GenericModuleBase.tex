@@ -1,0 +1,188 @@
+\hypertarget{classow_1_1GenericModuleBase}{}\section{ow\+:\+:Generic\+Module\+Base Class Reference}
+\label{classow_1_1GenericModuleBase}\index{ow\+::\+Generic\+Module\+Base@{ow\+::\+Generic\+Module\+Base}}
+
+
+The \hyperlink{classow_1_1GenericModuleBase}{Generic\+Module\+Base} class.  
+
+
+
+
+{\ttfamily \#include $<$generic\+\_\+module\+\_\+base.\+h$>$}
+
+Inheritance diagram for ow\+:\+:Generic\+Module\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.334884cm]{db/dda/classow_1_1GenericModuleBase}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classow_1_1GenericModuleBase_a7886432615a5e12657f4a684607e6fdf}{State} \{ {\bfseries C\+O\+N\+S\+T\+R\+U\+C\+T\+ED}, 
+{\bfseries I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}, 
+{\bfseries R\+U\+N\+N\+I\+NG}
+ \}\hypertarget{classow_1_1GenericModuleBase_a7886432615a5e12657f4a684607e6fdf}{}\label{classow_1_1GenericModuleBase_a7886432615a5e12657f4a684607e6fdf}
+\begin{DoxyCompactList}\small\item\em Current state of the module. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1GenericModuleBase_acdbc9380752e797b3093d6f5fb506b76}{Generic\+Module\+Base} (const std\+::string \&\hyperlink{classow_1_1GenericModuleBase_a4b712883728cdbab7779e27f9a23689c}{name})\hypertarget{classow_1_1GenericModuleBase_acdbc9380752e797b3093d6f5fb506b76}{}\label{classow_1_1GenericModuleBase_acdbc9380752e797b3093d6f5fb506b76}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow_1_1GenericModuleBase_a9bcecd007b2665363ab0e3e6ac03c60f}{$\sim$\+Generic\+Module\+Base} ()\hypertarget{classow_1_1GenericModuleBase_a9bcecd007b2665363ab0e3e6ac03c60f}{}\label{classow_1_1GenericModuleBase_a9bcecd007b2665363ab0e3e6ac03c60f}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classow_1_1GenericModuleBase_aef59a4b0b68ee9ba0b6cc9fe1ac910bd}{is\+Initialized} () const 
+\begin{DoxyCompactList}\small\item\em return if is running \end{DoxyCompactList}\item 
+bool \hyperlink{classow_1_1GenericModuleBase_a1450a5878a6791751434518e65be8665}{is\+Running} () const 
+\begin{DoxyCompactList}\small\item\em return if is running \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow_1_1GenericModuleBase_a4b712883728cdbab7779e27f9a23689c}{name} () const \hypertarget{classow_1_1GenericModuleBase_a4b712883728cdbab7779e27f9a23689c}{}\label{classow_1_1GenericModuleBase_a4b712883728cdbab7779e27f9a23689c}
+
+\begin{DoxyCompactList}\small\item\em get state name \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow_1_1GenericModuleBase_ac5d1344fc2d1ab4a67dffa262a48428a}{class\+Type} () const \hypertarget{classow_1_1GenericModuleBase_ac5d1344fc2d1ab4a67dffa262a48428a}{}\label{classow_1_1GenericModuleBase_ac5d1344fc2d1ab4a67dffa262a48428a}
+
+\begin{DoxyCompactList}\small\item\em get state name \end{DoxyCompactList}\item 
+ros\+::\+Time \hyperlink{classow_1_1GenericModuleBase_a5378be2f445ea95b0569926461775920}{start\+Time} () const \hypertarget{classow_1_1GenericModuleBase_a5378be2f445ea95b0569926461775920}{}\label{classow_1_1GenericModuleBase_a5378be2f445ea95b0569926461775920}
+
+\begin{DoxyCompactList}\small\item\em get start time \end{DoxyCompactList}\item 
+ros\+::\+Time \hyperlink{classow_1_1GenericModuleBase_a613e760af794382f43c0607a1891269f}{stop\+Time} () const \hypertarget{classow_1_1GenericModuleBase_a613e760af794382f43c0607a1891269f}{}\label{classow_1_1GenericModuleBase_a613e760af794382f43c0607a1891269f}
+
+\begin{DoxyCompactList}\small\item\em get stop time \end{DoxyCompactList}\item 
+bool \hyperlink{classow_1_1GenericModuleBase_ad3c3af233e4c726769bb3bdca14c3e10}{init\+Request} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, ros\+::\+Node\+Handle \&nh)
+\begin{DoxyCompactList}\small\item\em init interal \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classow_1_1GenericModuleBase_a95c6c7b7a84acd2b4f37b7f9301abf9d}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, ros\+::\+Node\+Handle \&nh)=0
+\begin{DoxyCompactList}\small\item\em init interal \end{DoxyCompactList}\item 
+bool \hyperlink{classow_1_1GenericModuleBase_a30cd7aaffeaa38203ddb9c3366454458}{set\+Start\+State} (const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em start the module \end{DoxyCompactList}\item 
+bool \hyperlink{classow_1_1GenericModuleBase_a7a9a90a87f242094334e264429ab08ec}{set\+Stop\+State} (const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em stop the module \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1GenericModuleBase_a7886432615a5e12657f4a684607e6fdf}{State} \hyperlink{classow_1_1GenericModuleBase_adc4bc6b792fa26a3cced4c4ceb64f72a}{state\+\_\+}\hypertarget{classow_1_1GenericModuleBase_adc4bc6b792fa26a3cced4c4ceb64f72a}{}\label{classow_1_1GenericModuleBase_adc4bc6b792fa26a3cced4c4ceb64f72a}
+
+\begin{DoxyCompactList}\small\item\em the current module state \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow_1_1GenericModuleBase_a576b6006ca06dc4b3c18d70c8ab3d2d4}{name\+\_\+}\hypertarget{classow_1_1GenericModuleBase_a576b6006ca06dc4b3c18d70c8ab3d2d4}{}\label{classow_1_1GenericModuleBase_a576b6006ca06dc4b3c18d70c8ab3d2d4}
+
+\begin{DoxyCompactList}\small\item\em the module name \end{DoxyCompactList}\item 
+ros\+::\+Time \hyperlink{classow_1_1GenericModuleBase_a5466cbf6c2258a91e2eb8d7bd9a0d29c}{start\+\_\+time\+\_\+}\hypertarget{classow_1_1GenericModuleBase_a5466cbf6c2258a91e2eb8d7bd9a0d29c}{}\label{classow_1_1GenericModuleBase_a5466cbf6c2258a91e2eb8d7bd9a0d29c}
+
+\begin{DoxyCompactList}\small\item\em start time of the module \end{DoxyCompactList}\item 
+ros\+::\+Time \hyperlink{classow_1_1GenericModuleBase_af1699d91f5cbb371dc4fe18b67bbd66e}{stop\+\_\+time\+\_\+}\hypertarget{classow_1_1GenericModuleBase_af1699d91f5cbb371dc4fe18b67bbd66e}{}\label{classow_1_1GenericModuleBase_af1699d91f5cbb371dc4fe18b67bbd66e}
+
+\begin{DoxyCompactList}\small\item\em stop time of the module \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow_1_1GenericModuleBase}{Generic\+Module\+Base} class. 
+
+This provides the basic functionallity to initialize a module. Keeps track of module state. 
+
+\subsection{Member Function Documentation}
+\index{ow\+::\+Generic\+Module\+Base@{ow\+::\+Generic\+Module\+Base}!init@{init}}
+\index{init@{init}!ow\+::\+Generic\+Module\+Base@{ow\+::\+Generic\+Module\+Base}}
+\subsubsection[{\texorpdfstring{init(const ow\+::\+Parameter \&parameter, ros\+::\+Node\+Handle \&nh)=0}{init(const ow::Parameter &parameter, ros::NodeHandle &nh)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ow\+::\+Generic\+Module\+Base\+::init (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Parameter} \&}]{parameter, }
+\item[{ros\+::\+Node\+Handle \&}]{nh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{classow_1_1GenericModuleBase_a95c6c7b7a84acd2b4f37b7f9301abf9d}{}\label{classow_1_1GenericModuleBase_a95c6c7b7a84acd2b4f37b7f9301abf9d}
+
+
+init interal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ros} & nh for namespace \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classow__fs__planner_1_1FootstepPlanner_ab3240b5742fb9188a5120c558db6c0bd}{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner}, \hyperlink{classow__pub_1_1StatePublisher_a3285df66b266dc6dd9468803f244f745}{ow\+\_\+pub\+::\+State\+Publisher}, \hyperlink{classow__sm_1_1StateMachine_a5bc07d8178b35935cc963a7015a30318}{ow\+\_\+sm\+::\+State\+Machine}, \hyperlink{classow__hw__interface_1_1Robot_ab4e66ad524fcce85b3c2a2a8dc375cc6}{ow\+\_\+hw\+\_\+interface\+::\+Robot}, \hyperlink{classow__joint__tracker_1_1JointTracker_a39a2e5dd308b1653205b255ecdd31ffb}{ow\+\_\+joint\+\_\+tracker\+::\+Joint\+Tracker}, \hyperlink{classow__zmp_1_1ZmpEstimator_a9e643e1ae0e0fedabbf753e42c0fd59b}{ow\+\_\+zmp\+::\+Zmp\+Estimator}, \hyperlink{classow__fcm_1_1FootCompliance_ad2459eb9b3936e928465a7a00dfb20c4}{ow\+\_\+fcm\+::\+Foot\+Compliance}, \hyperlink{classow__controller_1_1WalkingController_a0e9637665918f28e5e28b7ee24a119df}{ow\+\_\+controller\+::\+Walking\+Controller}, \hyperlink{classow__balancer_1_1Balancer_ab864c91d85ec802e833efcbabe41dec7}{ow\+\_\+balancer\+::\+Balancer}, \hyperlink{classow__controller_1_1BalancingController_a1b06a2454dd0ce27675390af723d2029}{ow\+\_\+controller\+::\+Balancing\+Controller}, \hyperlink{classow__cmd__gen_1_1CommandGenerator_ab36dd341b8d384aa134ed3ea8f4ae086}{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator}, \hyperlink{classow__ftg_1_1FootTrajectoryGenerator_a76ea67492cbcedb85dce1ad5ec43699f}{ow\+\_\+ftg\+::\+Foot\+Trajectory\+Generator}, \hyperlink{classow__com__tg_1_1COMTrajectoryGenerator_ab0e21245b1f9f873a1df72969ed5e37d}{ow\+\_\+com\+\_\+tg\+::\+C\+O\+M\+Trajectory\+Generator}, \hyperlink{classow__dcm__planner_1_1DCMPlanner_ab846c11b13884d0f7ae1972de514b417}{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner}, \hyperlink{classow__ik_1_1InverseKinematics_a5469dd0c342af9bee2b5591d543540ec}{ow\+\_\+ik\+::\+Inverse\+Kinematics}, \hyperlink{classow__com_1_1COMEstimator_ac30dad4021919bc434ebb8a2b903163a}{ow\+\_\+com\+::\+C\+O\+M\+Estimator}, and \hyperlink{classow__controller_1_1HomeingController_aa9841489fbf7515ed7f26714eeba9f96}{ow\+\_\+controller\+::\+Homeing\+Controller}.
+
+\index{ow\+::\+Generic\+Module\+Base@{ow\+::\+Generic\+Module\+Base}!init\+Request@{init\+Request}}
+\index{init\+Request@{init\+Request}!ow\+::\+Generic\+Module\+Base@{ow\+::\+Generic\+Module\+Base}}
+\subsubsection[{\texorpdfstring{init\+Request(const ow\+::\+Parameter \&parameter, ros\+::\+Node\+Handle \&nh)}{initRequest(const ow::Parameter &parameter, ros::NodeHandle &nh)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+::\+Generic\+Module\+Base\+::init\+Request (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Parameter} \&}]{parameter, }
+\item[{ros\+::\+Node\+Handle \&}]{nh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow_1_1GenericModuleBase_ad3c3af233e4c726769bb3bdca14c3e10}{}\label{classow_1_1GenericModuleBase_ad3c3af233e4c726769bb3bdca14c3e10}
+
+
+init interal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ros} & nh for namespace \\
+\hline
+\end{DoxyParams}
+\index{ow\+::\+Generic\+Module\+Base@{ow\+::\+Generic\+Module\+Base}!is\+Initialized@{is\+Initialized}}
+\index{is\+Initialized@{is\+Initialized}!ow\+::\+Generic\+Module\+Base@{ow\+::\+Generic\+Module\+Base}}
+\subsubsection[{\texorpdfstring{is\+Initialized() const }{isInitialized() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+::\+Generic\+Module\+Base\+::is\+Initialized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow_1_1GenericModuleBase_aef59a4b0b68ee9ba0b6cc9fe1ac910bd}{}\label{classow_1_1GenericModuleBase_aef59a4b0b68ee9ba0b6cc9fe1ac910bd}
+
+
+return if is running 
+
+\begin{DoxyReturn}{Returns}
+running flag 
+\end{DoxyReturn}
+\index{ow\+::\+Generic\+Module\+Base@{ow\+::\+Generic\+Module\+Base}!is\+Running@{is\+Running}}
+\index{is\+Running@{is\+Running}!ow\+::\+Generic\+Module\+Base@{ow\+::\+Generic\+Module\+Base}}
+\subsubsection[{\texorpdfstring{is\+Running() const }{isRunning() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+::\+Generic\+Module\+Base\+::is\+Running (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow_1_1GenericModuleBase_a1450a5878a6791751434518e65be8665}{}\label{classow_1_1GenericModuleBase_a1450a5878a6791751434518e65be8665}
+
+
+return if is running 
+
+\begin{DoxyReturn}{Returns}
+running flag 
+\end{DoxyReturn}
+\index{ow\+::\+Generic\+Module\+Base@{ow\+::\+Generic\+Module\+Base}!set\+Start\+State@{set\+Start\+State}}
+\index{set\+Start\+State@{set\+Start\+State}!ow\+::\+Generic\+Module\+Base@{ow\+::\+Generic\+Module\+Base}}
+\subsubsection[{\texorpdfstring{set\+Start\+State(const ros\+::\+Time \&time)}{setStartState(const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+::\+Generic\+Module\+Base\+::set\+Start\+State (
+\begin{DoxyParamCaption}
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow_1_1GenericModuleBase_a30cd7aaffeaa38203ddb9c3366454458}{}\label{classow_1_1GenericModuleBase_a30cd7aaffeaa38203ddb9c3366454458}
+
+
+start the module 
+
+
+\begin{DoxyParams}{Parameters}
+{\em starting} & time \\
+\hline
+\end{DoxyParams}
+\index{ow\+::\+Generic\+Module\+Base@{ow\+::\+Generic\+Module\+Base}!set\+Stop\+State@{set\+Stop\+State}}
+\index{set\+Stop\+State@{set\+Stop\+State}!ow\+::\+Generic\+Module\+Base@{ow\+::\+Generic\+Module\+Base}}
+\subsubsection[{\texorpdfstring{set\+Stop\+State(const ros\+::\+Time \&time)}{setStopState(const ros::Time &time)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+::\+Generic\+Module\+Base\+::set\+Stop\+State (
+\begin{DoxyParamCaption}
+\item[{const ros\+::\+Time \&}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow_1_1GenericModuleBase_a7a9a90a87f242094334e264429ab08ec}{}\label{classow_1_1GenericModuleBase_a7a9a90a87f242094334e264429ab08ec}
+
+
+stop the module 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stopping} & time \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/interfaces/\hyperlink{generic__module__base_8h}{generic\+\_\+module\+\_\+base.\+h}\end{DoxyCompactItemize}

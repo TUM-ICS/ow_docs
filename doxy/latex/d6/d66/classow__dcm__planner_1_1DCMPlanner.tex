@@ -1,0 +1,157 @@
+\hypertarget{classow__dcm__planner_1_1DCMPlanner}{}\section{ow\+\_\+dcm\+\_\+planner\+:\+:D\+C\+M\+Planner Class Reference}
+\label{classow__dcm__planner_1_1DCMPlanner}\index{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner@{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner}}
+
+
+The \hyperlink{classow__dcm__planner_1_1DCMPlanner}{D\+C\+M\+Planner} class.  
+
+
+
+
+{\ttfamily \#include $<$dcm\+\_\+planner.\+h$>$}
+
+Inheritance diagram for ow\+\_\+dcm\+\_\+planner\+:\+:D\+C\+M\+Planner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d6/d66/classow__dcm__planner_1_1DCMPlanner}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow_1_1IDCMPlanner}{ow\+::\+I\+D\+C\+M\+Planner} {\bfseries Base}\hypertarget{classow__dcm__planner_1_1DCMPlanner_a435f68496dbc9f8321b236f508d83e95}{}\label{classow__dcm__planner_1_1DCMPlanner_a435f68496dbc9f8321b236f508d83e95}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__dcm__planner_1_1DCMPlanner_a936a295d300754f1c9a2ac6ed8005e01}{D\+C\+M\+Planner} ()\hypertarget{classow__dcm__planner_1_1DCMPlanner_a936a295d300754f1c9a2ac6ed8005e01}{}\label{classow__dcm__planner_1_1DCMPlanner_a936a295d300754f1c9a2ac6ed8005e01}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+virtual const ow\+::\+D\+C\+M\+Point\+Set\+List \& \hyperlink{classow__dcm__planner_1_1DCMPlanner_a10243a996a2c39e9999dfddb922f234b}{dcm\+Point\+Set\+List} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+const ow\+::\+D\+C\+M\+Point\+Set\+List \& \hyperlink{classow__dcm__planner_1_1DCMPlanner_a0f6bb0ac1fb616cd0c21a8f5e4ae8c7a}{plan\+D\+C\+M\+Points} (const ow\+::\+Foot\+Step\+List \&footsteps, const \hyperlink{classow__core_1_1FootStep}{ow\+::\+Foot\+Step} \&current\+\_\+step)
+\begin{DoxyCompactList}\small\item\em Generate the D\+CP waypoint sets from planned footsteps. \end{DoxyCompactList}\item 
+void \hyperlink{classow__dcm__planner_1_1DCMPlanner_aa85207c723117da5c350c33244af2a90}{print\+Point\+Sets} ()
+\begin{DoxyCompactList}\small\item\em Printout the D\+CM plan using the R\+O\+S\+\_\+\+I\+N\+F\+O\+\_\+\+S\+T\+R\+E\+AM macro. Use only for debuging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classow__dcm__planner_1_1DCMPlanner_ab846c11b13884d0f7ae1972de514b417}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, ros\+::\+Node\+Handle \&nh)
+\begin{DoxyCompactList}\small\item\em Initialization of Forward Kinematics module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \hyperlink{classow__dcm__planner_1_1DCMPlanner_a2c41f7f6279eae5833739d40ad3ea147}{parameter\+\_\+}\hypertarget{classow__dcm__planner_1_1DCMPlanner_a2c41f7f6279eae5833739d40ad3ea147}{}\label{classow__dcm__planner_1_1DCMPlanner_a2c41f7f6279eae5833739d40ad3ea147}
+
+\begin{DoxyCompactList}\small\item\em configuration of this module \end{DoxyCompactList}\item 
+ow\+::\+D\+C\+M\+Point\+Set\+List \hyperlink{classow__dcm__planner_1_1DCMPlanner_a94a8211f139d257aff676b6fcc7100b1}{dcm\+\_\+point\+\_\+sets\+\_\+}\hypertarget{classow__dcm__planner_1_1DCMPlanner_a94a8211f139d257aff676b6fcc7100b1}{}\label{classow__dcm__planner_1_1DCMPlanner_a94a8211f139d257aff676b6fcc7100b1}
+
+\begin{DoxyCompactList}\small\item\em D\+CM points. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1FootStep}{ow\+::\+Foot\+Step} \hyperlink{classow__dcm__planner_1_1DCMPlanner_a3d8e7dcaac67182dde48979e1b01591a}{current\+\_\+step\+\_\+}\hypertarget{classow__dcm__planner_1_1DCMPlanner_a3d8e7dcaac67182dde48979e1b01591a}{}\label{classow__dcm__planner_1_1DCMPlanner_a3d8e7dcaac67182dde48979e1b01591a}
+
+\begin{DoxyCompactList}\small\item\em Last executed step. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__dcm__planner_1_1DCMPlanner_aa82f57242d665eda7b9fb6e219c14419}{step\+\_\+time\+\_\+}\hypertarget{classow__dcm__planner_1_1DCMPlanner_aa82f57242d665eda7b9fb6e219c14419}{}\label{classow__dcm__planner_1_1DCMPlanner_aa82f57242d665eda7b9fb6e219c14419}
+
+\begin{DoxyCompactList}\small\item\em Step period. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__dcm__planner_1_1DCMPlanner_a487e50a2d2760bf22a90f9599fc2857b}{z\+\_\+}\hypertarget{classow__dcm__planner_1_1DCMPlanner_a487e50a2d2760bf22a90f9599fc2857b}{}\label{classow__dcm__planner_1_1DCMPlanner_a487e50a2d2760bf22a90f9599fc2857b}
+
+\begin{DoxyCompactList}\small\item\em CoM height. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__dcm__planner_1_1DCMPlanner_a3aac980fe39b27d41bc148bbadafb47e}{w\+\_\+}\hypertarget{classow__dcm__planner_1_1DCMPlanner_a3aac980fe39b27d41bc148bbadafb47e}{}\label{classow__dcm__planner_1_1DCMPlanner_a3aac980fe39b27d41bc148bbadafb47e}
+
+\begin{DoxyCompactList}\small\item\em L\+I\+PM time constant. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__dcm__planner_1_1DCMPlanner_ab82f74f76fac84ff5c2d14be676a1802}{vrp\+\_\+shift\+\_\+left\+\_\+}\hypertarget{classow__dcm__planner_1_1DCMPlanner_ab82f74f76fac84ff5c2d14be676a1802}{}\label{classow__dcm__planner_1_1DCMPlanner_ab82f74f76fac84ff5c2d14be676a1802}
+
+\begin{DoxyCompactList}\small\item\em V\+RP shift to the left. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__dcm__planner_1_1DCMPlanner_aaab36615171ee4678b40ff5024627eee}{vrp\+\_\+shift\+\_\+right\+\_\+}\hypertarget{classow__dcm__planner_1_1DCMPlanner_aaab36615171ee4678b40ff5024627eee}{}\label{classow__dcm__planner_1_1DCMPlanner_aaab36615171ee4678b40ff5024627eee}
+
+\begin{DoxyCompactList}\small\item\em V\+RP shift to the right. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__dcm__planner_1_1DCMPlanner_ab8e558f0d10716201a4221aba150c3c0}{vrp\+\_\+shift\+\_\+sagital\+\_\+}\hypertarget{classow__dcm__planner_1_1DCMPlanner_ab8e558f0d10716201a4221aba150c3c0}{}\label{classow__dcm__planner_1_1DCMPlanner_ab8e558f0d10716201a4221aba150c3c0}
+
+\begin{DoxyCompactList}\small\item\em V\+RP shift in sagital plane. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__dcm__planner_1_1DCMPlanner}{D\+C\+M\+Planner} class. 
+
+This class implements a basic D\+CM planner which uses a previously generated footstep plan to generate the waypoinnts for dynamically stable D\+CM trajectories. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner@{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner}!dcm\+Point\+Set\+List@{dcm\+Point\+Set\+List}}
+\index{dcm\+Point\+Set\+List@{dcm\+Point\+Set\+List}!ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner@{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner}}
+\subsubsection[{\texorpdfstring{dcm\+Point\+Set\+List() const }{dcmPointSetList() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const ow\+::\+D\+C\+M\+Point\+Set\+List\& ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner\+::dcm\+Point\+Set\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__dcm__planner_1_1DCMPlanner_a10243a996a2c39e9999dfddb922f234b}{}\label{classow__dcm__planner_1_1DCMPlanner_a10243a996a2c39e9999dfddb922f234b}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+A list containing the D\+CM way points needed to executethe planned footsteps. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1IDCMPlanner_addf85aab043e49379fbe76c17ddae3c2}{ow\+::\+I\+D\+C\+M\+Planner}.
+
+\index{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner@{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner}!init@{init}}
+\index{init@{init}!ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner@{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner}}
+\subsubsection[{\texorpdfstring{init(const ow\+::\+Parameter \&parameter, ros\+::\+Node\+Handle \&nh)}{init(const ow::Parameter &parameter, ros::NodeHandle &nh)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner\+::init (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Parameter} \&}]{parameter, }
+\item[{ros\+::\+Node\+Handle \&}]{nh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classow__dcm__planner_1_1DCMPlanner_ab846c11b13884d0f7ae1972de514b417}{}\label{classow__dcm__planner_1_1DCMPlanner_ab846c11b13884d0f7ae1972de514b417}
+
+
+Initialization of Forward Kinematics module. 
+
+\begin{DoxyReturn}{Returns}
+true on success. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1GenericModuleBase_a95c6c7b7a84acd2b4f37b7f9301abf9d}{ow\+::\+Generic\+Module\+Base}.
+
+\index{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner@{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner}!plan\+D\+C\+M\+Points@{plan\+D\+C\+M\+Points}}
+\index{plan\+D\+C\+M\+Points@{plan\+D\+C\+M\+Points}!ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner@{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner}}
+\subsubsection[{\texorpdfstring{plan\+D\+C\+M\+Points(const ow\+::\+Foot\+Step\+List \&footsteps, const ow\+::\+Foot\+Step \&current\+\_\+step)}{planDCMPoints(const ow::FootStepList &footsteps, const ow::FootStep &current_step)}}]{\setlength{\rightskip}{0pt plus 5cm}const ow\+::\+D\+C\+M\+Point\+Set\+List\& ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner\+::plan\+D\+C\+M\+Points (
+\begin{DoxyParamCaption}
+\item[{const ow\+::\+Foot\+Step\+List \&}]{footsteps, }
+\item[{const {\bf ow\+::\+Foot\+Step} \&}]{current\+\_\+step}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__dcm__planner_1_1DCMPlanner_a0f6bb0ac1fb616cd0c21a8f5e4ae8c7a}{}\label{classow__dcm__planner_1_1DCMPlanner_a0f6bb0ac1fb616cd0c21a8f5e4ae8c7a}
+
+
+Generate the D\+CP waypoint sets from planned footsteps. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em footsteps} & Preciously planned footsteps.\\
+\hline
+{\em current\+\_\+step} & Currently executing step. The planer will not update previous steps to save computation time.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Planned set of D\+CM waypoints for stable walking over the input footsteps.
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000004}{Bug}]Remove this after testing is done \end{DoxyRefDesc}
+\index{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner@{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner}!print\+Point\+Sets@{print\+Point\+Sets}}
+\index{print\+Point\+Sets@{print\+Point\+Sets}!ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner@{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner}}
+\subsubsection[{\texorpdfstring{print\+Point\+Sets()}{printPointSets()}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner\+::print\+Point\+Sets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__dcm__planner_1_1DCMPlanner_aa85207c723117da5c350c33244af2a90}{}\label{classow__dcm__planner_1_1DCMPlanner_aa85207c723117da5c350c33244af2a90}
+
+
+Printout the D\+CM plan using the R\+O\+S\+\_\+\+I\+N\+F\+O\+\_\+\+S\+T\+R\+E\+AM macro. Use only for debuging. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000005}{Bug}]Remove this after testing is done \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+dcm\+\_\+planner/include/ow\+\_\+dcm\+\_\+planner/\hyperlink{dcm__planner_8h}{dcm\+\_\+planner.\+h}\end{DoxyCompactItemize}

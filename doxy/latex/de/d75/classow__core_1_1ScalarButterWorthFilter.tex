@@ -1,0 +1,385 @@
+\hypertarget{classow__core_1_1ScalarButterWorthFilter}{}\section{ow\+\_\+core\+:\+:Scalar\+Butter\+Worth\+Filter$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1ScalarButterWorthFilter}\index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1ScalarButterWorthFilter}{Scalar\+Butter\+Worth\+Filter} class.  
+
+
+
+
+{\ttfamily \#include $<$scalar\+\_\+butterworth\+\_\+filter.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Scalar\+Butter\+Worth\+Filter$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{de/d75/classow__core_1_1ScalarButterWorthFilter}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0af}{Filter\+Type} \{ \hyperlink{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afa3d5f827ba459e18d6e2226e833f30a6e}{HP}, 
+\hyperlink{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afa47394b33f3175a7d46009fd0ad40ff09}{LP}, 
+\hyperlink{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afa17275ddbb8598ef86e96d0c59135d177}{BP}, 
+\hyperlink{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afae77feb730664507508ec13f7fced7206}{BS}
+ \}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a18a92bd79a688bf3dc12e15fa494ae24}{}\label{classow__core_1_1ScalarButterWorthFilter_a18a92bd79a688bf3dc12e15fa494ae24}
+
+\item 
+typedef \hyperlink{classow__core_1_1IScalarFilter}{I\+Scalar\+Filter}$<$ \+\_\+\+Scalar $>$ {\bfseries I\+Filter}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a9f6b0138be14ee9c3dc76fc07ecdc748}{}\label{classow__core_1_1ScalarButterWorthFilter_a9f6b0138be14ee9c3dc76fc07ecdc748}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ \+\_\+\+Scalar, Eigen\+::\+Dynamic, 1 $>$ {\bfseries Vector}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a9a6c1af6ba526c8376e0c58268567f7f}{}\label{classow__core_1_1ScalarButterWorthFilter_a9a6c1af6ba526c8376e0c58268567f7f}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ \+\_\+\+Scalar, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$ {\bfseries Matrix}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a5f8538a0c9c132ab00bcd35fd2886171}{}\label{classow__core_1_1ScalarButterWorthFilter_a5f8538a0c9c132ab00bcd35fd2886171}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1ScalarButterWorthFilter_abdf8c3fa60b7361595fa628d2b02c851}{Scalar\+Butter\+Worth\+Filter} (Scalar \hyperlink{classow__core_1_1ScalarButterWorthFilter_a606b9f4260cb272a5f49adc5fe548d93}{f\+\_\+s\+\_\+}, Scalar fcut\+\_\+1, Scalar fcut\+\_\+2=0.\+0, int \hyperlink{classow__core_1_1ScalarButterWorthFilter_a9bc80a1619931505c290bdb8dae15aba}{order}=2, \hyperlink{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0af}{Filter\+Type} type=\hyperlink{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afa47394b33f3175a7d46009fd0ad40ff09}{LP})
+\begin{DoxyCompactList}\small\item\em Construct a LP, HP, BP or BS filter for given sampling frequency, cutoff frequencies and filter order. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1ScalarButterWorthFilter_a95fc83411c5b6081b615d2903845f4a7}{Scalar\+Butter\+Worth\+Filter} (const Matrix \&A\+\_\+sos, Scalar \hyperlink{classow__core_1_1ScalarButterWorthFilter_a606b9f4260cb272a5f49adc5fe548d93}{f\+\_\+s\+\_\+}=1.\+0, Scalar fcut\+\_\+1=0.\+0, Scalar fcut\+\_\+2=0.\+0, int \hyperlink{classow__core_1_1ScalarButterWorthFilter_a9bc80a1619931505c290bdb8dae15aba}{order}=0, \hyperlink{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0af}{Filter\+Type} type=\hyperlink{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afa47394b33f3175a7d46009fd0ad40ff09}{LP})
+\begin{DoxyCompactList}\small\item\em Constructor a filter from a second-\/order sections form. A \hyperlink{classow__core_1_1Matrix}{Matrix} containing the coefficients of multiple second-\/order filters. \hyperlink{classow__core_1_1Matrix}{Matrix} dimension must be Nx6, with N the numer of second-\/order systems and 6 the 3 nominator coefficients b + 3 denominator coefficients a. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1ScalarButterWorthFilter_a80aebb51b2a662ccad3830271d1c5b20}{Scalar\+Butter\+Worth\+Filter} (const \hyperlink{classow__core_1_1ScalarButterWorthFilter}{Scalar\+Butter\+Worth\+Filter} \&other)\hypertarget{classow__core_1_1ScalarButterWorthFilter_a80aebb51b2a662ccad3830271d1c5b20}{}\label{classow__core_1_1ScalarButterWorthFilter_a80aebb51b2a662ccad3830271d1c5b20}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. Copy Coeffecients, no need to recompute everything. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__core_1_1ScalarButterWorthFilter_aa93062001707a171f53f164ad86ba417}{$\sim$\+Scalar\+Butter\+Worth\+Filter} ()\hypertarget{classow__core_1_1ScalarButterWorthFilter_aa93062001707a171f53f164ad86ba417}{}\label{classow__core_1_1ScalarButterWorthFilter_aa93062001707a171f53f164ad86ba417}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__core_1_1ScalarButterWorthFilter_a2a277b564c7379a114cb4fe7ab56fc6b}{valid} () const 
+\begin{DoxyCompactList}\small\item\em Returns whether the ouput is valid. \end{DoxyCompactList}\item 
+int \hyperlink{classow__core_1_1ScalarButterWorthFilter_abd25951936d5c78f9b4a61f226f0dda6}{valid\+Count} () const 
+\begin{DoxyCompactList}\small\item\em Returns num of samples required for valid ouput. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1IScalarFilter}{I\+Filter} $\ast$ \hyperlink{classow__core_1_1ScalarButterWorthFilter_a017b55f038e1b6159144708fe1c9f9b1}{copy} () const \hypertarget{classow__core_1_1ScalarButterWorthFilter_a017b55f038e1b6159144708fe1c9f9b1}{}\label{classow__core_1_1ScalarButterWorthFilter_a017b55f038e1b6159144708fe1c9f9b1}
+
+\begin{DoxyCompactList}\small\item\em Create a copy of this object using the new operator. \end{DoxyCompactList}\item 
+virtual Scalar \hyperlink{classow__core_1_1ScalarButterWorthFilter_a1dd30f8c8be1b5def440a332bded798a}{reset} ()
+\begin{DoxyCompactList}\small\item\em Reset the algorithm to inital state. \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarButterWorthFilter_a67ffaf18d349a7e187b220ce56e3827e}{reset} (Scalar x)
+\begin{DoxyCompactList}\small\item\em Reset the algorithm to inital state $\mathScalarQ{x}{}$. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1ScalarButterWorthFilter_a6ec4f0a7934eb5cc92507391c9066788}{add} (Scalar x)
+\begin{DoxyCompactList}\small\item\em Adds new sample $\mathScalarQ{x}{}$ wihtout computation. \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarButterWorthFilter_ac34d0ff2d3127a2d4af585fee852c6cd}{update} (Scalar x)\hypertarget{classow__core_1_1ScalarButterWorthFilter_ac34d0ff2d3127a2d4af585fee852c6cd}{}\label{classow__core_1_1ScalarButterWorthFilter_ac34d0ff2d3127a2d4af585fee852c6cd}
+
+\begin{DoxyCompactList}\small\item\em Update the filter for the next step. \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarButterWorthFilter_a4bf09704d1728d06d336deed76d02a22}{output} () const \hypertarget{classow__core_1_1ScalarButterWorthFilter_a4bf09704d1728d06d336deed76d02a22}{}\label{classow__core_1_1ScalarButterWorthFilter_a4bf09704d1728d06d336deed76d02a22}
+
+\begin{DoxyCompactList}\small\item\em The current value of the signal. \end{DoxyCompactList}\item 
+int \hyperlink{classow__core_1_1ScalarButterWorthFilter_a9bc80a1619931505c290bdb8dae15aba}{order} () const \hypertarget{classow__core_1_1ScalarButterWorthFilter_a9bc80a1619931505c290bdb8dae15aba}{}\label{classow__core_1_1ScalarButterWorthFilter_a9bc80a1619931505c290bdb8dae15aba}
+
+\begin{DoxyCompactList}\small\item\em the filters order \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarButterWorthFilter_aad54ee84a51c04171d6d8daffe34ac9d}{sample\+Frequency} () const \hypertarget{classow__core_1_1ScalarButterWorthFilter_aad54ee84a51c04171d6d8daffe34ac9d}{}\label{classow__core_1_1ScalarButterWorthFilter_aad54ee84a51c04171d6d8daffe34ac9d}
+
+\begin{DoxyCompactList}\small\item\em the signal sampling frequency \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarButterWorthFilter_a849bab97535cf4fa9ae688c7d2d4eabb}{lower\+Cutoff\+Frequency} () const \hypertarget{classow__core_1_1ScalarButterWorthFilter_a849bab97535cf4fa9ae688c7d2d4eabb}{}\label{classow__core_1_1ScalarButterWorthFilter_a849bab97535cf4fa9ae688c7d2d4eabb}
+
+\begin{DoxyCompactList}\small\item\em the filters cutoff frequency \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarButterWorthFilter_a946cf57773789ecc6a560244e36431a9}{upper\+Cutoff\+Frequency} () const \hypertarget{classow__core_1_1ScalarButterWorthFilter_a946cf57773789ecc6a560244e36431a9}{}\label{classow__core_1_1ScalarButterWorthFilter_a946cf57773789ecc6a560244e36431a9}
+
+\begin{DoxyCompactList}\small\item\em the filters cutoff frequency \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classow__core_1_1ScalarButterWorthFilter}{Scalar\+Butter\+Worth\+Filter} {\bfseries Low\+Pass\+Second\+Order} (Scalar f\+\_\+s, Scalar f\+\_\+cut)\hypertarget{classow__core_1_1ScalarButterWorthFilter_a65ef33ac8c066c5d764ed16129d2d808}{}\label{classow__core_1_1ScalarButterWorthFilter_a65ef33ac8c066c5d764ed16129d2d808}
+
+\item 
+static \hyperlink{classow__core_1_1ScalarButterWorthFilter}{Scalar\+Butter\+Worth\+Filter} {\bfseries Low\+Pass\+Forth\+Order} (Scalar f\+\_\+s, Scalar f\+\_\+cut)\hypertarget{classow__core_1_1ScalarButterWorthFilter_a059bdfd90581f17e3d85927c6c728018}{}\label{classow__core_1_1ScalarButterWorthFilter_a059bdfd90581f17e3d85927c6c728018}
+
+\item 
+static \hyperlink{classow__core_1_1ScalarButterWorthFilter}{Scalar\+Butter\+Worth\+Filter} {\bfseries High\+Pass\+Second\+Order} (Scalar f\+\_\+s, Scalar f\+\_\+cut)\hypertarget{classow__core_1_1ScalarButterWorthFilter_a98eb530645e14cad3555b45bf98c405a}{}\label{classow__core_1_1ScalarButterWorthFilter_a98eb530645e14cad3555b45bf98c405a}
+
+\item 
+static \hyperlink{classow__core_1_1ScalarButterWorthFilter}{Scalar\+Butter\+Worth\+Filter} {\bfseries High\+Pass\+Forth\+Order} (Scalar f\+\_\+s, Scalar f\+\_\+cut)\hypertarget{classow__core_1_1ScalarButterWorthFilter_a8dc3d78599747584a6aabac58c2572e3}{}\label{classow__core_1_1ScalarButterWorthFilter_a8dc3d78599747584a6aabac58c2572e3}
+
+\item 
+static \hyperlink{classow__core_1_1ScalarButterWorthFilter}{Scalar\+Butter\+Worth\+Filter} {\bfseries Band\+Pass\+Forth\+Order} (Scalar f\+\_\+s, Scalar f\+\_\+cut\+\_\+1, Scalar f\+\_\+cut\+\_\+2)\hypertarget{classow__core_1_1ScalarButterWorthFilter_a60315052d90ae854c642ccbcf68fd814}{}\label{classow__core_1_1ScalarButterWorthFilter_a60315052d90ae854c642ccbcf68fd814}
+
+\item 
+static \hyperlink{classow__core_1_1ScalarButterWorthFilter}{Scalar\+Butter\+Worth\+Filter} {\bfseries Band\+Pass\+Eighth\+Order} (Scalar f\+\_\+s, Scalar f\+\_\+cut\+\_\+1, Scalar f\+\_\+cut\+\_\+2)\hypertarget{classow__core_1_1ScalarButterWorthFilter_a4478fc17122836265ec33e57b89d11de}{}\label{classow__core_1_1ScalarButterWorthFilter_a4478fc17122836265ec33e57b89d11de}
+
+\item 
+static \hyperlink{classow__core_1_1ScalarButterWorthFilter}{Scalar\+Butter\+Worth\+Filter} {\bfseries Band\+Stop\+Forth\+Order} (Scalar f\+\_\+s, Scalar f\+\_\+cut\+\_\+1, Scalar f\+\_\+cut\+\_\+2)\hypertarget{classow__core_1_1ScalarButterWorthFilter_a5ed1f24735bd35e34ff09bbde0a5cb8b}{}\label{classow__core_1_1ScalarButterWorthFilter_a5ed1f24735bd35e34ff09bbde0a5cb8b}
+
+\item 
+static \hyperlink{classow__core_1_1ScalarButterWorthFilter}{Scalar\+Butter\+Worth\+Filter} {\bfseries Band\+Stop\+Eighth\+Order} (Scalar f\+\_\+s, Scalar f\+\_\+cut\+\_\+1, Scalar f\+\_\+cut\+\_\+2)\hypertarget{classow__core_1_1ScalarButterWorthFilter_ab7cec28394c67ef36f136fd7a92e67ee}{}\label{classow__core_1_1ScalarButterWorthFilter_ab7cec28394c67ef36f136fd7a92e67ee}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classow__core_1_1ScalarButterWorthFilter_a22ec8fb68e3fb45d6b822f9298148b71}{setup} ()
+\begin{DoxyCompactList}\small\item\em Setup the filter for given filter type. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1ScalarButterWorthFilter_a42cbe4415563060fc60462696dbec6c1}{setup} (const Matrix \&A\+\_\+sos)
+\begin{DoxyCompactList}\small\item\em Setup the filter from given sos matrix. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1ScalarButterWorthFilter_aabd576ed87d76e04c9b1c8f282aa25f7}{initialize} (Scalar x)
+\begin{DoxyCompactList}\small\item\em Initialize the filter state. \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarButterWorthFilter_a72d55ecc091b2304ee69eef567ecfbc9}{filter} (Scalar x)
+\begin{DoxyCompactList}\small\item\em Apply the filter algorithm. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1ScalarButterWorthFilter_a93aaa07d135aed5e628535312dfacd33}{setup\+Low\+Pass} (Scalar w)\hypertarget{classow__core_1_1ScalarButterWorthFilter_a93aaa07d135aed5e628535312dfacd33}{}\label{classow__core_1_1ScalarButterWorthFilter_a93aaa07d135aed5e628535312dfacd33}
+
+\begin{DoxyCompactList}\small\item\em Setup coefficients for low pass filter. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1ScalarButterWorthFilter_ab4a330a4d30843488793144d68adf61c}{setup\+High\+Pass} (Scalar w)\hypertarget{classow__core_1_1ScalarButterWorthFilter_ab4a330a4d30843488793144d68adf61c}{}\label{classow__core_1_1ScalarButterWorthFilter_ab4a330a4d30843488793144d68adf61c}
+
+\begin{DoxyCompactList}\small\item\em Setup coefficients for low pass filter. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1ScalarButterWorthFilter_a662cd26efccaa72ddaa79dca17dfc508}{setup\+Band\+Pass} (Scalar w, Scalar a)\hypertarget{classow__core_1_1ScalarButterWorthFilter_a662cd26efccaa72ddaa79dca17dfc508}{}\label{classow__core_1_1ScalarButterWorthFilter_a662cd26efccaa72ddaa79dca17dfc508}
+
+\begin{DoxyCompactList}\small\item\em Setup coefficients for low pass filter. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1ScalarButterWorthFilter_a3812bdb5542e444ac9d172bdac542967}{setup\+Band\+Stop} (Scalar w, Scalar a)\hypertarget{classow__core_1_1ScalarButterWorthFilter_a3812bdb5542e444ac9d172bdac542967}{}\label{classow__core_1_1ScalarButterWorthFilter_a3812bdb5542e444ac9d172bdac542967}
+
+\begin{DoxyCompactList}\small\item\em Setup coefficients for low pass filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classow__core_1_1ScalarButterWorthFilter_aafa649727960dc143d0fc24af6d83e13}{is\+\_\+init\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_aafa649727960dc143d0fc24af6d83e13}{}\label{classow__core_1_1ScalarButterWorthFilter_aafa649727960dc143d0fc24af6d83e13}
+
+\begin{DoxyCompactList}\small\item\em initalization flag \end{DoxyCompactList}\item 
+bool \hyperlink{classow__core_1_1ScalarButterWorthFilter_a21285f2daa293912c0f2219da1fa264e}{is\+\_\+valid\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a21285f2daa293912c0f2219da1fa264e}{}\label{classow__core_1_1ScalarButterWorthFilter_a21285f2daa293912c0f2219da1fa264e}
+
+\begin{DoxyCompactList}\small\item\em valid filter ouput flag \end{DoxyCompactList}\item 
+int \hyperlink{classow__core_1_1ScalarButterWorthFilter_aed9518ddf68010e8887df7705455a98f}{fill\+\_\+cnt\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_aed9518ddf68010e8887df7705455a98f}{}\label{classow__core_1_1ScalarButterWorthFilter_aed9518ddf68010e8887df7705455a98f}
+
+\begin{DoxyCompactList}\small\item\em counts buffer elements \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0af}{Filter\+Type} \hyperlink{classow__core_1_1ScalarButterWorthFilter_a08c30dcdb4fb09327cf353f64d5fb346}{type\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a08c30dcdb4fb09327cf353f64d5fb346}{}\label{classow__core_1_1ScalarButterWorthFilter_a08c30dcdb4fb09327cf353f64d5fb346}
+
+\begin{DoxyCompactList}\small\item\em filter type \end{DoxyCompactList}\item 
+int \hyperlink{classow__core_1_1ScalarButterWorthFilter_a73a30a9bdda972f7ccd88568874c2504}{order\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a73a30a9bdda972f7ccd88568874c2504}{}\label{classow__core_1_1ScalarButterWorthFilter_a73a30a9bdda972f7ccd88568874c2504}
+
+\begin{DoxyCompactList}\small\item\em filter order \end{DoxyCompactList}\item 
+int \hyperlink{classow__core_1_1ScalarButterWorthFilter_ac489b3e1f8fad335abfbfe135d04088d}{n\+\_\+filters\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_ac489b3e1f8fad335abfbfe135d04088d}{}\label{classow__core_1_1ScalarButterWorthFilter_ac489b3e1f8fad335abfbfe135d04088d}
+
+\begin{DoxyCompactList}\small\item\em number of filters \end{DoxyCompactList}\item 
+int \hyperlink{classow__core_1_1ScalarButterWorthFilter_a047075e14e6b490ed5efe0ef54c7af8d}{n\+\_\+hist\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a047075e14e6b490ed5efe0ef54c7af8d}{}\label{classow__core_1_1ScalarButterWorthFilter_a047075e14e6b490ed5efe0ef54c7af8d}
+
+\begin{DoxyCompactList}\small\item\em number of element in history \end{DoxyCompactList}\item 
+Scalar {\bfseries fcut\+\_\+1\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a72f68c9985834a9539e0cda853908a7c}{}\label{classow__core_1_1ScalarButterWorthFilter_a72f68c9985834a9539e0cda853908a7c}
+
+\item 
+Scalar \hyperlink{classow__core_1_1ScalarButterWorthFilter_a82271d107c0a97347186b7bce6334e12}{fcut\+\_\+2\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a82271d107c0a97347186b7bce6334e12}{}\label{classow__core_1_1ScalarButterWorthFilter_a82271d107c0a97347186b7bce6334e12}
+
+\begin{DoxyCompactList}\small\item\em cutoff frequencies \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarButterWorthFilter_a606b9f4260cb272a5f49adc5fe548d93}{f\+\_\+s\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a606b9f4260cb272a5f49adc5fe548d93}{}\label{classow__core_1_1ScalarButterWorthFilter_a606b9f4260cb272a5f49adc5fe548d93}
+
+\begin{DoxyCompactList}\small\item\em sample frequency \end{DoxyCompactList}\item 
+Matrix {\bfseries A\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_adf2b5c59cf054e0299cc9cdd4795a514}{}\label{classow__core_1_1ScalarButterWorthFilter_adf2b5c59cf054e0299cc9cdd4795a514}
+
+\item 
+Matrix \hyperlink{classow__core_1_1ScalarButterWorthFilter_a1ad475c9e172449aa91e1433a7d8c65d}{B\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a1ad475c9e172449aa91e1433a7d8c65d}{}\label{classow__core_1_1ScalarButterWorthFilter_a1ad475c9e172449aa91e1433a7d8c65d}
+
+\begin{DoxyCompactList}\small\item\em coeff matrix \end{DoxyCompactList}\item 
+Matrix \hyperlink{classow__core_1_1ScalarButterWorthFilter_a496802b3d289e1fa9da06a4429657a62}{S\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a496802b3d289e1fa9da06a4429657a62}{}\label{classow__core_1_1ScalarButterWorthFilter_a496802b3d289e1fa9da06a4429657a62}
+
+\begin{DoxyCompactList}\small\item\em filter state \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarButterWorthFilter_ad245cd5c03697d0d3e4af454e84a357d}{y\+\_\+}\hypertarget{classow__core_1_1ScalarButterWorthFilter_ad245cd5c03697d0d3e4af454e84a357d}{}\label{classow__core_1_1ScalarButterWorthFilter_ad245cd5c03697d0d3e4af454e84a357d}
+
+\begin{DoxyCompactList}\small\item\em filter ouput \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1ScalarButterWorthFilter}{Scalar\+Butter\+Worth\+Filter} class. 
+
+\hyperlink{classow__core_1_1ScalarButterWorthFilter}{Scalar\+Butter\+Worth\+Filter} is a lowpass filter for scalar values with variable filter O\+R\+D\+ER. Implementation is based on\+: \href{http://www.exstrom.com/journal/sigproc/}{\tt http\+://www.\+exstrom.\+com/journal/sigproc/} 
+
+\subsection{Member Enumeration Documentation}
+\index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!Filter\+Type@{Filter\+Type}}
+\index{Filter\+Type@{Filter\+Type}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}
+\subsubsection[{\texorpdfstring{Filter\+Type}{FilterType}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ enum {\bf ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter\+::\+Filter\+Type}}\hypertarget{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0af}{}\label{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0af}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{HP@{HP}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}\index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!HP@{HP}}\item[{\em 
+HP\hypertarget{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afa3d5f827ba459e18d6e2226e833f30a6e}{}\label{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afa3d5f827ba459e18d6e2226e833f30a6e}
+}]high pass \index{LP@{LP}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}\index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!LP@{LP}}\item[{\em 
+LP\hypertarget{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afa47394b33f3175a7d46009fd0ad40ff09}{}\label{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afa47394b33f3175a7d46009fd0ad40ff09}
+}]low pass \index{BP@{BP}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}\index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!BP@{BP}}\item[{\em 
+BP\hypertarget{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afa17275ddbb8598ef86e96d0c59135d177}{}\label{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afa17275ddbb8598ef86e96d0c59135d177}
+}]band pass \index{BS@{BS}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}\index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!BS@{BS}}\item[{\em 
+BS\hypertarget{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afae77feb730664507508ec13f7fced7206}{}\label{classow__core_1_1ScalarButterWorthFilter_aa2ad57d5d67aa7bb2310a52d6e35c0afae77feb730664507508ec13f7fced7206}
+}]band stop \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!Scalar\+Butter\+Worth\+Filter@{Scalar\+Butter\+Worth\+Filter}}
+\index{Scalar\+Butter\+Worth\+Filter@{Scalar\+Butter\+Worth\+Filter}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}
+\subsubsection[{\texorpdfstring{Scalar\+Butter\+Worth\+Filter(\+Scalar f\+\_\+s\+\_\+, Scalar fcut\+\_\+1, Scalar fcut\+\_\+2=0.\+0, int order=2, Filter\+Type type=\+L\+P)}{ScalarButterWorthFilter(Scalar f_s_, Scalar fcut_1, Scalar fcut_2=0.0, int order=2, FilterType type=LP)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ {\bf ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}$<$ \+\_\+\+Scalar $>$\+::{\bf Scalar\+Butter\+Worth\+Filter} (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{f\+\_\+s\+\_\+, }
+\item[{Scalar}]{fcut\+\_\+1, }
+\item[{Scalar}]{fcut\+\_\+2 = {\ttfamily 0.0}, }
+\item[{int}]{order = {\ttfamily 2}, }
+\item[{{\bf Filter\+Type}}]{type = {\ttfamily {\bf LP}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1ScalarButterWorthFilter_abdf8c3fa60b7361595fa628d2b02c851}{}\label{classow__core_1_1ScalarButterWorthFilter_abdf8c3fa60b7361595fa628d2b02c851}
+
+
+Construct a LP, HP, BP or BS filter for given sampling frequency, cutoff frequencies and filter order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+sample} & Sample frequency of the signal\\
+\hline
+{\em fcut\+\_\+1} & Cutoff frequency of the filter Sampling Theorem\+: fcut\+\_\+1 $<$ f\+\_\+sample/2\\
+\hline
+{\em fcut\+\_\+2} & Second cutoff frequency of the filter Only applies to bandpass or bandpass filters Sampling Theorem\+: fcut\+\_\+2 $<$ f\+\_\+sample/2\\
+\hline
+{\em order} & Order of the filter. High order will introduce delay\\
+\hline
+{\em type} & Type of filter, LP, HP, BW, BS \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!Scalar\+Butter\+Worth\+Filter@{Scalar\+Butter\+Worth\+Filter}}
+\index{Scalar\+Butter\+Worth\+Filter@{Scalar\+Butter\+Worth\+Filter}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}
+\subsubsection[{\texorpdfstring{Scalar\+Butter\+Worth\+Filter(const Matrix \&\+A\+\_\+sos, Scalar f\+\_\+s\+\_\+=1.\+0, Scalar fcut\+\_\+1=0.\+0, Scalar fcut\+\_\+2=0.\+0, int order=0, Filter\+Type type=\+L\+P)}{ScalarButterWorthFilter(const Matrix &A_sos, Scalar f_s_=1.0, Scalar fcut_1=0.0, Scalar fcut_2=0.0, int order=0, FilterType type=LP)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ {\bf ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}$<$ \+\_\+\+Scalar $>$\+::{\bf Scalar\+Butter\+Worth\+Filter} (
+\begin{DoxyParamCaption}
+\item[{const Matrix \&}]{A\+\_\+sos, }
+\item[{Scalar}]{f\+\_\+s\+\_\+ = {\ttfamily 1.0}, }
+\item[{Scalar}]{fcut\+\_\+1 = {\ttfamily 0.0}, }
+\item[{Scalar}]{fcut\+\_\+2 = {\ttfamily 0.0}, }
+\item[{int}]{order = {\ttfamily 0}, }
+\item[{{\bf Filter\+Type}}]{type = {\ttfamily {\bf LP}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a95fc83411c5b6081b615d2903845f4a7}{}\label{classow__core_1_1ScalarButterWorthFilter_a95fc83411c5b6081b615d2903845f4a7}
+
+
+Constructor a filter from a second-\/order sections form. A \hyperlink{classow__core_1_1Matrix}{Matrix} containing the coefficients of multiple second-\/order filters. \hyperlink{classow__core_1_1Matrix}{Matrix} dimension must be Nx6, with N the numer of second-\/order systems and 6 the 3 nominator coefficients b + 3 denominator coefficients a. 
+
+See matlab function\+: sos = ss2sos(...)
+
+
+\begin{DoxyParams}{Parameters}
+{\em A\+\_\+sos} & \hyperlink{classow__core_1_1Matrix}{Matrix} of second-\/order sections \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!add@{add}}
+\index{add@{add}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}
+\subsubsection[{\texorpdfstring{add(\+Scalar x)}{add(Scalar x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ void {\bf ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}$<$ \+\_\+\+Scalar $>$\+::add (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a6ec4f0a7934eb5cc92507391c9066788}{}\label{classow__core_1_1ScalarButterWorthFilter_a6ec4f0a7934eb5cc92507391c9066788}
+
+
+Adds new sample $\mathScalarQ{x}{}$ wihtout computation. 
+
+Could be used to populate buffer, before algorithm is started. 
+
+Implements \hyperlink{classow__core_1_1IScalarAlgorithm_a85de69b86d5a9a6f407ed959d0edc005}{ow\+\_\+core\+::\+I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!filter@{filter}}
+\index{filter@{filter}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}
+\subsubsection[{\texorpdfstring{filter(\+Scalar x)}{filter(Scalar x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ Scalar {\bf ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}$<$ \+\_\+\+Scalar $>$\+::filter (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a72d55ecc091b2304ee69eef567ecfbc9}{}\label{classow__core_1_1ScalarButterWorthFilter_a72d55ecc091b2304ee69eef567ecfbc9}
+
+
+Apply the filter algorithm. 
+
+Filter is implemented as a cascate of Direct form 2. With the circuit structure as in\+: \href{https://en.wikipedia.org/wiki/Digital_biquad_filter}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Digital\+\_\+biquad\+\_\+filter} \index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!initialize@{initialize}}
+\index{initialize@{initialize}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}
+\subsubsection[{\texorpdfstring{initialize(\+Scalar x)}{initialize(Scalar x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ void {\bf ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}$<$ \+\_\+\+Scalar $>$\+::initialize (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1ScalarButterWorthFilter_aabd576ed87d76e04c9b1c8f282aa25f7}{}\label{classow__core_1_1ScalarButterWorthFilter_aabd576ed87d76e04c9b1c8f282aa25f7}
+
+
+Initialize the filter state. 
+
+Fill buffer arrays such that ouput is x in the first few iterations \index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!reset@{reset}}
+\index{reset@{reset}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ virtual Scalar {\bf ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}$<$ \+\_\+\+Scalar $>$\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a1dd30f8c8be1b5def440a332bded798a}{}\label{classow__core_1_1ScalarButterWorthFilter_a1dd30f8c8be1b5def440a332bded798a}
+
+
+Reset the algorithm to inital state. 
+
+Ouput is initalized set in next call to \hyperlink{classow__core_1_1ScalarButterWorthFilter_ac34d0ff2d3127a2d4af585fee852c6cd}{update()} 
+
+Implements \hyperlink{classow__core_1_1IScalarAlgorithm_afd0c0837663cff664922c7a116349b46}{ow\+\_\+core\+::\+I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!reset@{reset}}
+\index{reset@{reset}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}
+\subsubsection[{\texorpdfstring{reset(\+Scalar x)}{reset(Scalar x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ Scalar {\bf ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}$<$ \+\_\+\+Scalar $>$\+::reset (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a67ffaf18d349a7e187b220ce56e3827e}{}\label{classow__core_1_1ScalarButterWorthFilter_a67ffaf18d349a7e187b220ce56e3827e}
+
+
+Reset the algorithm to inital state $\mathScalarQ{x}{}$. 
+
+Algorithm uses $\mathScalarQ{x}{}$ as inital value. 
+
+Implements \hyperlink{classow__core_1_1IScalarAlgorithm_a20cbd10a8b2ec4d10a48b6605f010f17}{ow\+\_\+core\+::\+I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!setup@{setup}}
+\index{setup@{setup}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}
+\subsubsection[{\texorpdfstring{setup()}{setup()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ void {\bf ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}$<$ \+\_\+\+Scalar $>$\+::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a22ec8fb68e3fb45d6b822f9298148b71}{}\label{classow__core_1_1ScalarButterWorthFilter_a22ec8fb68e3fb45d6b822f9298148b71}
+
+
+Setup the filter for given filter type. 
+
+Resize buffer arrays and compute filter coefficients. \index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!setup@{setup}}
+\index{setup@{setup}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}
+\subsubsection[{\texorpdfstring{setup(const Matrix \&\+A\+\_\+sos)}{setup(const Matrix &A_sos)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ void {\bf ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}$<$ \+\_\+\+Scalar $>$\+::setup (
+\begin{DoxyParamCaption}
+\item[{const Matrix \&}]{A\+\_\+sos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a42cbe4415563060fc60462696dbec6c1}{}\label{classow__core_1_1ScalarButterWorthFilter_a42cbe4415563060fc60462696dbec6c1}
+
+
+Setup the filter from given sos matrix. 
+
+Resize buffer arrays and compute filter coefficients. \index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!valid@{valid}}
+\index{valid@{valid}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}
+\subsubsection[{\texorpdfstring{valid() const }{valid() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ bool {\bf ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}$<$ \+\_\+\+Scalar $>$\+::valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1ScalarButterWorthFilter_a2a277b564c7379a114cb4fe7ab56fc6b}{}\label{classow__core_1_1ScalarButterWorthFilter_a2a277b564c7379a114cb4fe7ab56fc6b}
+
+
+Returns whether the ouput is valid. 
+
+Return true if algorithm accumulated enouth samples to fill buffer. 
+
+Implements \hyperlink{classow__core_1_1IScalarAlgorithm_a5a7472cb68436e67fc8cb287b477fca6}{ow\+\_\+core\+::\+I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}!valid\+Count@{valid\+Count}}
+\index{valid\+Count@{valid\+Count}!ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter@{ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}}
+\subsubsection[{\texorpdfstring{valid\+Count() const }{validCount() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ int {\bf ow\+\_\+core\+::\+Scalar\+Butter\+Worth\+Filter}$<$ \+\_\+\+Scalar $>$\+::valid\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1ScalarButterWorthFilter_abd25951936d5c78f9b4a61f226f0dda6}{}\label{classow__core_1_1ScalarButterWorthFilter_abd25951936d5c78f9b4a61f226f0dda6}
+
+
+Returns num of samples required for valid ouput. 
+
+Return number of samples required for valid ouput. 
+
+Implements \hyperlink{classow__core_1_1IScalarAlgorithm_ac57f739093a012beec0867797a02802a}{ow\+\_\+core\+::\+I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/algorithms/\hyperlink{scalar__butterworth__filter_8h}{scalar\+\_\+butterworth\+\_\+filter.\+h}\end{DoxyCompactItemize}

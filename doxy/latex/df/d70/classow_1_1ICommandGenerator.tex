@@ -1,0 +1,100 @@
+\hypertarget{classow_1_1ICommandGenerator}{}\section{ow\+:\+:I\+Command\+Generator Class Reference}
+\label{classow_1_1ICommandGenerator}\index{ow\+::\+I\+Command\+Generator@{ow\+::\+I\+Command\+Generator}}
+
+
+The \hyperlink{classow_1_1ICommandGenerator}{I\+Command\+Generator} class.  
+
+
+
+
+{\ttfamily \#include $<$i\+\_\+command\+\_\+generator.\+h$>$}
+
+Inheritance diagram for ow\+:\+:I\+Command\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{df/d70/classow_1_1ICommandGenerator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries I\+Command\+Generator} (const std\+::string \&\hyperlink{classow_1_1GenericModuleBase_a4b712883728cdbab7779e27f9a23689c}{name})\hypertarget{classow_1_1ICommandGenerator_a2d1c06ce50f393fc2f2412341828da6e}{}\label{classow_1_1ICommandGenerator_a2d1c06ce50f393fc2f2412341828da6e}
+
+\item 
+virtual \hyperlink{classow_1_1ICommandGenerator_a3fa95de2b030993df8204013ec7bc039}{$\sim$\+I\+Command\+Generator} ()\hypertarget{classow_1_1ICommandGenerator_a3fa95de2b030993df8204013ec7bc039}{}\label{classow_1_1ICommandGenerator_a3fa95de2b030993df8204013ec7bc039}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow_1_1ICommandGenerator_a964c3ff445e3de3aa19fb617b221b5b8}{Xcmd\+\_\+l\+\_\+w} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow_1_1ICommandGenerator_ae7309a2b5839ee3376380693617a0cdd}{Xcmd\+\_\+r\+\_\+w} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow_1_1ICommandGenerator_a3b635bf72503ad1e11d5edc8514a6ec0}{Xcmd\+\_\+com\+\_\+w} () const =0
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow_1_1ICommandGenerator}{I\+Command\+Generator} class. 
+
+Interface class. 
+
+\subsection{Member Function Documentation}
+\index{ow\+::\+I\+Command\+Generator@{ow\+::\+I\+Command\+Generator}!Xcmd\+\_\+com\+\_\+w@{Xcmd\+\_\+com\+\_\+w}}
+\index{Xcmd\+\_\+com\+\_\+w@{Xcmd\+\_\+com\+\_\+w}!ow\+::\+I\+Command\+Generator@{ow\+::\+I\+Command\+Generator}}
+\subsubsection[{\texorpdfstring{Xcmd\+\_\+com\+\_\+w() const =0}{Xcmd_com_w() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+::\+I\+Command\+Generator\+::\+Xcmd\+\_\+com\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1ICommandGenerator_a3b635bf72503ad1e11d5edc8514a6ec0}{}\label{classow_1_1ICommandGenerator_a3b635bf72503ad1e11d5edc8514a6ec0}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State contains the commanded pose of the center of mass coordinate frame C\+OM with respect to the world coordinate frame W. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__cmd__gen_1_1CommandGenerator_a104f8f57b30db712328970907f269f69}{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator}.
+
+\index{ow\+::\+I\+Command\+Generator@{ow\+::\+I\+Command\+Generator}!Xcmd\+\_\+l\+\_\+w@{Xcmd\+\_\+l\+\_\+w}}
+\index{Xcmd\+\_\+l\+\_\+w@{Xcmd\+\_\+l\+\_\+w}!ow\+::\+I\+Command\+Generator@{ow\+::\+I\+Command\+Generator}}
+\subsubsection[{\texorpdfstring{Xcmd\+\_\+l\+\_\+w() const =0}{Xcmd_l_w() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+::\+I\+Command\+Generator\+::\+Xcmd\+\_\+l\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1ICommandGenerator_a964c3ff445e3de3aa19fb617b221b5b8}{}\label{classow_1_1ICommandGenerator_a964c3ff445e3de3aa19fb617b221b5b8}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State contains the commanded pose of the left foot ankle coordinate frame L with respect to the world coordinate frame W. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__cmd__gen_1_1CommandGenerator_a922b9defd16847ef9cba70ed56c6019e}{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator}.
+
+\index{ow\+::\+I\+Command\+Generator@{ow\+::\+I\+Command\+Generator}!Xcmd\+\_\+r\+\_\+w@{Xcmd\+\_\+r\+\_\+w}}
+\index{Xcmd\+\_\+r\+\_\+w@{Xcmd\+\_\+r\+\_\+w}!ow\+::\+I\+Command\+Generator@{ow\+::\+I\+Command\+Generator}}
+\subsubsection[{\texorpdfstring{Xcmd\+\_\+r\+\_\+w() const =0}{Xcmd_r_w() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+::\+I\+Command\+Generator\+::\+Xcmd\+\_\+r\+\_\+w (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow_1_1ICommandGenerator_ae7309a2b5839ee3376380693617a0cdd}{}\label{classow_1_1ICommandGenerator_ae7309a2b5839ee3376380693617a0cdd}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State contains the commanded pose of the right foot ankle coordinate frame R with respect to the world coordinate frame W. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__cmd__gen_1_1CommandGenerator_afd5c10bd19ed610f63c73a5516961584}{ow\+\_\+cmd\+\_\+gen\+::\+Command\+Generator}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/interfaces/\hyperlink{i__command__generator_8h}{i\+\_\+command\+\_\+generator.\+h}\end{DoxyCompactItemize}

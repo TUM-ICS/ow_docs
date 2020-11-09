@@ -1,0 +1,108 @@
+\hypertarget{classow__core_1_1IScalarDifferentiation}{}\section{ow\+\_\+core\+:\+:I\+Scalar\+Differentiation$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1IScalarDifferentiation}\index{ow\+\_\+core\+::\+I\+Scalar\+Differentiation$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+I\+Scalar\+Differentiation$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1IScalarDifferentiation}{I\+Scalar\+Differentiation} class.  
+
+
+
+
+{\ttfamily \#include $<$i\+\_\+scalar\+\_\+differentiation.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:I\+Scalar\+Differentiation$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{dd/db1/classow__core_1_1IScalarDifferentiation}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1IScalarDifferentiation_a71eb7c93a39127fdd3c6082065892be2}{}\label{classow__core_1_1IScalarDifferentiation_a71eb7c93a39127fdd3c6082065892be2}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classow__core_1_1IScalarDifferentiation_aace718878c6ee80403012b69a09e8498}{$\sim$\+I\+Scalar\+Differentiation} ()\hypertarget{classow__core_1_1IScalarDifferentiation_aace718878c6ee80403012b69a09e8498}{}\label{classow__core_1_1IScalarDifferentiation_aace718878c6ee80403012b69a09e8498}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual Scalar \hyperlink{classow__core_1_1IScalarDifferentiation_af10e7ac83fac4c77c4889b55cc763e9b}{step\+Width} () const =0
+\begin{DoxyCompactList}\small\item\em The step width of the computed derivative. \end{DoxyCompactList}\item 
+virtual int \hyperlink{classow__core_1_1IScalarDifferentiation_a147e3ca58aaff5c16f368fb45f2cbbcb}{order} () const =0
+\begin{DoxyCompactList}\small\item\em The order of the computed derivative. \end{DoxyCompactList}\item 
+virtual int \hyperlink{classow__core_1_1IScalarDifferentiation_a9226bf072ff034a1dd0d3562b3eedd55}{accuracy} () const =0
+\begin{DoxyCompactList}\small\item\em The accuracy of the computed derivative. \end{DoxyCompactList}\item 
+virtual Scalar \hyperlink{classow__core_1_1IScalarDifferentiation_ab0b668150354d2cb35811326a2516043}{sample\+Frequency} () const =0\hypertarget{classow__core_1_1IScalarDifferentiation_ab0b668150354d2cb35811326a2516043}{}\label{classow__core_1_1IScalarDifferentiation_ab0b668150354d2cb35811326a2516043}
+
+\begin{DoxyCompactList}\small\item\em the signal sampling frequency. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+I\+Scalar\+Differentiation$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1IScalarDifferentiation}{I\+Scalar\+Differentiation} class. 
+
+This class describes the interface for scalar differentiation algorithms 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+I\+Scalar\+Differentiation@{ow\+\_\+core\+::\+I\+Scalar\+Differentiation}!accuracy@{accuracy}}
+\index{accuracy@{accuracy}!ow\+\_\+core\+::\+I\+Scalar\+Differentiation@{ow\+\_\+core\+::\+I\+Scalar\+Differentiation}}
+\subsubsection[{\texorpdfstring{accuracy() const =0}{accuracy() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ virtual int {\bf ow\+\_\+core\+::\+I\+Scalar\+Differentiation}$<$ \+\_\+\+Scalar $>$\+::accuracy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IScalarDifferentiation_a9226bf072ff034a1dd0d3562b3eedd55}{}\label{classow__core_1_1IScalarDifferentiation_a9226bf072ff034a1dd0d3562b3eedd55}
+
+
+The accuracy of the computed derivative. 
+
+\begin{DoxyReturn}{Returns}
+the order $\mathScalar{a}$ of the computed derivative. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__core_1_1ScalarFiniteDifference_a502aa6a61c73529e731be0a0096414fd}{ow\+\_\+core\+::\+Scalar\+Finite\+Difference$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+I\+Scalar\+Differentiation@{ow\+\_\+core\+::\+I\+Scalar\+Differentiation}!order@{order}}
+\index{order@{order}!ow\+\_\+core\+::\+I\+Scalar\+Differentiation@{ow\+\_\+core\+::\+I\+Scalar\+Differentiation}}
+\subsubsection[{\texorpdfstring{order() const =0}{order() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ virtual int {\bf ow\+\_\+core\+::\+I\+Scalar\+Differentiation}$<$ \+\_\+\+Scalar $>$\+::order (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IScalarDifferentiation_a147e3ca58aaff5c16f368fb45f2cbbcb}{}\label{classow__core_1_1IScalarDifferentiation_a147e3ca58aaff5c16f368fb45f2cbbcb}
+
+
+The order of the computed derivative. 
+
+\begin{DoxyReturn}{Returns}
+the order $\mathScalar{d}$ of the computed derivative. E.\+g. the first derivative is of order 1. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__core_1_1ScalarFiniteDifference_abd716b78f9efb2a0e681ab81b75af343}{ow\+\_\+core\+::\+Scalar\+Finite\+Difference$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+I\+Scalar\+Differentiation@{ow\+\_\+core\+::\+I\+Scalar\+Differentiation}!step\+Width@{step\+Width}}
+\index{step\+Width@{step\+Width}!ow\+\_\+core\+::\+I\+Scalar\+Differentiation@{ow\+\_\+core\+::\+I\+Scalar\+Differentiation}}
+\subsubsection[{\texorpdfstring{step\+Width() const =0}{stepWidth() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ virtual Scalar {\bf ow\+\_\+core\+::\+I\+Scalar\+Differentiation}$<$ \+\_\+\+Scalar $>$\+::step\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classow__core_1_1IScalarDifferentiation_af10e7ac83fac4c77c4889b55cc763e9b}{}\label{classow__core_1_1IScalarDifferentiation_af10e7ac83fac4c77c4889b55cc763e9b}
+
+
+The step width of the computed derivative. 
+
+\begin{DoxyReturn}{Returns}
+the step width $\mathScalar{h}$. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classow__core_1_1ScalarFiniteDifference_a0bdddc62ac68a69ee7959a2f1b33d1b7}{ow\+\_\+core\+::\+Scalar\+Finite\+Difference$<$ \+\_\+\+Scalar $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/algorithms/\hyperlink{i__scalar__differentiation_8h}{i\+\_\+scalar\+\_\+differentiation.\+h}\end{DoxyCompactItemize}

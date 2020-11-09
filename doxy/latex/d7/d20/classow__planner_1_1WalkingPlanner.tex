@@ -1,0 +1,287 @@
+\hypertarget{classow__planner_1_1WalkingPlanner}{}\section{ow\+\_\+planner\+:\+:Walking\+Planner Class Reference}
+\label{classow__planner_1_1WalkingPlanner}\index{ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}}
+
+
+The \hyperlink{classow__planner_1_1WalkingPlanner}{Walking\+Planner} class.  
+
+
+
+
+{\ttfamily \#include $<$walking\+\_\+planner.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__planner_1_1WalkingPlanner_a6b7084df806f6b1ee3c391c31f46e8ff}{Walking\+Planner} ()\hypertarget{classow__planner_1_1WalkingPlanner_a6b7084df806f6b1ee3c391c31f46e8ff}{}\label{classow__planner_1_1WalkingPlanner_a6b7084df806f6b1ee3c391c31f46e8ff}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classow__planner_1_1WalkingPlanner}{Walking\+Planner} Default constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__planner_1_1WalkingPlanner_abae8ce987c62d7cb40fc277924315731}{initalize} (ros\+::\+Node\+Handle \&nh)\hypertarget{classow__planner_1_1WalkingPlanner_abae8ce987c62d7cb40fc277924315731}{}\label{classow__planner_1_1WalkingPlanner_abae8ce987c62d7cb40fc277924315731}
+
+\begin{DoxyCompactList}\small\item\em Initialization of \hyperlink{classow__planner_1_1WalkingPlanner}{Walking\+Planner}. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__planner_1_1WalkingPlanner_abfbcb01a92c739e5970aee04fcb48b96}{plan\+Srv\+Stamp} (std\+\_\+srvs\+::\+Empty\+Request \&req, std\+\_\+srvs\+::\+Empty\+Response \&resp)
+\begin{DoxyCompactList}\small\item\em plan\+Srv\+Stamp Steping in place. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__planner_1_1WalkingPlanner_a12fd257292f750eb8dd69829bac7e586}{plan\+Srv\+Line} (std\+\_\+srvs\+::\+Empty\+Request \&req, std\+\_\+srvs\+::\+Empty\+Response \&resp)
+\begin{DoxyCompactList}\small\item\em plan\+Srv\+Line Walk in straight line. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__planner_1_1WalkingPlanner_a0c75042ec782b3bd9bb2e07079bf4e1f}{plan\+Srv\+Circle} (std\+\_\+srvs\+::\+Empty\+Request \&req, std\+\_\+srvs\+::\+Empty\+Response \&resp)
+\begin{DoxyCompactList}\small\item\em plan\+Srv\+Circle Walk in circles line. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__planner_1_1WalkingPlanner_a3ffca8275cf926de83bc0198cc0ebfe1}{plan\+Srv} (ow\+\_\+msgs\+::\+O\+W\+Plan\+Steps\+Request \&req, ow\+\_\+msgs\+::\+O\+W\+Plan\+Steps\+Response \&resp)
+\begin{DoxyCompactList}\small\item\em plan\+Srv Generate custom step plan. \end{DoxyCompactList}\item 
+void \hyperlink{classow__planner_1_1WalkingPlanner_ae57126baf08815524e5b28786c56397b}{received\+Vel\+Cmd} (const geometry\+\_\+msgs\+::\+Twist \&msg)
+\begin{DoxyCompactList}\small\item\em received\+Vel\+Cmd Received veolcity command from teleop\+\_\+tools. Twist must be in \mbox{[}-\/1,1\mbox{]} for x,y and yaw. 1.\+0 will generate step with maximum values defined in parameters. \end{DoxyCompactList}\item 
+void \hyperlink{classow__planner_1_1WalkingPlanner_a622132830a0f0311506739a17e4f0f38}{received\+Current\+Footstep} (const ow\+\_\+msgs\+::\+Foot\+Step \&msg)
+\begin{DoxyCompactList}\small\item\em received\+Current\+Footstep Landed foot position from ow\+\_\+ftg module. \end{DoxyCompactList}\item 
+void \hyperlink{classow__planner_1_1WalkingPlanner_ad029f7b73af02397dcc6de9ce3f9c845}{publish\+Steps} (const ow\+::\+Foot\+Step\+List \&fsteps)
+\begin{DoxyCompactList}\small\item\em publish\+Steps Publish planned footsteps and D\+CM waypoints. \end{DoxyCompactList}\item 
+void \hyperlink{classow__planner_1_1WalkingPlanner_a7a6c68eda1f693e864d0939ddd928c8c}{publish\+Steps} ()\hypertarget{classow__planner_1_1WalkingPlanner_a7a6c68eda1f693e864d0939ddd928c8c}{}\label{classow__planner_1_1WalkingPlanner_a7a6c68eda1f693e864d0939ddd928c8c}
+
+\begin{DoxyCompactList}\small\item\em publish\+Steps Publish last plan with no update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \hyperlink{classow__planner_1_1WalkingPlanner_a380c610ffc6a06b93eed662bbcea89dd}{parameter\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a380c610ffc6a06b93eed662bbcea89dd}{}\label{classow__planner_1_1WalkingPlanner_a380c610ffc6a06b93eed662bbcea89dd}
+
+\begin{DoxyCompactList}\small\item\em Configuration of this module. \end{DoxyCompactList}\item 
+\hyperlink{classow__fs__planner_1_1FootstepPlanner}{ow\+\_\+fs\+\_\+planner\+::\+Footstep\+Planner} \hyperlink{classow__planner_1_1WalkingPlanner_aa7758005946e087b998a2f007fe330cf}{fs\+\_\+planner\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_aa7758005946e087b998a2f007fe330cf}{}\label{classow__planner_1_1WalkingPlanner_aa7758005946e087b998a2f007fe330cf}
+
+\begin{DoxyCompactList}\small\item\em Footstep planner. \end{DoxyCompactList}\item 
+\hyperlink{classow__dcm__planner_1_1DCMPlanner}{ow\+\_\+dcm\+\_\+planner\+::\+D\+C\+M\+Planner} \hyperlink{classow__planner_1_1WalkingPlanner_a0453bc45c6c813d2cad9b4a9f3f88481}{dcm\+\_\+planner\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a0453bc45c6c813d2cad9b4a9f3f88481}{}\label{classow__planner_1_1WalkingPlanner_a0453bc45c6c813d2cad9b4a9f3f88481}
+
+\begin{DoxyCompactList}\small\item\em D\+CM planner. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classow__core_1_1FootStep}{ow\+::\+Foot\+Step} $>$ \hyperlink{classow__planner_1_1WalkingPlanner_a80d1477d60220d6c0b69169d7be15491}{foot\+\_\+steps\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a80d1477d60220d6c0b69169d7be15491}{}\label{classow__planner_1_1WalkingPlanner_a80d1477d60220d6c0b69169d7be15491}
+
+\begin{DoxyCompactList}\small\item\em Footsteps plan. \end{DoxyCompactList}\item 
+ow\+::\+D\+C\+M\+Point\+Set\+List \hyperlink{classow__planner_1_1WalkingPlanner_a635d47e861a010e63e3beb257d76493f}{dcm\+\_\+point\+\_\+sets\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a635d47e861a010e63e3beb257d76493f}{}\label{classow__planner_1_1WalkingPlanner_a635d47e861a010e63e3beb257d76493f}
+
+\begin{DoxyCompactList}\small\item\em D\+CM plan. \end{DoxyCompactList}\item 
+ros\+::\+Node\+Handle \hyperlink{classow__planner_1_1WalkingPlanner_a9c4136d33ece734d53e8338e1ed4b353}{nh\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a9c4136d33ece734d53e8338e1ed4b353}{}\label{classow__planner_1_1WalkingPlanner_a9c4136d33ece734d53e8338e1ed4b353}
+
+\begin{DoxyCompactList}\small\item\em R\+OS node handler. \end{DoxyCompactList}\item 
+ros\+::\+Async\+Spinner \hyperlink{classow__planner_1_1WalkingPlanner_a1b5c83b9a8b3d61c1850277267c7a3ed}{spinner\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a1b5c83b9a8b3d61c1850277267c7a3ed}{}\label{classow__planner_1_1WalkingPlanner_a1b5c83b9a8b3d61c1850277267c7a3ed}
+
+\begin{DoxyCompactList}\small\item\em Spinner for servers. \end{DoxyCompactList}\item 
+ros\+::\+Publisher \hyperlink{classow__planner_1_1WalkingPlanner_a3cdb1d9c723f98f21c0f245641556acc}{steps\+\_\+vis\+\_\+pub\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a3cdb1d9c723f98f21c0f245641556acc}{}\label{classow__planner_1_1WalkingPlanner_a3cdb1d9c723f98f21c0f245641556acc}
+
+\begin{DoxyCompactList}\small\item\em Step visualization publisher. \end{DoxyCompactList}\item 
+ros\+::\+Publisher \hyperlink{classow__planner_1_1WalkingPlanner_a1df5a541f6cbfa63df85f752c69c43c8}{steps\+\_\+pub\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a1df5a541f6cbfa63df85f752c69c43c8}{}\label{classow__planner_1_1WalkingPlanner_a1df5a541f6cbfa63df85f752c69c43c8}
+
+\begin{DoxyCompactList}\small\item\em Open Walker steps publisher. \end{DoxyCompactList}\item 
+ros\+::\+Publisher \hyperlink{classow__planner_1_1WalkingPlanner_a8052ccb10703a99101017052d64859d4}{dcm\+\_\+vis\+\_\+pub\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a8052ccb10703a99101017052d64859d4}{}\label{classow__planner_1_1WalkingPlanner_a8052ccb10703a99101017052d64859d4}
+
+\begin{DoxyCompactList}\small\item\em D\+CM visualizytion publisher. \end{DoxyCompactList}\item 
+ros\+::\+Publisher \hyperlink{classow__planner_1_1WalkingPlanner_a9752da4dc3c78d51b1379aa36ca30eb5}{dcm\+\_\+pub\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a9752da4dc3c78d51b1379aa36ca30eb5}{}\label{classow__planner_1_1WalkingPlanner_a9752da4dc3c78d51b1379aa36ca30eb5}
+
+\begin{DoxyCompactList}\small\item\em Open Walker D\+CM waypoint publisher. \end{DoxyCompactList}\item 
+ros\+::\+Subscriber \hyperlink{classow__planner_1_1WalkingPlanner_aa6dfa1444fb2361132c13117627a7f73}{current\+\_\+state\+\_\+sub\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_aa6dfa1444fb2361132c13117627a7f73}{}\label{classow__planner_1_1WalkingPlanner_aa6dfa1444fb2361132c13117627a7f73}
+
+\begin{DoxyCompactList}\small\item\em Landed foot position listener. \end{DoxyCompactList}\item 
+ros\+::\+Subscriber \hyperlink{classow__planner_1_1WalkingPlanner_a84b5aba9d87654535494f8092415083c}{vel\+\_\+cmd\+\_\+sub\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a84b5aba9d87654535494f8092415083c}{}\label{classow__planner_1_1WalkingPlanner_a84b5aba9d87654535494f8092415083c}
+
+\begin{DoxyCompactList}\small\item\em Joystic vel command listener. \end{DoxyCompactList}\item 
+ros\+::\+Service\+Server \hyperlink{classow__planner_1_1WalkingPlanner_aea80c53dfc08f228b38731f467e73755}{plan\+\_\+srv\+\_\+stamp\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_aea80c53dfc08f228b38731f467e73755}{}\label{classow__planner_1_1WalkingPlanner_aea80c53dfc08f228b38731f467e73755}
+
+\begin{DoxyCompactList}\small\item\em Stamp footstep server. \end{DoxyCompactList}\item 
+ros\+::\+Service\+Server \hyperlink{classow__planner_1_1WalkingPlanner_aca81e21bad7c608bfc74a78934db1a6e}{plan\+\_\+srv\+\_\+line\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_aca81e21bad7c608bfc74a78934db1a6e}{}\label{classow__planner_1_1WalkingPlanner_aca81e21bad7c608bfc74a78934db1a6e}
+
+\begin{DoxyCompactList}\small\item\em Line footstep server. \end{DoxyCompactList}\item 
+ros\+::\+Service\+Server \hyperlink{classow__planner_1_1WalkingPlanner_a6e1a4d273c1bd355f11a08093ebf9220}{plan\+\_\+srv\+\_\+circle\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a6e1a4d273c1bd355f11a08093ebf9220}{}\label{classow__planner_1_1WalkingPlanner_a6e1a4d273c1bd355f11a08093ebf9220}
+
+\begin{DoxyCompactList}\small\item\em Circle footstep server. \end{DoxyCompactList}\item 
+ros\+::\+Service\+Server \hyperlink{classow__planner_1_1WalkingPlanner_a4c32503f769240188997a2f404e35ee6}{plan\+\_\+srv\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a4c32503f769240188997a2f404e35ee6}{}\label{classow__planner_1_1WalkingPlanner_a4c32503f769240188997a2f404e35ee6}
+
+\begin{DoxyCompactList}\small\item\em Plan footstep server. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1FootStep}{ow\+::\+Foot\+Step} \hyperlink{classow__planner_1_1WalkingPlanner_a710379280e41397c46195bea6d87cc7d}{current\+\_\+step\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a710379280e41397c46195bea6d87cc7d}{}\label{classow__planner_1_1WalkingPlanner_a710379280e41397c46195bea6d87cc7d}
+
+\begin{DoxyCompactList}\small\item\em Received fooot landing position. \end{DoxyCompactList}\item 
+ow\+\_\+msgs\+::\+Foot\+Step \hyperlink{classow__planner_1_1WalkingPlanner_a2c99c80865ffaf1fd0b20531c8c75b25}{current\+\_\+step\+\_\+msg\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a2c99c80865ffaf1fd0b20531c8c75b25}{}\label{classow__planner_1_1WalkingPlanner_a2c99c80865ffaf1fd0b20531c8c75b25}
+
+\begin{DoxyCompactList}\small\item\em Received fooot landing position. \end{DoxyCompactList}\item 
+geometry\+\_\+msgs\+::\+Twist \hyperlink{classow__planner_1_1WalkingPlanner_aaf151c450fea1525c46efeda76de100c}{vel\+\_\+msg\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_aaf151c450fea1525c46efeda76de100c}{}\label{classow__planner_1_1WalkingPlanner_aaf151c450fea1525c46efeda76de100c}
+
+\begin{DoxyCompactList}\small\item\em Received vel. command msg. \end{DoxyCompactList}\item 
+visualization\+\_\+msgs\+::\+Marker \hyperlink{classow__planner_1_1WalkingPlanner_af9245025fcaf82305a96cf62a38245ee}{vrp\+\_\+msg\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_af9245025fcaf82305a96cf62a38245ee}{}\label{classow__planner_1_1WalkingPlanner_af9245025fcaf82305a96cf62a38245ee}
+
+\begin{DoxyCompactList}\small\item\em D\+CM vis message placeholder. \end{DoxyCompactList}\item 
+visualization\+\_\+msgs\+::\+Marker \hyperlink{classow__planner_1_1WalkingPlanner_a289d9446cc358684a38db157c2e39e53}{dcm\+\_\+msg\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a289d9446cc358684a38db157c2e39e53}{}\label{classow__planner_1_1WalkingPlanner_a289d9446cc358684a38db157c2e39e53}
+
+\begin{DoxyCompactList}\small\item\em Open Walker D\+CM msg placeholder. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classow__planner_1_1WalkingPlanner_a956ebef500353d0c69920eef57407181}{n\+\_\+steps\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a956ebef500353d0c69920eef57407181}{}\label{classow__planner_1_1WalkingPlanner_a956ebef500353d0c69920eef57407181}
+
+\begin{DoxyCompactList}\small\item\em Number of steps to plan. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__planner_1_1WalkingPlanner_a77ff7f2da49b5962a9821354d1376e19}{length\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a77ff7f2da49b5962a9821354d1376e19}{}\label{classow__planner_1_1WalkingPlanner_a77ff7f2da49b5962a9821354d1376e19}
+
+\begin{DoxyCompactList}\small\item\em Forward step length for fixed plans. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__planner_1_1WalkingPlanner_a9c05247ab4fd0835bb6638bdf1071560}{angle\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a9c05247ab4fd0835bb6638bdf1071560}{}\label{classow__planner_1_1WalkingPlanner_a9c05247ab4fd0835bb6638bdf1071560}
+
+\begin{DoxyCompactList}\small\item\em Step angle for fixed plans. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__planner_1_1WalkingPlanner_a8e7cbb7cdf0a179f462bbc3f48987589}{foot\+\_\+size\+\_\+x\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a8e7cbb7cdf0a179f462bbc3f48987589}{}\label{classow__planner_1_1WalkingPlanner_a8e7cbb7cdf0a179f462bbc3f48987589}
+
+\begin{DoxyCompactList}\small\item\em Robot foot size for Rviz visualization. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__planner_1_1WalkingPlanner_a7af02eb03c7b3e62ceaad7f4fa8a9f54}{foot\+\_\+size\+\_\+y\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a7af02eb03c7b3e62ceaad7f4fa8a9f54}{}\label{classow__planner_1_1WalkingPlanner_a7af02eb03c7b3e62ceaad7f4fa8a9f54}
+
+\begin{DoxyCompactList}\small\item\em Robot foot size for Rviz visualization. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__planner_1_1WalkingPlanner_a5c771a9c4fca277cc67b9e54a86c0a45}{foot\+\_\+size\+\_\+z\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a5c771a9c4fca277cc67b9e54a86c0a45}{}\label{classow__planner_1_1WalkingPlanner_a5c771a9c4fca277cc67b9e54a86c0a45}
+
+\begin{DoxyCompactList}\small\item\em Robot foot size for Rviz visualization. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__planner_1_1WalkingPlanner_a07e523ac609ce02499c1c074e6790992}{foot\+\_\+offset\+\_\+x\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a07e523ac609ce02499c1c074e6790992}{}\label{classow__planner_1_1WalkingPlanner_a07e523ac609ce02499c1c074e6790992}
+
+\begin{DoxyCompactList}\small\item\em Robot foot offset to sole frame for Rviz. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__planner_1_1WalkingPlanner_a62a94544ddbbabfba886c4f6d1cdc6a5}{foot\+\_\+offset\+\_\+y\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a62a94544ddbbabfba886c4f6d1cdc6a5}{}\label{classow__planner_1_1WalkingPlanner_a62a94544ddbbabfba886c4f6d1cdc6a5}
+
+\begin{DoxyCompactList}\small\item\em Robot foot offset to sole frame for Rviz. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__planner_1_1WalkingPlanner_a11fc2f73e55193345c1314af4e056e2a}{foot\+\_\+offset\+\_\+z\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_a11fc2f73e55193345c1314af4e056e2a}{}\label{classow__planner_1_1WalkingPlanner_a11fc2f73e55193345c1314af4e056e2a}
+
+\begin{DoxyCompactList}\small\item\em Robot foot offset to sole frame for Rviz. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__planner_1_1WalkingPlanner_afd99363bc7a809470f3766ccb260339c}{feet\+\_\+separation\+\_\+}\hypertarget{classow__planner_1_1WalkingPlanner_afd99363bc7a809470f3766ccb260339c}{}\label{classow__planner_1_1WalkingPlanner_afd99363bc7a809470f3766ccb260339c}
+
+\begin{DoxyCompactList}\small\item\em Feet separation for module initalization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__planner_1_1WalkingPlanner}{Walking\+Planner} class. 
+
+This class implements the \hyperlink{classow__planner_1_1WalkingPlanner}{Walking\+Planner} module of the openwalker framework.
+
+It combines the ow\+\_\+fs\+\_\+planner module and ow\+\_\+dcm\+\_\+planner and provides services for path generation/replanning. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}!plan\+Srv@{plan\+Srv}}
+\index{plan\+Srv@{plan\+Srv}!ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}}
+\subsubsection[{\texorpdfstring{plan\+Srv(ow\+\_\+msgs\+::\+O\+W\+Plan\+Steps\+Request \&req, ow\+\_\+msgs\+::\+O\+W\+Plan\+Steps\+Response \&resp)}{planSrv(ow_msgs::OWPlanStepsRequest &req, ow_msgs::OWPlanStepsResponse &resp)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+planner\+::\+Walking\+Planner\+::plan\+Srv (
+\begin{DoxyParamCaption}
+\item[{ow\+\_\+msgs\+::\+O\+W\+Plan\+Steps\+Request \&}]{req, }
+\item[{ow\+\_\+msgs\+::\+O\+W\+Plan\+Steps\+Response \&}]{resp}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__planner_1_1WalkingPlanner_a3ffca8275cf926de83bc0198cc0ebfe1}{}\label{classow__planner_1_1WalkingPlanner_a3ffca8275cf926de83bc0198cc0ebfe1}
+
+
+plan\+Srv Generate custom step plan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & Kinematic parameters for step plan.\\
+\hline
+{\em resp} & True on success.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success. 
+\end{DoxyReturn}
+\index{ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}!plan\+Srv\+Circle@{plan\+Srv\+Circle}}
+\index{plan\+Srv\+Circle@{plan\+Srv\+Circle}!ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}}
+\subsubsection[{\texorpdfstring{plan\+Srv\+Circle(std\+\_\+srvs\+::\+Empty\+Request \&req, std\+\_\+srvs\+::\+Empty\+Response \&resp)}{planSrvCircle(std_srvs::EmptyRequest &req, std_srvs::EmptyResponse &resp)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+planner\+::\+Walking\+Planner\+::plan\+Srv\+Circle (
+\begin{DoxyParamCaption}
+\item[{std\+\_\+srvs\+::\+Empty\+Request \&}]{req, }
+\item[{std\+\_\+srvs\+::\+Empty\+Response \&}]{resp}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__planner_1_1WalkingPlanner_a0c75042ec782b3bd9bb2e07079bf4e1f}{}\label{classow__planner_1_1WalkingPlanner_a0c75042ec782b3bd9bb2e07079bf4e1f}
+
+
+plan\+Srv\+Circle Walk in circles line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Empty} & \\
+\hline
+{\em Empty} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success 
+\end{DoxyReturn}
+\index{ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}!plan\+Srv\+Line@{plan\+Srv\+Line}}
+\index{plan\+Srv\+Line@{plan\+Srv\+Line}!ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}}
+\subsubsection[{\texorpdfstring{plan\+Srv\+Line(std\+\_\+srvs\+::\+Empty\+Request \&req, std\+\_\+srvs\+::\+Empty\+Response \&resp)}{planSrvLine(std_srvs::EmptyRequest &req, std_srvs::EmptyResponse &resp)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+planner\+::\+Walking\+Planner\+::plan\+Srv\+Line (
+\begin{DoxyParamCaption}
+\item[{std\+\_\+srvs\+::\+Empty\+Request \&}]{req, }
+\item[{std\+\_\+srvs\+::\+Empty\+Response \&}]{resp}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__planner_1_1WalkingPlanner_a12fd257292f750eb8dd69829bac7e586}{}\label{classow__planner_1_1WalkingPlanner_a12fd257292f750eb8dd69829bac7e586}
+
+
+plan\+Srv\+Line Walk in straight line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Empty} & \\
+\hline
+{\em Empty} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success 
+\end{DoxyReturn}
+\index{ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}!plan\+Srv\+Stamp@{plan\+Srv\+Stamp}}
+\index{plan\+Srv\+Stamp@{plan\+Srv\+Stamp}!ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}}
+\subsubsection[{\texorpdfstring{plan\+Srv\+Stamp(std\+\_\+srvs\+::\+Empty\+Request \&req, std\+\_\+srvs\+::\+Empty\+Response \&resp)}{planSrvStamp(std_srvs::EmptyRequest &req, std_srvs::EmptyResponse &resp)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+planner\+::\+Walking\+Planner\+::plan\+Srv\+Stamp (
+\begin{DoxyParamCaption}
+\item[{std\+\_\+srvs\+::\+Empty\+Request \&}]{req, }
+\item[{std\+\_\+srvs\+::\+Empty\+Response \&}]{resp}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__planner_1_1WalkingPlanner_abfbcb01a92c739e5970aee04fcb48b96}{}\label{classow__planner_1_1WalkingPlanner_abfbcb01a92c739e5970aee04fcb48b96}
+
+
+plan\+Srv\+Stamp Steping in place. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Empty} & \\
+\hline
+{\em Empty} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success 
+\end{DoxyReturn}
+\index{ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}!publish\+Steps@{publish\+Steps}}
+\index{publish\+Steps@{publish\+Steps}!ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}}
+\subsubsection[{\texorpdfstring{publish\+Steps(const ow\+::\+Foot\+Step\+List \&fsteps)}{publishSteps(const ow::FootStepList &fsteps)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+planner\+::\+Walking\+Planner\+::publish\+Steps (
+\begin{DoxyParamCaption}
+\item[{const ow\+::\+Foot\+Step\+List \&}]{fsteps}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__planner_1_1WalkingPlanner_ad029f7b73af02397dcc6de9ce3f9c845}{}\label{classow__planner_1_1WalkingPlanner_ad029f7b73af02397dcc6de9ce3f9c845}
+
+
+publish\+Steps Publish planned footsteps and D\+CM waypoints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fsteps} & Foot\+Step\+List list to publish. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}!received\+Current\+Footstep@{received\+Current\+Footstep}}
+\index{received\+Current\+Footstep@{received\+Current\+Footstep}!ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}}
+\subsubsection[{\texorpdfstring{received\+Current\+Footstep(const ow\+\_\+msgs\+::\+Foot\+Step \&msg)}{receivedCurrentFootstep(const ow_msgs::FootStep &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+planner\+::\+Walking\+Planner\+::received\+Current\+Footstep (
+\begin{DoxyParamCaption}
+\item[{const ow\+\_\+msgs\+::\+Foot\+Step \&}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__planner_1_1WalkingPlanner_a622132830a0f0311506739a17e4f0f38}{}\label{classow__planner_1_1WalkingPlanner_a622132830a0f0311506739a17e4f0f38}
+
+
+received\+Current\+Footstep Landed foot position from ow\+\_\+ftg module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Received footstep msg. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}!received\+Vel\+Cmd@{received\+Vel\+Cmd}}
+\index{received\+Vel\+Cmd@{received\+Vel\+Cmd}!ow\+\_\+planner\+::\+Walking\+Planner@{ow\+\_\+planner\+::\+Walking\+Planner}}
+\subsubsection[{\texorpdfstring{received\+Vel\+Cmd(const geometry\+\_\+msgs\+::\+Twist \&msg)}{receivedVelCmd(const geometry_msgs::Twist &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+planner\+::\+Walking\+Planner\+::received\+Vel\+Cmd (
+\begin{DoxyParamCaption}
+\item[{const geometry\+\_\+msgs\+::\+Twist \&}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__planner_1_1WalkingPlanner_ae57126baf08815524e5b28786c56397b}{}\label{classow__planner_1_1WalkingPlanner_ae57126baf08815524e5b28786c56397b}
+
+
+received\+Vel\+Cmd Received veolcity command from teleop\+\_\+tools. Twist must be in \mbox{[}-\/1,1\mbox{]} for x,y and yaw. 1.\+0 will generate step with maximum values defined in parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Received Twist msg. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+walking\+\_\+planner/include/ow\+\_\+walking\+\_\+planner/\hyperlink{walking__planner_8h}{walking\+\_\+planner.\+h}\end{DoxyCompactItemize}

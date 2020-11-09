@@ -1,0 +1,45 @@
+\hypertarget{classow__balancer_1_1IMUStabilizer}{}\section{ow\+\_\+balancer\+:\+:I\+M\+U\+Stabilizer Class Reference}
+\label{classow__balancer_1_1IMUStabilizer}\index{ow\+\_\+balancer\+::\+I\+M\+U\+Stabilizer@{ow\+\_\+balancer\+::\+I\+M\+U\+Stabilizer}}
+
+
+The \hyperlink{classow__balancer_1_1Balancer}{Balancer} class.  
+
+
+
+
+{\ttfamily \#include $<$imu\+\_\+stabilizer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__balancer_1_1IMUStabilizer_a5aeb1a996bd6ae395c4bd1e1039e0a97}{I\+M\+U\+Stabilizer} ()\hypertarget{classow__balancer_1_1IMUStabilizer_a5aeb1a996bd6ae395c4bd1e1039e0a97}{}\label{classow__balancer_1_1IMUStabilizer_a5aeb1a996bd6ae395c4bd1e1039e0a97}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classow__balancer_1_1Balancer}{Balancer} Default constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__balancer_1_1IMUStabilizer_a3ca7f0a6f1c0eafc2494b1b041d6f105}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter)\hypertarget{classow__balancer_1_1IMUStabilizer_a3ca7f0a6f1c0eafc2494b1b041d6f105}{}\label{classow__balancer_1_1IMUStabilizer_a3ca7f0a6f1c0eafc2494b1b041d6f105}
+
+\begin{DoxyCompactList}\small\item\em Initialization of \hyperlink{classow__balancer_1_1Balancer}{Balancer} module. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1CartesianVelocity}{ow\+::\+Cartesian\+Velocity} \& {\bfseries update} (const \hyperlink{classow__core_1_1InertialMeasurmentUnitSensor}{ow\+::\+Imu\+Sensor} \&imu, const \hyperlink{classow__core_1_1AngularPosition}{ow\+::\+Angular\+Position} \&Qd)\hypertarget{classow__balancer_1_1IMUStabilizer_a6a3d157d6adcb2f19dddc7256b58ffc6}{}\label{classow__balancer_1_1IMUStabilizer_a6a3d157d6adcb2f19dddc7256b58ffc6}
+
+\item 
+const \hyperlink{classow__core_1_1CartesianVelocity}{ow\+::\+Cartesian\+Velocity} \& {\bfseries dx} () const \hypertarget{classow__balancer_1_1IMUStabilizer_a9c38ba683b24d1131b314dac64a6efd5}{}\label{classow__balancer_1_1IMUStabilizer_a9c38ba683b24d1131b314dac64a6efd5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1Matrix}{ow\+::\+Matrix3} \hyperlink{classow__balancer_1_1IMUStabilizer_a8febdaf8444a65a1901af751a365bfee}{Ko\+\_\+}\hypertarget{classow__balancer_1_1IMUStabilizer_a8febdaf8444a65a1901af751a365bfee}{}\label{classow__balancer_1_1IMUStabilizer_a8febdaf8444a65a1901af751a365bfee}
+
+\begin{DoxyCompactList}\small\item\em Rotational gain for imu compensation. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianVelocity}{ow\+::\+Cartesian\+Velocity} {\bfseries dx\+\_\+}\hypertarget{classow__balancer_1_1IMUStabilizer_abb04ed870d7ac4c9d436d083ade61c8a}{}\label{classow__balancer_1_1IMUStabilizer_abb04ed870d7ac4c9d436d083ade61c8a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__balancer_1_1Balancer}{Balancer} class. 
+
+This class calculates hip offsets to minimize the effects of external forces in the L\+I\+PM model. It is bassed on Capture Point tracking by means of Z\+MP target adjustment motions. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+balancer/include/ow\+\_\+balancer/\hyperlink{imu__stabilizer_8h}{imu\+\_\+stabilizer.\+h}\end{DoxyCompactItemize}

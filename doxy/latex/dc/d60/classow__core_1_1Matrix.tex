@@ -1,0 +1,81 @@
+\hypertarget{classow__core_1_1Matrix}{}\section{ow\+\_\+core\+:\+:Matrix$<$ \+\_\+\+Scalar, \+\_\+\+Rows, \+\_\+\+Cols $>$ Class Template Reference}
+\label{classow__core_1_1Matrix}\index{ow\+\_\+core\+::\+Matrix$<$ \+\_\+\+Scalar, \+\_\+\+Rows, \+\_\+\+Cols $>$@{ow\+\_\+core\+::\+Matrix$<$ \+\_\+\+Scalar, \+\_\+\+Rows, \+\_\+\+Cols $>$}}
+
+
+The \hyperlink{classow__core_1_1Matrix}{Matrix} class.  
+
+
+
+
+{\ttfamily \#include $<$matrix.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Matrix$<$ \+\_\+\+Scalar, \+\_\+\+Rows, \+\_\+\+Cols $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.590909cm]{dc/d60/classow__core_1_1Matrix}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries Rows\+At\+Compile\+Time} = \+\_\+\+Rows, 
+{\bfseries Cols\+At\+Compile\+Time} = \+\_\+\+Cols
+ \}\hypertarget{classow__core_1_1Matrix_a32d3ff664f0b7bd304e25c4ff8b1c941}{}\label{classow__core_1_1Matrix_a32d3ff664f0b7bd304e25c4ff8b1c941}
+
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1Matrix_aa0f2a787749ce45312951229f7f5e4ba}{}\label{classow__core_1_1Matrix_aa0f2a787749ce45312951229f7f5e4ba}
+
+\item 
+typedef Eigen\+::\+Matrix$<$ \+\_\+\+Scalar, Rows\+At\+Compile\+Time, Cols\+At\+Compile\+Time $>$ {\bfseries Base}\hypertarget{classow__core_1_1Matrix_a5bce4394697c459c625b50af9a7dda22}{}\label{classow__core_1_1Matrix_a5bce4394697c459c625b50af9a7dda22}
+
+\item 
+typedef \hyperlink{classow__core_1_1MatrixBase}{Matrix\+Base}$<$ \hyperlink{classow__core_1_1Matrix}{Matrix}$<$ Scalar, Rows\+At\+Compile\+Time, Cols\+At\+Compile\+Time $>$ $>$ {\bfseries M\+Base}\hypertarget{classow__core_1_1Matrix_aebc25677cbaa5628e53efacb241c8a92}{}\label{classow__core_1_1Matrix_aebc25677cbaa5628e53efacb241c8a92}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1Matrix_a4de3f741251028d3c8c57add9c0fdaa7}{Matrix} (Scalar \&ref, int start\+\_\+row=0, int start\+\_\+col=0)\hypertarget{classow__core_1_1Matrix_a4de3f741251028d3c8c57add9c0fdaa7}{}\label{classow__core_1_1Matrix_a4de3f741251028d3c8c57add9c0fdaa7}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Matrix_a8e12fedab56b3c35846d574c8b28c6c9}{Matrix} ()\hypertarget{classow__core_1_1Matrix_a8e12fedab56b3c35846d574c8b28c6c9}{}\label{classow__core_1_1Matrix_a8e12fedab56b3c35846d574c8b28c6c9}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Matrix_a56f3da2668d5aca739f1c4c4dadb6654}{Matrix} (const \hyperlink{classow__core_1_1Matrix}{Matrix} \&other)\hypertarget{classow__core_1_1Matrix_a56f3da2668d5aca739f1c4c4dadb6654}{}\label{classow__core_1_1Matrix_a56f3da2668d5aca739f1c4c4dadb6654}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived $>$ }\\\hyperlink{classow__core_1_1Matrix_a213b412d7172b27a887352a549ef6d2c}{Matrix} (const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Matrix}{Matrix} \& \hyperlink{classow__core_1_1Matrix_a24f3cef489a02ef7280c347f783fc2e8}{operator=} (const \hyperlink{classow__core_1_1Matrix}{Matrix} \&other)\hypertarget{classow__core_1_1Matrix_a24f3cef489a02ef7280c347f783fc2e8}{}\label{classow__core_1_1Matrix_a24f3cef489a02ef7280c347f783fc2e8}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Derived , int Other\+Rows, int Other\+Cols$>$ }\\\hyperlink{classow__core_1_1Matrix}{Matrix} \& \hyperlink{classow__core_1_1Matrix_a829a97bfa1bbe3afcfb7ff0e0eb419b9}{operator=} (const \hyperlink{classow__core_1_1MatrixRef}{Matrix\+Ref}$<$ Other\+Derived, Other\+Rows, Other\+Cols $>$ \&other)\hypertarget{classow__core_1_1Matrix_a829a97bfa1bbe3afcfb7ff0e0eb419b9}{}\label{classow__core_1_1Matrix_a829a97bfa1bbe3afcfb7ff0e0eb419b9}
+
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar, int \+\_\+\+Rows, int \+\_\+\+Cols$>$\\*
+class ow\+\_\+core\+::\+Matrix$<$ \+\_\+\+Scalar, \+\_\+\+Rows, \+\_\+\+Cols $>$}
+
+The \hyperlink{classow__core_1_1Matrix}{Matrix} class. 
+
+The \hyperlink{classow__core_1_1Matrix}{Matrix} is of type Eigen\+::\+Matrix. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Matrix@{ow\+\_\+core\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!ow\+\_\+core\+::\+Matrix@{ow\+\_\+core\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{Matrix(const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&other)}{Matrix(const Eigen::EigenBase< OtherDerived > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar, int \+\_\+\+Rows, int \+\_\+\+Cols$>$ template$<$typename Other\+Derived $>$ {\bf ow\+\_\+core\+::\+Matrix}$<$ \+\_\+\+Scalar, \+\_\+\+Rows, \+\_\+\+Cols $>$\+::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Eigen\+Base$<$ Other\+Derived $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1Matrix_a213b412d7172b27a887352a549ef6d2c}{}\label{classow__core_1_1Matrix_a213b412d7172b27a887352a549ef6d2c}
+
+
+Copy constructor. 
+
+This copy constructor not only works with Eigen matrices but also with their expressions. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/types/\hyperlink{matrix_8h}{matrix.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,116 @@
+\hypertarget{pseudo__inverse_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/pseudo\+\_\+inverse.h File Reference}
+\label{pseudo__inverse_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/pseudo\+\_\+inverse.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/pseudo\+\_\+inverse.\+h}}
+{\ttfamily \#include $<$Eigen/\+Dense$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Derived $>$ }\\Eigen\+::\+Matrix$<$ typename Derived\+::\+Scalar, Derived\+::\+Cols\+At\+Compile\+Time, Derived\+::\+Rows\+At\+Compile\+Time $>$ \hyperlink{pseudo__inverse_8h_a3084cf2624199c57d8372f4355e18581}{ow\+::pinv\+S\+VD} (const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&m, typename Derived\+::\+Scalar tol=typename Derived\+::\+Scalar(1e-\/8))
+\begin{DoxyCompactList}\small\item\em Moore-\/\+Penrose Pseudo Inverse. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Derived $>$ }\\Eigen\+::\+Matrix$<$ typename Derived\+::\+Scalar, Derived\+::\+Cols\+At\+Compile\+Time, Derived\+::\+Rows\+At\+Compile\+Time $>$ \hyperlink{pseudo__inverse_8h_a57ad8dfa42dcb798f6ee8dc268699f62}{ow\+::pinv\+Gen} (const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&m, typename Derived\+::\+Scalar tol=typename Derived\+::\+Scalar(1e-\/8))
+\begin{DoxyCompactList}\small\item\em Moore-\/\+Penrose Pseudo Inverse. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Derived $>$ }\\Eigen\+::\+Matrix$<$ typename Derived\+::\+Scalar, Derived\+::\+Cols\+At\+Compile\+Time, Derived\+::\+Rows\+At\+Compile\+Time $>$ \hyperlink{pseudo__inverse_8h_a509d18526d3db684aade80ddbbfe9eb5}{ow\+::pinv} (const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&m, typename Derived\+::\+Scalar tol=typename Derived\+::\+Scalar(1e-\/8))
+\begin{DoxyCompactList}\small\item\em Moore-\/\+Penrose Pseudo Inverse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287. 
+
+\subsection{Function Documentation}
+\index{pseudo\+\_\+inverse.\+h@{pseudo\+\_\+inverse.\+h}!pinv@{pinv}}
+\index{pinv@{pinv}!pseudo\+\_\+inverse.\+h@{pseudo\+\_\+inverse.\+h}}
+\subsubsection[{\texorpdfstring{pinv(const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&m, typename Derived\+::\+Scalar tol=typename Derived\+::\+Scalar(1e-\/8))}{pinv(const Eigen::MatrixBase< Derived > &m, typename Derived::Scalar tol=typename Derived::Scalar(1e-8))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Derived $>$ Eigen\+::\+Matrix$<$typename Derived\+::\+Scalar, Derived\+::\+Cols\+At\+Compile\+Time, Derived\+::\+Rows\+At\+Compile\+Time$>$ ow\+::pinv (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&}]{m, }
+\item[{typename Derived\+::\+Scalar}]{tol = {\ttfamily typename~Derived\+:\+:Scalar(1e-\/8)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{pseudo__inverse_8h_file_a509d18526d3db684aade80ddbbfe9eb5}{}\label{pseudo__inverse_8h_file_a509d18526d3db684aade80ddbbfe9eb5}
+
+
+Moore-\/\+Penrose Pseudo Inverse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Matrix,\\
+\hline
+{\em tol} & tol for singular values.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+inverse. 
+\end{DoxyReturn}
+\index{pseudo\+\_\+inverse.\+h@{pseudo\+\_\+inverse.\+h}!pinv\+Gen@{pinv\+Gen}}
+\index{pinv\+Gen@{pinv\+Gen}!pseudo\+\_\+inverse.\+h@{pseudo\+\_\+inverse.\+h}}
+\subsubsection[{\texorpdfstring{pinv\+Gen(const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&m, typename Derived\+::\+Scalar tol=typename Derived\+::\+Scalar(1e-\/8))}{pinvGen(const Eigen::MatrixBase< Derived > &m, typename Derived::Scalar tol=typename Derived::Scalar(1e-8))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Derived $>$ Eigen\+::\+Matrix$<$typename Derived\+::\+Scalar, Derived\+::\+Cols\+At\+Compile\+Time, Derived\+::\+Rows\+At\+Compile\+Time$>$ ow\+::pinv\+Gen (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&}]{m, }
+\item[{typename Derived\+::\+Scalar}]{tol = {\ttfamily typename~Derived\+:\+:Scalar(1e-\/8)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{pseudo__inverse_8h_file_a57ad8dfa42dcb798f6ee8dc268699f62}{}\label{pseudo__inverse_8h_file_a57ad8dfa42dcb798f6ee8dc268699f62}
+
+
+Moore-\/\+Penrose Pseudo Inverse. 
+
+See\+: Fast Computation of Moore-\/\+Penrose Inverse Matrices Neural Information Processing
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Matrix,\\
+\hline
+{\em tol} & tol for singular values.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+inverse. 
+\end{DoxyReturn}
+\index{pseudo\+\_\+inverse.\+h@{pseudo\+\_\+inverse.\+h}!pinv\+S\+VD@{pinv\+S\+VD}}
+\index{pinv\+S\+VD@{pinv\+S\+VD}!pseudo\+\_\+inverse.\+h@{pseudo\+\_\+inverse.\+h}}
+\subsubsection[{\texorpdfstring{pinv\+S\+V\+D(const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&m, typename Derived\+::\+Scalar tol=typename Derived\+::\+Scalar(1e-\/8))}{pinvSVD(const Eigen::MatrixBase< Derived > &m, typename Derived::Scalar tol=typename Derived::Scalar(1e-8))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Derived $>$ Eigen\+::\+Matrix$<$typename Derived\+::\+Scalar, Derived\+::\+Cols\+At\+Compile\+Time, Derived\+::\+Rows\+At\+Compile\+Time$>$ ow\+::pinv\+S\+VD (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&}]{m, }
+\item[{typename Derived\+::\+Scalar}]{tol = {\ttfamily typename~Derived\+:\+:Scalar(1e-\/8)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{pseudo__inverse_8h_file_a3084cf2624199c57d8372f4355e18581}{}\label{pseudo__inverse_8h_file_a3084cf2624199c57d8372f4355e18581}
+
+
+Moore-\/\+Penrose Pseudo Inverse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Matrix,\\
+\hline
+{\em tol} & tol for singular values.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+inverse. 
+\end{DoxyReturn}

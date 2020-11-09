@@ -1,0 +1,69 @@
+\form#0:$ in [0,1] $
+\form#1:$ \mathVecB{\zeta}{w} $
+\form#2:$ \mathVecB{\zeta}{W} $
+\form#3:$ \mathVecB{\dot{p}}{W} $
+\form#4:$ \mathVecB{\ddot{p}}{W} $
+\form#5:$\mathScalarQ{x}{}$
+\form#6:$\mathScalarQ{y}{}$
+\form#7:$\mathScalar{h}$
+\form#8:$\mathScalar{d}$
+\form#9:$\mathScalar{a}$
+\form#10:$\mathVec{s}$
+\form#11:$\mathScalarI{s}{i} \leq 0$
+\form#12:$\mathScalar{N}$
+\form#13:$\mathScalar{d} < \mathScalar{N}$
+\form#14:$\mathScalarI{c}{i}$
+\form#15:$\mathScalarI{s}{i}$
+\form#16:$\mathScalar{x}(\mathScalar{t} + \mathScalarI{s}{i} \, \mathScalar{h})$
+\form#17:$\mathScalarI{x}{0}$
+\form#18:$\mathScalarI{x}{1}$
+\form#19:$\mathScalarI{x}{\mathScalar{M}}$
+\form#20:$\mathScalar{M}$
+\form#21:$\mathScalarQ{f}{s}$
+\form#22:$\mathScalar{h} = \frac{1}{\mathScalarQ{f}{s}}$
+\form#23:$\mathScalarI{s}{i} \geq 0$
+\form#24:$\mathScalarQ{x}{new}$
+\form#25:\begin{align*} \mathScalarOp{x}{(d)}(t) &= \mathVecOp{c}{\mathOpT} \, \mathRMatrix{ \mathScalar{x}(\mathScalar{t} + \mathScalarI{s}{0} \, \mathScalar{h})\\ \vdots \\ \mathScalar{x}(\mathScalar{t} + \mathScalarI{s}{\mathScalar{N}-1} \, \mathScalar{h})\\ } \, \frac{1}{\mathScalarOp{h}{\mathScalar{d}}} \end{align*}
+\form#26:\begin{align*} \mathVec{c} &= \mathRMatrix{ \mathScalarI{c}{0}\\ \vdots\\ \mathScalarI{c}{\mathScalar{N}-1} } = \mathRMatrix{ \mathScalarOpI{s}{0}{0} & \dots & \mathScalarOpI{s}{0}{\mathScalar{N}-1}\\ \vdots & \ddots & \vdots\\ \mathScalarOpI{s}{\mathScalar{N}-1}{0} & \dots & \mathScalarOpI{s}{\mathScalar{N}-1}{\mathScalar{N}-1}\\ }^{-1} \, d! \, \mathRMatrix{ \mathScalarI{\delta}{0,d}\\ \vdots\\ \mathScalarI{\delta}{N-1,d} } && \textnormal{with} \quad \mathScalarI{\delta}{i,j} = \begin{cases} 0 & i \neq j\\ 1 & i = j \end{cases} \end{align*}
+\form#27:$ \mathVecB{P}{W} $
+\form#28:$ \mathVecB{p}{W} $
+\form#29:$\mathScalar{x}!$
+\form#30:$\mathbf{\alpha}$
+\form#31:$\mathbf{Q}$
+\form#32:$\mathbf{f}$
+\form#33:$\ddot{\mathbf{x}}$
+\form#34:$\mathbf{x}$
+\form#35:$\dot{\mathbf{x}}$
+\form#36:$\mathbf{\mu}$
+\form#37:$\mathbf{R}$
+\form#38:$\mathbf{\omega}$
+\form#39:$\ddot{\mathbf{X}}$
+\form#40:$\mathbf{X}$
+\form#41:$\dot{\mathbf{X}}$
+\form#42:$\mathVec{f}$
+\form#43:$\mathbf{T}$
+\form#44:$\mathbf{\ddot{q}}$
+\form#45:$\mathbf{\tau}$
+\form#46:$\mathbf{q}$
+\form#47:$\mathbf{\dot{q}}$
+\form#48:${\mathbf{v}}$
+\form#49:$\mathbf{W}$
+\form#50:$ \mathVecB{p}{F} $
+\form#51:$ \mathVecQB{p}{x}{F}=\frac{-\mathVecSQB{\mu}{y}{F}-\mathVecQB{f}{x}{F}\, \mathScalarQ{d}{F}}{\mathVecQB{f}{z}{F}} $
+\form#52:$ \mathVecQB{p}{y}{F}=\frac{-\mathVecSQB{\mu}{x}{F}-\mathVecQB{f}{y}{F}\, \mathScalarQ{d}{F}}{\mathVecQB{f}{z}{F}} $
+\form#53:$ \mathVecB{p}{F}=\mathSBs{\mathCommaT{\mathVecQB{p}{x}{F}}{\mathVecQB{p} {y}{F}}{0}}^{\mathOpT} $
+\form#54:$\mathName{F}=\mathCBs{\mathCommaD{\mathName{L}}{\mathName{R}}}$
+\form#55:$ \mathVecB{FT}{F}= \mathSBs{\mathCommaD{\mathVecB{f}{F}}{\mathVecSB{\mu} {F}}}$
+\form#56:$\mathScalarQ{d}{F}$
+\form#57:$ \mathVecB{\dot{p}}{F} $
+\form#58:$ \mathVecB{\ddot{p}}{F} $
+\form#59:$ \mathVecB{P}{F} $
+\form#60:$\mathVecB{p}{F}$
+\form#61:$ \mathVecQB{p}{F}{\mathFW}=\mathMatFB{T}{F}{\mathFW}\,\mathVecB{p}{F}$
+\form#62:$ \mathVecB{f}{W}=\mathMatFB{R}{F}{\mathFW}\, \mathVecB{f}{F} $
+\form#63:$\mathVecQB{p}{x}{\mathFW}=\frac{\mathVecQBI{p}{R}{\mathFW}{x}\, \mathVecQBI{f}{R}{\mathFW}{z}+\mathVecQBI{p}{L}{\mathFW}{x}\, \mathVecQBI{f}{L}{\mathFW}{z}}{\mathVecQBI{f}{L}{\mathFW}{z} +\mathVecQBI{f}{R}{\mathFW}{z}}$
+\form#64:$\mathVecQB{p}{y}{\mathFW}=\frac{\mathVecQBI{p}{R}{\mathFW}{y}\, \mathVecQBI{f}{R}{\mathFW}{z}+\mathVecQBI{p}{L}{\mathFW}{y}\, \mathVecQBI{f}{L}{\mathFW}{z}}{\mathVecQBI{f}{L}{\mathFW}{z} +\mathVecQBI{f}{R}{\mathFW}{z}} $
+\form#65:$ \mathVecQB{p}{R}{\mathFW} $
+\form#66:$ \mathVecQB{p}{L}{\mathFW} $
+\form#67:$ \mathVecQBI{f}{R}{\mathFW}{z}$
+\form#68:$ \mathVecQBI{f}{L}{\mathFW}{z} $

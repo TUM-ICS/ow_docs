@@ -1,0 +1,70 @@
+\hypertarget{random__orientation_8h}{}\section{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/random\+\_\+orientation.h File Reference}
+\label{random__orientation_8h}\index{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/random\+\_\+orientation.\+h@{/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/math/random\+\_\+orientation.\+h}}
+{\ttfamily \#include $<$random$>$}\\*
+{\ttfamily \#include $<$Eigen/\+Geometry$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Scalar , typename Generator $>$ }\\Eigen\+::\+Quaternion$<$ Scalar $>$ \hyperlink{random__orientation_8h_a451112a252a16a80cf03466cbc270801}{ow\+::uniform\+Random\+Quaternion} (Generator \&generator)
+\begin{DoxyCompactList}\small\item\em Generate a random uniformly sampled Quaternion in S(3). \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Scalar , typename Generator $>$ }\\Eigen\+::\+Matrix$<$ Scalar, 3, 3 $>$ \hyperlink{random__orientation_8h_acd038c143cab079b40136e4f0bb208c4}{ow\+::uniform\+Random\+Rotation} (Generator \&generator)
+\begin{DoxyCompactList}\small\item\em Generate a random uniformly sampled Rotation in S\+O(3). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Emmanuel Dean-\/\+Leon 
+
+Florian Bergner 
+
+J. Rogelio Guadarrama-\/\+Olvera 
+
+Simon Armleder 
+
+Gordon Cheng
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14.\+02.\+2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2020 Institute for Cognitive Systems (I\+CS), Technical University of Munich (T\+UM)
+\end{DoxyCopyright}
+\subparagraph*{Licence}
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\+://www.\+apache.\+org/licenses/\+L\+I\+C\+E\+N\+S\+E-\/2.\+0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subparagraph*{Acknowledgment}
+
+This project has received funding from the European Union‘s Horizon 2020 research and innovation programme under grant agreement No 732287. 
+
+\subsection{Function Documentation}
+\index{random\+\_\+orientation.\+h@{random\+\_\+orientation.\+h}!uniform\+Random\+Quaternion@{uniform\+Random\+Quaternion}}
+\index{uniform\+Random\+Quaternion@{uniform\+Random\+Quaternion}!random\+\_\+orientation.\+h@{random\+\_\+orientation.\+h}}
+\subsubsection[{\texorpdfstring{uniform\+Random\+Quaternion(\+Generator \&generator)}{uniformRandomQuaternion(Generator &generator)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Scalar , typename Generator $>$ Eigen\+::\+Quaternion$<$Scalar$>$ ow\+::uniform\+Random\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{Generator \&}]{generator}
+\end{DoxyParamCaption}
+)}\hypertarget{random__orientation_8h_file_a451112a252a16a80cf03466cbc270801}{}\label{random__orientation_8h_file_a451112a252a16a80cf03466cbc270801}
+
+
+Generate a random uniformly sampled Quaternion in S(3). 
+
+See\+: \href{http://planning.cs.uiuc.edu/node198.html}{\tt http\+://planning.\+cs.\+uiuc.\+edu/node198.\+html} \index{random\+\_\+orientation.\+h@{random\+\_\+orientation.\+h}!uniform\+Random\+Rotation@{uniform\+Random\+Rotation}}
+\index{uniform\+Random\+Rotation@{uniform\+Random\+Rotation}!random\+\_\+orientation.\+h@{random\+\_\+orientation.\+h}}
+\subsubsection[{\texorpdfstring{uniform\+Random\+Rotation(\+Generator \&generator)}{uniformRandomRotation(Generator &generator)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Scalar , typename Generator $>$ Eigen\+::\+Matrix$<$Scalar,3,3$>$ ow\+::uniform\+Random\+Rotation (
+\begin{DoxyParamCaption}
+\item[{Generator \&}]{generator}
+\end{DoxyParamCaption}
+)}\hypertarget{random__orientation_8h_file_acd038c143cab079b40136e4f0bb208c4}{}\label{random__orientation_8h_file_acd038c143cab079b40136e4f0bb208c4}
+
+
+Generate a random uniformly sampled Rotation in S\+O(3). 
+
+See\+: \href{http://planning.cs.uiuc.edu/node198.html}{\tt http\+://planning.\+cs.\+uiuc.\+edu/node198.\+html} 

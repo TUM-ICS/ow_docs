@@ -1,0 +1,204 @@
+\hypertarget{classow__ik_1_1RobotLimb}{}\section{ow\+\_\+ik\+:\+:Robot\+Limb Class Reference}
+\label{classow__ik_1_1RobotLimb}\index{ow\+\_\+ik\+::\+Robot\+Limb@{ow\+\_\+ik\+::\+Robot\+Limb}}
+
+
+The \hyperlink{classow__ik_1_1RobotLimb}{Robot\+Limb} class.  
+
+
+
+
+{\ttfamily \#include $<$robot\+\_\+limb.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow__core_1_1JointStateRef}{ow\+\_\+core\+::\+Joint\+State\+Ref}$<$ const \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} $>$ {\bfseries C\+Joint\+State\+Ref}\hypertarget{classow__ik_1_1RobotLimb_a18111b2bb33c4e697b1032363cddf89f}{}\label{classow__ik_1_1RobotLimb_a18111b2bb33c4e697b1032363cddf89f}
+
+\item 
+typedef \hyperlink{classow__core_1_1JointStateRef}{ow\+\_\+core\+::\+Joint\+State\+Ref}$<$ \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+State} $>$ {\bfseries Joint\+State\+Ref}\hypertarget{classow__ik_1_1RobotLimb_a0bbdad10e1b38a5c587bd070e6d447d9}{}\label{classow__ik_1_1RobotLimb_a0bbdad10e1b38a5c587bd070e6d447d9}
+
+\item 
+typedef std\+::vector$<$ \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} $>$ {\bfseries Wrenches}\hypertarget{classow__ik_1_1RobotLimb_a1d5ad36ebaa762752293813e0ac17b19}{}\label{classow__ik_1_1RobotLimb_a1d5ad36ebaa762752293813e0ac17b19}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__ik_1_1RobotLimb_a951b3838cd479272f6a6cfdc8ca334dc}{Robot\+Limb} (const K\+D\+L\+::\+Chain \&chain, \hyperlink{classow__core_1_1JointStateRef}{Joint\+State\+Ref} joint\+\_\+state, const \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+StateX} \&ll\+\_\+joint\+\_\+state, const \hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+StateX} \&ul\+\_\+joint\+\_\+state, const std\+::string \&base\+\_\+fame, const std\+::string \&\hyperlink{classow__ik_1_1RobotLimb_a3aaf05a2d919e792562226691ce1d0ad}{name})\hypertarget{classow__ik_1_1RobotLimb_a951b3838cd479272f6a6cfdc8ca334dc}{}\label{classow__ik_1_1RobotLimb_a951b3838cd479272f6a6cfdc8ca334dc}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__ik_1_1RobotLimb_a2e7c4f18d15bd54af5aa02fed02639b4}{initialize} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter)\hypertarget{classow__ik_1_1RobotLimb_a2e7c4f18d15bd54af5aa02fed02639b4}{}\label{classow__ik_1_1RobotLimb_a2e7c4f18d15bd54af5aa02fed02639b4}
+
+\begin{DoxyCompactList}\small\item\em Initialize the limb. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classow__ik_1_1RobotLimb_aa29bc28563188c994df1fd4b50b3ec8e}{dof} () const \hypertarget{classow__ik_1_1RobotLimb_aa29bc28563188c994df1fd4b50b3ec8e}{}\label{classow__ik_1_1RobotLimb_aa29bc28563188c994df1fd4b50b3ec8e}
+
+\begin{DoxyCompactList}\small\item\em Number of dof. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__ik_1_1RobotLimb_a3a3154e6e2149ebe5af13ef707c29af2}{base\+Frame} () const \hypertarget{classow__ik_1_1RobotLimb_a3a3154e6e2149ebe5af13ef707c29af2}{}\label{classow__ik_1_1RobotLimb_a3a3154e6e2149ebe5af13ef707c29af2}
+
+\begin{DoxyCompactList}\small\item\em Name of base frame. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__ik_1_1RobotLimb_a1acf313b3eeeeaa230a55b3ee2355770}{ee\+Frame} () const \hypertarget{classow__ik_1_1RobotLimb_a1acf313b3eeeeaa230a55b3ee2355770}{}\label{classow__ik_1_1RobotLimb_a1acf313b3eeeeaa230a55b3ee2355770}
+
+\begin{DoxyCompactList}\small\item\em Name of end efector frame. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__ik_1_1RobotLimb_a3aaf05a2d919e792562226691ce1d0ad}{name} () const \hypertarget{classow__ik_1_1RobotLimb_a3aaf05a2d919e792562226691ce1d0ad}{}\label{classow__ik_1_1RobotLimb_a3aaf05a2d919e792562226691ce1d0ad}
+
+\begin{DoxyCompactList}\small\item\em Name of the limb. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__ik_1_1RobotLimb_a98b22c8fce49481b5a96910724284208}{set\+Nullspace\+Posture} (const \hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \&q\+\_\+0)\hypertarget{classow__ik_1_1RobotLimb_a98b22c8fce49481b5a96910724284208}{}\label{classow__ik_1_1RobotLimb_a98b22c8fce49481b5a96910724284208}
+
+\begin{DoxyCompactList}\small\item\em Set the nullspace posture used if non is provided by the user. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \hyperlink{classow__ik_1_1RobotLimb_a8a262cf4ec142bba5ee1572344e90dfd}{null\+Space\+Posture} () const \hypertarget{classow__ik_1_1RobotLimb_a8a262cf4ec142bba5ee1572344e90dfd}{}\label{classow__ik_1_1RobotLimb_a8a262cf4ec142bba5ee1572344e90dfd}
+
+\begin{DoxyCompactList}\small\item\em Get the nullspace posture. \end{DoxyCompactList}\item 
+const \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \& \hyperlink{classow__ik_1_1RobotLimb_a4a26e5c8e5c6861fc36e1613fb02a42a}{forward\+Kinematics} (const \hyperlink{classow__core_1_1JointStateRef}{C\+Joint\+State\+Ref} \&joint\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Compute the forward kinematics. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__ik_1_1RobotLimb_aa9abf5f371b603f29ba0e8cd7144cc45}{inverse\+Kinematics} (const \hyperlink{classow__core_1_1JointStateRef}{C\+Joint\+State\+Ref} \&joint\+\_\+state, const \hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \&q\+\_\+0, const \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&Tee\+\_\+b)
+\begin{DoxyCompactList}\small\item\em Compute the inverse kinematics. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__ik_1_1RobotLimb_aefe0ad5c913ae0e440451a702a1b5a26}{inverse\+Kinematics} (const \hyperlink{classow__core_1_1JointStateRef}{C\+Joint\+State\+Ref} \&joint\+\_\+state, const \hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \&Tee\+\_\+b)
+\begin{DoxyCompactList}\small\item\em Compute the inverse kinematics. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__ik_1_1RobotLimb_ab263452af24b2a8f0e5239cc3337b4a2}{inverse\+Dynamics} (const \hyperlink{classow__core_1_1JointStateRef}{C\+Joint\+State\+Ref} \&joint\+\_\+state, const Wrenches \&wrenches)
+\begin{DoxyCompactList}\small\item\em Compute the inverse dynamics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classow__ik_1_1RobotLimb_a0287b3612567aba4cc322cfbe3a8b870}{check\+Dimension} (const \hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \&q)\hypertarget{classow__ik_1_1RobotLimb_a0287b3612567aba4cc322cfbe3a8b870}{}\label{classow__ik_1_1RobotLimb_a0287b3612567aba4cc322cfbe3a8b870}
+
+\begin{DoxyCompactList}\small\item\em Check if the vector dimension is correct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classow__ik_1_1RobotLimb_a4c5c8ab2736d40d50ee73ecdc736b02f}{name\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a4c5c8ab2736d40d50ee73ecdc736b02f}{}\label{classow__ik_1_1RobotLimb_a4c5c8ab2736d40d50ee73ecdc736b02f}
+
+\begin{DoxyCompactList}\small\item\em identifier \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__ik_1_1RobotLimb_a9e35bc1ebe8a1c71d0774f2b7a6e3563}{base\+\_\+frame\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a9e35bc1ebe8a1c71d0774f2b7a6e3563}{}\label{classow__ik_1_1RobotLimb_a9e35bc1ebe8a1c71d0774f2b7a6e3563}
+
+\begin{DoxyCompactList}\small\item\em base frame name \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classow__ik_1_1RobotLimb_aa4000dc89c83acbe2fc8708b2c4961df}{ee\+\_\+frame\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_aa4000dc89c83acbe2fc8708b2c4961df}{}\label{classow__ik_1_1RobotLimb_aa4000dc89c83acbe2fc8708b2c4961df}
+
+\begin{DoxyCompactList}\small\item\em end frame name \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classow__ik_1_1RobotLimb_a1df068baa90a9d6518b3fc8cbb5be7b8}{dof\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a1df068baa90a9d6518b3fc8cbb5be7b8}{}\label{classow__ik_1_1RobotLimb_a1df068baa90a9d6518b3fc8cbb5be7b8}
+
+\begin{DoxyCompactList}\small\item\em degrees of freedom \end{DoxyCompactList}\item 
+K\+D\+L\+::\+Chain \hyperlink{classow__ik_1_1RobotLimb_a0fe281d61c3c98651d609320aa4488fe}{chain\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a0fe281d61c3c98651d609320aa4488fe}{}\label{classow__ik_1_1RobotLimb_a0fe281d61c3c98651d609320aa4488fe}
+
+\begin{DoxyCompactList}\small\item\em kdl body chain \end{DoxyCompactList}\item 
+K\+D\+L\+::\+Chain\+Fk\+Solver\+Pos\+\_\+recursive \hyperlink{classow__ik_1_1RobotLimb_a5fe80f8e2684b166d2abb6191dc1dad8}{fk\+\_\+solver\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a5fe80f8e2684b166d2abb6191dc1dad8}{}\label{classow__ik_1_1RobotLimb_a5fe80f8e2684b166d2abb6191dc1dad8}
+
+\begin{DoxyCompactList}\small\item\em forward kinematics solver \end{DoxyCompactList}\item 
+K\+D\+L\+::\+Chain\+Jnt\+To\+Jac\+Solver \hyperlink{classow__ik_1_1RobotLimb_a854a39e0825de0f81d745d3b57947c95}{j\+\_\+solver\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a854a39e0825de0f81d745d3b57947c95}{}\label{classow__ik_1_1RobotLimb_a854a39e0825de0f81d745d3b57947c95}
+
+\begin{DoxyCompactList}\small\item\em jacobian solver \end{DoxyCompactList}\item 
+K\+D\+L\+::\+Chain\+Ik\+Solver\+Vel\+\_\+pinv \hyperlink{classow__ik_1_1RobotLimb_a3a66c477a006dbaf29ef4e174e0b5054}{ik\+\_\+solver\+\_\+v\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a3a66c477a006dbaf29ef4e174e0b5054}{}\label{classow__ik_1_1RobotLimb_a3a66c477a006dbaf29ef4e174e0b5054}
+
+\begin{DoxyCompactList}\small\item\em inverse kinematics solver \end{DoxyCompactList}\item 
+K\+D\+L\+::\+Chain\+Ik\+Solver\+Pos\+\_\+\+NR \hyperlink{classow__ik_1_1RobotLimb_a53a00659f9333846362dd34dac1d5636}{ik\+\_\+solver\+\_\+p\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a53a00659f9333846362dd34dac1d5636}{}\label{classow__ik_1_1RobotLimb_a53a00659f9333846362dd34dac1d5636}
+
+\begin{DoxyCompactList}\small\item\em inverse kinematics solver \end{DoxyCompactList}\item 
+K\+D\+L\+::\+Chain\+Id\+Solver\+\_\+\+R\+NE \hyperlink{classow__ik_1_1RobotLimb_a9de9df1fe45957d766e1178ca8eaaede}{id\+\_\+solver\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a9de9df1fe45957d766e1178ca8eaaede}{}\label{classow__ik_1_1RobotLimb_a9de9df1fe45957d766e1178ca8eaaede}
+
+\begin{DoxyCompactList}\small\item\em inverse dynamcis solver \end{DoxyCompactList}\item 
+\hyperlink{classow__ik_1_1IkSolverNullspace}{Ik\+Solver\+Nullspace} \hyperlink{classow__ik_1_1RobotLimb_a57089a981a0084fe71294dca9a25cb71}{ik\+\_\+solver\+\_\+nullspace\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a57089a981a0084fe71294dca9a25cb71}{}\label{classow__ik_1_1RobotLimb_a57089a981a0084fe71294dca9a25cb71}
+
+\begin{DoxyCompactList}\small\item\em ik solver with nullspace \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointStateRef}{Joint\+State\+Ref} \hyperlink{classow__ik_1_1RobotLimb_a9523057cca847108c05e47e1b71414b9}{joint\+\_\+state\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a9523057cca847108c05e47e1b71414b9}{}\label{classow__ik_1_1RobotLimb_a9523057cca847108c05e47e1b71414b9}
+
+\begin{DoxyCompactList}\small\item\em resulting joint state \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+StateX} \hyperlink{classow__ik_1_1RobotLimb_a0c2224eb76efb7a76b83f807140fdc88}{ll\+\_\+joint\+\_\+state\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a0c2224eb76efb7a76b83f807140fdc88}{}\label{classow__ik_1_1RobotLimb_a0c2224eb76efb7a76b83f807140fdc88}
+
+\begin{DoxyCompactList}\small\item\em lower limits joint state \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointState}{ow\+::\+Joint\+StateX} \hyperlink{classow__ik_1_1RobotLimb_a9d28c37ea1fb5587eafa541c7e7b98a3}{ul\+\_\+joint\+\_\+state\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a9d28c37ea1fb5587eafa541c7e7b98a3}{}\label{classow__ik_1_1RobotLimb_a9d28c37ea1fb5587eafa541c7e7b98a3}
+
+\begin{DoxyCompactList}\small\item\em upper limits joint state \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1JointPosition}{ow\+::\+Joint\+PositionX} \hyperlink{classow__ik_1_1RobotLimb_a7c0df22ee1e224e05e1c1b730c29cf9e}{q\+\_\+0\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a7c0df22ee1e224e05e1c1b730c29cf9e}{}\label{classow__ik_1_1RobotLimb_a7c0df22ee1e224e05e1c1b730c29cf9e}
+
+\begin{DoxyCompactList}\small\item\em zero posture joint state \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1HomogeneousTransformation}{ow\+::\+Homogeneous\+Transformation} \hyperlink{classow__ik_1_1RobotLimb_a70212e565007a8f22ab83f8aac6f0cc7}{Tee\+\_\+b\+\_\+}\hypertarget{classow__ik_1_1RobotLimb_a70212e565007a8f22ab83f8aac6f0cc7}{}\label{classow__ik_1_1RobotLimb_a70212e565007a8f22ab83f8aac6f0cc7}
+
+\begin{DoxyCompactList}\small\item\em End Effector Transformation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__ik_1_1RobotLimb}{Robot\+Limb} class. 
+
+This class calculates the kinematics and dynamics of a \hyperlink{classow__ik_1_1RobotLimb}{Robot\+Limb}. It takes as an input a reference to a sub-\/vector of the complete body state and modifies this vector upon function calls.
+
+Mutliple Robotlimbs presend in the \hyperlink{robot__model_8h}{robot\+\_\+model.\+h} to build the complete robot. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+ik\+::\+Robot\+Limb@{ow\+\_\+ik\+::\+Robot\+Limb}!forward\+Kinematics@{forward\+Kinematics}}
+\index{forward\+Kinematics@{forward\+Kinematics}!ow\+\_\+ik\+::\+Robot\+Limb@{ow\+\_\+ik\+::\+Robot\+Limb}}
+\subsubsection[{\texorpdfstring{forward\+Kinematics(const C\+Joint\+State\+Ref \&joint\+\_\+state)}{forwardKinematics(const CJointStateRef &joint_state)}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ow\+::\+Homogeneous\+Transformation}\& ow\+\_\+ik\+::\+Robot\+Limb\+::forward\+Kinematics (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Joint\+State\+Ref} \&}]{joint\+\_\+state}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__ik_1_1RobotLimb_a4a26e5c8e5c6861fc36e1613fb02a42a}{}\label{classow__ik_1_1RobotLimb_a4a26e5c8e5c6861fc36e1613fb02a42a}
+
+
+Compute the forward kinematics. 
+
+\begin{DoxyReturn}{Returns}
+The homogeneous position of end frame. 
+\end{DoxyReturn}
+\index{ow\+\_\+ik\+::\+Robot\+Limb@{ow\+\_\+ik\+::\+Robot\+Limb}!inverse\+Dynamics@{inverse\+Dynamics}}
+\index{inverse\+Dynamics@{inverse\+Dynamics}!ow\+\_\+ik\+::\+Robot\+Limb@{ow\+\_\+ik\+::\+Robot\+Limb}}
+\subsubsection[{\texorpdfstring{inverse\+Dynamics(const C\+Joint\+State\+Ref \&joint\+\_\+state, const Wrenches \&wrenches)}{inverseDynamics(const CJointStateRef &joint_state, const Wrenches &wrenches)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+ik\+::\+Robot\+Limb\+::inverse\+Dynamics (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Joint\+State\+Ref} \&}]{joint\+\_\+state, }
+\item[{const Wrenches \&}]{wrenches}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__ik_1_1RobotLimb_ab263452af24b2a8f0e5239cc3337b4a2}{}\label{classow__ik_1_1RobotLimb_ab263452af24b2a8f0e5239cc3337b4a2}
+
+
+Compute the inverse dynamics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joint\+\_\+state} & Const Reference to the current jointstate of the robot.\\
+\hline
+{\em wrenches} & Desired wrenches applied at each link frame of the kinematic chain. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+ik\+::\+Robot\+Limb@{ow\+\_\+ik\+::\+Robot\+Limb}!inverse\+Kinematics@{inverse\+Kinematics}}
+\index{inverse\+Kinematics@{inverse\+Kinematics}!ow\+\_\+ik\+::\+Robot\+Limb@{ow\+\_\+ik\+::\+Robot\+Limb}}
+\subsubsection[{\texorpdfstring{inverse\+Kinematics(const C\+Joint\+State\+Ref \&joint\+\_\+state, const ow\+::\+Joint\+Position\+X \&q\+\_\+0, const ow\+::\+Homogeneous\+Transformation \&\+Tee\+\_\+b)}{inverseKinematics(const CJointStateRef &joint_state, const ow::JointPositionX &q_0, const ow::HomogeneousTransformation &Tee_b)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+ik\+::\+Robot\+Limb\+::inverse\+Kinematics (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Joint\+State\+Ref} \&}]{joint\+\_\+state, }
+\item[{const {\bf ow\+::\+Joint\+PositionX} \&}]{q\+\_\+0, }
+\item[{const {\bf ow\+::\+Homogeneous\+Transformation} \&}]{Tee\+\_\+b}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__ik_1_1RobotLimb_aa9abf5f371b603f29ba0e8cd7144cc45}{}\label{classow__ik_1_1RobotLimb_aa9abf5f371b603f29ba0e8cd7144cc45}
+
+
+Compute the inverse kinematics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joint\+\_\+state} & Const Reference to the current jointstate of the robot.\\
+\hline
+{\em q\+\_\+0} & Desired joint nullspace posture.\\
+\hline
+{\em Tee\+\_\+b} & Target Transformation of end effector frame w.\+r.\+t limb base frame. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+ik\+::\+Robot\+Limb@{ow\+\_\+ik\+::\+Robot\+Limb}!inverse\+Kinematics@{inverse\+Kinematics}}
+\index{inverse\+Kinematics@{inverse\+Kinematics}!ow\+\_\+ik\+::\+Robot\+Limb@{ow\+\_\+ik\+::\+Robot\+Limb}}
+\subsubsection[{\texorpdfstring{inverse\+Kinematics(const C\+Joint\+State\+Ref \&joint\+\_\+state, const ow\+::\+Homogeneous\+Transformation \&\+Tee\+\_\+b)}{inverseKinematics(const CJointStateRef &joint_state, const ow::HomogeneousTransformation &Tee_b)}}]{\setlength{\rightskip}{0pt plus 5cm}bool ow\+\_\+ik\+::\+Robot\+Limb\+::inverse\+Kinematics (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Joint\+State\+Ref} \&}]{joint\+\_\+state, }
+\item[{const {\bf ow\+::\+Homogeneous\+Transformation} \&}]{Tee\+\_\+b}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__ik_1_1RobotLimb_aefe0ad5c913ae0e440451a702a1b5a26}{}\label{classow__ik_1_1RobotLimb_aefe0ad5c913ae0e440451a702a1b5a26}
+
+
+Compute the inverse kinematics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joint\+\_\+state} & Const Reference to the current jointstate of the robot.\\
+\hline
+{\em Tee\+\_\+b} & Target Transformation of end frame w.\+r.\+t start frame. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+ik/include/ow\+\_\+ik/\hyperlink{robot__limb_8h}{robot\+\_\+limb.\+h}\end{DoxyCompactItemize}

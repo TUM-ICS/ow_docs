@@ -1,0 +1,82 @@
+\hypertarget{classow__core_1_1TypeGuard}{}\section{ow\+\_\+core\+:\+:Type\+Guard Class Reference}
+\label{classow__core_1_1TypeGuard}\index{ow\+\_\+core\+::\+Type\+Guard@{ow\+\_\+core\+::\+Type\+Guard}}
+
+
+The \hyperlink{classow__core_1_1TypeGuard}{Type\+Guard} class.  
+
+
+
+
+{\ttfamily \#include $<$type\+\_\+guard.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Type\+Guard\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{df/d06/classow__core_1_1TypeGuard}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1TypeGuard_a66a5c5d64c63c4a6585a7fc15238fe7e}{Type\+Guard} ()\hypertarget{classow__core_1_1TypeGuard_a66a5c5d64c63c4a6585a7fc15238fe7e}{}\label{classow__core_1_1TypeGuard_a66a5c5d64c63c4a6585a7fc15238fe7e}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__core_1_1TypeGuard}{Type\+Guard} class. 
+
+This is the type guard class. This class ensures that the different type classes defined in the Open Walker project that derive from Eigen type classes are not copy constructable or assignable to each other.
+
+Type classes that need to type safe need to derive from this class and add the macro \hyperlink{type__guard_8h_a7eacb7a60e092553b55c91890bc1a641}{O\+W\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+U\+A\+R\+D(\+Class)} at the very top of the class declaration\+:
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{namespace }\hyperlink{namespaceow__core}{ow\_core}\{
+
+\textcolor{keyword}{template} <\textcolor{keyword}{typename} \_Scalar>
+\textcolor{keyword}{class }LinearPosition :
+    \textcolor{keyword}{public} LinearPositionRef<Eigen::Matrix<\_Scalar,3,1> >,
+    \textcolor{keyword}{public} \hyperlink{classow__core_1_1TypeGuard_a66a5c5d64c63c4a6585a7fc15238fe7e}{TypeGuard}
+\{
+  \hyperlink{type__guard_8h_a7eacb7a60e092553b55c91890bc1a641}{OW\_TYPE\_GUARD}(LinearPosition)
+
+  \textcolor{comment}{// ...}
+
+\};
+
+\} \textcolor{comment}{// namespace ow\_core}
+\end{DoxyCode}
+
+
+E.\+g. The copy construction or assignment between \hyperlink{classow__core_1_1LinearPosition}{Linear\+Position} and \hyperlink{classow__core_1_1LinearVelocity}{Linear\+Velocity} should never be allowed and throw an compilation error\+:
+
+
+\begin{DoxyCode}
+\hyperlink{classow__core_1_1LinearPosition}{ow::LinearPosition} pos;
+\hyperlink{classow__core_1_1LinearVelocity}{ow::LinearVelocity} vel;
+
+\textcolor{comment}{// Creates compilation error}
+pos = vel;
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+The compilation errors are\+:
+\begin{DoxyItemize}
+\item the copy constructor is protected
+\item the assignment operator is ambiguous
+\end{DoxyItemize}
+\end{DoxyNote}
+In the few cases where these type classes need to be assigned to each other use static type casts to a common base class in the inheritance hierarchy, e.\+g.\+:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// Correct type conversion}
+vel = \textcolor{keyword}{static\_cast<}\textcolor{keyword}{const }\hyperlink{classow__core_1_1Vector3}{ow::Vector3}&\textcolor{keyword}{>}(pos);
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/utilities/\hyperlink{type__guard_8h}{type\+\_\+guard.\+h}\end{DoxyCompactItemize}

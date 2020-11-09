@@ -1,0 +1,268 @@
+\hypertarget{classow__fcm_1_1FootCompliance}{}\section{ow\+\_\+fcm\+:\+:Foot\+Compliance Class Reference}
+\label{classow__fcm_1_1FootCompliance}\index{ow\+\_\+fcm\+::\+Foot\+Compliance@{ow\+\_\+fcm\+::\+Foot\+Compliance}}
+
+
+The \hyperlink{classow__fcm_1_1FootCompliance}{Foot\+Compliance} class.  
+
+
+
+
+{\ttfamily \#include $<$foot\+\_\+compliance.\+h$>$}
+
+Inheritance diagram for ow\+\_\+fcm\+:\+:Foot\+Compliance\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{d6/d5a/classow__fcm_1_1FootCompliance}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classow_1_1IFootCompliance}{ow\+::\+I\+Foot\+Compliance} {\bfseries Base}\hypertarget{classow__fcm_1_1FootCompliance_aa7b8154640cdf754303e986461fc9158}{}\label{classow__fcm_1_1FootCompliance_aa7b8154640cdf754303e986461fc9158}
+
+\item 
+typedef \hyperlink{classow__core_1_1StateIntegrator}{ow\+\_\+core\+::\+State\+Integrator}$<$ \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} $>$ {\bfseries Integrator}\hypertarget{classow__fcm_1_1FootCompliance_a27243ae2a8864237ab2a3ef891c8da40}{}\label{classow__fcm_1_1FootCompliance_a27243ae2a8864237ab2a3ef891c8da40}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__fcm_1_1FootCompliance_abb9dd0c9887073418f4a85d3eb3435de}{Foot\+Compliance} ()\hypertarget{classow__fcm_1_1FootCompliance_abb9dd0c9887073418f4a85d3eb3435de}{}\label{classow__fcm_1_1FootCompliance_abb9dd0c9887073418f4a85d3eb3435de}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classow__fcm_1_1FootCompliance}{Foot\+Compliance} Default constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__fcm_1_1FootCompliance_afee130369009c5beb18460be71273cd4}{$\sim$\+Foot\+Compliance} ()\hypertarget{classow__fcm_1_1FootCompliance_afee130369009c5beb18460be71273cd4}{}\label{classow__fcm_1_1FootCompliance_afee130369009c5beb18460be71273cd4}
+
+\begin{DoxyCompactList}\small\item\em Desturctor. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow__fcm_1_1FootCompliance_a660d26f9b3e73e979d05c9ab0a3957da}{Xoff\+\_\+r} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \& \hyperlink{classow__fcm_1_1FootCompliance_a9a78316d9d612e7854b94c2f0212d534}{Xoff\+\_\+l} () const 
+\begin{DoxyCompactList}\small\item\em Output port function. \end{DoxyCompactList}\item 
+void \hyperlink{classow__fcm_1_1FootCompliance_a565f127b94b78e4e4a35fb7563a844db}{update} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&Xreal\+\_\+l\+\_\+w, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&Xref\+\_\+l\+\_\+w, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&Xreal\+\_\+r\+\_\+w, const \hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \&Xref\+\_\+r\+\_\+w, const \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \&W\+\_\+l, const \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \&W\+\_\+r)
+\begin{DoxyCompactList}\small\item\em Update function of the module. It computes the feet offsets to increase the stability of the foot contacts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classow__fcm_1_1FootCompliance_ad2459eb9b3936e928465a7a00dfb20c4}{init} (const \hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \&parameter, ros\+::\+Node\+Handle \&nh)\hypertarget{classow__fcm_1_1FootCompliance_ad2459eb9b3936e928465a7a00dfb20c4}{}\label{classow__fcm_1_1FootCompliance_ad2459eb9b3936e928465a7a00dfb20c4}
+
+\begin{DoxyCompactList}\small\item\em Initialization of \hyperlink{classow__fcm_1_1FootCompliance}{Foot\+Compliance} module. \end{DoxyCompactList}\item 
+void \hyperlink{classow__fcm_1_1FootCompliance_a3cc2db3f1db84c25b7a8ac0b9b8c6a0f}{update\+Double\+Support} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \&W\+\_\+l, \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \&W\+\_\+r, const \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \&W\+\_\+ft\+\_\+l, const \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \&W\+\_\+ft\+\_\+r)
+\begin{DoxyCompactList}\small\item\em Update the foot compliance in double support phase. \end{DoxyCompactList}\item 
+void \hyperlink{classow__fcm_1_1FootCompliance_a68491d3bc71c19a743f6fa050af09fd4}{update\+Single\+Support} (\hyperlink{classow__core_1_1Flags}{ow\+::\+Flags} \&flags, \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \&W\+\_\+swing, \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \&W\+\_\+support, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&X\+\_\+swing\+\_\+w, const \hyperlink{classow__core_1_1CartesianPosition}{ow\+::\+Cartesian\+Position} \&X\+\_\+ref\+\_\+swing\+\_\+w, const \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \&W\+\_\+ft\+\_\+swing, const \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \&W\+\_\+ft\+\_\+support)
+\begin{DoxyCompactList}\small\item\em Update foot compliance in single support phase. \end{DoxyCompactList}\item 
+void \hyperlink{classow__fcm_1_1FootCompliance_ab05d352491c98be91a253ba7c88fd2b7}{update\+Virtual\+Dynamics} (const \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \&W\+\_\+l, const \hyperlink{classow__core_1_1Wrench}{ow\+::\+Wrench} \&W\+\_\+r)
+\begin{DoxyCompactList}\small\item\em Update virtual mass spring damper of the feet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries enabled\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_aa0fbd0167e3f6da29322012a8cb20460}{}\label{classow__fcm_1_1FootCompliance_aa0fbd0167e3f6da29322012a8cb20460}
+
+\item 
+\hyperlink{classow_1_1Parameter}{ow\+::\+Parameter} \hyperlink{classow__fcm_1_1FootCompliance_a239e316625f298fe629f1f088306cd66}{parameter\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_a239e316625f298fe629f1f088306cd66}{}\label{classow__fcm_1_1FootCompliance_a239e316625f298fe629f1f088306cd66}
+
+\begin{DoxyCompactList}\small\item\em configuration of this module \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__fcm_1_1FootCompliance_a528d41769d3bd37fd3703b6db9c7500d}{Xoff\+\_\+l\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_a528d41769d3bd37fd3703b6db9c7500d}{}\label{classow__fcm_1_1FootCompliance_a528d41769d3bd37fd3703b6db9c7500d}
+
+\begin{DoxyCompactList}\small\item\em the offset state of the left foot. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1CartesianState}{ow\+::\+Cartesian\+State} \hyperlink{classow__fcm_1_1FootCompliance_a74ef417547f81d345fdc2d0223babcd1}{Xoff\+\_\+r\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_a74ef417547f81d345fdc2d0223babcd1}{}\label{classow__fcm_1_1FootCompliance_a74ef417547f81d345fdc2d0223babcd1}
+
+\begin{DoxyCompactList}\small\item\em the offset state of the right foot. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Matrix}{ow\+::\+Matrix6} \hyperlink{classow__fcm_1_1FootCompliance_a0998056e7005f8660bf5a8369c1d2df3}{M\+\_\+inv\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_a0998056e7005f8660bf5a8369c1d2df3}{}\label{classow__fcm_1_1FootCompliance_a0998056e7005f8660bf5a8369c1d2df3}
+
+\begin{DoxyCompactList}\small\item\em Inverted mass matrix for foot virtual dynamics. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Matrix}{ow\+::\+Matrix6} \hyperlink{classow__fcm_1_1FootCompliance_a162047cbded691d3bd72c6a48026efdf}{D\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_a162047cbded691d3bd72c6a48026efdf}{}\label{classow__fcm_1_1FootCompliance_a162047cbded691d3bd72c6a48026efdf}
+
+\begin{DoxyCompactList}\small\item\em Damping matrix for foot virtual dynamics. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Matrix}{ow\+::\+Matrix6} \hyperlink{classow__fcm_1_1FootCompliance_a6efcaa1591d33e49df2646c8f4fd7d41}{S\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_a6efcaa1591d33e49df2646c8f4fd7d41}{}\label{classow__fcm_1_1FootCompliance_a6efcaa1591d33e49df2646c8f4fd7d41}
+
+\begin{DoxyCompactList}\small\item\em Spring constant for foot virtual dynamics. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Matrix}{ow\+::\+Matrix6} \hyperlink{classow__fcm_1_1FootCompliance_a4c791f7bebe83121bcdcd934cbb887f4}{K\+\_\+track\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_a4c791f7bebe83121bcdcd934cbb887f4}{}\label{classow__fcm_1_1FootCompliance_a4c791f7bebe83121bcdcd934cbb887f4}
+
+\begin{DoxyCompactList}\small\item\em cartesian spline tracking gains. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Matrix}{ow\+::\+Matrix3} \hyperlink{classow__fcm_1_1FootCompliance_ae5c82561a7489f7837e5e301084b6c52}{Ko\+\_\+ss\+\_\+swing\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_ae5c82561a7489f7837e5e301084b6c52}{}\label{classow__fcm_1_1FootCompliance_ae5c82561a7489f7837e5e301084b6c52}
+
+\begin{DoxyCompactList}\small\item\em Orientation gains for swing foot compliance. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Matrix}{ow\+::\+Matrix3} \hyperlink{classow__fcm_1_1FootCompliance_a522add0e1f581f5040517f4b36a7d63b}{Ko\+\_\+ss\+\_\+support\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_a522add0e1f581f5040517f4b36a7d63b}{}\label{classow__fcm_1_1FootCompliance_a522add0e1f581f5040517f4b36a7d63b}
+
+\begin{DoxyCompactList}\small\item\em Orientation gains for single support phase. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Matrix}{ow\+::\+Matrix3} \hyperlink{classow__fcm_1_1FootCompliance_a2db2a3fa15a6f7bcbf429f4c118b6c70}{Ko\+\_\+ds\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_a2db2a3fa15a6f7bcbf429f4c118b6c70}{}\label{classow__fcm_1_1FootCompliance_a2db2a3fa15a6f7bcbf429f4c118b6c70}
+
+\begin{DoxyCompactList}\small\item\em Orientation gains for double support phase. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1Moment}{ow\+::\+Moment} \hyperlink{classow__fcm_1_1FootCompliance_ad3d3021d98d42a34e4bc1e865baa6a9b}{kick\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_ad3d3021d98d42a34e4bc1e865baa6a9b}{}\label{classow__fcm_1_1FootCompliance_ad3d3021d98d42a34e4bc1e865baa6a9b}
+
+\begin{DoxyCompactList}\small\item\em Foot ankle kick before single support phase. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__fcm_1_1FootCompliance_a3295243f5083db7f5fa2962bb5cecf98}{mu\+\_\+tresh\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_a3295243f5083db7f5fa2962bb5cecf98}{}\label{classow__fcm_1_1FootCompliance_a3295243f5083db7f5fa2962bb5cecf98}
+
+\begin{DoxyCompactList}\small\item\em Force torque sensor mu threshold. \end{DoxyCompactList}\item 
+\hyperlink{types_8h_ac412879ee4a239c8032aa2d647f4a74a}{ow\+::\+Scalar} \hyperlink{classow__fcm_1_1FootCompliance_a748af160818a5fb39d417c1b94eac398}{f\+\_\+normal\+\_\+thesh\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_a748af160818a5fb39d417c1b94eac398}{}\label{classow__fcm_1_1FootCompliance_a748af160818a5fb39d417c1b94eac398}
+
+\begin{DoxyCompactList}\small\item\em Normal force theshold for stopping swing foot. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classow__core_1_1StateIntegrator}{Integrator} $>$ \hyperlink{classow__fcm_1_1FootCompliance_a9b9e2b7eb9a90ba83ce58abcf1302e81}{state\+\_\+integ\+\_\+l\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_a9b9e2b7eb9a90ba83ce58abcf1302e81}{}\label{classow__fcm_1_1FootCompliance_a9b9e2b7eb9a90ba83ce58abcf1302e81}
+
+\begin{DoxyCompactList}\small\item\em Integrator for left foot. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classow__core_1_1StateIntegrator}{Integrator} $>$ \hyperlink{classow__fcm_1_1FootCompliance_a5dcb3233dcdd52ef1ec2abdc864a7168}{state\+\_\+integ\+\_\+r\+\_\+}\hypertarget{classow__fcm_1_1FootCompliance_a5dcb3233dcdd52ef1ec2abdc864a7168}{}\label{classow__fcm_1_1FootCompliance_a5dcb3233dcdd52ef1ec2abdc864a7168}
+
+\begin{DoxyCompactList}\small\item\em Integrator for right foot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classow__fcm_1_1FootCompliance}{Foot\+Compliance} class. 
+
+This class implements the \hyperlink{classow__fcm_1_1FootCompliance}{Foot\+Compliance} module of the openwalker framework. It adjusts the foot orientation in a compliant manner based on external forces measured by the FT sensors in both feet. 
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+fcm\+::\+Foot\+Compliance@{ow\+\_\+fcm\+::\+Foot\+Compliance}!update@{update}}
+\index{update@{update}!ow\+\_\+fcm\+::\+Foot\+Compliance@{ow\+\_\+fcm\+::\+Foot\+Compliance}}
+\subsubsection[{\texorpdfstring{update(ow\+::\+Flags \&flags, const ow\+::\+Cartesian\+State \&\+Xreal\+\_\+l\+\_\+w, const ow\+::\+Cartesian\+State \&\+Xref\+\_\+l\+\_\+w, const ow\+::\+Cartesian\+State \&\+Xreal\+\_\+r\+\_\+w, const ow\+::\+Cartesian\+State \&\+Xref\+\_\+r\+\_\+w, const ow\+::\+Wrench \&\+W\+\_\+l, const ow\+::\+Wrench \&\+W\+\_\+r)}{update(ow::Flags &flags, const ow::CartesianState &Xreal_l_w, const ow::CartesianState &Xref_l_w, const ow::CartesianState &Xreal_r_w, const ow::CartesianState &Xref_r_w, const ow::Wrench &W_l, const ow::Wrench &W_r)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+fcm\+::\+Foot\+Compliance\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{Xreal\+\_\+l\+\_\+w, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{Xref\+\_\+l\+\_\+w, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{Xreal\+\_\+r\+\_\+w, }
+\item[{const {\bf ow\+::\+Cartesian\+State} \&}]{Xref\+\_\+r\+\_\+w, }
+\item[{const {\bf ow\+::\+Wrench} \&}]{W\+\_\+l, }
+\item[{const {\bf ow\+::\+Wrench} \&}]{W\+\_\+r}
+\end{DoxyParamCaption}
+)}\hypertarget{classow__fcm_1_1FootCompliance_a565f127b94b78e4e4a35fb7563a844db}{}\label{classow__fcm_1_1FootCompliance_a565f127b94b78e4e4a35fb7563a844db}
+
+
+Update function of the module. It computes the feet offsets to increase the stability of the foot contacts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & Open Walker Flags.\\
+\hline
+{\em Xreal\+\_\+l\+\_\+w} & Cartesian\+State of the left foot.\\
+\hline
+{\em Xref\+\_\+l\+\_\+w} & Reference Cartesian\+State for the left foot.\\
+\hline
+{\em Xreal\+\_\+r\+\_\+w} & Cartesian\+State of the right foot.\\
+\hline
+{\em Xref\+\_\+r\+\_\+w} & Reference Cartesian\+State for the right foot\\
+\hline
+{\em W\+\_\+l} & Left foot ankle wrench.\\
+\hline
+{\em W\+\_\+r} & Right foot ankle wrench. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+fcm\+::\+Foot\+Compliance@{ow\+\_\+fcm\+::\+Foot\+Compliance}!update\+Double\+Support@{update\+Double\+Support}}
+\index{update\+Double\+Support@{update\+Double\+Support}!ow\+\_\+fcm\+::\+Foot\+Compliance@{ow\+\_\+fcm\+::\+Foot\+Compliance}}
+\subsubsection[{\texorpdfstring{update\+Double\+Support(ow\+::\+Flags \&flags, ow\+::\+Wrench \&\+W\+\_\+l, ow\+::\+Wrench \&\+W\+\_\+r, const ow\+::\+Wrench \&\+W\+\_\+ft\+\_\+l, const ow\+::\+Wrench \&\+W\+\_\+ft\+\_\+r)}{updateDoubleSupport(ow::Flags &flags, ow::Wrench &W_l, ow::Wrench &W_r, const ow::Wrench &W_ft_l, const ow::Wrench &W_ft_r)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+fcm\+::\+Foot\+Compliance\+::update\+Double\+Support (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{{\bf ow\+::\+Wrench} \&}]{W\+\_\+l, }
+\item[{{\bf ow\+::\+Wrench} \&}]{W\+\_\+r, }
+\item[{const {\bf ow\+::\+Wrench} \&}]{W\+\_\+ft\+\_\+l, }
+\item[{const {\bf ow\+::\+Wrench} \&}]{W\+\_\+ft\+\_\+r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classow__fcm_1_1FootCompliance_a3cc2db3f1db84c25b7a8ac0b9b8c6a0f}{}\label{classow__fcm_1_1FootCompliance_a3cc2db3f1db84c25b7a8ac0b9b8c6a0f}
+
+
+Update the foot compliance in double support phase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & Open Walker Flags.\\
+\hline
+{\em W\+\_\+l} & Left foot compliance wrench.\\
+\hline
+{\em W\+\_\+r} & Right foor compliance wrench.\\
+\hline
+{\em W\+\_\+ft\+\_\+l} & Left foot FT sensor wrench.\\
+\hline
+{\em W\+\_\+ft\+\_\+r} & Right foot FT sensor wrench. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+fcm\+::\+Foot\+Compliance@{ow\+\_\+fcm\+::\+Foot\+Compliance}!update\+Single\+Support@{update\+Single\+Support}}
+\index{update\+Single\+Support@{update\+Single\+Support}!ow\+\_\+fcm\+::\+Foot\+Compliance@{ow\+\_\+fcm\+::\+Foot\+Compliance}}
+\subsubsection[{\texorpdfstring{update\+Single\+Support(ow\+::\+Flags \&flags, ow\+::\+Wrench \&\+W\+\_\+swing, ow\+::\+Wrench \&\+W\+\_\+support, const ow\+::\+Cartesian\+Position \&\+X\+\_\+swing\+\_\+w, const ow\+::\+Cartesian\+Position \&\+X\+\_\+ref\+\_\+swing\+\_\+w, const ow\+::\+Wrench \&\+W\+\_\+ft\+\_\+swing, const ow\+::\+Wrench \&\+W\+\_\+ft\+\_\+support)}{updateSingleSupport(ow::Flags &flags, ow::Wrench &W_swing, ow::Wrench &W_support, const ow::CartesianPosition &X_swing_w, const ow::CartesianPosition &X_ref_swing_w, const ow::Wrench &W_ft_swing, const ow::Wrench &W_ft_support)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+fcm\+::\+Foot\+Compliance\+::update\+Single\+Support (
+\begin{DoxyParamCaption}
+\item[{{\bf ow\+::\+Flags} \&}]{flags, }
+\item[{{\bf ow\+::\+Wrench} \&}]{W\+\_\+swing, }
+\item[{{\bf ow\+::\+Wrench} \&}]{W\+\_\+support, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{X\+\_\+swing\+\_\+w, }
+\item[{const {\bf ow\+::\+Cartesian\+Position} \&}]{X\+\_\+ref\+\_\+swing\+\_\+w, }
+\item[{const {\bf ow\+::\+Wrench} \&}]{W\+\_\+ft\+\_\+swing, }
+\item[{const {\bf ow\+::\+Wrench} \&}]{W\+\_\+ft\+\_\+support}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classow__fcm_1_1FootCompliance_a68491d3bc71c19a743f6fa050af09fd4}{}\label{classow__fcm_1_1FootCompliance_a68491d3bc71c19a743f6fa050af09fd4}
+
+
+Update foot compliance in single support phase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flags} & Open Walker Flags.\\
+\hline
+{\em W\+\_\+swing} & Foot compliance wrench for swing foot in single support phase.\\
+\hline
+{\em W\+\_\+support} & Foot compliance wrench for support foot in single support phase.\\
+\hline
+{\em X\+\_\+swing\+\_\+w} & Cartesian\+State of swing foot.\\
+\hline
+{\em X\+\_\+ref\+\_\+swing\+\_\+w} & Reference Cartesian\+State of swing foot.\\
+\hline
+{\em W\+\_\+ft\+\_\+swing} & FT sensor wrench of swing foot.\\
+\hline
+{\em W\+\_\+ft\+\_\+support} & FT sensor wrench of support foot. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+fcm\+::\+Foot\+Compliance@{ow\+\_\+fcm\+::\+Foot\+Compliance}!update\+Virtual\+Dynamics@{update\+Virtual\+Dynamics}}
+\index{update\+Virtual\+Dynamics@{update\+Virtual\+Dynamics}!ow\+\_\+fcm\+::\+Foot\+Compliance@{ow\+\_\+fcm\+::\+Foot\+Compliance}}
+\subsubsection[{\texorpdfstring{update\+Virtual\+Dynamics(const ow\+::\+Wrench \&\+W\+\_\+l, const ow\+::\+Wrench \&\+W\+\_\+r)}{updateVirtualDynamics(const ow::Wrench &W_l, const ow::Wrench &W_r)}}]{\setlength{\rightskip}{0pt plus 5cm}void ow\+\_\+fcm\+::\+Foot\+Compliance\+::update\+Virtual\+Dynamics (
+\begin{DoxyParamCaption}
+\item[{const {\bf ow\+::\+Wrench} \&}]{W\+\_\+l, }
+\item[{const {\bf ow\+::\+Wrench} \&}]{W\+\_\+r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classow__fcm_1_1FootCompliance_ab05d352491c98be91a253ba7c88fd2b7}{}\label{classow__fcm_1_1FootCompliance_ab05d352491c98be91a253ba7c88fd2b7}
+
+
+Update virtual mass spring damper of the feet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W\+\_\+l} & Left footr compliance wrench.\\
+\hline
+{\em W\+\_\+r} & Right foot compliance wrench. \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+fcm\+::\+Foot\+Compliance@{ow\+\_\+fcm\+::\+Foot\+Compliance}!Xoff\+\_\+l@{Xoff\+\_\+l}}
+\index{Xoff\+\_\+l@{Xoff\+\_\+l}!ow\+\_\+fcm\+::\+Foot\+Compliance@{ow\+\_\+fcm\+::\+Foot\+Compliance}}
+\subsubsection[{\texorpdfstring{Xoff\+\_\+l() const }{Xoff_l() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+\_\+fcm\+::\+Foot\+Compliance\+::\+Xoff\+\_\+l (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__fcm_1_1FootCompliance_a9a78316d9d612e7854b94c2f0212d534}{}\label{classow__fcm_1_1FootCompliance_a9a78316d9d612e7854b94c2f0212d534}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State contains the offset pose off on the right foot with respect to the reference foot frame L. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1IFootCompliance_a91d95a934cf1fb7f121007777eab5b62}{ow\+::\+I\+Foot\+Compliance}.
+
+\index{ow\+\_\+fcm\+::\+Foot\+Compliance@{ow\+\_\+fcm\+::\+Foot\+Compliance}!Xoff\+\_\+r@{Xoff\+\_\+r}}
+\index{Xoff\+\_\+r@{Xoff\+\_\+r}!ow\+\_\+fcm\+::\+Foot\+Compliance@{ow\+\_\+fcm\+::\+Foot\+Compliance}}
+\subsubsection[{\texorpdfstring{Xoff\+\_\+r() const }{Xoff_r() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf ow\+::\+Cartesian\+State}\& ow\+\_\+fcm\+::\+Foot\+Compliance\+::\+Xoff\+\_\+r (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classow__fcm_1_1FootCompliance_a660d26f9b3e73e979d05c9ab0a3957da}{}\label{classow__fcm_1_1FootCompliance_a660d26f9b3e73e979d05c9ab0a3957da}
+
+
+Output port function. 
+
+\begin{DoxyReturn}{Returns}
+Cartesian\+State contains the offset pose off on the right foot with respect to the reference foot frame R. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classow_1_1IFootCompliance_a15a6db7fdffa5be340ac746395f237ff}{ow\+::\+I\+Foot\+Compliance}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+fcm/include/ow\+\_\+fcm/\hyperlink{foot__compliance_8h}{foot\+\_\+compliance.\+h}\end{DoxyCompactItemize}

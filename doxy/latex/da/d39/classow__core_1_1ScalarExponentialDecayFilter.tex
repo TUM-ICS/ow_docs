@@ -1,0 +1,232 @@
+\hypertarget{classow__core_1_1ScalarExponentialDecayFilter}{}\section{ow\+\_\+core\+:\+:Scalar\+Exponential\+Decay\+Filter$<$ \+\_\+\+Scalar $>$ Class Template Reference}
+\label{classow__core_1_1ScalarExponentialDecayFilter}\index{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter$<$ \+\_\+\+Scalar $>$@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter$<$ \+\_\+\+Scalar $>$}}
+
+
+The \hyperlink{classow__core_1_1ScalarExponentialDecayFilter}{Scalar\+Exponential\+Decay\+Filter} class.  
+
+
+
+
+{\ttfamily \#include $<$scalar\+\_\+exponential\+\_\+decay\+\_\+filter.\+h$>$}
+
+Inheritance diagram for ow\+\_\+core\+:\+:Scalar\+Exponential\+Decay\+Filter$<$ \+\_\+\+Scalar $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{da/d39/classow__core_1_1ScalarExponentialDecayFilter}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+Scalar {\bfseries Scalar}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_ad8b991095b6882437f695435189fccfd}{}\label{classow__core_1_1ScalarExponentialDecayFilter_ad8b991095b6882437f695435189fccfd}
+
+\item 
+typedef \hyperlink{classow__core_1_1IScalarFilter}{I\+Scalar\+Filter}$<$ \+\_\+\+Scalar $>$ {\bfseries I\+Filter}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_af881cb1ae956f3537b8653b66bdfe0ea}{}\label{classow__core_1_1ScalarExponentialDecayFilter_af881cb1ae956f3537b8653b66bdfe0ea}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a3106080edb13cb1fd470bf82affb3bd8}{Scalar\+Exponential\+Decay\+Filter} (Scalar alpha)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a0245953fdfd03d0c10e499c9fdd17dc0}{Scalar\+Exponential\+Decay\+Filter} (Scalar tau, Scalar t\+\_\+sample)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a306b9507eeb2ca74590c4182ec90dcf4}{Scalar\+Exponential\+Decay\+Filter} (const \hyperlink{classow__core_1_1ScalarExponentialDecayFilter}{Scalar\+Exponential\+Decay\+Filter} \&other)\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a306b9507eeb2ca74590c4182ec90dcf4}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a306b9507eeb2ca74590c4182ec90dcf4}
+
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a2be844d6f11d619580c51ecc6e247275}{$\sim$\+Scalar\+Exponential\+Decay\+Filter} ()\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a2be844d6f11d619580c51ecc6e247275}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a2be844d6f11d619580c51ecc6e247275}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a596c6b0c7cd9b897d2a48c2174ab02a0}{valid} () const 
+\begin{DoxyCompactList}\small\item\em Returns whether the ouput is valid. \end{DoxyCompactList}\item 
+\hyperlink{classow__core_1_1IScalarFilter}{I\+Filter} $\ast$ \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_aa477fd8142e2bd950a1fce0edb86911d}{copy} () const \hypertarget{classow__core_1_1ScalarExponentialDecayFilter_aa477fd8142e2bd950a1fce0edb86911d}{}\label{classow__core_1_1ScalarExponentialDecayFilter_aa477fd8142e2bd950a1fce0edb86911d}
+
+\begin{DoxyCompactList}\small\item\em Create a copy of this object using the new operator. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a33fae2941643ba550ef85053549777f0}{set\+Sample\+Frequency} (Scalar f\+\_\+s)
+\begin{DoxyCompactList}\small\item\em Set Sample Frequency. \end{DoxyCompactList}\item 
+void {\bfseries set\+Alpha} (Scalar alpha)\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a4199872a77d7ebbc0e3e6b34480dc473}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a4199872a77d7ebbc0e3e6b34480dc473}
+
+\item 
+Scalar \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a113edfefd3ccc71848e26c3d0f14cac8}{reset} (Scalar x)
+\begin{DoxyCompactList}\small\item\em Reset the algorithm to inital state $\mathScalarQ{x}{}$. \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a2d0e8f5d3a6f29a9fce79f04c936e9bd}{reset} ()
+\begin{DoxyCompactList}\small\item\em Reset the algorithm to inital state. \end{DoxyCompactList}\item 
+void \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a24d0268754b58c3c33ba608c8b63984d}{add} (Scalar x)
+\begin{DoxyCompactList}\small\item\em Adds new sample $\mathScalarQ{x}{}$ wihtout computation. \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_ac8d2d2609ddd97ea4fa5699ed348e525}{update} (Scalar x)\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_ac8d2d2609ddd97ea4fa5699ed348e525}{}\label{classow__core_1_1ScalarExponentialDecayFilter_ac8d2d2609ddd97ea4fa5699ed348e525}
+
+\begin{DoxyCompactList}\small\item\em Update the filter for the next step. \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_ab9166bb6bc577e8baf7a7b4f669e9e69}{output} () const \hypertarget{classow__core_1_1ScalarExponentialDecayFilter_ab9166bb6bc577e8baf7a7b4f669e9e69}{}\label{classow__core_1_1ScalarExponentialDecayFilter_ab9166bb6bc577e8baf7a7b4f669e9e69}
+
+\begin{DoxyCompactList}\small\item\em The current value of the signal. \end{DoxyCompactList}\item 
+int \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a83e63f3e22466b91601c53dccbf3ed66}{order} () const \hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a83e63f3e22466b91601c53dccbf3ed66}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a83e63f3e22466b91601c53dccbf3ed66}
+
+\begin{DoxyCompactList}\small\item\em the filters order \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_ab3270d511531c90f076c30ee96fb628e}{sample\+Frequency} () const \hypertarget{classow__core_1_1ScalarExponentialDecayFilter_ab3270d511531c90f076c30ee96fb628e}{}\label{classow__core_1_1ScalarExponentialDecayFilter_ab3270d511531c90f076c30ee96fb628e}
+
+\begin{DoxyCompactList}\small\item\em the signal sampling frequency \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a3c0308a3844184f6fa79348545365284}{lower\+Cutoff\+Frequency} () const \hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a3c0308a3844184f6fa79348545365284}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a3c0308a3844184f6fa79348545365284}
+
+\begin{DoxyCompactList}\small\item\em the filters cutoff frequency \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a01f63b0dfda954b4e885e42e2a9c4639}{upper\+Cutoff\+Frequency} () const \hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a01f63b0dfda954b4e885e42e2a9c4639}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a01f63b0dfda954b4e885e42e2a9c4639}
+
+\begin{DoxyCompactList}\small\item\em the filters cutoff frequency \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classow__core_1_1ScalarExponentialDecayFilter}{Scalar\+Exponential\+Decay\+Filter} {\bfseries Exp\+Decay} (Scalar alpha)\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_abef3d459d8f728b5430206cc7ff5dfc5}{}\label{classow__core_1_1ScalarExponentialDecayFilter_abef3d459d8f728b5430206cc7ff5dfc5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_ac9eac55a2143886afe22e7e41087d501}{setup} ()\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_ac9eac55a2143886afe22e7e41087d501}{}\label{classow__core_1_1ScalarExponentialDecayFilter_ac9eac55a2143886afe22e7e41087d501}
+
+\begin{DoxyCompactList}\small\item\em Setup the filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_a6b266cf105c62a8e9e0f5dc7653abd06}{is\+\_\+init\+\_\+}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a6b266cf105c62a8e9e0f5dc7653abd06}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a6b266cf105c62a8e9e0f5dc7653abd06}
+
+\begin{DoxyCompactList}\small\item\em initalization flag \end{DoxyCompactList}\item 
+bool \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_aceb02761365e7a99076359a6b9c9d543}{is\+\_\+valid\+\_\+}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_aceb02761365e7a99076359a6b9c9d543}{}\label{classow__core_1_1ScalarExponentialDecayFilter_aceb02761365e7a99076359a6b9c9d543}
+
+\begin{DoxyCompactList}\small\item\em valid filter ouput flag \end{DoxyCompactList}\item 
+Scalar {\bfseries alpha\+\_\+}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a8ad51c8cb23e4e23fa75b2cb67e219ad}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a8ad51c8cb23e4e23fa75b2cb67e219ad}
+
+\item 
+Scalar \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_ae9b70768405142295d16ac25686d6f83}{alpha\+\_\+cmp\+\_\+}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_ae9b70768405142295d16ac25686d6f83}{}\label{classow__core_1_1ScalarExponentialDecayFilter_ae9b70768405142295d16ac25686d6f83}
+
+\begin{DoxyCompactList}\small\item\em decay factors \end{DoxyCompactList}\item 
+Scalar \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_af342d110010f751889ca0776c570ccb7}{y}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_af342d110010f751889ca0776c570ccb7}{}\label{classow__core_1_1ScalarExponentialDecayFilter_af342d110010f751889ca0776c570ccb7}
+
+\begin{DoxyCompactList}\small\item\em ouput \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \+\_\+\+Scalar$>$\\*
+class ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter$<$ \+\_\+\+Scalar $>$}
+
+The \hyperlink{classow__core_1_1ScalarExponentialDecayFilter}{Scalar\+Exponential\+Decay\+Filter} class. 
+
+\hyperlink{classow__core_1_1ScalarExponentialDecayFilter}{Scalar\+Exponential\+Decay\+Filter} is a filter for smoothing of time series data using the exponential window function.
+
+See\+: \href{https://en.wikipedia.org/wiki/Exponential_smoothing}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Exponential\+\_\+smoothing} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}!Scalar\+Exponential\+Decay\+Filter@{Scalar\+Exponential\+Decay\+Filter}}
+\index{Scalar\+Exponential\+Decay\+Filter@{Scalar\+Exponential\+Decay\+Filter}!ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}}
+\subsubsection[{\texorpdfstring{Scalar\+Exponential\+Decay\+Filter(\+Scalar alpha)}{ScalarExponentialDecayFilter(Scalar alpha)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ {\bf ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}$<$ \+\_\+\+Scalar $>$\+::{\bf Scalar\+Exponential\+Decay\+Filter} (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{alpha}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a3106080edb13cb1fd470bf82affb3bd8}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a3106080edb13cb1fd470bf82affb3bd8}
+
+
+Default Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alpha} & Decay factor\+: 0.\+0 $<$= alpha $<$ 1.\+0. High smooting\+: alpha approx 1.\+0 Low smoothing\+: alpha approx 0.\+0 \\
+\hline
+\end{DoxyParams}
+\index{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}!Scalar\+Exponential\+Decay\+Filter@{Scalar\+Exponential\+Decay\+Filter}}
+\index{Scalar\+Exponential\+Decay\+Filter@{Scalar\+Exponential\+Decay\+Filter}!ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}}
+\subsubsection[{\texorpdfstring{Scalar\+Exponential\+Decay\+Filter(\+Scalar tau, Scalar t\+\_\+sample)}{ScalarExponentialDecayFilter(Scalar tau, Scalar t_sample)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ {\bf ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}$<$ \+\_\+\+Scalar $>$\+::{\bf Scalar\+Exponential\+Decay\+Filter} (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{tau, }
+\item[{Scalar}]{t\+\_\+sample}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a0245953fdfd03d0c10e499c9fdd17dc0}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a0245953fdfd03d0c10e499c9fdd17dc0}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tau} & Decay time to 0.\+63$\ast$x\+\_\+init\\
+\hline
+{\em t\+\_\+sample} & Sample time of signal \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}!add@{add}}
+\index{add@{add}!ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}}
+\subsubsection[{\texorpdfstring{add(\+Scalar x)}{add(Scalar x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ void {\bf ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}$<$ \+\_\+\+Scalar $>$\+::add (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a24d0268754b58c3c33ba608c8b63984d}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a24d0268754b58c3c33ba608c8b63984d}
+
+
+Adds new sample $\mathScalarQ{x}{}$ wihtout computation. 
+
+Could be used to populate buffer, before algorithm is started. 
+
+Implements \hyperlink{classow__core_1_1IScalarAlgorithm_a85de69b86d5a9a6f407ed959d0edc005}{ow\+\_\+core\+::\+I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}!reset@{reset}}
+\index{reset@{reset}!ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}}
+\subsubsection[{\texorpdfstring{reset(\+Scalar x)}{reset(Scalar x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ Scalar {\bf ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}$<$ \+\_\+\+Scalar $>$\+::reset (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a113edfefd3ccc71848e26c3d0f14cac8}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a113edfefd3ccc71848e26c3d0f14cac8}
+
+
+Reset the algorithm to inital state $\mathScalarQ{x}{}$. 
+
+Algorithm uses $\mathScalarQ{x}{}$ as inital value. 
+
+Implements \hyperlink{classow__core_1_1IScalarAlgorithm_a20cbd10a8b2ec4d10a48b6605f010f17}{ow\+\_\+core\+::\+I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}!reset@{reset}}
+\index{reset@{reset}!ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ Scalar {\bf ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}$<$ \+\_\+\+Scalar $>$\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a2d0e8f5d3a6f29a9fce79f04c936e9bd}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a2d0e8f5d3a6f29a9fce79f04c936e9bd}
+
+
+Reset the algorithm to inital state. 
+
+Ouput is initalized set in next call to \hyperlink{classow__core_1_1ScalarExponentialDecayFilter_ac8d2d2609ddd97ea4fa5699ed348e525}{update()} 
+
+Implements \hyperlink{classow__core_1_1IScalarAlgorithm_afd0c0837663cff664922c7a116349b46}{ow\+\_\+core\+::\+I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$}.
+
+\index{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}!set\+Sample\+Frequency@{set\+Sample\+Frequency}}
+\index{set\+Sample\+Frequency@{set\+Sample\+Frequency}!ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}}
+\subsubsection[{\texorpdfstring{set\+Sample\+Frequency(\+Scalar f\+\_\+s)}{setSampleFrequency(Scalar f_s)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ void {\bf ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}$<$ \+\_\+\+Scalar $>$\+::set\+Sample\+Frequency (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{f\+\_\+s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a33fae2941643ba550ef85053549777f0}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a33fae2941643ba550ef85053549777f0}
+
+
+Set Sample Frequency. 
+
+Sample frequency is a paramer that applies to all time based algorithms (Special case we consider here)
+
+Not Applicable \index{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}!valid@{valid}}
+\index{valid@{valid}!ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter@{ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}}
+\subsubsection[{\texorpdfstring{valid() const }{valid() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \+\_\+\+Scalar $>$ bool {\bf ow\+\_\+core\+::\+Scalar\+Exponential\+Decay\+Filter}$<$ \+\_\+\+Scalar $>$\+::valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classow__core_1_1ScalarExponentialDecayFilter_a596c6b0c7cd9b897d2a48c2174ab02a0}{}\label{classow__core_1_1ScalarExponentialDecayFilter_a596c6b0c7cd9b897d2a48c2174ab02a0}
+
+
+Returns whether the ouput is valid. 
+
+Return true if algorithm accumulated enouth samples to fill buffer. 
+
+Implements \hyperlink{classow__core_1_1IScalarAlgorithm_a5a7472cb68436e67fc8cb287b477fca6}{ow\+\_\+core\+::\+I\+Scalar\+Algorithm$<$ \+\_\+\+Scalar $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/flo/work/ros/workspaces/ow\+\_\+ws/src/ow\+\_\+core/include/ow\+\_\+core/algorithms/\hyperlink{scalar__exponential__decay__filter_8h}{scalar\+\_\+exponential\+\_\+decay\+\_\+filter.\+h}\end{DoxyCompactItemize}
